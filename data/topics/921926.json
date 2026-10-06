@@ -1,0 +1,44 @@
+{
+  "id": 921926,
+  "title": "独立开发周报 #1 (0213-0219)",
+  "episode": {
+    "ep": 1,
+    "ep2": null
+  },
+  "node": "weekly",
+  "url": "https://www.v2ex.com/t/921926",
+  "created": 1678174361,
+  "last_touched": 1678181561,
+  "member": "vulgur",
+  "replies_count": 3,
+  "stars": 1,
+  "thanks": 0,
+  "content": "## 写在前面\r\n\r\n一直在关注其他开发者和开发相关组织的周报，本来这个公众号也是想着定期更新内容，但是却因为各种懒一直在不定期更新，甚至长时间断更。\r\n\r\n现在，我决定从今天开始进行每周发布一篇周报（尽量）。一方面要逼自己每周都要有输出，二是想通过写周报来进行一周工作的梳理和思考。\r\n\r\n这也算是某种程度上的 build in public 吧，build in limited public😜。\r\n\r\n## 极简时钟（[App Store]( https://apps.apple.com/cn/app/id1265404088)）\r\n\r\n这周主要的开发工作都在极简时钟 iOS 上，主要是 4.2.0 版本的新功能：\r\n\r\n* 增加两个操作引导\r\n* 可以自定义时间\r\n* 番茄钟结束后播放庆祝动画\r\n* 增加并优化翻页声音\r\n* 优化番茄钟的时长调整\r\n\r\n\r\n其中最耗时的就是因为 SwiftUI 的 DatePicker 引出的两个 bug ，第一个是无法正常点击日期（已解决），第二个是大小无法自由定制（已妥协），每一个 bug 都花了半天时间。\r\n\r\n这个版本的开发只剩优化声音的一点工作了，下周肯定能提交新版本！\r\n\r\n另外 Google Play 也更新了一个版本，2.5.11 ，距离上一个版本 2.5.10 已经两个月了。受土耳其大地震的影响，最近一周的下载量和收入依然在下降。仔细一想，我在 Google Play 上的 app 受国际形势影响还挺大的，原来用户量最多的俄罗斯现在跌倒了第四位，然后土耳其成为了第一名。现在土耳其又出事了，被印度反超，希望印度平安无事……\r\n\r\n\r\n## 极简日记([App Store]( https://apps.apple.com/cn/app/id1568936702))\r\n\r\n这周在极简日记 iOS 上进行了两种优化性能方案的探索，差不多花了四个半天。\r\n\r\n为了实现无限加载图片日记的列表，一开始我打算自己写一个内存管理和分页控制，但是总感觉应该有更成熟更方便的解决方案。在请教了肘子哥后，发现要想根本解决需要改动 Core Data 里的数据模型，但基于现实情况只能是在现有代码基础上尽量进行优化了。\r\n\r\n第一个方案是去掉中间的 view model ，列表直接加载 Core Data 的托管对象，但是还是因为图片太多太大，导致内存很快就会爆掉。\r\n\r\n第二个方案是改写了从 Core Data model 到 view model 的转换过程，全部改为了 async/await ，这也是我第一次这么大面积使用 swift 这个特性，全新的挑战，最后效果也不错，自我很满意，下周继续优化，争取下周就发出 TF 。\r\n\r\n这两种方案都涉及到了各个页面都会用到的日记数据模型，所以基本是把整个 app 从头到尾改了两遍，敲键盘敲得手指都疼了。\r\n\r\n![]( https://img.way2solo.com/photo/vulgur/7ac1a9ce-db67-484a-b188-c58e802134e7.png?imageView2/2/w/1920/q/100)\r\n\r\n\r\n\r\n## 开发心得\r\n\r\n开发过程充满了妥协：因为技术不足而妥协，因为系统限制而妥协，因为嫌麻烦而妥协。\r\n\r\n## 开发之外\r\n\r\n** [读书时间] **这周读完了《每周工作 4 小时》，其中收获最多的就是帕累托法则，也就是二八法则。虽然早就知道二八法则，但是并没有一直有过实际应用。有一天晚上比较焦虑，于是就从应用市场和 app 的角度简单分析了一下我的收入构成，并通过二八法则决定今后各项工作的比例。\r\n\r\n和朋友交流这个二八法则，总结出了一个金句：永远不要低估别人的方法论，也永远不要高估别人的行动力。简单地来说就是：话谁都会说，但活不一定会去做。\r\n\r\n![]( https://img.way2solo.com/photo/vulgur/0c71eb5a-216a-46be-b3d6-93e2e725df47.jpg?imageView2/2/w/1920/q/100)\r\n\r\n\r\n\r\n** [好物推荐] **周一，买了个最高高度非常高的笔记本支架，而且还意外地非常稳当。原来一直使用的 mStand 支架非常经典，还是太低了，为了颈椎决定把笔记本屏幕提高到与视线平行，顺便又整理了一下桌面。（一周过去了，桌面又恢复了混乱的常态🤪）\r\n\r\n![]( https://img.way2solo.com/photo/vulgur/5672f7d9-9a35-42c1-abeb-c7dd61b1dcfd.jpg?imageView2/2/w/1920/q/100)\r\n\r\n\r\n** [卖不出去的键盘] **最近想清理一下键盘库（然后买新的），把两个键盘挂到咸鱼后，居然一直都无人问津，还挺意外。我给自己定下的财务自由后第一个目标就是打造一把梦想中的键盘，希望早日达成。\r\n\r\n** [ Google 的礼物] **周日上午收到了 Google Developers 邮寄过来的礼物，这是第二次了。上一次是两支笔和一把雨伞，我一开始还以为这次也是同样的礼物，后来看到快递信息里写的是贴纸，就已经非常开心了，我特别喜欢这种开发相关的贴纸。收到后没想到不止贴纸，惊喜连连。老婆特别喜欢用这个笔，说是写字非常舒服，我骗她说是下载量超过一百万的开发者才会收到这样的礼物，全世界也没多少，她居然也信了😜\r\n\r\n![]( https://img.way2solo.com/photo/vulgur/39dc939f-7dc6-45d3-b496-98b8e20ccbc4.jpg?imageView2/2/w/1920/q/100)\r\n\r\n\r\n公众号原文： https://mp.weixin.qq.com/s/glMDxn9sBk1bFTwiyDtsaQ",
+  "content_rendered": "<h2>写在前面</h2>\n<p>一直在关注其他开发者和开发相关组织的周报，本来这个公众号也是想着定期更新内容，但是却因为各种懒一直在不定期更新，甚至长时间断更。</p>\n<p>现在，我决定从今天开始进行每周发布一篇周报（尽量）。一方面要逼自己每周都要有输出，二是想通过写周报来进行一周工作的梳理和思考。</p>\n<p>这也算是某种程度上的 build in public 吧，build in limited public😜。</p>\n<h2>极简时钟（<a href=\"https://apps.apple.com/cn/app/id1265404088\" rel=\"nofollow\">App Store</a>）</h2>\n<p>这周主要的开发工作都在极简时钟 iOS 上，主要是 4.2.0 版本的新功能：</p>\n<ul>\n<li>增加两个操作引导</li>\n<li>可以自定义时间</li>\n<li>番茄钟结束后播放庆祝动画</li>\n<li>增加并优化翻页声音</li>\n<li>优化番茄钟的时长调整</li>\n</ul>\n<p>其中最耗时的就是因为 SwiftUI 的 DatePicker 引出的两个 bug ，第一个是无法正常点击日期（已解决），第二个是大小无法自由定制（已妥协），每一个 bug 都花了半天时间。</p>\n<p>这个版本的开发只剩优化声音的一点工作了，下周肯定能提交新版本！</p>\n<p>另外 Google Play 也更新了一个版本，2.5.11 ，距离上一个版本 2.5.10 已经两个月了。受土耳其大地震的影响，最近一周的下载量和收入依然在下降。仔细一想，我在 Google Play 上的 app 受国际形势影响还挺大的，原来用户量最多的俄罗斯现在跌倒了第四位，然后土耳其成为了第一名。现在土耳其又出事了，被印度反超，希望印度平安无事……</p>\n<h2>极简日记(<a href=\"https://apps.apple.com/cn/app/id1568936702\" rel=\"nofollow\">App Store</a>)</h2>\n<p>这周在极简日记 iOS 上进行了两种优化性能方案的探索，差不多花了四个半天。</p>\n<p>为了实现无限加载图片日记的列表，一开始我打算自己写一个内存管理和分页控制，但是总感觉应该有更成熟更方便的解决方案。在请教了肘子哥后，发现要想根本解决需要改动 Core Data 里的数据模型，但基于现实情况只能是在现有代码基础上尽量进行优化了。</p>\n<p>第一个方案是去掉中间的 view model ，列表直接加载 Core Data 的托管对象，但是还是因为图片太多太大，导致内存很快就会爆掉。</p>\n<p>第二个方案是改写了从 Core Data model 到 view model 的转换过程，全部改为了 async/await ，这也是我第一次这么大面积使用 swift 这个特性，全新的挑战，最后效果也不错，自我很满意，下周继续优化，争取下周就发出 TF 。</p>\n<p>这两种方案都涉及到了各个页面都会用到的日记数据模型，所以基本是把整个 app 从头到尾改了两遍，敲键盘敲得手指都疼了。</p>\n<p><img alt=\"\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://img.way2solo.com/photo/vulgur/7ac1a9ce-db67-484a-b188-c58e802134e7.png?imageView2/2/w/1920/q/100\"/></p>\n<h2>开发心得</h2>\n<p>开发过程充满了妥协：因为技术不足而妥协，因为系统限制而妥协，因为嫌麻烦而妥协。</p>\n<h2>开发之外</h2>\n<p>** [读书时间] **这周读完了《每周工作 4 小时》，其中收获最多的就是帕累托法则，也就是二八法则。虽然早就知道二八法则，但是并没有一直有过实际应用。有一天晚上比较焦虑，于是就从应用市场和 app 的角度简单分析了一下我的收入构成，并通过二八法则决定今后各项工作的比例。</p>\n<p>和朋友交流这个二八法则，总结出了一个金句：永远不要低估别人的方法论，也永远不要高估别人的行动力。简单地来说就是：话谁都会说，但活不一定会去做。</p>\n<p><img alt=\"\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://img.way2solo.com/photo/vulgur/0c71eb5a-216a-46be-b3d6-93e2e725df47.jpg?imageView2/2/w/1920/q/100\"/></p>\n<p>** [好物推荐] **周一，买了个最高高度非常高的笔记本支架，而且还意外地非常稳当。原来一直使用的 mStand 支架非常经典，还是太低了，为了颈椎决定把笔记本屏幕提高到与视线平行，顺便又整理了一下桌面。（一周过去了，桌面又恢复了混乱的常态🤪）</p>\n<p><img alt=\"\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://img.way2solo.com/photo/vulgur/5672f7d9-9a35-42c1-abeb-c7dd61b1dcfd.jpg?imageView2/2/w/1920/q/100\"/></p>\n<p>** [卖不出去的键盘] **最近想清理一下键盘库（然后买新的），把两个键盘挂到咸鱼后，居然一直都无人问津，还挺意外。我给自己定下的财务自由后第一个目标就是打造一把梦想中的键盘，希望早日达成。</p>\n<p>** [ Google 的礼物] **周日上午收到了 Google Developers 邮寄过来的礼物，这是第二次了。上一次是两支笔和一把雨伞，我一开始还以为这次也是同样的礼物，后来看到快递信息里写的是贴纸，就已经非常开心了，我特别喜欢这种开发相关的贴纸。收到后没想到不止贴纸，惊喜连连。老婆特别喜欢用这个笔，说是写字非常舒服，我骗她说是下载量超过一百万的开发者才会收到这样的礼物，全世界也没多少，她居然也信了😜</p>\n<p><img alt=\"\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://img.way2solo.com/photo/vulgur/39dc939f-7dc6-45d3-b496-98b8e20ccbc4.jpg?imageView2/2/w/1920/q/100\"/></p>\n<p>公众号原文： <a href=\"https://mp.weixin.qq.com/s/glMDxn9sBk1bFTwiyDtsaQ\" rel=\"nofollow\">https://mp.weixin.qq.com/s/glMDxn9sBk1bFTwiyDtsaQ</a></p>\n",
+  "supplements": [],
+  "replies": [
+    {
+      "id": 12787519,
+      "author": "Cabana",
+      "created": 1678239087,
+      "content": "👍把自己想要坚持下去的事情公开，的确是对自己的一种隐形督促。\r\n哈哈，现在笔记本上就贴了这个同款 Android 贴纸～",
+      "content_rendered": "👍把自己想要坚持下去的事情公开，的确是对自己的一种隐形督促。<br />哈哈，现在笔记本上就贴了这个同款 Android 贴纸～"
+    },
+    {
+      "id": 12787717,
+      "author": "vulgur",
+      "created": 1678240624,
+      "content": "@Cabana 我还没舍得用呢",
+      "content_rendered": "@<a href=\"/member/Cabana\">Cabana</a> 我还没舍得用呢"
+    },
+    {
+      "id": 12788461,
+      "author": "tanran",
+      "created": 1678246066,
+      "content": "期待楼主的持续分享，👍",
+      "content_rendered": "期待楼主的持续分享，👍"
+    }
+  ],
+  "reply_pages": 1,
+  "fetched_at": "2026-10-06T03:34:03.916Z"
+}

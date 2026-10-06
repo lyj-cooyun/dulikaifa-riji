@@ -1,0 +1,198 @@
+{
+  "id": 938197,
+  "title": "独立开发周记 #12：尔虞我诈的互联网",
+  "episode": {
+    "ep": 12,
+    "ep2": null
+  },
+  "node": "programmer",
+  "url": "https://www.v2ex.com/t/938197",
+  "created": 1683515732,
+  "last_touched": 1683569609,
+  "member": "vulgur",
+  "replies_count": 25,
+  "stars": 16,
+  "thanks": 1,
+  "content": "## 2023 ，0501-0507\r\n\r\n这周因为身体原因卧床办公了四天，在此奉劝各位不要久坐。\r\n\r\n![]( https://img.way2solo.com/photo/vulgur/be1314de-2dd1-4dfe-87dc-6002c98bfec1.jpeg?imageView2/2/w/1920/q/100)\r\n\r\n\r\n## 善用互联网工具的父亲\r\n\r\n这周孩子的学校要求每人都要参加一个画画比赛，在线提交一个作品，主题是爱家乡。提交的过程是先关注一个公众号，然后跳转到一个小程序，我一看这套路明显就不是什么正经比赛，于是就想着敷衍了事。一开始我还想在网上随便搜一张图片交上去，但是想想这样对原作者也是不太尊重，于是就用 Stable Diffusion 生成了十来个，挑了一张交了上去。\r\n\r\n![]( https://img.way2solo.com/photo/vulgur/6c35f0d9-4b1c-449d-a080-88c5cd3bf4ed.jpeg?imageView2/2/w/1920/q/100)\r\n\r\n\r\n众所周知，很多商家为了宣传自己，都让用户在朋友圈集赞，然后给用户一些优惠或者礼品。我和老婆都特别讨厌这种手段，之前所有这样的活动都是坚决不参加，但是娃的兴趣班也搞了这么个集赞活动，抓住了小孩子的心理，让父母集赞 28 个就可以送给孩子一个小礼物。为了让孩子得到礼物，我找到了一个「朋友圈转发截图生成工具」，分分钟就完成了这个任务。无独有偶，孩子前些天拍摄写真的影楼也让集赞，可以多添加一些照片入册，于是还是使用这个工具，大成功！\r\n\r\n![]( https://img.way2solo.com/photo/vulgur/c662fdf9-b37b-42c5-a0a9-fc2a44edb9e5.jpeg?imageView2/2/w/1920/q/100)\r\n\r\n\r\n## 极简时钟  ([App Store]( https://apps.apple.com/cn/app/id1265404088)，[Google Play]( https://play.google.com/store/apps/details?id=com.mad.zenflipclock))\r\n\r\n这周只花了两天在 ZFC iOS 上，只提交了一个 beta 版本，全是在适配和测试在 iPad 上新版本的 UI 和功能。\r\n\r\n新版本中用到的背景图都是用 Midjourney 生成的，到目前为止已经全面更新了两版，下面这个就是被替换的其中一张，有人看出来这是什么名场面了吗？\r\n\r\n![]( https://img.way2solo.com/photo/vulgur/e15310f8-1233-4d70-9d05-a70233414e66.jpeg?imageView2/2/w/1920/q/100)\r\n\r\n\r\n### 微信支付服务端\r\n\r\n这周前几天的焦虑来自于极简时钟国内安卓版的服务端。\r\n\r\n这个服务端写于两年前，当时为了节约成本，并没有购买云数据库，而是采用了 Parse Community 的开源项目作为 app 的数据库，只是用来存放极简时钟的支付记录。后来的极简日记就直接使用了云数据库，我就一直想着把 parse 里的数据都迁移到云数据库中，顺便统一两个 app 的 API 。\r\n\r\n旧版的支付 API 是构建于微信支付 v2 版本的，使用的开源库也已经多年不更新了，虽然一直以来没出现任何问题，但是想着未来会拓展 API ，还是决定想在 AI 的帮助下重写极简时钟的服务端。\r\n\r\n我一直很恐惧写后端，特别是涉及支付和数据库，就怕出事。所以后端的开发我是能拖就拖，得过且过，这也是这么久都没将迁移和升级工作付诸行动的原因。\r\n\r\n我先是想在 ZFC 的后端项目里新建一个 v2 版本的 API ，但是写了一晚上发现代码量还不少，特别是数据库中关于读写的代码，写到后来恐惧的心理直接就将我击溃了。\r\n\r\n后来我整理了一下思绪，突然意识到最稳妥的办法就是复用极简日记的 API ，于是在极简日记的后端项目里为 ZFC 新建了一套 API 。只花了不到半天就把新 API 写好了，还在 AI 的帮助下，整理了一下原来的代码和配置信息。最后在本地测试了一下，所有的新 API 都跑通了，这时所有的焦虑才大大缓解。\r\n\r\n## 极简日记 iOS ([App Store]( https://apps.apple.com/cn/app/id1568936702))\r\n\r\n这周提交了 1.7.5 ，修复三个 bug ，更新一波关键词。\r\n\r\n更新后收到两个用户反馈了同一个 bug：某个月的日历中不显示日记图片，看来下周的工作内容就是捉这个虫了。\r\n\r\nBacklog 里一直有一个想做的重磅功能，至少我还没发现其他日记 app 有做的，准备下周开始动手。\r\n\r\n## 买买买\r\n\r\n### 咖啡\r\n\r\n这周在抖音上买了好多咖啡，各种各样的咖啡，家里的咖啡种类空前丰富：咖啡豆、挂耳、速溶、胶囊、浓缩液。（豆子是去年 11 月疫情期间囤的，还没喝完……）\r\n\r\n![]( https://img.way2solo.com/photo/vulgur/4f3b5e81-a320-4204-a2a5-87dc81588f24.jpeg?imageView2/2/w/1920/q/100)\r\n\r\n\r\n## iPad mini 6\r\n\r\n我手里的 iPad Air 2 最近基本都在吃灰，之前除了给孩子下围棋用，也就是开发 app 时为了适配 iPad 才拿出来。现在孩子也不学围棋了，系统也没法升到 iPadOS 16 ，在我这里也没什么用处了。正好我妈的 iPad 3 终于坏了，这个 iPad Air 2 就给她用了。\r\n\r\n于是就开始物色新的 iPad 测试机，最后选择了 iPad mini 6 ，便携而且性能足够用。在闲鱼上调研了两天，选中了一个信用优秀而且百次好评的卖家，没有犹豫直接下单了，没想到卖家在我付款后又说了一堆有的没的， 说什么其实是替妹妹卖的，现在的价格太便宜，怕妹妹不高兴，让我申请退款，他提高些价格再让我拍下，然后再把多出来的部分退给我……我去你的吧，退款后直接拉黑。\r\n\r\n后来又选择了价格更低的一个卖家，选择了验货宝，希望不会被坑。可以预见的连带消费还会有各种配件，外壳、支架、Apple Pencil……\r\n\r\n[公众号原文]( https://mp.weixin.qq.com/s/E3m2XhZ6Beobvn3iQhV78Q)\r\n\r\n## 往期周记\r\n- [独立开发周记 #11：4 月总结、华为下架、换掉自记账]( https://www.v2ex.com/t/936754#reply19)\r\n- [独立开发周记 #10：不明原因的下载量暴涨、调休与我无关、一个人生成就达成]( https://www.v2ex.com/t/935137#reply1)\r\n- [独立开发周记 #9：将 Slack 接入工作流、重构的收益开始显现、AI 翻唱惊喜连连]( https://www.v2ex.com/t/933104#reply4)\r\n- [独立开发周报 #8：开始运动]( https://www.v2ex.com/t/931256#reply1)\r\n- [独立开发周报 #7：3 月总结]( https://www.v2ex.com/t/929393#reply2)\r\n- [独立开发周报 #6：国内安卓不值得]( https://www.v2ex.com/t/927541#reply6)\r\n- [独立开发周记 #5：AI 助力]( https://www.v2ex.com/t/925552#reply11)\r\n- [独立开发周报 #4：第一次尝试 ChatGPT API]( https://www.v2ex.com/t/923622#reply10)",
+  "content_rendered": "<h2>2023 ，0501-0507</h2>\n<p>这周因为身体原因卧床办公了四天，在此奉劝各位不要久坐。</p>\n<p><img alt=\"\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://img.way2solo.com/photo/vulgur/be1314de-2dd1-4dfe-87dc-6002c98bfec1.jpeg?imageView2/2/w/1920/q/100\"/></p>\n<h2>善用互联网工具的父亲</h2>\n<p>这周孩子的学校要求每人都要参加一个画画比赛，在线提交一个作品，主题是爱家乡。提交的过程是先关注一个公众号，然后跳转到一个小程序，我一看这套路明显就不是什么正经比赛，于是就想着敷衍了事。一开始我还想在网上随便搜一张图片交上去，但是想想这样对原作者也是不太尊重，于是就用 Stable Diffusion 生成了十来个，挑了一张交了上去。</p>\n<p><img alt=\"\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://img.way2solo.com/photo/vulgur/6c35f0d9-4b1c-449d-a080-88c5cd3bf4ed.jpeg?imageView2/2/w/1920/q/100\"/></p>\n<p>众所周知，很多商家为了宣传自己，都让用户在朋友圈集赞，然后给用户一些优惠或者礼品。我和老婆都特别讨厌这种手段，之前所有这样的活动都是坚决不参加，但是娃的兴趣班也搞了这么个集赞活动，抓住了小孩子的心理，让父母集赞 28 个就可以送给孩子一个小礼物。为了让孩子得到礼物，我找到了一个「朋友圈转发截图生成工具」，分分钟就完成了这个任务。无独有偶，孩子前些天拍摄写真的影楼也让集赞，可以多添加一些照片入册，于是还是使用这个工具，大成功！</p>\n<p><img alt=\"\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://img.way2solo.com/photo/vulgur/c662fdf9-b37b-42c5-a0a9-fc2a44edb9e5.jpeg?imageView2/2/w/1920/q/100\"/></p>\n<h2>极简时钟  (<a href=\"https://apps.apple.com/cn/app/id1265404088\" rel=\"nofollow\">App Store</a>，<a href=\"https://play.google.com/store/apps/details?id=com.mad.zenflipclock\" rel=\"nofollow\">Google Play</a>)</h2>\n<p>这周只花了两天在 ZFC iOS 上，只提交了一个 beta 版本，全是在适配和测试在 iPad 上新版本的 UI 和功能。</p>\n<p>新版本中用到的背景图都是用 Midjourney 生成的，到目前为止已经全面更新了两版，下面这个就是被替换的其中一张，有人看出来这是什么名场面了吗？</p>\n<p><img alt=\"\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://img.way2solo.com/photo/vulgur/e15310f8-1233-4d70-9d05-a70233414e66.jpeg?imageView2/2/w/1920/q/100\"/></p>\n<h3>微信支付服务端</h3>\n<p>这周前几天的焦虑来自于极简时钟国内安卓版的服务端。</p>\n<p>这个服务端写于两年前，当时为了节约成本，并没有购买云数据库，而是采用了 Parse Community 的开源项目作为 app 的数据库，只是用来存放极简时钟的支付记录。后来的极简日记就直接使用了云数据库，我就一直想着把 parse 里的数据都迁移到云数据库中，顺便统一两个 app 的 API 。</p>\n<p>旧版的支付 API 是构建于微信支付 v2 版本的，使用的开源库也已经多年不更新了，虽然一直以来没出现任何问题，但是想着未来会拓展 API ，还是决定想在 AI 的帮助下重写极简时钟的服务端。</p>\n<p>我一直很恐惧写后端，特别是涉及支付和数据库，就怕出事。所以后端的开发我是能拖就拖，得过且过，这也是这么久都没将迁移和升级工作付诸行动的原因。</p>\n<p>我先是想在 ZFC 的后端项目里新建一个 v2 版本的 API ，但是写了一晚上发现代码量还不少，特别是数据库中关于读写的代码，写到后来恐惧的心理直接就将我击溃了。</p>\n<p>后来我整理了一下思绪，突然意识到最稳妥的办法就是复用极简日记的 API ，于是在极简日记的后端项目里为 ZFC 新建了一套 API 。只花了不到半天就把新 API 写好了，还在 AI 的帮助下，整理了一下原来的代码和配置信息。最后在本地测试了一下，所有的新 API 都跑通了，这时所有的焦虑才大大缓解。</p>\n<h2>极简日记 iOS (<a href=\"https://apps.apple.com/cn/app/id1568936702\" rel=\"nofollow\">App Store</a>)</h2>\n<p>这周提交了 1.7.5 ，修复三个 bug ，更新一波关键词。</p>\n<p>更新后收到两个用户反馈了同一个 bug：某个月的日历中不显示日记图片，看来下周的工作内容就是捉这个虫了。</p>\n<p>Backlog 里一直有一个想做的重磅功能，至少我还没发现其他日记 app 有做的，准备下周开始动手。</p>\n<h2>买买买</h2>\n<h3>咖啡</h3>\n<p>这周在抖音上买了好多咖啡，各种各样的咖啡，家里的咖啡种类空前丰富：咖啡豆、挂耳、速溶、胶囊、浓缩液。（豆子是去年 11 月疫情期间囤的，还没喝完……）</p>\n<p><img alt=\"\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://img.way2solo.com/photo/vulgur/4f3b5e81-a320-4204-a2a5-87dc81588f24.jpeg?imageView2/2/w/1920/q/100\"/></p>\n<h2>iPad mini 6</h2>\n<p>我手里的 iPad Air 2 最近基本都在吃灰，之前除了给孩子下围棋用，也就是开发 app 时为了适配 iPad 才拿出来。现在孩子也不学围棋了，系统也没法升到 iPadOS 16 ，在我这里也没什么用处了。正好我妈的 iPad 3 终于坏了，这个 iPad Air 2 就给她用了。</p>\n<p>于是就开始物色新的 iPad 测试机，最后选择了 iPad mini 6 ，便携而且性能足够用。在闲鱼上调研了两天，选中了一个信用优秀而且百次好评的卖家，没有犹豫直接下单了，没想到卖家在我付款后又说了一堆有的没的， 说什么其实是替妹妹卖的，现在的价格太便宜，怕妹妹不高兴，让我申请退款，他提高些价格再让我拍下，然后再把多出来的部分退给我……我去你的吧，退款后直接拉黑。</p>\n<p>后来又选择了价格更低的一个卖家，选择了验货宝，希望不会被坑。可以预见的连带消费还会有各种配件，外壳、支架、Apple Pencil……</p>\n<p><a href=\"https://mp.weixin.qq.com/s/E3m2XhZ6Beobvn3iQhV78Q\" rel=\"nofollow\">公众号原文</a></p>\n<h2>往期周记</h2>\n<ul>\n<li><a href=\"https://www.v2ex.com/t/936754#reply19\" rel=\"nofollow\">独立开发周记 #11：4 月总结、华为下架、换掉自记账</a></li>\n<li><a href=\"https://www.v2ex.com/t/935137#reply1\" rel=\"nofollow\">独立开发周记 #10：不明原因的下载量暴涨、调休与我无关、一个人生成就达成</a></li>\n<li><a href=\"https://www.v2ex.com/t/933104#reply4\" rel=\"nofollow\">独立开发周记 #9：将 Slack 接入工作流、重构的收益开始显现、AI 翻唱惊喜连连</a></li>\n<li><a href=\"https://www.v2ex.com/t/931256#reply1\" rel=\"nofollow\">独立开发周报 #8：开始运动</a></li>\n<li><a href=\"https://www.v2ex.com/t/929393#reply2\" rel=\"nofollow\">独立开发周报 #7：3 月总结</a></li>\n<li><a href=\"https://www.v2ex.com/t/927541#reply6\" rel=\"nofollow\">独立开发周报 #6：国内安卓不值得</a></li>\n<li><a href=\"https://www.v2ex.com/t/925552#reply11\" rel=\"nofollow\">独立开发周记 #5：AI 助力</a></li>\n<li><a href=\"https://www.v2ex.com/t/923622#reply10\" rel=\"nofollow\">独立开发周报 #4：第一次尝试 ChatGPT API</a></li>\n</ul>\n",
+  "supplements": [],
+  "replies": [
+    {
+      "id": 13045668,
+      "author": "chronos",
+      "created": 1683526000,
+      "content": "辛鹿的熔岩可可之前买了两包，到现在已经快喝完了。很多人说这个不好喝，但我喝着还行。跟自己拿铁锅炒的咖啡豆比干净度好了很多。",
+      "content_rendered": "辛鹿的熔岩可可之前买了两包，到现在已经快喝完了。很多人说这个不好喝，但我喝着还行。跟自己拿铁锅炒的咖啡豆比干净度好了很多。"
+    },
+    {
+      "id": 13045698,
+      "author": "taotaodaddy",
+      "created": 1683526241,
+      "content": "OP 帮老师开发一个\"SD.MJ.Zero\"来检测孩子们的绘画作业是否为 SD 或 MJ 生成的吧(狗头",
+      "content_rendered": "OP 帮老师开发一个\"SD.MJ.Zero\"来检测孩子们的绘画作业是否为 SD 或 MJ 生成的吧(狗头"
+    },
+    {
+      "id": 13045807,
+      "author": "zapper",
+      "created": 1683527050,
+      "content": "下个版本的铁塔是不是被拔了？\r\n手动狗头",
+      "content_rendered": "下个版本的铁塔是不是被拔了？<br />手动狗头"
+    },
+    {
+      "id": 13045852,
+      "author": "Yunen",
+      "created": 1683527366,
+      "content": "感谢分享，已关注 OP😀",
+      "content_rendered": "感谢分享，已关注 OP😀"
+    },
+    {
+      "id": 13046371,
+      "author": "linauror",
+      "created": 1683531513,
+      "content": "新世纪福音战士·终？",
+      "content_rendered": "新世纪福音战士·终？"
+    },
+    {
+      "id": 13046522,
+      "author": "vivisidea",
+      "created": 1683532726,
+      "content": "朋友圈转发截图生成工具\r\n==\r\n还有这等好东西！收藏+1",
+      "content_rendered": "朋友圈转发截图生成工具<br />==<br />还有这等好东西！收藏+1"
+    },
+    {
+      "id": 13046559,
+      "author": "fiveStarLaoliang",
+      "created": 1683533099,
+      "content": "666, 赞, 我觉得既然是 AI 时代, 用 AI 来干活真的太爽了",
+      "content_rendered": "666, 赞, 我觉得既然是 AI 时代, 用 AI 来干活真的太爽了"
+    },
+    {
+      "id": 13046569,
+      "author": "aapeli",
+      "created": 1683533187,
+      "content": "@vulgur  op 有没有兴趣编译下极简时钟的 Intel 芯片版本?",
+      "content_rendered": "@<a href=\"/member/vulgur\">vulgur</a>  op 有没有兴趣编译下极简时钟的 Intel 芯片版本?"
+    },
+    {
+      "id": 13046594,
+      "author": "uplee",
+      "created": 1683533433,
+      "content": "讨厌活动可以不参加，使用朋友圈转发截图生成工具是否不诚信？",
+      "content_rendered": "讨厌活动可以不参加，使用朋友圈转发截图生成工具是否不诚信？"
+    },
+    {
+      "id": 13046691,
+      "author": "smallWang",
+      "created": 1683534242,
+      "content": "6 啊，用魔法打败魔法",
+      "content_rendered": "6 啊，用魔法打败魔法"
+    },
+    {
+      "id": 13046728,
+      "author": "raykle",
+      "created": 1683534601,
+      "content": "推荐一下 [朋友圈转发截图生成工具] 😁",
+      "content_rendered": "推荐一下 [朋友圈转发截图生成工具] 😁"
+    },
+    {
+      "id": 13046751,
+      "author": "Raint571",
+      "created": 1683534912,
+      "content": "大佬看着很高产啊，能否分享下在家如何高效办公？",
+      "content_rendered": "大佬看着很高产啊，能否分享下在家如何高效办公？"
+    },
+    {
+      "id": 13046953,
+      "author": "natchiautumn1",
+      "created": 1683536465,
+      "content": "我也蹲一个朋友圈转发截图生成工具",
+      "content_rendered": "我也蹲一个朋友圈转发截图生成工具"
+    },
+    {
+      "id": 13046986,
+      "author": "ww25454776411",
+      "created": 1683536730,
+      "content": "非常自私的一个人",
+      "content_rendered": "非常自私的一个人"
+    },
+    {
+      "id": 13047242,
+      "author": "vulgur",
+      "created": 1683538838,
+      "content": "@linauror bingo",
+      "content_rendered": "@<a href=\"/member/linauror\">linauror</a> bingo"
+    },
+    {
+      "id": 13047246,
+      "author": "vulgur",
+      "created": 1683538895,
+      "content": "@aapeli Catalyst 吗？尝试过，需要改写太多，就放弃了",
+      "content_rendered": "@<a href=\"/member/aapeli\">aapeli</a> Catalyst 吗？尝试过，需要改写太多，就放弃了"
+    },
+    {
+      "id": 13047256,
+      "author": "vulgur",
+      "created": 1683538973,
+      "content": "@Raint571 我并不高效啊……唯二用到的方法论就是番茄工作法和每天工作 4 小时",
+      "content_rendered": "@<a href=\"/member/Raint571\">Raint571</a> 我并不高效啊……唯二用到的方法论就是番茄工作法和每天工作 4 小时"
+    },
+    {
+      "id": 13047269,
+      "author": "vulgur",
+      "created": 1683539034,
+      "content": "@chronos 我疫情时囤了 4 包，就剩这最后一包了",
+      "content_rendered": "@<a href=\"/member/chronos\">chronos</a> 我疫情时囤了 4 包，就剩这最后一包了"
+    },
+    {
+      "id": 13047311,
+      "author": "vulgur",
+      "created": 1683539287,
+      "content": "@uplee 确实不诚信，之前这样的活动我都不参加，但是这两个是利用小孩子",
+      "content_rendered": "@<a href=\"/member/uplee\">uplee</a> 确实不诚信，之前这样的活动我都不参加，但是这两个是利用小孩子"
+    },
+    {
+      "id": 13048125,
+      "author": "mundane",
+      "created": 1683552492,
+      "content": "这拖延症跟我好像，不过我最近才克服这种恐惧",
+      "content_rendered": "这拖延症跟我好像，不过我最近才克服这种恐惧"
+    },
+    {
+      "id": 13048192,
+      "author": "vulgur",
+      "created": 1683554060,
+      "content": "@mundane 消除恐惧的最好办法就是面对恐惧！",
+      "content_rendered": "@<a href=\"/member/mundane\">mundane</a> 消除恐惧的最好办法就是面对恐惧！"
+    },
+    {
+      "id": 13048704,
+      "author": "blueice12138",
+      "created": 1683570974,
+      "content": "关于后端的想法太真实了，写个能用的 demo 还好，如果是正式的项目就一堆部署和安全问题",
+      "content_rendered": "关于后端的想法太真实了，写个能用的 demo 还好，如果是正式的项目就一堆部署和安全问题"
+    },
+    {
+      "id": 13049952,
+      "author": "penrod",
+      "created": 1683599419,
+      "content": "朋友圈这个，已经过了这个阶段了，之前小朋友很多兴趣班都得打卡集赞之类的。。",
+      "content_rendered": "朋友圈这个，已经过了这个阶段了，之前小朋友很多兴趣班都得打卡集赞之类的。。"
+    },
+    {
+      "id": 13053467,
+      "author": "mundane",
+      "created": 1683635848,
+      "content": "@vulgur 奥利给！",
+      "content_rendered": "@<a href=\"/member/vulgur\">vulgur</a> 奥利给！"
+    },
+    {
+      "id": 13053471,
+      "author": "vulgur",
+      "created": 1683635892,
+      "content": "@mundane 我确实能经常在街上看到奥力给大叔",
+      "content_rendered": "@<a href=\"/member/mundane\">mundane</a> 我确实能经常在街上看到奥力给大叔"
+    }
+  ],
+  "reply_pages": 2,
+  "fetched_at": "2026-10-06T03:33:50.832Z"
+}

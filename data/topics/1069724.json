@@ -1,0 +1,51 @@
+{
+  "id": 1069724,
+  "title": "独立开发周记 81： 8 月数据总结",
+  "episode": {
+    "ep": 81,
+    "ep2": null
+  },
+  "node": "programmer",
+  "url": "https://www.v2ex.com/t/1069724",
+  "created": 1725283009,
+  "last_touched": 1725360154,
+  "member": "vulgur",
+  "replies_count": 4,
+  "stars": 0,
+  "thanks": 0,
+  "content": "# 2024 ，0826-0901\r\n\r\n暑假结束了，天气凉快了，孩子终于要开学了。\r\n\r\n# 8 月数据总结\r\n\r\n最近一个多月都在全身心在新 App 上，所有的在架 App 都没有任何打理。\r\n总得来看，下载量提升很多，App Store 和 Google Play 的收入没什么变化，但是国内安卓市场的收入大幅减少。\r\n\r\n## 下载量（极简时钟）\r\n\r\n- App Store ，增长 44%\r\n- Google Play ，增长 19.30%\r\n- 国内安卓市场，因为上个月的数据不全，就和 6 月份对比，增长了 18.7%\r\n\r\n## 收入变化\r\n\r\n- App Store ，增长 2.2%\r\n- Google Play ，增长 9.08%\r\n- Admob ，增长 0.28%\r\n- 国内安卓市场，减少 18.92%\r\n\r\n# Ship-A-Ton 第三周\r\n\r\nShip-A-Ton 就剩 18 天了，感觉要砍掉一个大功能才能勉强提交了。\r\n\r\n这周严重阻碍开发进度的就是黑神话·悟空！。每天都会玩到后半夜一点多，这就导致睡眠不足，严重影响到了白天的开发效率。\r\n\r\n这周的番茄钟数量是 26 ，相比上周多了 4 个， 但也只是 4 个而已。开发速度太慢了，这让我又开始焦虑了。\r\n\r\n![]( https://img.way2solo.com/photo/vulgur/adf6e19e-1c6b-4c86-b0cc-5b6f4dea73b9.jpeg?imageView2/2/w/1920/q/100)\r\n\r\n这周有两个主要的进展，一是完成了第三个功能模块的原型，跑通了整个流程。这个模块经历了两次更名，一开始叫 Wishlist ，再后来叫 Goals ，最后定为 Desires 。\r\n\r\n另一个进展就是和设计师顺利达成了合作，App 的 UI 终于有保证了。这一周的绝大部分开发时间都花在了 UI 上，和我之前自己瞎写的 UI 一对比，简直是云泥之别。专业的事情还是要交给专业的人来做。\r\n\r\n[Vlog: Week 3 for Shipaton]\r\n\r\n# 本周探索\r\n\r\n## 监测 ScrollView 滚动状态\r\n\r\n需要在新 App 里加入对 ScrollView 滚动状态的监测，看完了肘子哥的文章，[# 如何判断 ScrollView 、List 是否正在滚动中]( https://fatbobman.com/zh/posts/how_to_judge_scrollview_is_scrolling/ \"# 如何判断 ScrollView 、List 是否正在滚动中\")。因为 App 是 iOS 17+ 的，还不能直接使用 iOS 18 的新 API ， 直接就使用了肘子哥的 [IsScrolling]( https://github.com/fatbobman/IsScrolling \"IsScrolling\") 。\r\n\r\n## 单复数的文案本地化\r\n\r\nApp 里需要用的针对单词单复数的不同文案，所以就第一次使用了 SwiftUI 中 Text 对单复数的 API ，不用自己写 if else 判断，很优雅。[# Pluralisation made simpler in SwiftUI]( https://medium.com/@o.alizade93/pluralisation-made-simpler-in-swiftui-9015e31512e6 \"# Pluralisation made simpler in SwiftUI\")\r\n\r\n## SVG 转成 SF Symbols\r\n\r\n我想要把 MasterGo/Figma 里面的切图导出后，放到 Xcode 中，然后通过 Image 和 foregroundStyle 给切图加上不同的颜色，就像 SF Symbols 那样。导出成 jpg 和 png 都无法做到，尝试导出 SVG 后才发现 SwiftUI 的 Image 还不支持 SVG 。\r\n\r\n我就想着怎么能把 SVG 转成 SF Symbols ，找了两个工具 App ，都是收费的，连试用也没有，我就没敢直接付费。于是我就问了下 ChatGPT 怎么将 SVG 转换成 SF Symbols ，AI 的回答如下：\r\n\r\n![]( https://img.way2solo.com/photo/vulgur/fdd7a038-5d21-428e-8c0d-5cf286f181a4.png?imageView2/2/w/1920/q/100)\r\n\r\n我就在这个回答里找到了解决方案：PDF ！将 icon 导出为 PDF ，放到 Xcode 的 Asset 里，然后将图片设置为 Render as Template Image 就可以了。\r\n\r\n# 生活\r\n\r\n吃了两顿大餐，还发现了一家不错的面馆。\r\n和许久没见的老同学见面，畅聊一晚。\r\n\r\n![]( https://img.way2solo.com/photo/vulgur/21d82a53-6f1b-4153-ba6e-d9c6976759c5.jpeg?imageView2/2/w/1920/q/100)\r\n\r\n直面天命，刚过第五回，下周肯定能通关了。\r\n第三回，黄眉差一点初见过，我以为还有一个阶段变身，当时葫芦也没酒了，就摆烂打了。\r\n第四回，晦月魔君确实恶心，我是天命人，不是修脚师傅！\r\n第五回，死的最多次数居然是在铁球山路……\r\n\r\n![]( https://img.way2solo.com/photo/vulgur/9f0f397f-bce2-453a-b70d-ec9f671ca13d.jpg?imageView2/2/w/1920/q/100)\r\n\r\n\r\n最近因为玩游戏和写代码，尤克里里都生疏了，每天练习时间大大减少，甚至有一两天都没拿起来。花了将近一个月练习 Em 和弦终于成功了，录了 New Boy 。\r\n\r\n[Vlog: Ukulele - New Boy]\r\n\r\n视频内容还请移步到公众号文章里查看： https://mp.weixin.qq.com/s/OgBlZGfDmPtq7hFY7XLi9g",
+  "content_rendered": "<h1>2024 ，0826-0901</h1>\n<p>暑假结束了，天气凉快了，孩子终于要开学了。</p>\n<h1>8 月数据总结</h1>\n<p>最近一个多月都在全身心在新 App 上，所有的在架 App 都没有任何打理。\n总得来看，下载量提升很多，App Store 和 Google Play 的收入没什么变化，但是国内安卓市场的收入大幅减少。</p>\n<h2>下载量（极简时钟）</h2>\n<ul>\n<li>App Store ，增长 44%</li>\n<li>Google Play ，增长 19.30%</li>\n<li>国内安卓市场，因为上个月的数据不全，就和 6 月份对比，增长了 18.7%</li>\n</ul>\n<h2>收入变化</h2>\n<ul>\n<li>App Store ，增长 2.2%</li>\n<li>Google Play ，增长 9.08%</li>\n<li>Admob ，增长 0.28%</li>\n<li>国内安卓市场，减少 18.92%</li>\n</ul>\n<h1>Ship-A-Ton 第三周</h1>\n<p>Ship-A-Ton 就剩 18 天了，感觉要砍掉一个大功能才能勉强提交了。</p>\n<p>这周严重阻碍开发进度的就是黑神话·悟空！。每天都会玩到后半夜一点多，这就导致睡眠不足，严重影响到了白天的开发效率。</p>\n<p>这周的番茄钟数量是 26 ，相比上周多了 4 个， 但也只是 4 个而已。开发速度太慢了，这让我又开始焦虑了。</p>\n<p><img alt=\"\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://img.way2solo.com/photo/vulgur/adf6e19e-1c6b-4c86-b0cc-5b6f4dea73b9.jpeg?imageView2/2/w/1920/q/100\"/></p>\n<p>这周有两个主要的进展，一是完成了第三个功能模块的原型，跑通了整个流程。这个模块经历了两次更名，一开始叫 Wishlist ，再后来叫 Goals ，最后定为 Desires 。</p>\n<p>另一个进展就是和设计师顺利达成了合作，App 的 UI 终于有保证了。这一周的绝大部分开发时间都花在了 UI 上，和我之前自己瞎写的 UI 一对比，简直是云泥之别。专业的事情还是要交给专业的人来做。</p>\n<p>[Vlog: Week 3 for Shipaton]</p>\n<h1>本周探索</h1>\n<h2>监测 ScrollView 滚动状态</h2>\n<p>需要在新 App 里加入对 ScrollView 滚动状态的监测，看完了肘子哥的文章，<a href=\"https://fatbobman.com/zh/posts/how_to_judge_scrollview_is_scrolling/\" rel=\"nofollow\" title=\"# 如何判断 ScrollView 、List 是否正在滚动中\"># 如何判断 ScrollView 、List 是否正在滚动中</a>。因为 App 是 iOS 17+ 的，还不能直接使用 iOS 18 的新 API ， 直接就使用了肘子哥的 <a href=\"https://github.com/fatbobman/IsScrolling\" rel=\"nofollow\" title=\"IsScrolling\">IsScrolling</a> 。</p>\n<h2>单复数的文案本地化</h2>\n<p>App 里需要用的针对单词单复数的不同文案，所以就第一次使用了 SwiftUI 中 Text 对单复数的 API ，不用自己写 if else 判断，很优雅。<a href=\"https://medium.com/@o.alizade93/pluralisation-made-simpler-in-swiftui-9015e31512e6\" rel=\"nofollow\" title=\"# Pluralisation made simpler in SwiftUI\"># Pluralisation made simpler in SwiftUI</a></p>\n<h2>SVG 转成 SF Symbols</h2>\n<p>我想要把 MasterGo/Figma 里面的切图导出后，放到 Xcode 中，然后通过 Image 和 foregroundStyle 给切图加上不同的颜色，就像 SF Symbols 那样。导出成 jpg 和 png 都无法做到，尝试导出 SVG 后才发现 SwiftUI 的 Image 还不支持 SVG 。</p>\n<p>我就想着怎么能把 SVG 转成 SF Symbols ，找了两个工具 App ，都是收费的，连试用也没有，我就没敢直接付费。于是我就问了下 ChatGPT 怎么将 SVG 转换成 SF Symbols ，AI 的回答如下：</p>\n<p><img alt=\"\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://img.way2solo.com/photo/vulgur/fdd7a038-5d21-428e-8c0d-5cf286f181a4.png?imageView2/2/w/1920/q/100\"/></p>\n<p>我就在这个回答里找到了解决方案：PDF ！将 icon 导出为 PDF ，放到 Xcode 的 Asset 里，然后将图片设置为 Render as Template Image 就可以了。</p>\n<h1>生活</h1>\n<p>吃了两顿大餐，还发现了一家不错的面馆。\n和许久没见的老同学见面，畅聊一晚。</p>\n<p><img alt=\"\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://img.way2solo.com/photo/vulgur/21d82a53-6f1b-4153-ba6e-d9c6976759c5.jpeg?imageView2/2/w/1920/q/100\"/></p>\n<p>直面天命，刚过第五回，下周肯定能通关了。\n第三回，黄眉差一点初见过，我以为还有一个阶段变身，当时葫芦也没酒了，就摆烂打了。\n第四回，晦月魔君确实恶心，我是天命人，不是修脚师傅！\n第五回，死的最多次数居然是在铁球山路……</p>\n<p><img alt=\"\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://img.way2solo.com/photo/vulgur/9f0f397f-bce2-453a-b70d-ec9f671ca13d.jpg?imageView2/2/w/1920/q/100\"/></p>\n<p>最近因为玩游戏和写代码，尤克里里都生疏了，每天练习时间大大减少，甚至有一两天都没拿起来。花了将近一个月练习 Em 和弦终于成功了，录了 New Boy 。</p>\n<p>[Vlog: Ukulele - New Boy]</p>\n<p>视频内容还请移步到公众号文章里查看： <a href=\"https://mp.weixin.qq.com/s/OgBlZGfDmPtq7hFY7XLi9g\" rel=\"nofollow\">https://mp.weixin.qq.com/s/OgBlZGfDmPtq7hFY7XLi9g</a></p>\n",
+  "supplements": [],
+  "replies": [
+    {
+      "id": 15204304,
+      "author": "Gomoku2024",
+      "created": 1725283949,
+      "content": "OP 是基于 Flutter 还是 React Native 开发的呢？不太像原生开发。",
+      "content_rendered": "OP 是基于 Flutter 还是 React Native 开发的呢？不太像原生开发。"
+    },
+    {
+      "id": 15204421,
+      "author": "vulgur",
+      "created": 1725286690,
+      "content": "@Amose2024 原生开发，拒绝一切跨平台",
+      "content_rendered": "@<a href=\"/member/Amose2024\">Amose2024</a> 原生开发，拒绝一切跨平台"
+    },
+    {
+      "id": 15222677,
+      "author": "izjing666",
+      "created": 1725588769,
+      "content": "App Store 现在个人能开支付吗？还是说也得注册公司？",
+      "content_rendered": "App Store 现在个人能开支付吗？还是说也得注册公司？"
+    },
+    {
+      "id": 15224222,
+      "author": "vulgur",
+      "created": 1725603326,
+      "content": "@izjing666 个人可以，不必须是公司",
+      "content_rendered": "@<a href=\"/member/izjing666\">izjing666</a> 个人可以，不必须是公司"
+    }
+  ],
+  "reply_pages": 1,
+  "fetched_at": "2026-10-06T03:32:34.930Z"
+}

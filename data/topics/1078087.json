@@ -1,0 +1,58 @@
+{
+  "id": 1078087,
+  "title": "独立开发周记 87： 9 月数据总结",
+  "episode": {
+    "ep": 87,
+    "ep2": null
+  },
+  "node": "programmer",
+  "url": "https://www.v2ex.com/t/1078087",
+  "created": 1728306251,
+  "last_touched": 1728323636,
+  "member": "vulgur",
+  "replies_count": 5,
+  "stars": 2,
+  "thanks": 0,
+  "content": "# 2024,0930-1006\r\n\r\n我做了个梦：我的基金盈利 16 万，就想都卖了，结果基金 App 改版成了一个三国游戏，我费了好大劲才找到旧版操作基金的界面和入口……\r\n\r\nBleach 千年血战篇第三季出了，才知道 Bleach 动画开播也 20 周年了。\r\n\r\n国庆期间几乎每天都有饭局，暴食不断，涨了两斤，体脂率又要突破 30% 了。\r\n\r\n\r\n![]( https://files.mdnice.com/user/73796/f494c0b5-90a0-415a-9141-9a561091fde5.jpeg)\r\n\r\n# 9 月数据总结\r\n## 下载量（极简时钟）\r\n\r\n- App Store ，增多 2.9%\r\n- Google Play ，增多 10.31%\r\n- 国内安卓市场，减少 22.87%\r\n\r\n国内安卓市场在 9 月的下载量还不到 2W ，第一次跌破 2W 。\r\n\r\n## 收入\r\n\r\n- App Store ，增加 18%\r\n- Goggle Play ，减少 4.17%\r\n- Admob ，增加 1.44%\r\n- 国内安卓市场，增加 6.74%\r\n\r\n我算了一下国内安卓市场各个 App 的收入比例，和 8 月对比，增多的大部分还都是极简时钟带来的，所以下载变少的同时收入变多，这一个月的付费率变高了。\r\n\r\n根据 RevenueCat 的最佳实践建议和其他开发者的实验结果，在 App 首次打开显示完 Onboarding 后就弹出 Paywall 会显著增加付费率。之前我很不理解，也不赞同，这在我第 43 篇周记里提到过。但是在 9 月中旬我也给极简时钟和极简日记这么做了，App Store 的收入也确实变多了。\r\n\r\n# WWDC 设计视频\r\n最近 Apple Developer 在 Youtube 账号里连续放出了五个古早 WWDC 的视频，都是关于设计主题的。最早的一个是 WWDC14 的，已经是十年前的内容了。我看了其中 WWDC17 和 WWDC 18 的三个视频，那时候还是现场演讲，而不是近两年的录制好的视频，看到演讲者和 Keynote 之间的互动，非常怀念那时候 WWDC 的氛围（虽然我没有亲临现场过，以后估计也不会有了）。\r\n\r\n\r\n![]( https://files.mdnice.com/user/73796/b1663545-d218-48dd-af3f-3b0c036a9e20.jpg)\r\n\r\n## WWDC17: 60 秒完成原型设计\r\n演讲的核心就是：用 Keynote 画原型，然后通过 make ，show ，learn 三个步骤来不断迭代原型。\r\n \r\n## WWDC17: 基本的设计原则\r\n\r\n这个演讲是通过一个度假的过程来介绍许多设计原则。\r\n\r\n- 通过机场的标识来介绍导航。\r\n- 通过开车来介绍反馈、视觉和一致性。\r\n- 通过酒店房间来介绍心智模型、亲密性、分组和映射。\r\n- 通过点餐来介绍可供性、渐进性展开和二八法则。\r\n- 通过潜水来介绍对称性。\r\n\r\n\r\n![]( https://files.mdnice.com/user/73796/d6964cae-85ed-470e-a235-cd50d9f3d1cf.jpg)\r\n\r\n \r\n## WWDC18: 优秀设计特征\r\n\r\n这个演讲非常的与众不同，即使是和同时期其他的 session 相比，也是非常独特的一个。这个演讲并不像其他 session 那样只是演讲者一个人在讲解内容，这个演讲是浓缩并精选了几十个小时对其他人的采访，将被采访者的回答用文字和音频的方式融入到了整个演讲中，而且最后还配合 Keynote 的各种动画，非常新颖。\r\n\r\n\r\n![]( https://files.mdnice.com/user/73796/0c32112e-9c37-46ad-b49c-2cdf28080373.jpg)\r\n\r\n\r\n这个演讲分为四个方面，都是围绕“高品质”的，什么是高品质，高品质的重要性，如何获得高品质设计的启发，以及一些技巧和方法论。里面有一个观点是，App 应该足够简单，解决完用户的问题后就让用户放下手机，回归到真实生活。这不就是某个「小而美」 App 「用完即走」的设计理念么，但是它做到了吗？\r\n\r\n# 梦想中的键盘\r\n\r\n这周在二师兄的推荐下，终于买到了（几乎是）梦想中的键盘。\r\n\r\n我选的是复古白，自己配了金粉轴和一套苹果风的键帽，但是忘了键帽高度这回事，到手后发现很多功能键只能东拼西凑才能凑出一套键盘。\r\n\r\n我之前说我财务自由后就是想打造自己理想的键盘，无线+分体+可插拔的人体工学机械键盘，现在来看，这几点都实现了。而且这个还带有两个小显示屏，可以显示当前连接状态、所在层数、电池余量和打字速度。\r\n\r\n不过，还有一些不足之处：\r\n- 所有键帽都必须是 1U 的，很多功能键不好配键帽，而且我感觉拇指的键帽在 1.5U 以上才更舒服。\r\n - 键盘的倾斜角度是固定的，不能自由调节。\r\n - 没有手托，不过我在闲鱼上下单了一个，在路上了。\r\n - 最最麻烦的是，这个只支持 ZMK 刷固件，不能像 VIA 那样方便快捷地更改键位。\r\n\r\n![]( https://files.mdnice.com/user/73796/cf8e7f54-6fdf-44fc-9c9e-607b1a196199.jpeg)\r\n\r\n\r\n# 不可能毫无用处\r\n\r\n黑猴三周目后感觉没什么可玩的了，正好最后生还者 Part 1 进入了二档会员库，就再玩一遍。第一遍是在 PS4 上玩的，通关后发现奖杯完成度连 30% 都不到，这次就立志一定要白金。这一次主线通关只花了 14 个小时，但是为了完成白金又花了三天逐章收集，终于白金了。\r\n\r\n![]( https://files.mdnice.com/user/73796/60620856-656b-4a79-bbb3-21d259b7f8ee.jpg)",
+  "content_rendered": "<h1>2024,0930-1006</h1>\n<p>我做了个梦：我的基金盈利 16 万，就想都卖了，结果基金 App 改版成了一个三国游戏，我费了好大劲才找到旧版操作基金的界面和入口……</p>\n<p>Bleach 千年血战篇第三季出了，才知道 Bleach 动画开播也 20 周年了。</p>\n<p>国庆期间几乎每天都有饭局，暴食不断，涨了两斤，体脂率又要突破 30% 了。</p>\n<p><img alt=\"\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://files.mdnice.com/user/73796/f494c0b5-90a0-415a-9141-9a561091fde5.jpeg\"/></p>\n<h1>9 月数据总结</h1>\n<h2>下载量（极简时钟）</h2>\n<ul>\n<li>App Store ，增多 2.9%</li>\n<li>Google Play ，增多 10.31%</li>\n<li>国内安卓市场，减少 22.87%</li>\n</ul>\n<p>国内安卓市场在 9 月的下载量还不到 2W ，第一次跌破 2W 。</p>\n<h2>收入</h2>\n<ul>\n<li>App Store ，增加 18%</li>\n<li>Goggle Play ，减少 4.17%</li>\n<li>Admob ，增加 1.44%</li>\n<li>国内安卓市场，增加 6.74%</li>\n</ul>\n<p>我算了一下国内安卓市场各个 App 的收入比例，和 8 月对比，增多的大部分还都是极简时钟带来的，所以下载变少的同时收入变多，这一个月的付费率变高了。</p>\n<p>根据 RevenueCat 的最佳实践建议和其他开发者的实验结果，在 App 首次打开显示完 Onboarding 后就弹出 Paywall 会显著增加付费率。之前我很不理解，也不赞同，这在我第 43 篇周记里提到过。但是在 9 月中旬我也给极简时钟和极简日记这么做了，App Store 的收入也确实变多了。</p>\n<h1>WWDC 设计视频</h1>\n<p>最近 Apple Developer 在 Youtube 账号里连续放出了五个古早 WWDC 的视频，都是关于设计主题的。最早的一个是 WWDC14 的，已经是十年前的内容了。我看了其中 WWDC17 和 WWDC 18 的三个视频，那时候还是现场演讲，而不是近两年的录制好的视频，看到演讲者和 Keynote 之间的互动，非常怀念那时候 WWDC 的氛围（虽然我没有亲临现场过，以后估计也不会有了）。</p>\n<p><img alt=\"\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://files.mdnice.com/user/73796/b1663545-d218-48dd-af3f-3b0c036a9e20.jpg\"/></p>\n<h2>WWDC17: 60 秒完成原型设计</h2>\n<p>演讲的核心就是：用 Keynote 画原型，然后通过 make ，show ，learn 三个步骤来不断迭代原型。</p>\n<h2>WWDC17: 基本的设计原则</h2>\n<p>这个演讲是通过一个度假的过程来介绍许多设计原则。</p>\n<ul>\n<li>通过机场的标识来介绍导航。</li>\n<li>通过开车来介绍反馈、视觉和一致性。</li>\n<li>通过酒店房间来介绍心智模型、亲密性、分组和映射。</li>\n<li>通过点餐来介绍可供性、渐进性展开和二八法则。</li>\n<li>通过潜水来介绍对称性。</li>\n</ul>\n<p><img alt=\"\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://files.mdnice.com/user/73796/d6964cae-85ed-470e-a235-cd50d9f3d1cf.jpg\"/></p>\n<h2>WWDC18: 优秀设计特征</h2>\n<p>这个演讲非常的与众不同，即使是和同时期其他的 session 相比，也是非常独特的一个。这个演讲并不像其他 session 那样只是演讲者一个人在讲解内容，这个演讲是浓缩并精选了几十个小时对其他人的采访，将被采访者的回答用文字和音频的方式融入到了整个演讲中，而且最后还配合 Keynote 的各种动画，非常新颖。</p>\n<p><img alt=\"\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://files.mdnice.com/user/73796/0c32112e-9c37-46ad-b49c-2cdf28080373.jpg\"/></p>\n<p>这个演讲分为四个方面，都是围绕“高品质”的，什么是高品质，高品质的重要性，如何获得高品质设计的启发，以及一些技巧和方法论。里面有一个观点是，App 应该足够简单，解决完用户的问题后就让用户放下手机，回归到真实生活。这不就是某个「小而美」 App 「用完即走」的设计理念么，但是它做到了吗？</p>\n<h1>梦想中的键盘</h1>\n<p>这周在二师兄的推荐下，终于买到了（几乎是）梦想中的键盘。</p>\n<p>我选的是复古白，自己配了金粉轴和一套苹果风的键帽，但是忘了键帽高度这回事，到手后发现很多功能键只能东拼西凑才能凑出一套键盘。</p>\n<p>我之前说我财务自由后就是想打造自己理想的键盘，无线+分体+可插拔的人体工学机械键盘，现在来看，这几点都实现了。而且这个还带有两个小显示屏，可以显示当前连接状态、所在层数、电池余量和打字速度。</p>\n<p>不过，还有一些不足之处：</p>\n<ul>\n<li>所有键帽都必须是 1U 的，很多功能键不好配键帽，而且我感觉拇指的键帽在 1.5U 以上才更舒服。</li>\n<li>键盘的倾斜角度是固定的，不能自由调节。</li>\n<li>没有手托，不过我在闲鱼上下单了一个，在路上了。</li>\n<li>最最麻烦的是，这个只支持 ZMK 刷固件，不能像 VIA 那样方便快捷地更改键位。</li>\n</ul>\n<p><img alt=\"\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://files.mdnice.com/user/73796/cf8e7f54-6fdf-44fc-9c9e-607b1a196199.jpeg\"/></p>\n<h1>不可能毫无用处</h1>\n<p>黑猴三周目后感觉没什么可玩的了，正好最后生还者 Part 1 进入了二档会员库，就再玩一遍。第一遍是在 PS4 上玩的，通关后发现奖杯完成度连 30% 都不到，这次就立志一定要白金。这一次主线通关只花了 14 个小时，但是为了完成白金又花了三天逐章收集，终于白金了。</p>\n<p><img alt=\"\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://files.mdnice.com/user/73796/60620856-656b-4a79-bbb3-21d259b7f8ee.jpg\"/></p>\n",
+  "supplements": [],
+  "replies": [
+    {
+      "id": 15345668,
+      "author": "zywscq",
+      "created": 1728312773,
+      "content": "键盘很好看",
+      "content_rendered": "键盘很好看"
+    },
+    {
+      "id": 15345674,
+      "author": "cszeus",
+      "created": 1728312836,
+      "content": "啥键盘，酷哦",
+      "content_rendered": "啥键盘，酷哦"
+    },
+    {
+      "id": 15346291,
+      "author": "rlds",
+      "created": 1728350370,
+      "content": "挺不错",
+      "content_rendered": "挺不错"
+    },
+    {
+      "id": 15347336,
+      "author": "vhwwls",
+      "created": 1728357284,
+      "content": "键盘很带劲",
+      "content_rendered": "键盘很带劲"
+    },
+    {
+      "id": 15349620,
+      "author": "xiaohanyu",
+      "created": 1728378130,
+      "content": "这个是什么键盘？",
+      "content_rendered": "这个是什么键盘？"
+    }
+  ],
+  "reply_pages": 1,
+  "fetched_at": "2026-10-06T03:32:29.444Z"
+}

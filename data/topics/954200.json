@@ -1,0 +1,65 @@
+{
+  "id": 954200,
+  "title": "独立开发周报#20： 6 月总结",
+  "episode": {
+    "ep": 20,
+    "ep2": null
+  },
+  "node": "programmer",
+  "url": "https://www.v2ex.com/t/954200",
+  "created": 1688523852,
+  "last_touched": 1688663818,
+  "member": "vulgur",
+  "replies_count": 6,
+  "stars": 2,
+  "thanks": 1,
+  "content": "# 2023 ，0626-0702\r\n\r\n6 月结束了，2023 年也过去了一半。\r\n\r\n每次统计上个月的数据都要花上半天时间，要下载各种表格，然后找到想要的数据再求和，最后整理汇总到一个表格里。想做个统计工具，把表格文件扔进去让工具自动化统计了。\r\n\r\n- Google Play ，下载量暴跌，下降了 33%，收入却只下降了一丢丢。6 月来自土耳其的下载量下降了 55%，这就是下载量下降的主要原因，这也解释了为什么收入没有收到影响，因为 Turkey never pay ！\r\n- App Store ，下载量下降了一丢丢，收入少了 30 美元。\r\n- 国内安卓市场，可能得益于价格调整，下载量提高了 13%，收入多了 3.5%。\r\n\r\n# 极简日记 iOS [App Store]( https://apps.apple.com/cn/app/id1568936702)\r\n\r\n## 测试群\r\n\r\n这个星期组建了一个针对 1.7.6 的新的测试群。因为 1.7.6 改了底层的数据模型，牵一发动全身，基本上所有关于日记的页面都进行了调整。谨慎起见，先进行一波小范围测试再提交正式版。\r\n\r\n一开始想把测试人数定为 10 人，后来想想还是扩大到了 20 人。TestFlight 刚一发布的上午就收到了 5 个 bug 反馈，这还不包括我知道的但是测试用户还没发现的几个……\r\n\r\n作为对这些测试用户的感谢，我承诺会给每个人赠送一个终身会员的兑换码。\r\n\r\n## 导入导出\r\n\r\n这周所有的代码工作都是在优化导入导出。因为更改了日记模型数据，所以导入导出也需要跟着修改。之前存在一个严重的问题是，如果一次性导出大量的数据，会因为爆内存而闪退。这次修复了这个问题，而且还优化了整个交互，加上了各个步骤的提示和进度条。\r\n\r\n## HIG\r\n\r\n因为需要重构导入导出的交互，重读了苹果官方的《****人机界面指南****》关于模态化的这一部分。SwiftUI 在模态化的这方面主要有这几种形式：Sheet 、Alert 、Confirmation Dialog 、Popover 。这个 Confirmation Dialog 是 iOS 15 就加入的，用来代替之前的 Action Sheet ，而我居然才知道……\r\n\r\n我打算今后尽可能多用 SwiftUI 提供的默认样式，而不是使用各种第三方的库。\r\n\r\n值得一提的是，WWDC23 后，HIG 不仅更新了最新的设计指南，还加入了中文版本，这样完全值得再读一遍了。\r\n\r\n![HIG.jpeg]( https://img.way2solo.com/photo/vulgur/2ef0b80e-74d9-49f9-87ea-e6cc0c6be1f5.jpeg?imageView2/2/w/1920/q/100)\r\n\r\n# 买买买\r\n\r\n整个 6 月买了不少东西。\r\n\r\n- 2T 的 SSD 移动硬盘\r\n- 空气炸锅\r\n- 65W 氮化镓 Type- C+USB 插座\r\n- 为了玩 Switch ，买了个冰原狼手柄\r\n- 一堆咖啡胶囊和酸梅汤浓缩汁\r\n- 一本书，《焦虑的意义》\r\n- 八电极体脂秤，先买了一个京东京造的，到手后立即退货，又买了个云康宝的\r\n- 漫步者 1080BT 音箱\r\n\r\n![buy.jpeg]( https://img.way2solo.com/photo/vulgur/3941cffd-303b-40a4-b9a0-70ed82a52d55.jpeg?imageView2/2/w/1920/q/100)",
+  "content_rendered": "<h1>2023 ，0626-0702</h1>\n<p>6 月结束了，2023 年也过去了一半。</p>\n<p>每次统计上个月的数据都要花上半天时间，要下载各种表格，然后找到想要的数据再求和，最后整理汇总到一个表格里。想做个统计工具，把表格文件扔进去让工具自动化统计了。</p>\n<ul>\n<li>Google Play ，下载量暴跌，下降了 33%，收入却只下降了一丢丢。6 月来自土耳其的下载量下降了 55%，这就是下载量下降的主要原因，这也解释了为什么收入没有收到影响，因为 Turkey never pay ！</li>\n<li>App Store ，下载量下降了一丢丢，收入少了 30 美元。</li>\n<li>国内安卓市场，可能得益于价格调整，下载量提高了 13%，收入多了 3.5%。</li>\n</ul>\n<h1>极简日记 iOS <a href=\"https://apps.apple.com/cn/app/id1568936702\" rel=\"nofollow\">App Store</a></h1>\n<h2>测试群</h2>\n<p>这个星期组建了一个针对 1.7.6 的新的测试群。因为 1.7.6 改了底层的数据模型，牵一发动全身，基本上所有关于日记的页面都进行了调整。谨慎起见，先进行一波小范围测试再提交正式版。</p>\n<p>一开始想把测试人数定为 10 人，后来想想还是扩大到了 20 人。TestFlight 刚一发布的上午就收到了 5 个 bug 反馈，这还不包括我知道的但是测试用户还没发现的几个……</p>\n<p>作为对这些测试用户的感谢，我承诺会给每个人赠送一个终身会员的兑换码。</p>\n<h2>导入导出</h2>\n<p>这周所有的代码工作都是在优化导入导出。因为更改了日记模型数据，所以导入导出也需要跟着修改。之前存在一个严重的问题是，如果一次性导出大量的数据，会因为爆内存而闪退。这次修复了这个问题，而且还优化了整个交互，加上了各个步骤的提示和进度条。</p>\n<h2>HIG</h2>\n<p>因为需要重构导入导出的交互，重读了苹果官方的《<strong><strong>人机界面指南</strong></strong>》关于模态化的这一部分。SwiftUI 在模态化的这方面主要有这几种形式：Sheet 、Alert 、Confirmation Dialog 、Popover 。这个 Confirmation Dialog 是 iOS 15 就加入的，用来代替之前的 Action Sheet ，而我居然才知道……</p>\n<p>我打算今后尽可能多用 SwiftUI 提供的默认样式，而不是使用各种第三方的库。</p>\n<p>值得一提的是，WWDC23 后，HIG 不仅更新了最新的设计指南，还加入了中文版本，这样完全值得再读一遍了。</p>\n<p><img alt=\"HIG.jpeg\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://img.way2solo.com/photo/vulgur/2ef0b80e-74d9-49f9-87ea-e6cc0c6be1f5.jpeg?imageView2/2/w/1920/q/100\"/></p>\n<h1>买买买</h1>\n<p>整个 6 月买了不少东西。</p>\n<ul>\n<li>2T 的 SSD 移动硬盘</li>\n<li>空气炸锅</li>\n<li>65W 氮化镓 Type- C+USB 插座</li>\n<li>为了玩 Switch ，买了个冰原狼手柄</li>\n<li>一堆咖啡胶囊和酸梅汤浓缩汁</li>\n<li>一本书，《焦虑的意义》</li>\n<li>八电极体脂秤，先买了一个京东京造的，到手后立即退货，又买了个云康宝的</li>\n<li>漫步者 1080BT 音箱</li>\n</ul>\n<p><img alt=\"buy.jpeg\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://img.way2solo.com/photo/vulgur/3941cffd-303b-40a4-b9a0-70ed82a52d55.jpeg?imageView2/2/w/1920/q/100\"/></p>\n",
+  "supplements": [],
+  "replies": [
+    {
+      "id": 13310738,
+      "author": "hiveex",
+      "created": 1688524423,
+      "content": "不容易",
+      "content_rendered": "不容易"
+    },
+    {
+      "id": 13311941,
+      "author": "1002xin",
+      "created": 1688535553,
+      "content": "友情提醒，绿联的电器谨慎使用，梵想的 SSD 同理，三星 T7 其实也蛮便宜的了",
+      "content_rendered": "友情提醒，绿联的电器谨慎使用，梵想的 SSD 同理，三星 T7 其实也蛮便宜的了"
+    },
+    {
+      "id": 13315209,
+      "author": "fo0o7hU2tr6v6TCe",
+      "created": 1688605907,
+      "content": "我想问一下图四这个桌面是摆拍 还是平时正常的情况下..... ( 回头看了一眼我的桌面，沉默的按下了回复按钮 :)",
+      "content_rendered": "我想问一下图四这个桌面是摆拍 还是平时正常的情况下..... ( 回头看了一眼我的桌面，沉默的按下了回复按钮 :)"
+    },
+    {
+      "id": 13317376,
+      "author": "vulgur",
+      "created": 1688626136,
+      "content": "@hzjseasea 摆拍",
+      "content_rendered": "@<a href=\"/member/hzjseasea\">hzjseasea</a> 摆拍"
+    },
+    {
+      "id": 13336345,
+      "author": "yhy45678",
+      "created": 1689037815,
+      "content": "楼主是全职在家开发了么？想了解下主要收入来源",
+      "content_rendered": "楼主是全职在家开发了么？想了解下主要收入来源"
+    },
+    {
+      "id": 13336811,
+      "author": "vulgur",
+      "created": 1689040596,
+      "content": "@yhy45678 对，收入就是 App 的内购",
+      "content_rendered": "@<a href=\"/member/yhy45678\">yhy45678</a> 对，收入就是 App 的内购"
+    }
+  ],
+  "reply_pages": 1,
+  "fetched_at": "2026-10-06T03:33:43.749Z"
+}

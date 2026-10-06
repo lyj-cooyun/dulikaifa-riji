@@ -1,0 +1,192 @@
+{
+  "id": 936754,
+  "title": "独立开发周记 #11： 4 月总结、华为下架、换掉自记账",
+  "episode": {
+    "ep": 11,
+    "ep2": null
+  },
+  "node": "programmer",
+  "url": "https://www.v2ex.com/t/936754",
+  "created": 1682940814,
+  "last_touched": 1683066123,
+  "member": "vulgur",
+  "replies_count": 23,
+  "stars": 9,
+  "thanks": 3,
+  "content": "![题图是极简时钟下个版本里一个弃稿的背景图，有人发现是什么名场面了吗？]( https://img.way2solo.com/photo/vulgur/423b2edb-ac86-4bff-a371-2f9d971ab381.jpeg?imageView2/2/w/1920/q/100)\r\n\r\n题图是极简时钟下个版本里一个弃稿的 AI 生成的背景图，有人发现是什么名场面了吗？\r\n\r\n## 2023 ，0424-0430\r\n\r\n2023 年的三分之一过去了，四月份的收入，有涨有跌。\r\n\r\n- Google Play ，多了 20%\r\n- 国内安卓市场，少了 16%\r\n- App Store ，少了 13%\r\n\r\n## 极简时钟 iOS ([App Store]( https://apps.apple.com/cn/app/id1265404088))\r\n\r\n四月份的下载量下降了 4.2%，要不是在韩国激增的那三天，下载量会更低。\r\n\r\n整个四月只更新了一次 bug 修复，顺带更新了一波关键词，现在来看有点负优化了呢……不过这些关键词的变化也没有对下载量有任何影响。\r\n\r\n![关键词变化]( https://img.way2solo.com/photo/vulgur/80066806-dd7e-4b90-aeaa-9c40073fd66d.jpeg?imageView2/2/w/1920/q/100)\r\n\r\n\r\n周六的时候收到一个美国用户写的长篇评论，没想到因为整点报时这个小功能得到了五星好评。\r\n\r\n![IMG_4099.PNG]( https://img.way2solo.com/photo/vulgur/ff1347e7-e82a-4759-9838-6571195eda07.jpeg?imageView2/2/w/1920/q/100)\r\n\r\n## 极简时钟 Android\r\n\r\n这周一收到邮件，一看标题，眼睛一黑。极简时钟的国内安卓版在华为应用市场突然被下架，理由是没有 ICP 备案。\r\n\r\n![IMG_4045.PNG]( https://img.way2solo.com/photo/vulgur/841be4ef-5d30-4821-a36f-239c294b467b.jpeg?imageView2/2/w/1920/q/100)\r\n\r\n这个 ICP 备案其实我是有的，因为小米商店的上架要求就必须有这个东西，但是我不知道华为从什么时候开始也把这个东西列为必需了。之前独立开发者群里的其他开发者也收到了华为关于这方面的提示邮件，当时我还不以为意，收到下降通知后再翻看邮箱，果然半个月前也收到过同样的提示邮件……\r\n\r\n于是我提交了在腾讯云的后台备案截图（在小米上传的就是这张图），又被华为打回了，理由是必须上传工信部的网页截图，好吧，按要求完成后就顺利上架了。\r\n\r\n本来华为的鸿蒙系统就各种 bug ，这次又下架了三天，给四月国内本不富裕的收入雪上加霜了。\r\n\r\n![iShot_2023-05-01_17.58.39.png]( https://img.way2solo.com/photo/vulgur/1f7e6b19-e851-4ec1-bc9f-a2bcb5470b5f.jpeg?imageView2/2/w/1920/q/100)\r\n\r\n## 极简日记 iOS ([App Store]( https://apps.apple.com/cn/app/id1568936702))\r\n\r\n四月份的下载量下降了 28%！\r\n\r\n和极简时钟一样将近一个月没有更新版本了，因为整个四月的绝大部分精力都分配给极简时钟了。\r\n\r\n不过这周还是提交了两个 TF ，修复了两个 bug ，争取下周提交正式版：\r\n\r\n- 部分页面的按钮好像因为 padding 的问题导致无法点击或者需要多次点击才会生效\r\n- 无法给日记添加从微信里保存的图片\r\n\r\n第二个 bug 是因为`PHPickerResult` 无法将微信保存的图片识别成`UIImage`，问了下 Claude ，直接就给出了解决方案。\r\n\r\n![iShot_2023-05-01_18.11.46.png]( https://img.way2solo.com/photo/vulgur/57c224e0-e030-4d14-990d-20f381967e28.jpeg?imageView2/2/w/1920/q/100)\r\n\r\n## 更换代账公司\r\n\r\n这周还有一件可能关系到极简软件工作室未来长久发展的一件大事，就是更换了代账公司。\r\n\r\n过去的两年里，我用的是独立开发者圈子里比较有名（或许是我个人认为的有名）的自记账，在没出事之前，我也向其他开发者推荐过这家公司。但是，自记账去年连续两个季度给我计算错了经营所得税，第二次更是离谱地计算错了小数点，从 400 多变成 4000 多。在我的反复质疑下，才修复了错误。离谱的是，加上我一共 28 个人的企业群里，另外 27 个人没有一个人出来道歉，就这么黑不提白不提蒙混过去了，从那时我就决定到期后不再续费。\r\n\r\n![人浮于事的微信群]( https://img.way2solo.com/photo/vulgur/58fd69d8-b4e0-4da8-85e6-cf4426951c07.jpeg?imageView2/2/w/1920/q/100)\r\n\r\n本来想找其他的在线代账服务，发现只有阿里云和华为云两个选择。阿里云一年 1800 ，咨询了使用阿里云代账的开发者，发现和自记账的服务方式基本没有差别，可能就是客服回复更及时更详细一些。\r\n\r\n最终找的是本地的一家代账报税公司，价格比阿里云还贵，但是图得就是一个省心。自记账还需要自己上传发票，自己提供工资单、流水和明细，自己申报工商年报，而本地的公司就完全不用我再管这些事情了。\r\n\r\n\r\n人浮于事的微信群\r\n\r\n[公众号原文]( https://mp.weixin.qq.com/s/cBUvOFLGdMNOs0-XKpX_sw)\r\n\r\n## 往期周记\r\n- [独立开发周记 #10：不明原因的下载量暴涨、调休与我无关、一个人生成就达成]( https://www.v2ex.com/t/935137#reply1)\r\n- [独立开发周记 #9：将 Slack 接入工作流、重构的收益开始显现、AI 翻唱惊喜连连]( https://www.v2ex.com/t/933104#reply4)\r\n- [独立开发周报 #8：开始运动]( https://www.v2ex.com/t/931256#reply1)\r\n- [独立开发周报 #7：3 月总结]( https://www.v2ex.com/t/929393#reply2)\r\n- [独立开发周报 #6：国内安卓不值得]( https://www.v2ex.com/t/927541#reply6)\r\n- [独立开发周记 #5：AI 助力]( https://www.v2ex.com/t/925552#reply11)\r\n- [独立开发周报 #4：第一次尝试 ChatGPT API]( https://www.v2ex.com/t/923622#reply10)",
+  "content_rendered": "<p><img alt=\"题图是极简时钟下个版本里一个弃稿的背景图，有人发现是什么名场面了吗？\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://img.way2solo.com/photo/vulgur/423b2edb-ac86-4bff-a371-2f9d971ab381.jpeg?imageView2/2/w/1920/q/100\"/></p>\n<p>题图是极简时钟下个版本里一个弃稿的 AI 生成的背景图，有人发现是什么名场面了吗？</p>\n<h2>2023 ，0424-0430</h2>\n<p>2023 年的三分之一过去了，四月份的收入，有涨有跌。</p>\n<ul>\n<li>Google Play ，多了 20%</li>\n<li>国内安卓市场，少了 16%</li>\n<li>App Store ，少了 13%</li>\n</ul>\n<h2>极简时钟 iOS (<a href=\"https://apps.apple.com/cn/app/id1265404088\" rel=\"nofollow\">App Store</a>)</h2>\n<p>四月份的下载量下降了 4.2%，要不是在韩国激增的那三天，下载量会更低。</p>\n<p>整个四月只更新了一次 bug 修复，顺带更新了一波关键词，现在来看有点负优化了呢……不过这些关键词的变化也没有对下载量有任何影响。</p>\n<p><img alt=\"关键词变化\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://img.way2solo.com/photo/vulgur/80066806-dd7e-4b90-aeaa-9c40073fd66d.jpeg?imageView2/2/w/1920/q/100\"/></p>\n<p>周六的时候收到一个美国用户写的长篇评论，没想到因为整点报时这个小功能得到了五星好评。</p>\n<p><img alt=\"IMG_4099.PNG\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://img.way2solo.com/photo/vulgur/ff1347e7-e82a-4759-9838-6571195eda07.jpeg?imageView2/2/w/1920/q/100\"/></p>\n<h2>极简时钟 Android</h2>\n<p>这周一收到邮件，一看标题，眼睛一黑。极简时钟的国内安卓版在华为应用市场突然被下架，理由是没有 ICP 备案。</p>\n<p><img alt=\"IMG_4045.PNG\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://img.way2solo.com/photo/vulgur/841be4ef-5d30-4821-a36f-239c294b467b.jpeg?imageView2/2/w/1920/q/100\"/></p>\n<p>这个 ICP 备案其实我是有的，因为小米商店的上架要求就必须有这个东西，但是我不知道华为从什么时候开始也把这个东西列为必需了。之前独立开发者群里的其他开发者也收到了华为关于这方面的提示邮件，当时我还不以为意，收到下降通知后再翻看邮箱，果然半个月前也收到过同样的提示邮件……</p>\n<p>于是我提交了在腾讯云的后台备案截图（在小米上传的就是这张图），又被华为打回了，理由是必须上传工信部的网页截图，好吧，按要求完成后就顺利上架了。</p>\n<p>本来华为的鸿蒙系统就各种 bug ，这次又下架了三天，给四月国内本不富裕的收入雪上加霜了。</p>\n<p><img alt=\"iShot_2023-05-01_17.58.39.png\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://img.way2solo.com/photo/vulgur/1f7e6b19-e851-4ec1-bc9f-a2bcb5470b5f.jpeg?imageView2/2/w/1920/q/100\"/></p>\n<h2>极简日记 iOS (<a href=\"https://apps.apple.com/cn/app/id1568936702\" rel=\"nofollow\">App Store</a>)</h2>\n<p>四月份的下载量下降了 28%！</p>\n<p>和极简时钟一样将近一个月没有更新版本了，因为整个四月的绝大部分精力都分配给极简时钟了。</p>\n<p>不过这周还是提交了两个 TF ，修复了两个 bug ，争取下周提交正式版：</p>\n<ul>\n<li>部分页面的按钮好像因为 padding 的问题导致无法点击或者需要多次点击才会生效</li>\n<li>无法给日记添加从微信里保存的图片</li>\n</ul>\n<p>第二个 bug 是因为<code>PHPickerResult</code> 无法将微信保存的图片识别成<code>UIImage</code>，问了下 Claude ，直接就给出了解决方案。</p>\n<p><img alt=\"iShot_2023-05-01_18.11.46.png\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://img.way2solo.com/photo/vulgur/57c224e0-e030-4d14-990d-20f381967e28.jpeg?imageView2/2/w/1920/q/100\"/></p>\n<h2>更换代账公司</h2>\n<p>这周还有一件可能关系到极简软件工作室未来长久发展的一件大事，就是更换了代账公司。</p>\n<p>过去的两年里，我用的是独立开发者圈子里比较有名（或许是我个人认为的有名）的自记账，在没出事之前，我也向其他开发者推荐过这家公司。但是，自记账去年连续两个季度给我计算错了经营所得税，第二次更是离谱地计算错了小数点，从 400 多变成 4000 多。在我的反复质疑下，才修复了错误。离谱的是，加上我一共 28 个人的企业群里，另外 27 个人没有一个人出来道歉，就这么黑不提白不提蒙混过去了，从那时我就决定到期后不再续费。</p>\n<p><img alt=\"人浮于事的微信群\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://img.way2solo.com/photo/vulgur/58fd69d8-b4e0-4da8-85e6-cf4426951c07.jpeg?imageView2/2/w/1920/q/100\"/></p>\n<p>本来想找其他的在线代账服务，发现只有阿里云和华为云两个选择。阿里云一年 1800 ，咨询了使用阿里云代账的开发者，发现和自记账的服务方式基本没有差别，可能就是客服回复更及时更详细一些。</p>\n<p>最终找的是本地的一家代账报税公司，价格比阿里云还贵，但是图得就是一个省心。自记账还需要自己上传发票，自己提供工资单、流水和明细，自己申报工商年报，而本地的公司就完全不用我再管这些事情了。</p>\n<p>人浮于事的微信群</p>\n<p><a href=\"https://mp.weixin.qq.com/s/cBUvOFLGdMNOs0-XKpX_sw\" rel=\"nofollow\">公众号原文</a></p>\n<h2>往期周记</h2>\n<ul>\n<li><a href=\"https://www.v2ex.com/t/935137#reply1\" rel=\"nofollow\">独立开发周记 #10：不明原因的下载量暴涨、调休与我无关、一个人生成就达成</a></li>\n<li><a href=\"https://www.v2ex.com/t/933104#reply4\" rel=\"nofollow\">独立开发周记 #9：将 Slack 接入工作流、重构的收益开始显现、AI 翻唱惊喜连连</a></li>\n<li><a href=\"https://www.v2ex.com/t/931256#reply1\" rel=\"nofollow\">独立开发周报 #8：开始运动</a></li>\n<li><a href=\"https://www.v2ex.com/t/929393#reply2\" rel=\"nofollow\">独立开发周报 #7：3 月总结</a></li>\n<li><a href=\"https://www.v2ex.com/t/927541#reply6\" rel=\"nofollow\">独立开发周报 #6：国内安卓不值得</a></li>\n<li><a href=\"https://www.v2ex.com/t/925552#reply11\" rel=\"nofollow\">独立开发周记 #5：AI 助力</a></li>\n<li><a href=\"https://www.v2ex.com/t/923622#reply10\" rel=\"nofollow\">独立开发周报 #4：第一次尝试 ChatGPT API</a></li>\n</ul>\n",
+  "supplements": [
+    {
+      "id": 155536,
+      "content": "自记账的创始人之一已经给我打电话解释和道歉了",
+      "content_rendered": "自记账的创始人之一已经给我打电话解释和道歉了",
+      "syntax": 0,
+      "created": 1683555969
+    }
+  ],
+  "replies": [
+    {
+      "id": 13021675,
+      "author": "pengpengpeng",
+      "created": 1682946313,
+      "content": "额，自记账这么不认真的么。\r\n还有个公司想用下他们服务呢。",
+      "content_rendered": "额，自记账这么不认真的么。<br />还有个公司想用下他们服务呢。"
+    },
+    {
+      "id": 13021981,
+      "author": "vulgur",
+      "created": 1682957569,
+      "content": "@pengpengpeng 不止我一个人",
+      "content_rendered": "@<a href=\"/member/pengpengpeng\">pengpengpeng</a> 不止我一个人"
+    },
+    {
+      "id": 13022430,
+      "author": "bagel",
+      "created": 1682994204,
+      "content": "就一小破公司，哪有能力搞定自动记账报税，阿里都搞不定。记账属于劳动密集型产业，我不想挣辛苦钱怎么办？那就差异化走线上营销，加各种独立开发者群，立人设我面向独立开发者，虚假宣传能做到全自动，价格还低。实际是价低质更次，成本花在营销费用而不是研发上。",
+      "content_rendered": "就一小破公司，哪有能力搞定自动记账报税，阿里都搞不定。记账属于劳动密集型产业，我不想挣辛苦钱怎么办？那就差异化走线上营销，加各种独立开发者群，立人设我面向独立开发者，虚假宣传能做到全自动，价格还低。实际是价低质更次，成本花在营销费用而不是研发上。"
+    },
+    {
+      "id": 13022581,
+      "author": "user667788",
+      "created": 1682997388,
+      "content": "大哥  你同时用了 swift 和 java 来开发  ios 和安卓平台吗 （你用了两种语言来开发吗）",
+      "content_rendered": "大哥  你同时用了 swift 和 java 来开发  ios 和安卓平台吗 （你用了两种语言来开发吗）"
+    },
+    {
+      "id": 13022726,
+      "author": "vulgur",
+      "created": 1683001711,
+      "content": "@user667788 安卓用 kotlin ，iOS 用 swift",
+      "content_rendered": "@<a href=\"/member/user667788\">user667788</a> 安卓用 kotlin ，iOS 用 swift"
+    },
+    {
+      "id": 13024165,
+      "author": "Nugine0",
+      "created": 1683062481,
+      "content": "题图是 EVA ？",
+      "content_rendered": "题图是 EVA ？"
+    },
+    {
+      "id": 13024293,
+      "author": "angkec",
+      "created": 1683075689,
+      "content": "@vulgur 不用 flutter 统一两个平台吗",
+      "content_rendered": "@<a href=\"/member/vulgur\">vulgur</a> 不用 flutter 统一两个平台吗"
+    },
+    {
+      "id": 13024385,
+      "author": "vulgur",
+      "created": 1683078996,
+      "content": "@Nugine0 bingo",
+      "content_rendered": "@<a href=\"/member/Nugine0\">Nugine0</a> bingo"
+    },
+    {
+      "id": 13024388,
+      "author": "vulgur",
+      "created": 1683079059,
+      "content": "@angkec 不用，两端有很多不同之处",
+      "content_rendered": "@<a href=\"/member/angkec\">angkec</a> 不用，两端有很多不同之处"
+    },
+    {
+      "id": 13024763,
+      "author": "nnegier",
+      "created": 1683089060,
+      "content": "@vulgur 确实，不过牛的呀，两端都会都不用 flutter ，一个界面写两遍",
+      "content_rendered": "@<a href=\"/member/vulgur\">vulgur</a> 确实，不过牛的呀，两端都会都不用 flutter ，一个界面写两遍"
+    },
+    {
+      "id": 13024765,
+      "author": "nnegier",
+      "created": 1683089098,
+      "content": "@vulgur 我看你有在做推广，一个下载量在华为是多少钱呀",
+      "content_rendered": "@<a href=\"/member/vulgur\">vulgur</a> 我看你有在做推广，一个下载量在华为是多少钱呀"
+    },
+    {
+      "id": 13025372,
+      "author": "vulgur",
+      "created": 1683108115,
+      "content": "@nnegier 两个人各写一端",
+      "content_rendered": "@<a href=\"/member/nnegier\">nnegier</a> 两个人各写一端"
+    },
+    {
+      "id": 13025373,
+      "author": "vulgur",
+      "created": 1683108129,
+      "content": "@nnegier 没有推广",
+      "content_rendered": "@<a href=\"/member/nnegier\">nnegier</a> 没有推广"
+    },
+    {
+      "id": 13025439,
+      "author": "itart",
+      "created": 1683110315,
+      "content": "能不能对 macos 平台作下优化，如全屏显示、锁屏屏保等？",
+      "content_rendered": "能不能对 macos 平台作下优化，如全屏显示、锁屏屏保等？"
+    },
+    {
+      "id": 13025476,
+      "author": "vulgur",
+      "created": 1683111654,
+      "content": "@newte88 macOS 也可以全屏啊，屏保还没想过，不知道这个需求量有多少",
+      "content_rendered": "@<a href=\"/member/newte88\">newte88</a> macOS 也可以全屏啊，屏保还没想过，不知道这个需求量有多少"
+    },
+    {
+      "id": 13026010,
+      "author": "nnegier",
+      "created": 1683126660,
+      "content": "@vulgur 华为有的，能看到",
+      "content_rendered": "@<a href=\"/member/vulgur\">vulgur</a> 华为有的，能看到"
+    },
+    {
+      "id": 13026412,
+      "author": "vulgur",
+      "created": 1683162202,
+      "content": "@nnegier 怎么看到的？我很好奇，难道有人默默无闻帮我推广？",
+      "content_rendered": "@<a href=\"/member/nnegier\">nnegier</a> 怎么看到的？我很好奇，难道有人默默无闻帮我推广？"
+    },
+    {
+      "id": 13026496,
+      "author": "0littleboy",
+      "created": 1683163122,
+      "content": "OP 主要靠什么收入的，一个月能填饱肚子吗",
+      "content_rendered": "OP 主要靠什么收入的，一个月能填饱肚子吗"
+    },
+    {
+      "id": 13026819,
+      "author": "vulgur",
+      "created": 1683166013,
+      "content": "@0littleboy app 内购啊，能填饱肚子",
+      "content_rendered": "@<a href=\"/member/0littleboy\">0littleboy</a> app 内购啊，能填饱肚子"
+    },
+    {
+      "id": 13046993,
+      "author": "justfun",
+      "created": 1683536833,
+      "content": "我 21 年的时候用自记账直接给我漏报了一个季度导致我被税局罚款，当时也没给我补偿 也没给我道歉，确实不太靠谱。现在找的本地记账公司才 1200 一年",
+      "content_rendered": "我 21 年的时候用自记账直接给我漏报了一个季度导致我被税局罚款，当时也没给我补偿 也没给我道歉，确实不太靠谱。现在找的本地记账公司才 1200 一年"
+    },
+    {
+      "id": 13048295,
+      "author": "vulgur",
+      "created": 1683555889,
+      "content": "@justfun 1200 好便宜啊",
+      "content_rendered": "@<a href=\"/member/justfun\">justfun</a> 1200 好便宜啊"
+    },
+    {
+      "id": 15174297,
+      "author": "milkv",
+      "created": 1724662238,
+      "content": "op 作为独立开发者很厉害，但是看到你 appstore 中 app 注册是个人，并不是公司，为什么还要代理记账？",
+      "content_rendered": "op 作为独立开发者很厉害，但是看到你 appstore 中 app 注册是个人，并不是公司，为什么还要代理记账？"
+    },
+    {
+      "id": 15175370,
+      "author": "vulgur",
+      "created": 1724673927,
+      "content": "@milkv 国内安卓市场需要企业开发者账号",
+      "content_rendered": "@<a href=\"/member/milkv\">milkv</a> 国内安卓市场需要企业开发者账号"
+    }
+  ],
+  "reply_pages": 2,
+  "fetched_at": "2026-10-06T03:33:52.569Z"
+}

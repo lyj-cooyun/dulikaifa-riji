@@ -1,0 +1,22 @@
+{
+  "id": 1020555,
+  "title": "独立开发周记 #55： 2 月总结&新 App 上架",
+  "episode": {
+    "ep": 55,
+    "ep2": null
+  },
+  "node": "weekly",
+  "url": "https://www.v2ex.com/t/1020555",
+  "created": 1709552381,
+  "last_touched": 1709552381,
+  "member": "vulgur",
+  "replies_count": 0,
+  "stars": 0,
+  "thanks": 0,
+  "content": "# 2024 ，第九周，0226-0303\r\n\r\n连续两个月没有点外卖，继续保持！\r\n\r\n# 2 月数据总结\r\n\r\n## 下载量（只统计极简时钟）\r\n\r\n- App Store ，下降 17.73%\r\n- Google Play ，下降 17.70%\r\n- 国内安卓市场，下降 0.51%\r\n\r\n## 收入\r\n\r\n- App Store ，下降 3.3%\r\n- Google Play ，下降 10.24%\r\n- Admob ，增长 14.18%\r\n- 国内安卓市场，增长 35.19%\r\n\r\n2 月份都在忙安卓端，极简时钟和极简日记都更新了版本，新 App 也上架了。但是极简时钟的下载量在 GP 上整个月都在下降，就很奇怪。相反的是国内安卓市场的付费率显著提升，可能是受寒假快结束的影响吧。\r\n\r\n![]( https://img.way2solo.com/photo/vulgur/66adfe76-483e-4ecf-bbd3-10f3d3806c40.png?imageView2/2/w/1920/q/100)\r\n\r\n# 极简便签\r\n\r\n极简系列 App 又添新成员。\r\n\r\n极简便签的前身是安卓小哥的个人作品，但是因为国内越来越严苛的上架要求，这个 App 不得不下线了。为了让这个 App 能够继续运营下去，安卓小哥提议将这个 App 转到极简软件工作室名下，于是从去年 11 月就开始筹划这个 App 的翻新和上架工作。\r\n\r\n终于在上周一切准备就绪了，周四晚上在小米应用市场提交了。那天晚上，我做了个梦，梦见这个 App 上架后，国内安卓的收入一天超过了 3200……没想到的是周五上午就收到了上架的邮件通知，居然一次性就顺利通过了审核。之后也在华为、Vivo 、Oppo 都提交了，但是这三家还在审核中。\r\n\r\n上架第一天，有 30 多个下载，有一个付费，我觉得在完全零宣传下，这样也算是不错了。\r\n\r\n![]( https://img.way2solo.com/photo/vulgur/757f74b0-ad62-4880-a7ef-c838572fd51d.jpg?imageView2/2/w/1920/q/100)\r\n\r\n在修改极简便签的代码过程中，我发现一个最简单不过的赋值语句 `val name = “text”` 居然出现了编译错误，而且其他的代码居然都是以分号结尾的。再仔细一看，原来这是一个 java 文件……这个 App 创建于 2016 年，当时 Kotlin 刚刚发布第一个版本，所以安卓小哥当时还是用 java 写的，而我没写 java 好多年了，一时竟然茫然了。\r\n\r\n# 北京一日往返\r\n\r\n上周日刚从北京回来，这周三又去了一趟，当日往返。\r\n\r\n赞美高铁🚄，早上从家八点出发，在北京吃了顿胡辣汤，还逛了逛商场，买了两件优衣库，又买了一堆零食，晚上七点多就到家了。\r\n\r\n![]( https://img.way2solo.com/photo/vulgur/024184a9-7618-48b2-b45b-3cadc2475bbd.jpg?imageView2/2/w/1920/q/100)",
+  "content_rendered": "<h1>2024 ，第九周，0226-0303</h1>\n<p>连续两个月没有点外卖，继续保持！</p>\n<h1>2 月数据总结</h1>\n<h2>下载量（只统计极简时钟）</h2>\n<ul>\n<li>App Store ，下降 17.73%</li>\n<li>Google Play ，下降 17.70%</li>\n<li>国内安卓市场，下降 0.51%</li>\n</ul>\n<h2>收入</h2>\n<ul>\n<li>App Store ，下降 3.3%</li>\n<li>Google Play ，下降 10.24%</li>\n<li>Admob ，增长 14.18%</li>\n<li>国内安卓市场，增长 35.19%</li>\n</ul>\n<p>2 月份都在忙安卓端，极简时钟和极简日记都更新了版本，新 App 也上架了。但是极简时钟的下载量在 GP 上整个月都在下降，就很奇怪。相反的是国内安卓市场的付费率显著提升，可能是受寒假快结束的影响吧。</p>\n<p><img alt=\"\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://img.way2solo.com/photo/vulgur/66adfe76-483e-4ecf-bbd3-10f3d3806c40.png?imageView2/2/w/1920/q/100\"/></p>\n<h1>极简便签</h1>\n<p>极简系列 App 又添新成员。</p>\n<p>极简便签的前身是安卓小哥的个人作品，但是因为国内越来越严苛的上架要求，这个 App 不得不下线了。为了让这个 App 能够继续运营下去，安卓小哥提议将这个 App 转到极简软件工作室名下，于是从去年 11 月就开始筹划这个 App 的翻新和上架工作。</p>\n<p>终于在上周一切准备就绪了，周四晚上在小米应用市场提交了。那天晚上，我做了个梦，梦见这个 App 上架后，国内安卓的收入一天超过了 3200……没想到的是周五上午就收到了上架的邮件通知，居然一次性就顺利通过了审核。之后也在华为、Vivo 、Oppo 都提交了，但是这三家还在审核中。</p>\n<p>上架第一天，有 30 多个下载，有一个付费，我觉得在完全零宣传下，这样也算是不错了。</p>\n<p><img alt=\"\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://img.way2solo.com/photo/vulgur/757f74b0-ad62-4880-a7ef-c838572fd51d.jpg?imageView2/2/w/1920/q/100\"/></p>\n<p>在修改极简便签的代码过程中，我发现一个最简单不过的赋值语句 <code>val name = “text”</code> 居然出现了编译错误，而且其他的代码居然都是以分号结尾的。再仔细一看，原来这是一个 java 文件……这个 App 创建于 2016 年，当时 Kotlin 刚刚发布第一个版本，所以安卓小哥当时还是用 java 写的，而我没写 java 好多年了，一时竟然茫然了。</p>\n<h1>北京一日往返</h1>\n<p>上周日刚从北京回来，这周三又去了一趟，当日往返。</p>\n<p>赞美高铁🚄，早上从家八点出发，在北京吃了顿胡辣汤，还逛了逛商场，买了两件优衣库，又买了一堆零食，晚上七点多就到家了。</p>\n<p><img alt=\"\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://img.way2solo.com/photo/vulgur/024184a9-7618-48b2-b45b-3cadc2475bbd.jpg?imageView2/2/w/1920/q/100\"/></p>\n",
+  "supplements": [],
+  "replies": [],
+  "reply_pages": 1,
+  "fetched_at": "2026-10-06T03:33:03.610Z"
+}

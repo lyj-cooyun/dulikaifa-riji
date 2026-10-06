@@ -1,0 +1,79 @@
+{
+  "id": 965264,
+  "title": "独立开发周记 #26：开辟收入新渠道",
+  "episode": {
+    "ep": 26,
+    "ep2": null
+  },
+  "node": "programmer",
+  "url": "https://www.v2ex.com/t/965264",
+  "created": 1692019349,
+  "last_touched": 1692035290,
+  "member": "vulgur",
+  "replies_count": 8,
+  "stars": 15,
+  "thanks": 0,
+  "content": "# 2023 ，0807-0813\r\n\r\n这周很开心。在日本的朋友时隔三年终于回家了，在鲅鱼圈的朋友也特意赶回来，四个高中死党终于团聚。饭桌上才发觉我们已经相识 20 年了，饭后鬼使神差在高中门口合了个影，为 20 年友谊做了纪念。\r\n\r\n![]( https://img.way2solo.com/photo/vulgur/d3ba995a-8351-4463-aa33-ee40a2c8aca1.jpeg?imageView2/2/w/1920/q/100)\r\n\r\n\r\n# 极简时钟 iOS [App Store]( https://apps.apple.com/cn/app/id1265404088)\r\n\r\n周日发布了 4.3.2 ，从提交到上架历时 2 小时 44 分钟，这版本的更新内容有：\r\n\r\n- 修复了两个在数码表盘上日期的 bug\r\n- 增加了对越南语的本地化\r\n\r\n另外还在适配 iOS 17 的新功能。这周把 iPad mini 6 也升级到了 iOS 17 beta ，针对 iPad 的锁屏小组件进行了适配。一开始向 iPad 的锁屏里添加小组件始终无法拖进去，我还以为是 iPadOS beta 的 bug ，后来在 iPhone 上发现需要实现 `containerBackground` 小组件才能正常显示出来，估计这个 bug 就跟这个有关。果然，实现了`containerBackground` 小组件就可以添加到 iPad 的锁屏上了。\r\n\r\n![]( https://img.way2solo.com/photo/vulgur/cdf8340b-9359-4230-b596-a7e3deb36c53.jpeg?imageView2/2/w/1920/q/100)\r\n\r\n\r\n# YouTube 合作伙伴计划\r\n\r\n这周受即友 @**[Alchian 花生]( https://web.okjike.com/u/27BF807A-FA4D-4B01-AAFD-05FAAA674335)**启发，为了开通 YPP ，准备好好经营自己的 YouTube 账号。之前我的账号上传的视频都是 app 的演示视频，其中播放量最高的一个视频已经 27 万多了。满足 YPP 有两个条件，一是 1000 订阅数 ，二是 4000 小时的观看时长。我的账号的观看时长已经 2.4 万小时了，远超 4000 小时的要求，但是订阅数只有 400 多。\r\n\r\n![]( https://img.way2solo.com/photo/vulgur/0f4cded8-4f2f-48ca-bee4-afb11a31c8a7.jpeg?imageView2/2/w/1920/q/100)\r\n\r\n\r\n于是我在所有的社交账号上发文邀请大家关注我的账号。在即刻、朋友圈、Discord 上只有几个人最终关注，我在 Twitter 上发了一个推，好家伙，居然一天内得到了几百个赞和关注，导致我的 Twitter 关注数突破了 1000 ，YouTube 频道订阅也涨了 300 多，距离 1000 订阅还差 200 多。\r\n\r\n![]( https://img.way2solo.com/photo/vulgur/db4453be-7f9b-46ca-9a81-0fd61a900cf5.jpeg?imageView2/2/w/1920/q/100)\r\n\r\n\r\n而且，好像因为这个推文，当日的 App 收入也大涨，真希望天天都能收到这样的异常通知。\r\n\r\n![]( https://img.way2solo.com/photo/vulgur/564fc0a4-f491-441b-85cf-1ca3fde74e8f.jpeg?imageView2/2/w/1920/q/100)\r\n\r\n\r\n# 学习 UI\r\n\r\n其实我一直在学习 UI 设计，只不过是断断续续地非系统学习，东看一点西看一点，也在 Udemy 上买了课，直到去年和设计师开始合作才停止了自学。\r\n\r\n![]( https://img.way2solo.com/photo/vulgur/28481dba-024d-4d07-9521-0a2f99d86efd.jpeg?imageView2/2/w/1920/q/100)\r\n\r\n\r\n这周又陷入了设计焦虑。新 App 的 demo 太丑了，交互流程也有很多问题。我就想，假如我从现在开始认真地系统学习 UI/UX ，能否在 40 岁之前成为一个合格的 UI 设计师。\r\n\r\n周日下午产生了这个想法，于是问了 AI 如何成为一名 UI 设计师，又搜集了一些网上推荐的教程书籍。其中有一本书，Refactoring UI ，全书只有 200 多页，周日一个晚上就读完了，学习到了很多之前不知道的设计小技巧：\r\n\r\n- 原来好看的阴影是两层阴影\r\n- 原来让图片上的文字清晰的方法有四种\r\n- 原来标题字体和正文字体的行间距和字间距都是不同的\r\n- 原来一套设计系统的配色有可能达到几十个\r\n- 原来在边框加入强调色就可以很有“设计感”\r\n- 原来简单的重复图形就可以让背景显得很高级\r\n\r\n![]( https://img.way2solo.com/photo/vulgur/37bd47ff-499d-406b-aa4c-745d45a67144.jpeg?imageView2/2/w/1920/q/100)",
+  "content_rendered": "<h1>2023 ，0807-0813</h1>\n<p>这周很开心。在日本的朋友时隔三年终于回家了，在鲅鱼圈的朋友也特意赶回来，四个高中死党终于团聚。饭桌上才发觉我们已经相识 20 年了，饭后鬼使神差在高中门口合了个影，为 20 年友谊做了纪念。</p>\n<p><img alt=\"\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://img.way2solo.com/photo/vulgur/d3ba995a-8351-4463-aa33-ee40a2c8aca1.jpeg?imageView2/2/w/1920/q/100\"/></p>\n<h1>极简时钟 iOS <a href=\"https://apps.apple.com/cn/app/id1265404088\" rel=\"nofollow\">App Store</a></h1>\n<p>周日发布了 4.3.2 ，从提交到上架历时 2 小时 44 分钟，这版本的更新内容有：</p>\n<ul>\n<li>修复了两个在数码表盘上日期的 bug</li>\n<li>增加了对越南语的本地化</li>\n</ul>\n<p>另外还在适配 iOS 17 的新功能。这周把 iPad mini 6 也升级到了 iOS 17 beta ，针对 iPad 的锁屏小组件进行了适配。一开始向 iPad 的锁屏里添加小组件始终无法拖进去，我还以为是 iPadOS beta 的 bug ，后来在 iPhone 上发现需要实现 <code>containerBackground</code> 小组件才能正常显示出来，估计这个 bug 就跟这个有关。果然，实现了<code>containerBackground</code> 小组件就可以添加到 iPad 的锁屏上了。</p>\n<p><img alt=\"\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://img.way2solo.com/photo/vulgur/cdf8340b-9359-4230-b596-a7e3deb36c53.jpeg?imageView2/2/w/1920/q/100\"/></p>\n<h1>YouTube 合作伙伴计划</h1>\n<p>这周受即友 @**<a href=\"https://web.okjike.com/u/27BF807A-FA4D-4B01-AAFD-05FAAA674335\" rel=\"nofollow\">Alchian 花生</a>**启发，为了开通 YPP ，准备好好经营自己的 YouTube 账号。之前我的账号上传的视频都是 app 的演示视频，其中播放量最高的一个视频已经 27 万多了。满足 YPP 有两个条件，一是 1000 订阅数 ，二是 4000 小时的观看时长。我的账号的观看时长已经 2.4 万小时了，远超 4000 小时的要求，但是订阅数只有 400 多。</p>\n<p><img alt=\"\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://img.way2solo.com/photo/vulgur/0f4cded8-4f2f-48ca-bee4-afb11a31c8a7.jpeg?imageView2/2/w/1920/q/100\"/></p>\n<p>于是我在所有的社交账号上发文邀请大家关注我的账号。在即刻、朋友圈、Discord 上只有几个人最终关注，我在 Twitter 上发了一个推，好家伙，居然一天内得到了几百个赞和关注，导致我的 Twitter 关注数突破了 1000 ，YouTube 频道订阅也涨了 300 多，距离 1000 订阅还差 200 多。</p>\n<p><img alt=\"\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://img.way2solo.com/photo/vulgur/db4453be-7f9b-46ca-9a81-0fd61a900cf5.jpeg?imageView2/2/w/1920/q/100\"/></p>\n<p>而且，好像因为这个推文，当日的 App 收入也大涨，真希望天天都能收到这样的异常通知。</p>\n<p><img alt=\"\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://img.way2solo.com/photo/vulgur/564fc0a4-f491-441b-85cf-1ca3fde74e8f.jpeg?imageView2/2/w/1920/q/100\"/></p>\n<h1>学习 UI</h1>\n<p>其实我一直在学习 UI 设计，只不过是断断续续地非系统学习，东看一点西看一点，也在 Udemy 上买了课，直到去年和设计师开始合作才停止了自学。</p>\n<p><img alt=\"\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://img.way2solo.com/photo/vulgur/28481dba-024d-4d07-9521-0a2f99d86efd.jpeg?imageView2/2/w/1920/q/100\"/></p>\n<p>这周又陷入了设计焦虑。新 App 的 demo 太丑了，交互流程也有很多问题。我就想，假如我从现在开始认真地系统学习 UI/UX ，能否在 40 岁之前成为一个合格的 UI 设计师。</p>\n<p>周日下午产生了这个想法，于是问了 AI 如何成为一名 UI 设计师，又搜集了一些网上推荐的教程书籍。其中有一本书，Refactoring UI ，全书只有 200 多页，周日一个晚上就读完了，学习到了很多之前不知道的设计小技巧：</p>\n<ul>\n<li>原来好看的阴影是两层阴影</li>\n<li>原来让图片上的文字清晰的方法有四种</li>\n<li>原来标题字体和正文字体的行间距和字间距都是不同的</li>\n<li>原来一套设计系统的配色有可能达到几十个</li>\n<li>原来在边框加入强调色就可以很有“设计感”</li>\n<li>原来简单的重复图形就可以让背景显得很高级</li>\n</ul>\n<p><img alt=\"\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://img.way2solo.com/photo/vulgur/37bd47ff-499d-406b-aa4c-745d45a67144.jpeg?imageView2/2/w/1920/q/100\"/></p>\n",
+  "supplements": [],
+  "replies": [
+    {
+      "id": 13496947,
+      "author": "strrng",
+      "created": 1692019585,
+      "content": "鼓励鼓励!",
+      "content_rendered": "鼓励鼓励!"
+    },
+    {
+      "id": 13496986,
+      "author": "openefit",
+      "created": 1692020352,
+      "content": "想了解下收款采用的什么方案",
+      "content_rendered": "想了解下收款采用的什么方案"
+    },
+    {
+      "id": 13497294,
+      "author": "anson0370",
+      "created": 1692027075,
+      "content": "这本书是 tailwindcss 的作者写的，还没看过，感觉可以去看看 🤔",
+      "content_rendered": "这本书是 tailwindcss 的作者写的，还没看过，感觉可以去看看 🤔"
+    },
+    {
+      "id": 13497330,
+      "author": "yechentide",
+      "created": 1692028090,
+      "content": "看了下，这书好贵啊",
+      "content_rendered": "看了下，这书好贵啊"
+    },
+    {
+      "id": 13498483,
+      "author": "good1uck",
+      "created": 1692064727,
+      "content": "为什么不考虑 bilibili",
+      "content_rendered": "为什么不考虑 bilibili"
+    },
+    {
+      "id": 13499040,
+      "author": "Nasser",
+      "created": 1692068054,
+      "content": "Refactoring UI 这个书好贵呀，要 99 刀",
+      "content_rendered": "Refactoring UI 这个书好贵呀，要 99 刀"
+    },
+    {
+      "id": 13500660,
+      "author": "alexsunxl",
+      "created": 1692082777,
+      "content": "有点 cool",
+      "content_rendered": "有点 cool"
+    },
+    {
+      "id": 13571088,
+      "author": "huihuiHK",
+      "created": 1693361578,
+      "content": "@good1uck 大部分是学生，没购买力",
+      "content_rendered": "@<a href=\"/member/good1uck\">good1uck</a> 大部分是学生，没购买力"
+    }
+  ],
+  "reply_pages": 1,
+  "fetched_at": "2026-10-06T03:33:36.596Z"
+}

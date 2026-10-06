@@ -1,0 +1,79 @@
+{
+  "id": 1006939,
+  "title": "独立开发周记 #47：极简时钟日活新纪录",
+  "episode": {
+    "ep": 47,
+    "ep2": null
+  },
+  "node": "weekly",
+  "url": "https://www.v2ex.com/t/1006939",
+  "created": 1704717929,
+  "last_touched": 1707161971,
+  "member": "vulgur",
+  "replies_count": 8,
+  "stars": 0,
+  "thanks": 0,
+  "content": "# 2024 ，第一周，0101-0107\r\n\r\n![]( https://img.way2solo.com/photo/vulgur/5222cf5e-18bb-47b1-828d-032d375619a1.png?imageView2/2/w/1920/q/100)\r\n\r\n打算每一篇周记开头都放一个年度进度条，但是没找到太好看的，自己写一个？\r\n\r\n![]( https://img.way2solo.com/photo/vulgur/2d4c30e5-c5ab-4db7-a9b2-9bf5d68b8bf8.jpeg?imageView2/2/w/1920/q/100)\r\n\r\n打印了一张年历，过一天划掉一天，感受一下时间的进度。\r\n\r\n# 极简时钟安卓版日活新纪录\r\n\r\n因为统计的延迟，这周才知道极简时钟的 Google Play 版本在 2023 年 12 月 31 日这一天也创造了新纪录。\r\n\r\n![]( https://img.way2solo.com/photo/vulgur/744136f6-0429-44e4-a0ba-c4466ff2bb63.png?imageView2/2/w/1920/q/100)\r\n\r\n巧合的是，那一天友盟统计的国内日活也是 27000 。也就是说，那一天，极简时钟安卓版全球日活达到了 5W+😲\r\n\r\n# 订阅数量新纪录\r\n\r\n周四早上起来，发现 RevenueCat 上总的订阅数量突破了 1000 。\r\n\r\n但是这是我所有的 app 加起来的，3 个 app ，iOS 和 Android ，也就是相当于 6 个 app 。\r\n\r\n其中极简时钟 iOS 占 60%，极简时钟 Android 占 30%。\r\n\r\n随着订阅数的增加，月收入也跟着增加了。\r\n\r\n![]( https://img.way2solo.com/photo/vulgur/09b31819-3449-48c3-9d36-1255ab719e43.png?imageView2/2/w/1920/q/100)\r\n\r\n# 开始尝试 watchOS 开发\r\n\r\n想给极简日记加入通过 Apple Watch 的语音输入新建日记的功能，于是开始学习 watchOS 的开发。\r\n\r\n跟着 Apple 官方的例子简单体验了一下，因为现在都用的是 SwiftUI 来写 UI ，所以这部分应该不是难点。\r\n\r\n之前听说 Apple Watch 和 iPhone 之间的通信是难点，另外 watchOS 还有很多坑，所以准备下周从头开始系统学习一下。\r\n\r\n![]( https://img.way2solo.com/photo/vulgur/4d789a58-9e65-4899-9c8e-e58502ee1549.png?imageView2/2/w/1920/q/100)\r\n\r\n# Boss 直聘\r\n\r\n最近一直苦于找不到合适的兼职 UI 设计师，受一个即友启发，使用起了 Boss 直聘。\r\n\r\n想不到我居然有一天又下载了这个 app ，而这次，我是 Boss 😜。\r\n\r\n周五的时候发布了职位：兼职 UI 设计师，但是那一天只有两个人应聘。\r\n\r\n之前和其他设计师沟通，每次我都要把我的需求和想法重新说一遍。和卓总交流的时候，跟卓总学到了一招：写了一个文档，把跟设计相关的所有需求和流程都放进去，每次跟设计师交流让 TA 先看一遍这个文档。\r\n\r\n然后，我又优化了一下职位信息，在职位标题里加入了「远程」二字。\r\n\r\n周日下午开始，Boss 直聘上突然应聘者不断。如果是之前我就惨了， 需要一个个复制粘贴。这时候这个文档起到了大作用！ Boss 直聘上可以设置常用语，我把文档的网址加进去，让每个应聘者先看文档再继续交流。\r\n\r\n![]( https://img.way2solo.com/photo/vulgur/5df0705a-4f39-4cfc-a96f-f34eeaff0360.jpeg?imageView2/2/w/1920/q/100)\r\n\r\n这里不得不吐槽一下 Boss 直聘：\r\n\r\n1. App 有设置自动提问的功能，但是我这个职位不支持，问客服，客服也不知道，我只好给每个应聘者都手动发送一下文档网址\r\n2. 我招的是远程兼职，但每个职位必需设置一个办公地点，这大大降低了这个职位对可见度\r\n3. Boss 直聘会瞎 JB 推荐一些求职期望和职位完全不符的应聘者\r\n\r\n另外，关于 UI 设计师这个职位的应聘者的特征、简历、作品集以及如何筛选，这个也值得单写一期。\r\n\r\n# 存钱\r\n\r\n上一篇周记里提到过，2024 年我要存钱。\r\n\r\n为此，我决定一个月不点外卖，不下馆子。2024 第一个星期过去了，完美达成。\r\n\r\n这一个星期里，「存钱」这个念头一直在脑子里挥之不去，我就想能不能做成一个 App 。\r\n\r\n我简单地分析了一下，和现在已经是红海的「记账」 App 相比，「存钱」基本是相反的：\r\n\r\n- 记账是痛苦的，而存钱是让人安心的\r\n- 记账是减法，存钱是加法\r\n- 记账频率高，存钱频率低\r\n- 记账不好搞自动化，存钱可以搞自动化\r\n- 记账的形式单一，存钱法却有很多\r\n\r\n所以…… 下周调研一下竞品。",
+  "content_rendered": "<h1>2024 ，第一周，0101-0107</h1>\n<p><img alt=\"\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://img.way2solo.com/photo/vulgur/5222cf5e-18bb-47b1-828d-032d375619a1.png?imageView2/2/w/1920/q/100\"/></p>\n<p>打算每一篇周记开头都放一个年度进度条，但是没找到太好看的，自己写一个？</p>\n<p><img alt=\"\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://img.way2solo.com/photo/vulgur/2d4c30e5-c5ab-4db7-a9b2-9bf5d68b8bf8.jpeg?imageView2/2/w/1920/q/100\"/></p>\n<p>打印了一张年历，过一天划掉一天，感受一下时间的进度。</p>\n<h1>极简时钟安卓版日活新纪录</h1>\n<p>因为统计的延迟，这周才知道极简时钟的 Google Play 版本在 2023 年 12 月 31 日这一天也创造了新纪录。</p>\n<p><img alt=\"\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://img.way2solo.com/photo/vulgur/744136f6-0429-44e4-a0ba-c4466ff2bb63.png?imageView2/2/w/1920/q/100\"/></p>\n<p>巧合的是，那一天友盟统计的国内日活也是 27000 。也就是说，那一天，极简时钟安卓版全球日活达到了 5W+😲</p>\n<h1>订阅数量新纪录</h1>\n<p>周四早上起来，发现 RevenueCat 上总的订阅数量突破了 1000 。</p>\n<p>但是这是我所有的 app 加起来的，3 个 app ，iOS 和 Android ，也就是相当于 6 个 app 。</p>\n<p>其中极简时钟 iOS 占 60%，极简时钟 Android 占 30%。</p>\n<p>随着订阅数的增加，月收入也跟着增加了。</p>\n<p><img alt=\"\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://img.way2solo.com/photo/vulgur/09b31819-3449-48c3-9d36-1255ab719e43.png?imageView2/2/w/1920/q/100\"/></p>\n<h1>开始尝试 watchOS 开发</h1>\n<p>想给极简日记加入通过 Apple Watch 的语音输入新建日记的功能，于是开始学习 watchOS 的开发。</p>\n<p>跟着 Apple 官方的例子简单体验了一下，因为现在都用的是 SwiftUI 来写 UI ，所以这部分应该不是难点。</p>\n<p>之前听说 Apple Watch 和 iPhone 之间的通信是难点，另外 watchOS 还有很多坑，所以准备下周从头开始系统学习一下。</p>\n<p><img alt=\"\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://img.way2solo.com/photo/vulgur/4d789a58-9e65-4899-9c8e-e58502ee1549.png?imageView2/2/w/1920/q/100\"/></p>\n<h1>Boss 直聘</h1>\n<p>最近一直苦于找不到合适的兼职 UI 设计师，受一个即友启发，使用起了 Boss 直聘。</p>\n<p>想不到我居然有一天又下载了这个 app ，而这次，我是 Boss 😜。</p>\n<p>周五的时候发布了职位：兼职 UI 设计师，但是那一天只有两个人应聘。</p>\n<p>之前和其他设计师沟通，每次我都要把我的需求和想法重新说一遍。和卓总交流的时候，跟卓总学到了一招：写了一个文档，把跟设计相关的所有需求和流程都放进去，每次跟设计师交流让 TA 先看一遍这个文档。</p>\n<p>然后，我又优化了一下职位信息，在职位标题里加入了「远程」二字。</p>\n<p>周日下午开始，Boss 直聘上突然应聘者不断。如果是之前我就惨了， 需要一个个复制粘贴。这时候这个文档起到了大作用！ Boss 直聘上可以设置常用语，我把文档的网址加进去，让每个应聘者先看文档再继续交流。</p>\n<p><img alt=\"\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://img.way2solo.com/photo/vulgur/5df0705a-4f39-4cfc-a96f-f34eeaff0360.jpeg?imageView2/2/w/1920/q/100\"/></p>\n<p>这里不得不吐槽一下 Boss 直聘：</p>\n<ol>\n<li>App 有设置自动提问的功能，但是我这个职位不支持，问客服，客服也不知道，我只好给每个应聘者都手动发送一下文档网址</li>\n<li>我招的是远程兼职，但每个职位必需设置一个办公地点，这大大降低了这个职位对可见度</li>\n<li>Boss 直聘会瞎 JB 推荐一些求职期望和职位完全不符的应聘者</li>\n</ol>\n<p>另外，关于 UI 设计师这个职位的应聘者的特征、简历、作品集以及如何筛选，这个也值得单写一期。</p>\n<h1>存钱</h1>\n<p>上一篇周记里提到过，2024 年我要存钱。</p>\n<p>为此，我决定一个月不点外卖，不下馆子。2024 第一个星期过去了，完美达成。</p>\n<p>这一个星期里，「存钱」这个念头一直在脑子里挥之不去，我就想能不能做成一个 App 。</p>\n<p>我简单地分析了一下，和现在已经是红海的「记账」 App 相比，「存钱」基本是相反的：</p>\n<ul>\n<li>记账是痛苦的，而存钱是让人安心的</li>\n<li>记账是减法，存钱是加法</li>\n<li>记账频率高，存钱频率低</li>\n<li>记账不好搞自动化，存钱可以搞自动化</li>\n<li>记账的形式单一，存钱法却有很多</li>\n</ul>\n<p>所以…… 下周调研一下竞品。</p>\n",
+  "supplements": [],
+  "replies": [
+    {
+      "id": 14179138,
+      "author": "devliu1",
+      "created": 1704760461,
+      "content": "boss 发布职位需要公司吗",
+      "content_rendered": "boss 发布职位需要公司吗"
+    },
+    {
+      "id": 14179381,
+      "author": "rrubick",
+      "created": 1704762805,
+      "content": "请教楼主是在国内吗？如果是的话 google play 怎么收款呢？怎么避免成为下一个 cd 程序员？",
+      "content_rendered": "请教楼主是在国内吗？如果是的话 google play 怎么收款呢？怎么避免成为下一个 cd 程序员？"
+    },
+    {
+      "id": 14179471,
+      "author": "coreki",
+      "created": 1704763533,
+      "content": "极简时钟各平台加起来近千万下载量，预估 MAU500k ，这个留存是工具类 app 常规水平吗",
+      "content_rendered": "极简时钟各平台加起来近千万下载量，预估 MAU500k ，这个留存是工具类 app 常规水平吗"
+    },
+    {
+      "id": 14180291,
+      "author": "vulgur",
+      "created": 1704768509,
+      "content": "@devliu1 需要",
+      "content_rendered": "@<a href=\"/member/devliu1\">devliu1</a> 需要"
+    },
+    {
+      "id": 14180292,
+      "author": "vulgur",
+      "created": 1704768527,
+      "content": "@magic3584 Google play 支持国内银行卡收款",
+      "content_rendered": "@<a href=\"/member/magic3584\">magic3584</a> Google play 支持国内银行卡收款"
+    },
+    {
+      "id": 14180793,
+      "author": "rrubick",
+      "created": 1704771357,
+      "content": "@vulgur #5\r\n支持是支持，这不是有被没收的风险吗😂\r\n想知道您统计工具除了 RevenueCat 和友盟还用别的吗？怎么区分国内外的数据？\r\n我现在只有一个 firebase 用来手机崩溃信息，其它的还不知道用哪个",
+      "content_rendered": "@<a href=\"/member/vulgur\">vulgur</a> #5<br />支持是支持，这不是有被没收的风险吗😂<br />想知道您统计工具除了 RevenueCat 和友盟还用别的吗？怎么区分国内外的数据？<br />我现在只有一个 firebase 用来手机崩溃信息，其它的还不知道用哪个"
+    },
+    {
+      "id": 14183783,
+      "author": "vulgur",
+      "created": 1704801101,
+      "content": "@magic3584 国内外是不同的 apk",
+      "content_rendered": "@<a href=\"/member/magic3584\">magic3584</a> 国内外是不同的 apk"
+    },
+    {
+      "id": 15150199,
+      "author": "konakona",
+      "created": 1724169468,
+      "content": "boss 直聘搜索“远程” + “角色” 出来的都是乱七八糟的……",
+      "content_rendered": "boss 直聘搜索“远程” + “角色” 出来的都是乱七八糟的……"
+    }
+  ],
+  "reply_pages": 1,
+  "fetched_at": "2026-10-06T03:33:09.207Z"
+}

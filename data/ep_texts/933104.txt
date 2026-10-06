@@ -1,0 +1,96 @@
+=== TOPIC 933104 ===
+TITLE: 独立开发周记 #9：将 Slack 接入工作流、重构的收益开始显现、AI 翻唱惊喜连连
+EP: 9 / ep2=
+CREATED: 2023-04-17 11:46  (Beijing)
+MEMBER: vulgur  REPLIES_COUNT: 4  STARS: 6  THANKS: 1
+URL: https://www.v2ex.com/t/933104
+
+----- CONTENT (markdown) -----
+## 2023 ，0410-0416
+
+风沙漫天的一周，直到周日空气指数才低于 100 。当年从北京逃离的一大因素就是雾霾，然而这次的沙尘暴整个北方都被波及了，无处可躲。
+
+这周几乎每天都喝一杯瑞幸咖啡，冰吸生椰拿铁和橙 C 美式轮着喝。
+
+从这一期开始，「周报」改为「周记」。
+
+![]( https://img.way2solo.com/photo/vulgur/6f24e97d-bc2b-46e9-a585-0dcc60f41e0e.jpeg?imageView2/2/w/1920/q/100)
+
+图片拍摄于 2013 年 6 月
+
+## 极简时钟 iOS （[App Store]( https://apps.apple.com/cn/app/id1265404088)）
+
+这周都在推进 4.3.0 版本的新内容。
+
+### 重构的收益
+
+之前我还很担心无法实现新版本的设计，但是在设计师给出新版本的 UI 后，我在脑中盘算了一下，就立刻得出结论：可行，因为用 SwiftUI 搭建 UI 十分便利，就像拼积木一样。
+
+得益于之前的重构结果，这次在写番茄钟和正计时的页面时节省了大量时间。还以为要花个两三天才能写完，但实际上只用了几个小时就完成了。每一次复用之前精心设计的重构，内啡肽就疯狂分泌。
+
+不过 SwiftUI 的坑也不少，这周花了很多时间在解决一个动画问题。有一个 view 本应该是在屏幕上每隔几秒钟随机移动的，但是一开始就是一动不动，一开始还以为是 timer 的问题，但是通过 log 发现 timer 压根儿就没触发，最后才发现根本原因是 parent view 在不断重绘，导致所有 child view 也不断重新生成。于是花了大功夫在重构整个页面的结构，把有动画的 view 和不断重绘的 parent view 拆开，不仅解决了这次的动画问题，还给之后加入其他的动画排除了障碍。
+
+### Midjourney 的参与
+
+周二晚上和设计师视频会议两个小时，一起用 Midjourney 做新版本用的背景图。Midjourney 这东西吧出图是很快，而且效果有时很惊人，但是前提是你能够准确描述出自己想要的场景，另外局部的细节也不太好修改。
+
+我们两个人试了一晚上，出了五张图，其中三个可以直接用，另外两个还需要设计师自己用 Photoshop 改一下才可以。Midjourney 还是没有解决最后一公里的问题。
+
+![Untitled]( https://img.way2solo.com/photo/vulgur/ae417106-5566-41ee-abbd-5e1b7eb40825.jpeg?imageView2/2/w/1920/q/100)
+
+## 重新启用 Slack
+
+### Fastlane
+
+多年前鼓捣了一次 Fastlane ，但是当时步骤过于复杂，很快就放弃了。最近发 TestFlight 越来越频繁，于是就想用 Fastlane 来提高一下打包上传的效率。
+
+但这一次也是花了整整一晚上才配置成功，功夫不负有心人，濒临崩溃的时候终于成功了。中间请教了一次 ChatGPT ，虽然 ChatGPT 没直接给出完美的答案，但是顺着它给出的思路最后也找到了正确的解决方法。一劳永逸，以后就可以通过一键打包上传了，不再用在 Xcode 中多次点击「下一步」了。而且 Fastlane 还可以和 Slack 集成，上传成功后会自动通知其他参与测试的小伙伴（虽热只有我和设计师两个人……）。
+
+![iShot_2023-04-16_11.38.45.png]( https://img.way2solo.com/photo/vulgur/b0379bbe-6290-4297-9019-700a4c48e25d.jpeg?imageView2/2/w/1920/q/100)
+
+### Claude & Albus
+
+另一个让我启用多年未用的 Slack 的一个原因就是 Claude 能够与 Slack 集成，并且目前还是可以免费无限量的使用。据说 Claude 目前的水平相当于 GPT-3.5 ，我简单试了一下，感觉代码生成还不如 ChatGPT ，而且也经常很自信地一本正经地胡说八道。
+
+周日又接入了 Albus ，一个基于 GPT-4 的 Slack 应用，7 天免费体验（上限 100 个问题），准备下周使用。
+
+以后关于 app 的所有问题，开发、ASO 、翻译等工作准备都在 Slack 里面完成了，而且还可以和其他人一起交流。
+
+![iShot_2023-04-16_23.00.01.png]( https://img.way2solo.com/photo/vulgur/ffeac65d-9f05-45b9-a9e7-8d20ca7e5a23.jpeg?imageView2/2/w/1920/q/100)
+
+## 听 AI 歌手翻唱
+
+这周在 B 站听了好多「 AI 孙燕姿」的歌，大受震撼，很多真的是以假乱真了。反复听了「 AI 孙燕姿」翻唱《下雨天》、《成都》、《红豆》、《水星记》和很多周杰伦的歌，不过居然还有唱跑调的。
+
+另外，「 AI 张震岳」和「 AI 陶喆」互相翻唱的歌也都非常棒，还有「 AI 林俊杰」翻唱王力宏的歌，「 AI MJ 」翻唱火星哥和盆栽哥，「 AI A 妹」翻唱其他 diva 的歌。离谱点的还有「 AI 王心凌」唱《好汉歌》和《套马杆》，「 AI 盆栽哥和 A 妹」翻唱周杰伦和温岚的《屋顶》，「 AI Kanye West 」的各种非英语的翻唱（特别是《 One Last Kiss 》）还有「 AI Taylor Swift 」各种中文、日文、粤语的翻唱。
+
+总之，AI 乐坛目前十分混乱。
+
+![FBLe025WEA0XRoI.jpeg]( https://img.way2solo.com/photo/vulgur/20ebabb1-494b-43e9-83c1-263fb7debcfc.jpeg?imageView2/2/w/1920/q/100)
+
+[公众号原文]( https://mp.weixin.qq.com/s/m2QZ5DSbjbvKvWExP6YcCQ)
+
+
+## 往期周记
+- [独立开发周报 #8：开始运动]( https://www.v2ex.com/t/931256#reply1)
+- [独立开发周报 #7：3 月总结]( https://www.v2ex.com/t/929393#reply2)
+- [独立开发周报 #6：国内安卓不值得]( https://www.v2ex.com/t/927541#reply6)
+- [独立开发周记 #5：AI 助力]( https://www.v2ex.com/t/925552#reply11)
+- [独立开发周报 #4：第一次尝试 ChatGPT API]( https://www.v2ex.com/t/923622#reply10)
+
+----- SUPPLEMENTS -----
+(none)
+
+----- REPLIES -----
+>> @shinelamla (2023-04-17 15:25):
+挺好的，希望继续记录，看得津津乐道
+
+>> @hongwen1993 (2023-04-17 18:33):
+nice ！！
+
+>> @rossroma (2023-04-17 19:18):
+我在想以后会不会出一个 AI 翻唱 app ，随时随地给某个歌手点歌让他唱，估计版权问题不好弄
+
+>> @vulgur (2023-04-17 19:59):
+@rossroma 这个 AI 训练工具的第一句话就是要注意版权
+

@@ -1,0 +1,51 @@
+{
+  "id": 1064475,
+  "title": "独立开发周记 78：参赛 SHIP-A-TON",
+  "episode": {
+    "ep": 78,
+    "ep2": null
+  },
+  "node": "programmer",
+  "url": "https://www.v2ex.com/t/1064475",
+  "created": 1723471558,
+  "last_touched": 1723479778,
+  "member": "vulgur",
+  "replies_count": 4,
+  "stars": 1,
+  "thanks": 1,
+  "content": "# 2024 ，0805-0811\r\n8 月 4 日是极简时钟 iOS 上架七周年纪念日，我居然都忘了，过了两天才想起来。\r\n从这周开始，又进入了一个新的开发周期。\r\n\r\n# 报名 SHIP-A-TON\r\n周二的时候得知 RevenueCat 开展了一个名为 SHIP-A-TON 的 Hackathon ，基本的规则也很简单，就是提交一个新 App ，只要集成 RevenueCat 的 SDK 就可以。\r\n\r\n![]( https://img.way2solo.com/photo/vulgur/d97c28b6-9133-4ed5-b4d5-662c383b8e45.png?imageView2/2/w/1920/q/100)\r\n\r\n我犹豫了一天， 周二的晚上报了名。我的参赛作品就是最近在写的新 App ，然而我根本不指望这个 App 能获奖，我只想靠这次机会完成它，与其漫无节奏地开发，不如在一个目标的激励下去步步推进，毕竟 deadline 才是第一生产力。\r\n\r\n周三的一整天我没有动手写代码，而是在脑中计划如何写完这个 App 并顺利提交。我算了一下，从周四（ 08-08 ）开始写的话，到比赛的截止日期（ 09-18 ）是 42 天，正好是 6 个星期。于是我就在网上找了一个 Weekly Plan ，改了一下，打印出来。我把每天的工作计划都写上去，希望 6 个星期后能够写满 6 页并顺利提交 App 。四天过去了，我其实并没有严格按照 todo list 去写代码，总是脑子突然冒出一个想法，或者碰到一个优先级更高的任务，就脱轨了。\r\n\r\n![]( https://img.way2solo.com/photo/vulgur/3939a041-0e35-4c58-b411-f7e8b84f4e0d.jpeg?imageView2/2/w/1920/q/100)\r\n\r\n 除此之外，我还采用番茄钟+vlog 的方式来记录这一次的开发过程，除了每天有代码产出，还要有视频产出。我发现这两个方法同时使用的时候，比单独使用番茄钟还会令人更专注，毕竟旁边录着像，就不敢溜号去浏览跟开发无关的内容了。过去四天，每天的工作我都用剪映或者秒剪生成一个 20 秒左右的短视频作为每天的视频产出，打算每七天剪一个长一点的视频，作为开发进度的见证。\r\n\r\n小红书的视频没有外链，只能这么分享出来了。\r\n![]( https://img.way2solo.com/photo/vulgur/fe3471a7-7df6-4278-a13b-f6aabe0ce2f1.png?imageView2/2/w/1920/q/100)\r\n\r\n# 本周学习\r\n首先还是要感谢肘子哥，本周遇到了两个 SwiftData 方面的问题，在他的 Discord 里提问后很快就得到他的解答。另外他的 blog 也是值得反复学习，这周又有几个其他方面的问题，在网上搜索后答案都在他的 blog 里：\r\n\r\n- [避免 SwiftUI 视图的重复计算]( https://fatbobman.com/zh/posts/avoid_repeated_calculations_of_swiftui_views/)\r\n- [SwiftData 中的关系：变化与注意事项]( https://fatbobman.com/zh/posts/relationships-in-swiftdata-changes-and-considerations/)\r\n- [SwiftUI 4.0 的全新导航系统]( https://fatbobman.com/zh/posts/new_navigator_of_swiftui_4/)\r\n\r\n其他：\r\n- [Formatting Numbers in SwiftUI]( https://medium.com/@jpmtech/formatting-numbers-in-swiftui-fc5ee2920a59)，学会了如何在 SwiftUI 的`Text`中对数字进行格式化\r\n- [Don't write this code! (use NSCache instead 😌)]( https://www.youtube.com/watch?v=P_W6Jtg6-Xg)，一句话就是不要用自己写的字典当做缓存，要用专门的`NSCache`\r\n\r\n![]( https://img.way2solo.com/photo/vulgur/dc00ab26-6835-499c-95fb-9f48b0b91bc5.jpg?imageView2/2/w/1920/q/100)\r\n\r\n# 生活点滴\r\n- 看完了《龙之家族》第二季，三颗星\r\n- 去电影院看了《抓娃娃》，三颗星\r\n- 读完了《认知驱动》，但没有《认知觉醒》对我的启发和冲击那么大\r\n- 卖掉一个旧键盘，立刻下单了新键盘\r\n- 自学两个多月，录了上百遍，终于录成了一遍大小拉小手+風になる\r\n\r\n![]( https://img.way2solo.com/photo/vulgur/7bee5cc3-291f-4d1b-be96-9fdc3223ccf6.png?imageView2/2/w/1920/q/100)",
+  "content_rendered": "<h1>2024 ，0805-0811</h1>\n<p>8 月 4 日是极简时钟 iOS 上架七周年纪念日，我居然都忘了，过了两天才想起来。\n从这周开始，又进入了一个新的开发周期。</p>\n<h1>报名 SHIP-A-TON</h1>\n<p>周二的时候得知 RevenueCat 开展了一个名为 SHIP-A-TON 的 Hackathon ，基本的规则也很简单，就是提交一个新 App ，只要集成 RevenueCat 的 SDK 就可以。</p>\n<p><img alt=\"\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://img.way2solo.com/photo/vulgur/d97c28b6-9133-4ed5-b4d5-662c383b8e45.png?imageView2/2/w/1920/q/100\"/></p>\n<p>我犹豫了一天， 周二的晚上报了名。我的参赛作品就是最近在写的新 App ，然而我根本不指望这个 App 能获奖，我只想靠这次机会完成它，与其漫无节奏地开发，不如在一个目标的激励下去步步推进，毕竟 deadline 才是第一生产力。</p>\n<p>周三的一整天我没有动手写代码，而是在脑中计划如何写完这个 App 并顺利提交。我算了一下，从周四（ 08-08 ）开始写的话，到比赛的截止日期（ 09-18 ）是 42 天，正好是 6 个星期。于是我就在网上找了一个 Weekly Plan ，改了一下，打印出来。我把每天的工作计划都写上去，希望 6 个星期后能够写满 6 页并顺利提交 App 。四天过去了，我其实并没有严格按照 todo list 去写代码，总是脑子突然冒出一个想法，或者碰到一个优先级更高的任务，就脱轨了。</p>\n<p><img alt=\"\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://img.way2solo.com/photo/vulgur/3939a041-0e35-4c58-b411-f7e8b84f4e0d.jpeg?imageView2/2/w/1920/q/100\"/></p>\n<p>除此之外，我还采用番茄钟+vlog 的方式来记录这一次的开发过程，除了每天有代码产出，还要有视频产出。我发现这两个方法同时使用的时候，比单独使用番茄钟还会令人更专注，毕竟旁边录着像，就不敢溜号去浏览跟开发无关的内容了。过去四天，每天的工作我都用剪映或者秒剪生成一个 20 秒左右的短视频作为每天的视频产出，打算每七天剪一个长一点的视频，作为开发进度的见证。</p>\n<p>小红书的视频没有外链，只能这么分享出来了。\n<img alt=\"\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://img.way2solo.com/photo/vulgur/fe3471a7-7df6-4278-a13b-f6aabe0ce2f1.png?imageView2/2/w/1920/q/100\"/></p>\n<h1>本周学习</h1>\n<p>首先还是要感谢肘子哥，本周遇到了两个 SwiftData 方面的问题，在他的 Discord 里提问后很快就得到他的解答。另外他的 blog 也是值得反复学习，这周又有几个其他方面的问题，在网上搜索后答案都在他的 blog 里：</p>\n<ul>\n<li><a href=\"https://fatbobman.com/zh/posts/avoid_repeated_calculations_of_swiftui_views/\" rel=\"nofollow\">避免 SwiftUI 视图的重复计算</a></li>\n<li><a href=\"https://fatbobman.com/zh/posts/relationships-in-swiftdata-changes-and-considerations/\" rel=\"nofollow\">SwiftData 中的关系：变化与注意事项</a></li>\n<li><a href=\"https://fatbobman.com/zh/posts/new_navigator_of_swiftui_4/\" rel=\"nofollow\">SwiftUI 4.0 的全新导航系统</a></li>\n</ul>\n<p>其他：</p>\n<ul>\n<li><a href=\"https://medium.com/@jpmtech/formatting-numbers-in-swiftui-fc5ee2920a59\" rel=\"nofollow\">Formatting Numbers in SwiftUI</a>，学会了如何在 SwiftUI 的<code>Text</code>中对数字进行格式化</li>\n<li><a href=\"https://www.youtube.com/watch?v=P_W6Jtg6-Xg\" rel=\"nofollow\">Don't write this code! (use NSCache instead 😌)</a>，一句话就是不要用自己写的字典当做缓存，要用专门的<code>NSCache</code></li>\n</ul>\n<p><img alt=\"\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://img.way2solo.com/photo/vulgur/dc00ab26-6835-499c-95fb-9f48b0b91bc5.jpg?imageView2/2/w/1920/q/100\"/></p>\n<h1>生活点滴</h1>\n<ul>\n<li>看完了《龙之家族》第二季，三颗星</li>\n<li>去电影院看了《抓娃娃》，三颗星</li>\n<li>读完了《认知驱动》，但没有《认知觉醒》对我的启发和冲击那么大</li>\n<li>卖掉一个旧键盘，立刻下单了新键盘</li>\n<li>自学两个多月，录了上百遍，终于录成了一遍大小拉小手+風になる</li>\n</ul>\n<p><img alt=\"\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://img.way2solo.com/photo/vulgur/7bee5cc3-291f-4d1b-be96-9fdc3223ccf6.png?imageView2/2/w/1920/q/100\"/></p>\n",
+  "supplements": [],
+  "replies": [
+    {
+      "id": 15114070,
+      "author": "1rv013c6aiWPGt24",
+      "created": 1723476178,
+      "content": "有 RSS 订阅源吗？",
+      "content_rendered": "有 RSS 订阅源吗？"
+    },
+    {
+      "id": 15114748,
+      "author": "rekulas",
+      "created": 1723512721,
+      "content": "@UncleCAT4 有知乎订阅",
+      "content_rendered": "@<a href=\"/member/UncleCAT4\">UncleCAT4</a> 有知乎订阅"
+    },
+    {
+      "id": 15117198,
+      "author": "kele999",
+      "created": 1723533265,
+      "content": "revenueCat 好用吗，能解决什么痛点",
+      "content_rendered": "revenueCat 好用吗，能解决什么痛点"
+    },
+    {
+      "id": 15118823,
+      "author": "vulgur",
+      "created": 1723558011,
+      "content": "@kele999 不用自己搭建服务器处理订单，还带有各种详细的统计数据",
+      "content_rendered": "@<a href=\"/member/kele999\">kele999</a> 不用自己搭建服务器处理订单，还带有各种详细的统计数据"
+    }
+  ],
+  "reply_pages": 1,
+  "fetched_at": "2026-10-06T03:32:38.197Z"
+}

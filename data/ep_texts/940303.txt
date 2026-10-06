@@ -1,0 +1,92 @@
+=== TOPIC 940303 ===
+TITLE: 独立开发周记 #13：芝兰生于深谷，不以无人而不芳
+EP: 13 / ep2=
+CREATED: 2023-05-16 09:57  (Beijing)
+MEMBER: vulgur  REPLIES_COUNT: 0  STARS: 0  THANKS: 0
+URL: https://www.v2ex.com/t/940303
+
+----- CONTENT (markdown) -----
+![candle.jpeg]( https://img.way2solo.com/photo/vulgur/6a136ad0-b41d-448a-88aa-ca663274e50d.jpeg?imageView2/2/w/1920/q/100)
+
+R.I.P ，听风而去的左耳
+
+# 2023, 0508-0514
+
+别人在海拉鲁都造出高达和轰炸机了，而我的实体卡带还没发货，淦。
+
+# App 价格调整
+
+随着 App Store 在 5 月 9 日推出了「增强全球定价机制」，我对我对极简时钟和极简日记这两个 iOS app 也进行了一下价格调整。
+
+极简日记的新的终身价格是一次大胆的提价，做出这一决策有三方面考虑：
+
+1. 极简日记的下载量并不多，其中购买终身的数量更是少之又少，试错成本很低
+2. 想以这个终身价格作为锚定价格，看看能否刺激一下订阅版的付费意愿
+3. 没准儿哪天就取消了这个终身买断，只保留订阅制
+
+![price.PNG]( https://img.way2solo.com/photo/vulgur/f517c8f2-9f47-4a4d-b28e-89ef16a559d7.jpeg?imageView2/2/w/1920/q/100)
+
+# 极简时钟 iOS ([App Store]([https://apps.apple.com/cn/app/id1265404088]( https://apps.apple.com/cn/app/id1265404088)))
+
+这周把新版本的小组件做完了，各种音效也都修改了两三遍，本以为差不多都完事了，周日晚上的时候，设计师发出了两个设计稿，我一看就特别适合计时器的页面，于是决定重做番茄钟和正计时，好饭不怕晚！
+
+![mark-06.jpeg]( https://img.way2solo.com/photo/vulgur/977d0548-fd8f-4d21-bb43-85c5f2d5431e.jpeg?imageView2/2/w/1920/q/100)
+
+另外，准备下下个版本中可以在极简时钟里播放音乐，一个晚上都花在接入 MusicKit 上了。官方的 Demo 很快就顺利跑通了，但是放到自己的 app 里就错误不断，一开始是 provisioning profile 的问题，后来是 info.plist 中写错了 property list key ，好在是临睡前终于搞定了。
+
+# 极简时钟 Android ([Google Play]([https://play.google.com/store/apps/details?id=com.mad.zenflipclock]( https://play.google.com/store/apps/details?id=com.mad.zenflipclock)))
+
+之前国内版本的极简时钟安卓版的统计工具使用的是 Google Analytics 。但因为国内各个市场都因为这个 SDK 而拒绝上架就去掉了，自那以后一直没有加入任何其他的统计工具。
+
+最近几个月来，国内安卓版的极简时钟的收入忽高忽低，而且总体在下降，我就想知道是什么原因，于是这周给国内安卓市场更新了加入的友盟统计的新版本。其他市场都是顺利上架，唯独华为市场一直拒绝，反复修改晚了三天才上架。华为市场还是国内的老大啊，上架后的下载量比其他市场加起来还多了一倍。
+
+在没有数据的时候，我还以为这个 app 在国内的日活怎么也该有一万吧，没想到友盟统计的数据狠狠地打脸了。
+
+# iOS 小组件的黑科技
+
+在苹果的官方文档和论坛里明确说明了 iOS 的小组件是无法每秒更新的（除了`Text(_:style:)`这个 API ），但是有些 app 的小组件不仅能做到每秒稳定更新 UI ，还能做到显示流畅的动画（起码超过 30fps ）。
+
+针对这些黑科技，我自打 iOS 小组件发布后就一直在探索，直到本周才有了一丢丢进展。
+
+首先是旋转动画，这个就是通过调用私有 API 来实现的。但是 Xcode 14 堵住了这个 API ，现在都是通过 Xcode 13 制作出一个静态 framework ，然后打包成 SPM 给 Xcode 14 来调用。
+
+至于其他的动画，仍然没有任何头绪。不过和其他开发者交流时，发现有人在肘子哥的 Discord 里面讨论了这个话题，这个人一开始还说自己找到解决方案后就开源，不过这个人最终还是改变了想法，选择了不分享。
+
+# 本周 AI 工具的体验
+
+## GPT-4
+
+设计师提出了极简时钟未来版本的一个设想，涉及到了 3D 图形的动画。而我完全不懂这方面的东西，于是就问了 Claude 和 ChatGPT ，问了一晚上给出的答案一运行完全不是想要的效果。
+
+第二天，被 BraveSummer 按头安利了 GPT-4 ，我就通过 Albus 体验了一下，把我想要实现的动画效果告诉 Albus ，真是厉害啊，一次就给出了正确的代码。
+
+目前我还没有订阅任何 AI 工具，看来为了这个 GPT-4 得掏钱了，需要从 Poe 、Albus 、Codeium 这三个里面选一个。
+
+![cube.gif]( https://img.way2solo.com/photo/vulgur/3c4a423f-b4dc-4d00-98da-9e663bda7b55.gif?imageView2/2/w/1920/q/100)
+
+## Copilot For Xcode
+
+终于这个插件支持了 Codeium ，可以在 Xcode 中也有 Copilot 了。
+
+不过每次提示都需要手动点击一下 Accept 才可以补全代码，不像在 Android Studio 和 VSCode 里那样按 Tab 键就可以补全，有点麻烦。
+
+![iShot_2023-05-15_19.35.12.png]( https://img.way2solo.com/photo/vulgur/984e890d-675c-4872-b17e-f6401831e96b.jpeg?imageView2/2/w/1920/q/100)
+
+(公众号原文)[https://mp.weixin.qq.com/s/cNdrQhhLZxi66TJcE13nVw]
+
+# 往期周记
+- [独立开发周记 #12：尔虞我诈的互联网]( https://www.v2ex.com/t/938197#reply25)
+- [独立开发周记 #11：4 月总结、华为下架、换掉自记账]( https://www.v2ex.com/t/936754#reply21)
+- [独立开发周记 #10：不明原因的下载量暴涨、调休与我无关、一个人生成就达成]( https://www.v2ex.com/t/935137#reply1)
+- [独立开发周记 #9：将 Slack 接入工作流、重构的收益开始显现、AI 翻唱惊喜连连]( https://www.v2ex.com/t/933104#reply4)
+- [独立开发周报 #8：开始运动]( https://www.v2ex.com/t/931256#reply1)
+- [独立开发周报 #7：3 月总结]( https://www.v2ex.com/t/929393#reply2)
+- [独立开发周报 #6：国内安卓不值得]( https://www.v2ex.com/t/927541#reply6)
+- [独立开发周记 #5：AI 助力]( https://www.v2ex.com/t/925552#reply11)
+- [独立开发周报 #4：第一次尝试 ChatGPT API]( https://www.v2ex.com/t/923622#reply10)
+
+----- SUPPLEMENTS -----
+(none)
+
+----- REPLIES -----
+(none)

@@ -1,0 +1,37 @@
+{
+  "id": 1067950,
+  "title": "独立开发周记 80：直面天命第一周",
+  "episode": {
+    "ep": 80,
+    "ep2": null
+  },
+  "node": "programmer",
+  "url": "https://www.v2ex.com/t/1067950",
+  "created": 1724674136,
+  "last_touched": 1724681336,
+  "member": "vulgur",
+  "replies_count": 2,
+  "stars": 1,
+  "thanks": 1,
+  "content": "# 2024 ，0819-0825\r\n开发进度被严重阻碍，时也命也。\r\n\r\n# Ship-A-Ton 第二周\r\n\r\n这周投入这个 App 的时间很少，吃喝玩乐+直面天命占了不少时间，但是不管怎样，还是在推进。和上一周相比，这周的工作时间大幅减少，只完成了 22 个番茄钟，还不如上周的一半多。\r\n\r\n![]( https://files.mdnice.com/user/73796/dbbef956-88c1-4302-a990-25125e2c0bbe.jpeg)\r\n\r\n这周一开始花了一些时间在解决 TabView 和 NavigationStack 之间的问题上，本来是想尝试实现一个自定义的 TabBar ，最终放弃了这个尝试，因为根据上周的教训，不能花太多时间在 UI 上，先专注于功能的实现。\r\n\r\nStash 和 Nibble 的功能基本都完成了，Jar 目前只实现了两种类型，还剩几种存款类型没做。为了能够 ship ，或许应该先砍掉一些 Jar 的类型。\r\n\r\n愿望清单模块又更名了，一开始叫 Wishlist ，后来叫 Goals ，现在改成了 Desires 。\r\n\r\n想想还剩四周了，而还有很多功能，比如通知提醒、数据统计和小组件还都没有做，感觉有点来不及了。\r\n\r\n好消息是，这周接触了一个设计师，已经达成了合作，接下来的四个星期要超级超级肝了！\r\n\r\n# 第二个英文 Vlog\r\n\r\n这周几乎没有录什么素材，为了撑视频的时长，加入了目前 App 的阶段性演示视频。\r\n\r\n这次我没有自己录音，倒不是怕口音丢人，而是一方面是为了节省时间，另一方面是为了保证音频的音量统一并且没有背景杂音。我用的是剪映的 AI 朗读，先是克隆了我自己的声音，然后把文本通过克隆声音生成对应的朗读音频。这个声音克隆真是厉害，音色没得说，和我一模一样，但是缺点也很明显，就是没有语气的变化，整个停下来感觉非常沉闷。\r\n\r\n[Week 2 for Ship-A-Ton]( https://youtu.be/vu7jC7qec-M)\r\n\r\n# 本周学习\r\n\r\n[# How to use programmatic navigation in SwiftUI]( https://www.hackingwithswift.com/quick-start/swiftui/how-to-use-programmatic-navigation-in-swiftui \"# How to use programmatic navigation in SwiftUI\")\r\n\r\n[# Sharing @Observable objects through SwiftUI's environment]( https://www.hackingwithswift.com/books/ios-swiftui/sharing-observable-objects-through-swiftuis-environment \"# Sharing @Observable objects through SwiftUI's environment\")\r\n\r\n[# 在 SwiftData 模型中使用 Codable 和枚举的注意事项]( https://fatbobman.com/zh/posts/considerations-for-using-codable-and-enums-in-swiftdata-models/ \"# 在 SwiftData 模型中使用 Codable 和枚举的注意事项\")\r\n\r\n[# ContentUnavailableView: Handling Empty States in SwiftUI]( https://www.avanderlee.com/swiftui/contentunavailableview-handling-empty-states/ \"# ContentUnavailableView: Handling Empty States in SwiftUI\")\r\n\r\n# 直面天命\r\n\r\n先说一下进度，目前刚过第三回的苦海。\r\n\r\n周一早上起来，就知道瑞幸开卖周边了，于是立刻下单了外卖，成功抢到周边海报。\r\n\r\n![]( https://files.mdnice.com/user/73796/4d8c39b6-b1b6-4cbc-be17-ab39e8c2d896.jpeg)\r\n\r\n目前打得最多的就是白衣秀士、疯虎，被虐了二十多次才过。至于大家都惧怕的虎先锋，我打了四次就过了，比较辛运。目前卡在了寅虎，还在不断精进中。\r\n\r\n这个游戏是我玩得第一个魂 like 游戏。我知道自己手残，之前玩过卧龙·苍天陨落，第一个 BOSS 都没打过去就删了，所以只狼和老头环一直没敢碰。这次黑神话能玩到现在，全靠我玩战神打下的一点基础。这个游戏就是磨练心性，越挫越勇，不断精进，提升自己。\r\n\r\n玩了四天，手柄左摇杆就漂移了，虽然还在保修内，但是客服说需要返场维修，需要 7 到 14 天才能寄回来。本来想着要不就忍忍，这段时间正好用来写代码。但是纠结了一天，一想到要一个多星期不能直面天命，就痛苦不已，最终还是下单了新的手柄，次日达，继续直面天命！\r\n\r\n![]( https://files.mdnice.com/user/73796/470a93f2-82d9-4251-a24f-3978d906519a.jpeg)",
+  "content_rendered": "<h1>2024 ，0819-0825</h1>\n<p>开发进度被严重阻碍，时也命也。</p>\n<h1>Ship-A-Ton 第二周</h1>\n<p>这周投入这个 App 的时间很少，吃喝玩乐+直面天命占了不少时间，但是不管怎样，还是在推进。和上一周相比，这周的工作时间大幅减少，只完成了 22 个番茄钟，还不如上周的一半多。</p>\n<p><img alt=\"\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://files.mdnice.com/user/73796/dbbef956-88c1-4302-a990-25125e2c0bbe.jpeg\"/></p>\n<p>这周一开始花了一些时间在解决 TabView 和 NavigationStack 之间的问题上，本来是想尝试实现一个自定义的 TabBar ，最终放弃了这个尝试，因为根据上周的教训，不能花太多时间在 UI 上，先专注于功能的实现。</p>\n<p>Stash 和 Nibble 的功能基本都完成了，Jar 目前只实现了两种类型，还剩几种存款类型没做。为了能够 ship ，或许应该先砍掉一些 Jar 的类型。</p>\n<p>愿望清单模块又更名了，一开始叫 Wishlist ，后来叫 Goals ，现在改成了 Desires 。</p>\n<p>想想还剩四周了，而还有很多功能，比如通知提醒、数据统计和小组件还都没有做，感觉有点来不及了。</p>\n<p>好消息是，这周接触了一个设计师，已经达成了合作，接下来的四个星期要超级超级肝了！</p>\n<h1>第二个英文 Vlog</h1>\n<p>这周几乎没有录什么素材，为了撑视频的时长，加入了目前 App 的阶段性演示视频。</p>\n<p>这次我没有自己录音，倒不是怕口音丢人，而是一方面是为了节省时间，另一方面是为了保证音频的音量统一并且没有背景杂音。我用的是剪映的 AI 朗读，先是克隆了我自己的声音，然后把文本通过克隆声音生成对应的朗读音频。这个声音克隆真是厉害，音色没得说，和我一模一样，但是缺点也很明显，就是没有语气的变化，整个停下来感觉非常沉闷。</p>\n<p><a href=\"https://youtu.be/vu7jC7qec-M\" rel=\"nofollow\">Week 2 for Ship-A-Ton</a></p>\n<h1>本周学习</h1>\n<p><a href=\"https://www.hackingwithswift.com/quick-start/swiftui/how-to-use-programmatic-navigation-in-swiftui\" rel=\"nofollow\" title=\"# How to use programmatic navigation in SwiftUI\"># How to use programmatic navigation in SwiftUI</a></p>\n<p># Sharing @<a href=\"/member/Observable\">Observable</a> objects through SwiftUI's environment</p>\n<p><a href=\"https://fatbobman.com/zh/posts/considerations-for-using-codable-and-enums-in-swiftdata-models/\" rel=\"nofollow\" title=\"# 在 SwiftData 模型中使用 Codable 和枚举的注意事项\"># 在 SwiftData 模型中使用 Codable 和枚举的注意事项</a></p>\n<p><a href=\"https://www.avanderlee.com/swiftui/contentunavailableview-handling-empty-states/\" rel=\"nofollow\" title=\"# ContentUnavailableView: Handling Empty States in SwiftUI\"># ContentUnavailableView: Handling Empty States in SwiftUI</a></p>\n<h1>直面天命</h1>\n<p>先说一下进度，目前刚过第三回的苦海。</p>\n<p>周一早上起来，就知道瑞幸开卖周边了，于是立刻下单了外卖，成功抢到周边海报。</p>\n<p><img alt=\"\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://files.mdnice.com/user/73796/4d8c39b6-b1b6-4cbc-be17-ab39e8c2d896.jpeg\"/></p>\n<p>目前打得最多的就是白衣秀士、疯虎，被虐了二十多次才过。至于大家都惧怕的虎先锋，我打了四次就过了，比较辛运。目前卡在了寅虎，还在不断精进中。</p>\n<p>这个游戏是我玩得第一个魂 like 游戏。我知道自己手残，之前玩过卧龙·苍天陨落，第一个 BOSS 都没打过去就删了，所以只狼和老头环一直没敢碰。这次黑神话能玩到现在，全靠我玩战神打下的一点基础。这个游戏就是磨练心性，越挫越勇，不断精进，提升自己。</p>\n<p>玩了四天，手柄左摇杆就漂移了，虽然还在保修内，但是客服说需要返场维修，需要 7 到 14 天才能寄回来。本来想着要不就忍忍，这段时间正好用来写代码。但是纠结了一天，一想到要一个多星期不能直面天命，就痛苦不已，最终还是下单了新的手柄，次日达，继续直面天命！</p>\n<p><img alt=\"\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://files.mdnice.com/user/73796/470a93f2-82d9-4251-a24f-3978d906519a.jpeg\"/></p>\n",
+  "supplements": [],
+  "replies": [
+    {
+      "id": 15176623,
+      "author": "ruobingm",
+      "created": 1724722226,
+      "content": "独立开发最大的难点：坚持\r\n前面几周 兴致勃勃，精神亢奋\r\n再几周 。。。\r\n再 2 周。。。",
+      "content_rendered": "独立开发最大的难点：坚持<br />前面几周 兴致勃勃，精神亢奋<br />再几周 。。。<br />再 2 周。。。"
+    },
+    {
+      "id": 15178516,
+      "author": "forschers",
+      "created": 1724737876,
+      "content": "感觉坚持按规划走还是很难得",
+      "content_rendered": "感觉坚持按规划走还是很难得"
+    }
+  ],
+  "reply_pages": 1,
+  "fetched_at": "2026-10-06T03:32:36.023Z"
+}

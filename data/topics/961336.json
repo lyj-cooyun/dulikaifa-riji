@@ -1,0 +1,93 @@
+{
+  "id": 961336,
+  "title": "独立开发周记 #24：做了一下午不成功的 Hacker",
+  "episode": {
+    "ep": 24,
+    "ep2": null
+  },
+  "node": "programmer",
+  "url": "https://www.v2ex.com/t/961336",
+  "created": 1690814297,
+  "last_touched": 1690839497,
+  "member": "vulgur",
+  "replies_count": 10,
+  "stars": 2,
+  "thanks": 0,
+  "content": "# 2023 ，0724-0730\r\n\r\n这个星期的大事件估计就是 Twitter 变成了 X ，不过我倒是无所谓。\r\n\r\n这周的专注力很差，只有一个下午进入了心流状态。\r\n\r\n另外发现精力和体力跟不上执行力和想像力了。好不容易想出了一个新 App 的 idea ，断断续续写了一天，但是写五分钟就得歇半个小时。\r\n\r\n# 极简时钟 iOS （[App Store]( https://apps.apple.com/cn/app/id1265404088)）\r\n\r\n极简时钟更新了 4.3.1 ，距离上次更新隔了 67 天。\r\n\r\n主要的更新内容是为了满足欧洲地区用户的需求，加入了 DD/MM/YYYY 这种日期格式，另外加入了德语的本地化。\r\n\r\n极简时钟的用户量中德国是第三多的国家，但是过去的时间一直在下降，不过自从加入了德语本地化后，用户数量略有回升，不知道两者是否有关。从数据上看，下个加入本地化的语言就应该是越南了。\r\n\r\n这次提交比较匆忙，忘了调整关键字，不过从前几次的调整经验来看，啥用都没有。\r\n\r\n![]( https://img.way2solo.com/photo/vulgur/60cf3f9a-e512-4b9d-9f52-073721623b93.jpeg?imageView2/2/w/1920/q/100)\r\n\r\n\r\n# 极简日记 iOS （[App Store]( https://apps.apple.com/cn/app/id1568936702)）\r\n\r\n上周六就提交审核了，结果过了 24 小时才进入审核，又过了 24 小时才过审上架，距离上次更新隔了 81 天。可能是因为更新的间隔时间太久，也可能是因为提交的时间是周末，才导致这次审核时间特别长。不过以前也有过即使是周末提交过了两三个小时就上架的经历，所以 App Store 的审核也是玄学。\r\n\r\n正式版上线后，如约给参加测试的群友们每人都发了终身 Pro 的兑换码。不过刚上线一两天，就又发现了 bug ，最近一个月是没有时间修复了，好在是不影响日常使用的 bug 。\r\n\r\n# 新 App\r\n\r\n周四的上午灵光乍现，冒出了一个新点子。搜了一圈发现实现起来毫无难度，于是就开始写 demo 。新建工程的时候碰到了一个大难题：起名字，让 AI 起了几十个名字，结果没有一个让我满意的，最后还是我自己想出了个非常棒的名字。\r\n\r\n![]( https://img.way2solo.com/photo/vulgur/6c3b1bf2-9e40-4783-bc41-20b1b04005c9.jpeg?imageView2/2/w/1920/q/100)\r\n\r\n\r\n 只花了十多分钟就写好了核心玩法的 demo ，效果还算满意。不过 UI 上还都是最简单的控件堆砌，也毫无用户体验可言，在网上搜了一大堆类似 App 的设计图，再次感叹自己设计这样 UI 简直不可能，后期还需要专业的设计师加入才可以。\r\n\r\n![]( https://img.way2solo.com/photo/vulgur/6e11f152-45cf-465b-8a6a-6d41da2f21fb.jpeg?imageView2/2/w/1920/q/100)\r\n\r\n\r\n想法的产生速度比写代码的速度快多了，这就导致无法专注完成目前手头上的计划。另外写着写着就发现为了以后的扩展性应该把代码写得更抽象一些，于是就写写改改，写了两天也没把完整流程跑通，就很焦虑。\r\n\r\n一开始还以为这个 App 几天就能写完，目前来看想要达到可用的程度起码需要两个星期。本来是想打算写出一个 MVP 再邀请用户来测试，但是有人建议我尽早找用户来参与测试，这样可以更早发现问题和检验这个 app 是否真正解决了用户的需求和痛点，我完全同意，不过还是需要把整个流程跑通才能放出来。\r\n\r\n# 做了半天失败的 Hacker\r\n\r\n这周还有一个对于我来说的大事件，就是“世界头号黑客”的凯文・米特尼克去世了。其实我学习计算机一开始的动机就是成为一名黑客，初高中的时候《黑客 X 档案》我期期不落，沉醉于其中各种传奇黑客的传奇故事。黑客题材的影视剧也是我的最爱，最喜欢看的桥段就是无所不能的黑客敲敲键盘就能破解和入侵各种系统。相对于 Ethan Hunt ，我更希望成为的是 Luther 和 Benji 。\r\n\r\n![]( https://img.way2solo.com/photo/vulgur/0c01321b-347e-4592-ab9f-d94db61bf740.jpeg?imageView2/2/w/1920/q/100)\r\n\r\n\r\n上面提到的一整个下午的心流就花在如何 hack 一个教学类的视频任务网站上。 要求的任务是看完规定的视频，积累对应时长的学时。之前解决其他类似网站的办法就是用视频加速插件，16 倍速很快就能完成任务。但是这个网站做了很多恶心的限制，要把人锁定在电脑前：\r\n\r\n1. 学时计算靠的是视频真正的播放时间，而不是视频本身的时长\r\n2. 每 10 分钟如果没有任何鼠标和键盘的操作，就会暂停播放\r\n3. 网页离开焦点也会自动暂停\r\n\r\n我先是通过 Chrome 的 DevTools 发现了页面发出的几个请求，然后通过 Cookie 模拟其中能够修改学习时长的请求 insertStudyTime ，但是发现返回值始终提示参数错误。我以为是我 mock 的请求有问题，于是我就用 Requestly 这个插件修改请求，结果还是不行。 我又发现在插入时长（ insertStudyTime ）之前会调用一个获取当前时间的请求（ getThisTime ），我猜测 insertStudyTime 的参数和 getThisTime 的返回值有关，于是我用 Requestly 修改了这个请求的返回值，结果 insertStudyTime 就不会被调用了。\r\n\r\n![]( https://img.way2solo.com/photo/vulgur/34095638-9fea-4a6c-ad78-9485d352b144.jpeg?imageView2/2/w/1920/q/100)\r\n\r\n\r\n后来我尝试点进整个网页的源代码，没想到所有的 js 代码没有任何的压缩和混淆（这个外包水平堪忧啊），注释还不少呢…… 看完了构建 insertStudyTime 的整个过程，我才发现这个请求很简单，没有任何签名，参数也没有任何特殊的计算方式，基本都是固定的，只有 studyTime 这个参数是用来修改学习时长的。但是即使修改了 studyTime 也还是会得到「参数异常，计时无效」的返回值，因为通过不断测试，我得出了这个 API 的几个结论：\r\n\r\n1. 页面会每隔 5 分钟调用一次这个请求，studyTime 就是 5\r\n2. 有效的调用间隔是一分钟以上，否则会得到「调用频繁」的返回值\r\n3. 后端会记录成功修改学习时长的最新时间\r\n4. 后端会根据上一次成功调用 API 的时间和当前时间来判断 studyTime 的值是否是有效值\r\n\r\n也就是说，如果我把 studyTime 改成 30 ，但是上次成功调用的时间是一分钟之前，那这个 studyTime 就不是一个有效值。\r\n\r\n![]( https://img.way2solo.com/photo/vulgur/3ecffb1d-1b91-416a-b8ac-a71764669944.jpeg?imageView2/2/w/1920/q/100)\r\n\r\n\r\n所以，想通过修改请求就达到快速积累时长是走不通了。\r\n\r\n这个网站还有一个任务就是所有课程学习完成后生成证书，我也尝试了修改响应里学习时长的返回值，但是生成证书必须要求有对应的证书 ID 才可以，这条路子也走不通了。\r\n\r\n不过我还是做了一丢丢的 hack 工作，就是把播放视频时监测鼠标和键盘的代码给屏蔽掉了，这样就不用每 10 分钟就去激活一下记录状态了……",
+  "content_rendered": "<h1>2023 ，0724-0730</h1>\n<p>这个星期的大事件估计就是 Twitter 变成了 X ，不过我倒是无所谓。</p>\n<p>这周的专注力很差，只有一个下午进入了心流状态。</p>\n<p>另外发现精力和体力跟不上执行力和想像力了。好不容易想出了一个新 App 的 idea ，断断续续写了一天，但是写五分钟就得歇半个小时。</p>\n<h1>极简时钟 iOS （<a href=\"https://apps.apple.com/cn/app/id1265404088\" rel=\"nofollow\">App Store</a>）</h1>\n<p>极简时钟更新了 4.3.1 ，距离上次更新隔了 67 天。</p>\n<p>主要的更新内容是为了满足欧洲地区用户的需求，加入了 DD/MM/YYYY 这种日期格式，另外加入了德语的本地化。</p>\n<p>极简时钟的用户量中德国是第三多的国家，但是过去的时间一直在下降，不过自从加入了德语本地化后，用户数量略有回升，不知道两者是否有关。从数据上看，下个加入本地化的语言就应该是越南了。</p>\n<p>这次提交比较匆忙，忘了调整关键字，不过从前几次的调整经验来看，啥用都没有。</p>\n<p><img alt=\"\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://img.way2solo.com/photo/vulgur/60cf3f9a-e512-4b9d-9f52-073721623b93.jpeg?imageView2/2/w/1920/q/100\"/></p>\n<h1>极简日记 iOS （<a href=\"https://apps.apple.com/cn/app/id1568936702\" rel=\"nofollow\">App Store</a>）</h1>\n<p>上周六就提交审核了，结果过了 24 小时才进入审核，又过了 24 小时才过审上架，距离上次更新隔了 81 天。可能是因为更新的间隔时间太久，也可能是因为提交的时间是周末，才导致这次审核时间特别长。不过以前也有过即使是周末提交过了两三个小时就上架的经历，所以 App Store 的审核也是玄学。</p>\n<p>正式版上线后，如约给参加测试的群友们每人都发了终身 Pro 的兑换码。不过刚上线一两天，就又发现了 bug ，最近一个月是没有时间修复了，好在是不影响日常使用的 bug 。</p>\n<h1>新 App</h1>\n<p>周四的上午灵光乍现，冒出了一个新点子。搜了一圈发现实现起来毫无难度，于是就开始写 demo 。新建工程的时候碰到了一个大难题：起名字，让 AI 起了几十个名字，结果没有一个让我满意的，最后还是我自己想出了个非常棒的名字。</p>\n<p><img alt=\"\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://img.way2solo.com/photo/vulgur/6c3b1bf2-9e40-4783-bc41-20b1b04005c9.jpeg?imageView2/2/w/1920/q/100\"/></p>\n<p>只花了十多分钟就写好了核心玩法的 demo ，效果还算满意。不过 UI 上还都是最简单的控件堆砌，也毫无用户体验可言，在网上搜了一大堆类似 App 的设计图，再次感叹自己设计这样 UI 简直不可能，后期还需要专业的设计师加入才可以。</p>\n<p><img alt=\"\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://img.way2solo.com/photo/vulgur/6e11f152-45cf-465b-8a6a-6d41da2f21fb.jpeg?imageView2/2/w/1920/q/100\"/></p>\n<p>想法的产生速度比写代码的速度快多了，这就导致无法专注完成目前手头上的计划。另外写着写着就发现为了以后的扩展性应该把代码写得更抽象一些，于是就写写改改，写了两天也没把完整流程跑通，就很焦虑。</p>\n<p>一开始还以为这个 App 几天就能写完，目前来看想要达到可用的程度起码需要两个星期。本来是想打算写出一个 MVP 再邀请用户来测试，但是有人建议我尽早找用户来参与测试，这样可以更早发现问题和检验这个 app 是否真正解决了用户的需求和痛点，我完全同意，不过还是需要把整个流程跑通才能放出来。</p>\n<h1>做了半天失败的 Hacker</h1>\n<p>这周还有一个对于我来说的大事件，就是“世界头号黑客”的凯文・米特尼克去世了。其实我学习计算机一开始的动机就是成为一名黑客，初高中的时候《黑客 X 档案》我期期不落，沉醉于其中各种传奇黑客的传奇故事。黑客题材的影视剧也是我的最爱，最喜欢看的桥段就是无所不能的黑客敲敲键盘就能破解和入侵各种系统。相对于 Ethan Hunt ，我更希望成为的是 Luther 和 Benji 。</p>\n<p><img alt=\"\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://img.way2solo.com/photo/vulgur/0c01321b-347e-4592-ab9f-d94db61bf740.jpeg?imageView2/2/w/1920/q/100\"/></p>\n<p>上面提到的一整个下午的心流就花在如何 hack 一个教学类的视频任务网站上。 要求的任务是看完规定的视频，积累对应时长的学时。之前解决其他类似网站的办法就是用视频加速插件，16 倍速很快就能完成任务。但是这个网站做了很多恶心的限制，要把人锁定在电脑前：</p>\n<ol>\n<li>学时计算靠的是视频真正的播放时间，而不是视频本身的时长</li>\n<li>每 10 分钟如果没有任何鼠标和键盘的操作，就会暂停播放</li>\n<li>网页离开焦点也会自动暂停</li>\n</ol>\n<p>我先是通过 Chrome 的 DevTools 发现了页面发出的几个请求，然后通过 Cookie 模拟其中能够修改学习时长的请求 insertStudyTime ，但是发现返回值始终提示参数错误。我以为是我 mock 的请求有问题，于是我就用 Requestly 这个插件修改请求，结果还是不行。 我又发现在插入时长（ insertStudyTime ）之前会调用一个获取当前时间的请求（ getThisTime ），我猜测 insertStudyTime 的参数和 getThisTime 的返回值有关，于是我用 Requestly 修改了这个请求的返回值，结果 insertStudyTime 就不会被调用了。</p>\n<p><img alt=\"\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://img.way2solo.com/photo/vulgur/34095638-9fea-4a6c-ad78-9485d352b144.jpeg?imageView2/2/w/1920/q/100\"/></p>\n<p>后来我尝试点进整个网页的源代码，没想到所有的 js 代码没有任何的压缩和混淆（这个外包水平堪忧啊），注释还不少呢…… 看完了构建 insertStudyTime 的整个过程，我才发现这个请求很简单，没有任何签名，参数也没有任何特殊的计算方式，基本都是固定的，只有 studyTime 这个参数是用来修改学习时长的。但是即使修改了 studyTime 也还是会得到「参数异常，计时无效」的返回值，因为通过不断测试，我得出了这个 API 的几个结论：</p>\n<ol>\n<li>页面会每隔 5 分钟调用一次这个请求，studyTime 就是 5</li>\n<li>有效的调用间隔是一分钟以上，否则会得到「调用频繁」的返回值</li>\n<li>后端会记录成功修改学习时长的最新时间</li>\n<li>后端会根据上一次成功调用 API 的时间和当前时间来判断 studyTime 的值是否是有效值</li>\n</ol>\n<p>也就是说，如果我把 studyTime 改成 30 ，但是上次成功调用的时间是一分钟之前，那这个 studyTime 就不是一个有效值。</p>\n<p><img alt=\"\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://img.way2solo.com/photo/vulgur/3ecffb1d-1b91-416a-b8ac-a71764669944.jpeg?imageView2/2/w/1920/q/100\"/></p>\n<p>所以，想通过修改请求就达到快速积累时长是走不通了。</p>\n<p>这个网站还有一个任务就是所有课程学习完成后生成证书，我也尝试了修改响应里学习时长的返回值，但是生成证书必须要求有对应的证书 ID 才可以，这条路子也走不通了。</p>\n<p>不过我还是做了一丢丢的 hack 工作，就是把播放视频时监测鼠标和键盘的代码给屏蔽掉了，这样就不用每 10 分钟就去激活一下记录状态了……</p>\n",
+  "supplements": [],
+  "replies": [
+    {
+      "id": 13431513,
+      "author": "thinkm",
+      "created": 1690850027,
+      "content": "楼主第一张图是用什么搞的？",
+      "content_rendered": "楼主第一张图是用什么搞的？"
+    },
+    {
+      "id": 13431541,
+      "author": "PikaTQL",
+      "created": 1690850505,
+      "content": "但是这样的话既然没有签名，写个 python 脚本自动定期发请求不就可以了么 hh",
+      "content_rendered": "但是这样的话既然没有签名，写个 python 脚本自动定期发请求不就可以了么 hh"
+    },
+    {
+      "id": 13431574,
+      "author": "chinaqq",
+      "created": 1690851067,
+      "content": "@thinkm Google Analytics",
+      "content_rendered": "@<a href=\"/member/thinkm\">thinkm</a> Google Analytics"
+    },
+    {
+      "id": 13432952,
+      "author": "wednesdayco",
+      "created": 1690859917,
+      "content": "我 hacker 过好多这种任务网站了（家人需要），几乎都是穿时间参数 有的可以直接传结束时间有的只能定时传",
+      "content_rendered": "我 hacker 过好多这种任务网站了（家人需要），几乎都是穿时间参数 有的可以直接传结束时间有的只能定时传"
+    },
+    {
+      "id": 13433044,
+      "author": "sillydaddy",
+      "created": 1690860531,
+      "content": "喜欢看楼主的分享，写的很具体，很有开发气息，让人一下子知道 OP 都干嘛了。\r\n\r\n关于楼主的作品，我发现一个问题。我一般喜欢翻 AppStore 里面的评论，不过楼主的极简时钟，咋一个评论也没有呢？",
+      "content_rendered": "喜欢看楼主的分享，写的很具体，很有开发气息，让人一下子知道 OP 都干嘛了。<br /><br />关于楼主的作品，我发现一个问题。我一般喜欢翻 AppStore 里面的评论，不过楼主的极简时钟，咋一个评论也没有呢？"
+    },
+    {
+      "id": 13433666,
+      "author": "qfdk",
+      "created": 1690866419,
+      "content": "杂志暴露年龄",
+      "content_rendered": "杂志暴露年龄"
+    },
+    {
+      "id": 13434032,
+      "author": "vulgur",
+      "created": 1690869899,
+      "content": "@wednesdayco 哈哈哈，感同身受了",
+      "content_rendered": "@<a href=\"/member/wednesdayco\">wednesdayco</a> 哈哈哈，感同身受了"
+    },
+    {
+      "id": 13434045,
+      "author": "vulgur",
+      "created": 1690869995,
+      "content": "@sillydaddy 你是不是在 Mac App Store 里面看的？手机的 App Store 里国区有很多啊",
+      "content_rendered": "@<a href=\"/member/sillydaddy\">sillydaddy</a> 你是不是在 Mac App Store 里面看的？手机的 App Store 里国区有很多啊"
+    },
+    {
+      "id": 13434348,
+      "author": "sillydaddy",
+      "created": 1690872307,
+      "content": "@vulgur 就是在网页上看的： https://apps.apple.com/cn/app/id1265404088?see-all=reviews\r\n不过刚才又看了下，评论又出现了。不知道怎么回事。",
+      "content_rendered": "@<a href=\"/member/vulgur\">vulgur</a> 就是在网页上看的： <a target=\"_blank\" href=\"https://apps.apple.com/cn/app/id1265404088?see-all=reviews\" rel=\"nofollow noopener\">https://apps.apple.com/cn/app/id1265404088?see-all=reviews</a><br />不过刚才又看了下，评论又出现了。不知道怎么回事。"
+    },
+    {
+      "id": 13443352,
+      "author": "yueshizf",
+      "created": 1691030678,
+      "content": "大佬，云康宝体脂秤用着咋样？搜帖子搜到的",
+      "content_rendered": "大佬，云康宝体脂秤用着咋样？搜帖子搜到的"
+    }
+  ],
+  "reply_pages": 1,
+  "fetched_at": "2026-10-06T03:33:38.846Z"
+}

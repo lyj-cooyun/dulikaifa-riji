@@ -1,0 +1,93 @@
+{
+  "id": 970890,
+  "title": "独立开发周记 #29： 8 月数据总结",
+  "episode": {
+    "ep": 29,
+    "ep2": null
+  },
+  "node": "programmer",
+  "url": "https://www.v2ex.com/t/970890",
+  "created": 1693834655,
+  "last_touched": 1693847349,
+  "member": "vulgur",
+  "replies_count": 10,
+  "stars": 4,
+  "thanks": 0,
+  "content": "# 2023 ，0828-0903\r\n\r\n一个星期过去了，嗅觉和味觉只恢复了一丢丢，虽然不再发烧了，但还是一直没有力气和精神。\r\n\r\n之前还在想嗅觉和味觉恢复之后会不会报复性饮食，这种情况并没有出现，反倒是瘦了三斤。\r\n\r\n# 8 月数据\r\n\r\n- App Store ，下载量提高 30% 左右，收入提高 18%\r\n- Google Play ，下载量下降 5%，收入下降 16%\r\n- Admob ，收入提高了 10 美元\r\n- 国内安卓市场，下载量下降 16%，收入下降 15%\r\n\r\n# 极简时钟 iOS [App Store]( https://apps.apple.com/cn/app/id1265404088)\r\n\r\n## TipKit\r\n\r\n![]( https://img.way2solo.com/photo/vulgur/fb2a8c6e-d31e-45e7-8bfc-562f97d56df8.png?imageView2/2/w/1920/q/100)\r\n\r\n\r\n一直以来，因为极简时钟不是那么明显的操作手势（很多用户压根不看 App 描述里的使用说明），导致很多用户都不知道如何使用，甚至因为这个得到过很多差评。这周通过 iOS 17 新加入的 TipKit 给极简时钟加入了操作提示，但也遇到了一些问题。\r\n\r\n首先，我搜了几个关于 TipKit 的教程（非官方），按照这些教程，TipKit 的配置是这样的：\r\n\r\n```swift\r\ntry? await Tips.configure {\r\n\tDisplayFrequency(.immediate)\r\n\tDatastoreLocation(.applicationDefault)\r\n}\r\n```\r\n\r\n我当时的 Xcode 15 的版本是 beta 6 ，这段代码可以成功编译，但是一运行起来就会崩溃，也没搜到崩溃的原因和解决办法。于是我就尝试升级到 Xcode 15 到 beta 8 ，这段代码就无法编译了，查看了一下苹果的官方文档，原来这段配置代码的 API 改了，改成了这个样子：\r\n\r\n```swift\r\n// Configure and load your tips at app launch.\r\ntry? Tips.configure([\r\n\t.displayFrequency(.immediate),\r\n\t.datastoreLocation(.applicationDefault)\r\n])\r\n```\r\n\r\n我发现了三点变化：\r\n\r\n1. 不再需要 `await`\r\n2. 配置的参数形式\r\n3. 还有一个代码里看不出来，就是 `DatastoreLocation` 原来还有一个参数 `shouldReset`，这个参数适合测试用，但是新版 API 里去掉了这个参数\r\n\r\n其次，我加入了两个 Tip 。一个在右上角，可以正常显示出来。一个在底部，用`popoverTip`死活无法显示，只能是通过一个 `TipView` 来临时解决了。\r\n\r\n## 名称侵权\r\n\r\n最近在 App Store 中发现一个叫“极简时钟”的新上架的 app ，主打的功能居然是“AI 问答助手”。这个 app 的开发者是杭州的一家公司，旗下还有几个其他领域的 app ，从壁纸大全到化妆品管理，从 AI 画图到摄像头探测。其中化妆品管理这个 app 是评分数量最多的，然而令人震惊的是近一年的评论居然全是一星，无一例外！\r\n\r\n![]( https://img.way2solo.com/photo/vulgur/3ae15a00-ea03-4fea-b940-4b8d57d5baff.png?imageView2/2/w/1920/q/100)\r\n\r\n\r\n于是就在 App Store 提交了商标侵权的投诉，顺带也把另外两个常年不更新的“极简时钟”也给一起投诉了。\r\n\r\n下周打算针对“极简日记”再来一波投诉。\r\n\r\n# 播客\r\n\r\n周二早上醒来才发现之前录的播客发布了，比预期的时间早了一星期。\r\n\r\n佩服硬地骇客主播的剪辑能力，不仅剪辑速度惊人，而且居然能把我一些口误都修正了。\r\n\r\n![]( https://img.way2solo.com/photo/vulgur/998b7eb5-616c-4d77-a776-fc0233053a63.png?imageView2/2/w/1920/q/100)",
+  "content_rendered": "<h1>2023 ，0828-0903</h1>\n<p>一个星期过去了，嗅觉和味觉只恢复了一丢丢，虽然不再发烧了，但还是一直没有力气和精神。</p>\n<p>之前还在想嗅觉和味觉恢复之后会不会报复性饮食，这种情况并没有出现，反倒是瘦了三斤。</p>\n<h1>8 月数据</h1>\n<ul>\n<li>App Store ，下载量提高 30% 左右，收入提高 18%</li>\n<li>Google Play ，下载量下降 5%，收入下降 16%</li>\n<li>Admob ，收入提高了 10 美元</li>\n<li>国内安卓市场，下载量下降 16%，收入下降 15%</li>\n</ul>\n<h1>极简时钟 iOS <a href=\"https://apps.apple.com/cn/app/id1265404088\" rel=\"nofollow\">App Store</a></h1>\n<h2>TipKit</h2>\n<p><img alt=\"\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://img.way2solo.com/photo/vulgur/fb2a8c6e-d31e-45e7-8bfc-562f97d56df8.png?imageView2/2/w/1920/q/100\"/></p>\n<p>一直以来，因为极简时钟不是那么明显的操作手势（很多用户压根不看 App 描述里的使用说明），导致很多用户都不知道如何使用，甚至因为这个得到过很多差评。这周通过 iOS 17 新加入的 TipKit 给极简时钟加入了操作提示，但也遇到了一些问题。</p>\n<p>首先，我搜了几个关于 TipKit 的教程（非官方），按照这些教程，TipKit 的配置是这样的：</p>\n<pre><code class=\"language-swift\">try? await Tips.configure {\n\tDisplayFrequency(.immediate)\n\tDatastoreLocation(.applicationDefault)\n}\n</code></pre>\n<p>我当时的 Xcode 15 的版本是 beta 6 ，这段代码可以成功编译，但是一运行起来就会崩溃，也没搜到崩溃的原因和解决办法。于是我就尝试升级到 Xcode 15 到 beta 8 ，这段代码就无法编译了，查看了一下苹果的官方文档，原来这段配置代码的 API 改了，改成了这个样子：</p>\n<pre><code class=\"language-swift\">// Configure and load your tips at app launch.\ntry? Tips.configure([\n\t.displayFrequency(.immediate),\n\t.datastoreLocation(.applicationDefault)\n])\n</code></pre>\n<p>我发现了三点变化：</p>\n<ol>\n<li>不再需要 <code>await</code></li>\n<li>配置的参数形式</li>\n<li>还有一个代码里看不出来，就是 <code>DatastoreLocation</code> 原来还有一个参数 <code>shouldReset</code>，这个参数适合测试用，但是新版 API 里去掉了这个参数</li>\n</ol>\n<p>其次，我加入了两个 Tip 。一个在右上角，可以正常显示出来。一个在底部，用<code>popoverTip</code>死活无法显示，只能是通过一个 <code>TipView</code> 来临时解决了。</p>\n<h2>名称侵权</h2>\n<p>最近在 App Store 中发现一个叫“极简时钟”的新上架的 app ，主打的功能居然是“AI 问答助手”。这个 app 的开发者是杭州的一家公司，旗下还有几个其他领域的 app ，从壁纸大全到化妆品管理，从 AI 画图到摄像头探测。其中化妆品管理这个 app 是评分数量最多的，然而令人震惊的是近一年的评论居然全是一星，无一例外！</p>\n<p><img alt=\"\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://img.way2solo.com/photo/vulgur/3ae15a00-ea03-4fea-b940-4b8d57d5baff.png?imageView2/2/w/1920/q/100\"/></p>\n<p>于是就在 App Store 提交了商标侵权的投诉，顺带也把另外两个常年不更新的“极简时钟”也给一起投诉了。</p>\n<p>下周打算针对“极简日记”再来一波投诉。</p>\n<h1>播客</h1>\n<p>周二早上醒来才发现之前录的播客发布了，比预期的时间早了一星期。</p>\n<p>佩服硬地骇客主播的剪辑能力，不仅剪辑速度惊人，而且居然能把我一些口误都修正了。</p>\n<p><img alt=\"\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://img.way2solo.com/photo/vulgur/998b7eb5-616c-4d77-a776-fc0233053a63.png?imageView2/2/w/1920/q/100\"/></p>\n",
+  "supplements": [],
+  "replies": [
+    {
+      "id": 13596160,
+      "author": "AppJun",
+      "created": 1693835351,
+      "content": "“于是就在 App Store 提交了商标侵权的投诉，顺带也把另外两个常年不更新的“极简时钟”也给一起投诉了。\r\n\r\n下周打算针对“极简日记”再来一波投诉。”\r\n\r\n作为 iOS 开发说一下，你的应用全称是“极简时钟 - 番茄钟”，不是“极简时钟”，为什么不能叫“极简时钟”，大概率是之前已经被别人注册了。\r\n\r\n你自己的目前这个七个汉字两个空格一个连线符号的名字也不是你应用一开始的名字，2017/08/04 上架的时候叫做 Zen Flip Clock ，后来 2019/06/06 的 2.1 版本才叫做“极简时钟-番茄钟”。\r\n\r\n你确定还要投诉其他人的 App 也叫极简时钟？是不是霸道了一点？",
+      "content_rendered": "“于是就在 App Store 提交了商标侵权的投诉，顺带也把另外两个常年不更新的“极简时钟”也给一起投诉了。<br /><br />下周打算针对“极简日记”再来一波投诉。”<br /><br />作为 iOS 开发说一下，你的应用全称是“极简时钟 - 番茄钟”，不是“极简时钟”，为什么不能叫“极简时钟”，大概率是之前已经被别人注册了。<br /><br />你自己的目前这个七个汉字两个空格一个连线符号的名字也不是你应用一开始的名字，2017/08/04 上架的时候叫做 Zen Flip Clock ，后来 2019/06/06 的 2.1 版本才叫做“极简时钟-番茄钟”。<br /><br />你确定还要投诉其他人的 App 也叫极简时钟？是不是霸道了一点？"
+    },
+    {
+      "id": 13596168,
+      "author": "AppJun",
+      "created": 1693835484,
+      "content": "而你想投诉的常年不更新的应该有一个是 ： https://www.qimai.cn/app/version/appid/1250101496/country/cn\r\n\r\n人家 2017/06/26 第一个版本简体中文的名字就是“极简时钟”开头了。\r\n\r\n这个谁先谁后，我建议你还是多复核一下。",
+      "content_rendered": "而你想投诉的常年不更新的应该有一个是 ： <a target=\"_blank\" href=\"https://www.qimai.cn/app/version/appid/1250101496/country/cn\" rel=\"nofollow noopener\">https://www.qimai.cn/app/version/appid/1250101496/country/cn</a><br /><br />人家 2017/06/26 第一个版本简体中文的名字就是“极简时钟”开头了。<br /><br />这个谁先谁后，我建议你还是多复核一下。"
+    },
+    {
+      "id": 13596179,
+      "author": "vulgur",
+      "created": 1693835805,
+      "content": "@AppJun 你说得对，我应该通过商标向 App Store 申请独占“极简时钟”这个名字，App Store 后台有这个申请入口",
+      "content_rendered": "@<a href=\"/member/AppJun\">AppJun</a> 你说得对，我应该通过商标向 App Store 申请独占“极简时钟”这个名字，App Store 后台有这个申请入口"
+    },
+    {
+      "id": 13596218,
+      "author": "AppJun",
+      "created": 1693836549,
+      "content": "@vulgur 我查了你目前的申请商标，最直接的第九类你并没有商标的所有权，你只有第四十二类的“极简时钟”商标权利。\r\n\r\n另外，我对于这种 17 年就实际 App 用的“极简日记”/“极简时钟”的情况下，20 年还跑去把这种名字注册商标的行为……\r\n\r\n只能说可以理解吧，其他不多说了。",
+      "content_rendered": "@<a href=\"/member/vulgur\">vulgur</a> 我查了你目前的申请商标，最直接的第九类你并没有商标的所有权，你只有第四十二类的“极简时钟”商标权利。<br /><br />另外，我对于这种 17 年就实际 App 用的“极简日记”/“极简时钟”的情况下，20 年还跑去把这种名字注册商标的行为……<br /><br />只能说可以理解吧，其他不多说了。"
+    },
+    {
+      "id": 13596757,
+      "author": "babyoung",
+      "created": 1693873292,
+      "content": "其实就看人家愿不愿意把名称让给你",
+      "content_rendered": "其实就看人家愿不愿意把名称让给你"
+    },
+    {
+      "id": 13597208,
+      "author": "ixixi",
+      "created": 1693877726,
+      "content": "挤兑同行  是大忌",
+      "content_rendered": "挤兑同行  是大忌"
+    },
+    {
+      "id": 13598453,
+      "author": "honghaoz",
+      "created": 1693886812,
+      "content": "> 顺带也把另外两个常年不更新的“极简时钟”也给一起投诉了。\r\n> 下周打算针对“极简日记”再来一波投诉。\r\n\r\n您这可真是小人啊。",
+      "content_rendered": "&gt; 顺带也把另外两个常年不更新的“极简时钟”也给一起投诉了。<br />&gt; 下周打算针对“极简日记”再来一波投诉。<br /><br />您这可真是小人啊。"
+    },
+    {
+      "id": 13599239,
+      "author": "simonCN",
+      "created": 1693895289,
+      "content": "@vulgur 想问下那个评论截图是在浏览器里面查看的吗？想问下怎么在浏览器里面查看 AppStore 上的应用，我搜到的这个链接不对，跳转的是购买 Apple 产品的商店\r\nhttps://www.apple.com/app-store/",
+      "content_rendered": "@<a href=\"/member/vulgur\">vulgur</a> 想问下那个评论截图是在浏览器里面查看的吗？想问下怎么在浏览器里面查看 AppStore 上的应用，我搜到的这个链接不对，跳转的是购买 Apple 产品的商店<br /><a target=\"_blank\" href=\"https://www.apple.com/app-store/\" rel=\"nofollow noopener\">https://www.apple.com/app-store/</a>"
+    },
+    {
+      "id": 13599324,
+      "author": "huihuiHK",
+      "created": 1693896037,
+      "content": "就因为别人常年不更新，然后就把别人给投诉了。别人可真冤，哈哈😄️",
+      "content_rendered": "就因为别人常年不更新，然后就把别人给投诉了。别人可真冤，哈哈😄️"
+    },
+    {
+      "id": 13600335,
+      "author": "WytheHuang",
+      "created": 1693903294,
+      "content": "> 顺带也把另外两个常年不更新的“极简时钟”也给一起投诉了。\n> 下周打算针对“极简日记”再来一波投诉。\n这操作有点迷",
+      "content_rendered": "&gt; 顺带也把另外两个常年不更新的“极简时钟”也给一起投诉了。<br />&gt; 下周打算针对“极简日记”再来一波投诉。<br />这操作有点迷"
+    }
+  ],
+  "reply_pages": 1,
+  "fetched_at": "2026-10-06T03:33:33.251Z"
+}

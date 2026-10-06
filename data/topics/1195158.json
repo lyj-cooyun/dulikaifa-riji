@@ -1,0 +1,37 @@
+{
+  "id": 1195158,
+  "title": "独立开发周记 159：该花花，该省省",
+  "episode": {
+    "ep": 159,
+    "ep2": null
+  },
+  "node": "weekly",
+  "url": "https://www.v2ex.com/t/1195158",
+  "created": 1772429364,
+  "last_touched": 1772435331,
+  "member": "vulgur",
+  "replies_count": 2,
+  "stars": 3,
+  "thanks": 0,
+  "content": "# 2026,0223 - 0301\r\n这周除了周五，其余六天的晚餐居然都是在饭店吃的，差一点就达成了天天下馆子的成就。\r\n\r\n# 本周工作\r\n\r\n用 Codex 给极简日记 iOS 修了个 bug ，修完后就用完了 Codex 的使用限额，于是休息了两天，顺便学了点 Shader 相关知识。\r\n\r\n## Metal Shaders\r\n之前借鉴了一个 GitHub 开源的 Shader 特效给极简日记加入了删除动画，后来又靠 AI 写了个带有玻璃特效的时钟 demo ，但是我自己对于 Shader 的代码是一无所知的。\r\n\r\n之前收藏了一个叫做 [Metal Shaders for SwiftUI]( https://www.metal.graphics/ \"Metal Shaders for SwiftUI\") 的免费教程，这周学习了两天，跟着一点点一行行手敲代码。SwiftUI 里针对 Shader 的修饰符有三个：`.colorEffect`、`.distortionEffect`、`.layerEffect`，这两天只学习了 .colorEffect ，就是关于颜色的变换。\r\n\r\n写 Shader 有好几个难点。一是语言，Shader 的语言是 Apple GPU 专用的 Metal Shading Language （ MSL ），语法风格接近于 C++，每句代码结尾必须写分号可太痛苦了。二是所有的计算都是关于平面几何的，复杂一点的还会涉及到三角函数，这部分知识我早都忘光了。三是 Shader 的思维和以前遇到的绘图思维完全不一样，普通的绘图思维就是点线面和坐标，但是 Shader 的绘图思维是连续的空间计算，是根据范围内所有坐标的特征去绘制。\r\n\r\n教程非常不错，讲解详细，示例完整，每个知识点还配有对应的挑战题。一开始简单的挑战题我还能自己做出来，但是后面越来越难，我只好交给 AI 了，AI 给出的答案也可以作为教程的补充，顺便学到更多的解决思路。\r\n\r\n\r\n\r\n![]( https://files.mdnice.com/user/73796/9b1a044a-60c9-4720-8380-15d6d32a4e0b.jpg)\r\n\r\n\r\n\r\n## 申请软著\r\n最近一直在重写 Nut Goals ，准备上架国内安卓和鸿蒙。稍微犹豫了一下是申请软著还是电子版权，考虑到还需要开发一段时间，也不着急上架，那就自己去申请软著吧，还能省下一笔钱。我知道软著是可以自己免费申请并下证的，但是之前的极简时钟和极简日记我都是通过代理申请的，因为我不想去自己整理那些文档。前段时间在网上看到现在已经有软著代码生成器了，就想着自己尝试免费申请一下。但是除了代码，还需要使用说明，这个文档需要很多说明文字和 App 截图，我最讨厌这种工作了，最后还是找了一个付费的 AI 生成申请软著全部资料的服务，花了 30 元帮我生成了所有需要提交的资料，比起 300 多的代理费用还是便宜太多了。\r\n\r\n比较尴尬的是，这个 AI 生成的 App UI 比我自己写的还要好看，而且功能更加丰富，我完全可以根据 AI 生成的这一套 UI 来重写一遍了……\r\n\r\n\r\n![]( https://files.mdnice.com/user/73796/38815b2f-625b-4c1e-a1f5-1bebd0c0c315.png)\r\n\r\n\r\n在版权保护中心提交申请也没有想象中那么麻烦，就是网站 bug 多了一些。中间掉过一次登录状态，上传文件后没有进度提示，再次点击上传才会提示不允许多次提交相同文件，提交后某些信息和状态没有更新，需要刷新才可以显示最新状态。\r\n\r\n# 代码之外\r\n\r\n- 错峰去了鸟化石国家地质公园，镇馆之宝之一的中华古果居然只展出了复制品。\r\n- 第二次知乎提现，提了 123.20 元。\r\n- 又续费了一年 PlayStation 三档会员。\r\n- 主力键盘莫名其妙坏了，终于等到年后客服上线可以寄修，因为是超级重的铝坨坨，邮费就要 20 块！\r\n- 之前喝 0.5 度的米酒就有种微醺的感觉，这次在超市发现了一个气泡米酒，6 度，对我来说就是高度酒了，几口下去果然头晕脑胀浑身燥热……\r\n\r\n\r\n![]( https://files.mdnice.com/user/73796/fe8b3b5f-ba47-44b2-a050-59f9e9e13d43.jpg)",
+  "content_rendered": "<h1>2026,0223 - 0301</h1>\n<p>这周除了周五，其余六天的晚餐居然都是在饭店吃的，差一点就达成了天天下馆子的成就。</p>\n<h1>本周工作</h1>\n<p>用 Codex 给极简日记 iOS 修了个 bug ，修完后就用完了 Codex 的使用限额，于是休息了两天，顺便学了点 Shader 相关知识。</p>\n<h2>Metal Shaders</h2>\n<p>之前借鉴了一个 GitHub 开源的 Shader 特效给极简日记加入了删除动画，后来又靠 AI 写了个带有玻璃特效的时钟 demo ，但是我自己对于 Shader 的代码是一无所知的。</p>\n<p>之前收藏了一个叫做 <a href=\"https://www.metal.graphics/\" rel=\"nofollow\" title=\"Metal Shaders for SwiftUI\">Metal Shaders for SwiftUI</a> 的免费教程，这周学习了两天，跟着一点点一行行手敲代码。SwiftUI 里针对 Shader 的修饰符有三个：<code>.colorEffect</code>、<code>.distortionEffect</code>、<code>.layerEffect</code>，这两天只学习了 .colorEffect ，就是关于颜色的变换。</p>\n<p>写 Shader 有好几个难点。一是语言，Shader 的语言是 Apple GPU 专用的 Metal Shading Language （ MSL ），语法风格接近于 C++，每句代码结尾必须写分号可太痛苦了。二是所有的计算都是关于平面几何的，复杂一点的还会涉及到三角函数，这部分知识我早都忘光了。三是 Shader 的思维和以前遇到的绘图思维完全不一样，普通的绘图思维就是点线面和坐标，但是 Shader 的绘图思维是连续的空间计算，是根据范围内所有坐标的特征去绘制。</p>\n<p>教程非常不错，讲解详细，示例完整，每个知识点还配有对应的挑战题。一开始简单的挑战题我还能自己做出来，但是后面越来越难，我只好交给 AI 了，AI 给出的答案也可以作为教程的补充，顺便学到更多的解决思路。</p>\n<p><img alt=\"\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://files.mdnice.com/user/73796/9b1a044a-60c9-4720-8380-15d6d32a4e0b.jpg\"/></p>\n<h2>申请软著</h2>\n<p>最近一直在重写 Nut Goals ，准备上架国内安卓和鸿蒙。稍微犹豫了一下是申请软著还是电子版权，考虑到还需要开发一段时间，也不着急上架，那就自己去申请软著吧，还能省下一笔钱。我知道软著是可以自己免费申请并下证的，但是之前的极简时钟和极简日记我都是通过代理申请的，因为我不想去自己整理那些文档。前段时间在网上看到现在已经有软著代码生成器了，就想着自己尝试免费申请一下。但是除了代码，还需要使用说明，这个文档需要很多说明文字和 App 截图，我最讨厌这种工作了，最后还是找了一个付费的 AI 生成申请软著全部资料的服务，花了 30 元帮我生成了所有需要提交的资料，比起 300 多的代理费用还是便宜太多了。</p>\n<p>比较尴尬的是，这个 AI 生成的 App UI 比我自己写的还要好看，而且功能更加丰富，我完全可以根据 AI 生成的这一套 UI 来重写一遍了……</p>\n<p><img alt=\"\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://files.mdnice.com/user/73796/38815b2f-625b-4c1e-a1f5-1bebd0c0c315.png\"/></p>\n<p>在版权保护中心提交申请也没有想象中那么麻烦，就是网站 bug 多了一些。中间掉过一次登录状态，上传文件后没有进度提示，再次点击上传才会提示不允许多次提交相同文件，提交后某些信息和状态没有更新，需要刷新才可以显示最新状态。</p>\n<h1>代码之外</h1>\n<ul>\n<li>错峰去了鸟化石国家地质公园，镇馆之宝之一的中华古果居然只展出了复制品。</li>\n<li>第二次知乎提现，提了 123.20 元。</li>\n<li>又续费了一年 PlayStation 三档会员。</li>\n<li>主力键盘莫名其妙坏了，终于等到年后客服上线可以寄修，因为是超级重的铝坨坨，邮费就要 20 块！</li>\n<li>之前喝 0.5 度的米酒就有种微醺的感觉，这次在超市发现了一个气泡米酒，6 度，对我来说就是高度酒了，几口下去果然头晕脑胀浑身燥热……</li>\n</ul>\n<p><img alt=\"\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://files.mdnice.com/user/73796/fe8b3b5f-ba47-44b2-a050-59f9e9e13d43.jpg\"/></p>\n",
+  "supplements": [],
+  "replies": [
+    {
+      "id": 17361914,
+      "author": "ElioChry",
+      "created": 1772430789,
+      "content": "这个 ai 生成软著服务叫啥啊大佬",
+      "content_rendered": "这个 ai 生成软著服务叫啥啊大佬"
+    },
+    {
+      "id": 17362426,
+      "author": "Aliesz",
+      "created": 1772435331,
+      "content": "@themany 站里面有发的推广叫软著通",
+      "content_rendered": "@<a href=\"/member/themany\">themany</a> 站里面有发的推广叫软著通"
+    }
+  ],
+  "reply_pages": 1,
+  "fetched_at": "2026-10-06T03:31:03.867Z"
+}

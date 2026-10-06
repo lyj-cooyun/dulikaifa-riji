@@ -1,0 +1,93 @@
+{
+  "id": 1048309,
+  "title": "独立开发周记 69：日下载量从 8000 暴跌到 800",
+  "episode": {
+    "ep": 69,
+    "ep2": null
+  },
+  "node": "starter",
+  "url": "https://www.v2ex.com/t/1048309",
+  "created": 1718025477,
+  "last_touched": 1718045491,
+  "member": "vulgur",
+  "replies_count": 10,
+  "stars": 3,
+  "thanks": 0,
+  "content": "# 2024 ，0603-0609 ，第 23 周\r\n这周左小臂外侧的肌肉又开始疼了，只好掏出了分体键盘，试图缓解一下。没舍得扔的瑞幸杯托终于有了用武之地，正好给键盘做了个支架，还挺舒服。\r\n\r\n![]( https://img.way2solo.com/photo/vulgur/f1fab321-eb4c-4bef-aa97-4e1a0ab987dd.jpeg?imageView2/2/w/1920/q/100)\r\n\r\n# 本周开发 \r\n## 极简日记 iOS\r\n提交了 v1.7.24 ，修复了两个 bug ，都是关于分享图片的：\r\n- 一天日记的宽度 bug\r\n- 日记中图片尺寸的 bug\r\n## 极简时钟 iOS\r\n提交了 v4.3.14 ，修复了小组件上日期文本的长度问题，距离上次更新居然有两个月了。\r\n\r\n### 新表盘\r\n设计师的样稿出了，非常满意。我也根据样稿开始写代码，每天写一点，然后提交 TF ，又回到了一年前的开发节奏。不过估计还需要一个星期才能提交新版本。\r\n\r\n## 极简时钟 Android （ GP ）\r\n\r\n### 下载量跌破 1000\r\nGoogle Play 上的极简时钟的下载量是有周期的， 最近半年正好处于下降周期。但是无论之前无论怎么下降，也会在接近 1000 的时候触底反弹，然而日下载量在这周居然跌破了 1000 ，甚至跌破了 900 。日下载记录之前的最高值是 8000 多，一年半后，跌至 800 多……淦！\r\n\r\n![]( https://img.way2solo.com/photo/vulgur/c6482491-4ae0-45ae-88fa-919acbcd5398.png?imageView2/2/w/1920/q/100)\r\n\r\n我针对 GP 的策略就是放任自流，就是提交后就不管了，所以 GP 上的全是自然流量，下载上涨和下降都不知道原因是什么。\r\n\r\n于是这周开展了两个实验，看看会不会有什么改善：\r\n- 商品详情试验，提交了另一个版本的详情页截图\r\n- 价格实验，针对 10 个国家调低了内购的价格\r\n\r\n# 本周娱乐\r\n- 补完了《 Upload 》第三季。第二季太烂了，剧情完全忘光了。第三季的质量有所回升，特别是男主 Nathan 分身的设计比较有意思，Ingrid 这个人物越来越丰富了，Nora 变胖了。整部剧里对于 VR 的应用不知道各大科技厂商能否跟进实现啊。最后结尾还留了个悬念，看样子还得出第四季。\r\n\r\n![]( https://img.way2solo.com/photo/vulgur/2ba366cc-5d6b-4c08-a169-8e11e5e3f56a.jpg?imageView2/2/w/1920/q/100)\r\n\r\n- 这周完全沉迷于快递模拟器了，死亡搁浅，目前已经游玩 XX 小时了。游戏里的邮件我本来都不怎么关注，但是没想到导剪版里面居然还有和《电驭叛客 2077 》的联动。\r\n\r\n![]( https://img.way2solo.com/photo/vulgur/791f25c4-2e5d-422a-a288-d70f7c4f44a2.jpeg?imageView2/2/w/1920/q/100)\r\n\r\n# 本周尝试\r\n- 学做了一道新菜，凉拌包菜。这道菜看起来简单，但是比起鸡翅和牛排费时费力多了。就这一盘菜，需要浸泡、焯水、过凉水，用掉三大锅水。\r\n\r\n![]( https://img.way2solo.com/photo/vulgur/6ca291c5-884c-4195-843d-a92a0e8e4636.jpeg?imageView2/2/w/1920/q/100)\r\n\r\n- 新买了一个尤克里里，300 多块，但是感觉跟之前花 70 块给孩子买的玩具没什么区别。每天跟着配套的教程练习半小时，就当是工作之余的放松了。我完全是零基础，F 变到 G 也太难按了啊，希望一个月后可以弹唱简单的曲子。\r\n\r\n![]( https://img.way2solo.com/photo/vulgur/e84f04ab-0572-4f99-ae5b-80d95d55e34e.jpeg?imageView2/2/w/1920/q/100)\r\n\r\n# 下周计划\r\n下周将会是非常忙碌的一周，估计没有多少时间送快递了。\r\n\r\n国内安卓版的三个 App 下周都要更新一版。特别是极简时钟，距离上次国内市场的更新已经半年了，这次更新的是全新 UI 的版本，如今后端和 API 终于都准备好了，希望不要出什么岔子。\r\n\r\n当然了，最重头的还是 WWDC 。今年没有报名线下活动，年纪大了，熬不动了，就不准备看直播了，希望一觉醒来就有惊喜。",
+  "content_rendered": "<h1>2024 ，0603-0609 ，第 23 周</h1>\n<p>这周左小臂外侧的肌肉又开始疼了，只好掏出了分体键盘，试图缓解一下。没舍得扔的瑞幸杯托终于有了用武之地，正好给键盘做了个支架，还挺舒服。</p>\n<p><img alt=\"\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://img.way2solo.com/photo/vulgur/f1fab321-eb4c-4bef-aa97-4e1a0ab987dd.jpeg?imageView2/2/w/1920/q/100\"/></p>\n<h1>本周开发</h1>\n<h2>极简日记 iOS</h2>\n<p>提交了 v1.7.24 ，修复了两个 bug ，都是关于分享图片的：</p>\n<ul>\n<li>一天日记的宽度 bug</li>\n<li>日记中图片尺寸的 bug</li>\n</ul>\n<h2>极简时钟 iOS</h2>\n<p>提交了 v4.3.14 ，修复了小组件上日期文本的长度问题，距离上次更新居然有两个月了。</p>\n<h3>新表盘</h3>\n<p>设计师的样稿出了，非常满意。我也根据样稿开始写代码，每天写一点，然后提交 TF ，又回到了一年前的开发节奏。不过估计还需要一个星期才能提交新版本。</p>\n<h2>极简时钟 Android （ GP ）</h2>\n<h3>下载量跌破 1000</h3>\n<p>Google Play 上的极简时钟的下载量是有周期的， 最近半年正好处于下降周期。但是无论之前无论怎么下降，也会在接近 1000 的时候触底反弹，然而日下载量在这周居然跌破了 1000 ，甚至跌破了 900 。日下载记录之前的最高值是 8000 多，一年半后，跌至 800 多……淦！</p>\n<p><img alt=\"\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://img.way2solo.com/photo/vulgur/c6482491-4ae0-45ae-88fa-919acbcd5398.png?imageView2/2/w/1920/q/100\"/></p>\n<p>我针对 GP 的策略就是放任自流，就是提交后就不管了，所以 GP 上的全是自然流量，下载上涨和下降都不知道原因是什么。</p>\n<p>于是这周开展了两个实验，看看会不会有什么改善：</p>\n<ul>\n<li>商品详情试验，提交了另一个版本的详情页截图</li>\n<li>价格实验，针对 10 个国家调低了内购的价格</li>\n</ul>\n<h1>本周娱乐</h1>\n<ul>\n<li>补完了《 Upload 》第三季。第二季太烂了，剧情完全忘光了。第三季的质量有所回升，特别是男主 Nathan 分身的设计比较有意思，Ingrid 这个人物越来越丰富了，Nora 变胖了。整部剧里对于 VR 的应用不知道各大科技厂商能否跟进实现啊。最后结尾还留了个悬念，看样子还得出第四季。</li>\n</ul>\n<p><img alt=\"\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://img.way2solo.com/photo/vulgur/2ba366cc-5d6b-4c08-a169-8e11e5e3f56a.jpg?imageView2/2/w/1920/q/100\"/></p>\n<ul>\n<li>这周完全沉迷于快递模拟器了，死亡搁浅，目前已经游玩 XX 小时了。游戏里的邮件我本来都不怎么关注，但是没想到导剪版里面居然还有和《电驭叛客 2077 》的联动。</li>\n</ul>\n<p><img alt=\"\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://img.way2solo.com/photo/vulgur/791f25c4-2e5d-422a-a288-d70f7c4f44a2.jpeg?imageView2/2/w/1920/q/100\"/></p>\n<h1>本周尝试</h1>\n<ul>\n<li>学做了一道新菜，凉拌包菜。这道菜看起来简单，但是比起鸡翅和牛排费时费力多了。就这一盘菜，需要浸泡、焯水、过凉水，用掉三大锅水。</li>\n</ul>\n<p><img alt=\"\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://img.way2solo.com/photo/vulgur/6ca291c5-884c-4195-843d-a92a0e8e4636.jpeg?imageView2/2/w/1920/q/100\"/></p>\n<ul>\n<li>新买了一个尤克里里，300 多块，但是感觉跟之前花 70 块给孩子买的玩具没什么区别。每天跟着配套的教程练习半小时，就当是工作之余的放松了。我完全是零基础，F 变到 G 也太难按了啊，希望一个月后可以弹唱简单的曲子。</li>\n</ul>\n<p><img alt=\"\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://img.way2solo.com/photo/vulgur/e84f04ab-0572-4f99-ae5b-80d95d55e34e.jpeg?imageView2/2/w/1920/q/100\"/></p>\n<h1>下周计划</h1>\n<p>下周将会是非常忙碌的一周，估计没有多少时间送快递了。</p>\n<p>国内安卓版的三个 App 下周都要更新一版。特别是极简时钟，距离上次国内市场的更新已经半年了，这次更新的是全新 UI 的版本，如今后端和 API 终于都准备好了，希望不要出什么岔子。</p>\n<p>当然了，最重头的还是 WWDC 。今年没有报名线下活动，年纪大了，熬不动了，就不准备看直播了，希望一觉醒来就有惊喜。</p>\n",
+  "supplements": [],
+  "replies": [
+    {
+      "id": 14842009,
+      "author": "hpj",
+      "created": 1718026061,
+      "content": "哈哈哈 V2EX blog",
+      "content_rendered": "哈哈哈 V2EX blog"
+    },
+    {
+      "id": 14842053,
+      "author": "huage",
+      "created": 1718027603,
+      "content": "盈利情况如何？ ALL IN 独立开发吗？有没有其他收入？",
+      "content_rendered": "盈利情况如何？ ALL IN 独立开发吗？有没有其他收入？"
+    },
+    {
+      "id": 14842054,
+      "author": "BeiChuanAlex",
+      "created": 1718027744,
+      "content": "个人愚见：应该把大部分的精力放到营销上，而不是技术上。",
+      "content_rendered": "个人愚见：应该把大部分的精力放到营销上，而不是技术上。"
+    },
+    {
+      "id": 14842081,
+      "author": "Keyblade",
+      "created": 1718028364,
+      "content": "我支持 3L ，你可以小红书开个号写这些",
+      "content_rendered": "我支持 3L ，你可以小红书开个号写这些"
+    },
+    {
+      "id": 14842082,
+      "author": "Keyblade",
+      "created": 1718028377,
+      "content": "@Keyblade #4 回完一搜楼主已经干上了，当我没说",
+      "content_rendered": "@<a href=\"/member/Keyblade\">Keyblade</a> #4 回完一搜楼主已经干上了，当我没说"
+    },
+    {
+      "id": 14842206,
+      "author": "BernieDu",
+      "created": 1718031091,
+      "content": "@BeiChuanAlex 这不是当年联想总裁和马斯克对线的时候说的话吗，后来被绿联学去了",
+      "content_rendered": "@<a href=\"/member/BeiChuanAlex\">BeiChuanAlex</a> 这不是当年联想总裁和马斯克对线的时候说的话吗，后来被绿联学去了"
+    },
+    {
+      "id": 14842800,
+      "author": "tutudehuohuo",
+      "created": 1718064617,
+      "content": "@BeiChuanAlex 这篇课文不就是在营销么",
+      "content_rendered": "@<a href=\"/member/BeiChuanAlex\">BeiChuanAlex</a> 这篇课文不就是在营销么"
+    },
+    {
+      "id": 14843073,
+      "author": "dnL",
+      "created": 1718068456,
+      "content": "@huage 不是说了送快递了吗",
+      "content_rendered": "@<a href=\"/member/huage\">huage</a> 不是说了送快递了吗"
+    },
+    {
+      "id": 14844560,
+      "author": "qtxxm",
+      "created": 1718076738,
+      "content": "@dnL 他是在《死亡搁浅》里送快递，我一开始也以为现实生活中送快递",
+      "content_rendered": "@<a href=\"/member/dnL\">dnL</a> 他是在《死亡搁浅》里送快递，我一开始也以为现实生活中送快递"
+    },
+    {
+      "id": 14845733,
+      "author": "dnL",
+      "created": 1718087534,
+      "content": "@qtxxm 看岔劈了，😂",
+      "content_rendered": "@<a href=\"/member/qtxxm\">qtxxm</a> 看岔劈了，😂"
+    }
+  ],
+  "reply_pages": 1,
+  "fetched_at": "2026-10-06T03:32:49.409Z"
+}

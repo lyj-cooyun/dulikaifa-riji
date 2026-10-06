@@ -1,0 +1,22 @@
+{
+  "id": 1233120,
+  "title": "独立开发周记 182：奖金到手，鲜香满口",
+  "episode": {
+    "ep": 182,
+    "ep2": null
+  },
+  "node": "isv",
+  "url": "https://www.v2ex.com/t/1233120",
+  "created": 1786322788,
+  "last_touched": 1786322788,
+  "member": "vulgur",
+  "replies_count": 0,
+  "stars": 2,
+  "thanks": 1,
+  "content": "# 2026 ，0803 ～ 0809\r\n前半个星期热到爆炸，最热的那天高温橙色预警预报居然有 42.7 度！周末立秋来了，温度瞬间就降下来了，秋高气爽。\r\n\r\n# 本周工作\r\n\r\n## 极简时钟 iOS\r\n在小红书向一个独立开发者请教如何提高转化率，没想到他深度体验了极简时钟后给出了非常详细的建议。我也是按照他的建议完全重做了极简时钟的 Onboarding ，看看有没有效果。下周旅游回来再针对 Paywall 进行优化。\r\n\r\n![]( https://files.mdnice.com/user/73796/5acae3ff-f380-4b01-a04a-a03b527389e5.jpeg)\r\n\r\n\r\n\r\n## 新 App\r\n\r\n整周只有周日抽空推进了一小部分进度，基本完成了 Onboarding 的页面流程，一共有 9 个页面，是我目前做过最长的一个 Onboarding 了。以前我做 3 个页面就感觉足够了，我自己也非常讨厌没完没了的点击下一步和问卷调查，但是知名开发者赵纯想说如果 Onboarding 超过 25 步，会同时筛掉非目标用户和提升转化率。\r\n\r\n\r\n![]( https://files.mdnice.com/user/73796/4ddb0543-d470-462d-955b-110d8f8f166f.png)\r\n\r\n\r\n## 第二高的一笔国内收入\r\n\r\n自从华为后台发起打款，过了两个星期，终于收到了，一万元整。一开始我还以为这是国内收入最高的一笔打款，后来才想起来去年 3 月国内安卓市场的极简日记爆发了几天，那个月的收入比这次还高。\r\n\r\n在去北京的高铁上看到了这笔打款到账，晚上就去吃了日料自助。\r\n\r\n\r\n![]( https://files.mdnice.com/user/73796/59ed0b4f-97d6-4358-a6ab-9d0e04e34fe3.jpeg)\r\n\r\n\r\n\r\n# 代码之外\r\n\r\n## 烂书烂电影\r\n看了《超级少女》，票房惨淡一点也不冤枉。从头到尾的俗套，剧情一言难尽。海王这个角色在剧里完全不知道有什么用途，去掉的话也完全不影响。反派 Boss 也没有气场，能力就只是力大无穷，也没有其他超能力，就这么一个土匪头子居然是最大反派，实在是撑不起来。\r\n\r\n主演的米莉我是很喜欢，之前在《龙之家族》第一季的表演非常出色。但是超女这个形象，之前的美剧和《闪电侠》大电影里的两个版本虽然和这个电影的风格都不一样，说实话这个电影版还是要略逊一筹。\r\n\r\n\r\n![]( https://files.mdnice.com/user/73796/b7b32323-b3ea-4118-86b9-6159fed306eb.jpeg)\r\n\r\n\r\n忍着看完了京极夏彦的《姑获鸟之夏》，什么破玩意儿。失忆的，睁眼瞎的，人格分裂的，还有开天眼的，瞎逼叨叨的，简直是全员神经病，凑成一个离谱的故事。\r\n\r\n\r\n![]( https://files.mdnice.com/user/73796/d5bea500-ba1c-4ead-b884-f25518e5d9f7.jpeg)\r\n\r\n\r\n## 吃吃吃\r\n\r\n又是大吃特吃的一周。\r\n\r\n大哥一家专程回乡祭祖，两天的午餐和晚餐都是在饭店里。\r\n\r\n周五周六去了北京两天，下车就吃了门框卤煮，本来打算周六去吃日料自助，但是临时起意就改成了周五，没想到还赶上了每周一次的开鱼，第一次吃到了现切的蓝鳍金枪鱼。\r\n\r\n周日回家一小顿烧烤，完美结束一周。\r\n\r\n\r\n![]( https://files.mdnice.com/user/73796/b04b3fd0-2314-432a-8c3b-faa5b5fee77f.jpg)",
+  "content_rendered": "<h1>2026 ，0803 ～ 0809</h1>\n<p>前半个星期热到爆炸，最热的那天高温橙色预警预报居然有 42.7 度！周末立秋来了，温度瞬间就降下来了，秋高气爽。</p>\n<h1>本周工作</h1>\n<h2>极简时钟 iOS</h2>\n<p>在小红书向一个独立开发者请教如何提高转化率，没想到他深度体验了极简时钟后给出了非常详细的建议。我也是按照他的建议完全重做了极简时钟的 Onboarding ，看看有没有效果。下周旅游回来再针对 Paywall 进行优化。</p>\n<p><img alt=\"\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://files.mdnice.com/user/73796/5acae3ff-f380-4b01-a04a-a03b527389e5.jpeg\"/></p>\n<h2>新 App</h2>\n<p>整周只有周日抽空推进了一小部分进度，基本完成了 Onboarding 的页面流程，一共有 9 个页面，是我目前做过最长的一个 Onboarding 了。以前我做 3 个页面就感觉足够了，我自己也非常讨厌没完没了的点击下一步和问卷调查，但是知名开发者赵纯想说如果 Onboarding 超过 25 步，会同时筛掉非目标用户和提升转化率。</p>\n<p><img alt=\"\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://files.mdnice.com/user/73796/4ddb0543-d470-462d-955b-110d8f8f166f.png\"/></p>\n<h2>第二高的一笔国内收入</h2>\n<p>自从华为后台发起打款，过了两个星期，终于收到了，一万元整。一开始我还以为这是国内收入最高的一笔打款，后来才想起来去年 3 月国内安卓市场的极简日记爆发了几天，那个月的收入比这次还高。</p>\n<p>在去北京的高铁上看到了这笔打款到账，晚上就去吃了日料自助。</p>\n<p><img alt=\"\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://files.mdnice.com/user/73796/59ed0b4f-97d6-4358-a6ab-9d0e04e34fe3.jpeg\"/></p>\n<h1>代码之外</h1>\n<h2>烂书烂电影</h2>\n<p>看了《超级少女》，票房惨淡一点也不冤枉。从头到尾的俗套，剧情一言难尽。海王这个角色在剧里完全不知道有什么用途，去掉的话也完全不影响。反派 Boss 也没有气场，能力就只是力大无穷，也没有其他超能力，就这么一个土匪头子居然是最大反派，实在是撑不起来。</p>\n<p>主演的米莉我是很喜欢，之前在《龙之家族》第一季的表演非常出色。但是超女这个形象，之前的美剧和《闪电侠》大电影里的两个版本虽然和这个电影的风格都不一样，说实话这个电影版还是要略逊一筹。</p>\n<p><img alt=\"\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://files.mdnice.com/user/73796/b7b32323-b3ea-4118-86b9-6159fed306eb.jpeg\"/></p>\n<p>忍着看完了京极夏彦的《姑获鸟之夏》，什么破玩意儿。失忆的，睁眼瞎的，人格分裂的，还有开天眼的，瞎逼叨叨的，简直是全员神经病，凑成一个离谱的故事。</p>\n<p><img alt=\"\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://files.mdnice.com/user/73796/d5bea500-ba1c-4ead-b884-f25518e5d9f7.jpeg\"/></p>\n<h2>吃吃吃</h2>\n<p>又是大吃特吃的一周。</p>\n<p>大哥一家专程回乡祭祖，两天的午餐和晚餐都是在饭店里。</p>\n<p>周五周六去了北京两天，下车就吃了门框卤煮，本来打算周六去吃日料自助，但是临时起意就改成了周五，没想到还赶上了每周一次的开鱼，第一次吃到了现切的蓝鳍金枪鱼。</p>\n<p>周日回家一小顿烧烤，完美结束一周。</p>\n<p><img alt=\"\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://files.mdnice.com/user/73796/b04b3fd0-2314-432a-8c3b-faa5b5fee77f.jpg\"/></p>\n",
+  "supplements": [],
+  "replies": [],
+  "reply_pages": 1,
+  "fetched_at": "2026-10-06T03:30:39.973Z"
+}

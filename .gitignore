@@ -1,0 +1,14 @@
+# Temp / logs
+*.log
+crawl_progress.log
+
+# OS
+Thumbs.db
+.DS_Store
+
+# Editor
+.vscode/
+.idea/
+
+# Node
+node_modules/

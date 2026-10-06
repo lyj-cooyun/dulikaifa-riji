@@ -1,0 +1,51 @@
+{
+  "id": 1140425,
+  "title": "独立开发周记 123：微信都没有的功能，我做出来了",
+  "episode": {
+    "ep": 123,
+    "ep2": null
+  },
+  "node": "weekly",
+  "url": "https://www.v2ex.com/t/1140425",
+  "created": 1750658966,
+  "last_touched": 1750662086,
+  "member": "vulgur",
+  "replies_count": 4,
+  "stars": 3,
+  "thanks": 0,
+  "content": "# 2025,0616-0622\r\n\r\n极简软件工作室喜建分部。\r\n\r\n上上周说过，我把电脑桌搬进了卧室，但是我又搬回阳台了。一来是卧室几乎没有任何空间了，二来晚上我和老婆互相影响。不过我又找到了完美的解决办法，那就是 Mac 的屏幕共享。我在卧室里可以在 MacBook 上通过屏幕共享控制外面的 Mac mini ，躺在床上就可以写代码了。而且真机调试的问题也解决了，Mac mini 上通过屏幕镜像访问测试机，在 MacBook 上除了切换输入法有些麻烦，其余的操作和在 Mac mini 上没有任何区别。\r\n\r\n\r\n![]( https://files.mdnice.com/user/73796/d6eea8e6-d90f-4363-9d05-09bab8bfa31c.jpeg)\r\n\r\n\r\n# 本周开发\r\n\r\n这周还是在给极简日记加入新功能和重构代码。\r\n\r\n## 动画问题\r\n上周没有解决的“鬼影”动画又花了三天终于解决了，最后的原因也让我哭笑不得。我自己照着示例代码敲了两遍，每行代码都仔细对比，最后才发现原因有两个：\r\n\r\n1. 两个 overlay 的顺序不一样\r\n2. 传入 overlay 的图片类型必须是 UIImage 才行，Data 和封装类型都不行\r\n\r\n第一点是我的疏忽，但是对于第二点我实在想不出为什么会产生“鬼影”动画，不管怎样总算是解决了。\r\n\r\n## PhotosPicker\r\n\r\n这周没怎么看 WWDC25 的视频，反而是把 WWDC20 至 WWDC22 的几个关于相册和`PhotosPicker` 的视频看了一遍。`PhotosPicker`是 iOS 16 就加入的 API ，当年我就想使用来着，但是 `PHPickerViewController` 用着也没什么问题，一直就没改动这部分代码。现在极简日记 iOS 支持的最低系统版本是 iOS 17 ，所以就想着趁着重构的机会尽可能多的采用新 API 。\r\n\r\n写了个小 demo 试验了一下，完全可以取代之前的 PHPickerViewController 了，于是就顺便把读取视频功能也实现了。现在极简日记的一条日记里，可以添加图片、实况照片和视频，这是微信到现在也没有的功能（我也不理解为什么图片和视频不能混合加入在一条朋友圈里，可能是性能吧，这确实是一个棘手的问题）。\r\n\r\n\r\n![]( https://files.mdnice.com/user/73796/6a880764-716c-415b-86bb-bda67e63a86f.jpeg)\r\n\r\n\r\n## 性能优化\r\n这次的功能是第一次在极简日记里使用 iOS 17 的 Observation ，之前虽然是在 Nut Goals 里面大量使用，但当时囫囵吞枣，并没有深入了解，这次因为遇到了严重的性能问题，所以就深入地学习了一下，又重读了两遍肘子哥的 blog：[深度解读 Observation —— SwiftUI 性能提升的新途径]( https://fatbobman.com/zh/posts/mastering-observation/ \"深度解读 Observation —— SwiftUI 性能提升的新途径\")。\r\n\r\n另外，测试性能优化一定要在旧机型上，不然根本看不出效果。我的测试机是 iPhone 11 ，我的目的就是让极简日记在这个手机上尽量不卡顿。\r\n\r\n极简日记是我边学 SwiftUI 边写成的 App ，里面充满了不合理和丑陋的实现方式，所以接下来我要一点点铲清这个屎山。\r\n\r\n\r\n# 代码之外\r\n\r\n最近一直喝的是瑞幸的咖啡胶囊（主要是便宜，还赠杯子），这次趁着优惠买了 100 颗雀巢的胶囊，啊，真好喝。\r\n\r\n\r\n![]( https://files.mdnice.com/user/73796/c2a960b8-f788-4555-9658-b4a3fc952ede.jpeg)\r\n\r\n\r\n\r\n我家这本来也有一家“天下丼屋”， 之前经常去吃，但是这家店莫名其妙就黄了，遗憾至今。周日去北京，在悠唐发现居然有一家，就进去吃了一顿，也终于是吃上了久违的味道。\r\n\r\n\r\n![]( https://files.mdnice.com/user/73796/1e81e4b8-e59f-4fb1-b323-27f2b5aac592.jpeg)\r\n\r\n\r\n最近两周几乎每天都在改造仓鼠的笼子，加管道，加外接浴室，加挖掘屋，终于定型了，不折腾了。\r\n\r\n管道搭建真是又累人又气人，前前后后买了三套管道，妈蛋互相的接口都不统一，卡不住，重要关节就只能靠透明胶带了。而且整个管道的结构必须要有几个强有力的支点才能撑起来，不然就是各种垮塌。每次管道垮塌都会连带着鼠粮和尿沙撒一地，气到崩溃。\r\n\r\n之前用坚果罐做过两版挖掘屋，但是罐子太小了，鼠子挖得不尽兴。偶然间发现装小米的盒子非常适合，深度足够，而且盖子上的圆孔可以和管道搭配使用，可以有效防止鼠子越狱。现在鼠子每天大部分时间都是在挖掘屋里，四脚朝天地惬意躺着。\r\n\r\n\r\n![]( https://files.mdnice.com/user/73796/b7dbcec6-aec7-4e87-a63b-d0bee6498c6a.jpeg)",
+  "content_rendered": "<h1>2025,0616-0622</h1>\n<p>极简软件工作室喜建分部。</p>\n<p>上上周说过，我把电脑桌搬进了卧室，但是我又搬回阳台了。一来是卧室几乎没有任何空间了，二来晚上我和老婆互相影响。不过我又找到了完美的解决办法，那就是 Mac 的屏幕共享。我在卧室里可以在 MacBook 上通过屏幕共享控制外面的 Mac mini ，躺在床上就可以写代码了。而且真机调试的问题也解决了，Mac mini 上通过屏幕镜像访问测试机，在 MacBook 上除了切换输入法有些麻烦，其余的操作和在 Mac mini 上没有任何区别。</p>\n<p><img alt=\"\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://files.mdnice.com/user/73796/d6eea8e6-d90f-4363-9d05-09bab8bfa31c.jpeg\"/></p>\n<h1>本周开发</h1>\n<p>这周还是在给极简日记加入新功能和重构代码。</p>\n<h2>动画问题</h2>\n<p>上周没有解决的“鬼影”动画又花了三天终于解决了，最后的原因也让我哭笑不得。我自己照着示例代码敲了两遍，每行代码都仔细对比，最后才发现原因有两个：</p>\n<ol>\n<li>两个 overlay 的顺序不一样</li>\n<li>传入 overlay 的图片类型必须是 UIImage 才行，Data 和封装类型都不行</li>\n</ol>\n<p>第一点是我的疏忽，但是对于第二点我实在想不出为什么会产生“鬼影”动画，不管怎样总算是解决了。</p>\n<h2>PhotosPicker</h2>\n<p>这周没怎么看 WWDC25 的视频，反而是把 WWDC20 至 WWDC22 的几个关于相册和<code>PhotosPicker</code> 的视频看了一遍。<code>PhotosPicker</code>是 iOS 16 就加入的 API ，当年我就想使用来着，但是 <code>PHPickerViewController</code> 用着也没什么问题，一直就没改动这部分代码。现在极简日记 iOS 支持的最低系统版本是 iOS 17 ，所以就想着趁着重构的机会尽可能多的采用新 API 。</p>\n<p>写了个小 demo 试验了一下，完全可以取代之前的 PHPickerViewController 了，于是就顺便把读取视频功能也实现了。现在极简日记的一条日记里，可以添加图片、实况照片和视频，这是微信到现在也没有的功能（我也不理解为什么图片和视频不能混合加入在一条朋友圈里，可能是性能吧，这确实是一个棘手的问题）。</p>\n<p><img alt=\"\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://files.mdnice.com/user/73796/6a880764-716c-415b-86bb-bda67e63a86f.jpeg\"/></p>\n<h2>性能优化</h2>\n<p>这次的功能是第一次在极简日记里使用 iOS 17 的 Observation ，之前虽然是在 Nut Goals 里面大量使用，但当时囫囵吞枣，并没有深入了解，这次因为遇到了严重的性能问题，所以就深入地学习了一下，又重读了两遍肘子哥的 blog：<a href=\"https://fatbobman.com/zh/posts/mastering-observation/\" rel=\"nofollow\" title=\"深度解读 Observation —— SwiftUI 性能提升的新途径\">深度解读 Observation —— SwiftUI 性能提升的新途径</a>。</p>\n<p>另外，测试性能优化一定要在旧机型上，不然根本看不出效果。我的测试机是 iPhone 11 ，我的目的就是让极简日记在这个手机上尽量不卡顿。</p>\n<p>极简日记是我边学 SwiftUI 边写成的 App ，里面充满了不合理和丑陋的实现方式，所以接下来我要一点点铲清这个屎山。</p>\n<h1>代码之外</h1>\n<p>最近一直喝的是瑞幸的咖啡胶囊（主要是便宜，还赠杯子），这次趁着优惠买了 100 颗雀巢的胶囊，啊，真好喝。</p>\n<p><img alt=\"\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://files.mdnice.com/user/73796/c2a960b8-f788-4555-9658-b4a3fc952ede.jpeg\"/></p>\n<p>我家这本来也有一家“天下丼屋”， 之前经常去吃，但是这家店莫名其妙就黄了，遗憾至今。周日去北京，在悠唐发现居然有一家，就进去吃了一顿，也终于是吃上了久违的味道。</p>\n<p><img alt=\"\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://files.mdnice.com/user/73796/1e81e4b8-e59f-4fb1-b323-27f2b5aac592.jpeg\"/></p>\n<p>最近两周几乎每天都在改造仓鼠的笼子，加管道，加外接浴室，加挖掘屋，终于定型了，不折腾了。</p>\n<p>管道搭建真是又累人又气人，前前后后买了三套管道，妈蛋互相的接口都不统一，卡不住，重要关节就只能靠透明胶带了。而且整个管道的结构必须要有几个强有力的支点才能撑起来，不然就是各种垮塌。每次管道垮塌都会连带着鼠粮和尿沙撒一地，气到崩溃。</p>\n<p>之前用坚果罐做过两版挖掘屋，但是罐子太小了，鼠子挖得不尽兴。偶然间发现装小米的盒子非常适合，深度足够，而且盖子上的圆孔可以和管道搭配使用，可以有效防止鼠子越狱。现在鼠子每天大部分时间都是在挖掘屋里，四脚朝天地惬意躺着。</p>\n<p><img alt=\"\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://files.mdnice.com/user/73796/b7dbcec6-aec7-4e87-a63b-d0bee6498c6a.jpeg\"/></p>\n",
+  "supplements": [],
+  "replies": [
+    {
+      "id": 16405203,
+      "author": "ererrrr",
+      "created": 1750660322,
+      "content": "挺好，生活++",
+      "content_rendered": "挺好，生活++"
+    },
+    {
+      "id": 16405300,
+      "author": "37Y37",
+      "created": 1750661141,
+      "content": "羡慕这只仓鼠了",
+      "content_rendered": "羡慕这只仓鼠了"
+    },
+    {
+      "id": 16405343,
+      "author": "Ghrhrrv146",
+      "created": 1750661427,
+      "content": "躺床上写代码，不会腰酸背痛吗",
+      "content_rendered": "躺床上写代码，不会腰酸背痛吗"
+    },
+    {
+      "id": 16405418,
+      "author": "dumbass",
+      "created": 1750662086,
+      "content": "🐹：life in plastic tubes",
+      "content_rendered": "🐹：life in plastic tubes"
+    }
+  ],
+  "reply_pages": 1,
+  "fetched_at": "2026-10-06T03:31:43.970Z"
+}

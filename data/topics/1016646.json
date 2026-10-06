@@ -1,0 +1,44 @@
+{
+  "id": 1016646,
+  "title": "独立开发周记 #53：周记一周年",
+  "episode": {
+    "ep": 53,
+    "ep2": null
+  },
+  "node": "programmer",
+  "url": "https://www.v2ex.com/t/1016646",
+  "created": 1708344976,
+  "last_touched": 1708353289,
+  "member": "vulgur",
+  "replies_count": 3,
+  "stars": 8,
+  "thanks": 0,
+  "content": "# 2024 ，第七周，0212-0218\r\n\r\n这周出现了三个新纪录。\r\n\r\n我还没看《热辣滚烫》，但是我也被激励到了。之前买的体脂秤电池都快没电了，上秤一量，突破新高了，减！\r\n\r\n![]( https://img.way2solo.com/photo/vulgur/e4b128e9-9927-4f75-920c-2a6aeb1690f0.jpeg?imageView2/2/w/1920/q/100)\r\n\r\n# SwiftUI 进修\r\n\r\n这周看了两个学习资料。\r\n\r\n一个是 Paul Hudson 去年在 iOS Conf SG 的演讲，[Making it Rain – Advanced Special Effects with SwiftUI]( https://www.youtube.com/watch?v=H-kWbiPqjuM&ab_channel=PaulHudson)。大部分时间其实都是 Paul 的女儿在讲解如何从零开始写一个 Particle Effect ，而当时她只有 13 岁……看完我大为震撼。演讲的最后，Paul 也公布了他的开源特效库，[Vortex]( https://github.com/twostraws/Vortex)，准备以后试一下，看看能不能取代我现在用的。\r\n\r\n![]( https://img.way2solo.com/photo/vulgur/107be4ae-dbe8-4672-bdd8-a63e3944185d.png?imageView2/2/w/1920/q/100)\r\n\r\n另一个是 Vincent Pradeilles 的直播视频，[30 tips to be a better iOS developer]( https://www.youtube.com/watch?v=HEQGm1gVtOQ&ab_channel=VincentPradeilles)。他这个视频其实是基于这个 blog [30 tips to make you a better iOS developer]( https://www.fadel.io/blog/posts/30-tips-to-make-you-a-better-ios-developer/) 来做的，整个视频太长了，而且我有点受不了他的法语口音，最后就直接看了文章。他下周还有一个更厉害的视频，65 tips to use Xcode like a PRO ，也是基于一个开发者总结的技巧。\r\n\r\n![]( https://img.way2solo.com/photo/vulgur/dbb4bd1f-3d70-4184-bc95-163ef577b95d.png?imageView2/2/w/1920/q/100)\r\n\r\n# [极简时钟 Android]( https://play.google.com/store/apps/details?id=com.mad.zenflipclock)\r\n\r\n这周极简时钟在 Google Play 上终于全量发布了全新 UI 的新版本，两个月前就准备好的新版截图终于能用上了。\r\n\r\n![]( https://img.way2solo.com/photo/vulgur/c8624576-3a36-4f8e-9315-bc3114693bff.png?imageView2/2/w/1920/q/100)\r\n\r\n另外才发现，在春节期间，极简时钟在 Google Play 的下载量突破 300 万，又一个里程碑！🎉\r\n\r\n![]( https://img.way2solo.com/photo/vulgur/f88f65ec-5420-41d1-99e2-b53b100a83e6.png?imageView2/2/w/1920/q/100)\r\n\r\n# 周记一周年\r\n\r\n一年前的今天一时兴起，于是就这么一直写下来了。坚持减肥一年我做不到，但是坚持周记一周年我做到了。\r\n\r\n![]( https://img.way2solo.com/photo/vulgur/de66defa-99cd-48c1-896b-709441bfecfd.jpg?imageView2/2/w/1920/q/100)\r\n\r\n一年过去了，其实也不是坚持，而是找到了写这个周记的一些技巧，不至于没有什么内容可写，所以也就没断更，期期不落。简单来说，技巧就是：有主动就写主动，没有主动就写被动。\r\n\r\n解释一下，主动就是自己写了什么代码，遇到了什么坑，读了什么书，学习了什么知识等等；被动就是 App 产生的下载量、收入、评论和其他相关的事情。\r\n\r\n而且，每个月都会有一篇固定的月度数据总结（比如下周就该写 2 月的数据总结了），再加上一些生活琐事，很容易就能水一篇周记😜。\r\n\r\n在此，感谢 **Notion Converter** 这个插件的开发者，感谢他们做出了如此优秀的工具。每篇周记我都是先在 Notion 里面写好，然后通过 Notion Converter 这个工具一键复制到微信公众号编辑器里，完全省去了排版和格式化的工作。\r\n\r\n![]( https://img.way2solo.com/photo/vulgur/f4a7481d-3fa4-4079-aca3-d76febdc3c09.png?imageView2/2/w/1920/q/100)",
+  "content_rendered": "<h1>2024 ，第七周，0212-0218</h1>\n<p>这周出现了三个新纪录。</p>\n<p>我还没看《热辣滚烫》，但是我也被激励到了。之前买的体脂秤电池都快没电了，上秤一量，突破新高了，减！</p>\n<p><img alt=\"\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://img.way2solo.com/photo/vulgur/e4b128e9-9927-4f75-920c-2a6aeb1690f0.jpeg?imageView2/2/w/1920/q/100\"/></p>\n<h1>SwiftUI 进修</h1>\n<p>这周看了两个学习资料。</p>\n<p>一个是 Paul Hudson 去年在 iOS Conf SG 的演讲，<a href=\"https://www.youtube.com/watch?v=H-kWbiPqjuM&amp;ab_channel=PaulHudson\" rel=\"nofollow\">Making it Rain – Advanced Special Effects with SwiftUI</a>。大部分时间其实都是 Paul 的女儿在讲解如何从零开始写一个 Particle Effect ，而当时她只有 13 岁……看完我大为震撼。演讲的最后，Paul 也公布了他的开源特效库，<a href=\"https://github.com/twostraws/Vortex\" rel=\"nofollow\">Vortex</a>，准备以后试一下，看看能不能取代我现在用的。</p>\n<p><img alt=\"\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://img.way2solo.com/photo/vulgur/107be4ae-dbe8-4672-bdd8-a63e3944185d.png?imageView2/2/w/1920/q/100\"/></p>\n<p>另一个是 Vincent Pradeilles 的直播视频，<a href=\"https://www.youtube.com/watch?v=HEQGm1gVtOQ&amp;ab_channel=VincentPradeilles\" rel=\"nofollow\">30 tips to be a better iOS developer</a>。他这个视频其实是基于这个 blog <a href=\"https://www.fadel.io/blog/posts/30-tips-to-make-you-a-better-ios-developer/\" rel=\"nofollow\">30 tips to make you a better iOS developer</a> 来做的，整个视频太长了，而且我有点受不了他的法语口音，最后就直接看了文章。他下周还有一个更厉害的视频，65 tips to use Xcode like a PRO ，也是基于一个开发者总结的技巧。</p>\n<p><img alt=\"\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://img.way2solo.com/photo/vulgur/dbb4bd1f-3d70-4184-bc95-163ef577b95d.png?imageView2/2/w/1920/q/100\"/></p>\n<h1><a href=\"https://play.google.com/store/apps/details?id=com.mad.zenflipclock\" rel=\"nofollow\">极简时钟 Android</a></h1>\n<p>这周极简时钟在 Google Play 上终于全量发布了全新 UI 的新版本，两个月前就准备好的新版截图终于能用上了。</p>\n<p><img alt=\"\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://img.way2solo.com/photo/vulgur/c8624576-3a36-4f8e-9315-bc3114693bff.png?imageView2/2/w/1920/q/100\"/></p>\n<p>另外才发现，在春节期间，极简时钟在 Google Play 的下载量突破 300 万，又一个里程碑！🎉</p>\n<p><img alt=\"\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://img.way2solo.com/photo/vulgur/f88f65ec-5420-41d1-99e2-b53b100a83e6.png?imageView2/2/w/1920/q/100\"/></p>\n<h1>周记一周年</h1>\n<p>一年前的今天一时兴起，于是就这么一直写下来了。坚持减肥一年我做不到，但是坚持周记一周年我做到了。</p>\n<p><img alt=\"\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://img.way2solo.com/photo/vulgur/de66defa-99cd-48c1-896b-709441bfecfd.jpg?imageView2/2/w/1920/q/100\"/></p>\n<p>一年过去了，其实也不是坚持，而是找到了写这个周记的一些技巧，不至于没有什么内容可写，所以也就没断更，期期不落。简单来说，技巧就是：有主动就写主动，没有主动就写被动。</p>\n<p>解释一下，主动就是自己写了什么代码，遇到了什么坑，读了什么书，学习了什么知识等等；被动就是 App 产生的下载量、收入、评论和其他相关的事情。</p>\n<p>而且，每个月都会有一篇固定的月度数据总结（比如下周就该写 2 月的数据总结了），再加上一些生活琐事，很容易就能水一篇周记😜。</p>\n<p>在此，感谢 <strong>Notion Converter</strong> 这个插件的开发者，感谢他们做出了如此优秀的工具。每篇周记我都是先在 Notion 里面写好，然后通过 Notion Converter 这个工具一键复制到微信公众号编辑器里，完全省去了排版和格式化的工作。</p>\n<p><img alt=\"\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://img.way2solo.com/photo/vulgur/f4a7481d-3fa4-4079-aca3-d76febdc3c09.png?imageView2/2/w/1920/q/100\"/></p>\n",
+  "supplements": [],
+  "replies": [
+    {
+      "id": 14333172,
+      "author": "gxh279456",
+      "created": 1708346089,
+      "content": "好牛",
+      "content_rendered": "好牛"
+    },
+    {
+      "id": 14335778,
+      "author": "PaddyPang",
+      "created": 1708402589,
+      "content": "赞！！",
+      "content_rendered": "赞！！"
+    },
+    {
+      "id": 14337608,
+      "author": "cokey",
+      "created": 1708418118,
+      "content": "百万下载，恐怖如斯！",
+      "content_rendered": "百万下载，恐怖如斯！"
+    }
+  ],
+  "reply_pages": 1,
+  "fetched_at": "2026-10-06T03:33:05.831Z"
+}

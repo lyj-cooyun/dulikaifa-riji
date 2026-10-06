@@ -1,0 +1,65 @@
+{
+  "id": 1207284,
+  "title": "独立开发周记 166：上架即踩坑，累瘫也得冲",
+  "episode": {
+    "ep": 166,
+    "ep2": null
+  },
+  "node": "isv",
+  "url": "https://www.v2ex.com/t/1207284",
+  "created": 1776687321,
+  "last_touched": 1776952946,
+  "member": "vulgur",
+  "replies_count": 6,
+  "stars": 0,
+  "thanks": 0,
+  "content": "# 2026,0413-0419\r\n这周累坏了，燃尽了。各种 AI 工具齐上阵，手眼脑应接不暇。右手腕疼完左手腕接着疼，上装备！\r\n\r\n\r\n![]( https://files.mdnice.com/user/73796/f7e69b2b-ffc4-4c5b-993e-18cc4d7376c7.jpeg)\r\n\r\n# 本周工作\r\n\r\n## Sticki 上架\r\n\r\n这是一个彻头彻尾的 AI 产物，所有的代码、截图、App Icon 、文案、元数据都是用 AI 工具生成的。\r\n\r\n按照 14 天的上架计划，最后两天要进行各种回归测试，可我等不及了，提前一天就提交了。周二午夜提交后就睡觉了，没想到第二天早上发现不到三个小时就通过审核。于是上周担心的事情还是发生了，App 审核通过了，但是备案还没下来，只好环大陆上架了。\r\n\r\n\r\n但是通过审核后过了四个多小时，商店里还是搜不出来，即使输入全名也搜不到，只能通过 App Store 的 URL 才能打开 App 的页面。又是这种商店和 App 状态不同步的问题，立刻给苹果提了一个工单。很快工单就回复了，还是那句套话：将在 24 小时内进行更新，不过我在收到工单回复后就发现商店里可以搜到 App 了。之前也遇到过这种情况，我觉得只要苹果看到了你的工单，他们就会手动更新。所以大家以后也遇到这种问题，放心大胆尽早去提工单就能解决。\r\n\r\n又过了一天，收到了腾讯云和工信部的短信，在腾讯云上也显示了备案号，填入 App Store Connect 提示找不到这个备案号，又去工信部网站查询，还是查不到。过了两个小时，工信部的网站上终于能查到新备案号了，这下国区才能上架。都是草台！\r\n\r\n宣传上小红书、V2EX 、公众号、TikTok 、Instagram 、Threads 、ProductHunt 、Youtube 和 X 上面都发了视频，甚至小红书还充钱进行了推广，结果呢，上架五天了，下载量才 70 个……\r\n\r\n\r\nReddit 也试过了，发了三个帖子都被删除了……\r\n\r\n没充分测试的结果就是，App 上架一天后我才发现有一个致命的交互 bug ，可以说是整个 App 最重要的一个体验，于是立马提交了 1.0.1 。\r\n\r\n\r\n![]( https://files.mdnice.com/user/73796/178f69c8-748d-4782-a110-a8a584eed56c.png)\r\n\r\n\r\n\r\n新 App 上架，欢迎大家下载+评分+评论，三连帮助 App 冷启动，谢谢了！\r\n\r\n## 更新官网\r\n给服务器更新 SSL 证书的时候，就顺便用 AI 给官网优化了一下，还把新 App 加了上去。这篇公众号底部的 App 介绍也加入了 Sticki ，再次，希望大家支持🙏\r\n\r\n![]( https://files.mdnice.com/user/73796/55e4b036-9a6b-409e-820d-bd6574c7199f.png)\r\n\r\n\r\n\r\n## 极简时钟 鸿蒙版\r\n\r\n今年的鸿蒙激励计划正式发布了，极简时钟再次启动鸿蒙版上架计划，还是准备两周内提交审核。\r\n\r\n\r\n![]( https://files.mdnice.com/user/73796/c8dbd887-f118-423d-b3b4-940a16b7a5f3.png)\r\n\r\n\r\n这周把之前剩下的三个主题都移植到鸿蒙版里了，也很轻松地接入了微信登录和微信支付，但是在华为 IAP 这里卡住了。华为那边的人要求是：有微信登录就必须要接入华为账号登录，有内购的虚拟产品就必须接入华为 IAP……我搞了一天，一上午几轮对话就把微信登录和微信支付搞定了，但是一下午还没搞定华为的支付。华为 IAP 需要生成各种 key 、profile 、cert ，还要开通商户服务，打开 IAP API 开关，建立沙盒账号，绑定 UDID ，到最后还是调用失败，服了🤦‍♂️\r\n\r\n根据其他开发者说，想要开通华为的商户服务，不仅仅是线上提交资料进行审核，还需要线下邮寄纸质材料，你就说离谱不离谱吧。我的感觉就是，鸿蒙既想对齐安卓，又想搞 iOS 那一套。\r\n\r\n不是我不积极适配鸿蒙，是实在没法积极。\r\n\r\n\r\n# 代码之外\r\n\r\n## 重启\r\n\r\n这周看完了两部剧，都跟「重启」有关。\r\n\r\n第一个是日剧，就叫做 REBOOT 。故事虽然反转再反转，但是整体看下来情节太烂了。户田惠梨香太美丽了， 演技也超棒，这部剧三颗星里有两颗星是给她的。\r\n\r\n第二个是《美丽毒素》，豆瓣评分不高，还不到 7 分，但我觉得还不错。除了最后一集有些垮，其余的都非常棒，一集一集勾着你不停看下去。\r\n\r\n\r\n![]( https://files.mdnice.com/user/73796/2d96595d-b0bd-4dce-ad01-10531c8c65f4.jpg)\r\n\r\n\r\n## 放松\r\n\r\n周二一上午都在准备上架的资料，累到 burnout 了，就去商场里吃了顿饭，然后在按摩椅里按摩了 20 分钟，路过库迪，领了个 4.9 元的券，喝了杯新品，美滋滋。\r\n\r\n周四下午趁着天气不错，和老婆去河边坐了一会。\r\n\r\n为了这个 App ，已经将近一个月没有看新书了，周六给电子书充上电，点开了马伯庸的《桃花源没事儿》。\r\n\r\n\r\n![]( https://files.mdnice.com/user/73796/5a05a567-32b9-4f3b-a9dc-7e89a78a3311.jpeg)",
+  "content_rendered": "<h1>2026,0413-0419</h1>\n<p>这周累坏了，燃尽了。各种 AI 工具齐上阵，手眼脑应接不暇。右手腕疼完左手腕接着疼，上装备！</p>\n<p><img alt=\"\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://files.mdnice.com/user/73796/f7e69b2b-ffc4-4c5b-993e-18cc4d7376c7.jpeg\"/></p>\n<h1>本周工作</h1>\n<h2>Sticki 上架</h2>\n<p>这是一个彻头彻尾的 AI 产物，所有的代码、截图、App Icon 、文案、元数据都是用 AI 工具生成的。</p>\n<p>按照 14 天的上架计划，最后两天要进行各种回归测试，可我等不及了，提前一天就提交了。周二午夜提交后就睡觉了，没想到第二天早上发现不到三个小时就通过审核。于是上周担心的事情还是发生了，App 审核通过了，但是备案还没下来，只好环大陆上架了。</p>\n<p>但是通过审核后过了四个多小时，商店里还是搜不出来，即使输入全名也搜不到，只能通过 App Store 的 URL 才能打开 App 的页面。又是这种商店和 App 状态不同步的问题，立刻给苹果提了一个工单。很快工单就回复了，还是那句套话：将在 24 小时内进行更新，不过我在收到工单回复后就发现商店里可以搜到 App 了。之前也遇到过这种情况，我觉得只要苹果看到了你的工单，他们就会手动更新。所以大家以后也遇到这种问题，放心大胆尽早去提工单就能解决。</p>\n<p>又过了一天，收到了腾讯云和工信部的短信，在腾讯云上也显示了备案号，填入 App Store Connect 提示找不到这个备案号，又去工信部网站查询，还是查不到。过了两个小时，工信部的网站上终于能查到新备案号了，这下国区才能上架。都是草台！</p>\n<p>宣传上小红书、V2EX 、公众号、TikTok 、Instagram 、Threads 、ProductHunt 、Youtube 和 X 上面都发了视频，甚至小红书还充钱进行了推广，结果呢，上架五天了，下载量才 70 个……</p>\n<p>Reddit 也试过了，发了三个帖子都被删除了……</p>\n<p>没充分测试的结果就是，App 上架一天后我才发现有一个致命的交互 bug ，可以说是整个 App 最重要的一个体验，于是立马提交了 1.0.1 。</p>\n<p><img alt=\"\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://files.mdnice.com/user/73796/178f69c8-748d-4782-a110-a8a584eed56c.png\"/></p>\n<p>新 App 上架，欢迎大家下载+评分+评论，三连帮助 App 冷启动，谢谢了！</p>\n<h2>更新官网</h2>\n<p>给服务器更新 SSL 证书的时候，就顺便用 AI 给官网优化了一下，还把新 App 加了上去。这篇公众号底部的 App 介绍也加入了 Sticki ，再次，希望大家支持🙏</p>\n<p><img alt=\"\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://files.mdnice.com/user/73796/55e4b036-9a6b-409e-820d-bd6574c7199f.png\"/></p>\n<h2>极简时钟 鸿蒙版</h2>\n<p>今年的鸿蒙激励计划正式发布了，极简时钟再次启动鸿蒙版上架计划，还是准备两周内提交审核。</p>\n<p><img alt=\"\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://files.mdnice.com/user/73796/c8dbd887-f118-423d-b3b4-940a16b7a5f3.png\"/></p>\n<p>这周把之前剩下的三个主题都移植到鸿蒙版里了，也很轻松地接入了微信登录和微信支付，但是在华为 IAP 这里卡住了。华为那边的人要求是：有微信登录就必须要接入华为账号登录，有内购的虚拟产品就必须接入华为 IAP……我搞了一天，一上午几轮对话就把微信登录和微信支付搞定了，但是一下午还没搞定华为的支付。华为 IAP 需要生成各种 key 、profile 、cert ，还要开通商户服务，打开 IAP API 开关，建立沙盒账号，绑定 UDID ，到最后还是调用失败，服了🤦‍♂️</p>\n<p>根据其他开发者说，想要开通华为的商户服务，不仅仅是线上提交资料进行审核，还需要线下邮寄纸质材料，你就说离谱不离谱吧。我的感觉就是，鸿蒙既想对齐安卓，又想搞 iOS 那一套。</p>\n<p>不是我不积极适配鸿蒙，是实在没法积极。</p>\n<h1>代码之外</h1>\n<h2>重启</h2>\n<p>这周看完了两部剧，都跟「重启」有关。</p>\n<p>第一个是日剧，就叫做 REBOOT 。故事虽然反转再反转，但是整体看下来情节太烂了。户田惠梨香太美丽了， 演技也超棒，这部剧三颗星里有两颗星是给她的。</p>\n<p>第二个是《美丽毒素》，豆瓣评分不高，还不到 7 分，但我觉得还不错。除了最后一集有些垮，其余的都非常棒，一集一集勾着你不停看下去。</p>\n<p><img alt=\"\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://files.mdnice.com/user/73796/2d96595d-b0bd-4dce-ad01-10531c8c65f4.jpg\"/></p>\n<h2>放松</h2>\n<p>周二一上午都在准备上架的资料，累到 burnout 了，就去商场里吃了顿饭，然后在按摩椅里按摩了 20 分钟，路过库迪，领了个 4.9 元的券，喝了杯新品，美滋滋。</p>\n<p>周四下午趁着天气不错，和老婆去河边坐了一会。</p>\n<p>为了这个 App ，已经将近一个月没有看新书了，周六给电子书充上电，点开了马伯庸的《桃花源没事儿》。</p>\n<p><img alt=\"\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://files.mdnice.com/user/73796/5a05a567-32b9-4f3b-a9dc-7e89a78a3311.jpeg\"/></p>\n",
+  "supplements": [],
+  "replies": [
+    {
+      "id": 17549112,
+      "author": "JoeJoeJoe",
+      "created": 1776690363,
+      "content": "你这手腕感觉有点严重啊，得早去医院看看，可以去中医院做做理疗啥的，那个可以报销.",
+      "content_rendered": "你这手腕感觉有点严重啊，得早去医院看看，可以去中医院做做理疗啥的，那个可以报销."
+    },
+    {
+      "id": 17549150,
+      "author": "vulgur",
+      "created": 1776691426,
+      "content": "@JoeJoeJoe 抹点扶他林，歇两天就好",
+      "content_rendered": "@<a href=\"/member/JoeJoeJoe\">JoeJoeJoe</a> 抹点扶他林，歇两天就好"
+    },
+    {
+      "id": 17558976,
+      "author": "hsiehsadfrog982",
+      "created": 1776850761,
+      "content": "厉害，我们有 AI 项目想要和您合作，方便沟通吗",
+      "content_rendered": "厉害，我们有 AI 项目想要和您合作，方便沟通吗"
+    },
+    {
+      "id": 17572023,
+      "author": "flmn",
+      "created": 1777191062,
+      "content": "tfcc 损伤么？",
+      "content_rendered": "tfcc 损伤么？"
+    },
+    {
+      "id": 17572824,
+      "author": "vulgur",
+      "created": 1777215849,
+      "content": "@flmn 反正是一弯手腕就疼",
+      "content_rendered": "@<a href=\"/member/flmn\">flmn</a> 反正是一弯手腕就疼"
+    },
+    {
+      "id": 17575984,
+      "author": "flmn",
+      "created": 1777274950,
+      "content": "@vulgur 建议去医院看看",
+      "content_rendered": "@<a href=\"/member/vulgur\">vulgur</a> 建议去医院看看"
+    }
+  ],
+  "reply_pages": 1,
+  "fetched_at": "2026-10-06T03:30:56.180Z"
+}

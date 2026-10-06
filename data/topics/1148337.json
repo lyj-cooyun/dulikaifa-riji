@@ -1,0 +1,44 @@
+{
+  "id": 1148337,
+  "title": "独立开发周记 128：爆单、爆肝、爆米花",
+  "episode": {
+    "ep": 128,
+    "ep2": null
+  },
+  "node": "weekly",
+  "url": "https://www.v2ex.com/t/1148337",
+  "created": 1753710603,
+  "last_touched": 1753714203,
+  "member": "vulgur",
+  "replies_count": 3,
+  "stars": 0,
+  "thanks": 0,
+  "content": "# 2025 ，0721-0727\r\n\r\n这周意外谈了个大单（但其实并不赚钱，只是多了个渠道），签了个协议。但一切还都在初级阶段，等有更多进展再公布吧。\r\n\r\n# 本周工作\r\n先来一张照片，喝新品咖啡，吃煎饼果子，然后心满意足去写代码。\r\n\r\n\r\n![]( https://files.mdnice.com/user/73796/e53dbd72-8bb5-41d6-9eff-c97bf149801e.jpeg)\r\n\r\n\r\n这周所有的工作还都是在新的单词 App 上，进展神速，看了下 git log ，让 AI 总结了一下，发现居然写了这么多。周日晚上提交了第一版 TestFlight ，打算找几个人来试用一下，收集一些反馈。\r\n\r\n##  1. UI 与布局优化\r\n\r\n- **响应式布局**：实现了多个页面的响应式布局，使其能够同时在横屏和竖屏模式下良好显示。\r\n- **动态字母尺寸**：实现了字母尺寸的动态调整，解决了字母数量过多时布局溢出的问题。\r\n- **ASCII 艺术标题**：使用 SwiftUI 实现了基于 ASCII 艺术的游戏标题，取代了之前的简单文本标题。\r\n- **布局修复与改进**：修复了很多布局和动画的问题。\r\n\r\n##  2. 功能开发\r\n\r\n- **设置页面** ：\r\n    - 加入初版的设置页面，支持大小写切换、主题选择、音效和音乐开关。\r\n    - 实现了数据重置功能（重置统计数据和设置）。\r\n- **词典列表页面**：\r\n    - 新增了词典列表页面，用于显示所有词典的解锁进度和单词总数。\r\n- **核心机制**：\r\n    - **单词验证**：集成了词典，实现了单词有效性验证功能。\r\n    - **字母排序**：增加了按字母、分数和随机排序的功能。\r\n    - **单词长度奖励**：为长单词增加了额外的分数奖励。\r\n    - **道具效果显示**：实现了特殊道具生效时的突出显示和额外分数动画。\r\n    - **大小写切换**：添加了全局的大小写切换功能。\r\n\r\n## 3. 问题修复与重构\r\n\r\n- **SwiftData 问题**：解决了在 iPad 上 ModelContainer 初始化失败的问题。\r\n- **导航修复**：修复了“返回主菜单”按钮的导航逻辑，确保其能正确返回标题页。\r\n- **状态管理**：修复了提交单词后字母没有被完全清除的问题。\r\n- **主题系统重构**：重构了主题系统，加入三个不同的主题。\r\n\r\n为了看起来像个 demo ，我用 Figma 一气呵成做了个 App icon 。这个 icon 在脑中有一段时间了，我不在家的时候用无边际简单画了个草图，感觉一般，但是没想到成品让我非常满意。\r\n\r\n# 代码之外\r\n\r\n## Switch\r\n这周捡起了吃灰的 Switch ，本来是想继续玩《逆转裁判》的，但是看到有氧拳击，就玩了两次，大汗淋漓。\r\n\r\n## 电影\r\n这周去电影院看了两个电影。\r\n\r\n《长安的荔枝》，比期望中差一些，《年会不能停》三人组并没有制造出多少笑料，而且很多脱口秀演员和喜剧人的客串完全是多余的。\r\n\r\n《神奇四侠：初露锋芒》，我个人感觉是继《银河护卫队 3 》之后最好的一个漫威宇宙系列电影了（不算《死侍与金刚狼》的话），比《雷霆特攻队*》要好。IMDB 上的评分也和我的感受是一致的，但是不知道为什么国内豆瓣对这个电影评分越来越低。\r\n\r\n## 吃吃吃\r\n\r\n周末两天吃了两顿大餐，一顿是外面吃烧烤，一顿是在家吃海鲜烤鸭大餐。\r\n\r\n\r\n![]( https://files.mdnice.com/user/73796/09110c5d-c3ec-4fed-9558-3d2c958c1fde.jpg)",
+  "content_rendered": "<h1>2025 ，0721-0727</h1>\n<p>这周意外谈了个大单（但其实并不赚钱，只是多了个渠道），签了个协议。但一切还都在初级阶段，等有更多进展再公布吧。</p>\n<h1>本周工作</h1>\n<p>先来一张照片，喝新品咖啡，吃煎饼果子，然后心满意足去写代码。</p>\n<p><img alt=\"\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://files.mdnice.com/user/73796/e53dbd72-8bb5-41d6-9eff-c97bf149801e.jpeg\"/></p>\n<p>这周所有的工作还都是在新的单词 App 上，进展神速，看了下 git log ，让 AI 总结了一下，发现居然写了这么多。周日晚上提交了第一版 TestFlight ，打算找几个人来试用一下，收集一些反馈。</p>\n<h2>1. UI 与布局优化</h2>\n<ul>\n<li><strong>响应式布局</strong>：实现了多个页面的响应式布局，使其能够同时在横屏和竖屏模式下良好显示。</li>\n<li><strong>动态字母尺寸</strong>：实现了字母尺寸的动态调整，解决了字母数量过多时布局溢出的问题。</li>\n<li><strong>ASCII 艺术标题</strong>：使用 SwiftUI 实现了基于 ASCII 艺术的游戏标题，取代了之前的简单文本标题。</li>\n<li><strong>布局修复与改进</strong>：修复了很多布局和动画的问题。</li>\n</ul>\n<h2>2. 功能开发</h2>\n<ul>\n<li>\n<strong>设置页面</strong> ：<ul>\n<li>加入初版的设置页面，支持大小写切换、主题选择、音效和音乐开关。</li>\n<li>实现了数据重置功能（重置统计数据和设置）。</li>\n</ul>\n</li>\n<li>\n<strong>词典列表页面</strong>：<ul>\n<li>新增了词典列表页面，用于显示所有词典的解锁进度和单词总数。</li>\n</ul>\n</li>\n<li>\n<strong>核心机制</strong>：<ul>\n<li><strong>单词验证</strong>：集成了词典，实现了单词有效性验证功能。</li>\n<li><strong>字母排序</strong>：增加了按字母、分数和随机排序的功能。</li>\n<li><strong>单词长度奖励</strong>：为长单词增加了额外的分数奖励。</li>\n<li><strong>道具效果显示</strong>：实现了特殊道具生效时的突出显示和额外分数动画。</li>\n<li><strong>大小写切换</strong>：添加了全局的大小写切换功能。</li>\n</ul>\n</li>\n</ul>\n<h2>3. 问题修复与重构</h2>\n<ul>\n<li><strong>SwiftData 问题</strong>：解决了在 iPad 上 ModelContainer 初始化失败的问题。</li>\n<li><strong>导航修复</strong>：修复了“返回主菜单”按钮的导航逻辑，确保其能正确返回标题页。</li>\n<li><strong>状态管理</strong>：修复了提交单词后字母没有被完全清除的问题。</li>\n<li><strong>主题系统重构</strong>：重构了主题系统，加入三个不同的主题。</li>\n</ul>\n<p>为了看起来像个 demo ，我用 Figma 一气呵成做了个 App icon 。这个 icon 在脑中有一段时间了，我不在家的时候用无边际简单画了个草图，感觉一般，但是没想到成品让我非常满意。</p>\n<h1>代码之外</h1>\n<h2>Switch</h2>\n<p>这周捡起了吃灰的 Switch ，本来是想继续玩《逆转裁判》的，但是看到有氧拳击，就玩了两次，大汗淋漓。</p>\n<h2>电影</h2>\n<p>这周去电影院看了两个电影。</p>\n<p>《长安的荔枝》，比期望中差一些，《年会不能停》三人组并没有制造出多少笑料，而且很多脱口秀演员和喜剧人的客串完全是多余的。</p>\n<p>《神奇四侠：初露锋芒》，我个人感觉是继《银河护卫队 3 》之后最好的一个漫威宇宙系列电影了（不算《死侍与金刚狼》的话），比《雷霆特攻队*》要好。IMDB 上的评分也和我的感受是一致的，但是不知道为什么国内豆瓣对这个电影评分越来越低。</p>\n<h2>吃吃吃</h2>\n<p>周末两天吃了两顿大餐，一顿是外面吃烧烤，一顿是在家吃海鲜烤鸭大餐。</p>\n<p><img alt=\"\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://files.mdnice.com/user/73796/09110c5d-c3ec-4fed-9558-3d2c958c1fde.jpg\"/></p>\n",
+  "supplements": [],
+  "replies": [
+    {
+      "id": 16548496,
+      "author": "jko123",
+      "created": 1753713259,
+      "content": "op 的状态很像我前几年的状态，经常分享生活，不过我是分享到 Soul ，然后找了个老婆，哈哈",
+      "content_rendered": "op 的状态很像我前几年的状态，经常分享生活，不过我是分享到 Soul ，然后找了个老婆，哈哈"
+    },
+    {
+      "id": 16550496,
+      "author": "tangv2",
+      "created": 1753758815,
+      "content": "左上角的皮蛋豆腐，额这个。。。。。 ，是直接用勺子舀着吃吗，没看出烹饪的痕迹，是不是整盒豆腐+皮蛋丁+料汁就完成了 https://i.imgur.com/Iy0taMy.png",
+      "content_rendered": "左上角的皮蛋豆腐，额这个。。。。。 ，是直接用勺子舀着吃吗，没看出烹饪的痕迹，是不是整盒豆腐+皮蛋丁+料汁就完成了 <a target=\"_blank\" href=\"https://i.imgur.com/Iy0taMy.png\" rel=\"nofollow noopener\" target=\"_blank\"><img src=\"https://i.imgur.com/Iy0taMy.png\" class=\"embedded_image\" rel=\"noreferrer\"></a>"
+    },
+    {
+      "id": 16553629,
+      "author": "vulgur",
+      "created": 1753791890,
+      "content": "@tangv2 是的",
+      "content_rendered": "@<a href=\"/member/tangv2\">tangv2</a> 是的"
+    }
+  ],
+  "reply_pages": 1,
+  "fetched_at": "2026-10-06T03:31:38.462Z"
+}

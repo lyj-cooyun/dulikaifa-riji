@@ -1,0 +1,84 @@
+=== TOPIC 957500 ===
+TITLE: 独立开发周记 #22：和 Claude 2 结对编程
+EP: 22 / ep2=
+CREATED: 2023-07-17 18:11  (Beijing)
+MEMBER: vulgur  REPLIES_COUNT: 1  STARS: 2  THANKS: 0
+URL: https://www.v2ex.com/t/957500
+
+----- CONTENT (markdown) -----
+# 2023 ，0710-0716
+
+这周突然有那么一瞬间，想把这个周记改成付费阅读，在小报童、竹白之类的平台发布，或者就在这个公众号里开通付费阅读的功能。但是一想到很多大牛大神大佬一直在持续输出免费的高质量的文章，比如肘子哥，我这些流水账还收费的话就太离谱了，这个念头很快就打消了。
+
+# 极简日记 [App Store]( https://apps.apple.com/cn/app/id1568936702)
+
+这周一直和 Claude 2 结对编程，实现了上周确定的草稿功能。本以为一两天就能写好，没想到这个功能居然写写改改耗费了整整一周，周六的时候还是决定推翻重写了。
+
+![]( https://img.way2solo.com/photo/vulgur/ac3cd698-1eb9-4e03-a9ad-7df0e2fff88f.jpeg?imageView2/2/w/1920/q/100)
+
+
+这周所有的的代码工作都是关于 Core Data 的，多了很多关于 Core Data 的新发现。
+
+## objectID
+
+在肘子哥的 blog 里我才知道 Core Data 的每个托管对象都有`objectID`这个属性，通过这个属性和`existingObject(with:)`这个方法就可以很方便地获取某个托管对象。在这之前如果我要获取某个托管对象，我都是通过在 model 上自定义的`id`属性构建 predicate ，然后查询，最后只获取结果中的第一个。
+
+不过，这个属性貌似不能用到 predicate 里面，我试了几种写法都是报错，Claude 2 给出的答案也都是报错。
+
+## 关联属性
+
+一开始我的想法是：在编辑某条日记的时，先将这个日记的 Entry 转为 Draft ，然后把所有可编辑的变量都通过 Combine 把变化绑定到 Draft 上，这样这个 Draft 就可以做到实时保存了。但是这样做发现了一个问题，根据 Entry 生成对应的 Draft 后，Entry 本来的关联属性就消失了。下面是 Claude 2 给出的原因。
+
+![]( https://img.way2solo.com/photo/vulgur/026677de-b08e-4e71-b679-702e0e4b3150.jpeg?imageView2/2/w/1920/q/100)
+
+
+## 通过不同的 context 进行 CRUD
+
+通过 view 的 @FetchRequest 获取到的 Entry 托管对象，在编辑完后想通过`performBackgroundTask(_:)`进行保存，如果编辑 Entry 本身的属性就没什么问题，如果是改动了关联属性就会遇到闪退。咨询了 Claude 2 之后，统一了 context 就解决了这个问题。
+
+![]( https://img.way2solo.com/photo/vulgur/7a109f07-2353-4fab-9d15-9a5b2035f644.jpeg?imageView2/2/w/1920/q/100)
+
+
+## Optional 属性
+
+Core Data 默认所有的属性都是 Optional ，意思是某个属性为空的情况下也可以存入 Core Data 。但是我之前并不知道这一点，因为 Core Data 自动生成的 NSManagedObject 代码里所有的属性也都是 Optional 的， 我还以为这个 Optional 和 Swift 中的 Optional 是一回事。
+
+![]( https://img.way2solo.com/photo/vulgur/28017cd5-4bcd-4d70-a568-dcaa1d1d59c1.jpeg?imageView2/2/w/1920/q/100)
+
+
+为了省去对 Optional 变量的判断，我就把 Draft 实体的几个属性改成了非 Optional ，还给设置了默认值，但是，Core Data 自动生成的代码里的属性仍然是 Optional 的……问了 Claude 2 ，给出的答案也是胡说八道。所以最后还是没能去掉每个属性的问号。
+
+![]( https://img.way2solo.com/photo/vulgur/d9ef41eb-7c70-41e5-a5a5-2394c98e2721.jpeg?imageView2/2/w/1920/q/100)
+
+
+另外，**对每一个 Optional 的变量都要心存敬畏**，这是我这周踩坑后的心得。日记列表中的数据是由实体 Entry 转换而来的 EntryViewModel 。因为 Entry 的 id 属性是 Optional 的，在转换过程中，我就给 EntryViewModel 对应的 id 属性赋给了一个默认值，本以为这只是为了消除警告的一个操作，没想到产生了一个隐患，导致我花了半天才找到原因。因为这个默认的 UUID ，导致有一个没有 id 的 Entry 对应的 EntryViewModel 每次生成时的 id 都是不同的，接着导致这个 EntryViewModel 生成的 Draft 在更新时无法找到原 Entry……
+
+![]( https://img.way2solo.com/photo/vulgur/266ab4bf-4fed-4669-b053-67a3e07a7b6b.jpeg?imageView2/2/w/1920/q/100)
+
+
+尽管经历了各种问题，草稿功能总算是做完了。周日下午发了 TestFlight build 11 ，测试群的群友们立刻发现了各种 bug ，于是周日晚上又连着发了 3 个 build 修复这些 bug 。无论如何，下周也要发布 1.7.6 了，然后我就要专心适配 iOS 17 和开发新 app 了。
+
+# 奇怪的阅读量
+
+一直以来，每周这个系列的文章也就几百的阅读量，但是前两篇文章出现了意外增长。
+
+上上周的#20 的阅读量首次突破了 1000 ，上周的#21 的阅读量居然突破了 2000 ！
+
+我的发现是：
+
+- #20 的阅读量大部分都在发布的前两天，而#21 的大部分阅读量在发布后的四五天
+- 尽管阅读量大幅提高，但是只有一条评论，和 3 个转发（其中有两个转发还是我自己的，不知道有没有统计进去）
+- 我现在写周记，从不搞标题党和引人眼球的封面图，所以增长的原因应该不是出于这两点
+- 至于内容，#20 和#21 都是字数相对比较少的两篇文章，本来就没有什么干货，反而显得水分更多了
+
+所以，这是为什么呢？
+
+![]( https://img.way2solo.com/photo/vulgur/850ad3fc-ddde-4883-bc8c-7206dfdba717.jpeg?imageView2/2/w/1920/q/100)
+
+----- SUPPLEMENTS -----
+(none)
+
+----- REPLIES -----
+>> @itabas016 (2023-07-17 18:56):
+有没有详细的交互记录
+

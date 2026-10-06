@@ -1,0 +1,100 @@
+{
+  "id": 925552,
+  "title": "独立开发周记 #5 ——AI 助力",
+  "episode": {
+    "ep": 5,
+    "ep2": null
+  },
+  "node": "programmer",
+  "url": "https://www.v2ex.com/t/925552",
+  "created": 1679294913,
+  "last_touched": 1679330700,
+  "member": "vulgur",
+  "replies_count": 11,
+  "stars": 14,
+  "thanks": 3,
+  "content": "### 2023 年，0313-0319\r\n\r\n这周 AI 领域发生了很多事，GPT-4 ，Midjourney v5 ，文心一言。\r\n\r\n也做了很多事，这篇周记会很长。\r\n\r\n## 极简时钟\r\n\r\n### 小组件\r\n\r\n这周花了两天在极简时钟 iOS 的小组件的设计优化上，每天都耗时 10 个番茄钟左右。\r\n\r\n做过 iOS 小组件开发的可能都知道，这部分的开发工作太难搞了，Xcode 的预览有很多 bug ，每个机型上的小组件尺寸都不一样，debug 也基本不可用。这就导致了小组件开发就特别耗时耗力，只能是每改一点，就在真机运行一下，然后再调整。\r\n\r\n![]( https://img.way2solo.com/photo/vulgur/7c6f19f2-7685-45af-85a7-55334e7c6c6d.jpeg?imageView2/2/w/1920/q/100)\r\n\r\n### 本地化\r\n\r\n极简时钟 Android 在国内市场已经三个月没更新了，跟上个月同期对比这个月的下载量居然下降了一半。 周五的时候花了半天加入了新的翻页声音和法语本地化。\r\n\r\n![WechatIMG462.png]( https://img.way2solo.com/photo/vulgur/b56a8015-e060-410a-9d2c-68f58e24f47c.png?imageView2/2/w/1920/q/100)\r\n\r\n在 New Bing 和 ChatGPT 的帮助下，只用了 3 分钟就把法语本地化做好了，还顺便把其他语言的本地化整理了一下，然后又把 Google Play 上面大部份语言的详情页文案都优化了一下。\r\n\r\n本来我的 app 的本地化都是靠各个国家的用户志愿翻译的，但是经常要么找不到合适的 native speaker ，要么沟通不畅，要么翻译工作停滞不前。有了 AI 助力，我去掉了志愿翻译的入口，省去了大笔时间和精力。\r\n\r\n![SCR-20230317-rdaq.png]( https://img.way2solo.com/photo/vulgur/8df2e444-6f79-4e0b-b93d-0bbebed6c900.png?imageView2/2/w/1920/q/100)\r\n\r\n## 各种 AI\r\n\r\n### Stable Diffusion\r\n\r\nMidjourney 发布了 v5 版本，也看到了各种令人惊叹的作品，相比之下，Stable Diffusion 太难用了。Dreambooth 、Hypernetworks 、Embeddings 、Lora 、VAE ，还有各种 Sampling Method ，SD 的需要调教的参数太多太多了，生成一个好图比 Midjourney 复杂太多了。\r\n\r\n下图是帮朋友生成的机器人头像：\r\n\r\n![2141679215306_.pic.jpg]( https://img.way2solo.com/photo/vulgur/29d90732-e01e-4ed5-b1a9-90f4dc839d57.jpg?imageView2/2/w/1920/q/100)\r\n\r\n### Codeium\r\n\r\n据说是 GitHub Copilot 的免费版平替，在 Android Studio 和 VSCode 里都简单地试用了一下，确实不错。可惜还不支持 Xcode ，不过 CopilotForXcode 的开发者表示会和官方合作将 Codeium 整合到 Xcode 中，十分期待了！\r\n\r\n![iShot_2023-03-20_13.06.40.png]( https://img.way2solo.com/photo/vulgur/dc9ed1d5-809e-4e34-83ea-5fbca8f46963.png?imageView2/2/w/1920/q/100)\r\n\r\n### Cursor\r\n\r\n和 Codeium 同一天知道了 Cursor 这么一个 app ，简单体验了一下，感觉下周可以帮我一个大忙。极简时钟的服务端一直想迁移一下数据，从 Parse 到云数据库，有了这个利器应该可以不怎么费力就可以完成了。\r\n\r\n![iShot_2023-03-20_12.46.26.png]( https://img.way2solo.com/photo/vulgur/6ac0e321-65d6-42f5-ada7-017c62cd62d2.png?imageView2/2/w/1920/q/100)\r\n\r\n## 买买买\r\n\r\n### 胶囊咖啡机\r\n\r\n周六早上用得好好的心想咖啡胶囊机突然坏掉了，放进胶囊后不出液，上盖还死活打不开。然而大力没有出奇迹，多次尝试后最终把上盖给掰断了……只好再买一个，简单对比了一下，下单了米家咖啡胶囊机（其实也是心想代工的）。\r\n\r\n简单对比一下，米家胶囊咖啡机的优点有：\r\n\r\n- 整体设计更简洁，米家一贯的设计风格\r\n- 杯架有两个可调高度，可以用高一点的杯子接咖啡了\r\n- 上盖看起来更结实一些\r\n- 水箱外壳是磨砂的不是透明的，被阳光长时间直射后（可能）不容易长霉\r\n- 赠了 20 颗胶囊，是我最喜欢的 10 号和 12 号\r\n\r\n![“IMG_3762”大.jpeg]( https://img.way2solo.com/photo/vulgur/01a9353b-8d30-43b5-ab04-d6489ed40dc2.jpeg?imageView2/2/w/1920/q/100)\r\n\r\n### Niz 82 键盘\r\n\r\n上周提到的 Niz 键盘周二就收到了，总的来说非常满意，但还是有两点小遗憾：\r\n\r\n- 顶部的 F 功能键在 Mac 模式下并不是和 Mac 键盘一致的，不过我最常用的也就是音量和音乐的控制，还能忍\r\n- 自带的键帽不舒服，虽然想自己换一套，但是默认键帽的侧面带有各种功能的提示，用自己的键帽肯定会很不方便，除非自己把这些功能的按键组合先背下来\r\n\r\n![“IMG_3753”大.jpeg]( https://img.way2solo.com/photo/vulgur/de9331c7-9c40-4ff5-8d94-4818495ef17d.jpeg?imageView2/2/w/1920/q/100)\r\n\r\n## 电影和剧集\r\n\r\n好久都没看电影了，这周一口气看了三部电影：\r\n\r\n![IMG_3764.JPG]( https://img.way2solo.com/photo/vulgur/3db6e279-e889-48ff-a36a-b4c581678a00.jpg?imageView2/2/w/1920/q/100)\r\n\r\n- 黑豹 2 ，只有音乐是亮点，⭐️⭐️\r\n- Missing ，KevinTheeStallion 和 bus CAPTCHA 那里笑死了🤣，⭐️⭐️⭐️⭐️⭐️\r\n- 保你平安，一个好故事，越来越喜欢大鹏了，⭐️⭐️⭐️⭐️⭐️\r\n\r\n直到周五才看了 The Last Of Us 第一季最后一集，一句话总结就是：出色的还原，精彩的改编。\r\n\r\n![p2884221114.jpg]( https://img.way2solo.com/photo/vulgur/a9d49817-496d-428a-bb45-3ec6e9db08c2.jpg?imageView2/2/w/1920/q/100)\r\n\r\n第一次知道这个游戏还是 10 年前（ 2013 年）我在 Adobe 实习的时候。当时整个 Team 在做的就是给欧洲索尼的 PlayStation 做网站（是的，Adobe 也做外包），网站的首页大图就有这个游戏。Team 中一个大哥就一直在夸这款游戏，自己玩了两遍，还说要留给他儿子玩😂。而我是去年才在 PS4 上玩了这款游戏，连着玩了第一部和第二部，通关后听各种播客和视频讲解，回味无穷。\r\n\r\n\r\n[公众号原文]( https://mp.weixin.qq.com/s/SQ--meCI_Gz47Xx7CtMQKA)",
+  "content_rendered": "<h3>2023 年，0313-0319</h3>\n<p>这周 AI 领域发生了很多事，GPT-4 ，Midjourney v5 ，文心一言。</p>\n<p>也做了很多事，这篇周记会很长。</p>\n<h2>极简时钟</h2>\n<h3>小组件</h3>\n<p>这周花了两天在极简时钟 iOS 的小组件的设计优化上，每天都耗时 10 个番茄钟左右。</p>\n<p>做过 iOS 小组件开发的可能都知道，这部分的开发工作太难搞了，Xcode 的预览有很多 bug ，每个机型上的小组件尺寸都不一样，debug 也基本不可用。这就导致了小组件开发就特别耗时耗力，只能是每改一点，就在真机运行一下，然后再调整。</p>\n<p><img alt=\"\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://img.way2solo.com/photo/vulgur/7c6f19f2-7685-45af-85a7-55334e7c6c6d.jpeg?imageView2/2/w/1920/q/100\"/></p>\n<h3>本地化</h3>\n<p>极简时钟 Android 在国内市场已经三个月没更新了，跟上个月同期对比这个月的下载量居然下降了一半。 周五的时候花了半天加入了新的翻页声音和法语本地化。</p>\n<p><img alt=\"WechatIMG462.png\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://img.way2solo.com/photo/vulgur/b56a8015-e060-410a-9d2c-68f58e24f47c.png?imageView2/2/w/1920/q/100\"/></p>\n<p>在 New Bing 和 ChatGPT 的帮助下，只用了 3 分钟就把法语本地化做好了，还顺便把其他语言的本地化整理了一下，然后又把 Google Play 上面大部份语言的详情页文案都优化了一下。</p>\n<p>本来我的 app 的本地化都是靠各个国家的用户志愿翻译的，但是经常要么找不到合适的 native speaker ，要么沟通不畅，要么翻译工作停滞不前。有了 AI 助力，我去掉了志愿翻译的入口，省去了大笔时间和精力。</p>\n<p><img alt=\"SCR-20230317-rdaq.png\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://img.way2solo.com/photo/vulgur/8df2e444-6f79-4e0b-b93d-0bbebed6c900.png?imageView2/2/w/1920/q/100\"/></p>\n<h2>各种 AI</h2>\n<h3>Stable Diffusion</h3>\n<p>Midjourney 发布了 v5 版本，也看到了各种令人惊叹的作品，相比之下，Stable Diffusion 太难用了。Dreambooth 、Hypernetworks 、Embeddings 、Lora 、VAE ，还有各种 Sampling Method ，SD 的需要调教的参数太多太多了，生成一个好图比 Midjourney 复杂太多了。</p>\n<p>下图是帮朋友生成的机器人头像：</p>\n<p><img alt=\"2141679215306_.pic.jpg\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://img.way2solo.com/photo/vulgur/29d90732-e01e-4ed5-b1a9-90f4dc839d57.jpg?imageView2/2/w/1920/q/100\"/></p>\n<h3>Codeium</h3>\n<p>据说是 GitHub Copilot 的免费版平替，在 Android Studio 和 VSCode 里都简单地试用了一下，确实不错。可惜还不支持 Xcode ，不过 CopilotForXcode 的开发者表示会和官方合作将 Codeium 整合到 Xcode 中，十分期待了！</p>\n<p><img alt=\"iShot_2023-03-20_13.06.40.png\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://img.way2solo.com/photo/vulgur/dc9ed1d5-809e-4e34-83ea-5fbca8f46963.png?imageView2/2/w/1920/q/100\"/></p>\n<h3>Cursor</h3>\n<p>和 Codeium 同一天知道了 Cursor 这么一个 app ，简单体验了一下，感觉下周可以帮我一个大忙。极简时钟的服务端一直想迁移一下数据，从 Parse 到云数据库，有了这个利器应该可以不怎么费力就可以完成了。</p>\n<p><img alt=\"iShot_2023-03-20_12.46.26.png\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://img.way2solo.com/photo/vulgur/6ac0e321-65d6-42f5-ada7-017c62cd62d2.png?imageView2/2/w/1920/q/100\"/></p>\n<h2>买买买</h2>\n<h3>胶囊咖啡机</h3>\n<p>周六早上用得好好的心想咖啡胶囊机突然坏掉了，放进胶囊后不出液，上盖还死活打不开。然而大力没有出奇迹，多次尝试后最终把上盖给掰断了……只好再买一个，简单对比了一下，下单了米家咖啡胶囊机（其实也是心想代工的）。</p>\n<p>简单对比一下，米家胶囊咖啡机的优点有：</p>\n<ul>\n<li>整体设计更简洁，米家一贯的设计风格</li>\n<li>杯架有两个可调高度，可以用高一点的杯子接咖啡了</li>\n<li>上盖看起来更结实一些</li>\n<li>水箱外壳是磨砂的不是透明的，被阳光长时间直射后（可能）不容易长霉</li>\n<li>赠了 20 颗胶囊，是我最喜欢的 10 号和 12 号</li>\n</ul>\n<p><img alt=\"“IMG_3762”大.jpeg\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://img.way2solo.com/photo/vulgur/01a9353b-8d30-43b5-ab04-d6489ed40dc2.jpeg?imageView2/2/w/1920/q/100\"/></p>\n<h3>Niz 82 键盘</h3>\n<p>上周提到的 Niz 键盘周二就收到了，总的来说非常满意，但还是有两点小遗憾：</p>\n<ul>\n<li>顶部的 F 功能键在 Mac 模式下并不是和 Mac 键盘一致的，不过我最常用的也就是音量和音乐的控制，还能忍</li>\n<li>自带的键帽不舒服，虽然想自己换一套，但是默认键帽的侧面带有各种功能的提示，用自己的键帽肯定会很不方便，除非自己把这些功能的按键组合先背下来</li>\n</ul>\n<p><img alt=\"“IMG_3753”大.jpeg\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://img.way2solo.com/photo/vulgur/de9331c7-9c40-4ff5-8d94-4818495ef17d.jpeg?imageView2/2/w/1920/q/100\"/></p>\n<h2>电影和剧集</h2>\n<p>好久都没看电影了，这周一口气看了三部电影：</p>\n<p><img alt=\"IMG_3764.JPG\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://img.way2solo.com/photo/vulgur/3db6e279-e889-48ff-a36a-b4c581678a00.jpg?imageView2/2/w/1920/q/100\"/></p>\n<ul>\n<li>黑豹 2 ，只有音乐是亮点，⭐️⭐️</li>\n<li>Missing ，KevinTheeStallion 和 bus CAPTCHA 那里笑死了🤣，⭐️⭐️⭐️⭐️⭐️</li>\n<li>保你平安，一个好故事，越来越喜欢大鹏了，⭐️⭐️⭐️⭐️⭐️</li>\n</ul>\n<p>直到周五才看了 The Last Of Us 第一季最后一集，一句话总结就是：出色的还原，精彩的改编。</p>\n<p><img alt=\"p2884221114.jpg\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://img.way2solo.com/photo/vulgur/a9d49817-496d-428a-bb45-3ec6e9db08c2.jpg?imageView2/2/w/1920/q/100\"/></p>\n<p>第一次知道这个游戏还是 10 年前（ 2013 年）我在 Adobe 实习的时候。当时整个 Team 在做的就是给欧洲索尼的 PlayStation 做网站（是的，Adobe 也做外包），网站的首页大图就有这个游戏。Team 中一个大哥就一直在夸这款游戏，自己玩了两遍，还说要留给他儿子玩😂。而我是去年才在 PS4 上玩了这款游戏，连着玩了第一部和第二部，通关后听各种播客和视频讲解，回味无穷。</p>\n<p><a href=\"https://mp.weixin.qq.com/s/SQ--meCI_Gz47Xx7CtMQKA\" rel=\"nofollow\">公众号原文</a></p>\n",
+  "supplements": [],
+  "replies": [
+    {
+      "id": 12839135,
+      "author": "xieren58",
+      "created": 1679295264,
+      "content": "Cool, 🆙...",
+      "content_rendered": "Cool, 🆙..."
+    },
+    {
+      "id": 12839205,
+      "author": "erguotou521",
+      "created": 1679295800,
+      "content": "你好，这个 Cursor 是什么产品可以分享下么",
+      "content_rendered": "你好，这个 Cursor 是什么产品可以分享下么"
+    },
+    {
+      "id": 12839355,
+      "author": "jatsz",
+      "created": 1679297040,
+      "content": "@erguotou521 应该是： https://www.cursor.so/",
+      "content_rendered": "@<a href=\"/member/erguotou521\">erguotou521</a> 应该是： <a target=\"_blank\" href=\"https://www.cursor.so/\" rel=\"nofollow noopener\">https://www.cursor.so/</a>"
+    },
+    {
+      "id": 12839461,
+      "author": "king888",
+      "created": 1679298204,
+      "content": "Cursor 用了几日，整体体验不错的，之前我分享过，CTRL+L 还可当做 GPT-4 客户端，目前可以白嫖，良性发展将来是要收费的，且用且珍惜",
+      "content_rendered": "Cursor 用了几日，整体体验不错的，之前我分享过，CTRL+L 还可当做 GPT-4 客户端，目前可以白嫖，良性发展将来是要收费的，且用且珍惜"
+    },
+    {
+      "id": 12840262,
+      "author": "ryHope",
+      "created": 1679304977,
+      "content": "键盘手托可以分享下吗",
+      "content_rendered": "键盘手托可以分享下吗"
+    },
+    {
+      "id": 12840439,
+      "author": "QingXuJiaZhi",
+      "created": 1679306590,
+      "content": "独立开发的工作与生活分享，在 V 站这里也看过一些，楼主这篇出乎意料的好，言之有物，详略得当，也不浮躁。",
+      "content_rendered": "独立开发的工作与生活分享，在 V 站这里也看过一些，楼主这篇出乎意料的好，言之有物，详略得当，也不浮躁。"
+    },
+    {
+      "id": 12842330,
+      "author": "yimity",
+      "created": 1679364042,
+      "content": "想知道下楼主从 Parse 迁到了哪个云数据库。感谢。",
+      "content_rendered": "想知道下楼主从 Parse 迁到了哪个云数据库。感谢。"
+    },
+    {
+      "id": 12843031,
+      "author": "vulgur",
+      "created": 1679370049,
+      "content": "@yimity 准备迁到腾讯云的 mysql ，不过还没开始弄",
+      "content_rendered": "@<a href=\"/member/yimity\">yimity</a> 准备迁到腾讯云的 mysql ，不过还没开始弄"
+    },
+    {
+      "id": 12845869,
+      "author": "MannyGPT",
+      "created": 1679407871,
+      "content": "@vulgur 刚才用了下 Codeium,感觉，很 stupid ，是我的错觉吗，不如 tapnine",
+      "content_rendered": "@<a href=\"/member/vulgur\">vulgur</a> 刚才用了下 Codeium,感觉，很 stupid ，是我的错觉吗，不如 tapnine"
+    },
+    {
+      "id": 12886729,
+      "author": "johnnyken996",
+      "created": 1680222140,
+      "content": "AI 淘宝模特 /AI 电商模特\r\n电商模特有点重需要小团队支持\r\n\r\n产品：AI 模特，自动换衣出电商图\r\n功能：AI 自动实现淘宝模特展示图功能\r\n想法：利用 stable diffusion+ControlNet+inpaint 实现电商模特换衣",
+      "content_rendered": "AI 淘宝模特 /AI 电商模特<br />电商模特有点重需要小团队支持<br /><br />产品：AI 模特，自动换衣出电商图<br />功能：AI 自动实现淘宝模特展示图功能<br />想法：利用 stable diffusion+ControlNet+inpaint 实现电商模特换衣"
+    },
+    {
+      "id": 12887280,
+      "author": "vulgur",
+      "created": 1680228353,
+      "content": "@johnnyken996 已经有人实现了",
+      "content_rendered": "@<a href=\"/member/johnnyken996\">johnnyken996</a> 已经有人实现了"
+    }
+  ],
+  "reply_pages": 1,
+  "fetched_at": "2026-10-06T03:33:59.534Z"
+}

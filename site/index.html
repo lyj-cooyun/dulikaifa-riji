@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>vulgur 独立开发周记 · 190 期全集</title>
+<style>
+:root {
+  --bg: #f6f6f4; --panel: #ffffff; --text: #26262b; --muted: #8b8b94; --line: #e6e6e3;
+  --accent: #1c1c22; --accent-text: #ffffff; --link: #2563eb; --op: #0e7a5f; --op-bg: #e8f5f0;
+  --op-badge: #f4f4f1; --op-badge-text: #0e7a5f; --hover: #efefe9; --selection: #f1f1ea;
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans SC", "PingFang SC", "Microsoft YaHei", sans-serif;
+  background: var(--bg); color: var(--text); line-height: 1.75; font-size: 16px;
+}
+a { color: var(--link); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+/* ---------- 顶栏 ---------- */
+header {
+  position: fixed; top: 0; left: 0; right: 0; z-index: 50;
+  background: rgba(255,255,255,.92); backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--line);
+  padding: 0 20px; height: 52px; display: flex; align-items: center; gap: 16px;
+}
+header h1 { font-size: 15px; margin: 0; font-weight: 600; white-space: nowrap; }
+header h1 span { color: var(--muted); font-weight: 400; }
+#search {
+  flex: 1; max-width: 420px; height: 32px; border: 1px solid var(--line); border-radius: 8px;
+  padding: 0 12px; font-size: 14px; background: var(--panel); color: var(--text); outline: none;
+}
+#search:focus { border-color: var(--link); }
+.viewtabs { display: flex; gap: 4px; }
+.viewtabs button {
+  border: 1px solid transparent; background: transparent; border-radius: 8px;
+  padding: 5px 12px; font-size: 13px; color: var(--muted); cursor: pointer; font-family: inherit;
+}
+.viewtabs button.active { background: var(--accent); color: var(--accent-text); }
+.viewtabs button:hover:not(.active) { background: var(--hover); color: var(--text); }
+#stats { font-size: 12px; color: var(--muted); white-space: nowrap; }
+
+/* ---------- 布局 ---------- */
+#layout { display: flex; padding-top: 52px; min-height: 100vh; }
+#sidebar {
+  width: 300px; flex-shrink: 0; border-right: 1px solid var(--line);
+  position: fixed; top: 52px; bottom: 0; left: 0; overflow-y: auto;
+  background: var(--panel);
+}
+#sidebar .side-group { padding: 12px 14px; border-bottom: 1px solid var(--line); }
+#sidebar .side-year { font-size: 12px; color: var(--muted); font-weight: 600; letter-spacing: .5px; margin-bottom: 6px; }
+#sidebar .side-item {
+  display: block; padding: 7px 10px; border-radius: 8px; cursor: pointer;
+  font-size: 13px; color: var(--text); border: 0; background: transparent; width: 100%; text-align: left;
+  display: flex; align-items: baseline; gap: 8px; font-family: inherit;
+}
+#sidebar .side-item:hover { background: var(--hover); }
+#sidebar .side-item.active { background: var(--selection); font-weight: 600; }
+#sidebar .side-item .ep { color: var(--muted); font-variant-numeric: tabular-nums; flex-shrink: 0; min-width: 44px; }
+#sidebar .side-item .t { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+#sidebar .side-item .rc { margin-left: auto; color: var(--muted); font-size: 11px; flex-shrink: 0; }
+#main { margin-left: 300px; flex: 1; padding: 28px 36px 80px; max-width: 980px; }
+
+/* ---------- 文章页 ---------- */
+.topic { animation: fadeIn .25s ease; }
+@keyframes fadeIn { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }
+.topic-head { padding-bottom: 16px; border-bottom: 1px solid var(--line); margin-bottom: 24px; }
+.topic-head .crumb { font-size: 13px; color: var(--muted); margin-bottom: 8px; }
+.topic-head h2 { margin: 0 0 12px; font-size: 26px; line-height: 1.35; font-weight: 700; letter-spacing: -.01em; }
+.topic-head .meta { display: flex; flex-wrap: wrap; gap: 14px; font-size: 13px; color: var(--muted); }
+.topic-head .meta a { color: var(--link); }
+.badge {
+  display: inline-block; padding: 1px 8px; border-radius: 999px; font-size: 12px;
+  background: var(--op-badge); color: var(--op-badge-text); font-weight: 500;
+}
+.meta .r-count { color: var(--text); font-weight: 600; }
+
+.body h1, .reply-body h1 { font-size: 20px; margin: 1.6em 0 .6em; padding-top: .3em; }
+.body h2, .reply-body h2 { font-size: 17px; margin: 1.5em 0 .5em; }
+.body h3, .reply-body h3 { font-size: 15px; margin: 1.2em 0 .4em; }
+.body p, .reply-body p { margin: .7em 0; }
+.body img, .reply-body img, .lightboxed img { max-width: 100%; border-radius: 10px; cursor: zoom-in; }
+.body code, .reply-body code { background: var(--selection); padding: 1px 5px; border-radius: 5px; font-size: 13.5px; font-family: ui-monospace, Consolas, monospace; }
+.body pre, .reply-body pre { background: #1e1e24; color: #e8e8ec; padding: 14px 16px; border-radius: 10px; overflow-x: auto; font-size: 13px; line-height: 1.6; }
+.body blockquote, .reply-body blockquote { border-left: 3px solid var(--line); margin: .8em 0; padding: 2px 0 2px 14px; color: var(--muted); }
+.body ul, .body ol, .reply-body ul, .reply-body ol { padding-left: 1.5em; }
+.body hr, .reply-body hr { border: 0; border-top: 1px solid var(--line); margin: 1.8em 0; }
+.body a { word-break: break-all; }
+
+/* 附言 */
+.supplement { margin: 26px 0 0; padding: 16px 18px; background: var(--panel); border: 1px dashed var(--line); border-radius: 12px; }
+.supplement .s-label { font-size: 12px; color: var(--op); font-weight: 600; margin-bottom: 6px; letter-spacing: .5px; }
+.supplement .body { font-size: 15px; color: var(--text); }
+
+/* 回复区 */
+.replies { margin-top: 34px; }
+.replies h3 { font-size: 15px; color: var(--muted); font-weight: 600; margin: 0 0 14px; display: flex; align-items: center; gap: 10px; }
+.replies h3 .rc { color: var(--text); }
+.reply { display: flex; gap: 12px; padding: 14px 0; border-top: 1px solid var(--line); }
+.reply .floor { font-variant-numeric: tabular-nums; color: var(--muted); font-size: 12px; width: 32px; flex-shrink: 0; padding-top: 3px; }
+.reply .reply-main { flex: 1; min-width: 0; }
+.reply .r-head { font-size: 13px; color: var(--muted); margin-bottom: 4px; display: flex; flex-wrap: wrap; gap: 8px; align-items: baseline; }
+.reply .r-head .author { color: var(--text); font-weight: 600; font-size: 14px; }
+.reply.op-reply { background: var(--op-bg); margin: 0 -18px; padding: 14px 18px; border-radius: 10px; border-top-color: transparent; }
+.reply.op-reply + .reply { border-top-color: transparent; }
+.reply-body { font-size: 15px; }
+.reply-body blockquote { margin: .5em 0; padding: 2px 0 2px 12px; }
+.reply-body p { margin: .5em 0; }
+
+/* ---------- 概览页 ---------- */
+.overview h2 { font-size: 22px; margin: 8px 0 18px; }
+.overview p.desc { color: var(--muted); font-size: 14.5px; max-width: 640px; }
+.overview .cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 12px; margin: 22px 0 34px; }
+.overview .card { background: var(--panel); border: 1px solid var(--line); border-radius: 12px; padding: 16px 18px; }
+.overview .card .num { font-size: 26px; font-weight: 700; letter-spacing: -.02em; }
+.overview .card .lab { font-size: 12.5px; color: var(--muted); margin-top: 2px; }
+.overview table { width: 100%; border-collapse: collapse; font-size: 14px; background: var(--panel); border-radius: 12px; overflow: hidden; }
+.overview th, .overview td { text-align: left; padding: 9px 14px; border-bottom: 1px solid var(--line); }
+.overview th { font-size: 12px; color: var(--muted); font-weight: 600; background: #fafaf7; }
+.overview tr:last-child td { border-bottom: 0; }
+.overview tr:hover td { background: var(--hover); }
+.overview td.n { font-variant-numeric: tabular-nums; }
+.overview .bar { background: var(--accent); height: 14px; border-radius: 3px; min-width: 2px; }
+.heatmap { display: grid; grid-template-columns: repeat(26, 1fr); gap: 3px; margin: 10px 0 4px; max-width: 640px; }
+.heatmap .cell { aspect-ratio: 1; border-radius: 2px; background: #ecece8; cursor: pointer; }
+.heatmap .cell.l1 { background: #cfe6d9; } .heatmap .cell.l2 { background: #9fd0b3; }
+.heatmap .cell.l3 { background: #6ab98a; } .heatmap .cell.l4 { background: #38996b; }
+.heatmap .cell.l5 { background: #1c6b4a; }
+.heatmap-pop { font-size: 12px; color: var(--muted); margin-bottom: 18px; }
+
+/* ---------- 灯箱 ---------- */
+#lightbox {
+  position: fixed; inset: 0; z-index: 100; background: rgba(20,20,24,.94);
+  display: none; align-items: center; justify-content: center; cursor: zoom-out;
+}
+#lightbox.show { display: flex; }
+#lightbox img { max-width: 94vw; max-height: 94vh; border-radius: 4px; }
+#lightbox .lb-tip { position: fixed; bottom: 18px; left: 0; right: 0; text-align: center; color: #999; font-size: 12px; }
+
+/* ---------- 导读页 ---------- */
+.digest-layout { display: flex; gap: 32px; align-items: flex-start; }
+.digest-toc {
+  position: sticky; top: 72px; width: 220px; flex-shrink: 0;
+  max-height: calc(100vh - 100px); overflow-y: auto;
+  font-size: 13px; border-left: 2px solid var(--line); padding-left: 14px;
+}
+.digest-toc .toc-title { font-weight: 600; color: var(--muted); font-size: 12px; margin-bottom: 8px; letter-spacing: .5px; }
+.digest-toc a { display: block; padding: 4px 0; color: var(--muted); text-decoration: none; line-height: 1.4; }
+.digest-toc a:hover { color: var(--link); }
+.digest-toc a.toc-l1 { font-weight: 600; color: var(--text); margin-top: 6px; }
+.digest-toc a.toc-l2 { padding-left: 10px; }
+.digest-body { flex: 1; min-width: 0; max-width: 760px; }
+.digest-body h1 { font-size: 24px; margin: 1.4em 0 .5em; padding-bottom: .3em; border-bottom: 1px solid var(--line); }
+.digest-body h2 { font-size: 20px; margin: 1.5em 0 .5em; }
+.digest-body h3 { font-size: 16px; margin: 1.3em 0 .4em; }
+.digest-body h4 { font-size: 14.5px; margin: 1.1em 0 .3em; color: var(--muted); }
+.digest-body p { margin: .7em 0; }
+.digest-body table { width: 100%; border-collapse: collapse; font-size: 13.5px; margin: 1em 0; background: var(--panel); border-radius: 10px; overflow: hidden; }
+.digest-body th, .digest-body td { text-align: left; padding: 8px 12px; border-bottom: 1px solid var(--line); }
+.digest-body th { font-size: 12px; color: var(--muted); font-weight: 600; background: #fafaf7; }
+.digest-body tr:last-child td { border-bottom: 0; }
+.digest-body tr:hover td { background: var(--hover); }
+.digest-body blockquote { border-left: 3px solid var(--link); background: var(--panel); margin: 1em 0; padding: 10px 16px; border-radius: 0 10px 10px 0; color: var(--text); }
+.digest-body pre { background: #1e1e24; color: #e8e8ec; padding: 14px 16px; border-radius: 10px; overflow-x: auto; font-size: 13px; }
+.digest-body code { background: var(--selection); padding: 1px 5px; border-radius: 5px; font-size: 13px; font-family: ui-monospace, Consolas, monospace; }
+.digest-body pre code { background: transparent; padding: 0; }
+.digest-body ul, .digest-body ol { padding-left: 1.6em; }
+.digest-body img { max-width: 100%; border-radius: 10px; cursor: zoom-in; }
+.digest-body hr { border: 0; border-top: 1px solid var(--line); margin: 2em 0; }
+.digest-body a { word-break: break-all; }
+@media (max-width: 1100px) { .digest-toc { display: none; } .digest-body { max-width: 100%; } }
+
+/* ---------- 空态 / 无结果 ---------- */
+.empty { text-align: center; color: var(--muted); padding: 80px 0; }
+.empty .big { font-size: 40px; margin-bottom: 10px; }
+
+@media (max-width: 900px) {
+  #sidebar { display: none; }
+  #main { margin-left: 0; padding: 20px 16px 60px; }
+  header { padding: 0 12px; }
+  #stats { display: none; }
+}
+</style>
+</head>
+<body>
+<header>
+  <h1>vulgur 周记全集 <span>· 190 期</span></h1>
+  <input id="search" type="search" placeholder="搜索标题 / 正文 / 回复内容…">
+  <div class="viewtabs">
+    <button id="tab-read" class="active">阅读</button>
+    <button id="tab-overview">总览</button>
+    <button id="tab-digest" style="display:none">导读</button>
+  </div>
+  <div id="stats"></div>
+</header>
+
+<div id="layout">
+  <nav id="sidebar"></nav>
+  <main id="main"><div class="empty"><div class="big">⏳</div>加载中…</div></main>
+</div>
+
+<div id="lightbox"><img src="" alt=""><div class="lb-tip">点击任意处关闭 · Esc</div></div>
+
+<script src="data.js"></script>
+<script src="digest.js" onerror="window.__DIGEST__=null"></script>
+<script>
+const DATA = window.__DATA__ || [];
+const main = document.getElementById('main');
+const sidebar = document.getElementById('sidebar');
+const searchBox = document.getElementById('search');
+const statsEl = document.getElementById('stats');
+
+// ---------- 工具 ----------
+const totalReplies = DATA.reduce((s, t) => s + t.replies.length + t.op_replies.length, 0);
+const epLabel = t => t.ep != null ? '#' + t.ep + (t.ep2 ? '-' + t.ep2 : '') : '★';
+const shortTitle = t => t.title.replace(/^独立开发周[记报]\s*[#]?\d*[-&]?\d*[：:\s]?\s*/, '') || t.title;
+
+statsEl.textContent = DATA.length + ' 期 · ' + totalReplies + ' 条回复 · ' + DATA[0].date + ' ~ ' + DATA[DATA.length-1].date;
+
+// ---------- 搜索 ----------
+let filtered = DATA;
+let query = '';
+searchBox.addEventListener('input', () => {
+  query = searchBox.value.trim().toLowerCase();
+  applyFilter();
+});
+function applyFilter() {
+  if (!query) { filtered = DATA; }
+  else {
+    filtered = DATA.filter(t => {
+      const hay = (t.title + ' ' + (t.body_html || '') + ' ' + t.replies.map(r => r.author + ' ' + (r.html||'')).join(' ') + ' ' + t.op_replies.map(r => r.html||'').join(' ')).toLowerCase();
+      return hay.includes(query);
+    });
+  }
+  renderSidebar();
+  if (view === 'read') {
+    if (filtered.length === 0) showEmpty('🔍', '没有匹配「' + query + '」的内容');
+    else if (filtered.indexOf(current) === -1 || current == null) openTopic(filtered[0].id, true);
+  } else {
+    renderOverview();
+  }
+}
+
+// ---------- 侧栏 ----------
+function renderSidebar() {
+  const groups = {};
+  for (const t of filtered) {
+    const y = t.date.slice(0, 4);
+    (groups[y] = groups[y] || []).push(t);
+  }
+  let html = '';
+  for (const y of Object.keys(groups).sort()) {
+    html += '<div class="side-group"><div class="side-year">' + y + ' · ' + groups[y].length + ' 期</div>';
+    for (const t of groups[y]) {
+      html += '<button class="side-item' + (current === t.id ? ' active' : '') + '" data-id="' + t.id + '">' +
+        '<span class="ep">' + epLabel(t) + '</span><span class="t">' + esc(shortTitle(t)) + '</span>' +
+        '<span class="rc">' + (t.replies.length + t.op_replies.length) + '</span></button>';
+    }
+    html += '</div>';
+  }
+  if (!filtered.length) html = '<div class="side-group" style="color:var(--muted);font-size:13px;">无结果</div>';
+  sidebar.innerHTML = html;
+  sidebar.querySelectorAll('.side-item').forEach(btn => {
+    btn.addEventListener('click', () => openTopic(Number(btn.dataset.id)));
+  });
+}
+const esc = s => String(s ?? '').replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+
+// ---------- 阅读视图 ----------
+let view = 'read';
+let current = null;
+document.getElementById('tab-read').addEventListener('click', () => setView('read'));
+document.getElementById('tab-overview').addEventListener('click', () => setView('overview'));
+const tabDigest = document.getElementById('tab-digest');
+if (window.__DIGEST__) tabDigest.style.display = '';
+tabDigest.addEventListener('click', () => setView('digest'));
+function setView(v) {
+  view = v;
+  document.getElementById('tab-read').classList.toggle('active', v === 'read');
+  document.getElementById('tab-overview').classList.toggle('active', v === 'overview');
+  document.getElementById('tab-digest').classList.toggle('active', v === 'digest');
+  if (v === 'read') { if (filtered.length) openTopic(current || filtered[0].id, true); }
+  else if (v === 'digest') renderDigest();
+  else renderOverview();
+  window.scrollTo(0, 0);
+}
+
+function openTopic(id, keepScroll) {
+  const t = filtered.find(x => x.id === id) || DATA.find(x => x.id === id);
+  if (!t) return;
+  current = id;
+  const idx = filtered.indexOf(t);
+  const prev = filtered[idx - 1], next = filtered[idx + 1];
+  const rc = t.replies.length + t.op_replies.length;
+
+  // 合并楼层：网友回复与 OP 回复按时间交错
+  const all = [...t.replies.map(r => ({ ...r, op: false })), ...t.op_replies.map(r => ({ ...r, op: true }))]
+    .sort((a, b) => (a.created||0) - (b.created||0));
+
+  let html = '<article class="topic">';
+  html += '<div class="topic-head">';
+  html += '<div class="crumb">' + (prev ? '<a href="javascript:void(0)" data-nav="' + prev.id + '">← ' + epLabel(prev) + '</a>' : '<span style="color:var(--line)">←</span>') +
+    '　·　' + (next ? '<a href="javascript:void(0)" data-nav="' + next.id + '">' + epLabel(next) + ' →</a>' : '<span style="color:var(--line)">→</span>') + '</div>';
+  html += '<h2>' + esc(t.title) + '</h2>';
+  html += '<div class="meta">';
+  html += '<span><span class="badge">OP vulgur</span></span>';
+  html += '<span>' + t.date + '</span>';
+  html += '<span>节点 ' + esc(t.node) + '</span>';
+  html += '<span class="r-count">回复 ' + rc + '</span>';
+  html += '<span>收藏 ' + (t.stars ?? 0) + '</span><span>感谢 ' + (t.thanks ?? 0) + '</span>';
+  html += '<span><a href="https://www.v2ex.com/t/' + t.id + '" target="_blank" rel="noopener">在 V2EX 打开 ↗</a></span>';
+  html += '</div></div>';
+
+  html += '<div class="body">' + (t.body_html || '') + '</div>';
+
+  if (t.supplements && t.supplements.length) {
+    for (const s of t.supplements) {
+      html += '<div class="supplement"><div class="s-label">附言 · ' + s.date + '</div><div class="body">' + s.html + '</div></div>';
+    }
+  }
+
+  if (all.length) {
+    html += '<div class="replies"><h3>回复 <span class="rc">' + all.length + '</span></h3>';
+    let floor = 0;
+    for (const r of all) {
+      floor++;
+      html += '<div class="reply' + (r.op ? ' op-reply' : '') + '">';
+      html += '<div class="floor">' + floor + '</div>';
+      html += '<div class="reply-main">';
+      html += '<div class="r-head"><span class="author">' + (r.op ? '<span class="badge">vulgur</span>' : '@' + esc(r.author)) + '</span><span>' + r.date + '</span></div>';
+      html += '<div class="reply-body">' + (r.html || '') + '</div>';
+      html += '</div></div>';
+    }
+    html += '</div>';
+  } else {
+    html += '<div class="replies"><h3>回复 <span class="rc">0</span></h3><div style="color:var(--muted);font-size:14px;">这一期没有收到任何回复。</div></div>';
+  }
+  html += '</article>';
+
+  main.innerHTML = html;
+  if (!keepScroll) main.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  else window.scrollTo(0, 0);
+  main.querySelectorAll('[data-nav]').forEach(a => a.addEventListener('click', () => openTopic(Number(a.dataset.nav))));
+  bindImages();
+  renderSidebar();
+}
+
+// ---------- 导读视图 ----------
+function renderDigest() {
+  const md = window.__DIGEST__;
+  if (!md) { showEmpty('📄', '导读尚未生成'); return; }
+  const { html, toc } = mdRender(md);
+  let out = '<article class="digest"><div class="digest-layout">';
+  out += '<nav class="digest-toc">' + toc + '</nav>';
+  out += '<div class="digest-body">' + html + '</div>';
+  out += '</div></article>';
+  main.innerHTML = out;
+  // 锚点平滑滚动
+  main.querySelectorAll('.digest-toc a').forEach(a => {
+    a.addEventListener('click', e => {
+      e.preventDefault();
+      const el = document.getElementById(a.getAttribute('href').slice(1));
+      if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    });
+  });
+  bindImages();
+}
+
+// 轻量 Markdown 渲染（支持标题/列表/表格/粗斜体/代码/引用/链接/分隔线）
+function mdRender(md) {
+  const lines = md.split('\n');
+  const esc = s => s.replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+  const inline = s => esc(s)
+    .replace(/!\[([^\]]*)\]\(([^)\s]+)\)/g, '<img src="$2" alt="$1">')
+    .replace(/\[([^\]]+)\]\(([^)\s]+)\)/g, '<a href="$2" target="_blank" rel="noopener">$1</a>')
+    .replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>')
+    .replace(/(^|\W)\*([^*]+)\*(?=\W|$)/g, '$1<em>$2</em>')
+    .replace(/\`([^\`]+)\`/g, '<code>$1</code>');
+  let html = '', toc = [], inCode = false, listStack = [];
+  const flushList = () => { while (listStack.length) html += '</' + listStack.pop() + '>'; };
+  const closeP = () => { /* paragraphs handled per-line */ };
+  for (let i = 0; i < lines.length; i++) {
+    let line = lines[i];
+    if (/^\s*```/.test(line)) {
+      if (inCode) { html += '</code></pre>'; inCode = false; }
+      else { flushList(); html += '<pre><code>'; inCode = true; }
+      continue;
+    }
+    if (inCode) { html += esc(line) + '\n'; continue; }
+    if (/^\s*$/.test(line)) { flushList(); continue; }
+    // 表格
+    if (/^\|.*\|\s*$/.test(line) && /^\|[-\s:|]+\|\s*$/.test(lines[i+1] || '')) {
+      flushList();
+      const head = line.split('|').slice(1, -1).map(s => s.trim());
+      let tbl = '<table><tr>' + head.map(h => '<th>' + inline(h) + '</th>').join('') + '</tr>';
+      i += 2;
+      while (i < lines.length && /^\|.*\|\s*$/.test(lines[i])) {
+        const cells = lines[i].split('|').slice(1, -1).map(s => s.trim());
+        tbl += '<tr>' + cells.map(c => '<td>' + inline(c) + '</td>').join('') + '</tr>';
+        i++;
+      }
+      html += tbl + '</table>';
+      i--;
+      continue;
+    }
+    const h = line.match(/^(#{1,4})\s+(.*)$/);
+    if (h) {
+      flushList();
+      const lv = h[1].length;
+      const id = 'h-' + toc.length;
+      toc.push({ lv, id, text: h[2].replace(/[#*\`]/g, '').trim() });
+      html += '<h' + lv + ' id="' + id + '" data-lv="' + lv + '">' + inline(h[2]) + '</h' + lv + '>';
+      continue;
+    }
+    if (/^(-{3,}|\*{3,})\s*$/.test(line)) { flushList(); html += '<hr>'; continue; }
+    if (/^>\s?/.test(line)) {
+      flushList();
+      let q = line.replace(/^>\s?/, '');
+      let buf = q;
+      while ((lines[i+1] || '').startsWith('>')) { i++; buf += '\n' + lines[i].replace(/^>\s?/, ''); }
+      html += '<blockquote>' + inline(buf).replace(/\n/g, '<br>') + '</blockquote>';
+      continue;
+    }
+    const ul = line.match(/^[-*+]\s+(.*)$/);
+    const ol = line.match(/^(\d+)[.、]\s+(.*)$/);
+    if (ul || ol) {
+      const want = ul ? 'ul' : 'ol';
+      const item = ul ? ul[1] : ol[2];
+      if (listStack[listStack.length-1] !== want) { flushList(); html += '<' + want + '>'; listStack.push(want); }
+      html += '<li>' + inline(item) + '</li>';
+      continue;
+    }
+    // 普通段落
+    flushList();
+    let buf = line;
+    while (i + 1 < lines.length && !/^\s*$/.test(lines[i+1]) && !/^(#{1,4}\s|[-*+]\s|\d+[.、]\s|\||>|\`\`\`|-{3,})/.test(lines[i+1])) {
+      i++; buf += ' ' + lines[i];
+    }
+    html += '<p>' + inline(buf) + '</p>';
+  }
+  flushList();
+  if (inCode) html += '</code></pre>';
+  // TOC（只取 h1/h2）
+  let tocHtml = '<div class="toc-title">导读目录</div>';
+  for (const t of toc.filter(t => t.lv <= 2)) {
+    tocHtml += '<a href="#' + t.id + '" class="toc-l' + t.lv + '">' + esc(t.text) + '</a>';
+  }
+  return { html, toc: tocHtml };
+}
+
+// ---------- 概览页 ----------
+function renderOverview() {
+  const years = {};
+  for (const t of DATA) {
+    const y = t.date.slice(0, 4);
+    years[y] = years[y] || { n: 0, replies: 0 };
+    years[y].n++; years[y].replies += t.replies.length + t.op_replies.length;
+  }
+  const topReplied = [...DATA].sort((a, b) => (b.replies.length + b.op_replies.length) - (a.replies.length + a.op_replies.length)).slice(0, 15);
+  const topStarred = [...DATA].sort((a, b) => (b.stars || 0) - (a.stars || 0)).slice(0, 10);
+  const authors = {};
+  for (const t of DATA) for (const r of t.replies) authors[r.author] = (authors[r.author] || 0) + 1;
+  const topAuthors = Object.entries(authors).sort((a, b) => b[1] - a[1]).slice(0, 20);
+  const maxRc = topReplied[0] ? topReplied[0].replies.length + topReplied[0].op_replies.length : 1;
+
+  // 热力图：按周绘制（时间轴格子）
+  const first = DATA[0].created, last = DATA[DATA.length-1].created;
+  const weeks = Math.ceil((last - first) / 604800) + 1;
+  const byWeek = {};
+  for (const t of DATA) {
+    const w = Math.floor((t.created - first) / 604800);
+    byWeek[w] = (byWeek[w] || 0) + 1;
+  }
+  const maxW = Math.max(1, ...Object.values(byWeek));
+  let heat = '<div class="heatmap" style="grid-template-columns:repeat(' + Math.min(weeks, 40) + ', 1fr)">';
+  for (let w = 0; w < weeks; w++) {
+    const c = byWeek[w] || 0;
+    const lv = c === 0 ? '' : 'l' + Math.min(5, Math.ceil(c / maxW * 5));
+    heat += '<div class="cell ' + lv + '" title="' + c + ' 篇"></div>';
+  }
+  heat += '</div>';
+
+  let html = '<div class="overview">';
+  html += '<h2>总览</h2>';
+  html += '<p class="desc">V2EX 用户 vulgur 的独立开发周记系列全集。数据抓取自 V2EX API 2.0，包含正文、附言与全部回复。点击侧栏任意一期开始阅读。</p>';
+  html += '<div class="cards">';
+  html += '<div class="card"><div class="num">' + DATA.length + '</div><div class="lab">周记期数</div></div>';
+  html += '<div class="card"><div class="num">' + totalReplies + '</div><div class="lab">回复总数</div></div>';
+  html += '<div class="card"><div class="num">' + (DATA[DATA.length-1].ep || '-') + '</div><div class="lab">最新期号</div></div>';
+  html += '<div class="card"><div class="num">' + Object.keys(years).length + '</div><div class="lab">跨越年份</div></div>';
+  html += '</div>';
+
+  html += '<h2>发布节奏</h2><p class="desc">每格代表一周，颜色越深发布越多。</p>' + heat + '<div class="heatmap-pop">共 ' + weeks + ' 周 · 平均 ' + (DATA.length / weeks * 100).toFixed(0) + '% 的周有更新</div>';
+
+  html += '<h2>逐年统计</h2><table><tr><th>年份</th><th>期数</th><th>收到回复</th><th>平均每期回复</th></tr>';
+  for (const y of Object.keys(years).sort()) {
+    html += '<tr><td>' + y + '</td><td class="n">' + years[y].n + '</td><td class="n">' + years[y].replies + '</td><td class="n">' + (years[y].replies / years[y].n).toFixed(1) + '</td></tr>';
+  }
+  html += '</table>';
+
+  html += '<h2>讨论最热 Top 15</h2><table><tr><th>期号</th><th>标题</th><th>回复</th><th>热度</th></tr>';
+  for (const t of topReplied) {
+    const rc = t.replies.length + t.op_replies.length;
+    html += '<tr><td class="n">' + epLabel(t) + '</td><td><a href="javascript:void(0)" data-open="' + t.id + '">' + esc(t.title) + '</a></td><td class="n">' + rc + '</td><td><div class="bar" style="width:' + (rc / maxRc * 260) + 'px"></div></td></tr>';
+  }
+  html += '</table>';
+
+  html += '<h2>收藏最多 Top 10</h2><table><tr><th>期号</th><th>标题</th><th>收藏 ⭐</th><th>感谢</th></tr>';
+  for (const t of topStarred) {
+    html += '<tr><td class="n">' + epLabel(t) + '</td><td><a href="javascript:void(0)" data-open="' + t.id + '">' + esc(t.title) + '</a></td><td class="n">' + (t.stars||0) + '</td><td class="n">' + (t.thanks||0) + '</td></tr>';
+  }
+  html += '</table>';
+
+  html += '<h2>高频互动网友 Top 20</h2><table><tr><th>网友</th><th>回复数</th></tr>';
+  for (const [u, c] of topAuthors) {
+    html += '<tr><td>@' + esc(u) + '</td><td class="n">' + c + '</td></tr>';
+  }
+  html += '</table></div>';
+
+  main.innerHTML = html;
+  main.querySelectorAll('[data-open]').forEach(a => a.addEventListener('click', () => {
+    current = Number(a.dataset.open);
+    setView('read');
+  }));
+  bindImages();
+}
+
+function showEmpty(icon, msg) {
+  main.innerHTML = '<div class="empty"><div class="big">' + icon + '</div>' + esc(msg) + '</div>';
+}
+
+// ---------- 图片灯箱 ----------
+function bindImages() {
+  main.querySelectorAll('img').forEach(img => {
+    if (img.dataset.lb) return;
+    img.dataset.lb = '1';
+    img.addEventListener('click', e => {
+      e.preventDefault();
+      lbImg.src = img.src;
+      lb.classList.add('show');
+    });
+  });
+}
+const lb = document.getElementById('lightbox');
+const lbImg = lb.querySelector('img');
+lb.addEventListener('click', () => lb.classList.remove('show'));
+document.addEventListener('keydown', e => {
+  if (e.key === 'Escape') lb.classList.remove('show');
+  if (e.key === 'ArrowLeft' || e.key === 'ArrowRight') {
+    const idx = filtered.findIndex(x => x.id === current);
+    if (idx === -1) return;
+    const t = e.key === 'ArrowLeft' ? filtered[idx - 1] : filtered[idx + 1];
+    if (t) openTopic(t.id);
+  }
+});
+
+// ---------- 启动 ----------
+renderSidebar();
+if (DATA.length) openTopic(DATA[DATA.length - 1].id);
+</script>
+</body>
+</html>

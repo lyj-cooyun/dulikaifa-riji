@@ -1,0 +1,3716 @@
+[
+  {
+    "id": 1246582,
+    "title": "独立开发周记 190：朝九晚五也挺好",
+    "episode": {
+      "ep": 190,
+      "ep2": null
+    },
+    "node": "isv",
+    "url": "https://www.v2ex.com/t/1246582",
+    "created": 1791249246,
+    "last_touched": 1791249246,
+    "member": "vulgur",
+    "replies_count": 1,
+    "stars": 2,
+    "thanks": 0,
+    "reply_pages": 1,
+    "fetched_at": "2026-10-06T03:30:31.896Z",
+    "replies_fetched": 1,
+    "supplements_count": 0
+  },
+  {
+    "id": 1245213,
+    "title": "独立开发周记 189：新工作室预营业",
+    "episode": {
+      "ep": 189,
+      "ep2": null
+    },
+    "node": "isv",
+    "url": "https://www.v2ex.com/t/1245213",
+    "created": 1790572931,
+    "last_touched": 1790573347,
+    "member": "vulgur",
+    "replies_count": 1,
+    "stars": 0,
+    "thanks": 0,
+    "reply_pages": 1,
+    "fetched_at": "2026-10-06T03:30:32.952Z",
+    "replies_fetched": 1,
+    "supplements_count": 0
+  },
+  {
+    "id": 1243724,
+    "title": "独立开发周记 188：一次退款引发的投诉",
+    "episode": {
+      "ep": 188,
+      "ep2": null
+    },
+    "node": "isv",
+    "url": "https://www.v2ex.com/t/1243724",
+    "created": 1789989946,
+    "last_touched": 1789997146,
+    "member": "vulgur",
+    "replies_count": 3,
+    "stars": 0,
+    "thanks": 0,
+    "reply_pages": 1,
+    "fetched_at": "2026-10-06T03:30:34.023Z",
+    "replies_fetched": 3,
+    "supplements_count": 0
+  },
+  {
+    "id": 1241927,
+    "title": "独立开发周记 187：为 iPhone Duo 做好准备",
+    "episode": {
+      "ep": 187,
+      "ep2": null
+    },
+    "node": "isv",
+    "url": "https://www.v2ex.com/t/1241927",
+    "created": 1789376305,
+    "last_touched": 1789376494,
+    "member": "vulgur",
+    "replies_count": 2,
+    "stars": 0,
+    "thanks": 0,
+    "reply_pages": 1,
+    "fetched_at": "2026-10-06T03:30:35.066Z",
+    "replies_fetched": 2,
+    "supplements_count": 0
+  },
+  {
+    "id": 1240080,
+    "title": "独立开发周记 186：连续更新收入涨，一做宣传就凉凉",
+    "episode": {
+      "ep": 186,
+      "ep2": null
+    },
+    "node": "isv",
+    "url": "https://www.v2ex.com/t/1240080",
+    "created": 1788766263,
+    "last_touched": 1788774059,
+    "member": "vulgur",
+    "replies_count": 1,
+    "stars": 0,
+    "thanks": 0,
+    "reply_pages": 1,
+    "fetched_at": "2026-10-06T03:30:36.128Z",
+    "replies_fetched": 1,
+    "supplements_count": 0
+  },
+  {
+    "id": 1238404,
+    "title": "独立开发周记 185：等了 1 个月的工单，回复让我去找银行",
+    "episode": {
+      "ep": 185,
+      "ep2": null
+    },
+    "node": "isv",
+    "url": "https://www.v2ex.com/t/1238404",
+    "created": 1788160591,
+    "last_touched": 1788161476,
+    "member": "vulgur",
+    "replies_count": 1,
+    "stars": 0,
+    "thanks": 0,
+    "reply_pages": 1,
+    "fetched_at": "2026-10-06T03:30:37.606Z",
+    "replies_fetched": 1,
+    "supplements_count": 0
+  },
+  {
+    "id": 1236882,
+    "title": "独立开发周记 184：主角与否，身不由己",
+    "episode": {
+      "ep": 184,
+      "ep2": null
+    },
+    "node": "isv",
+    "url": "https://www.v2ex.com/t/1236882",
+    "created": 1787570222,
+    "last_touched": 1787570222,
+    "member": "vulgur",
+    "replies_count": 0,
+    "stars": 0,
+    "thanks": 0,
+    "reply_pages": 1,
+    "fetched_at": "2026-10-06T03:30:38.918Z",
+    "replies_fetched": 0,
+    "supplements_count": 0
+  },
+  {
+    "id": 1233120,
+    "title": "独立开发周记 182：奖金到手，鲜香满口",
+    "episode": {
+      "ep": 182,
+      "ep2": null
+    },
+    "node": "isv",
+    "url": "https://www.v2ex.com/t/1233120",
+    "created": 1786322788,
+    "last_touched": 1786322788,
+    "member": "vulgur",
+    "replies_count": 0,
+    "stars": 2,
+    "thanks": 1,
+    "reply_pages": 1,
+    "fetched_at": "2026-10-06T03:30:39.973Z",
+    "replies_fetched": 0,
+    "supplements_count": 0
+  },
+  {
+    "id": 1231794,
+    "title": "独立开发周记 181：别人三天一个 App，而我两周还在改 Demo",
+    "episode": {
+      "ep": 181,
+      "ep2": null
+    },
+    "node": "isv",
+    "url": "https://www.v2ex.com/t/1231794",
+    "created": 1785747572,
+    "last_touched": 1785747572,
+    "member": "vulgur",
+    "replies_count": 1,
+    "stars": 0,
+    "thanks": 0,
+    "reply_pages": 1,
+    "fetched_at": "2026-10-06T03:30:41.057Z",
+    "replies_fetched": 1,
+    "supplements_count": 0
+  },
+  {
+    "id": 1230158,
+    "title": "独立开发周记 180：一个优惠码引发的东郭先生的故事",
+    "episode": {
+      "ep": 180,
+      "ep2": null
+    },
+    "node": "isv",
+    "url": "https://www.v2ex.com/t/1230158",
+    "created": 1785140951,
+    "last_touched": 1785297059,
+    "member": "vulgur",
+    "replies_count": 8,
+    "stars": 0,
+    "thanks": 0,
+    "reply_pages": 1,
+    "fetched_at": "2026-10-06T03:30:42.156Z",
+    "replies_fetched": 8,
+    "supplements_count": 0
+  },
+  {
+    "id": 1228653,
+    "title": "独立开发周记 179： AI 带我从零开始做新 App",
+    "episode": {
+      "ep": 179,
+      "ep2": null
+    },
+    "node": "isv",
+    "url": "https://www.v2ex.com/t/1228653",
+    "created": 1784548025,
+    "last_touched": 1784551625,
+    "member": "vulgur",
+    "replies_count": 4,
+    "stars": 0,
+    "thanks": 0,
+    "reply_pages": 1,
+    "fetched_at": "2026-10-06T03:30:43.230Z",
+    "replies_fetched": 4,
+    "supplements_count": 0
+  },
+  {
+    "id": 1226995,
+    "title": "独立开发周记 178：全新机场主题上线",
+    "episode": {
+      "ep": 178,
+      "ep2": null
+    },
+    "node": "isv",
+    "url": "https://www.v2ex.com/t/1226995",
+    "created": 1783932961,
+    "last_touched": 1783932961,
+    "member": "vulgur",
+    "replies_count": 0,
+    "stars": 0,
+    "thanks": 0,
+    "reply_pages": 1,
+    "fetched_at": "2026-10-06T03:30:44.301Z",
+    "replies_fetched": 0,
+    "supplements_count": 0
+  },
+  {
+    "id": 1225362,
+    "title": "独立开发周记 177 ：当代码和生活都出现大漏洞",
+    "episode": {
+      "ep": 177,
+      "ep2": null
+    },
+    "node": "isv",
+    "url": "https://www.v2ex.com/t/1225362",
+    "created": 1783330603,
+    "last_touched": 1783337360,
+    "member": "vulgur",
+    "replies_count": 1,
+    "stars": 0,
+    "thanks": 0,
+    "reply_pages": 1,
+    "fetched_at": "2026-10-06T03:30:45.361Z",
+    "replies_fetched": 1,
+    "supplements_count": 0
+  },
+  {
+    "id": 1223638,
+    "title": "独立开发周记 176：需求的尽头是情绪",
+    "episode": {
+      "ep": 176,
+      "ep2": null
+    },
+    "node": "isv",
+    "url": "https://www.v2ex.com/t/1223638",
+    "created": 1782707626,
+    "last_touched": 1782709180,
+    "member": "vulgur",
+    "replies_count": 2,
+    "stars": 0,
+    "thanks": 0,
+    "reply_pages": 1,
+    "fetched_at": "2026-10-06T03:30:46.451Z",
+    "replies_fetched": 2,
+    "supplements_count": 0
+  },
+  {
+    "id": 1221990,
+    "title": "独立开发周记 175：版本反复踩坑，生活随性摆烂",
+    "episode": {
+      "ep": 175,
+      "ep2": null
+    },
+    "node": "isv",
+    "url": "https://www.v2ex.com/t/1221990",
+    "created": 1782112436,
+    "last_touched": 1782116036,
+    "member": "vulgur",
+    "replies_count": 1,
+    "stars": 0,
+    "thanks": 0,
+    "reply_pages": 1,
+    "fetched_at": "2026-10-06T03:30:47.492Z",
+    "replies_fetched": 1,
+    "supplements_count": 0
+  },
+  {
+    "id": 1220617,
+    "title": "独立开发周记 174：应用上架但零下载",
+    "episode": {
+      "ep": 174,
+      "ep2": null
+    },
+    "node": "isv",
+    "url": "https://www.v2ex.com/t/1220617",
+    "created": 1781516331,
+    "last_touched": 1781712916,
+    "member": "vulgur",
+    "replies_count": 3,
+    "stars": 0,
+    "thanks": 0,
+    "reply_pages": 1,
+    "fetched_at": "2026-10-06T03:30:48.606Z",
+    "replies_fetched": 3,
+    "supplements_count": 0
+  },
+  {
+    "id": 1218763,
+    "title": "独立开发周记 173：安卓鸿蒙双开，踩坑永无止境",
+    "episode": {
+      "ep": 173,
+      "ep2": null
+    },
+    "node": "isv",
+    "url": "https://www.v2ex.com/t/1218763",
+    "created": 1780901275,
+    "last_touched": 1780962310,
+    "member": "vulgur",
+    "replies_count": 1,
+    "stars": 0,
+    "thanks": 0,
+    "reply_pages": 1,
+    "fetched_at": "2026-10-06T03:30:49.684Z",
+    "replies_fetched": 1,
+    "supplements_count": 0
+  },
+  {
+    "id": 1217114,
+    "title": "独立开发周记 172：计划有变，鸿蒙再见",
+    "episode": {
+      "ep": 172,
+      "ep2": null
+    },
+    "node": "huawei",
+    "url": "https://www.v2ex.com/t/1217114",
+    "created": 1780313964,
+    "last_touched": 1780330831,
+    "member": "vulgur",
+    "replies_count": 4,
+    "stars": 0,
+    "thanks": 0,
+    "reply_pages": 1,
+    "fetched_at": "2026-10-06T03:30:50.772Z",
+    "replies_fetched": 4,
+    "supplements_count": 0
+  },
+  {
+    "id": 1215408,
+    "title": "独立开发周记 171：技术债和身体债一起找上门",
+    "episode": {
+      "ep": 171,
+      "ep2": null
+    },
+    "node": "isv",
+    "url": "https://www.v2ex.com/t/1215408",
+    "created": 1779714102,
+    "last_touched": 1779717702,
+    "member": "vulgur",
+    "replies_count": 1,
+    "stars": 1,
+    "thanks": 0,
+    "reply_pages": 1,
+    "fetched_at": "2026-10-06T03:30:51.840Z",
+    "replies_fetched": 1,
+    "supplements_count": 0
+  },
+  {
+    "id": 1208675,
+    "title": "独立开发周记 167：关关难过关关过，鸿蒙给我上一课",
+    "episode": {
+      "ep": 167,
+      "ep2": null
+    },
+    "node": "isv",
+    "url": "https://www.v2ex.com/t/1208675",
+    "created": 1777215874,
+    "last_touched": 1779149451,
+    "member": "vulgur",
+    "replies_count": 4,
+    "stars": 3,
+    "thanks": 0,
+    "reply_pages": 1,
+    "fetched_at": "2026-10-06T03:30:52.935Z",
+    "replies_fetched": 4,
+    "supplements_count": 0
+  },
+  {
+    "id": 1213470,
+    "title": "独立开发周记 170：差点转型成为装修博主",
+    "episode": {
+      "ep": 170,
+      "ep2": null
+    },
+    "node": "isv",
+    "url": "https://www.v2ex.com/t/1213470",
+    "created": 1779076859,
+    "last_touched": 1779084059,
+    "member": "vulgur",
+    "replies_count": 3,
+    "stars": 0,
+    "thanks": 0,
+    "reply_pages": 1,
+    "fetched_at": "2026-10-06T03:30:54.011Z",
+    "replies_fetched": 3,
+    "supplements_count": 0
+  },
+  {
+    "id": 1211779,
+    "title": "独立开发周记 168-169：暂搁代码笔墨，且渡肉身难关",
+    "episode": {
+      "ep": 168,
+      "ep2": 169
+    },
+    "node": "isv",
+    "url": "https://www.v2ex.com/t/1211779",
+    "created": 1778465411,
+    "last_touched": 1778480097,
+    "member": "vulgur",
+    "replies_count": 6,
+    "stars": 0,
+    "thanks": 0,
+    "reply_pages": 1,
+    "fetched_at": "2026-10-06T03:30:55.122Z",
+    "replies_fetched": 6,
+    "supplements_count": 0
+  },
+  {
+    "id": 1207284,
+    "title": "独立开发周记 166：上架即踩坑，累瘫也得冲",
+    "episode": {
+      "ep": 166,
+      "ep2": null
+    },
+    "node": "isv",
+    "url": "https://www.v2ex.com/t/1207284",
+    "created": 1776687321,
+    "last_touched": 1776952946,
+    "member": "vulgur",
+    "replies_count": 6,
+    "stars": 0,
+    "thanks": 0,
+    "reply_pages": 1,
+    "fetched_at": "2026-10-06T03:30:56.180Z",
+    "replies_fetched": 6,
+    "supplements_count": 0
+  },
+  {
+    "id": 1205513,
+    "title": "独立开发周记 165：被 AI 坑过才懂怎么用 AI",
+    "episode": {
+      "ep": 165,
+      "ep2": null
+    },
+    "node": "isv",
+    "url": "https://www.v2ex.com/t/1205513",
+    "created": 1776067686,
+    "last_touched": 1776271558,
+    "member": "vulgur",
+    "replies_count": 8,
+    "stars": 1,
+    "thanks": 2,
+    "reply_pages": 1,
+    "fetched_at": "2026-10-06T03:30:57.295Z",
+    "replies_fetched": 8,
+    "supplements_count": 0
+  },
+  {
+    "id": 1203772,
+    "title": "独立开发周记 164：改得了系统时间，改不了人生时差",
+    "episode": {
+      "ep": 164,
+      "ep2": null
+    },
+    "node": "isv",
+    "url": "https://www.v2ex.com/t/1203772",
+    "created": 1775445910,
+    "last_touched": 1775451676,
+    "member": "vulgur",
+    "replies_count": 1,
+    "stars": 2,
+    "thanks": 1,
+    "reply_pages": 1,
+    "fetched_at": "2026-10-06T03:30:58.369Z",
+    "replies_fetched": 1,
+    "supplements_count": 0
+  },
+  {
+    "id": 1202210,
+    "title": "独立开发周记 163：你的慧根还够用吗？",
+    "episode": {
+      "ep": 163,
+      "ep2": null
+    },
+    "node": "weekly",
+    "url": "https://www.v2ex.com/t/1202210",
+    "created": 1774851954,
+    "last_touched": 1774858232,
+    "member": "vulgur",
+    "replies_count": 5,
+    "stars": 0,
+    "thanks": 0,
+    "reply_pages": 1,
+    "fetched_at": "2026-10-06T03:30:59.462Z",
+    "replies_fetched": 5,
+    "supplements_count": 0
+  },
+  {
+    "id": 1200341,
+    "title": "独立开发周记 162：妈呀，我上杂志了！",
+    "episode": {
+      "ep": 162,
+      "ep2": null
+    },
+    "node": "weekly",
+    "url": "https://www.v2ex.com/t/1200341",
+    "created": 1774236546,
+    "last_touched": 1774236546,
+    "member": "vulgur",
+    "replies_count": 0,
+    "stars": 0,
+    "thanks": 0,
+    "reply_pages": 1,
+    "fetched_at": "2026-10-06T03:31:00.562Z",
+    "replies_fetched": 0,
+    "supplements_count": 0
+  },
+  {
+    "id": 1198567,
+    "title": "独立开发周记 161： AI 算出我 7 天赚 20 万美元",
+    "episode": {
+      "ep": 161,
+      "ep2": null
+    },
+    "node": "weekly",
+    "url": "https://www.v2ex.com/t/1198567",
+    "created": 1773629920,
+    "last_touched": 1773672574,
+    "member": "vulgur",
+    "replies_count": 1,
+    "stars": 0,
+    "thanks": 0,
+    "reply_pages": 1,
+    "fetched_at": "2026-10-06T03:31:01.659Z",
+    "replies_fetched": 1,
+    "supplements_count": 0
+  },
+  {
+    "id": 1196770,
+    "title": "独立开发周记 160：如何快速试错一个 App",
+    "episode": {
+      "ep": 160,
+      "ep2": null
+    },
+    "node": "weekly",
+    "url": "https://www.v2ex.com/t/1196770",
+    "created": 1773024587,
+    "last_touched": 1773024587,
+    "member": "vulgur",
+    "replies_count": 0,
+    "stars": 8,
+    "thanks": 0,
+    "reply_pages": 1,
+    "fetched_at": "2026-10-06T03:31:02.733Z",
+    "replies_fetched": 0,
+    "supplements_count": 0
+  },
+  {
+    "id": 1195158,
+    "title": "独立开发周记 159：该花花，该省省",
+    "episode": {
+      "ep": 159,
+      "ep2": null
+    },
+    "node": "weekly",
+    "url": "https://www.v2ex.com/t/1195158",
+    "created": 1772429364,
+    "last_touched": 1772435331,
+    "member": "vulgur",
+    "replies_count": 2,
+    "stars": 3,
+    "thanks": 0,
+    "reply_pages": 1,
+    "fetched_at": "2026-10-06T03:31:03.867Z",
+    "replies_fetched": 2,
+    "supplements_count": 0
+  },
+  {
+    "id": 1193585,
+    "title": "独立开发周记 158：跬步式开发",
+    "episode": {
+      "ep": 158,
+      "ep2": null
+    },
+    "node": "weekly",
+    "url": "https://www.v2ex.com/t/1193585",
+    "created": 1771850503,
+    "last_touched": 1771850503,
+    "member": "vulgur",
+    "replies_count": 0,
+    "stars": 0,
+    "thanks": 0,
+    "reply_pages": 1,
+    "fetched_at": "2026-10-06T03:31:04.932Z",
+    "replies_fetched": 0,
+    "supplements_count": 0
+  },
+  {
+    "id": 1192975,
+    "title": "独立开发周记 157：码到功成，码上暴富，码年大吉",
+    "episode": {
+      "ep": 157,
+      "ep2": null
+    },
+    "node": "weekly",
+    "url": "https://www.v2ex.com/t/1192975",
+    "created": 1771171131,
+    "last_touched": 1771171131,
+    "member": "vulgur",
+    "replies_count": 0,
+    "stars": 0,
+    "thanks": 0,
+    "reply_pages": 1,
+    "fetched_at": "2026-10-06T03:31:06.059Z",
+    "replies_fetched": 0,
+    "supplements_count": 0
+  },
+  {
+    "id": 1191776,
+    "title": "独立开发周记 156：新主题的设计思考过程",
+    "episode": {
+      "ep": 156,
+      "ep2": null
+    },
+    "node": "weekly",
+    "url": "https://www.v2ex.com/t/1191776",
+    "created": 1770630044,
+    "last_touched": 1770630044,
+    "member": "vulgur",
+    "replies_count": 0,
+    "stars": 0,
+    "thanks": 0,
+    "reply_pages": 1,
+    "fetched_at": "2026-10-06T03:31:07.173Z",
+    "replies_fetched": 0,
+    "supplements_count": 0
+  },
+  {
+    "id": 1190235,
+    "title": "独立开发周记 155：海绵宝宝和派大星谁写代码更厉害？",
+    "episode": {
+      "ep": 155,
+      "ep2": null
+    },
+    "node": "weekly",
+    "url": "https://www.v2ex.com/t/1190235",
+    "created": 1770035083,
+    "last_touched": 1770035083,
+    "member": "vulgur",
+    "replies_count": 0,
+    "stars": 0,
+    "thanks": 0,
+    "reply_pages": 1,
+    "fetched_at": "2026-10-06T03:31:08.282Z",
+    "replies_fetched": 0,
+    "supplements_count": 0
+  },
+  {
+    "id": 1188504,
+    "title": "独立开发周记 154：赛博古董年化率 300%",
+    "episode": {
+      "ep": 154,
+      "ep2": null
+    },
+    "node": "weekly",
+    "url": "https://www.v2ex.com/t/1188504",
+    "created": 1769421798,
+    "last_touched": 1769421798,
+    "member": "vulgur",
+    "replies_count": 0,
+    "stars": 0,
+    "thanks": 0,
+    "reply_pages": 1,
+    "fetched_at": "2026-10-06T03:31:09.380Z",
+    "replies_fetched": 0,
+    "supplements_count": 0
+  },
+  {
+    "id": 1186892,
+    "title": "独立开发周记 153：上午修 bug，下午修 hinge",
+    "episode": {
+      "ep": 153,
+      "ep2": null
+    },
+    "node": "weekly",
+    "url": "https://www.v2ex.com/t/1186892",
+    "created": 1768819825,
+    "last_touched": 1768819825,
+    "member": "vulgur",
+    "replies_count": 0,
+    "stars": 0,
+    "thanks": 0,
+    "reply_pages": 1,
+    "fetched_at": "2026-10-06T03:31:10.488Z",
+    "replies_fetched": 0,
+    "supplements_count": 0
+  },
+  {
+    "id": 1184877,
+    "title": "独立开发周记 152：临摹代码",
+    "episode": {
+      "ep": 152,
+      "ep2": null
+    },
+    "node": "weekly",
+    "url": "https://www.v2ex.com/t/1184877",
+    "created": 1768198681,
+    "last_touched": 1768198681,
+    "member": "vulgur",
+    "replies_count": 0,
+    "stars": 1,
+    "thanks": 0,
+    "reply_pages": 1,
+    "fetched_at": "2026-10-06T03:31:11.569Z",
+    "replies_fetched": 0,
+    "supplements_count": 0
+  },
+  {
+    "id": 1183856,
+    "title": "独立开发者的 2025 年终总结",
+    "episode": null,
+    "node": "weekly",
+    "url": "https://www.v2ex.com/t/1183856",
+    "created": 1767791825,
+    "last_touched": 1767855215,
+    "member": "vulgur",
+    "replies_count": 13,
+    "stars": 4,
+    "thanks": 2,
+    "reply_pages": 1,
+    "fetched_at": "2026-10-06T03:31:12.707Z",
+    "replies_fetched": 13,
+    "supplements_count": 0
+  },
+  {
+    "id": 1183152,
+    "title": "独立开发周记 151：质疑赌徒，理解赌徒，成为赌徒",
+    "episode": {
+      "ep": 151,
+      "ep2": null
+    },
+    "node": "weekly",
+    "url": "https://www.v2ex.com/t/1183152",
+    "created": 1767580597,
+    "last_touched": 1767595548,
+    "member": "vulgur",
+    "replies_count": 5,
+    "stars": 1,
+    "thanks": 1,
+    "reply_pages": 1,
+    "fetched_at": "2026-10-06T03:31:13.813Z",
+    "replies_fetched": 5,
+    "supplements_count": 0
+  },
+  {
+    "id": 1181802,
+    "title": "独立开发周记 150：能动嘴就别动手",
+    "episode": {
+      "ep": 150,
+      "ep2": null
+    },
+    "node": "weekly",
+    "url": "https://www.v2ex.com/t/1181802",
+    "created": 1766969140,
+    "last_touched": 1766978526,
+    "member": "vulgur",
+    "replies_count": 3,
+    "stars": 1,
+    "thanks": 0,
+    "reply_pages": 1,
+    "fetched_at": "2026-10-06T03:31:14.892Z",
+    "replies_fetched": 3,
+    "supplements_count": 0
+  },
+  {
+    "id": 1180632,
+    "title": "独立开发周记 149：少年游不成就中年游",
+    "episode": {
+      "ep": 149,
+      "ep2": null
+    },
+    "node": "weekly",
+    "url": "https://www.v2ex.com/t/1180632",
+    "created": 1766463603,
+    "last_touched": 1766468156,
+    "member": "vulgur",
+    "replies_count": 1,
+    "stars": 0,
+    "thanks": 0,
+    "reply_pages": 1,
+    "fetched_at": "2026-10-06T03:31:15.950Z",
+    "replies_fetched": 1,
+    "supplements_count": 0
+  },
+  {
+    "id": 1178870,
+    "title": "独立开发周记 148：鸿蒙上架失败",
+    "episode": {
+      "ep": 148,
+      "ep2": null
+    },
+    "node": "weekly",
+    "url": "https://www.v2ex.com/t/1178870",
+    "created": 1765758410,
+    "last_touched": 1766067743,
+    "member": "vulgur",
+    "replies_count": 37,
+    "stars": 4,
+    "thanks": 1,
+    "reply_pages": 2,
+    "fetched_at": "2026-10-06T03:31:17.644Z",
+    "replies_fetched": 37,
+    "supplements_count": 0
+  },
+  {
+    "id": 1177582,
+    "title": "独立开发周记 147：苹果开发者第十年",
+    "episode": {
+      "ep": 147,
+      "ep2": null
+    },
+    "node": "weekly",
+    "url": "https://www.v2ex.com/t/1177582",
+    "created": 1765175181,
+    "last_touched": 1765589063,
+    "member": "vulgur",
+    "replies_count": 1,
+    "stars": 0,
+    "thanks": 1,
+    "reply_pages": 1,
+    "fetched_at": "2026-10-06T03:31:18.985Z",
+    "replies_fetched": 1,
+    "supplements_count": 0
+  },
+  {
+    "id": 1176176,
+    "title": "独立开发周记 146：破万的年度目标完成",
+    "episode": {
+      "ep": 146,
+      "ep2": null
+    },
+    "node": "weekly",
+    "url": "https://www.v2ex.com/t/1176176",
+    "created": 1764577179,
+    "last_touched": 1764577179,
+    "member": "vulgur",
+    "replies_count": 0,
+    "stars": 0,
+    "thanks": 1,
+    "reply_pages": 1,
+    "fetched_at": "2026-10-06T03:31:20.083Z",
+    "replies_fetched": 0,
+    "supplements_count": 0
+  },
+  {
+    "id": 1174678,
+    "title": "独立开发周记 145：一个 400 万接着一个 400 万",
+    "episode": {
+      "ep": 145,
+      "ep2": null
+    },
+    "node": "weekly",
+    "url": "https://www.v2ex.com/t/1174678",
+    "created": 1763964828,
+    "last_touched": 1763964828,
+    "member": "vulgur",
+    "replies_count": 0,
+    "stars": 0,
+    "thanks": 0,
+    "reply_pages": 1,
+    "fetched_at": "2026-10-06T03:31:21.160Z",
+    "replies_fetched": 0,
+    "supplements_count": 0
+  },
+  {
+    "id": 1173280,
+    "title": "独立开发周记 144：一小时内下载量超一万但是零收入",
+    "episode": {
+      "ep": 144,
+      "ep2": null
+    },
+    "node": "weekly",
+    "url": "https://www.v2ex.com/t/1173280",
+    "created": 1763361109,
+    "last_touched": 1763361109,
+    "member": "vulgur",
+    "replies_count": 0,
+    "stars": 3,
+    "thanks": 1,
+    "reply_pages": 1,
+    "fetched_at": "2026-10-06T03:31:22.222Z",
+    "replies_fetched": 0,
+    "supplements_count": 0
+  },
+  {
+    "id": 1171825,
+    "title": "独立开发周记 143 ：高空修飞机，紧张又刺激",
+    "episode": {
+      "ep": 143,
+      "ep2": null
+    },
+    "node": "weekly",
+    "url": "https://www.v2ex.com/t/1171825",
+    "created": 1762781268,
+    "last_touched": 1762781268,
+    "member": "vulgur",
+    "replies_count": 0,
+    "stars": 0,
+    "thanks": 0,
+    "reply_pages": 1,
+    "fetched_at": "2026-10-06T03:31:23.294Z",
+    "replies_fetched": 0,
+    "supplements_count": 0
+  },
+  {
+    "id": 1170252,
+    "title": "独立开发周记 142：喜提人生第一辆新能源",
+    "episode": {
+      "ep": 142,
+      "ep2": null
+    },
+    "node": "weekly",
+    "url": "https://www.v2ex.com/t/1170252",
+    "created": 1762165023,
+    "last_touched": 1762205933,
+    "member": "vulgur",
+    "replies_count": 6,
+    "stars": 1,
+    "thanks": 0,
+    "reply_pages": 1,
+    "fetched_at": "2026-10-06T03:31:24.416Z",
+    "replies_fetched": 6,
+    "supplements_count": 0
+  },
+  {
+    "id": 1168669,
+    "title": "独立开发周记 141：日子是过以后，不是过从前",
+    "episode": {
+      "ep": 141,
+      "ep2": null
+    },
+    "node": "weekly",
+    "url": "https://www.v2ex.com/t/1168669",
+    "created": 1761551188,
+    "last_touched": 1761574450,
+    "member": "vulgur",
+    "replies_count": 2,
+    "stars": 1,
+    "thanks": 0,
+    "reply_pages": 1,
+    "fetched_at": "2026-10-06T03:31:25.516Z",
+    "replies_fetched": 2,
+    "supplements_count": 0
+  },
+  {
+    "id": 1167101,
+    "title": "独立开发周记 140：解锁电视的新用途",
+    "episode": {
+      "ep": 140,
+      "ep2": null
+    },
+    "node": "weekly",
+    "url": "https://www.v2ex.com/t/1167101",
+    "created": 1760953981,
+    "last_touched": 1760953981,
+    "member": "vulgur",
+    "replies_count": 0,
+    "stars": 0,
+    "thanks": 0,
+    "reply_pages": 1,
+    "fetched_at": "2026-10-06T03:31:26.592Z",
+    "replies_fetched": 0,
+    "supplements_count": 0
+  },
+  {
+    "id": 1164859,
+    "title": "独立开发周记 139：古法编程的一周",
+    "episode": {
+      "ep": 139,
+      "ep2": null
+    },
+    "node": "weekly",
+    "url": "https://www.v2ex.com/t/1164859",
+    "created": 1760339878,
+    "last_touched": 1760339878,
+    "member": "vulgur",
+    "replies_count": 0,
+    "stars": 0,
+    "thanks": 0,
+    "reply_pages": 1,
+    "fetched_at": "2026-10-06T03:31:27.685Z",
+    "replies_fetched": 0,
+    "supplements_count": 0
+  },
+  {
+    "id": 1163621,
+    "title": "独立开发周记 137&138：长安五日游",
+    "episode": {
+      "ep": 137,
+      "ep2": 138
+    },
+    "node": "weekly",
+    "url": "https://www.v2ex.com/t/1163621",
+    "created": 1759825178,
+    "last_touched": 1759738778,
+    "member": "vulgur",
+    "replies_count": 0,
+    "stars": 0,
+    "thanks": 0,
+    "reply_pages": 1,
+    "fetched_at": "2026-10-06T03:31:28.791Z",
+    "replies_fetched": 0,
+    "supplements_count": 0
+  },
+  {
+    "id": 1161029,
+    "title": "独立开发周记 136：外卖都不让我送了！",
+    "episode": {
+      "ep": 136,
+      "ep2": null
+    },
+    "node": "weekly",
+    "url": "https://www.v2ex.com/t/1161029",
+    "created": 1758515970,
+    "last_touched": 1758520326,
+    "member": "vulgur",
+    "replies_count": 4,
+    "stars": 0,
+    "thanks": 0,
+    "reply_pages": 1,
+    "fetched_at": "2026-10-06T03:31:29.888Z",
+    "replies_fetched": 4,
+    "supplements_count": 0
+  },
+  {
+    "id": 1159342,
+    "title": "独立开发周记 135：我的 App 上车了！",
+    "episode": {
+      "ep": 135,
+      "ep2": null
+    },
+    "node": "weekly",
+    "url": "https://www.v2ex.com/t/1159342",
+    "created": 1757919351,
+    "last_touched": 1757919351,
+    "member": "vulgur",
+    "replies_count": 0,
+    "stars": 0,
+    "thanks": 0,
+    "reply_pages": 1,
+    "fetched_at": "2026-10-06T03:31:30.955Z",
+    "replies_fetched": 0,
+    "supplements_count": 0
+  },
+  {
+    "id": 1157778,
+    "title": "独立开发周记 134：巴菲特朝阳分特",
+    "episode": {
+      "ep": 134,
+      "ep2": null
+    },
+    "node": "weekly",
+    "url": "https://www.v2ex.com/t/1157778",
+    "created": 1757312233,
+    "last_touched": 1757344212,
+    "member": "vulgur",
+    "replies_count": 1,
+    "stars": 0,
+    "thanks": 1,
+    "reply_pages": 1,
+    "fetched_at": "2026-10-06T03:31:31.996Z",
+    "replies_fetched": 1,
+    "supplements_count": 0
+  },
+  {
+    "id": 1156170,
+    "title": "独立开发周记 133：不赚快钱，不做垃圾",
+    "episode": {
+      "ep": 133,
+      "ep2": null
+    },
+    "node": "weekly",
+    "url": "https://www.v2ex.com/t/1156170",
+    "created": 1756692130,
+    "last_touched": 1756605730,
+    "member": "vulgur",
+    "replies_count": 0,
+    "stars": 1,
+    "thanks": 0,
+    "reply_pages": 1,
+    "fetched_at": "2026-10-06T03:31:33.078Z",
+    "replies_fetched": 0,
+    "supplements_count": 0
+  },
+  {
+    "id": 1154823,
+    "title": "独立开发周记 132：我居然能在知乎赚到钱了",
+    "episode": {
+      "ep": 132,
+      "ep2": null
+    },
+    "node": "weekly",
+    "url": "https://www.v2ex.com/t/1154823",
+    "created": 1756113648,
+    "last_touched": 1756027248,
+    "member": "vulgur",
+    "replies_count": 0,
+    "stars": 0,
+    "thanks": 0,
+    "reply_pages": 1,
+    "fetched_at": "2026-10-06T03:31:34.126Z",
+    "replies_fetched": 0,
+    "supplements_count": 0
+  },
+  {
+    "id": 1153194,
+    "title": "独立开发周记 131：萃取代码的新设备",
+    "episode": {
+      "ep": 131,
+      "ep2": null
+    },
+    "node": "weekly",
+    "url": "https://www.v2ex.com/t/1153194",
+    "created": 1755502287,
+    "last_touched": 1755647969,
+    "member": "vulgur",
+    "replies_count": 5,
+    "stars": 0,
+    "thanks": 0,
+    "reply_pages": 1,
+    "fetched_at": "2026-10-06T03:31:35.175Z",
+    "replies_fetched": 5,
+    "supplements_count": 0
+  },
+  {
+    "id": 1151664,
+    "title": "独立开发周记 130： GPT-5 的表现出乎意料​",
+    "episode": {
+      "ep": 130,
+      "ep2": null
+    },
+    "node": "weekly",
+    "url": "https://www.v2ex.com/t/1151664",
+    "created": 1754914374,
+    "last_touched": 1754914726,
+    "member": "vulgur",
+    "replies_count": 2,
+    "stars": 0,
+    "thanks": 0,
+    "reply_pages": 1,
+    "fetched_at": "2026-10-06T03:31:36.301Z",
+    "replies_fetched": 2,
+    "supplements_count": 0
+  },
+  {
+    "id": 1149823,
+    "title": "独立开发周记 129：重走十多年前的老路",
+    "episode": {
+      "ep": 129,
+      "ep2": null
+    },
+    "node": "weekly",
+    "url": "https://www.v2ex.com/t/1149823",
+    "created": 1754294025,
+    "last_touched": 1754294025,
+    "member": "vulgur",
+    "replies_count": 0,
+    "stars": 1,
+    "thanks": 0,
+    "reply_pages": 1,
+    "fetched_at": "2026-10-06T03:31:37.356Z",
+    "replies_fetched": 0,
+    "supplements_count": 0
+  },
+  {
+    "id": 1148337,
+    "title": "独立开发周记 128：爆单、爆肝、爆米花",
+    "episode": {
+      "ep": 128,
+      "ep2": null
+    },
+    "node": "weekly",
+    "url": "https://www.v2ex.com/t/1148337",
+    "created": 1753710603,
+    "last_touched": 1753714203,
+    "member": "vulgur",
+    "replies_count": 3,
+    "stars": 0,
+    "thanks": 0,
+    "reply_pages": 1,
+    "fetched_at": "2026-10-06T03:31:38.462Z",
+    "replies_fetched": 3,
+    "supplements_count": 0
+  },
+  {
+    "id": 1146703,
+    "title": "独立开发周记 127：如果开发产品也有白金奖杯就好了",
+    "episode": {
+      "ep": 127,
+      "ep2": null
+    },
+    "node": "weekly",
+    "url": "https://www.v2ex.com/t/1146703",
+    "created": 1753098439,
+    "last_touched": 1753098439,
+    "member": "vulgur",
+    "replies_count": 0,
+    "stars": 1,
+    "thanks": 0,
+    "reply_pages": 1,
+    "fetched_at": "2026-10-06T03:31:39.557Z",
+    "replies_fetched": 0,
+    "supplements_count": 0
+  },
+  {
+    "id": 1145100,
+    "title": "独立开发周记 126：在 Steam 中寻找开发灵感",
+    "episode": {
+      "ep": 126,
+      "ep2": null
+    },
+    "node": "weekly",
+    "url": "https://www.v2ex.com/t/1145100",
+    "created": 1752481641,
+    "last_touched": 1752523522,
+    "member": "vulgur",
+    "replies_count": 1,
+    "stars": 0,
+    "thanks": 0,
+    "reply_pages": 1,
+    "fetched_at": "2026-10-06T03:31:40.650Z",
+    "replies_fetched": 1,
+    "supplements_count": 0
+  },
+  {
+    "id": 1143553,
+    "title": "独立开发周记 125：酷暑下坚持五星配送",
+    "episode": {
+      "ep": 125,
+      "ep2": null
+    },
+    "node": "weekly",
+    "url": "https://www.v2ex.com/t/1143553",
+    "created": 1751877366,
+    "last_touched": 1751877366,
+    "member": "vulgur",
+    "replies_count": 0,
+    "stars": 0,
+    "thanks": 0,
+    "reply_pages": 1,
+    "fetched_at": "2026-10-06T03:31:41.756Z",
+    "replies_fetched": 0,
+    "supplements_count": 0
+  },
+  {
+    "id": 1142007,
+    "title": "独立开发周记 124：时隔一年，又开始送快递了",
+    "episode": {
+      "ep": 124,
+      "ep2": null
+    },
+    "node": "weekly",
+    "url": "https://www.v2ex.com/t/1142007",
+    "created": 1751270915,
+    "last_touched": 1751273894,
+    "member": "vulgur",
+    "replies_count": 2,
+    "stars": 0,
+    "thanks": 0,
+    "reply_pages": 1,
+    "fetched_at": "2026-10-06T03:31:42.886Z",
+    "replies_fetched": 2,
+    "supplements_count": 0
+  },
+  {
+    "id": 1140425,
+    "title": "独立开发周记 123：微信都没有的功能，我做出来了",
+    "episode": {
+      "ep": 123,
+      "ep2": null
+    },
+    "node": "weekly",
+    "url": "https://www.v2ex.com/t/1140425",
+    "created": 1750658966,
+    "last_touched": 1750662086,
+    "member": "vulgur",
+    "replies_count": 4,
+    "stars": 3,
+    "thanks": 0,
+    "reply_pages": 1,
+    "fetched_at": "2026-10-06T03:31:43.970Z",
+    "replies_fetched": 4,
+    "supplements_count": 0
+  },
+  {
+    "id": 1138956,
+    "title": "独立开发周记 122：有 Plan 反而不如没有 Plan",
+    "episode": {
+      "ep": 122,
+      "ep2": null
+    },
+    "node": "weekly",
+    "url": "https://www.v2ex.com/t/1138956",
+    "created": 1750068275,
+    "last_touched": 1750068275,
+    "member": "vulgur",
+    "replies_count": 0,
+    "stars": 1,
+    "thanks": 0,
+    "reply_pages": 1,
+    "fetched_at": "2026-10-06T03:31:45.052Z",
+    "replies_fetched": 0,
+    "supplements_count": 0
+  },
+  {
+    "id": 1137374,
+    "title": "独立开发周记 121：营口有 14 亿人吗？",
+    "episode": {
+      "ep": 121,
+      "ep2": null
+    },
+    "node": "weekly",
+    "url": "https://www.v2ex.com/t/1137374",
+    "created": 1749449043,
+    "last_touched": 1749456827,
+    "member": "vulgur",
+    "replies_count": 9,
+    "stars": 0,
+    "thanks": 0,
+    "reply_pages": 1,
+    "fetched_at": "2026-10-06T03:31:46.185Z",
+    "replies_fetched": 9,
+    "supplements_count": 0
+  },
+  {
+    "id": 1135875,
+    "title": "独立开发周记 120：靠苹果赚的钱都得还回去",
+    "episode": {
+      "ep": 120,
+      "ep2": null
+    },
+    "node": "weekly",
+    "url": "https://www.v2ex.com/t/1135875",
+    "created": 1748866594,
+    "last_touched": 1748903501,
+    "member": "vulgur",
+    "replies_count": 3,
+    "stars": 0,
+    "thanks": 0,
+    "reply_pages": 1,
+    "fetched_at": "2026-10-06T03:31:47.292Z",
+    "replies_fetched": 3,
+    "supplements_count": 0
+  },
+  {
+    "id": 1134463,
+    "title": "独立开发周记 119：大学生，月入 3W，美金",
+    "episode": {
+      "ep": 119,
+      "ep2": null
+    },
+    "node": "weekly",
+    "url": "https://www.v2ex.com/t/1134463",
+    "created": 1748257335,
+    "last_touched": 1748257335,
+    "member": "vulgur",
+    "replies_count": 0,
+    "stars": 4,
+    "thanks": 0,
+    "reply_pages": 1,
+    "fetched_at": "2026-10-06T03:31:48.386Z",
+    "replies_fetched": 0,
+    "supplements_count": 0
+  },
+  {
+    "id": 1133063,
+    "title": "独立开发周记 118： AI 让编程越来越不快乐",
+    "episode": {
+      "ep": 118,
+      "ep2": null
+    },
+    "node": "weekly",
+    "url": "https://www.v2ex.com/t/1133063",
+    "created": 1747729291,
+    "last_touched": 1748161527,
+    "member": "vulgur",
+    "replies_count": 2,
+    "stars": 1,
+    "thanks": 0,
+    "reply_pages": 1,
+    "fetched_at": "2026-10-06T03:31:49.514Z",
+    "replies_fetched": 2,
+    "supplements_count": 0
+  },
+  {
+    "id": 1131249,
+    "title": "独立开发周记 117：抄袭者回复了，可把我逗笑了",
+    "episode": {
+      "ep": 117,
+      "ep2": null
+    },
+    "node": "weekly",
+    "url": "https://www.v2ex.com/t/1131249",
+    "created": 1747044718,
+    "last_touched": 1747058692,
+    "member": "vulgur",
+    "replies_count": 9,
+    "stars": 0,
+    "thanks": 0,
+    "reply_pages": 1,
+    "fetched_at": "2026-10-06T03:31:50.687Z",
+    "replies_fetched": 9,
+    "supplements_count": 1
+  },
+  {
+    "id": 1129743,
+    "title": "独立开发周记 116： 无法驾驭的 AI 就是头犟驴",
+    "episode": {
+      "ep": 116,
+      "ep2": null
+    },
+    "node": "weekly",
+    "url": "https://www.v2ex.com/t/1129743",
+    "created": 1746445838,
+    "last_touched": 1746445838,
+    "member": "vulgur",
+    "replies_count": 0,
+    "stars": 1,
+    "thanks": 0,
+    "reply_pages": 1,
+    "fetched_at": "2026-10-06T03:31:51.752Z",
+    "replies_fetched": 0,
+    "supplements_count": 0
+  },
+  {
+    "id": 1128710,
+    "title": "独立开发周记 115：一个想法，不一定贵",
+    "episode": {
+      "ep": 115,
+      "ep2": null
+    },
+    "node": "weekly",
+    "url": "https://www.v2ex.com/t/1128710",
+    "created": 1745838440,
+    "last_touched": 1746227953,
+    "member": "vulgur",
+    "replies_count": 7,
+    "stars": 1,
+    "thanks": 0,
+    "reply_pages": 1,
+    "fetched_at": "2026-10-06T03:31:52.857Z",
+    "replies_fetched": 7,
+    "supplements_count": 0
+  },
+  {
+    "id": 1127034,
+    "title": "独立开发周记 114：第一次参加独立开发者线下聚会",
+    "episode": {
+      "ep": 114,
+      "ep2": null
+    },
+    "node": "weekly",
+    "url": "https://www.v2ex.com/t/1127034",
+    "created": 1745223342,
+    "last_touched": 1745223342,
+    "member": "vulgur",
+    "replies_count": 0,
+    "stars": 0,
+    "thanks": 1,
+    "reply_pages": 1,
+    "fetched_at": "2026-10-06T03:31:53.927Z",
+    "replies_fetched": 0,
+    "supplements_count": 0
+  },
+  {
+    "id": 1125296,
+    "title": "独立开发周记 113：游戏通关进度比开发进度快得多",
+    "episode": {
+      "ep": 113,
+      "ep2": null
+    },
+    "node": "weekly",
+    "url": "https://www.v2ex.com/t/1125296",
+    "created": 1744604602,
+    "last_touched": 1744604602,
+    "member": "vulgur",
+    "replies_count": 0,
+    "stars": 0,
+    "thanks": 0,
+    "reply_pages": 1,
+    "fetched_at": "2026-10-06T03:31:55.011Z",
+    "replies_fetched": 0,
+    "supplements_count": 0
+  },
+  {
+    "id": 1123758,
+    "title": "独立开发周记 112： 3 月数据总结，收入多样化",
+    "episode": {
+      "ep": 112,
+      "ep2": null
+    },
+    "node": "weekly",
+    "url": "https://www.v2ex.com/t/1123758",
+    "created": 1744013096,
+    "last_touched": 1744016357,
+    "member": "vulgur",
+    "replies_count": 4,
+    "stars": 2,
+    "thanks": 1,
+    "reply_pages": 1,
+    "fetched_at": "2026-10-06T03:31:56.069Z",
+    "replies_fetched": 4,
+    "supplements_count": 0
+  },
+  {
+    "id": 1122303,
+    "title": "独立开发周记 111：广告费破百·下载量触底·RevenueCat 初扣款",
+    "episode": {
+      "ep": 111,
+      "ep2": null
+    },
+    "node": "weekly",
+    "url": "https://www.v2ex.com/t/1122303",
+    "created": 1743404044,
+    "last_touched": 1743464031,
+    "member": "vulgur",
+    "replies_count": 3,
+    "stars": 1,
+    "thanks": 0,
+    "reply_pages": 1,
+    "fetched_at": "2026-10-06T03:31:57.201Z",
+    "replies_fetched": 3,
+    "supplements_count": 0
+  },
+  {
+    "id": 1120759,
+    "title": "独立开发周记 110：年初立下的 Flag 达成",
+    "episode": {
+      "ep": 110,
+      "ep2": null
+    },
+    "node": "weekly",
+    "url": "https://www.v2ex.com/t/1120759",
+    "created": 1742812302,
+    "last_touched": 1742902202,
+    "member": "vulgur",
+    "replies_count": 5,
+    "stars": 1,
+    "thanks": 0,
+    "reply_pages": 1,
+    "fetched_at": "2026-10-06T03:31:58.287Z",
+    "replies_fetched": 5,
+    "supplements_count": 0
+  },
+  {
+    "id": 1118996,
+    "title": "独立开发周记 109：泼天富贵后续",
+    "episode": {
+      "ep": 109,
+      "ep2": null
+    },
+    "node": "weekly",
+    "url": "https://www.v2ex.com/t/1118996",
+    "created": 1742184941,
+    "last_touched": 1742208304,
+    "member": "vulgur",
+    "replies_count": 15,
+    "stars": 7,
+    "thanks": 0,
+    "reply_pages": 1,
+    "fetched_at": "2026-10-06T03:31:59.443Z",
+    "replies_fetched": 15,
+    "supplements_count": 0
+  },
+  {
+    "id": 1117343,
+    "title": "独立开发周记 108：泼天的富贵终于轮到我了",
+    "episode": {
+      "ep": 108,
+      "ep2": null
+    },
+    "node": "weekly",
+    "url": "https://www.v2ex.com/t/1117343",
+    "created": 1741607488,
+    "last_touched": 1742068633,
+    "member": "vulgur",
+    "replies_count": 29,
+    "stars": 35,
+    "thanks": 2,
+    "reply_pages": 2,
+    "fetched_at": "2026-10-06T03:32:01.168Z",
+    "replies_fetched": 29,
+    "supplements_count": 0
+  },
+  {
+    "id": 1115448,
+    "title": "独立开发周记 107： 2 月数据总结",
+    "episode": {
+      "ep": 107,
+      "ep2": null
+    },
+    "node": "weekly",
+    "url": "https://www.v2ex.com/t/1115448",
+    "created": 1740978620,
+    "last_touched": 1741117384,
+    "member": "vulgur",
+    "replies_count": 3,
+    "stars": 1,
+    "thanks": 2,
+    "reply_pages": 1,
+    "fetched_at": "2026-10-06T03:32:02.260Z",
+    "replies_fetched": 3,
+    "supplements_count": 0
+  },
+  {
+    "id": 1113920,
+    "title": "独立开发周记 106：提高转化率",
+    "episode": {
+      "ep": 106,
+      "ep2": null
+    },
+    "node": "weekly",
+    "url": "https://www.v2ex.com/t/1113920",
+    "created": 1740395123,
+    "last_touched": 1740398723,
+    "member": "vulgur",
+    "replies_count": 1,
+    "stars": 3,
+    "thanks": 1,
+    "reply_pages": 1,
+    "fetched_at": "2026-10-06T03:32:03.331Z",
+    "replies_fetched": 1,
+    "supplements_count": 0
+  },
+  {
+    "id": 1112135,
+    "title": "独立开发周记 105：如何有效对抗焦虑",
+    "episode": {
+      "ep": 105,
+      "ep2": null
+    },
+    "node": "starter",
+    "url": "https://www.v2ex.com/t/1112135",
+    "created": 1739796666,
+    "last_touched": 1739855510,
+    "member": "vulgur",
+    "replies_count": 3,
+    "stars": 1,
+    "thanks": 2,
+    "reply_pages": 1,
+    "fetched_at": "2026-10-06T03:32:04.628Z",
+    "replies_fetched": 3,
+    "supplements_count": 0
+  },
+  {
+    "id": 1102923,
+    "title": "独立开发周记 85 ： 2024 年终总结",
+    "episode": {
+      "ep": 85,
+      "ep2": null
+    },
+    "node": "mobiledev",
+    "url": "https://www.v2ex.com/t/1102923",
+    "created": 1736147623,
+    "last_touched": 1739776345,
+    "member": "vulgur",
+    "replies_count": 3,
+    "stars": 1,
+    "thanks": 0,
+    "reply_pages": 1,
+    "fetched_at": "2026-10-06T03:32:06.087Z",
+    "replies_fetched": 3,
+    "supplements_count": 0
+  },
+  {
+    "id": 1110445,
+    "title": "独立开发周记 104：如何在 24 小时内一行代码都不写用 AI 开发并上线一个工具类网站",
+    "episode": {
+      "ep": 104,
+      "ep2": null
+    },
+    "node": "create",
+    "url": "https://www.v2ex.com/t/1110445",
+    "created": 1739190655,
+    "last_touched": 1739191355,
+    "member": "vulgur",
+    "replies_count": 1,
+    "stars": 3,
+    "thanks": 0,
+    "reply_pages": 1,
+    "fetched_at": "2026-10-06T03:32:11.743Z",
+    "replies_fetched": 1,
+    "supplements_count": 0
+  },
+  {
+    "id": 1108768,
+    "title": "独立开发周记 103： 1 月数据总结",
+    "episode": {
+      "ep": 103,
+      "ep2": null
+    },
+    "node": "programmer",
+    "url": "https://www.v2ex.com/t/1108768",
+    "created": 1738588284,
+    "last_touched": 1739155823,
+    "member": "vulgur",
+    "replies_count": 11,
+    "stars": 4,
+    "thanks": 0,
+    "reply_pages": 1,
+    "fetched_at": "2026-10-06T03:32:12.885Z",
+    "replies_fetched": 11,
+    "supplements_count": 0
+  },
+  {
+    "id": 1108113,
+    "title": "独立开发周记 102：金蛇送福",
+    "episode": {
+      "ep": 102,
+      "ep2": null
+    },
+    "node": "share",
+    "url": "https://www.v2ex.com/t/1108113",
+    "created": 1737985322,
+    "last_touched": 1737985322,
+    "member": "vulgur",
+    "replies_count": 0,
+    "stars": 0,
+    "thanks": 1,
+    "reply_pages": 1,
+    "fetched_at": "2026-10-06T03:32:13.961Z",
+    "replies_fetched": 0,
+    "supplements_count": 0
+  },
+  {
+    "id": 1106554,
+    "title": "独立开发周记 101：让极简更极简",
+    "episode": {
+      "ep": 101,
+      "ep2": null
+    },
+    "node": "weekly",
+    "url": "https://www.v2ex.com/t/1106554",
+    "created": 1737364041,
+    "last_touched": 1737364041,
+    "member": "vulgur",
+    "replies_count": 0,
+    "stars": 0,
+    "thanks": 0,
+    "reply_pages": 1,
+    "fetched_at": "2026-10-06T03:32:15.038Z",
+    "replies_fetched": 0,
+    "supplements_count": 0
+  },
+  {
+    "id": 1104774,
+    "title": "独立开发周记 100：日拱一卒，功不唐捐",
+    "episode": {
+      "ep": 100,
+      "ep2": null
+    },
+    "node": "weekly",
+    "url": "https://www.v2ex.com/t/1104774",
+    "created": 1736760196,
+    "last_touched": 1736760657,
+    "member": "vulgur",
+    "replies_count": 1,
+    "stars": 1,
+    "thanks": 0,
+    "reply_pages": 1,
+    "fetched_at": "2026-10-06T03:32:16.127Z",
+    "replies_fetched": 1,
+    "supplements_count": 0
+  },
+  {
+    "id": 1101360,
+    "title": "独立开发周记 99：极简时钟进入韩国 Top 10！",
+    "episode": {
+      "ep": 99,
+      "ep2": null
+    },
+    "node": "appstore",
+    "url": "https://www.v2ex.com/t/1101360",
+    "created": 1735555446,
+    "last_touched": 1735555446,
+    "member": "vulgur",
+    "replies_count": 0,
+    "stars": 1,
+    "thanks": 0,
+    "reply_pages": 1,
+    "fetched_at": "2026-10-06T03:32:17.190Z",
+    "replies_fetched": 0,
+    "supplements_count": 0
+  },
+  {
+    "id": 1099720,
+    "title": "独立开发周记 98：人间有味是清欢",
+    "episode": {
+      "ep": 98,
+      "ep2": null
+    },
+    "node": "programmer",
+    "url": "https://www.v2ex.com/t/1099720",
+    "created": 1734947791,
+    "last_touched": 1734957541,
+    "member": "vulgur",
+    "replies_count": 2,
+    "stars": 4,
+    "thanks": 0,
+    "reply_pages": 1,
+    "fetched_at": "2026-10-06T03:32:18.284Z",
+    "replies_fetched": 2,
+    "supplements_count": 0
+  },
+  {
+    "id": 1098240,
+    "title": "独立开发周记 97：花谢花会再开",
+    "episode": {
+      "ep": 97,
+      "ep2": null
+    },
+    "node": "life",
+    "url": "https://www.v2ex.com/t/1098240",
+    "created": 1734422120,
+    "last_touched": 1734422120,
+    "member": "vulgur",
+    "replies_count": 0,
+    "stars": 0,
+    "thanks": 0,
+    "reply_pages": 1,
+    "fetched_at": "2026-10-06T03:32:19.393Z",
+    "replies_fetched": 0,
+    "supplements_count": 0
+  },
+  {
+    "id": 1096224,
+    "title": "独立开发周记 96：苹果开发者第十年",
+    "episode": {
+      "ep": 96,
+      "ep2": null
+    },
+    "node": "programmer",
+    "url": "https://www.v2ex.com/t/1096224",
+    "created": 1733744577,
+    "last_touched": 1733754030,
+    "member": "vulgur",
+    "replies_count": 3,
+    "stars": 1,
+    "thanks": 2,
+    "reply_pages": 1,
+    "fetched_at": "2026-10-06T03:32:20.535Z",
+    "replies_fetched": 3,
+    "supplements_count": 0
+  },
+  {
+    "id": 1094277,
+    "title": "独立开发周记 95： 2024 年 11 月数据总结， 800 万下载达成！",
+    "episode": {
+      "ep": 95,
+      "ep2": null
+    },
+    "node": "programmer",
+    "url": "https://www.v2ex.com/t/1094277",
+    "created": 1733107641,
+    "last_touched": 1733183048,
+    "member": "vulgur",
+    "replies_count": 15,
+    "stars": 9,
+    "thanks": 2,
+    "reply_pages": 1,
+    "fetched_at": "2026-10-06T03:36:13.553Z",
+    "replies_fetched": 15,
+    "supplements_count": 0
+  },
+  {
+    "id": 1092431,
+    "title": "独立开发周记 94：极简时钟全新主题双更新",
+    "episode": {
+      "ep": 94,
+      "ep2": null
+    },
+    "node": "programmer",
+    "url": "https://www.v2ex.com/t/1092431",
+    "created": 1732518591,
+    "last_touched": 1732564088,
+    "member": "vulgur",
+    "replies_count": 8,
+    "stars": 1,
+    "thanks": 0,
+    "reply_pages": 1,
+    "fetched_at": "2026-10-06T03:32:21.632Z",
+    "replies_fetched": 8,
+    "supplements_count": 0
+  },
+  {
+    "id": 1090489,
+    "title": "独立开发周记 93：我的 App 终于有组织了",
+    "episode": {
+      "ep": 93,
+      "ep2": null
+    },
+    "node": "programmer",
+    "url": "https://www.v2ex.com/t/1090489",
+    "created": 1731910037,
+    "last_touched": 1731976379,
+    "member": "vulgur",
+    "replies_count": 7,
+    "stars": 14,
+    "thanks": 3,
+    "reply_pages": 1,
+    "fetched_at": "2026-10-06T03:32:22.782Z",
+    "replies_fetched": 7,
+    "supplements_count": 0
+  },
+  {
+    "id": 1088658,
+    "title": "独立开发周记 92：雨露均沾的一周",
+    "episode": {
+      "ep": 92,
+      "ep2": null
+    },
+    "node": "programmer",
+    "url": "https://www.v2ex.com/t/1088658",
+    "created": 1731330852,
+    "last_touched": 1731488827,
+    "member": "vulgur",
+    "replies_count": 6,
+    "stars": 5,
+    "thanks": 1,
+    "reply_pages": 1,
+    "fetched_at": "2026-10-06T03:32:23.919Z",
+    "replies_fetched": 6,
+    "supplements_count": 0
+  },
+  {
+    "id": 1086470,
+    "title": "独立开发周记 91： 10 月数据总结",
+    "episode": {
+      "ep": 91,
+      "ep2": null
+    },
+    "node": "programmer",
+    "url": "https://www.v2ex.com/t/1086470",
+    "created": 1730702650,
+    "last_touched": 1730768372,
+    "member": "vulgur",
+    "replies_count": 7,
+    "stars": 3,
+    "thanks": 2,
+    "reply_pages": 1,
+    "fetched_at": "2026-10-06T03:32:25.030Z",
+    "replies_fetched": 7,
+    "supplements_count": 0
+  },
+  {
+    "id": 1084402,
+    "title": "独立开发周记 90：行百里者半 99.99",
+    "episode": {
+      "ep": 90,
+      "ep2": null
+    },
+    "node": "programmer",
+    "url": "https://www.v2ex.com/t/1084402",
+    "created": 1730116277,
+    "last_touched": 1730569041,
+    "member": "vulgur",
+    "replies_count": 2,
+    "stars": 1,
+    "thanks": 1,
+    "reply_pages": 1,
+    "fetched_at": "2026-10-06T03:32:26.157Z",
+    "replies_fetched": 2,
+    "supplements_count": 0
+  },
+  {
+    "id": 1082216,
+    "title": "独立开发周记 89：解决了一个多年的困扰",
+    "episode": {
+      "ep": 89,
+      "ep2": null
+    },
+    "node": "programmer",
+    "url": "https://www.v2ex.com/t/1082216",
+    "created": 1729495436,
+    "last_touched": 1729503642,
+    "member": "vulgur",
+    "replies_count": 10,
+    "stars": 5,
+    "thanks": 1,
+    "reply_pages": 1,
+    "fetched_at": "2026-10-06T03:32:27.266Z",
+    "replies_fetched": 10,
+    "supplements_count": 0
+  },
+  {
+    "id": 1080093,
+    "title": "独立开发周记 88： J2SE 5.0",
+    "episode": {
+      "ep": 88,
+      "ep2": null
+    },
+    "node": "programmer",
+    "url": "https://www.v2ex.com/t/1080093",
+    "created": 1728887405,
+    "last_touched": 1728896237,
+    "member": "vulgur",
+    "replies_count": 4,
+    "stars": 2,
+    "thanks": 0,
+    "reply_pages": 1,
+    "fetched_at": "2026-10-06T03:32:28.359Z",
+    "replies_fetched": 4,
+    "supplements_count": 0
+  },
+  {
+    "id": 1078087,
+    "title": "独立开发周记 87： 9 月数据总结",
+    "episode": {
+      "ep": 87,
+      "ep2": null
+    },
+    "node": "programmer",
+    "url": "https://www.v2ex.com/t/1078087",
+    "created": 1728306251,
+    "last_touched": 1728323636,
+    "member": "vulgur",
+    "replies_count": 5,
+    "stars": 2,
+    "thanks": 0,
+    "reply_pages": 1,
+    "fetched_at": "2026-10-06T03:32:29.444Z",
+    "replies_fetched": 5,
+    "supplements_count": 0
+  },
+  {
+    "id": 1077201,
+    "title": "独立开发周记 86：大喜&大喜",
+    "episode": {
+      "ep": 86,
+      "ep2": null
+    },
+    "node": "programmer",
+    "url": "https://www.v2ex.com/t/1077201",
+    "created": 1727702100,
+    "last_touched": 1727705700,
+    "member": "vulgur",
+    "replies_count": 1,
+    "stars": 2,
+    "thanks": 0,
+    "reply_pages": 1,
+    "fetched_at": "2026-10-06T03:32:30.528Z",
+    "replies_fetched": 1,
+    "supplements_count": 0
+  },
+  {
+    "id": 1075051,
+    "title": "独立开发周记 84：一个夏天，一个 App",
+    "episode": {
+      "ep": 84,
+      "ep2": null
+    },
+    "node": "programmer",
+    "url": "https://www.v2ex.com/t/1075051",
+    "created": 1727069612,
+    "last_touched": 1727105320,
+    "member": "vulgur",
+    "replies_count": 6,
+    "stars": 2,
+    "thanks": 1,
+    "reply_pages": 1,
+    "fetched_at": "2026-10-06T03:32:31.637Z",
+    "replies_fetched": 6,
+    "supplements_count": 0
+  },
+  {
+    "id": 1073369,
+    "title": "独立开发周记 83：新 App 连续六次被拒",
+    "episode": {
+      "ep": 83,
+      "ep2": null
+    },
+    "node": "programmer",
+    "url": "https://www.v2ex.com/t/1073369",
+    "created": 1726489354,
+    "last_touched": 1726636245,
+    "member": "vulgur",
+    "replies_count": 6,
+    "stars": 6,
+    "thanks": 0,
+    "reply_pages": 1,
+    "fetched_at": "2026-10-06T03:32:32.728Z",
+    "replies_fetched": 6,
+    "supplements_count": 0
+  },
+  {
+    "id": 1071401,
+    "title": "独立开发周记 82：有舍有得，再入轮回",
+    "episode": {
+      "ep": 82,
+      "ep2": null
+    },
+    "node": "programmer",
+    "url": "https://www.v2ex.com/t/1071401",
+    "created": 1725876691,
+    "last_touched": 1725887491,
+    "member": "vulgur",
+    "replies_count": 3,
+    "stars": 0,
+    "thanks": 0,
+    "reply_pages": 1,
+    "fetched_at": "2026-10-06T03:32:33.814Z",
+    "replies_fetched": 3,
+    "supplements_count": 0
+  },
+  {
+    "id": 1069724,
+    "title": "独立开发周记 81： 8 月数据总结",
+    "episode": {
+      "ep": 81,
+      "ep2": null
+    },
+    "node": "programmer",
+    "url": "https://www.v2ex.com/t/1069724",
+    "created": 1725283009,
+    "last_touched": 1725360154,
+    "member": "vulgur",
+    "replies_count": 4,
+    "stars": 0,
+    "thanks": 0,
+    "reply_pages": 1,
+    "fetched_at": "2026-10-06T03:32:34.930Z",
+    "replies_fetched": 4,
+    "supplements_count": 0
+  },
+  {
+    "id": 1067950,
+    "title": "独立开发周记 80：直面天命第一周",
+    "episode": {
+      "ep": 80,
+      "ep2": null
+    },
+    "node": "programmer",
+    "url": "https://www.v2ex.com/t/1067950",
+    "created": 1724674136,
+    "last_touched": 1724681336,
+    "member": "vulgur",
+    "replies_count": 2,
+    "stars": 1,
+    "thanks": 1,
+    "reply_pages": 1,
+    "fetched_at": "2026-10-06T03:32:36.023Z",
+    "replies_fetched": 2,
+    "supplements_count": 0
+  },
+  {
+    "id": 1066321,
+    "title": "独立开发周记 79：第一次录英文 vlog",
+    "episode": {
+      "ep": 79,
+      "ep2": null
+    },
+    "node": "programmer",
+    "url": "https://www.v2ex.com/t/1066321",
+    "created": 1724117703,
+    "last_touched": 1724140630,
+    "member": "vulgur",
+    "replies_count": 9,
+    "stars": 2,
+    "thanks": 0,
+    "reply_pages": 1,
+    "fetched_at": "2026-10-06T03:32:37.124Z",
+    "replies_fetched": 9,
+    "supplements_count": 0
+  },
+  {
+    "id": 1064475,
+    "title": "独立开发周记 78：参赛 SHIP-A-TON",
+    "episode": {
+      "ep": 78,
+      "ep2": null
+    },
+    "node": "programmer",
+    "url": "https://www.v2ex.com/t/1064475",
+    "created": 1723471558,
+    "last_touched": 1723479778,
+    "member": "vulgur",
+    "replies_count": 4,
+    "stars": 1,
+    "thanks": 1,
+    "reply_pages": 1,
+    "fetched_at": "2026-10-06T03:32:38.197Z",
+    "replies_fetched": 4,
+    "supplements_count": 0
+  },
+  {
+    "id": 1062463,
+    "title": "独立开发周记 77： 7 月数据总结",
+    "episode": {
+      "ep": 77,
+      "ep2": null
+    },
+    "node": "starter",
+    "url": "https://www.v2ex.com/t/1062463",
+    "created": 1722780912,
+    "last_touched": 1722801196,
+    "member": "vulgur",
+    "replies_count": 8,
+    "stars": 2,
+    "thanks": 0,
+    "reply_pages": 1,
+    "fetched_at": "2026-10-06T03:32:39.345Z",
+    "replies_fetched": 8,
+    "supplements_count": 0
+  },
+  {
+    "id": 1061916,
+    "title": "独立开发日记：一个删除交互的思考和设计",
+    "episode": null,
+    "node": "design",
+    "url": "https://www.v2ex.com/t/1061916",
+    "created": 1722563816,
+    "last_touched": 1722575310,
+    "member": "vulgur",
+    "replies_count": 5,
+    "stars": 2,
+    "thanks": 0,
+    "reply_pages": 1,
+    "fetched_at": "2026-10-06T03:32:40.457Z",
+    "replies_fetched": 5,
+    "supplements_count": 0
+  },
+  {
+    "id": 1061290,
+    "title": "独立开发周记 76：失败固然可怕，但朋友的成功更令人揪心",
+    "episode": {
+      "ep": 76,
+      "ep2": null
+    },
+    "node": "programmer",
+    "url": "https://www.v2ex.com/t/1061290",
+    "created": 1722336533,
+    "last_touched": 1722470938,
+    "member": "vulgur",
+    "replies_count": 11,
+    "stars": 9,
+    "thanks": 0,
+    "reply_pages": 1,
+    "fetched_at": "2026-10-06T03:32:41.628Z",
+    "replies_fetched": 11,
+    "supplements_count": 0
+  },
+  {
+    "id": 1059268,
+    "title": "独立开发周记 75：修复了一些已知问题",
+    "episode": {
+      "ep": 75,
+      "ep2": null
+    },
+    "node": "starter",
+    "url": "https://www.v2ex.com/t/1059268",
+    "created": 1721654895,
+    "last_touched": 1721700469,
+    "member": "vulgur",
+    "replies_count": 7,
+    "stars": 0,
+    "thanks": 0,
+    "reply_pages": 1,
+    "fetched_at": "2026-10-06T03:32:42.704Z",
+    "replies_fetched": 7,
+    "supplements_count": 0
+  },
+  {
+    "id": 1057529,
+    "title": "独立开发周记 74：应对国内安卓市场我已驾轻就熟",
+    "episode": {
+      "ep": 74,
+      "ep2": null
+    },
+    "node": "blog",
+    "url": "https://www.v2ex.com/t/1057529",
+    "created": 1721052581,
+    "last_touched": 1721392088,
+    "member": "vulgur",
+    "replies_count": 3,
+    "stars": 1,
+    "thanks": 0,
+    "reply_pages": 1,
+    "fetched_at": "2026-10-06T03:32:43.795Z",
+    "replies_fetched": 3,
+    "supplements_count": 0
+  },
+  {
+    "id": 1055759,
+    "title": "独立开发周记 73：简单并且快乐的小确幸",
+    "episode": {
+      "ep": 73,
+      "ep2": null
+    },
+    "node": "starter",
+    "url": "https://www.v2ex.com/t/1055759",
+    "created": 1720438127,
+    "last_touched": 1720438373,
+    "member": "vulgur",
+    "replies_count": 3,
+    "stars": 1,
+    "thanks": 0,
+    "reply_pages": 1,
+    "fetched_at": "2026-10-06T03:32:44.924Z",
+    "replies_fetched": 3,
+    "supplements_count": 0
+  },
+  {
+    "id": 1054055,
+    "title": "独立开发周记 72： 6 月数据总结，极简时钟重大更新",
+    "episode": {
+      "ep": 72,
+      "ep2": null
+    },
+    "node": "blog",
+    "url": "https://www.v2ex.com/t/1054055",
+    "created": 1719836886,
+    "last_touched": 1719836886,
+    "member": "vulgur",
+    "replies_count": 0,
+    "stars": 0,
+    "thanks": 0,
+    "reply_pages": 1,
+    "fetched_at": "2026-10-06T03:32:46.078Z",
+    "replies_fetched": 0,
+    "supplements_count": 0
+  },
+  {
+    "id": 1052341,
+    "title": "独立开发周记 71：做饭比做 App 有意思多了",
+    "episode": {
+      "ep": 71,
+      "ep2": null
+    },
+    "node": "starter",
+    "url": "https://www.v2ex.com/t/1052341",
+    "created": 1719282178,
+    "last_touched": 1719297118,
+    "member": "vulgur",
+    "replies_count": 5,
+    "stars": 0,
+    "thanks": 0,
+    "reply_pages": 1,
+    "fetched_at": "2026-10-06T03:32:47.197Z",
+    "replies_fetched": 5,
+    "supplements_count": 0
+  },
+  {
+    "id": 1050338,
+    "title": "独立开发周记 70：乏善可陈的 WWDC24",
+    "episode": {
+      "ep": 70,
+      "ep2": null
+    },
+    "node": "programmer",
+    "url": "https://www.v2ex.com/t/1050338",
+    "created": 1718629402,
+    "last_touched": 1718629402,
+    "member": "vulgur",
+    "replies_count": 0,
+    "stars": 1,
+    "thanks": 0,
+    "reply_pages": 1,
+    "fetched_at": "2026-10-06T03:32:48.273Z",
+    "replies_fetched": 0,
+    "supplements_count": 0
+  },
+  {
+    "id": 1048309,
+    "title": "独立开发周记 69：日下载量从 8000 暴跌到 800",
+    "episode": {
+      "ep": 69,
+      "ep2": null
+    },
+    "node": "starter",
+    "url": "https://www.v2ex.com/t/1048309",
+    "created": 1718025477,
+    "last_touched": 1718045491,
+    "member": "vulgur",
+    "replies_count": 10,
+    "stars": 3,
+    "thanks": 0,
+    "reply_pages": 1,
+    "fetched_at": "2026-10-06T03:32:49.409Z",
+    "replies_fetched": 10,
+    "supplements_count": 0
+  },
+  {
+    "id": 1046814,
+    "title": "独立开发周记 68： 5 月数据总结，近两年最低值",
+    "episode": {
+      "ep": 68,
+      "ep2": null
+    },
+    "node": "blog",
+    "url": "https://www.v2ex.com/t/1046814",
+    "created": 1717505709,
+    "last_touched": 1717505709,
+    "member": "vulgur",
+    "replies_count": 0,
+    "stars": 0,
+    "thanks": 0,
+    "reply_pages": 1,
+    "fetched_at": "2026-10-06T03:32:50.468Z",
+    "replies_fetched": 0,
+    "supplements_count": 0
+  },
+  {
+    "id": 1044552,
+    "title": "独立开发周记 67：世界上没有意外",
+    "episode": {
+      "ep": 67,
+      "ep2": null
+    },
+    "node": "blog",
+    "url": "https://www.v2ex.com/t/1044552",
+    "created": 1716860040,
+    "last_touched": 1716860040,
+    "member": "vulgur",
+    "replies_count": 0,
+    "stars": 0,
+    "thanks": 0,
+    "reply_pages": 1,
+    "fetched_at": "2026-10-06T03:32:51.561Z",
+    "replies_fetched": 0,
+    "supplements_count": 0
+  },
+  {
+    "id": 1042415,
+    "title": "独立开发周记 66：被薅了两笔小羊毛",
+    "episode": {
+      "ep": 66,
+      "ep2": null
+    },
+    "node": "weekly",
+    "url": "https://www.v2ex.com/t/1042415",
+    "created": 1716209634,
+    "last_touched": 1716236245,
+    "member": "vulgur",
+    "replies_count": 1,
+    "stars": 0,
+    "thanks": 0,
+    "reply_pages": 1,
+    "fetched_at": "2026-10-06T03:32:52.648Z",
+    "replies_fetched": 1,
+    "supplements_count": 0
+  },
+  {
+    "id": 1040478,
+    "title": "独立开发周记 65：羡慕那些勇于追求的人",
+    "episode": {
+      "ep": 65,
+      "ep2": null
+    },
+    "node": "weekly",
+    "url": "https://www.v2ex.com/t/1040478",
+    "created": 1715649719,
+    "last_touched": 1715653319,
+    "member": "vulgur",
+    "replies_count": 1,
+    "stars": 0,
+    "thanks": 0,
+    "reply_pages": 1,
+    "fetched_at": "2026-10-06T03:32:53.746Z",
+    "replies_fetched": 1,
+    "supplements_count": 0
+  },
+  {
+    "id": 1038286,
+    "title": "独立开发周记 63&64： 4 月数据总结，全面下降！",
+    "episode": {
+      "ep": 63,
+      "ep2": 64
+    },
+    "node": "weekly",
+    "url": "https://www.v2ex.com/t/1038286",
+    "created": 1715046566,
+    "last_touched": 1715046566,
+    "member": "vulgur",
+    "replies_count": 0,
+    "stars": 1,
+    "thanks": 0,
+    "reply_pages": 1,
+    "fetched_at": "2026-10-06T03:32:54.837Z",
+    "replies_fetched": 0,
+    "supplements_count": 0
+  },
+  {
+    "id": 1034742,
+    "title": "独立开发周记 62：按下葫芦起了瓢&一错再错",
+    "episode": {
+      "ep": 62,
+      "ep2": null
+    },
+    "node": "weekly",
+    "url": "https://www.v2ex.com/t/1034742",
+    "created": 1713788193,
+    "last_touched": 1713792140,
+    "member": "vulgur",
+    "replies_count": 3,
+    "stars": 0,
+    "thanks": 0,
+    "reply_pages": 1,
+    "fetched_at": "2026-10-06T03:32:55.933Z",
+    "replies_fetched": 3,
+    "supplements_count": 0
+  },
+  {
+    "id": 1032745,
+    "title": "独立开发周记 61：一天内狂赚 330 万美元",
+    "episode": {
+      "ep": 61,
+      "ep2": null
+    },
+    "node": "weekly",
+    "url": "https://www.v2ex.com/t/1032745",
+    "created": 1713187285,
+    "last_touched": 1713198401,
+    "member": "vulgur",
+    "replies_count": 6,
+    "stars": 7,
+    "thanks": 0,
+    "reply_pages": 1,
+    "fetched_at": "2026-10-06T03:32:57.031Z",
+    "replies_fetched": 6,
+    "supplements_count": 0
+  },
+  {
+    "id": 1030707,
+    "title": "独立开发周记 60：而立有八",
+    "episode": {
+      "ep": 60,
+      "ep2": null
+    },
+    "node": "weekly",
+    "url": "https://www.v2ex.com/t/1030707",
+    "created": 1712576499,
+    "last_touched": 1712576499,
+    "member": "vulgur",
+    "replies_count": 0,
+    "stars": 0,
+    "thanks": 0,
+    "reply_pages": 1,
+    "fetched_at": "2026-10-06T03:32:58.112Z",
+    "replies_fetched": 0,
+    "supplements_count": 0
+  },
+  {
+    "id": 1028995,
+    "title": "独立开发周记 59： 3 月数据总结",
+    "episode": {
+      "ep": 59,
+      "ep2": null
+    },
+    "node": "weekly",
+    "url": "https://www.v2ex.com/t/1028995",
+    "created": 1712020421,
+    "last_touched": 1712020421,
+    "member": "vulgur",
+    "replies_count": 0,
+    "stars": 0,
+    "thanks": 1,
+    "reply_pages": 1,
+    "fetched_at": "2026-10-06T03:32:59.197Z",
+    "replies_fetched": 0,
+    "supplements_count": 0
+  },
+  {
+    "id": 1027267,
+    "title": "独立开发周记 #58：赞美肘子哥",
+    "episode": {
+      "ep": 58,
+      "ep2": null
+    },
+    "node": "weekly",
+    "url": "https://www.v2ex.com/t/1027267",
+    "created": 1711463032,
+    "last_touched": 1711463710,
+    "member": "vulgur",
+    "replies_count": 3,
+    "stars": 1,
+    "thanks": 0,
+    "reply_pages": 1,
+    "fetched_at": "2026-10-06T03:33:00.300Z",
+    "replies_fetched": 3,
+    "supplements_count": 0
+  },
+  {
+    "id": 1025193,
+    "title": "独立开发周记 #57：人生苦短，钱包苦浅",
+    "episode": {
+      "ep": 57,
+      "ep2": null
+    },
+    "node": "weekly",
+    "url": "https://www.v2ex.com/t/1025193",
+    "created": 1710852502,
+    "last_touched": 1710855052,
+    "member": "vulgur",
+    "replies_count": 2,
+    "stars": 0,
+    "thanks": 0,
+    "reply_pages": 1,
+    "fetched_at": "2026-10-06T03:33:01.413Z",
+    "replies_fetched": 2,
+    "supplements_count": 0
+  },
+  {
+    "id": 1022649,
+    "title": "独立开发周记 #56：新造的人",
+    "episode": {
+      "ep": 56,
+      "ep2": null
+    },
+    "node": "weekly",
+    "url": "https://www.v2ex.com/t/1022649",
+    "created": 1710155424,
+    "last_touched": 1710161312,
+    "member": "vulgur",
+    "replies_count": 2,
+    "stars": 1,
+    "thanks": 1,
+    "reply_pages": 1,
+    "fetched_at": "2026-10-06T03:33:02.515Z",
+    "replies_fetched": 2,
+    "supplements_count": 0
+  },
+  {
+    "id": 1020555,
+    "title": "独立开发周记 #55： 2 月总结&新 App 上架",
+    "episode": {
+      "ep": 55,
+      "ep2": null
+    },
+    "node": "weekly",
+    "url": "https://www.v2ex.com/t/1020555",
+    "created": 1709552381,
+    "last_touched": 1709552381,
+    "member": "vulgur",
+    "replies_count": 0,
+    "stars": 0,
+    "thanks": 0,
+    "reply_pages": 1,
+    "fetched_at": "2026-10-06T03:33:03.610Z",
+    "replies_fetched": 0,
+    "supplements_count": 0
+  },
+  {
+    "id": 1018616,
+    "title": "独立开发周记 #54：北京天津五日游",
+    "episode": {
+      "ep": 54,
+      "ep2": null
+    },
+    "node": "travel",
+    "url": "https://www.v2ex.com/t/1018616",
+    "created": 1708949396,
+    "last_touched": 1708960494,
+    "member": "vulgur",
+    "replies_count": 4,
+    "stars": 1,
+    "thanks": 1,
+    "reply_pages": 1,
+    "fetched_at": "2026-10-06T03:33:04.712Z",
+    "replies_fetched": 4,
+    "supplements_count": 0
+  },
+  {
+    "id": 1016646,
+    "title": "独立开发周记 #53：周记一周年",
+    "episode": {
+      "ep": 53,
+      "ep2": null
+    },
+    "node": "programmer",
+    "url": "https://www.v2ex.com/t/1016646",
+    "created": 1708344976,
+    "last_touched": 1708353289,
+    "member": "vulgur",
+    "replies_count": 3,
+    "stars": 8,
+    "thanks": 0,
+    "reply_pages": 1,
+    "fetched_at": "2026-10-06T03:33:05.831Z",
+    "replies_fetched": 3,
+    "supplements_count": 0
+  },
+  {
+    "id": 1015570,
+    "title": "独立开发周记 #52：龙年大吉",
+    "episode": {
+      "ep": 52,
+      "ep2": null
+    },
+    "node": "programmer",
+    "url": "https://www.v2ex.com/t/1015570",
+    "created": 1707877083,
+    "last_touched": 1707896074,
+    "member": "vulgur",
+    "replies_count": 7,
+    "stars": 0,
+    "thanks": 1,
+    "reply_pages": 1,
+    "fetched_at": "2026-10-06T03:33:06.950Z",
+    "replies_fetched": 7,
+    "supplements_count": 0
+  },
+  {
+    "id": 1014505,
+    "title": "独立开发周记 #51： 1 月总结",
+    "episode": {
+      "ep": 51,
+      "ep2": null
+    },
+    "node": "programmer",
+    "url": "https://www.v2ex.com/t/1014505",
+    "created": 1707139133,
+    "last_touched": 1707580865,
+    "member": "vulgur",
+    "replies_count": 8,
+    "stars": 1,
+    "thanks": 1,
+    "reply_pages": 1,
+    "fetched_at": "2026-10-06T03:33:08.062Z",
+    "replies_fetched": 8,
+    "supplements_count": 0
+  },
+  {
+    "id": 1006939,
+    "title": "独立开发周记 #47：极简时钟日活新纪录",
+    "episode": {
+      "ep": 47,
+      "ep2": null
+    },
+    "node": "weekly",
+    "url": "https://www.v2ex.com/t/1006939",
+    "created": 1704717929,
+    "last_touched": 1707161971,
+    "member": "vulgur",
+    "replies_count": 8,
+    "stars": 0,
+    "thanks": 0,
+    "reply_pages": 1,
+    "fetched_at": "2026-10-06T03:33:09.207Z",
+    "replies_fetched": 8,
+    "supplements_count": 0
+  },
+  {
+    "id": 1012589,
+    "title": "独立开发周记 #50：服务器终于崩了",
+    "episode": {
+      "ep": 50,
+      "ep2": null
+    },
+    "node": "weekly",
+    "url": "https://www.v2ex.com/t/1012589",
+    "created": 1706535707,
+    "last_touched": 1706535707,
+    "member": "vulgur",
+    "replies_count": 0,
+    "stars": 1,
+    "thanks": 0,
+    "reply_pages": 1,
+    "fetched_at": "2026-10-06T03:33:10.263Z",
+    "replies_fetched": 0,
+    "supplements_count": 0
+  },
+  {
+    "id": 1010775,
+    "title": "独立开发周记 #49：塞翁失马，焉知非福",
+    "episode": {
+      "ep": 49,
+      "ep2": null
+    },
+    "node": "weekly",
+    "url": "https://www.v2ex.com/t/1010775",
+    "created": 1705931701,
+    "last_touched": 1705931701,
+    "member": "vulgur",
+    "replies_count": 0,
+    "stars": 1,
+    "thanks": 0,
+    "reply_pages": 1,
+    "fetched_at": "2026-10-06T03:33:11.340Z",
+    "replies_fetched": 0,
+    "supplements_count": 0
+  },
+  {
+    "id": 1008875,
+    "title": "独立开发周记 #48：在夜之城散步",
+    "episode": {
+      "ep": 48,
+      "ep2": null
+    },
+    "node": "weekly",
+    "url": "https://www.v2ex.com/t/1008875",
+    "created": 1705320366,
+    "last_touched": 1705601462,
+    "member": "vulgur",
+    "replies_count": 3,
+    "stars": 0,
+    "thanks": 1,
+    "reply_pages": 1,
+    "fetched_at": "2026-10-06T03:33:12.446Z",
+    "replies_fetched": 3,
+    "supplements_count": 0
+  },
+  {
+    "id": 1004970,
+    "title": "独立开发周记 #46： 2023 年终总结",
+    "episode": {
+      "ep": 46,
+      "ep2": null
+    },
+    "node": "weekly",
+    "url": "https://www.v2ex.com/t/1004970",
+    "created": 1704108893,
+    "last_touched": 1704108893,
+    "member": "vulgur",
+    "replies_count": 0,
+    "stars": 1,
+    "thanks": 1,
+    "reply_pages": 1,
+    "fetched_at": "2026-10-06T03:33:13.526Z",
+    "replies_fetched": 0,
+    "supplements_count": 0
+  },
+  {
+    "id": 1003339,
+    "title": "独立开发周记 #45：该快乐就快乐",
+    "episode": {
+      "ep": 45,
+      "ep2": null
+    },
+    "node": "weekly",
+    "url": "https://www.v2ex.com/t/1003339",
+    "created": 1703502956,
+    "last_touched": 1703510156,
+    "member": "vulgur",
+    "replies_count": 3,
+    "stars": 0,
+    "thanks": 0,
+    "reply_pages": 1,
+    "fetched_at": "2026-10-06T03:33:14.608Z",
+    "replies_fetched": 3,
+    "supplements_count": 0
+  },
+  {
+    "id": 1001483,
+    "title": "独立开发周记 #44：只想做一个沙发土豆",
+    "episode": {
+      "ep": 44,
+      "ep2": null
+    },
+    "node": "weekly",
+    "url": "https://www.v2ex.com/t/1001483",
+    "created": 1702910431,
+    "last_touched": 1702914031,
+    "member": "vulgur",
+    "replies_count": 1,
+    "stars": 1,
+    "thanks": 1,
+    "reply_pages": 1,
+    "fetched_at": "2026-10-06T03:33:15.706Z",
+    "replies_fetched": 1,
+    "supplements_count": 0
+  },
+  {
+    "id": 999822,
+    "title": "独立开发周记 #43：如何设计一个优秀的付费墙？",
+    "episode": {
+      "ep": 43,
+      "ep2": null
+    },
+    "node": "weekly",
+    "url": "https://www.v2ex.com/t/999822",
+    "created": 1702387416,
+    "last_touched": 1702387416,
+    "member": "vulgur",
+    "replies_count": 0,
+    "stars": 4,
+    "thanks": 0,
+    "reply_pages": 1,
+    "fetched_at": "2026-10-06T03:33:16.759Z",
+    "replies_fetched": 0,
+    "supplements_count": 0
+  },
+  {
+    "id": 997613,
+    "title": "独立开发周记 #42： 11 月总结",
+    "episode": {
+      "ep": 42,
+      "ep2": null
+    },
+    "node": "programmer",
+    "url": "https://www.v2ex.com/t/997613",
+    "created": 1701697128,
+    "last_touched": 1701731113,
+    "member": "vulgur",
+    "replies_count": 13,
+    "stars": 9,
+    "thanks": 2,
+    "reply_pages": 1,
+    "fetched_at": "2026-10-06T03:33:18.079Z",
+    "replies_fetched": 13,
+    "supplements_count": 0
+  },
+  {
+    "id": 995703,
+    "title": "独立开发周记 #41：第一次被 Google Play 警告下架",
+    "episode": {
+      "ep": 41,
+      "ep2": null
+    },
+    "node": "programmer",
+    "url": "https://www.v2ex.com/t/995703",
+    "created": 1701085223,
+    "last_touched": 1701085223,
+    "member": "vulgur",
+    "replies_count": 1,
+    "stars": 1,
+    "thanks": 3,
+    "reply_pages": 1,
+    "fetched_at": "2026-10-06T03:33:19.207Z",
+    "replies_fetched": 1,
+    "supplements_count": 0
+  },
+  {
+    "id": 993616,
+    "title": "独立开发周记 #40：双标 Vivo / 第八年苹果开发者 / App 备案",
+    "episode": {
+      "ep": 40,
+      "ep2": null
+    },
+    "node": "chamber",
+    "url": "https://www.v2ex.com/t/993616",
+    "created": 1700486646,
+    "last_touched": 1700594851,
+    "member": "vulgur",
+    "replies_count": 1,
+    "stars": 0,
+    "thanks": 0,
+    "reply_pages": 1,
+    "fetched_at": "2026-10-06T03:33:20.285Z",
+    "replies_fetched": 1,
+    "supplements_count": 0
+  },
+  {
+    "id": 991605,
+    "title": "独立开发周记 #39：微信客服不让我开通微信客服",
+    "episode": {
+      "ep": 39,
+      "ep2": null
+    },
+    "node": "programmer",
+    "url": "https://www.v2ex.com/t/991605",
+    "created": 1699880618,
+    "last_touched": 1699891418,
+    "member": "vulgur",
+    "replies_count": 6,
+    "stars": 2,
+    "thanks": 2,
+    "reply_pages": 1,
+    "fetched_at": "2026-10-06T03:33:21.400Z",
+    "replies_fetched": 6,
+    "supplements_count": 0
+  },
+  {
+    "id": 990000,
+    "title": "独立开发周记 #38： 10 月数据总结",
+    "episode": {
+      "ep": 38,
+      "ep2": null
+    },
+    "node": "blog",
+    "url": "https://www.v2ex.com/t/990000",
+    "created": 1699445222,
+    "last_touched": 1699445222,
+    "member": "vulgur",
+    "replies_count": 0,
+    "stars": 0,
+    "thanks": 0,
+    "reply_pages": 1,
+    "fetched_at": "2026-10-06T03:33:22.618Z",
+    "replies_fetched": 0,
+    "supplements_count": 0
+  },
+  {
+    "id": 986660,
+    "title": "独立开发周记 #37：远程工作半个月",
+    "episode": {
+      "ep": 37,
+      "ep2": null
+    },
+    "node": "programmer",
+    "url": "https://www.v2ex.com/t/986660",
+    "created": 1698640289,
+    "last_touched": 1698668218,
+    "member": "vulgur",
+    "replies_count": 14,
+    "stars": 5,
+    "thanks": 0,
+    "reply_pages": 1,
+    "fetched_at": "2026-10-06T03:33:23.772Z",
+    "replies_fetched": 14,
+    "supplements_count": 0
+  },
+  {
+    "id": 985047,
+    "title": "独立开发周记 #36：至暗时刻来临，还来了两次",
+    "episode": {
+      "ep": 36,
+      "ep2": null
+    },
+    "node": "programmer",
+    "url": "https://www.v2ex.com/t/985047",
+    "created": 1698150771,
+    "last_touched": 1698167316,
+    "member": "vulgur",
+    "replies_count": 5,
+    "stars": 7,
+    "thanks": 0,
+    "reply_pages": 1,
+    "fetched_at": "2026-10-06T03:33:24.872Z",
+    "replies_fetched": 5,
+    "supplements_count": 0
+  },
+  {
+    "id": 982579,
+    "title": "独立开发周记 #35：脱下了帽衫的王总",
+    "episode": {
+      "ep": 35,
+      "ep2": null
+    },
+    "node": "programmer",
+    "url": "https://www.v2ex.com/t/982579",
+    "created": 1697464392,
+    "last_touched": 1697467992,
+    "member": "vulgur",
+    "replies_count": 1,
+    "stars": 2,
+    "thanks": 0,
+    "reply_pages": 1,
+    "fetched_at": "2026-10-06T03:33:25.925Z",
+    "replies_fetched": 1,
+    "supplements_count": 0
+  },
+  {
+    "id": 980403,
+    "title": "独立开发周记 #34：从安卓市场赚的钱才叫窝囊费",
+    "episode": {
+      "ep": 34,
+      "ep2": null
+    },
+    "node": "programmer",
+    "url": "https://www.v2ex.com/t/980403",
+    "created": 1696857202,
+    "last_touched": 1697382505,
+    "member": "vulgur",
+    "replies_count": 17,
+    "stars": 4,
+    "thanks": 0,
+    "reply_pages": 1,
+    "fetched_at": "2026-10-06T03:33:27.072Z",
+    "replies_fetched": 17,
+    "supplements_count": 0
+  },
+  {
+    "id": 978604,
+    "title": "独立开发周记 #33： 9 月总结",
+    "episode": {
+      "ep": 33,
+      "ep2": null
+    },
+    "node": "programmer",
+    "url": "https://www.v2ex.com/t/978604",
+    "created": 1696242318,
+    "last_touched": 1696276085,
+    "member": "vulgur",
+    "replies_count": 5,
+    "stars": 1,
+    "thanks": 1,
+    "reply_pages": 1,
+    "fetched_at": "2026-10-06T03:33:28.185Z",
+    "replies_fetched": 5,
+    "supplements_count": 0
+  },
+  {
+    "id": 977086,
+    "title": "独立开发周记 #32：沮丧的一周",
+    "episode": {
+      "ep": 32,
+      "ep2": null
+    },
+    "node": "programmer",
+    "url": "https://www.v2ex.com/t/977086",
+    "created": 1695645826,
+    "last_touched": 1695701029,
+    "member": "vulgur",
+    "replies_count": 27,
+    "stars": 3,
+    "thanks": 3,
+    "reply_pages": 2,
+    "fetched_at": "2026-10-06T03:33:29.899Z",
+    "replies_fetched": 27,
+    "supplements_count": 0
+  },
+  {
+    "id": 974964,
+    "title": "独立开发周记 #31：从未有过的审核经历",
+    "episode": {
+      "ep": 31,
+      "ep2": null
+    },
+    "node": "ios",
+    "url": "https://www.v2ex.com/t/974964",
+    "created": 1695038103,
+    "last_touched": 1695038103,
+    "member": "vulgur",
+    "replies_count": 0,
+    "stars": 1,
+    "thanks": 1,
+    "reply_pages": 1,
+    "fetched_at": "2026-10-06T03:33:31.002Z",
+    "replies_fetched": 0,
+    "supplements_count": 0
+  },
+  {
+    "id": 972842,
+    "title": "独立开发周记 #30：中间人攻击",
+    "episode": {
+      "ep": 30,
+      "ep2": null
+    },
+    "node": "programmer",
+    "url": "https://www.v2ex.com/t/972842",
+    "created": 1694438022,
+    "last_touched": 1694440118,
+    "member": "vulgur",
+    "replies_count": 3,
+    "stars": 7,
+    "thanks": 0,
+    "reply_pages": 1,
+    "fetched_at": "2026-10-06T03:33:32.102Z",
+    "replies_fetched": 3,
+    "supplements_count": 0
+  },
+  {
+    "id": 970890,
+    "title": "独立开发周记 #29： 8 月数据总结",
+    "episode": {
+      "ep": 29,
+      "ep2": null
+    },
+    "node": "programmer",
+    "url": "https://www.v2ex.com/t/970890",
+    "created": 1693834655,
+    "last_touched": 1693847349,
+    "member": "vulgur",
+    "replies_count": 10,
+    "stars": 4,
+    "thanks": 0,
+    "reply_pages": 1,
+    "fetched_at": "2026-10-06T03:33:33.251Z",
+    "replies_fetched": 10,
+    "supplements_count": 0
+  },
+  {
+    "id": 969131,
+    "title": "独立开发周记 #28：大崩溃",
+    "episode": {
+      "ep": 28,
+      "ep2": null
+    },
+    "node": "programmer",
+    "url": "https://www.v2ex.com/t/969131",
+    "created": 1693280562,
+    "last_touched": 1693323457,
+    "member": "vulgur",
+    "replies_count": 17,
+    "stars": 1,
+    "thanks": 1,
+    "reply_pages": 1,
+    "fetched_at": "2026-10-06T03:33:34.398Z",
+    "replies_fetched": 17,
+    "supplements_count": 0
+  },
+  {
+    "id": 967171,
+    "title": "独立开发周记 #27：第一次投广告",
+    "episode": {
+      "ep": 27,
+      "ep2": null
+    },
+    "node": "programmer",
+    "url": "https://www.v2ex.com/t/967171",
+    "created": 1692617617,
+    "last_touched": 1692617617,
+    "member": "vulgur",
+    "replies_count": 0,
+    "stars": 2,
+    "thanks": 0,
+    "reply_pages": 1,
+    "fetched_at": "2026-10-06T03:33:35.477Z",
+    "replies_fetched": 0,
+    "supplements_count": 0
+  },
+  {
+    "id": 965264,
+    "title": "独立开发周记 #26：开辟收入新渠道",
+    "episode": {
+      "ep": 26,
+      "ep2": null
+    },
+    "node": "programmer",
+    "url": "https://www.v2ex.com/t/965264",
+    "created": 1692019349,
+    "last_touched": 1692035290,
+    "member": "vulgur",
+    "replies_count": 8,
+    "stars": 15,
+    "thanks": 0,
+    "reply_pages": 1,
+    "fetched_at": "2026-10-06T03:33:36.596Z",
+    "replies_fetched": 8,
+    "supplements_count": 0
+  },
+  {
+    "id": 962857,
+    "title": "独立开发周记 #25：极简时钟六周年",
+    "episode": {
+      "ep": 25,
+      "ep2": null
+    },
+    "node": "programmer",
+    "url": "https://www.v2ex.com/t/962857",
+    "created": 1691327418,
+    "last_touched": 1691727156,
+    "member": "vulgur",
+    "replies_count": 9,
+    "stars": 2,
+    "thanks": 0,
+    "reply_pages": 1,
+    "fetched_at": "2026-10-06T03:33:37.704Z",
+    "replies_fetched": 9,
+    "supplements_count": 0
+  },
+  {
+    "id": 961336,
+    "title": "独立开发周记 #24：做了一下午不成功的 Hacker",
+    "episode": {
+      "ep": 24,
+      "ep2": null
+    },
+    "node": "programmer",
+    "url": "https://www.v2ex.com/t/961336",
+    "created": 1690814297,
+    "last_touched": 1690839497,
+    "member": "vulgur",
+    "replies_count": 10,
+    "stars": 2,
+    "thanks": 0,
+    "reply_pages": 1,
+    "fetched_at": "2026-10-06T03:33:38.846Z",
+    "replies_fetched": 10,
+    "supplements_count": 0
+  },
+  {
+    "id": 959352,
+    "title": "独立开发周记 #23: 那些年我用过的人体工学键盘",
+    "episode": {
+      "ep": 23,
+      "ep2": null
+    },
+    "node": "mechanical",
+    "url": "https://www.v2ex.com/t/959352",
+    "created": 1690204609,
+    "last_touched": 1690541321,
+    "member": "vulgur",
+    "replies_count": 1,
+    "stars": 1,
+    "thanks": 2,
+    "reply_pages": 1,
+    "fetched_at": "2026-10-06T03:33:39.964Z",
+    "replies_fetched": 1,
+    "supplements_count": 0
+  },
+  {
+    "id": 957500,
+    "title": "独立开发周记 #22：和 Claude 2 结对编程",
+    "episode": {
+      "ep": 22,
+      "ep2": null
+    },
+    "node": "share",
+    "url": "https://www.v2ex.com/t/957500",
+    "created": 1689588672,
+    "last_touched": 1689591393,
+    "member": "vulgur",
+    "replies_count": 1,
+    "stars": 2,
+    "thanks": 0,
+    "reply_pages": 1,
+    "fetched_at": "2026-10-06T03:33:41.028Z",
+    "replies_fetched": 1,
+    "supplements_count": 0
+  },
+  {
+    "id": 955632,
+    "title": "独立开发周记 #21： Apple 预判了我的预判",
+    "episode": {
+      "ep": 21,
+      "ep2": null
+    },
+    "node": "programmer",
+    "url": "https://www.v2ex.com/t/955632",
+    "created": 1688997337,
+    "last_touched": 1689119448,
+    "member": "vulgur",
+    "replies_count": 25,
+    "stars": 5,
+    "thanks": 2,
+    "reply_pages": 2,
+    "fetched_at": "2026-10-06T03:33:42.648Z",
+    "replies_fetched": 25,
+    "supplements_count": 0
+  },
+  {
+    "id": 954200,
+    "title": "独立开发周报#20： 6 月总结",
+    "episode": {
+      "ep": 20,
+      "ep2": null
+    },
+    "node": "programmer",
+    "url": "https://www.v2ex.com/t/954200",
+    "created": 1688523852,
+    "last_touched": 1688663818,
+    "member": "vulgur",
+    "replies_count": 6,
+    "stars": 2,
+    "thanks": 1,
+    "reply_pages": 1,
+    "fetched_at": "2026-10-06T03:33:43.749Z",
+    "replies_fetched": 6,
+    "supplements_count": 0
+  },
+  {
+    "id": 951889,
+    "title": "独立开发周记 #19： Life goes on",
+    "episode": {
+      "ep": 19,
+      "ep2": null
+    },
+    "node": "weekly",
+    "url": "https://www.v2ex.com/t/951889",
+    "created": 1687786408,
+    "last_touched": 1687869697,
+    "member": "vulgur",
+    "replies_count": 1,
+    "stars": 2,
+    "thanks": 0,
+    "reply_pages": 1,
+    "fetched_at": "2026-10-06T03:33:44.839Z",
+    "replies_fetched": 1,
+    "supplements_count": 0
+  },
+  {
+    "id": 948124,
+    "title": "独立开发周记 #17： WWDC23",
+    "episode": {
+      "ep": 17,
+      "ep2": null
+    },
+    "node": "wwdc",
+    "url": "https://www.v2ex.com/t/948124",
+    "created": 1686573910,
+    "last_touched": 1686618670,
+    "member": "vulgur",
+    "replies_count": 5,
+    "stars": 4,
+    "thanks": 2,
+    "reply_pages": 1,
+    "fetched_at": "2026-10-06T03:33:45.949Z",
+    "replies_fetched": 5,
+    "supplements_count": 0
+  },
+  {
+    "id": 947125,
+    "title": "独立开发周记 #16： 5 月总结和优化之路",
+    "episode": {
+      "ep": 16,
+      "ep2": null
+    },
+    "node": "programmer",
+    "url": "https://www.v2ex.com/t/947125",
+    "created": 1686235778,
+    "last_touched": 1686239378,
+    "member": "vulgur",
+    "replies_count": 3,
+    "stars": 4,
+    "thanks": 0,
+    "reply_pages": 1,
+    "fetched_at": "2026-10-06T03:33:47.031Z",
+    "replies_fetched": 3,
+    "supplements_count": 0
+  },
+  {
+    "id": 941942,
+    "title": "独立开发周记 #14：梦想成真",
+    "episode": {
+      "ep": 14,
+      "ep2": null
+    },
+    "node": "create",
+    "url": "https://www.v2ex.com/t/941942",
+    "created": 1684739350,
+    "last_touched": 1685277418,
+    "member": "vulgur",
+    "replies_count": 1,
+    "stars": 2,
+    "thanks": 1,
+    "reply_pages": 1,
+    "fetched_at": "2026-10-06T03:33:48.084Z",
+    "replies_fetched": 1,
+    "supplements_count": 0
+  },
+  {
+    "id": 940303,
+    "title": "独立开发周记 #13：芝兰生于深谷，不以无人而不芳",
+    "episode": {
+      "ep": 13,
+      "ep2": null
+    },
+    "node": "programmer",
+    "url": "https://www.v2ex.com/t/940303",
+    "created": 1684202238,
+    "last_touched": 1684202238,
+    "member": "vulgur",
+    "replies_count": 0,
+    "stars": 0,
+    "thanks": 0,
+    "reply_pages": 1,
+    "fetched_at": "2026-10-06T03:33:49.142Z",
+    "replies_fetched": 0,
+    "supplements_count": 0
+  },
+  {
+    "id": 938197,
+    "title": "独立开发周记 #12：尔虞我诈的互联网",
+    "episode": {
+      "ep": 12,
+      "ep2": null
+    },
+    "node": "programmer",
+    "url": "https://www.v2ex.com/t/938197",
+    "created": 1683515732,
+    "last_touched": 1683569609,
+    "member": "vulgur",
+    "replies_count": 25,
+    "stars": 16,
+    "thanks": 1,
+    "reply_pages": 2,
+    "fetched_at": "2026-10-06T03:33:50.832Z",
+    "replies_fetched": 25,
+    "supplements_count": 0
+  },
+  {
+    "id": 936754,
+    "title": "独立开发周记 #11： 4 月总结、华为下架、换掉自记账",
+    "episode": {
+      "ep": 11,
+      "ep2": null
+    },
+    "node": "programmer",
+    "url": "https://www.v2ex.com/t/936754",
+    "created": 1682940814,
+    "last_touched": 1683066123,
+    "member": "vulgur",
+    "replies_count": 23,
+    "stars": 9,
+    "thanks": 3,
+    "reply_pages": 2,
+    "fetched_at": "2026-10-06T03:33:52.569Z",
+    "replies_fetched": 23,
+    "supplements_count": 1
+  },
+  {
+    "id": 935137,
+    "title": "独立开发周记 #10：不明原因的下载量暴涨、调休与我无关、一个人生成就达成",
+    "episode": {
+      "ep": 10,
+      "ep2": null
+    },
+    "node": "programmer",
+    "url": "https://www.v2ex.com/t/935137",
+    "created": 1682335734,
+    "last_touched": 1682335734,
+    "member": "vulgur",
+    "replies_count": 1,
+    "stars": 7,
+    "thanks": 0,
+    "reply_pages": 1,
+    "fetched_at": "2026-10-06T03:33:53.648Z",
+    "replies_fetched": 1,
+    "supplements_count": 0
+  },
+  {
+    "id": 933104,
+    "title": "独立开发周记 #9：将 Slack 接入工作流、重构的收益开始显现、AI 翻唱惊喜连连",
+    "episode": {
+      "ep": 9,
+      "ep2": null
+    },
+    "node": "programmer",
+    "url": "https://www.v2ex.com/t/933104",
+    "created": 1681703211,
+    "last_touched": 1681730333,
+    "member": "vulgur",
+    "replies_count": 4,
+    "stars": 6,
+    "thanks": 1,
+    "reply_pages": 1,
+    "fetched_at": "2026-10-06T03:33:54.747Z",
+    "replies_fetched": 4,
+    "supplements_count": 0
+  },
+  {
+    "id": 931256,
+    "title": "独立开发周报 #8：开始运动",
+    "episode": {
+      "ep": 8,
+      "ep2": null
+    },
+    "node": "weekly",
+    "url": "https://www.v2ex.com/t/931256",
+    "created": 1681110260,
+    "last_touched": 1681113860,
+    "member": "vulgur",
+    "replies_count": 1,
+    "stars": 4,
+    "thanks": 0,
+    "reply_pages": 1,
+    "fetched_at": "2026-10-06T03:33:55.812Z",
+    "replies_fetched": 1,
+    "supplements_count": 0
+  },
+  {
+    "id": 929393,
+    "title": "独立开发周报#7: 3 月总结",
+    "episode": {
+      "ep": 7,
+      "ep2": null
+    },
+    "node": "programmer",
+    "url": "https://www.v2ex.com/t/929393",
+    "created": 1680500019,
+    "last_touched": 1680503662,
+    "member": "vulgur",
+    "replies_count": 2,
+    "stars": 3,
+    "thanks": 0,
+    "reply_pages": 1,
+    "fetched_at": "2026-10-06T03:33:56.975Z",
+    "replies_fetched": 2,
+    "supplements_count": 0
+  },
+  {
+    "id": 927541,
+    "title": "独立开发周报 #6：国内安卓不值得",
+    "episode": {
+      "ep": 6,
+      "ep2": null
+    },
+    "node": "programmer",
+    "url": "https://www.v2ex.com/t/927541",
+    "created": 1679898432,
+    "last_touched": 1680114164,
+    "member": "vulgur",
+    "replies_count": 6,
+    "stars": 3,
+    "thanks": 5,
+    "reply_pages": 1,
+    "fetched_at": "2026-10-06T03:33:58.414Z",
+    "replies_fetched": 6,
+    "supplements_count": 0
+  },
+  {
+    "id": 925552,
+    "title": "独立开发周记 #5 ——AI 助力",
+    "episode": {
+      "ep": 5,
+      "ep2": null
+    },
+    "node": "programmer",
+    "url": "https://www.v2ex.com/t/925552",
+    "created": 1679294913,
+    "last_touched": 1679330700,
+    "member": "vulgur",
+    "replies_count": 11,
+    "stars": 14,
+    "thanks": 3,
+    "reply_pages": 1,
+    "fetched_at": "2026-10-06T03:33:59.534Z",
+    "replies_fetched": 11,
+    "supplements_count": 0
+  },
+  {
+    "id": 923622,
+    "title": "独立开发周报 #4 (0306-0312) —— 第一次尝试 ChatGPT API",
+    "episode": {
+      "ep": 4,
+      "ep2": null
+    },
+    "node": "programmer",
+    "url": "https://www.v2ex.com/t/923622",
+    "created": 1678694498,
+    "last_touched": 1678708022,
+    "member": "vulgur",
+    "replies_count": 10,
+    "stars": 1,
+    "thanks": 0,
+    "reply_pages": 1,
+    "fetched_at": "2026-10-06T03:34:00.657Z",
+    "replies_fetched": 10,
+    "supplements_count": 0
+  },
+  {
+    "id": 922106,
+    "title": "独立开发周报 #3 (0227-0305)",
+    "episode": {
+      "ep": 3,
+      "ep2": null
+    },
+    "node": "programmer",
+    "url": "https://www.v2ex.com/t/922106",
+    "created": 1678238815,
+    "last_touched": 1678239989,
+    "member": "vulgur",
+    "replies_count": 2,
+    "stars": 1,
+    "thanks": 0,
+    "reply_pages": 1,
+    "fetched_at": "2026-10-06T03:34:01.719Z",
+    "replies_fetched": 2,
+    "supplements_count": 0
+  },
+  {
+    "id": 922062,
+    "title": "独立开发周报 #2 (0220-0226)",
+    "episode": {
+      "ep": 2,
+      "ep2": null
+    },
+    "node": "programmer",
+    "url": "https://www.v2ex.com/t/922062",
+    "created": 1678202307,
+    "last_touched": 1678219494,
+    "member": "vulgur",
+    "replies_count": 4,
+    "stars": 3,
+    "thanks": 0,
+    "reply_pages": 1,
+    "fetched_at": "2026-10-06T03:34:02.801Z",
+    "replies_fetched": 4,
+    "supplements_count": 0
+  },
+  {
+    "id": 921926,
+    "title": "独立开发周报 #1 (0213-0219)",
+    "episode": {
+      "ep": 1,
+      "ep2": null
+    },
+    "node": "weekly",
+    "url": "https://www.v2ex.com/t/921926",
+    "created": 1678174361,
+    "last_touched": 1678181561,
+    "member": "vulgur",
+    "replies_count": 3,
+    "stars": 1,
+    "thanks": 0,
+    "reply_pages": 1,
+    "fetched_at": "2026-10-06T03:34:03.916Z",
+    "replies_fetched": 3,
+    "supplements_count": 0
+  }
+]

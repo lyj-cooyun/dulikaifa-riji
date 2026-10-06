@@ -1,0 +1,124 @@
+=== TOPIC 927541 ===
+TITLE: 独立开发周报 #6：国内安卓不值得
+EP: 6 / ep2=
+CREATED: 2023-03-27 14:27  (Beijing)
+MEMBER: vulgur  REPLIES_COUNT: 6  STARS: 3  THANKS: 5
+URL: https://www.v2ex.com/t/927541
+
+----- CONTENT (markdown) -----
+![]( https://img.way2solo.com/photo/vulgur/3abfcda8-a4d2-44f1-8265-661d4b61395b.jpeg?imageView2/2/w/1920/q/100)
+题图由 Bing Image Creator 生成
+
+## 2023 年，0320-0326
+
+这周孩子生病只是周一上了一天学，而我周一全天基本都在写上周的周报和折腾 blog ，剩下的六天里除了写了一个 demo 之外就没怎么写代码了。
+
+## 极简时钟 iOS （[App Store]( https://apps.apple.com/cn/app/id1265404088)）
+
+极简时钟 iOS 在周三的时候提交了新版本 v4.2.2 ，更新内容就是上周提到的小组件的设计优化。审核速度很快，在下午时间也只需了 42 分钟。
+
+![]( https://img.way2solo.com/photo/vulgur/e813139a-f92f-42bb-9e2e-446bd55e7e94.jpg?imageView2/2/w/1920/q/100)
+
+
+受瓦尔登的开发者 Bee 的影响，也开始关注 app 的关键词了，但是自打新版本更新后，关键词数量下降了一丢丢，不过好在大部分是搜索指数比较低的那些关键词。
+
+![]( https://img.way2solo.com/photo/vulgur/5ea89d7c-aa57-437c-be23-b94135885edf.png?imageView2/2/w/1920/q/100)
+
+
+周末的时候和设计师交流了一下以后版本的新内容，设计师给出了一套令人震惊的设计方案，我已经迫不及待想要去实现了。这个设计方案的初衷完全是我的个人喜好，没想到设计师在进行了大量的调研后，给出了完全超乎我想象的效果。
+
+## 极简时钟 Android （[Google Play]( https://play.google.com/store/apps/details?id=com.mad.zenflipclock)）
+
+上周五下午就提交了 v2.5.13 ，但是正好赶上了周末，国内的安卓市场直到这周中才都更新上架。
+
+上周提到了，这个版本加入了全新的详情页文案和几个语言的本地化，但是从 Play 的下载量上来看，并没有显著的增长啊。ASO 果然是玄学啊～
+
+![]( https://img.way2solo.com/photo/vulgur/5d65f3da-bd9d-467b-9ef8-026aa0ce0bad.png?imageView2/2/w/1920/q/100)
+
+
+## 极简日记 Android （[Google Play]( https://play.google.com/store/apps/details?id=com.mad.android.minimaldaily)）
+
+这周极简日记 Android 发布了 v1.2.0 ，更新内容很多：
+
+- 新增自定义心情
+- 新增密码锁
+- 新增分享主题
+- 新增在日历中显示图片
+- 优化用户界面
+
+其他安卓市场的上架都很顺利，只在小米的应用市场耽误很多时间。自从上个版本开始小米就开始拒绝极简日记的版本更新，理由是没有提供「注销」功能。这个 app 压根儿就没有用户系统，服务器也只保留了用户的支付记录，没有任何其他用户的数据，但是小米的审核人员还是坚持要有注销功能。没办法，这个版本加入了一个注销按钮，提示用户发邮件申请注销操作，结果小米客服和审核人员内部意见不统一，一个群里四个小米工作人员，互相倒脚短传，就连小米自己的审核标准也有不同的解读，导致我反复修改三次才最终通过。
+
+我是真想把完整的聊天记录截图贴上来让大家看看，无奈实在是太长了，国内安卓市场根本没有统一的审核标准，就连同一个公司内部的不同部门在审核上都有不同的执行标准，让人大开眼界。
+
+![]( https://img.way2solo.com/photo/vulgur/3b2da20f-29cd-4b6c-8722-af544ab6f897.png?imageView2/2/w/1920/q/100)
+
+
+被小米审核折腾坏了
+
+## 层出不穷的 AI 工具
+
+最近真的是每天都有新的 AI 产品横空出世，简直应接不暇了，这里简单说一下这周用到的两个 AI 工具吧。
+
+### Bing Image Creator
+
+Bing 也推出了自己的文生图 AI 工具，我只是输入了一句十分简单的“Night, moon, wave, pure background”，生成的图片就已经很令我满意了，这篇周报的题图就取自其中。
+
+![]( https://img.way2solo.com/photo/vulgur/987d8374-4f60-4225-99f7-86480cc32f6b.png?imageView2/2/w/1920/q/100)
+
+
+### Cursor
+
+上周提到的 Cursor 本周就立刻投入到实际生产中了。
+
+- 给 Raycast 生成了一个脚本，但是运行后遇到了一个错误，把这个错误复制到 Cursor 的 Chat 里，直接就给出了解决方案。
+- 生成了一个 Cron 的命令行
+- 极简时钟的新设计里需要用到陀螺仪，但是我对 CoreMotion 一无所知，让 Cursor 生成了一段代码，再加上自己的一点小修改，居然可以直接用了
+
+![]( https://img.way2solo.com/photo/vulgur/ead369c5-01d8-4e58-985a-00bfb726c3d0.png?imageView2/2/w/1920/q/100)
+
+## 露脸
+
+近几年我都不太敢在社交媒体上露脸，一方面是社恐，一方面是担心隐私的问题。不过这周自我突破了两下：
+
+- 周日晚上参加了 W2Solo 的独立开发者线上聚会，但是我讲得不多，而且自我感觉也没有讲好，有些问题也没有谈尽兴
+- 受肘子哥推荐，给 SwiftGG 在某大学的移动应用竞赛的分享会录了一段视频。第一次录这样的视频，很紧张，说话磕磕绊绊，录了好多遍，各种剪辑后才交上了一个看得过去的视频。
+
+## 买买买
+
+最近种草了微软牌的桌面空气净化器，各种调研和刷闲鱼，终于本地的一家二手店在出一个不错的日版机器，立刻拿下了。运行时基本听不到风扇声，而且运行速度很快，立即在淘宝上买了一年内容更新服务。
+
+![]( https://img.way2solo.com/photo/vulgur/fd896319-88ec-49f4-8ad9-ea2945c0a136.jpg?imageView2/2/w/1920/q/100)
+
+
+[公众号原文]( https://mp.weixin.qq.com/s/Qd7lv4baGZDXSVxBq7bMOw)
+
+往期周报：
+
+* [#5]( https://www.v2ex.com/t/925552#reply9)
+* [#4]( https://www.v2ex.com/t/923622#reply10)
+* [#3]( https://www.v2ex.com/t/922106#reply2)
+* [#2]( https://www.v2ex.com/t/922062#reply4)
+* [#1]( https://www.v2ex.com/t/921926#reply3)
+
+----- SUPPLEMENTS -----
+(none)
+
+----- REPLIES -----
+>> @OpenSea (2023-03-27 14:59):
+well done
+
+>> @EasonCheng (2023-03-28 09:22):
+现在一般二手多少价位比较合适，想入一个微软空气净化器放客厅来着.
+
+>> @vulgur (2023-03-28 09:55):
+@EasonCheng 日版是 1500 左右，国行是 1800 左右
+
+>> @EasonCheng (2023-03-31 09:24):
+@vulgur 感觉 PDD 也是这价来着
+
+>> @minipiger (2023-04-03 14:28):
+好奇 OP 什么年龄段的？
+
+>> @vulgur (2023-04-03 14:37):
+@minipiger 1986 年
+

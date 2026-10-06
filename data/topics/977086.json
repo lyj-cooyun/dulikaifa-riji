@@ -1,0 +1,212 @@
+{
+  "id": 977086,
+  "title": "独立开发周记 #32：沮丧的一周",
+  "episode": {
+    "ep": 32,
+    "ep2": null
+  },
+  "node": "programmer",
+  "url": "https://www.v2ex.com/t/977086",
+  "created": 1695645826,
+  "last_touched": 1695701029,
+  "member": "vulgur",
+  "replies_count": 27,
+  "stars": 3,
+  "thanks": 3,
+  "content": "# 2023 ，0918-0924\r\n\r\niOS 17 正式发布，意料之中的是我的 App 没有得到任何推荐，意料之外的是极简时钟居然下载量没有任何变化。过去三年每次 iOS 新版本发布都回带来一波下载剧增，今天居然一点波澜都没有。\r\n\r\n# 极简日记 iOS （[App Store]( https://apps.apple.com/cn/app/id1568936702)）\r\n\r\n这周没怎么写代码，只把极简日记的 backlog 中一个一直想做的功能实现了，就是借鉴 Tinder 式的卡片 UI ，重新设计了摇一摇的随机回忆。\r\n\r\n![]( https://img.way2solo.com/photo/vulgur/b3f51fc1-2bc7-42ae-9239-22936f5185c0.gif?imageView2/2/w/1920/q/100)\r\n\r\n# 极简时钟 Android （[Google Play]( https://play.google.com/store/apps/details?id=com.mad.zenflipclock)）\r\n\r\n很久都没说关于极简时钟安卓版的事了，因为这段时间一直在做去年 iOS 版经历的事情：重写整个 UI 。\r\n\r\n为了尽快和 iOS 版的 UI 进行统一，也出于对未来开发的考虑，这次的 UI 是用 Compose 写的。\r\n\r\n开发过程中，安卓小哥提出了一个非常棒的 UI 改进，解决了之前用户找不到菜单和主题切换的问题，iOS 在接下来的版本也会跟进这个改进。\r\n\r\n![]( https://img.way2solo.com/photo/vulgur/fc5989ec-ba8d-46f0-817e-280c91ab2627.jpeg?imageView2/2/w/1920/q/100)\r\n\r\n\r\n# 一些杂事\r\n\r\n- 可能受 App 销量不佳和新 iPhone 迟迟不发货的影响，这周心情很沮丧，一直在叹气\r\n- 这周被多巴胺操纵了，只想做一些能获得即时快感的事情，刷短视频，玩 Xbox\r\n- 在家工作效率太低了，本来打算去共享自习室工作试试，但最后还是退缩了\r\n- 猛兽排队，拯救了一天的不开心\r\n- 学习 Figma 才知道设计领域有这么个术语：mood board ，但是这东西应该叫做 inspiration board 或者 reference board 才更合适啊\r\n- 买了个户外用的躺椅，放到阳台上，准备晒晒太阳，读读书，听听播客\r\n    \r\n![]( https://img.way2solo.com/photo/vulgur/47656168-755d-4837-96dd-41ce487c60d6.jpeg?imageView2/2/w/1920/q/100)",
+  "content_rendered": "<h1>2023 ，0918-0924</h1>\n<p>iOS 17 正式发布，意料之中的是我的 App 没有得到任何推荐，意料之外的是极简时钟居然下载量没有任何变化。过去三年每次 iOS 新版本发布都回带来一波下载剧增，今天居然一点波澜都没有。</p>\n<h1>极简日记 iOS （<a href=\"https://apps.apple.com/cn/app/id1568936702\" rel=\"nofollow\">App Store</a>）</h1>\n<p>这周没怎么写代码，只把极简日记的 backlog 中一个一直想做的功能实现了，就是借鉴 Tinder 式的卡片 UI ，重新设计了摇一摇的随机回忆。</p>\n<p><img alt=\"\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://img.way2solo.com/photo/vulgur/b3f51fc1-2bc7-42ae-9239-22936f5185c0.gif?imageView2/2/w/1920/q/100\"/></p>\n<h1>极简时钟 Android （<a href=\"https://play.google.com/store/apps/details?id=com.mad.zenflipclock\" rel=\"nofollow\">Google Play</a>）</h1>\n<p>很久都没说关于极简时钟安卓版的事了，因为这段时间一直在做去年 iOS 版经历的事情：重写整个 UI 。</p>\n<p>为了尽快和 iOS 版的 UI 进行统一，也出于对未来开发的考虑，这次的 UI 是用 Compose 写的。</p>\n<p>开发过程中，安卓小哥提出了一个非常棒的 UI 改进，解决了之前用户找不到菜单和主题切换的问题，iOS 在接下来的版本也会跟进这个改进。</p>\n<p><img alt=\"\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://img.way2solo.com/photo/vulgur/fc5989ec-ba8d-46f0-817e-280c91ab2627.jpeg?imageView2/2/w/1920/q/100\"/></p>\n<h1>一些杂事</h1>\n<ul>\n<li>可能受 App 销量不佳和新 iPhone 迟迟不发货的影响，这周心情很沮丧，一直在叹气</li>\n<li>这周被多巴胺操纵了，只想做一些能获得即时快感的事情，刷短视频，玩 Xbox</li>\n<li>在家工作效率太低了，本来打算去共享自习室工作试试，但最后还是退缩了</li>\n<li>猛兽排队，拯救了一天的不开心</li>\n<li>学习 Figma 才知道设计领域有这么个术语：mood board ，但是这东西应该叫做 inspiration board 或者 reference board 才更合适啊</li>\n<li>买了个户外用的躺椅，放到阳台上，准备晒晒太阳，读读书，听听播客</li>\n</ul>\n<p><img alt=\"\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://img.way2solo.com/photo/vulgur/47656168-755d-4837-96dd-41ce487c60d6.jpeg?imageView2/2/w/1920/q/100\"/></p>\n",
+  "supplements": [],
+  "replies": [
+    {
+      "id": 13699823,
+      "author": "tool2d",
+      "created": 1695649599,
+      "content": "OP 帖子主打一个真实，支持 OP 。",
+      "content_rendered": "OP 帖子主打一个真实，支持 OP 。"
+    },
+    {
+      "id": 13699851,
+      "author": "pigspy",
+      "created": 1695650193,
+      "content": "早就听说码农写 app 老三样，没想到真见到了",
+      "content_rendered": "早就听说码农写 app 老三样，没想到真见到了"
+    },
+    {
+      "id": 13700097,
+      "author": "voidmnwzp",
+      "created": 1695655887,
+      "content": "这些简单的东西门槛太低，想要赚钱要么就是有相关专业行业的人脉，要么就是灰产….",
+      "content_rendered": "这些简单的东西门槛太低，想要赚钱要么就是有相关专业行业的人脉，要么就是灰产…."
+    },
+    {
+      "id": 13700227,
+      "author": "keepRun",
+      "created": 1695660369,
+      "content": "赞美 op",
+      "content_rendered": "赞美 op"
+    },
+    {
+      "id": 13700313,
+      "author": "wangda0lai",
+      "created": 1695667447,
+      "content": "@pigspy 具体是哪三样啊？好奇",
+      "content_rendered": "@<a href=\"/member/pigspy\">pigspy</a> 具体是哪三样啊？好奇"
+    },
+    {
+      "id": 13700463,
+      "author": "92Developer",
+      "created": 1695687051,
+      "content": "@wangda0lai todo ，记账，笔记",
+      "content_rendered": "@<a href=\"/member/wangda0lai\">wangda0lai</a> todo ，记账，笔记"
+    },
+    {
+      "id": 13700482,
+      "author": "8x5orstp",
+      "created": 1695687638,
+      "content": "日历，笔记，清单，番茄，各种螺丝刀\r\n@wangda0lai",
+      "content_rendered": "日历，笔记，清单，番茄，各种螺丝刀<br />@<a href=\"/member/wangda0lai\">wangda0lai</a>"
+    },
+    {
+      "id": 13700491,
+      "author": "ih8es9OIzne0959p",
+      "created": 1695687880,
+      "content": "该说不说的还是找个班吧，及时止损。副业有起色再辞职",
+      "content_rendered": "该说不说的还是找个班吧，及时止损。副业有起色再辞职"
+    },
+    {
+      "id": 13700574,
+      "author": "9A0DIP9kgH1O4wjR",
+      "created": 1695689191,
+      "content": "@dongbeicxy 记账要想做好还是比较复杂的",
+      "content_rendered": "@<a href=\"/member/dongbeicxy\">dongbeicxy</a> 记账要想做好还是比较复杂的"
+    },
+    {
+      "id": 13700578,
+      "author": "shxlxa",
+      "created": 1695689241,
+      "content": "op 其实早就靠\"极简时钟\"这个 app 不用上班了，下载量累计几千万",
+      "content_rendered": "op 其实早就靠\"极简时钟\"这个 app 不用上班了，下载量累计几千万"
+    },
+    {
+      "id": 13700589,
+      "author": "vulgur",
+      "created": 1695689350,
+      "content": "@shxlxa 没有没有，才 600 多万",
+      "content_rendered": "@<a href=\"/member/shxlxa\">shxlxa</a> 没有没有，才 600 多万"
+    },
+    {
+      "id": 13700603,
+      "author": "LudwigWS",
+      "created": 1695689476,
+      "content": "@ajaxgoldfish 我搜了下极简日记，评论五百多条，已经算副业有起色了吧",
+      "content_rendered": "@<a href=\"/member/ajaxgoldfish\">ajaxgoldfish</a> 我搜了下极简日记，评论五百多条，已经算副业有起色了吧"
+    },
+    {
+      "id": 13700633,
+      "author": "shxlxa",
+      "created": 1695689788,
+      "content": "@vulgur 哈哈，那是我记错了，也非常厉害了，之前听你的分享播客知道的",
+      "content_rendered": "@<a href=\"/member/vulgur\">vulgur</a> 哈哈，那是我记错了，也非常厉害了，之前听你的分享播客知道的"
+    },
+    {
+      "id": 13700635,
+      "author": "shxlxa",
+      "created": 1695689807,
+      "content": "@LudwigWS 极简时钟更多",
+      "content_rendered": "@<a href=\"/member/LudwigWS\">LudwigWS</a> 极简时钟更多"
+    },
+    {
+      "id": 13700736,
+      "author": "johnman",
+      "created": 1695690596,
+      "content": "@vulgur 牛，op 付费率有 10%吗？",
+      "content_rendered": "@<a href=\"/member/vulgur\">vulgur</a> 牛，op 付费率有 10%吗？"
+    },
+    {
+      "id": 13700779,
+      "author": "vulgur",
+      "created": 1695690892,
+      "content": "@johnman 10%的话早就财务自由了，连 5‰都没有",
+      "content_rendered": "@<a href=\"/member/johnman\">johnman</a> 10%的话早就财务自由了，连 5‰都没有"
+    },
+    {
+      "id": 13700991,
+      "author": "deszon",
+      "created": 1695691967,
+      "content": "不知道别的行业什么样，程序员出身，有些想法，自立门户，做出一款产品，受到推荐和欢迎，这种成就感当然比上班高出太多。但时间长了之后，落差会慢慢出现，感觉上，预期落空次数变多，实际可能并没有变频繁，只是自身期望变多，导致失望变多了。为了弥补这种缺憾，产品的走向就变了，不像当初那么纯粹，开始搞一些噱头，搞一些自认为能吸引人的功能和设计，慢慢的就忘了当初做这款产品的初衷。这么下去有时候能拉起一段时间的数据，等这波热潮降下，平期又来了。为了再次体验当初那种高产数据、高额回报带来的快感，有的人会动一些歪脑子，走下三路，这种猛药下去，数据节节攀升，能超过最初的那种成就感，基本到这时候，一个程序员的产品之路就走到头了。前头等着的，就是封号。一点经验，望有毗益。",
+      "content_rendered": "不知道别的行业什么样，程序员出身，有些想法，自立门户，做出一款产品，受到推荐和欢迎，这种成就感当然比上班高出太多。但时间长了之后，落差会慢慢出现，感觉上，预期落空次数变多，实际可能并没有变频繁，只是自身期望变多，导致失望变多了。为了弥补这种缺憾，产品的走向就变了，不像当初那么纯粹，开始搞一些噱头，搞一些自认为能吸引人的功能和设计，慢慢的就忘了当初做这款产品的初衷。这么下去有时候能拉起一段时间的数据，等这波热潮降下，平期又来了。为了再次体验当初那种高产数据、高额回报带来的快感，有的人会动一些歪脑子，走下三路，这种猛药下去，数据节节攀升，能超过最初的那种成就感，基本到这时候，一个程序员的产品之路就走到头了。前头等着的，就是封号。一点经验，望有毗益。"
+    },
+    {
+      "id": 13701026,
+      "author": "hanlin85",
+      "created": 1695692198,
+      "content": "这小区低容积率 环境很好 \r\n已经是人生赢家了",
+      "content_rendered": "这小区低容积率 环境很好 <br />已经是人生赢家了"
+    },
+    {
+      "id": 13701185,
+      "author": "alleluya",
+      "created": 1695692993,
+      "content": "@hanlin85 这是那种低层洋房的房子?",
+      "content_rendered": "@<a href=\"/member/hanlin85\">hanlin85</a> 这是那种低层洋房的房子?"
+    },
+    {
+      "id": 13701421,
+      "author": "vulgur",
+      "created": 1695693987,
+      "content": "@deszon 感谢建议，极简时钟 iOS 已经上架六年多了，坚持免费无广告一直未变",
+      "content_rendered": "@<a href=\"/member/deszon\">deszon</a> 感谢建议，极简时钟 iOS 已经上架六年多了，坚持免费无广告一直未变"
+    },
+    {
+      "id": 13701729,
+      "author": "Priders",
+      "created": 1695695453,
+      "content": "@vulgur OP 好棒 请问设计也是自己操刀吗？",
+      "content_rendered": "@<a href=\"/member/vulgur\">vulgur</a> OP 好棒 请问设计也是自己操刀吗？"
+    },
+    {
+      "id": 13701790,
+      "author": "zhan2046",
+      "created": 1695695738,
+      "content": "多考虑商业化，多找找数据，有数据支撑的商业化",
+      "content_rendered": "多考虑商业化，多找找数据，有数据支撑的商业化"
+    },
+    {
+      "id": 13701849,
+      "author": "wangda0lai",
+      "created": 1695696102,
+      "content": "@dongbeicxy @djokor 好吧😑 好像确实是这样，不过貌似 OP 是吃到了蛋糕的人。",
+      "content_rendered": "@<a href=\"/member/dongbeicxy\">dongbeicxy</a> @<a href=\"/member/djokor\">djokor</a> 好吧😑 好像确实是这样，不过貌似 OP 是吃到了蛋糕的人。"
+    },
+    {
+      "id": 13701899,
+      "author": "vulgur",
+      "created": 1695696470,
+      "content": "@Priders 极简时钟的设计不是，极简日记的设计是我自己弄的",
+      "content_rendered": "@<a href=\"/member/Priders\">Priders</a> 极简时钟的设计不是，极简日记的设计是我自己弄的"
+    },
+    {
+      "id": 13702170,
+      "author": "gogogo1203",
+      "created": 1695698095,
+      "content": "mood board / mood tracking 是记录心情。 我最近学习不少这方面的事。 \r\n记录心情的最终目的是\r\n- 把心情具象化，然后它就不会无限扩张，\"它就是一个短暂的心情而已\"\r\n- 记录如何从低谷恢复到平常，增加信心，\"没关系，下次低谷我也能调整\"\r\n- 允许坏心情。太多时候是\"我不允许我有坏心情，然后我的心情更坏了\"\r\n\r\n我觉得像 op 这样写出来挺好的。",
+      "content_rendered": "mood board / mood tracking 是记录心情。 我最近学习不少这方面的事。 <br />记录心情的最终目的是<br />- 把心情具象化，然后它就不会无限扩张，\"它就是一个短暂的心情而已\"<br />- 记录如何从低谷恢复到平常，增加信心，\"没关系，下次低谷我也能调整\"<br />- 允许坏心情。太多时候是\"我不允许我有坏心情，然后我的心情更坏了\"<br /><br />我觉得像 op 这样写出来挺好的。"
+    },
+    {
+      "id": 13702523,
+      "author": "yagamil",
+      "created": 1695700323,
+      "content": "羡慕 op 的生活.",
+      "content_rendered": "羡慕 op 的生活."
+    },
+    {
+      "id": 13702619,
+      "author": "4Qd5zQCm26",
+      "created": 1695701029,
+      "content": "歪个楼 OP 房子风景不错",
+      "content_rendered": "歪个楼 OP 房子风景不错"
+    }
+  ],
+  "reply_pages": 2,
+  "fetched_at": "2026-10-06T03:33:29.899Z"
+}

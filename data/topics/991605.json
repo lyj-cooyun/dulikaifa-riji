@@ -1,0 +1,65 @@
+{
+  "id": 991605,
+  "title": "独立开发周记 #39：微信客服不让我开通微信客服",
+  "episode": {
+    "ep": 39,
+    "ep2": null
+  },
+  "node": "programmer",
+  "url": "https://www.v2ex.com/t/991605",
+  "created": 1699880618,
+  "last_touched": 1699891418,
+  "member": "vulgur",
+  "replies_count": 6,
+  "stars": 2,
+  "thanks": 2,
+  "content": "# 2023 ，1106-1112\r\n\r\n这周的绝大部分时间还都是在做远程兼职的工作，尤其是周一和周二，工作量非常大，导致上周的周记延期三天才发出来。为了提高工作效率，同时不至于像上周那么累，这周开始严格使用番茄钟工作法，并用番茄钟来计算自己的工时。周二一共用了 16 个番茄钟，史上之最了。\r\n\r\n# 极简时钟 Android\r\n\r\n周六发现 GP 上 11 月 7 日这一天的日评分居然只有 2.5 ，着实震惊了一下。\r\n\r\n看了下用户的评论，发现有几个都是在反馈 app 在 Android 14 上面会出现崩溃。\r\n\r\n![]( https://img.way2solo.com/photo/vulgur/5631f63d-1eb6-4319-add8-dd3c339c9d55.jpeg?imageView2/2/w/1920/q/100)\r\n\r\n修复 bug 后，提交到 GP ，也顺利上架了，保险起见，先 5%分阶段发布。\r\n\r\n但是在国内安卓市场的上架就没那么顺利了。当时正值周末，而国内安卓市场需要等到下周才会审核，先提交看看吧。意料之外的是华为居然进行了审核，意料之中的是审核不通过。\r\n\r\n![]( https://img.way2solo.com/photo/vulgur/79661262-eb4c-4c08-9cc2-b01114fc199a.jpeg?imageView2/2/w/1920/q/100)\r\n\r\n审核未通过的原因第一点和之前的 vivo 给个理由是一样的，必须要有个**人工的在线客服**。就这个问题我之前也发邮件问过 vivo 的工作人员，答复就是简单的邮件反馈是不行的。\r\n\r\n![]( https://img.way2solo.com/photo/vulgur/c3af035c-0712-4a1b-9a67-cdae26c19020.jpeg?imageView2/2/w/1920/q/100)\r\n\r\n没办法，人在屋檐下，不得不低头。咨询了一下其他开发者，说在 App 内接入一个微信客服就可以了。我觉得这个解决方案是非常合适的，用户操作起来很方便，于是开始鼓捣这个微信客服的接入工作。想要开通微信客服，需要先开通企业微信，然后再关联 App ，但是我填入 AppID 总是提示参数不合法（一看就是程序员自己写的提示文案）。\r\n\r\n![]( https://img.way2solo.com/photo/vulgur/7f8ecbc9-c105-4259-bac9-6cb8b049d8c6.jpeg?imageView2/2/w/1920/q/100)\r\n\r\n折腾半天，问了客服才知道，原来想要微信客服成功关联 App ，必须先对企业微信进行认证，最低 300 ，呵呵。\r\n\r\n![]( https://img.way2solo.com/photo/vulgur/f7e6485c-122d-4bdb-8e24-d0ab3154fde8.jpeg?imageView2/2/w/1920/q/100)\r\n\r\n本着精益创业的精神，我没有掏这个 300 块，就为了满足市场离谱的审核要求花钱开通一个低频使用的功能，我还做不到。我们最后的方案就是仿照其他 app 的做法，留了企业微信的二维码和 QQ 群的二维码。\r\n\r\n# 用户反馈\r\n\r\n这周我的 Gmail Chrome 插件出了问题，而我一直都没发现，直到周日重启了一下电脑，这个插件才恢复正常，显示有几十个未读邮件，大部分都是关于 app 的反馈。周日下午又接到了一个江西妈妈的电话反馈，她在学习机上给孩子用极简时钟，向我咨询了两个问题。\r\n\r\n通过这些反馈又发现不少问题：\r\n\r\n- 极简日记的导出有 bug\r\n- 发现了极简时钟两个算是痛点的功能\r\n- 还有一个 2 星评价 😮‍💨\r\n\r\n> Not satisfied👎.\r\nThe flip animation is not showing. So much of facilities are shown premium. Settings section take a long time to show up. Should also have a sand timer. Takes a lots of battery.  Pomodoro one needs a time stopper. I would rate 2 stars for these dissatisfactions. Needs a lot of improvements and free features.\r\n> \r\n\r\n# Let’s xrOS\r\n\r\n![]( https://img.way2solo.com/photo/vulgur/3c973929-d1a1-4666-ab32-2bcccbca48ef.jpeg?imageView2/2/w/1920/q/100)\r\n\r\n周日看到「 XR 基地」创建者发了个动态，说要发布一个和 visionOS 有意思的项目，很是期待。没想到晚上他就联系我，提前把这个项目告诉了我，并且邀请我将我的 app 提交到平台上。关于这个平台的详细介绍，请看他们的这篇文章：[https://mp.weixin.qq.com/s/0gcncBqjLTmmiGbUuRIhAw]( https://mp.weixin.qq.com/s/0gcncBqjLTmmiGbUuRIhAw)。\r\n\r\n说实话，我以前只是把我的 app 运行到 visionOS 里看了一眼，然后就再没关注 visionOS 开发相关的东西了。得益于 SwiftUI ，我的 app 不需要做任何修改就可以运行在 visionOS 里面。这次我选择把时钟墙（ Clock Wall ）提交到 Let’s xrOS 里，按照文档一步步操作，很快就完成了。\r\n\r\n如果你也想和其他 visionOS 的开发者交流的话，欢迎加入。\r\n\r\n![]( https://img.way2solo.com/photo/vulgur/44dd6516-faf5-4c4a-a05b-3b33f11b9700.jpeg?imageView2/2/w/1920/q/100)\r\n\r\n\r\n# 双十一\r\n\r\n双十一结束了，简单说一下这期间买了什么：\r\n\r\n- 徕芬的电吹风，虽然我没体验过戴森的，但确实比之前用的 700 多块的飞利浦好很多，给女儿吹头发速度快不少，而且噪音也小很多\r\n- 两包明谦的咖啡豆，比之前喝的辛鹿贵不少，消费降级但是咖啡豆不能降级\r\n- 一年的百度网盘 SVIP ，一开始还绑定到了不常用的账号上，幸好百度网盘已经预料到这个问题了，按照文档顺利将会员转移到了常用账号\r\n- 室内回弹羽毛球，番茄钟的休息时段就打一会\r\n- 懒人床头支架，可以躺在床上看手机和平板\r\n- 一大堆磁吸环和一个磁吸球头，可以将手机和平板固定在家里任何位置\r\n\r\n![]( https://img.way2solo.com/photo/vulgur/a7f3255c-ff0d-49fe-9c0d-682f76dc66d1.jpeg?imageView2/2/w/1920/q/100)",
+  "content_rendered": "<h1>2023 ，1106-1112</h1>\n<p>这周的绝大部分时间还都是在做远程兼职的工作，尤其是周一和周二，工作量非常大，导致上周的周记延期三天才发出来。为了提高工作效率，同时不至于像上周那么累，这周开始严格使用番茄钟工作法，并用番茄钟来计算自己的工时。周二一共用了 16 个番茄钟，史上之最了。</p>\n<h1>极简时钟 Android</h1>\n<p>周六发现 GP 上 11 月 7 日这一天的日评分居然只有 2.5 ，着实震惊了一下。</p>\n<p>看了下用户的评论，发现有几个都是在反馈 app 在 Android 14 上面会出现崩溃。</p>\n<p><img alt=\"\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://img.way2solo.com/photo/vulgur/5631f63d-1eb6-4319-add8-dd3c339c9d55.jpeg?imageView2/2/w/1920/q/100\"/></p>\n<p>修复 bug 后，提交到 GP ，也顺利上架了，保险起见，先 5%分阶段发布。</p>\n<p>但是在国内安卓市场的上架就没那么顺利了。当时正值周末，而国内安卓市场需要等到下周才会审核，先提交看看吧。意料之外的是华为居然进行了审核，意料之中的是审核不通过。</p>\n<p><img alt=\"\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://img.way2solo.com/photo/vulgur/79661262-eb4c-4c08-9cc2-b01114fc199a.jpeg?imageView2/2/w/1920/q/100\"/></p>\n<p>审核未通过的原因第一点和之前的 vivo 给个理由是一样的，必须要有个<strong>人工的在线客服</strong>。就这个问题我之前也发邮件问过 vivo 的工作人员，答复就是简单的邮件反馈是不行的。</p>\n<p><img alt=\"\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://img.way2solo.com/photo/vulgur/c3af035c-0712-4a1b-9a67-cdae26c19020.jpeg?imageView2/2/w/1920/q/100\"/></p>\n<p>没办法，人在屋檐下，不得不低头。咨询了一下其他开发者，说在 App 内接入一个微信客服就可以了。我觉得这个解决方案是非常合适的，用户操作起来很方便，于是开始鼓捣这个微信客服的接入工作。想要开通微信客服，需要先开通企业微信，然后再关联 App ，但是我填入 AppID 总是提示参数不合法（一看就是程序员自己写的提示文案）。</p>\n<p><img alt=\"\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://img.way2solo.com/photo/vulgur/7f8ecbc9-c105-4259-bac9-6cb8b049d8c6.jpeg?imageView2/2/w/1920/q/100\"/></p>\n<p>折腾半天，问了客服才知道，原来想要微信客服成功关联 App ，必须先对企业微信进行认证，最低 300 ，呵呵。</p>\n<p><img alt=\"\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://img.way2solo.com/photo/vulgur/f7e6485c-122d-4bdb-8e24-d0ab3154fde8.jpeg?imageView2/2/w/1920/q/100\"/></p>\n<p>本着精益创业的精神，我没有掏这个 300 块，就为了满足市场离谱的审核要求花钱开通一个低频使用的功能，我还做不到。我们最后的方案就是仿照其他 app 的做法，留了企业微信的二维码和 QQ 群的二维码。</p>\n<h1>用户反馈</h1>\n<p>这周我的 Gmail Chrome 插件出了问题，而我一直都没发现，直到周日重启了一下电脑，这个插件才恢复正常，显示有几十个未读邮件，大部分都是关于 app 的反馈。周日下午又接到了一个江西妈妈的电话反馈，她在学习机上给孩子用极简时钟，向我咨询了两个问题。</p>\n<p>通过这些反馈又发现不少问题：</p>\n<ul>\n<li>极简日记的导出有 bug</li>\n<li>发现了极简时钟两个算是痛点的功能</li>\n<li>还有一个 2 星评价 😮‍💨</li>\n</ul>\n<blockquote>\n<p>Not satisfied👎.\nThe flip animation is not showing. So much of facilities are shown premium. Settings section take a long time to show up. Should also have a sand timer. Takes a lots of battery.  Pomodoro one needs a time stopper. I would rate 2 stars for these dissatisfactions. Needs a lot of improvements and free features.</p>\n</blockquote>\n<h1>Let’s xrOS</h1>\n<p><img alt=\"\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://img.way2solo.com/photo/vulgur/3c973929-d1a1-4666-ab32-2bcccbca48ef.jpeg?imageView2/2/w/1920/q/100\"/></p>\n<p>周日看到「 XR 基地」创建者发了个动态，说要发布一个和 visionOS 有意思的项目，很是期待。没想到晚上他就联系我，提前把这个项目告诉了我，并且邀请我将我的 app 提交到平台上。关于这个平台的详细介绍，请看他们的这篇文章：<a href=\"https://mp.weixin.qq.com/s/0gcncBqjLTmmiGbUuRIhAw\" rel=\"nofollow\">https://mp.weixin.qq.com/s/0gcncBqjLTmmiGbUuRIhAw</a>。</p>\n<p>说实话，我以前只是把我的 app 运行到 visionOS 里看了一眼，然后就再没关注 visionOS 开发相关的东西了。得益于 SwiftUI ，我的 app 不需要做任何修改就可以运行在 visionOS 里面。这次我选择把时钟墙（ Clock Wall ）提交到 Let’s xrOS 里，按照文档一步步操作，很快就完成了。</p>\n<p>如果你也想和其他 visionOS 的开发者交流的话，欢迎加入。</p>\n<p><img alt=\"\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://img.way2solo.com/photo/vulgur/44dd6516-faf5-4c4a-a05b-3b33f11b9700.jpeg?imageView2/2/w/1920/q/100\"/></p>\n<h1>双十一</h1>\n<p>双十一结束了，简单说一下这期间买了什么：</p>\n<ul>\n<li>徕芬的电吹风，虽然我没体验过戴森的，但确实比之前用的 700 多块的飞利浦好很多，给女儿吹头发速度快不少，而且噪音也小很多</li>\n<li>两包明谦的咖啡豆，比之前喝的辛鹿贵不少，消费降级但是咖啡豆不能降级</li>\n<li>一年的百度网盘 SVIP ，一开始还绑定到了不常用的账号上，幸好百度网盘已经预料到这个问题了，按照文档顺利将会员转移到了常用账号</li>\n<li>室内回弹羽毛球，番茄钟的休息时段就打一会</li>\n<li>懒人床头支架，可以躺在床上看手机和平板</li>\n<li>一大堆磁吸环和一个磁吸球头，可以将手机和平板固定在家里任何位置</li>\n</ul>\n<p><img alt=\"\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://img.way2solo.com/photo/vulgur/a7f3255c-ff0d-49fe-9c0d-682f76dc66d1.jpeg?imageView2/2/w/1920/q/100\"/></p>\n",
+  "supplements": [],
+  "replies": [
+    {
+      "id": 13926282,
+      "author": "HiterPang",
+      "created": 1699897345,
+      "content": "赞一个，很充实",
+      "content_rendered": "赞一个，很充实"
+    },
+    {
+      "id": 13926490,
+      "author": "musi",
+      "created": 1699921571,
+      "content": "明谦的味道和辛鹿比怎么样",
+      "content_rendered": "明谦的味道和辛鹿比怎么样"
+    },
+    {
+      "id": 13926642,
+      "author": "seekafter",
+      "created": 1699923318,
+      "content": "没想到还能有妈妈给你打电话咨询问题.突然觉的好温暖",
+      "content_rendered": "没想到还能有妈妈给你打电话咨询问题.突然觉的好温暖"
+    },
+    {
+      "id": 13927363,
+      "author": "vulgur",
+      "created": 1699927671,
+      "content": "@musi 喝不出来……只要是新鲜的豆子我感觉都不错",
+      "content_rendered": "@<a href=\"/member/musi\">musi</a> 喝不出来……只要是新鲜的豆子我感觉都不错"
+    },
+    {
+      "id": 13927802,
+      "author": "winglight2016",
+      "created": 1699929979,
+      "content": "一大堆磁吸环和一个磁吸球头——这个稳不稳啊？可以发些照片看看吗？",
+      "content_rendered": "一大堆磁吸环和一个磁吸球头——这个稳不稳啊？可以发些照片看看吗？"
+    },
+    {
+      "id": 13928835,
+      "author": "s1mpleOf",
+      "created": 1699933402,
+      "content": "@musi 辛鹿很爛的。",
+      "content_rendered": "@<a href=\"/member/musi\">musi</a> 辛鹿很爛的。"
+    }
+  ],
+  "reply_pages": 1,
+  "fetched_at": "2026-10-06T03:33:21.400Z"
+}

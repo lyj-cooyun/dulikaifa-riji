@@ -1,0 +1,121 @@
+{
+  "id": 986660,
+  "title": "独立开发周记 #37：远程工作半个月",
+  "episode": {
+    "ep": 37,
+    "ep2": null
+  },
+  "node": "programmer",
+  "url": "https://www.v2ex.com/t/986660",
+  "created": 1698640289,
+  "last_touched": 1698668218,
+  "member": "vulgur",
+  "replies_count": 14,
+  "stars": 5,
+  "thanks": 0,
+  "content": "# 2023,1023-1029\r\n\r\n这期的封面图依然是由**DALL·E 3**生成的。上周为了 AI 扩图花了大量时间，这周我灵机一动，扩什么扩，直接生成三张，拼起来不就行了吗。\r\n\r\n![]( https://img.way2solo.com/photo/vulgur/2bc55bc1-0e04-43ea-b04f-fda06c0b8c09.jpeg?imageView2/2/w/1920/q/100)\r\n\r\n下周苹果又要开新品发布会了，但愿不会推出什么令我心动的产品，因为真的没钱了😭。\r\n\r\n# “有趣”的用户们\r\n\r\n这周碰到了三个用户反馈，很有意思，分享一下。\r\n\r\n第一个，你永远想象不到用户想如何使用你的 app 。\r\n\r\n![]( https://img.way2solo.com/photo/vulgur/51808d7e-84ce-4f34-9372-79ec8f8b4dcf.jpeg?imageView2/2/w/1920/q/100)\r\n\r\n第二个，你永远想象不到用户付费的理由。\r\n\r\n![]( https://img.way2solo.com/photo/vulgur/5a8e11b9-8fe7-4236-87d5-c15a59db8357.jpeg?imageView2/2/w/1920/q/100)\r\n\r\n第三个，你永远想象不到用户打五星的理由。\r\n\r\n![]( https://img.way2solo.com/photo/vulgur/6c3e719e-93c2-4d68-ba55-872907a2eb4b.jpeg?imageView2/2/w/1920/q/100)\r\n\r\n# 远程开发\r\n\r\n这周自己的 app 是一句代码也没写，都是在写兼职工作的代码，兼职快变成了全职了😂。\r\n\r\n远程开发半个月了，如我所愿，确实学到了很多。\r\n\r\n不过，有得也有失。\r\n\r\n好久都没写过这么多代码了，有两天比上班还累，靠着 4 杯咖啡和 2 瓶魔爪才顶过来。每天写完代码总想放松一下，结果就是刷手机到午夜之后。之前基本每天都能达到 7 小时的睡眠目标， 这半个月除了周末没有一天能达到。\r\n\r\n情绪上也焦虑许多，怕出错，怕耽误进度，一看到 Github 或者 Linear 的通知就紧张。\r\n\r\n这半个月一次游戏主机都没打开，反倒是比之前看了很多剧集。\r\n\r\n# 没有最暗，只有更暗\r\n\r\n上周连续两次刷新了日收入最低记录，这周再次刷新，至暗时刻第三次出现了。\r\n\r\n一天只有 35 块！就在数据推送之前，我还出去吃了顿盒饭，花了 16 元，还点了瓶 6 元的饮料，然后又去瑞幸买了杯 9.9 元的咖啡。看到数据后，很是懊悔……现在搞得我有点害怕这个数据推送了，通知蹦出来那一瞬间心跳骤停。\r\n\r\n![]( https://img.way2solo.com/photo/vulgur/ccf0cc9e-1c08-4167-9bf2-4d2931eb6a57.jpeg?imageView2/2/w/1920/q/100)\r\n\r\n收入不断下降，都下降到 RevenueCat 发邮件通知的地步了😂。\r\n\r\n![]( https://img.way2solo.com/photo/vulgur/cdf183e5-5503-4479-88b8-44b20286c3b9.jpeg?imageView2/2/w/1920/q/100)\r\n\r\n# 真男人就不应该上麻药\r\n\r\n常年腹泻的我，十年前做过一次肠镜。这么多年来，腹泻没有任何缓解，还不敢吃哥斯达黎加量天尺。\r\n\r\n本来应该更早再去做一次检查的，但是因为害怕，一拖再拖。\r\n\r\n十年过去了这项检查没有任何进步，还是要喝大量的泻药，而且还是要凌晨四点起来喝。\r\n\r\n为了省钱没有选择无痛的肠镜，全程非常顺利，15 分钟就完事了，没有息肉，只有一点结肠炎。综合 AI 的问诊结果，我应该大概率是肠易激综合征。\r\n\r\n做完后，在网上搜检查后多长时间可以进食，各个医生给出的答案从半小时到 6 小时不等……我选择的是两小时，在一家一直想去的日料店大吃一顿。\r\n\r\n![]( https://img.way2solo.com/photo/vulgur/da42b5a5-2c46-4e39-90f0-d799441544fd.jpeg?imageView2/2/w/1920/q/100)",
+  "content_rendered": "<h1>2023,1023-1029</h1>\n<p>这期的封面图依然是由<strong>DALL·E 3</strong>生成的。上周为了 AI 扩图花了大量时间，这周我灵机一动，扩什么扩，直接生成三张，拼起来不就行了吗。</p>\n<p><img alt=\"\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://img.way2solo.com/photo/vulgur/2bc55bc1-0e04-43ea-b04f-fda06c0b8c09.jpeg?imageView2/2/w/1920/q/100\"/></p>\n<p>下周苹果又要开新品发布会了，但愿不会推出什么令我心动的产品，因为真的没钱了😭。</p>\n<h1>“有趣”的用户们</h1>\n<p>这周碰到了三个用户反馈，很有意思，分享一下。</p>\n<p>第一个，你永远想象不到用户想如何使用你的 app 。</p>\n<p><img alt=\"\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://img.way2solo.com/photo/vulgur/51808d7e-84ce-4f34-9372-79ec8f8b4dcf.jpeg?imageView2/2/w/1920/q/100\"/></p>\n<p>第二个，你永远想象不到用户付费的理由。</p>\n<p><img alt=\"\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://img.way2solo.com/photo/vulgur/5a8e11b9-8fe7-4236-87d5-c15a59db8357.jpeg?imageView2/2/w/1920/q/100\"/></p>\n<p>第三个，你永远想象不到用户打五星的理由。</p>\n<p><img alt=\"\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://img.way2solo.com/photo/vulgur/6c3e719e-93c2-4d68-ba55-872907a2eb4b.jpeg?imageView2/2/w/1920/q/100\"/></p>\n<h1>远程开发</h1>\n<p>这周自己的 app 是一句代码也没写，都是在写兼职工作的代码，兼职快变成了全职了😂。</p>\n<p>远程开发半个月了，如我所愿，确实学到了很多。</p>\n<p>不过，有得也有失。</p>\n<p>好久都没写过这么多代码了，有两天比上班还累，靠着 4 杯咖啡和 2 瓶魔爪才顶过来。每天写完代码总想放松一下，结果就是刷手机到午夜之后。之前基本每天都能达到 7 小时的睡眠目标， 这半个月除了周末没有一天能达到。</p>\n<p>情绪上也焦虑许多，怕出错，怕耽误进度，一看到 Github 或者 Linear 的通知就紧张。</p>\n<p>这半个月一次游戏主机都没打开，反倒是比之前看了很多剧集。</p>\n<h1>没有最暗，只有更暗</h1>\n<p>上周连续两次刷新了日收入最低记录，这周再次刷新，至暗时刻第三次出现了。</p>\n<p>一天只有 35 块！就在数据推送之前，我还出去吃了顿盒饭，花了 16 元，还点了瓶 6 元的饮料，然后又去瑞幸买了杯 9.9 元的咖啡。看到数据后，很是懊悔……现在搞得我有点害怕这个数据推送了，通知蹦出来那一瞬间心跳骤停。</p>\n<p><img alt=\"\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://img.way2solo.com/photo/vulgur/ccf0cc9e-1c08-4167-9bf2-4d2931eb6a57.jpeg?imageView2/2/w/1920/q/100\"/></p>\n<p>收入不断下降，都下降到 RevenueCat 发邮件通知的地步了😂。</p>\n<p><img alt=\"\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://img.way2solo.com/photo/vulgur/cdf183e5-5503-4479-88b8-44b20286c3b9.jpeg?imageView2/2/w/1920/q/100\"/></p>\n<h1>真男人就不应该上麻药</h1>\n<p>常年腹泻的我，十年前做过一次肠镜。这么多年来，腹泻没有任何缓解，还不敢吃哥斯达黎加量天尺。</p>\n<p>本来应该更早再去做一次检查的，但是因为害怕，一拖再拖。</p>\n<p>十年过去了这项检查没有任何进步，还是要喝大量的泻药，而且还是要凌晨四点起来喝。</p>\n<p>为了省钱没有选择无痛的肠镜，全程非常顺利，15 分钟就完事了，没有息肉，只有一点结肠炎。综合 AI 的问诊结果，我应该大概率是肠易激综合征。</p>\n<p>做完后，在网上搜检查后多长时间可以进食，各个医生给出的答案从半小时到 6 小时不等……我选择的是两小时，在一家一直想去的日料店大吃一顿。</p>\n<p><img alt=\"\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://img.way2solo.com/photo/vulgur/da42b5a5-2c46-4e39-90f0-d799441544fd.jpeg?imageView2/2/w/1920/q/100\"/></p>\n",
+  "supplements": [],
+  "replies": [
+    {
+      "id": 13849086,
+      "author": "lanlanye",
+      "created": 1698641930,
+      "content": "非常佩服你，希望可以继续写下去🙏",
+      "content_rendered": "非常佩服你，希望可以继续写下去🙏"
+    },
+    {
+      "id": 13849114,
+      "author": "unspring",
+      "created": 1698642373,
+      "content": "可以看收入的是什么 APP 啊？",
+      "content_rendered": "可以看收入的是什么 APP 啊？"
+    },
+    {
+      "id": 13849177,
+      "author": "fengfuliu",
+      "created": 1698643317,
+      "content": "同问看收入的 app",
+      "content_rendered": "同问看收入的 app"
+    },
+    {
+      "id": 13850231,
+      "author": "Cmdhelp",
+      "created": 1698651595,
+      "content": "道哥加油",
+      "content_rendered": "道哥加油"
+    },
+    {
+      "id": 13850339,
+      "author": "Dotennin",
+      "created": 1698652543,
+      "content": "同主业, 偷偷干副业中(副业收入真的香, 比主业高多了:DOGE",
+      "content_rendered": "同主业, 偷偷干副业中(副业收入真的香, 比主业高多了:DOGE"
+    },
+    {
+      "id": 13850381,
+      "author": "coreki",
+      "created": 1698652858,
+      "content": "几十万月活，才几十元付费？可以试试加点广告了",
+      "content_rendered": "几十万月活，才几十元付费？可以试试加点广告了"
+    },
+    {
+      "id": 13850526,
+      "author": "pengtdyd",
+      "created": 1698654158,
+      "content": "问一下 RevenueCat 可以用在国内的 app 上吗，支持跳转到国内的支付宝或者微信吗还是只能用国外的。",
+      "content_rendered": "问一下 RevenueCat 可以用在国内的 app 上吗，支持跳转到国内的支付宝或者微信吗还是只能用国外的。"
+    },
+    {
+      "id": 13850529,
+      "author": "willis0611",
+      "created": 1698654174,
+      "content": "加油，身体是革命本钱，保重身体",
+      "content_rendered": "加油，身体是革命本钱，保重身体"
+    },
+    {
+      "id": 13850843,
+      "author": "vulgur",
+      "created": 1698656352,
+      "content": "@pengtdyd RC 是 App Store 和 Google Play 支付 API 的封装，跟支付宝和微信没关系",
+      "content_rendered": "@<a href=\"/member/pengtdyd\">pengtdyd</a> RC 是 App Store 和 Google Play 支付 API 的封装，跟支付宝和微信没关系"
+    },
+    {
+      "id": 13850845,
+      "author": "fuckfaker",
+      "created": 1698656374,
+      "content": "加油，我远程工作 4 年了，自己在家办公面对的诱惑太多，人已经很懒散了",
+      "content_rendered": "加油，我远程工作 4 年了，自己在家办公面对的诱惑太多，人已经很懒散了"
+    },
+    {
+      "id": 13850989,
+      "author": "sparrowMan",
+      "created": 1698657642,
+      "content": "@Dotennin #5 老哥能讲讲副业否   洗耳恭听",
+      "content_rendered": "@<a href=\"/member/Dotennin\">Dotennin</a> #5 老哥能讲讲副业否   洗耳恭听"
+    },
+    {
+      "id": 13851370,
+      "author": "FabioKou",
+      "created": 1698661018,
+      "content": "加油老哥！现在也有点想自己做点副业",
+      "content_rendered": "加油老哥！现在也有点想自己做点副业"
+    },
+    {
+      "id": 13852224,
+      "author": "92Developer",
+      "created": 1698677900,
+      "content": "@unspring 极简时钟、极简日记",
+      "content_rendered": "@<a href=\"/member/unspring\">unspring</a> 极简时钟、极简日记"
+    },
+    {
+      "id": 13853879,
+      "author": "wkong",
+      "created": 1698719331,
+      "content": "@fuckfaker 啥远程工作介绍个",
+      "content_rendered": "@<a href=\"/member/fuckfaker\">fuckfaker</a> 啥远程工作介绍个"
+    }
+  ],
+  "reply_pages": 1,
+  "fetched_at": "2026-10-06T03:33:23.772Z"
+}

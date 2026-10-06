@@ -1,0 +1,86 @@
+{
+  "id": 962857,
+  "title": "独立开发周记 #25：极简时钟六周年",
+  "episode": {
+    "ep": 25,
+    "ep2": null
+  },
+  "node": "programmer",
+  "url": "https://www.v2ex.com/t/962857",
+  "created": 1691327418,
+  "last_touched": 1691727156,
+  "member": "vulgur",
+  "replies_count": 9,
+  "stars": 2,
+  "thanks": 0,
+  "content": "# 2023 ，0731-0806\r\n\r\n这周去秦皇岛玩了四天，本来想把游记写进周记，但是感觉太个人太琐碎了，写出来的话会很长，而且也和开发无关，还是单独写一篇更好。\r\n\r\n# 7 月数据统计\r\n\r\n- iOS 下载量比上个月多了一丢丢，但是整体收入少了近 200 美元。极简时钟的收入减少，极简日记的收入增多。\r\n- Google Play 下载量减少了 22%，内购和 Admob 都下降了\r\n- 国内安卓市场里，极简时钟下载量暴增 40%，但是收入只多了 13%。极简日记的下载量增加 18%，但是收入却下降了 20%。\r\n\r\n# 极简日记 iOS （[App Store]( https://apps.apple.com/cn/app/id1568936702)）\r\n\r\n出发去旅游的前一天，本来是不想写任何代码的，但是一早起来就发现 App 有一个严重的 bug ，于是就开始修复。花了一上午终于修复了 bug ， 紧接着又遇到测试群里的用户反馈了一个 bug 。修好了用户反馈的 bug ，又看到了待办清单里的一条 bug ，感觉很快就能修好。就这么一天下来，修复了 3 个 bug ，提交了新版本 1.7.7 。\r\n\r\n# 极简时钟 iOS 六周年（[App Store]( https://apps.apple.com/cn/app/id1265404088)）\r\n\r\n在旅游回程的高铁上，突然发现极简时钟 iOS 上架 App Store 已经 6 年了。\r\n\r\n![]( https://img.way2solo.com/photo/vulgur/72fa1d0e-d3ac-4fe9-ac84-256b1212df8f.jpg?imageView2/2/w/1920/q/100)\r\n\r\n\r\n极简时钟目前的数据是：\r\n\r\n- 总下载量 324 万\r\n- 评分 4.7 ，评分总数量是 21655\r\n- 在 App Store 应用榜里最高排名第 6\r\n- **在 App Store 的任何一个版面里从未被推荐过**\r\n\r\n极简时钟在一年前全新改版升级，这一年来看整体收入提高很多。但是极简时钟最近是每况愈下，由于意外发生的变故更是前途未卜，不过我会一直做下去，即使不赚钱，永远保持开发这个 app 的初衷：**免费无广告**。\r\n\r\n**但行好事，莫问前程。**",
+  "content_rendered": "<h1>2023 ，0731-0806</h1>\n<p>这周去秦皇岛玩了四天，本来想把游记写进周记，但是感觉太个人太琐碎了，写出来的话会很长，而且也和开发无关，还是单独写一篇更好。</p>\n<h1>7 月数据统计</h1>\n<ul>\n<li>iOS 下载量比上个月多了一丢丢，但是整体收入少了近 200 美元。极简时钟的收入减少，极简日记的收入增多。</li>\n<li>Google Play 下载量减少了 22%，内购和 Admob 都下降了</li>\n<li>国内安卓市场里，极简时钟下载量暴增 40%，但是收入只多了 13%。极简日记的下载量增加 18%，但是收入却下降了 20%。</li>\n</ul>\n<h1>极简日记 iOS （<a href=\"https://apps.apple.com/cn/app/id1568936702\" rel=\"nofollow\">App Store</a>）</h1>\n<p>出发去旅游的前一天，本来是不想写任何代码的，但是一早起来就发现 App 有一个严重的 bug ，于是就开始修复。花了一上午终于修复了 bug ， 紧接着又遇到测试群里的用户反馈了一个 bug 。修好了用户反馈的 bug ，又看到了待办清单里的一条 bug ，感觉很快就能修好。就这么一天下来，修复了 3 个 bug ，提交了新版本 1.7.7 。</p>\n<h1>极简时钟 iOS 六周年（<a href=\"https://apps.apple.com/cn/app/id1265404088\" rel=\"nofollow\">App Store</a>）</h1>\n<p>在旅游回程的高铁上，突然发现极简时钟 iOS 上架 App Store 已经 6 年了。</p>\n<p><img alt=\"\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://img.way2solo.com/photo/vulgur/72fa1d0e-d3ac-4fe9-ac84-256b1212df8f.jpg?imageView2/2/w/1920/q/100\"/></p>\n<p>极简时钟目前的数据是：</p>\n<ul>\n<li>总下载量 324 万</li>\n<li>评分 4.7 ，评分总数量是 21655</li>\n<li>在 App Store 应用榜里最高排名第 6</li>\n<li><strong>在 App Store 的任何一个版面里从未被推荐过</strong></li>\n</ul>\n<p>极简时钟在一年前全新改版升级，这一年来看整体收入提高很多。但是极简时钟最近是每况愈下，由于意外发生的变故更是前途未卜，不过我会一直做下去，即使不赚钱，永远保持开发这个 app 的初衷：<strong>免费无广告</strong>。</p>\n<p><strong>但行好事，莫问前程。</strong></p>\n",
+  "supplements": [],
+  "replies": [
+    {
+      "id": 13457848,
+      "author": "ByteRan",
+      "created": 1691327918,
+      "content": "但行好事，莫问前程。",
+      "content_rendered": "但行好事，莫问前程。"
+    },
+    {
+      "id": 13457924,
+      "author": "freemoon",
+      "created": 1691329228,
+      "content": "整不错",
+      "content_rendered": "整不错"
+    },
+    {
+      "id": 13458191,
+      "author": "KiseXu",
+      "created": 1691333741,
+      "content": "免费无广告，那收入是哪里来的",
+      "content_rendered": "免费无广告，那收入是哪里来的"
+    },
+    {
+      "id": 13458197,
+      "author": "ggmood",
+      "created": 1691333877,
+      "content": "@KiseXu 可以有付费功能？",
+      "content_rendered": "@<a href=\"/member/KiseXu\">KiseXu</a> 可以有付费功能？"
+    },
+    {
+      "id": 13458607,
+      "author": "huhexian",
+      "created": 1691364826,
+      "content": "我在大学图书馆就看到不少人在学习的时候，用平板打开极简时钟，放在桌子上，不知道用的是不是你的产品，数量还是挺庞大的。",
+      "content_rendered": "我在大学图书馆就看到不少人在学习的时候，用平板打开极简时钟，放在桌子上，不知道用的是不是你的产品，数量还是挺庞大的。"
+    },
+    {
+      "id": 13460205,
+      "author": "bug123",
+      "created": 1691378804,
+      "content": "最好的结局是被收购",
+      "content_rendered": "最好的结局是被收购"
+    },
+    {
+      "id": 13460607,
+      "author": "fishworm",
+      "created": 1691382673,
+      "content": "但行好事，莫问前程。",
+      "content_rendered": "但行好事，莫问前程。"
+    },
+    {
+      "id": 13461315,
+      "author": "vulgur",
+      "created": 1691390572,
+      "content": "@huhexian 学生用户确实是最多的",
+      "content_rendered": "@<a href=\"/member/huhexian\">huhexian</a> 学生用户确实是最多的"
+    },
+    {
+      "id": 13628144,
+      "author": "egonet",
+      "created": 1694429716,
+      "content": "这是 fliqlo 吗",
+      "content_rendered": "这是 fliqlo 吗"
+    }
+  ],
+  "reply_pages": 1,
+  "fetched_at": "2026-10-06T03:33:37.704Z"
+}

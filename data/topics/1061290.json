@@ -1,0 +1,100 @@
+{
+  "id": 1061290,
+  "title": "独立开发周记 76：失败固然可怕，但朋友的成功更令人揪心",
+  "episode": {
+    "ep": 76,
+    "ep2": null
+  },
+  "node": "programmer",
+  "url": "https://www.v2ex.com/t/1061290",
+  "created": 1722336533,
+  "last_touched": 1722470938,
+  "member": "vulgur",
+  "replies_count": 11,
+  "stars": 9,
+  "thanks": 0,
+  "content": "# 2024 ，0722-0728\r\n一不留神，开发者群内的一个群友的产品爆了，日活 20W+，而且还在增长。于是群里其他众多群友纷纷发出了表情包：\r\n![]( https://img.way2solo.com/photo/vulgur/b945ded1-3aaa-4ac3-8bc8-09b59328c110.png?imageView2/2/w/1920/q/100)\r\n\r\n# 本周开发\r\n## 极简日记\r\n本来是想修一下用户反馈的 bug ，但是发现 backlog 里一个存了很久的功能感觉优先级更高一些，就是“左右滑动切换日期”。要实现这个功能就要打破之前的很多交互，比如每一条日记左划后出现操作按钮，比如拖动底部按钮出现跳转日期的按钮。\r\n\r\n一开始是用 GeometryReader + DragGesture 来实现的，Claude 和 ChatGPT 都没能给出完美的实现。后来改用 TabView ，交互上没什么问题，只是有一定概率会在左右滑动的时候卡在两个 Page 中间，搜了一圈问了一圈都没找到遇到类似问题的，也没找到解决方法。最后还是在 Github 上找到一个实现的不错的 package ，但是这个 package 的要求是 iOS 16.4+，而且如果 Page 里是 ScrollView 的话还不能上下滑动，只好魔改了一下，基本可用了。\r\n\r\n但是还有几个问题，预览不出现，内存占用，页面卡顿，sheet 乱弹……再加上还没解决的用户反馈的 bug ，感觉这一个星期也做不完。\r\n\r\n## 其他\r\n极简时钟的 App 内活动结束了，综合之前的几次，这个 App 内活动对于我来说实在是没啥用处。\r\n![]( https://img.way2solo.com/photo/vulgur/643e51fb-2c44-44fa-b6dd-6269736fabd6.png?imageView2/2/w/1920/q/100)\r\n\r\nHeal Clock 按照 GP 要求更新了订阅页面，提交后又被拒了，说是有闪退，但是我这边测试都没能复现，只好先提交一个内部测试，看测试报告没问题了才有提交，但是提交后每几分钟又被拒了，还是订阅页面的问题。这是我被拒最多的一个 App 了，太难了。\r\n\r\n新 App 只写了一天，还在写 CRUD ，在群友的帮助下搞定了一个 SwiftData 的 Predicate 不支持 enum 的问题，也搞定了一个困扰已久的一个数据结构。\r\n\r\n# 本周学习\r\n\r\n **[Play: The Secret Weapon for iOS Devs & Designers]( https://www.youtube.com/watch?v=oDz8hxWaIuE)**\r\n 一个叫做「 Play 」的原型设计工具的宣传视频，这个工具的目的就是统一设计师和开发者对 SwiftUI 的理解，其实更多的是让设计师去按照 SwiftUI 的设计规范和能力范围去做原型。这个工具不仅可以做出高保真的交互演示，还可以导出 SwiftUI 代码，给开发者和设计师省去了很多反复撕逼和返工的时间。\r\n\r\n![]( https://img.way2solo.com/photo/vulgur/eb05e36b-6486-4678-b551-8425db4d11cb.jpg?imageView2/2/w/1920/q/100)\r\n\r\n**[Swift Macros 101: Your Step-by-Step Guide To Crafting Your First Macro!]( https://www.youtube.com/watch?v=NGpM9-t9tgs)**\r\n针对 Swift 中 Macro 的简介，并且演示了如何新建一个将十进制数字转换成二进制的例子，看起来很麻烦啊。\r\n\r\n![]( https://img.way2solo.com/photo/vulgur/5ef2ef4d-d83d-42b7-a57c-16f85f73ae35.jpg?imageView2/2/w/1920/q/100)\r\n\r\n**[几个常见的关于 SwiftUI 的误解]( https://fatbobman.com/zh/posts/common-misconceptions-about-swiftui/)**\r\n肘子哥的文章每篇必读，准备采用文章里的建议对项目进行一些优化。\r\n\r\n**[From Idea to App Store: One Week in a Coding Retreat]( https://www.youtube.com/watch?v=ZhBzquzLRwM)**\r\n\r\n这个开发者记录了自己是如何在山林的静修小木屋里（荒无人烟的地方，像是自我封闭开发），在 7 天内构思、开发并上架 App Store 一款记录音频的 App 。\r\n- Day 1 ，用不到 10 行代码，在 Jupyter 上通过 Wisper 实现了语音转文字的 demo ，验证了自己的想法，没有画原型，也没有写其他代码\r\n- Day 2 ，原型设计，技术栈确定为 Flutter+Supabase （开发者自称不太了解），开始写代码，完成了将音频文件传输到后端的 API\r\n- Day 3 ，开始写 App ，因为 flutter 的一个久未更新的 library ，花了很多时间在解决音频文件的格式上，心情很糟，但是立志要在睡觉前解决，于是更换了 library ，重写了大量的代码，最终跑通了 demo ，可以将音频文件上传到后端、成功转成文字、生成总结和存储\r\n- Day 4 ，写 UI ，开发者自称最喜欢写 UI ，只需要一个屏幕接着一个屏幕实现原型就可以了\r\n- Day 5 ，给 App 的 UI 加上核心功能，用 MJ 生成了一个 App icon ，实现了用户的注册和登录，完成了 MVP\r\n- Day 6 ，实现剩余的边角料功能，因为跨平台的问题卡住了半天，晚上 19:50 完成了 final demo ，但还是有些小问题和小功能没有解决\r\n- Day 7 ，上架 App Store ，但是过程没有更详细的说明，毕竟上架工作也有很多，而且是否是一次就通过审核上架也没有说，但总之是最终上架了。\r\n\r\n看这个视频，我最开心也是最感同身受的就是第三天，这个开发者当时十分沮丧，但是到了晚上等到跑通的那一刻，所有压力和苦闷都烟消云散了。\r\n\r\n![]( https://img.way2solo.com/photo/vulgur/ae65cfac-b687-441e-b493-b3acf6d7a08a.jpg?imageView2/2/w/1920/q/100)\r\n\r\n**[Build performance analysis for speeding up Xcode builds]( https://www.avanderlee.com/optimization/analysing-build-performance-xcode/)**\r\n这一招我才学会，通过分析可以知道项目的编译时间都花在哪了。\r\n\r\n![]( https://img.way2solo.com/photo/vulgur/4d061b00-3c6c-44e2-a8c7-da756d7e0ea7.png?imageView2/2/w/1920/q/100)\r\n\r\n# 本周买买买\r\n这周买了三样东西，一个可升降的边桌，一个米家的吸管杯，在多抓鱼上花 100 元买的 5 本书。\r\n\r\n重点说一下这个边桌。我家没有茶几，每次吃饭的时候必须坐在饭桌上，电子榨菜只能靠手机或者平板来播放。我一直想给沙发买一个边桌，这样我既可以一边吃喝一边看电视，还可以坐在沙发上操作连着电视的电脑。最近天气越来越热了，我的电脑桌挨着阳面的窗台，空调还吹不到，加上两个外接显示器散发的热量，导致白天在电脑桌上写代码太痛苦了。到了晚上，因为孩子的屋子要开门通风，她还要求所有灯光和屏幕都要关闭，这时我就不能在电脑桌上办公了。所以，我需要一个可以移动的小桌子解决我以上的问题。\r\n\r\n挑了好久，最终确定的桌子功能是可移动+可升降。一开始相中的就是宜家的一款，但是我这没有宜家，算上邮费并不合算。在寻找平替的过程中，发现了网易严选的一款，和宜家同样的价格，还多了桌面旋转的功能，而且还包邮，于是立刻下单了。没想到收到货并组装完后，发现桌面不平，就是那个旋转的组件造成的，立刻退款退货了。这个桌面旋转其实还挺有用的，比如我最近在学尤克里里，用来放曲谱就特别合适。但是保险起见，还是放弃了桌面旋转，下单了乐歌的这一款，选择这一款有两个非常重要的理由，一是纯白色，二是这一款的最低高度和宜家同样是 65cm ，更适合我家的场景，而其他品牌最低高度都在 70cm 以上。\r\n\r\n![]( https://img.way2solo.com/photo/vulgur/530aaf22-73fc-4c25-995e-b89c18ee9731.jpeg?imageView2/2/w/1920/q/100)",
+  "content_rendered": "<h1>2024 ，0722-0728</h1>\n<p>一不留神，开发者群内的一个群友的产品爆了，日活 20W+，而且还在增长。于是群里其他众多群友纷纷发出了表情包：\n<img alt=\"\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://img.way2solo.com/photo/vulgur/b945ded1-3aaa-4ac3-8bc8-09b59328c110.png?imageView2/2/w/1920/q/100\"/></p>\n<h1>本周开发</h1>\n<h2>极简日记</h2>\n<p>本来是想修一下用户反馈的 bug ，但是发现 backlog 里一个存了很久的功能感觉优先级更高一些，就是“左右滑动切换日期”。要实现这个功能就要打破之前的很多交互，比如每一条日记左划后出现操作按钮，比如拖动底部按钮出现跳转日期的按钮。</p>\n<p>一开始是用 GeometryReader + DragGesture 来实现的，Claude 和 ChatGPT 都没能给出完美的实现。后来改用 TabView ，交互上没什么问题，只是有一定概率会在左右滑动的时候卡在两个 Page 中间，搜了一圈问了一圈都没找到遇到类似问题的，也没找到解决方法。最后还是在 Github 上找到一个实现的不错的 package ，但是这个 package 的要求是 iOS 16.4+，而且如果 Page 里是 ScrollView 的话还不能上下滑动，只好魔改了一下，基本可用了。</p>\n<p>但是还有几个问题，预览不出现，内存占用，页面卡顿，sheet 乱弹……再加上还没解决的用户反馈的 bug ，感觉这一个星期也做不完。</p>\n<h2>其他</h2>\n<p>极简时钟的 App 内活动结束了，综合之前的几次，这个 App 内活动对于我来说实在是没啥用处。\n<img alt=\"\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://img.way2solo.com/photo/vulgur/643e51fb-2c44-44fa-b6dd-6269736fabd6.png?imageView2/2/w/1920/q/100\"/></p>\n<p>Heal Clock 按照 GP 要求更新了订阅页面，提交后又被拒了，说是有闪退，但是我这边测试都没能复现，只好先提交一个内部测试，看测试报告没问题了才有提交，但是提交后每几分钟又被拒了，还是订阅页面的问题。这是我被拒最多的一个 App 了，太难了。</p>\n<p>新 App 只写了一天，还在写 CRUD ，在群友的帮助下搞定了一个 SwiftData 的 Predicate 不支持 enum 的问题，也搞定了一个困扰已久的一个数据结构。</p>\n<h1>本周学习</h1>\n<p><strong><a href=\"https://www.youtube.com/watch?v=oDz8hxWaIuE\" rel=\"nofollow\">Play: The Secret Weapon for iOS Devs &amp; Designers</a></strong>\n一个叫做「 Play 」的原型设计工具的宣传视频，这个工具的目的就是统一设计师和开发者对 SwiftUI 的理解，其实更多的是让设计师去按照 SwiftUI 的设计规范和能力范围去做原型。这个工具不仅可以做出高保真的交互演示，还可以导出 SwiftUI 代码，给开发者和设计师省去了很多反复撕逼和返工的时间。</p>\n<p><img alt=\"\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://img.way2solo.com/photo/vulgur/eb05e36b-6486-4678-b551-8425db4d11cb.jpg?imageView2/2/w/1920/q/100\"/></p>\n<p><strong><a href=\"https://www.youtube.com/watch?v=NGpM9-t9tgs\" rel=\"nofollow\">Swift Macros 101: Your Step-by-Step Guide To Crafting Your First Macro!</a></strong>\n针对 Swift 中 Macro 的简介，并且演示了如何新建一个将十进制数字转换成二进制的例子，看起来很麻烦啊。</p>\n<p><img alt=\"\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://img.way2solo.com/photo/vulgur/5ef2ef4d-d83d-42b7-a57c-16f85f73ae35.jpg?imageView2/2/w/1920/q/100\"/></p>\n<p><strong><a href=\"https://fatbobman.com/zh/posts/common-misconceptions-about-swiftui/\" rel=\"nofollow\">几个常见的关于 SwiftUI 的误解</a></strong>\n肘子哥的文章每篇必读，准备采用文章里的建议对项目进行一些优化。</p>\n<p><strong><a href=\"https://www.youtube.com/watch?v=ZhBzquzLRwM\" rel=\"nofollow\">From Idea to App Store: One Week in a Coding Retreat</a></strong></p>\n<p>这个开发者记录了自己是如何在山林的静修小木屋里（荒无人烟的地方，像是自我封闭开发），在 7 天内构思、开发并上架 App Store 一款记录音频的 App 。</p>\n<ul>\n<li>Day 1 ，用不到 10 行代码，在 Jupyter 上通过 Wisper 实现了语音转文字的 demo ，验证了自己的想法，没有画原型，也没有写其他代码</li>\n<li>Day 2 ，原型设计，技术栈确定为 Flutter+Supabase （开发者自称不太了解），开始写代码，完成了将音频文件传输到后端的 API</li>\n<li>Day 3 ，开始写 App ，因为 flutter 的一个久未更新的 library ，花了很多时间在解决音频文件的格式上，心情很糟，但是立志要在睡觉前解决，于是更换了 library ，重写了大量的代码，最终跑通了 demo ，可以将音频文件上传到后端、成功转成文字、生成总结和存储</li>\n<li>Day 4 ，写 UI ，开发者自称最喜欢写 UI ，只需要一个屏幕接着一个屏幕实现原型就可以了</li>\n<li>Day 5 ，给 App 的 UI 加上核心功能，用 MJ 生成了一个 App icon ，实现了用户的注册和登录，完成了 MVP</li>\n<li>Day 6 ，实现剩余的边角料功能，因为跨平台的问题卡住了半天，晚上 19:50 完成了 final demo ，但还是有些小问题和小功能没有解决</li>\n<li>Day 7 ，上架 App Store ，但是过程没有更详细的说明，毕竟上架工作也有很多，而且是否是一次就通过审核上架也没有说，但总之是最终上架了。</li>\n</ul>\n<p>看这个视频，我最开心也是最感同身受的就是第三天，这个开发者当时十分沮丧，但是到了晚上等到跑通的那一刻，所有压力和苦闷都烟消云散了。</p>\n<p><img alt=\"\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://img.way2solo.com/photo/vulgur/ae65cfac-b687-441e-b493-b3acf6d7a08a.jpg?imageView2/2/w/1920/q/100\"/></p>\n<p><strong><a href=\"https://www.avanderlee.com/optimization/analysing-build-performance-xcode/\" rel=\"nofollow\">Build performance analysis for speeding up Xcode builds</a></strong>\n这一招我才学会，通过分析可以知道项目的编译时间都花在哪了。</p>\n<p><img alt=\"\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://img.way2solo.com/photo/vulgur/4d061b00-3c6c-44e2-a8c7-da756d7e0ea7.png?imageView2/2/w/1920/q/100\"/></p>\n<h1>本周买买买</h1>\n<p>这周买了三样东西，一个可升降的边桌，一个米家的吸管杯，在多抓鱼上花 100 元买的 5 本书。</p>\n<p>重点说一下这个边桌。我家没有茶几，每次吃饭的时候必须坐在饭桌上，电子榨菜只能靠手机或者平板来播放。我一直想给沙发买一个边桌，这样我既可以一边吃喝一边看电视，还可以坐在沙发上操作连着电视的电脑。最近天气越来越热了，我的电脑桌挨着阳面的窗台，空调还吹不到，加上两个外接显示器散发的热量，导致白天在电脑桌上写代码太痛苦了。到了晚上，因为孩子的屋子要开门通风，她还要求所有灯光和屏幕都要关闭，这时我就不能在电脑桌上办公了。所以，我需要一个可以移动的小桌子解决我以上的问题。</p>\n<p>挑了好久，最终确定的桌子功能是可移动+可升降。一开始相中的就是宜家的一款，但是我这没有宜家，算上邮费并不合算。在寻找平替的过程中，发现了网易严选的一款，和宜家同样的价格，还多了桌面旋转的功能，而且还包邮，于是立刻下单了。没想到收到货并组装完后，发现桌面不平，就是那个旋转的组件造成的，立刻退款退货了。这个桌面旋转其实还挺有用的，比如我最近在学尤克里里，用来放曲谱就特别合适。但是保险起见，还是放弃了桌面旋转，下单了乐歌的这一款，选择这一款有两个非常重要的理由，一是纯白色，二是这一款的最低高度和宜家同样是 65cm ，更适合我家的场景，而其他品牌最低高度都在 70cm 以上。</p>\n<p><img alt=\"\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://img.way2solo.com/photo/vulgur/530aaf22-73fc-4c25-995e-b89c18ee9731.jpeg?imageView2/2/w/1920/q/100\"/></p>\n",
+  "supplements": [],
+  "replies": [
+    {
+      "id": 15059439,
+      "author": "Skifary",
+      "created": 1722336648,
+      "content": "不怕兄弟过的苦，就怕兄弟开路虎🤣",
+      "content_rendered": "不怕兄弟过的苦，就怕兄弟开路虎🤣"
+    },
+    {
+      "id": 15059588,
+      "author": "iorilu",
+      "created": 1722339065,
+      "content": "日活 20W+ 是啥项目, 能说说吗\r\n\r\n要想成功者学习阿",
+      "content_rendered": "日活 20W+ 是啥项目, 能说说吗<br /><br />要想成功者学习阿"
+    },
+    {
+      "id": 15059591,
+      "author": "sniperboy0829",
+      "created": 1722339076,
+      "content": "SwiftUI 真的好么，我 8+年 iOS native 开发，写 SwiftUI 代码的时候非常痛苦，理解不了 modifier 的使用，不知道该写在 VStack{}外部还是内部，看 API 时有一种 C++的感觉，generic 满天飞，外加不知道是注解还是 macro 的语法，让我一度怀疑我不会写 Swift ，已经决定弃坑 SwiftUI 了，下个项目该用 Flutter 看看",
+      "content_rendered": "SwiftUI 真的好么，我 8+年 iOS native 开发，写 SwiftUI 代码的时候非常痛苦，理解不了 modifier 的使用，不知道该写在 VStack{}外部还是内部，看 API 时有一种 C++的感觉，generic 满天飞，外加不知道是注解还是 macro 的语法，让我一度怀疑我不会写 Swift ，已经决定弃坑 SwiftUI 了，下个项目该用 Flutter 看看"
+    },
+    {
+      "id": 15059611,
+      "author": "chf007",
+      "created": 1722339407,
+      "content": "成功的被标题吸引进来了\r\n\r\n能不能说说群友的产品名是啥",
+      "content_rendered": "成功的被标题吸引进来了<br /><br />能不能说说群友的产品名是啥"
+    },
+    {
+      "id": 15059677,
+      "author": "AlwaysBee",
+      "created": 1722340499,
+      "content": "@sniperboy0829 SwiftUI 比起 UIKit 好理解太多了，从 3 年前开始，我就抛弃了 UIKit ，所有项目都用 SwiftUI ，开发效率直线上升",
+      "content_rendered": "@<a href=\"/member/sniperboy0829\">sniperboy0829</a> SwiftUI 比起 UIKit 好理解太多了，从 3 年前开始，我就抛弃了 UIKit ，所有项目都用 SwiftUI ，开发效率直线上升"
+    },
+    {
+      "id": 15061310,
+      "author": "92Developer",
+      "created": 1722391270,
+      "content": "@iorilu 好像是安卓远程类 app ，今年在 gp 爆了。另外，兄弟，最后一句大可不必说，都懂。\r\n@chf007 远程类 app 。",
+      "content_rendered": "@<a href=\"/member/iorilu\">iorilu</a> 好像是安卓远程类 app ，今年在 gp 爆了。另外，兄弟，最后一句大可不必说，都懂。<br />@<a href=\"/member/chf007\">chf007</a> 远程类 app 。"
+    },
+    {
+      "id": 15061640,
+      "author": "ckloy",
+      "created": 1722392912,
+      "content": "不说是对的 说了分分钟卷两个出来 :doge:",
+      "content_rendered": "不说是对的 说了分分钟卷两个出来 :doge:"
+    },
+    {
+      "id": 15061755,
+      "author": "ao99",
+      "created": 1722393452,
+      "content": "还能加群吗",
+      "content_rendered": "还能加群吗"
+    },
+    {
+      "id": 15063769,
+      "author": "andforce",
+      "created": 1722412475,
+      "content": "这个小桌子多少钱？",
+      "content_rendered": "这个小桌子多少钱？"
+    },
+    {
+      "id": 15065045,
+      "author": "vulgur",
+      "created": 1722429542,
+      "content": "@andforce 389",
+      "content_rendered": "@<a href=\"/member/andforce\">andforce</a> 389"
+    },
+    {
+      "id": 15081736,
+      "author": "xingcy",
+      "created": 1722829856,
+      "content": "开发者群能拉下不，同独立开发者创业中",
+      "content_rendered": "开发者群能拉下不，同独立开发者创业中"
+    }
+  ],
+  "reply_pages": 1,
+  "fetched_at": "2026-10-06T03:32:41.628Z"
+}

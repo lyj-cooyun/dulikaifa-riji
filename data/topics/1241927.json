@@ -1,0 +1,37 @@
+{
+  "id": 1241927,
+  "title": "独立开发周记 187：为 iPhone Duo 做好准备",
+  "episode": {
+    "ep": 187,
+    "ep2": null
+  },
+  "node": "isv",
+  "url": "https://www.v2ex.com/t/1241927",
+  "created": 1789376305,
+  "last_touched": 1789376494,
+  "member": "vulgur",
+  "replies_count": 2,
+  "stars": 0,
+  "thanks": 0,
+  "content": "# 2026 ，0907 ～ 0913\r\n\r\n苹果终于出了新形态的 iPhone ，名字起得挺好，剁，符合购买时的痛感。\r\n\r\n# 本周工作\r\n\r\n## 极简时钟 iOS\r\n\r\n在 iPhone Duo 正式发布之前两天，我才开始对极简时钟进行 iOS 27 的适配工作。\r\n\r\n在适配之前，我在 Device Hub 里运行极简时钟，尝试了各种屏幕比例下的效果，比较欣慰的是，大部分的主题都没问题，因为之前都是用 SwiftUI 做了自适应布局。\r\n\r\n剩下需要适配的主题大都是因为使用了 UIScreen 和魔数作为布局基础，参考了肘子哥的文章，[从 Size Class 到可用空间，horizontalSizeClass 还可靠吗？]( https://fatbobman.com/zh/posts/from-size-class-to-available-space/ \"从 Size Class 到可用空间，horizontalSizeClass 还可靠吗？\") ， 让 AI 花了两天都做好了。\r\n\r\n这个版本又顺便调整了一下关键词和 App 描述，极简时钟已经做好了迎接 iPhone Duo 的准备。\r\n\r\n\r\n![]( https://files.mdnice.com/user/73796/8e24d759-fb46-4bbb-9546-e0928ec3d62b.gif)\r\n\r\n\r\n周日上午去了一次小米之家，在小米 18 Fold 上安装了极简时钟体验了一番。虽然是极简时钟安卓版+其他折叠屏的组合，但是这大概就是极简时钟在 iPhone Duo 上的样子吧。\r\n\r\n\r\n![]( https://files.mdnice.com/user/73796/5ae60e7a-c5bc-489b-9841-b1c22c7982c9.jpg)\r\n\r\n\r\n## 极简时钟 Android\r\n\r\n\r\n最近总收到 GP 用户遇到无法恢复购买问题的邮件，安卓小哥说这是之前 RevenueCat 的一个 bug 导致的。解决方法有两个，一个就是给用户发免费兑换码，不过这只是临时应急，另一个就是按照 RC 给出的解决方案，根据订单号把权益绑定到新的 user id 上。于是安卓小哥部署了一个网页，专门用来解决这个问题。\r\n\r\nW2Solo 社区新推出一个独立开发 App 互推计划：**群星计划**。这个计划就是在 App 内推荐其他优秀的独立开发产品，\r\n\r\n\r\n\r\n![]( https://files.mdnice.com/user/73796/fefa0211-e0bb-4a47-ab69-55192a1e140a.png)\r\n\r\n\r\n\r\n群星计划的后台有完整的贡献和推荐机制，贡献越多，获得的推荐曝光也就越多。在接入的时候，我本来是想让 AI 读取这个接入文档后再写代码，没想到文档最后贴心地提供了接入 Prompt ，直接复制给 AI ，一次就 OK 了。还有一个官方的 Flutter 插件，可以一键接入。\r\n\r\n\r\n![]( https://files.mdnice.com/user/73796/f949822f-954c-40ce-99c7-63e628239877.png)\r\n\r\n\r\n目前群星计划还是通过邀请制加入，如果各位感兴趣的话可以先加入[W2Solo 社区]( https://w2solo.com \"W2Solo 社区\")，我之前的周记里提到的开发者群就是这个社区的，总有人问我如何入群，网站里有详细的入群规则和方法。\r\n\r\n# 代码之外\r\n\r\n## 打打打\r\n\r\n《鬼武者 剑之道》到手了，当晚就迫不及待开玩了。玩了三天后，我也同意几个游戏测评大 V 的说法，IGN 的 10 分对于这个游戏来说还是太高了。这个游戏长板和短板都非常明显，地图简单，支线无聊，素材重复率太高，Boss 数量少而且招式单调。\r\n\r\n不巧的是，我买的是日版，里面的兑换码我还用不了，淦！\r\n\r\n最讨厌的是，好不容易给 Boss 崩之一闪了，妈蛋居然还有三阶段！！！\r\n\r\n\r\n\r\n![]( https://files.mdnice.com/user/73796/1d043492-9e98-41eb-be03-6047bea62ea7.jpeg)\r\n\r\n\r\n\r\n## 面面面\r\n\r\n发现了一个离家特别近而且味道非常不错的面馆，之前一直以为是个垃圾饭店，没想到真是便宜又大碗。这周去吃了五次，拌宽板面、炸酱面、鸡架拌面、肉臊板面，取代了盒饭，成为了我新的午餐标准。\r\n\r\n\r\n![]( https://files.mdnice.com/user/73796/73b5bfcf-0d49-4304-8a6e-b7816bdb4ecd.jpeg)\r\n\r\n\r\n## 退退退\r\n\r\n硬装结束，开始购入各种厨卫电器，也开始了更糟心的一个阶段。\r\n\r\n餐桌椅，我在线下卖场看到一套非常喜欢的组合，但是椅子需要单独购买。在淘宝上，我看到了同样的组合，一桌四椅加起来还比卖场里的便宜几十块，果断就下单了。到货后，刚拼了一个椅子，发现缺了螺丝和垫片，商家说可以补发配件包，但是这桌子我妈和媳妇都嫌大，就直接退货了。\r\n\r\n浴室柜，为了团购价，多等了三天才下单。又等了三天终于到货了，但是安装时又出了幺蛾子。镜柜一个角破损了，接电后镜灯还不亮，于是申请了镜柜的换货。盆柜一个抽屉居然是歪的，师傅调了半天也没搞定，只好盆柜也申请了换货。从下单到安装，折腾一周，结果啥也没装上，心情差到极点。\r\n\r\n厨房水槽，我以为这东西没有什么科技含量，就买了一个配件丰富而且很便宜的，没想到配件质量特别差，根本用不住。全屋其他的厨卫电器安装我都在现场，唯独这个水槽我没在，师傅安装完我才知道。我发起了退货退款，还下单了更贵的大品牌，但是没想到水槽安装得十分结实根本拆不下来，只好取消退款凑合用了，也取消新的水槽订单。",
+  "content_rendered": "<h1>2026 ，0907 ～ 0913</h1>\n<p>苹果终于出了新形态的 iPhone ，名字起得挺好，剁，符合购买时的痛感。</p>\n<h1>本周工作</h1>\n<h2>极简时钟 iOS</h2>\n<p>在 iPhone Duo 正式发布之前两天，我才开始对极简时钟进行 iOS 27 的适配工作。</p>\n<p>在适配之前，我在 Device Hub 里运行极简时钟，尝试了各种屏幕比例下的效果，比较欣慰的是，大部分的主题都没问题，因为之前都是用 SwiftUI 做了自适应布局。</p>\n<p>剩下需要适配的主题大都是因为使用了 UIScreen 和魔数作为布局基础，参考了肘子哥的文章，<a href=\"https://fatbobman.com/zh/posts/from-size-class-to-available-space/\" rel=\"nofollow\" title=\"从 Size Class 到可用空间，horizontalSizeClass 还可靠吗？\">从 Size Class 到可用空间，horizontalSizeClass 还可靠吗？</a> ， 让 AI 花了两天都做好了。</p>\n<p>这个版本又顺便调整了一下关键词和 App 描述，极简时钟已经做好了迎接 iPhone Duo 的准备。</p>\n<p><img alt=\"\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://files.mdnice.com/user/73796/8e24d759-fb46-4bbb-9546-e0928ec3d62b.gif\"/></p>\n<p>周日上午去了一次小米之家，在小米 18 Fold 上安装了极简时钟体验了一番。虽然是极简时钟安卓版+其他折叠屏的组合，但是这大概就是极简时钟在 iPhone Duo 上的样子吧。</p>\n<p><img alt=\"\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://files.mdnice.com/user/73796/5ae60e7a-c5bc-489b-9841-b1c22c7982c9.jpg\"/></p>\n<h2>极简时钟 Android</h2>\n<p>最近总收到 GP 用户遇到无法恢复购买问题的邮件，安卓小哥说这是之前 RevenueCat 的一个 bug 导致的。解决方法有两个，一个就是给用户发免费兑换码，不过这只是临时应急，另一个就是按照 RC 给出的解决方案，根据订单号把权益绑定到新的 user id 上。于是安卓小哥部署了一个网页，专门用来解决这个问题。</p>\n<p>W2Solo 社区新推出一个独立开发 App 互推计划：<strong>群星计划</strong>。这个计划就是在 App 内推荐其他优秀的独立开发产品，</p>\n<p><img alt=\"\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://files.mdnice.com/user/73796/fefa0211-e0bb-4a47-ab69-55192a1e140a.png\"/></p>\n<p>群星计划的后台有完整的贡献和推荐机制，贡献越多，获得的推荐曝光也就越多。在接入的时候，我本来是想让 AI 读取这个接入文档后再写代码，没想到文档最后贴心地提供了接入 Prompt ，直接复制给 AI ，一次就 OK 了。还有一个官方的 Flutter 插件，可以一键接入。</p>\n<p><img alt=\"\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://files.mdnice.com/user/73796/f949822f-954c-40ce-99c7-63e628239877.png\"/></p>\n<p>目前群星计划还是通过邀请制加入，如果各位感兴趣的话可以先加入<a href=\"https://w2solo.com\" rel=\"nofollow\" title=\"W2Solo 社区\">W2Solo 社区</a>，我之前的周记里提到的开发者群就是这个社区的，总有人问我如何入群，网站里有详细的入群规则和方法。</p>\n<h1>代码之外</h1>\n<h2>打打打</h2>\n<p>《鬼武者 剑之道》到手了，当晚就迫不及待开玩了。玩了三天后，我也同意几个游戏测评大 V 的说法，IGN 的 10 分对于这个游戏来说还是太高了。这个游戏长板和短板都非常明显，地图简单，支线无聊，素材重复率太高，Boss 数量少而且招式单调。</p>\n<p>不巧的是，我买的是日版，里面的兑换码我还用不了，淦！</p>\n<p>最讨厌的是，好不容易给 Boss 崩之一闪了，妈蛋居然还有三阶段！！！</p>\n<p><img alt=\"\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://files.mdnice.com/user/73796/1d043492-9e98-41eb-be03-6047bea62ea7.jpeg\"/></p>\n<h2>面面面</h2>\n<p>发现了一个离家特别近而且味道非常不错的面馆，之前一直以为是个垃圾饭店，没想到真是便宜又大碗。这周去吃了五次，拌宽板面、炸酱面、鸡架拌面、肉臊板面，取代了盒饭，成为了我新的午餐标准。</p>\n<p><img alt=\"\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://files.mdnice.com/user/73796/73b5bfcf-0d49-4304-8a6e-b7816bdb4ecd.jpeg\"/></p>\n<h2>退退退</h2>\n<p>硬装结束，开始购入各种厨卫电器，也开始了更糟心的一个阶段。</p>\n<p>餐桌椅，我在线下卖场看到一套非常喜欢的组合，但是椅子需要单独购买。在淘宝上，我看到了同样的组合，一桌四椅加起来还比卖场里的便宜几十块，果断就下单了。到货后，刚拼了一个椅子，发现缺了螺丝和垫片，商家说可以补发配件包，但是这桌子我妈和媳妇都嫌大，就直接退货了。</p>\n<p>浴室柜，为了团购价，多等了三天才下单。又等了三天终于到货了，但是安装时又出了幺蛾子。镜柜一个角破损了，接电后镜灯还不亮，于是申请了镜柜的换货。盆柜一个抽屉居然是歪的，师傅调了半天也没搞定，只好盆柜也申请了换货。从下单到安装，折腾一周，结果啥也没装上，心情差到极点。</p>\n<p>厨房水槽，我以为这东西没有什么科技含量，就买了一个配件丰富而且很便宜的，没想到配件质量特别差，根本用不住。全屋其他的厨卫电器安装我都在现场，唯独这个水槽我没在，师傅安装完我才知道。我发起了退货退款，还下单了更贵的大品牌，但是没想到水槽安装得十分结实根本拆不下来，只好取消退款凑合用了，也取消新的水槽订单。</p>\n",
+  "supplements": [],
+  "replies": [
+    {
+      "id": 18083834,
+      "author": "JoeJoeJoe",
+      "created": 1789376494,
+      "content": "体验店安装 app 可还行? 打开了推广新思路",
+      "content_rendered": "体验店安装 app 可还行? 打开了推广新思路"
+    },
+    {
+      "id": 18084099,
+      "author": "vulgur",
+      "created": 1789379331,
+      "content": "@JoeJoeJoe 小米第一款折叠屏我就去过，华为的折叠屏我也这么干过",
+      "content_rendered": "@<a href=\"/member/JoeJoeJoe\">JoeJoeJoe</a> 小米第一款折叠屏我就去过，华为的折叠屏我也这么干过"
+    }
+  ],
+  "reply_pages": 1,
+  "fetched_at": "2026-10-06T03:30:35.066Z"
+}

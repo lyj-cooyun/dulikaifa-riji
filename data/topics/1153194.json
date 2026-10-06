@@ -1,0 +1,58 @@
+{
+  "id": 1153194,
+  "title": "独立开发周记 131：萃取代码的新设备",
+  "episode": {
+    "ep": 131,
+    "ep2": null
+  },
+  "node": "weekly",
+  "url": "https://www.v2ex.com/t/1153194",
+  "created": 1755502287,
+  "last_touched": 1755647969,
+  "member": "vulgur",
+  "replies_count": 5,
+  "stars": 0,
+  "thanks": 0,
+  "content": "# 2025,0811-0817\r\n\r\n践行了两个星期 18+6 饮食法（比 16+8 稍微严格一些），瘦了将近 5 斤。早上不吃早饭，中午十二点才开饭，下午六点前就吃完晚饭。这两个星期几乎没怎么出门，也就没什么大体力消耗，所以每天也没有什么饥饿感。\r\n\r\n# 本周工作\r\n\r\n这周所有的工作都是在继续开发单词 App 。\r\n\r\n和 GPT-5 结对编程，这一周推进的速度很快。和上一个 TF 版本对比，几乎把所有的布局和术语都重新设计了，还加入了更多类型的道具，整个核心游戏循环验证已经完成了。\r\n\r\nTodo list 还有很长很长，但是接下来的最重要的任务就是加入 Boss 战模式，丰富更多道具，以及新手引导。\r\n\r\nTF build 4 已经发布了，如果你对这种肉鸽类的单词游戏感兴趣的话，请告诉我你的邮箱，我把你加入到测试组里。\r\n\r\n\r\n![]( https://files.mdnice.com/user/73796/38166ce6-1339-48d6-a18d-c2639fd22588.jpeg)\r\n\r\n\r\n\r\n# 代码之外\r\n\r\n## 冲动消费\r\n\r\n毫无来由地，下单了一个全自动咖啡机。上午看的时候还是 2900 多，犹豫了一下，先加入到购物车里，然后就发现涨了 200 元……等到晚上又降价到 2800 多，立刻下单了，同时也下单了两包新豆子和两个新杯子。\r\n\r\n这些钱，我完全可以买一直心心念念的电纸书，或者加钱买个 XDS 公路车，不知道为什么就鬼迷心窍买了咖啡机。\r\n\r\n第二天咖啡机到了，但是豆子还没到，只好用之前买的豆子测试一下，没想到前年买的豆子喝起来也还不错，可能是我真的喝不出来什么区别吧。\r\n\r\n大数据是真厉害，我刚买了这款咖啡机，小红书上就全是这款咖啡机的笔记了，各种使用说明、清理技巧和豆子推荐。\r\n\r\n至此，家用的咖啡制作器具除了虹吸壶和聪明杯基本都全了。手冲杯、法压壶、手压式、摩卡壶、冷萃壶，半自动、胶囊机、全自动。果然是越喝越懒，目前来看还是咖啡胶囊最方便。\r\n\r\n\r\n![]( https://files.mdnice.com/user/73796/bcbb3d5e-8586-47f7-a6f1-a917424d7afb.jpeg)\r\n\r\n\r\n## 网红探店\r\n\r\n和朋友偶然去了一家泰式餐厅，一进去把我吓得差点退出来，整个餐厅都是小姑娘，只有我们两个老爷们，显得格格不入。原来这是一个网红打卡店，几乎每桌都点了特别出片的那两个菜品，不过有一说一，味道还不错。\r\n\r\n\r\n![]( https://files.mdnice.com/user/73796/85ef88ef-4db7-44c8-96c8-ea1bda08b89c.jpg)\r\n\r\n\r\n## 新键帽\r\n\r\n上周说了，那一套 SA 键帽中看不中用，这周新买的 MDA 键帽到了，这下完美了。这一套键帽敲起来就完全没有任何问题了，再配合上哒哒哒的麻将音，太享受了。\r\n\r\n\r\n![]( https://files.mdnice.com/user/73796/bdd8ca28-3ca1-4b6c-8f4b-1ebef744786b.jpeg)",
+  "content_rendered": "<h1>2025,0811-0817</h1>\n<p>践行了两个星期 18+6 饮食法（比 16+8 稍微严格一些），瘦了将近 5 斤。早上不吃早饭，中午十二点才开饭，下午六点前就吃完晚饭。这两个星期几乎没怎么出门，也就没什么大体力消耗，所以每天也没有什么饥饿感。</p>\n<h1>本周工作</h1>\n<p>这周所有的工作都是在继续开发单词 App 。</p>\n<p>和 GPT-5 结对编程，这一周推进的速度很快。和上一个 TF 版本对比，几乎把所有的布局和术语都重新设计了，还加入了更多类型的道具，整个核心游戏循环验证已经完成了。</p>\n<p>Todo list 还有很长很长，但是接下来的最重要的任务就是加入 Boss 战模式，丰富更多道具，以及新手引导。</p>\n<p>TF build 4 已经发布了，如果你对这种肉鸽类的单词游戏感兴趣的话，请告诉我你的邮箱，我把你加入到测试组里。</p>\n<p><img alt=\"\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://files.mdnice.com/user/73796/38166ce6-1339-48d6-a18d-c2639fd22588.jpeg\"/></p>\n<h1>代码之外</h1>\n<h2>冲动消费</h2>\n<p>毫无来由地，下单了一个全自动咖啡机。上午看的时候还是 2900 多，犹豫了一下，先加入到购物车里，然后就发现涨了 200 元……等到晚上又降价到 2800 多，立刻下单了，同时也下单了两包新豆子和两个新杯子。</p>\n<p>这些钱，我完全可以买一直心心念念的电纸书，或者加钱买个 XDS 公路车，不知道为什么就鬼迷心窍买了咖啡机。</p>\n<p>第二天咖啡机到了，但是豆子还没到，只好用之前买的豆子测试一下，没想到前年买的豆子喝起来也还不错，可能是我真的喝不出来什么区别吧。</p>\n<p>大数据是真厉害，我刚买了这款咖啡机，小红书上就全是这款咖啡机的笔记了，各种使用说明、清理技巧和豆子推荐。</p>\n<p>至此，家用的咖啡制作器具除了虹吸壶和聪明杯基本都全了。手冲杯、法压壶、手压式、摩卡壶、冷萃壶，半自动、胶囊机、全自动。果然是越喝越懒，目前来看还是咖啡胶囊最方便。</p>\n<p><img alt=\"\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://files.mdnice.com/user/73796/bcbb3d5e-8586-47f7-a6f1-a917424d7afb.jpeg\"/></p>\n<h2>网红探店</h2>\n<p>和朋友偶然去了一家泰式餐厅，一进去把我吓得差点退出来，整个餐厅都是小姑娘，只有我们两个老爷们，显得格格不入。原来这是一个网红打卡店，几乎每桌都点了特别出片的那两个菜品，不过有一说一，味道还不错。</p>\n<p><img alt=\"\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://files.mdnice.com/user/73796/85ef88ef-4db7-44c8-96c8-ea1bda08b89c.jpg\"/></p>\n<h2>新键帽</h2>\n<p>上周说了，那一套 SA 键帽中看不中用，这周新买的 MDA 键帽到了，这下完美了。这一套键帽敲起来就完全没有任何问题了，再配合上哒哒哒的麻将音，太享受了。</p>\n<p><img alt=\"\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://files.mdnice.com/user/73796/bdd8ca28-3ca1-4b6c-8f4b-1ebef744786b.jpeg\"/></p>\n",
+  "supplements": [],
+  "replies": [
+    {
+      "id": 16639978,
+      "author": "duuu",
+      "created": 1755503125,
+      "content": "键帽贵吗？最近在因为按键太尖锐烦恼，特别是 ctrl 键，有没有圆润的推荐的？",
+      "content_rendered": "键帽贵吗？最近在因为按键太尖锐烦恼，特别是 ctrl 键，有没有圆润的推荐的？"
+    },
+    {
+      "id": 16640246,
+      "author": "vulgur",
+      "created": 1755505413,
+      "content": "@duuu 我买的都是便宜货，PDD 上才 20 多",
+      "content_rendered": "@<a href=\"/member/duuu\">duuu</a> 我买的都是便宜货，PDD 上才 20 多"
+    },
+    {
+      "id": 16641813,
+      "author": "conge",
+      "created": 1755536989,
+      "content": "麻将音这样的键盘，\r\n在办公室里是不是就不太合适用啊？",
+      "content_rendered": "麻将音这样的键盘，<br />在办公室里是不是就不太合适用啊？"
+    },
+    {
+      "id": 16664031,
+      "author": "BeiChuanAlex",
+      "created": 1756071703,
+      "content": "op 你之前开发的 app 如果只有苹果平台有，想问一下，如何避免 android 这边抄袭，然后上架了同名的 app ，op 有遇到这种情况吗，怎么处理的。",
+      "content_rendered": "op 你之前开发的 app 如果只有苹果平台有，想问一下，如何避免 android 这边抄袭，然后上架了同名的 app ，op 有遇到这种情况吗，怎么处理的。"
+    },
+    {
+      "id": 16667428,
+      "author": "vulgur",
+      "created": 1756113619,
+      "content": "@BeiChuanAlex 遇到过，所以要申请商标，靠商标让对方改名/下架",
+      "content_rendered": "@<a href=\"/member/BeiChuanAlex\">BeiChuanAlex</a> 遇到过，所以要申请商标，靠商标让对方改名/下架"
+    }
+  ],
+  "reply_pages": 1,
+  "fetched_at": "2026-10-06T03:31:35.175Z"
+}

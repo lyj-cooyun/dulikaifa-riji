@@ -1,0 +1,73 @@
+﻿=== FILE 1015570 ===
+TITLE: 独立开发周记 #52：龙年大吉
+EP: 52 / 
+CREATED: 2024-02-14 10:18
+REPLIES_COUNT: 7
+--- CONTENT ---
+# 2023 ，第六周，0205-0211
+
+祝各位：龙年大吉， 龙腾四海， 生龙活虎，鱼跃龙门，龙马精神
+
+![]( https://img.way2solo.com/photo/vulgur/4976c78e-78f1-4150-8d2f-22ac9f30fef3.jpeg?imageView2/2/w/1920/q/100)
+
+# watchOS 开发
+
+年前的几天都在一边学一边做 watchOS 开发。以前总听说 watchOS 开发非常折磨人，一开始我还不信，现在我信了。
+
+- 能不能成功运行到真机上，全靠运气
+- 即使在真机上运行了，很快也会断开连接
+- Digital Crown 在 Preview 里是无效的
+- App Group 不能在 iOS 和 watchOS 之间共享 Core Data 和 UserDefaults
+- WatchConnectivity 只能传输一些简单类型，必须把复杂的数据结构拆成一个个字符串从一端传到另一端，然后再重新构建数据
+
+# 过年那些事
+
+## 张灯结彩
+
+去看了灯会，还不错，拍了几张特别满意的照片。
+
+![]( https://img.way2solo.com/photo/vulgur/5a15dec1-0bf3-4b73-8ef2-f7ae8c06be8f.jpeg?imageView2/2/w/1920/q/100)
+
+## 年年有余
+
+过年就是大盘大碗，大鱼大肉，大吃大喝。
+
+![]( https://img.way2solo.com/photo/vulgur/9ed07334-a60c-4b36-b541-f4b04297d23b.jpeg?imageView2/2/w/1920/q/100)
+
+## 好运连连
+
+日盼夜盼（等了差不多三个月），2 月 6 日终于收到了 Google Play 发来的礼物，是一张金属贴纸。
+
+逼格非常高，成为了我的 MacBook 上第一张贴纸。
+
+![]( https://img.way2solo.com/photo/vulgur/13decab2-7f84-4e36-aa75-585cc3d7305c.jpeg?imageView2/2/w/1920/q/100)
+
+## 招财进宝
+
+大年初二，打了一下午和一晚上麻将，胡了一把全场最大的。
+
+![]( https://img.way2solo.com/photo/vulgur/6104c38f-f0fc-466c-af53-04b7365b63ad.jpeg?imageView2/2/w/1920/q/100)
+
+## 事业有成
+
+是谁在大年三十晚上的鞭炮声声中还在提交代码？原来是我啊。
+
+![]( https://img.way2solo.com/photo/vulgur/4497e30e-2bde-4aec-9db9-2a3daacc5f1c.jpeg?imageView2/2/w/1920/q/100)
+
+## 开卷有益
+
+过年期间，基本没什么时间碰电脑，于是就选择了读书。初一和初二，两天读完了《 SwiftUI
+ 编程思想》。
+
+![]( https://img.way2solo.com/photo/vulgur/07d2d3c7-9492-438b-9d8e-ffe933afac24.jpeg?imageView2/2/w/1920/q/100)
+--- SUPPLEMENTS ---
+(none)
+--- REPLIES ---
+@lxrmido [02-14]: 新年快乐
+@BeiChuanAlex [02-14]: 第一张图片是 chatgpt 是生成的吗，chatgpt 不是有限制吗，怎么才能生成这么好的图片，求指教，谢谢啦。
+@onevcat [02-14]: 居然遇到了亲爱的读者！
+@3a10IgjVYjvsH93b [02-14]: 这帖纸怎么搞的 xd ， 确实可
+@vulgur [02-15]: @BeiChuanAlex 是 Dalle3 ，借用了别人用 MJ 的一段 prompt ，不过最终效果比 MJ 差很多
+@vulgur [02-15]: @einvcz 参加 Google Play 的季度政策在线研讨会，在线抽奖
+@vulgur [02-15]: @onevcat 居然收到了喵大的回复！
+

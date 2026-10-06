@@ -1,0 +1,144 @@
+=== TOPIC 925552 ===
+TITLE: 独立开发周记 #5 ——AI 助力
+EP: 5 / ep2=
+CREATED: 2023-03-20 14:48  (Beijing)
+MEMBER: vulgur  REPLIES_COUNT: 11  STARS: 14  THANKS: 3
+URL: https://www.v2ex.com/t/925552
+
+----- CONTENT (markdown) -----
+### 2023 年，0313-0319
+
+这周 AI 领域发生了很多事，GPT-4 ，Midjourney v5 ，文心一言。
+
+也做了很多事，这篇周记会很长。
+
+## 极简时钟
+
+### 小组件
+
+这周花了两天在极简时钟 iOS 的小组件的设计优化上，每天都耗时 10 个番茄钟左右。
+
+做过 iOS 小组件开发的可能都知道，这部分的开发工作太难搞了，Xcode 的预览有很多 bug ，每个机型上的小组件尺寸都不一样，debug 也基本不可用。这就导致了小组件开发就特别耗时耗力，只能是每改一点，就在真机运行一下，然后再调整。
+
+![]( https://img.way2solo.com/photo/vulgur/7c6f19f2-7685-45af-85a7-55334e7c6c6d.jpeg?imageView2/2/w/1920/q/100)
+
+### 本地化
+
+极简时钟 Android 在国内市场已经三个月没更新了，跟上个月同期对比这个月的下载量居然下降了一半。 周五的时候花了半天加入了新的翻页声音和法语本地化。
+
+![WechatIMG462.png]( https://img.way2solo.com/photo/vulgur/b56a8015-e060-410a-9d2c-68f58e24f47c.png?imageView2/2/w/1920/q/100)
+
+在 New Bing 和 ChatGPT 的帮助下，只用了 3 分钟就把法语本地化做好了，还顺便把其他语言的本地化整理了一下，然后又把 Google Play 上面大部份语言的详情页文案都优化了一下。
+
+本来我的 app 的本地化都是靠各个国家的用户志愿翻译的，但是经常要么找不到合适的 native speaker ，要么沟通不畅，要么翻译工作停滞不前。有了 AI 助力，我去掉了志愿翻译的入口，省去了大笔时间和精力。
+
+![SCR-20230317-rdaq.png]( https://img.way2solo.com/photo/vulgur/8df2e444-6f79-4e0b-b93d-0bbebed6c900.png?imageView2/2/w/1920/q/100)
+
+## 各种 AI
+
+### Stable Diffusion
+
+Midjourney 发布了 v5 版本，也看到了各种令人惊叹的作品，相比之下，Stable Diffusion 太难用了。Dreambooth 、Hypernetworks 、Embeddings 、Lora 、VAE ，还有各种 Sampling Method ，SD 的需要调教的参数太多太多了，生成一个好图比 Midjourney 复杂太多了。
+
+下图是帮朋友生成的机器人头像：
+
+![2141679215306_.pic.jpg]( https://img.way2solo.com/photo/vulgur/29d90732-e01e-4ed5-b1a9-90f4dc839d57.jpg?imageView2/2/w/1920/q/100)
+
+### Codeium
+
+据说是 GitHub Copilot 的免费版平替，在 Android Studio 和 VSCode 里都简单地试用了一下，确实不错。可惜还不支持 Xcode ，不过 CopilotForXcode 的开发者表示会和官方合作将 Codeium 整合到 Xcode 中，十分期待了！
+
+![iShot_2023-03-20_13.06.40.png]( https://img.way2solo.com/photo/vulgur/dc9ed1d5-809e-4e34-83ea-5fbca8f46963.png?imageView2/2/w/1920/q/100)
+
+### Cursor
+
+和 Codeium 同一天知道了 Cursor 这么一个 app ，简单体验了一下，感觉下周可以帮我一个大忙。极简时钟的服务端一直想迁移一下数据，从 Parse 到云数据库，有了这个利器应该可以不怎么费力就可以完成了。
+
+![iShot_2023-03-20_12.46.26.png]( https://img.way2solo.com/photo/vulgur/6ac0e321-65d6-42f5-ada7-017c62cd62d2.png?imageView2/2/w/1920/q/100)
+
+## 买买买
+
+### 胶囊咖啡机
+
+周六早上用得好好的心想咖啡胶囊机突然坏掉了，放进胶囊后不出液，上盖还死活打不开。然而大力没有出奇迹，多次尝试后最终把上盖给掰断了……只好再买一个，简单对比了一下，下单了米家咖啡胶囊机（其实也是心想代工的）。
+
+简单对比一下，米家胶囊咖啡机的优点有：
+
+- 整体设计更简洁，米家一贯的设计风格
+- 杯架有两个可调高度，可以用高一点的杯子接咖啡了
+- 上盖看起来更结实一些
+- 水箱外壳是磨砂的不是透明的，被阳光长时间直射后（可能）不容易长霉
+- 赠了 20 颗胶囊，是我最喜欢的 10 号和 12 号
+
+![“IMG_3762”大.jpeg]( https://img.way2solo.com/photo/vulgur/01a9353b-8d30-43b5-ab04-d6489ed40dc2.jpeg?imageView2/2/w/1920/q/100)
+
+### Niz 82 键盘
+
+上周提到的 Niz 键盘周二就收到了，总的来说非常满意，但还是有两点小遗憾：
+
+- 顶部的 F 功能键在 Mac 模式下并不是和 Mac 键盘一致的，不过我最常用的也就是音量和音乐的控制，还能忍
+- 自带的键帽不舒服，虽然想自己换一套，但是默认键帽的侧面带有各种功能的提示，用自己的键帽肯定会很不方便，除非自己把这些功能的按键组合先背下来
+
+![“IMG_3753”大.jpeg]( https://img.way2solo.com/photo/vulgur/de9331c7-9c40-4ff5-8d94-4818495ef17d.jpeg?imageView2/2/w/1920/q/100)
+
+## 电影和剧集
+
+好久都没看电影了，这周一口气看了三部电影：
+
+![IMG_3764.JPG]( https://img.way2solo.com/photo/vulgur/3db6e279-e889-48ff-a36a-b4c581678a00.jpg?imageView2/2/w/1920/q/100)
+
+- 黑豹 2 ，只有音乐是亮点，⭐️⭐️
+- Missing ，KevinTheeStallion 和 bus CAPTCHA 那里笑死了🤣，⭐️⭐️⭐️⭐️⭐️
+- 保你平安，一个好故事，越来越喜欢大鹏了，⭐️⭐️⭐️⭐️⭐️
+
+直到周五才看了 The Last Of Us 第一季最后一集，一句话总结就是：出色的还原，精彩的改编。
+
+![p2884221114.jpg]( https://img.way2solo.com/photo/vulgur/a9d49817-496d-428a-bb45-3ec6e9db08c2.jpg?imageView2/2/w/1920/q/100)
+
+第一次知道这个游戏还是 10 年前（ 2013 年）我在 Adobe 实习的时候。当时整个 Team 在做的就是给欧洲索尼的 PlayStation 做网站（是的，Adobe 也做外包），网站的首页大图就有这个游戏。Team 中一个大哥就一直在夸这款游戏，自己玩了两遍，还说要留给他儿子玩😂。而我是去年才在 PS4 上玩了这款游戏，连着玩了第一部和第二部，通关后听各种播客和视频讲解，回味无穷。
+
+
+[公众号原文]( https://mp.weixin.qq.com/s/SQ--meCI_Gz47Xx7CtMQKA)
+
+----- SUPPLEMENTS -----
+(none)
+
+----- REPLIES -----
+>> @xieren58 (2023-03-20 14:54):
+Cool, 🆙...
+
+>> @erguotou521 (2023-03-20 15:03):
+你好，这个 Cursor 是什么产品可以分享下么
+
+>> @jatsz (2023-03-20 15:24):
+@erguotou521 应该是： https://www.cursor.so/
+
+>> @king888 (2023-03-20 15:43):
+Cursor 用了几日，整体体验不错的，之前我分享过，CTRL+L 还可当做 GPT-4 客户端，目前可以白嫖，良性发展将来是要收费的，且用且珍惜
+
+>> @ryHope (2023-03-20 17:36):
+键盘手托可以分享下吗
+
+>> @QingXuJiaZhi (2023-03-20 18:03):
+独立开发的工作与生活分享，在 V 站这里也看过一些，楼主这篇出乎意料的好，言之有物，详略得当，也不浮躁。
+
+>> @yimity (2023-03-21 10:00):
+想知道下楼主从 Parse 迁到了哪个云数据库。感谢。
+
+>> @vulgur (2023-03-21 11:40):
+@yimity 准备迁到腾讯云的 mysql ，不过还没开始弄
+
+>> @MannyGPT (2023-03-21 22:11):
+@vulgur 刚才用了下 Codeium,感觉，很 stupid ，是我的错觉吗，不如 tapnine
+
+>> @johnnyken996 (2023-03-31 08:22):
+AI 淘宝模特 /AI 电商模特
+电商模特有点重需要小团队支持
+
+产品：AI 模特，自动换衣出电商图
+功能：AI 自动实现淘宝模特展示图功能
+想法：利用 stable diffusion+ControlNet+inpaint 实现电商模特换衣
+
+>> @vulgur (2023-03-31 10:05):
+@johnnyken996 已经有人实现了
+

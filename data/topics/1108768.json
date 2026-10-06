@@ -1,0 +1,100 @@
+{
+  "id": 1108768,
+  "title": "独立开发周记 103： 1 月数据总结",
+  "episode": {
+    "ep": 103,
+    "ep2": null
+  },
+  "node": "programmer",
+  "url": "https://www.v2ex.com/t/1108768",
+  "created": 1738588284,
+  "last_touched": 1739155823,
+  "member": "vulgur",
+  "replies_count": 11,
+  "stars": 4,
+  "thanks": 0,
+  "content": "# 2025,0127-0202\r\n\r\n祝各位在蛇年里，如灵蛇般 **灵动智慧、游刃有余**，在人生的道路上 **化险为夷，步步高升**！愿 **好运如金蛇缠身，财富如瑞蛇蜿蜒而至**，所求皆如愿，所行皆坦途！\r\n（以上祝福语由 ChatGPT 生成😜）\r\n\r\n# 1 月数据总结\r\n\r\n## 下载量（极简时钟）\r\n\r\n- App Store ，下降 13%\r\n- Google Play ，下降 3.77%\r\n- 国内安卓市场，下降 11.38%\r\n\r\n## 收入\r\n- App Store ，上升 0.53%\r\n- Google Play ，下降 12.54%\r\n- Admob ，下降 19.95%\r\n- 国内安卓市场，下降 9.3%\r\n\r\n极简便签的 DAU 已经马上赶上极简时钟了，但是日启动次数已经远超极简时钟了，应该发掘一下如何提高转化率了。\r\n\r\n极简时钟 tvOS 版本上个月的收入几乎达到了十倍的增长，只要起点够低，涨幅就能吓一跳。\r\n\r\n\r\n![]( https://files.mdnice.com/user/73796/33bc1543-fcb6-4c8d-89e6-2a4cd74eeda8.png)\r\n\r\n\r\n# 新年不停工\r\n\r\n大年初一，提交了极简时钟 iOS v4.8.2 ，修复了浮雕时钟的两个 bug：\r\n1. 在 iOS 17 以下的版本中阴影的 bug\r\n2. 数字 4 的阴影叠加位置有误的 bug\r\n\r\n没想到，SwiftUI 的 shadow 居然在 iOS 17 和以下系统版本上表现不一样，我找了一整个下午才找到这个原因。一开始还以为是半透明颜色的问题，后来以为是 border 的问题，最后才定位到是 shadow 的问题。\r\n\r\n大年初二，提交了极简日记 iOS v1.8.10 ，优化了标签选择的性能，消除了之前的卡顿。\r\n\r\n大年初三，优化了极简时钟 iOS 里浮雕时钟的一个动画，但是没有提交。\r\n\r\n大年初五，提交了极简日记 iOS v1.8.11 ，修复了长按进行语音输入在 iOS 18 后就失效的 bug 。\r\n\r\n除了初一那天时间比较多，UI 方面的代码都是自己写的，其余几天真正的工作时间非常少，绝大部分都是 Windsurf 给解决的。过年期间，苹果的审核速度也很快，三次提交都是在 24 小时内就通过审核了，最快的一个是几个小时。\r\n\r\n这周的工作场景是，孩子在旁边看功夫熊猫电影，我把问题交给 AI 后就转身跟着孩子看一会，等 AI 输出完了，我再确认和测试，如此反复。老婆看我总是转身看电视，还以为我没在工作，我就说以后的开发工作基本就是这个样子的了。\r\n\r\n# DeepSeek 试用\r\n\r\n这周使用了几次 DeepSeek 。\r\n\r\n第一次就是用 DeepSeek 的 app ，问了关于 CoreML 的问题，返回：服务器繁忙，请稍后再试。\r\n\r\n第二次是用 Windsurf  写代码。Windsurf 更新后集成了 DeepSeek 和 o3-mini ，用这两个模型尝试解决极简日记的一个 bug ，但是都没搞定，最后还是靠 Claude 3.5 解决了。\r\n\r\n第三次是遇到了一个抉择难题，续费 XGP 还是续费 PS 会员，我把各种情况都提供给它，包括机型、价格变动、已经购买的和即将发售的游戏等信息，最终它库库库分析一大堆，给出了一个逻辑严密、无可置疑的结论。\r\n\r\n目前仅从我的使用经验来看，在 AI 辅助编程方面，DeepSeek 还是不如 Claude 3.5 ，很多国外开发者也是这个看法。可能让它从零写一个东西表现得还不错，但是阅读并修改一个项目中的代码，调教得还是不如 Claude 。不过，也有一种可能，Claude 的成功是建立在 DeepSeek 失败的基础上的，因为我是把 DeepSeek 给出的错误修改都让 Claude 都排除掉了，所以 Claude 才找到了正确的解决方案。\r\n\r\n\r\n![]( https://files.mdnice.com/user/73796/aa9a602e-c1e4-467b-b277-e8a8faccdc91.jpeg)\r\n\r\n# 代码之外\r\n\r\n## 读书\r\n\r\n断断续续看了好久，终于看完了宇治智子的《培养设计感》。这是之前在多抓鱼买的一堆设计书中的一个，就是一本很薄的小册子。看到品牌设计的时候，就顺手用 Figma 给工作室做了个简单的 logo 。\r\n\r\n\r\n![]( https://files.mdnice.com/user/73796/43220cba-c63f-469f-a0eb-805632a90dfb.png)\r\n\r\n另外，读这本书的时候，我一眼就看出这张图是什么 MV 了😜，果然这本书也是有年头了，国内出版是 2013 年，日本原版是 2011 年。\r\n\r\n\r\n![]( https://files.mdnice.com/user/73796/608b1701-9e2e-45ba-9822-06a83e667bd4.jpeg)\r\n\r\n\r\n\r\n## 游戏\r\n\r\n经过不懈努力和运气加持，小丑牌终于打出了科学计数法。\r\n\r\n\r\n![]( https://files.mdnice.com/user/73796/bc96280f-f335-4f91-a54e-5ce1a7434776.jpeg)\r\n\r\n\r\n根据 DeepSeek 的决策，续费了 PS 会员，但是没有玩新游戏，反而是重新开档了赛博朋克 2077 ，再次闯荡夜之城。\r\n\r\n## 影视\r\n\r\n春节档电影一部也没去看，实在是没时间，也没有好座位。\r\n\r\n在家把 Silo 第二季补完了，这一季确实推进得太慢了，也难怪豆瓣和 IMDB 的评分都不如第一季，但是整体来看质量还是不错的。我有一个发现，不一定对，主演同时也是主要制片人的影视剧都不会太差（挂名制片人要除外），我通过豆包和 DeepSeek 搜了一下，这样的组合很大概率就不会是烂片烂剧了，比如 Silo 就是 Rebecca Ferguson 既是主演又是执行制片人。\r\n\r\nSeverance 第二季也终于开播了，前两集比较平淡，第三集的结尾终于要开始大爆发了。看完 Silo 再看 Severance 真的和下面这个梗图一模一样，懂得都懂。\r\n\r\n\r\n![]( https://files.mdnice.com/user/73796/0bb1f4ee-d16a-4d8b-b08e-0ac8e77e7558.gif)\r\n---\r\n\r\n**独立开发不易，但道哥飞蛾投烛。**\r\n\r\n**感谢各位支持，助道哥飞黄腾达。**\r\n\r\n欢迎赏脸阅读我的独立开发周记，如果你觉得这一篇写得还不错的话，以下回应会令我无比开心，开了又开：\r\n\r\n- 点赞，开心一晚 😉\r\n- 在看，开心一天 😁\r\n- 分享，开心三天 😆\r\n- 赞赏，开心一周 😘\r\n\r\n也欢迎大家能与我交流关于独立开发的一切，更欢迎大家下载使用我的 App😄。\r\n\r\n- [极简时钟]( https://m.malink.cn/s/bURrEv)，极简主义的翻页时钟、番茄钟和正计时\r\n- [极简日记]( https://m.malink.cn/s/3YbiYb)，用时间轴随手记录生活\r\n- [极简便签]( https://m.malink.cn/s/yMvaMf)，支持 Markdown ，自定义分享图片，多种主题和布局\r\n- [Nut Goals]( https://apps.apple.com/cn/app/nut-goals/id6557039218)，像小松鼠一样记账、存钱、管理愿望清单\r\n\r\n\r\n![]( https://files.mdnice.com/user/73796/f6e50735-b4b4-49cf-8e80-b792fbd05b3e.jpg)",
+  "content_rendered": "<h1>2025,0127-0202</h1>\n<p>祝各位在蛇年里，如灵蛇般 <strong>灵动智慧、游刃有余</strong>，在人生的道路上 <strong>化险为夷，步步高升</strong>！愿 <strong>好运如金蛇缠身，财富如瑞蛇蜿蜒而至</strong>，所求皆如愿，所行皆坦途！\n（以上祝福语由 ChatGPT 生成😜）</p>\n<h1>1 月数据总结</h1>\n<h2>下载量（极简时钟）</h2>\n<ul>\n<li>App Store ，下降 13%</li>\n<li>Google Play ，下降 3.77%</li>\n<li>国内安卓市场，下降 11.38%</li>\n</ul>\n<h2>收入</h2>\n<ul>\n<li>App Store ，上升 0.53%</li>\n<li>Google Play ，下降 12.54%</li>\n<li>Admob ，下降 19.95%</li>\n<li>国内安卓市场，下降 9.3%</li>\n</ul>\n<p>极简便签的 DAU 已经马上赶上极简时钟了，但是日启动次数已经远超极简时钟了，应该发掘一下如何提高转化率了。</p>\n<p>极简时钟 tvOS 版本上个月的收入几乎达到了十倍的增长，只要起点够低，涨幅就能吓一跳。</p>\n<p><img alt=\"\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://files.mdnice.com/user/73796/33bc1543-fcb6-4c8d-89e6-2a4cd74eeda8.png\"/></p>\n<h1>新年不停工</h1>\n<p>大年初一，提交了极简时钟 iOS v4.8.2 ，修复了浮雕时钟的两个 bug：</p>\n<ol>\n<li>在 iOS 17 以下的版本中阴影的 bug</li>\n<li>数字 4 的阴影叠加位置有误的 bug</li>\n</ol>\n<p>没想到，SwiftUI 的 shadow 居然在 iOS 17 和以下系统版本上表现不一样，我找了一整个下午才找到这个原因。一开始还以为是半透明颜色的问题，后来以为是 border 的问题，最后才定位到是 shadow 的问题。</p>\n<p>大年初二，提交了极简日记 iOS v1.8.10 ，优化了标签选择的性能，消除了之前的卡顿。</p>\n<p>大年初三，优化了极简时钟 iOS 里浮雕时钟的一个动画，但是没有提交。</p>\n<p>大年初五，提交了极简日记 iOS v1.8.11 ，修复了长按进行语音输入在 iOS 18 后就失效的 bug 。</p>\n<p>除了初一那天时间比较多，UI 方面的代码都是自己写的，其余几天真正的工作时间非常少，绝大部分都是 Windsurf 给解决的。过年期间，苹果的审核速度也很快，三次提交都是在 24 小时内就通过审核了，最快的一个是几个小时。</p>\n<p>这周的工作场景是，孩子在旁边看功夫熊猫电影，我把问题交给 AI 后就转身跟着孩子看一会，等 AI 输出完了，我再确认和测试，如此反复。老婆看我总是转身看电视，还以为我没在工作，我就说以后的开发工作基本就是这个样子的了。</p>\n<h1>DeepSeek 试用</h1>\n<p>这周使用了几次 DeepSeek 。</p>\n<p>第一次就是用 DeepSeek 的 app ，问了关于 CoreML 的问题，返回：服务器繁忙，请稍后再试。</p>\n<p>第二次是用 Windsurf  写代码。Windsurf 更新后集成了 DeepSeek 和 o3-mini ，用这两个模型尝试解决极简日记的一个 bug ，但是都没搞定，最后还是靠 Claude 3.5 解决了。</p>\n<p>第三次是遇到了一个抉择难题，续费 XGP 还是续费 PS 会员，我把各种情况都提供给它，包括机型、价格变动、已经购买的和即将发售的游戏等信息，最终它库库库分析一大堆，给出了一个逻辑严密、无可置疑的结论。</p>\n<p>目前仅从我的使用经验来看，在 AI 辅助编程方面，DeepSeek 还是不如 Claude 3.5 ，很多国外开发者也是这个看法。可能让它从零写一个东西表现得还不错，但是阅读并修改一个项目中的代码，调教得还是不如 Claude 。不过，也有一种可能，Claude 的成功是建立在 DeepSeek 失败的基础上的，因为我是把 DeepSeek 给出的错误修改都让 Claude 都排除掉了，所以 Claude 才找到了正确的解决方案。</p>\n<p><img alt=\"\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://files.mdnice.com/user/73796/aa9a602e-c1e4-467b-b277-e8a8faccdc91.jpeg\"/></p>\n<h1>代码之外</h1>\n<h2>读书</h2>\n<p>断断续续看了好久，终于看完了宇治智子的《培养设计感》。这是之前在多抓鱼买的一堆设计书中的一个，就是一本很薄的小册子。看到品牌设计的时候，就顺手用 Figma 给工作室做了个简单的 logo 。</p>\n<p><img alt=\"\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://files.mdnice.com/user/73796/43220cba-c63f-469f-a0eb-805632a90dfb.png\"/></p>\n<p>另外，读这本书的时候，我一眼就看出这张图是什么 MV 了😜，果然这本书也是有年头了，国内出版是 2013 年，日本原版是 2011 年。</p>\n<p><img alt=\"\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://files.mdnice.com/user/73796/608b1701-9e2e-45ba-9822-06a83e667bd4.jpeg\"/></p>\n<h2>游戏</h2>\n<p>经过不懈努力和运气加持，小丑牌终于打出了科学计数法。</p>\n<p><img alt=\"\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://files.mdnice.com/user/73796/bc96280f-f335-4f91-a54e-5ce1a7434776.jpeg\"/></p>\n<p>根据 DeepSeek 的决策，续费了 PS 会员，但是没有玩新游戏，反而是重新开档了赛博朋克 2077 ，再次闯荡夜之城。</p>\n<h2>影视</h2>\n<p>春节档电影一部也没去看，实在是没时间，也没有好座位。</p>\n<p>在家把 Silo 第二季补完了，这一季确实推进得太慢了，也难怪豆瓣和 IMDB 的评分都不如第一季，但是整体来看质量还是不错的。我有一个发现，不一定对，主演同时也是主要制片人的影视剧都不会太差（挂名制片人要除外），我通过豆包和 DeepSeek 搜了一下，这样的组合很大概率就不会是烂片烂剧了，比如 Silo 就是 Rebecca Ferguson 既是主演又是执行制片人。</p>\n<p>Severance 第二季也终于开播了，前两集比较平淡，第三集的结尾终于要开始大爆发了。看完 Silo 再看 Severance 真的和下面这个梗图一模一样，懂得都懂。</p>\n<h2><img alt=\"\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://files.mdnice.com/user/73796/0bb1f4ee-d16a-4d8b-b08e-0ac8e77e7558.gif\"/></h2>\n<p><strong>独立开发不易，但道哥飞蛾投烛。</strong></p>\n<p><strong>感谢各位支持，助道哥飞黄腾达。</strong></p>\n<p>欢迎赏脸阅读我的独立开发周记，如果你觉得这一篇写得还不错的话，以下回应会令我无比开心，开了又开：</p>\n<ul>\n<li>点赞，开心一晚 😉</li>\n<li>在看，开心一天 😁</li>\n<li>分享，开心三天 😆</li>\n<li>赞赏，开心一周 😘</li>\n</ul>\n<p>也欢迎大家能与我交流关于独立开发的一切，更欢迎大家下载使用我的 App😄。</p>\n<ul>\n<li><a href=\"https://m.malink.cn/s/bURrEv\" rel=\"nofollow\">极简时钟</a>，极简主义的翻页时钟、番茄钟和正计时</li>\n<li><a href=\"https://m.malink.cn/s/3YbiYb\" rel=\"nofollow\">极简日记</a>，用时间轴随手记录生活</li>\n<li><a href=\"https://m.malink.cn/s/yMvaMf\" rel=\"nofollow\">极简便签</a>，支持 Markdown ，自定义分享图片，多种主题和布局</li>\n<li><a href=\"https://apps.apple.com/cn/app/nut-goals/id6557039218\" rel=\"nofollow\">Nut Goals</a>，像小松鼠一样记账、存钱、管理愿望清单</li>\n</ul>\n<p><img alt=\"\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://files.mdnice.com/user/73796/f6e50735-b4b4-49cf-8e80-b792fbd05b3e.jpg\"/></p>\n",
+  "supplements": [],
+  "replies": [
+    {
+      "id": 15856987,
+      "author": "konakona",
+      "created": 1738595370,
+      "content": "支持语音记账吗？\r\n\r\n我目前在用随手记 13 年左右，是记账的重度用户，不会轻易的脱离一个平台，除非支持语音记账，2333\r\n\r\n记账至少需要精确的选择类目，这样的账目才有回顾和二次分析的意义。如果能够通过指令简化 GUI 操作，我就有了换平台的打算。（譬如：“记录[在支付宝]消费 [30 元]用于[xxxx=>大类.默认第一类]”）",
+      "content_rendered": "支持语音记账吗？<br /><br />我目前在用随手记 13 年左右，是记账的重度用户，不会轻易的脱离一个平台，除非支持语音记账，2333<br /><br />记账至少需要精确的选择类目，这样的账目才有回顾和二次分析的意义。如果能够通过指令简化 GUI 操作，我就有了换平台的打算。（譬如：“记录[在支付宝]消费 [30 元]用于[xxxx=&gt;大类.默认第一类]”）"
+    },
+    {
+      "id": 15857057,
+      "author": "vulgur",
+      "created": 1738599186,
+      "content": "@konakona 不支持",
+      "content_rendered": "@<a href=\"/member/konakona\">konakona</a> 不支持"
+    },
+    {
+      "id": 15857187,
+      "author": "PandaIsGood",
+      "created": 1738616024,
+      "content": "独立开发者不容易，支持老哥",
+      "content_rendered": "独立开发者不容易，支持老哥"
+    },
+    {
+      "id": 15857326,
+      "author": "twinsant",
+      "created": 1738630709,
+      "content": "支持",
+      "content_rendered": "支持"
+    },
+    {
+      "id": 15858006,
+      "author": "22092",
+      "created": 1738656048,
+      "content": "会员续费问题，数据不足：\r\n\r\n1. PS 会员大约每隔 2 个月会有一次折扣，以 3 个月为周期，完全可以等到下一次折扣机会。\r\n\r\n2. 如果 XGP 完全到期，下次必须再购买 1 个月的 XGP ，才能由 XPC 进行天数转换。",
+      "content_rendered": "会员续费问题，数据不足：<br /><br />1. PS 会员大约每隔 2 个月会有一次折扣，以 3 个月为周期，完全可以等到下一次折扣机会。<br /><br />2. 如果 XGP 完全到期，下次必须再购买 1 个月的 XGP ，才能由 XPC 进行天数转换。"
+    },
+    {
+      "id": 15859406,
+      "author": "vulgur",
+      "created": 1738720506,
+      "content": "@22092 PS 会员春节和黑五是全年折扣最大的吧",
+      "content_rendered": "@<a href=\"/member/22092\">22092</a> PS 会员春节和黑五是全年折扣最大的吧"
+    },
+    {
+      "id": 15864444,
+      "author": "FATEQiang",
+      "created": 1738808685,
+      "content": "楼主,有问题想咨询一下你，可以加 v 聊聊不？感谢！ v:  txqlalala",
+      "content_rendered": "楼主,有问题想咨询一下你，可以加 v 聊聊不？感谢！ v:  txqlalala"
+    },
+    {
+      "id": 15868109,
+      "author": "jeesk",
+      "created": 1738850837,
+      "content": "老哥日活能到 100w 吗?",
+      "content_rendered": "老哥日活能到 100w 吗?"
+    },
+    {
+      "id": 15868163,
+      "author": "vulgur",
+      "created": 1738853416,
+      "content": "@jeesk 100W ？！有 1W 就不错了",
+      "content_rendered": "@<a href=\"/member/jeesk\">jeesk</a> 100W ？！有 1W 就不错了"
+    },
+    {
+      "id": 15868232,
+      "author": "jeesk",
+      "created": 1738856065,
+      "content": "@vulgur 不是说说能进小工具前 10 的， 日活都能到几千 w 吗",
+      "content_rendered": "@<a href=\"/member/vulgur\">vulgur</a> 不是说说能进小工具前 10 的， 日活都能到几千 w 吗"
+    },
+    {
+      "id": 15946159,
+      "author": "acidsweet",
+      "created": 1740398862,
+      "content": "佩服楼主的工作+生活状态",
+      "content_rendered": "佩服楼主的工作+生活状态"
+    }
+  ],
+  "reply_pages": 1,
+  "fetched_at": "2026-10-06T03:32:12.885Z"
+}

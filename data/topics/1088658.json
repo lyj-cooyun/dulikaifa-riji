@@ -1,0 +1,65 @@
+{
+  "id": 1088658,
+  "title": "独立开发周记 92：雨露均沾的一周",
+  "episode": {
+    "ep": 92,
+    "ep2": null
+  },
+  "node": "programmer",
+  "url": "https://www.v2ex.com/t/1088658",
+  "created": 1731330852,
+  "last_touched": 1731488827,
+  "member": "vulgur",
+  "replies_count": 6,
+  "stars": 5,
+  "thanks": 1,
+  "content": "# 2024,1104-1110\r\nM4 的 Mac mini 的评测解禁了，看完几个视频后立刻激情下单了。之前一直犹豫不决的一个因素是我还以为我现在的 M1 Pro 的 MBP 分期还没还完，心想着每个月要供两个 Mac 就有些压力山大，但仔细一查其实已经还完了 5 个月了。这次选的配置是 M4 Pro 满血版+64G+1T ，这好像是我有生以来买过最贵的东西了，从来没打过这么富裕的仗，希望能够挺五年。\r\n\r\n![]( https://files.mdnice.com/user/73796/c99c5e8f-0d33-4504-967d-67302c02bf84.jpeg)\r\n\r\n\r\n# 工作\r\n\r\n 这周代码没写多少，但是大部分 App 都照顾到了。\r\n\r\n## 极简时钟 iOS\r\n时隔五个月，终于要开始新表盘的开发了。又找了新的设计师，效率超级高，很快就做出来设计稿了。今年也快结束了，这个表盘估计就是今年最后一个了。极简时钟的设计师寻找工作一直不顺利，去年只上了一个新表盘，今年到目前为止也只有一个新表盘，还只是之前已经上架的时钟墙的优化版，并不能算是一个全新的表盘。不过我调整了针对设计上的执念，以后会加速新表盘的推出速度。\r\n\r\n最近三个月 ZFC iOS 的收入都在缓慢提升，还算欣慰，但其实除了提前显示 Paywall 什么也没做。\r\n\r\n## 极简时钟 Android\r\n和安卓小哥久违地开了一个半小时会议，商量把时钟墙的表盘加入到安卓版。\r\n\r\n通过这次交流，我其实还是一个任性的开发者，只想做自己想要的 App 和功能，而不是通过用用户和数据的反馈。按理说应该根据用户的反馈和需求去做功能，我反而解散了各个平台上所有的用户群，完全按照自己的意愿去迭代，确实该改一改。\r\n\r\n最近极简时钟在 GP 的下载量又开始下降了，而且日活都跌破一万了。距离上次更新快两个月了，也该更新一下了。\r\n\r\n![]( https://files.mdnice.com/user/73796/600b42bb-8a46-4962-acd8-558312b94830.png)\r\n\r\n## 极简日记 iOS\r\n提交了 1.8.6 ，修复了两个用户反馈的 bug：\r\n1. 分享日记时更改图片尺寸无效\r\n2. 在日记预览页面点击隐藏/显示按钮会导致页面闪烁\r\n \r\n而这两个 bug 并不是什么十分隐蔽或者很难触发的 bug ，就是在常用操作里必现的，由此可见极简日记也确实没多少人在用了😭。\r\n\r\n其中一个 bug 花了半天死活也找不到原因，最后索性把相关文件都喂给 Claude ，然后 Claude 一针见血直接指出了原因所在。\r\n\r\n## 极简日记 Android\r\n周末提交了 1.3.0 ，加入了可以选择日记范围进行分批导出数据的功能。另外第一次分渠道打包，终于可以看见各个商店的下载量占比了。\r\n\r\n\r\n![]( https://files.mdnice.com/user/73796/fa4ec83c-a30e-4633-9cce-e0397330b29f.png)\r\n\r\n## Nut Goals\r\n\r\n终于提交了 1.0.9 ，修复了两个问题：\r\n1. 提高列表滚动的体验  \r\n2. 修复键盘输入的 bug\r\n\r\n除此之外，还给这个 App 接入了 Mixpanel 。之前一直用的是 Firebase ，但是有两个问题一直不好用，一是国内网络无法上报事件，二是自定义的事件和参数不能很直观地看到统计结果。于是就用这个 App 作为试验尝试了一下 Mixpanel ，完美解决了上面两个问题。\r\n\r\n不过这个 Mixpanel 也有个坑，就是在 iOS App 里会让 accentColor 的设置无效，始终返回的是默认的系统蓝色。这个问题在官方 GitHub issue 里也存在，只能通过改变初始化 SDK 的时机来 workaround 。\r\n\r\n# 其他\r\n\r\n- 申请了苹果开发者账号的转移，由个人账号转到个人独资企业，还在进行中，下周分享整个过程。\r\n- 看完了《小而美》。前几章对于产品的各种操作和建议倒是收获很多，但是后面关于企业的就没什么共鸣了，因为我的工作室还没达到对应的阶段和规模。\r\n- 一天内一口气看完了《地狱公使》第二季。第一季的内容都忘了，我还事先在 B 站补了第一季的解说，但是第二季的观感还不如第一季，就是各种莫名其妙的情节，人物刻板，台词生硬，交代不全，据说还有第三季……但是打戏还不错，特别是第二集的追车戏，运镜绝了。\r\n- 在群友的诱惑下，开始定投纳斯达克基金。\r\n\r\n\r\n![]( https://files.mdnice.com/user/73796/84fa8027-be26-42e2-8887-2c2a650a8a05.jpeg)\r\n\r\n---\r\n\r\n欢迎赏脸阅读我的独立开发周记，如果你觉得这一篇写得还不错的话，以下回应会令我无比开心，开了又开：\r\n\r\n- 点赞，开心一晚 😉\r\n- 在看，开心一天 😁\r\n- 分享，开心三天 😆\r\n- 赞赏，开心一周 😘\r\n\r\n也欢迎大家能与我交流关于独立开发的一切，更欢迎大家下载使用我的 App😄。\r\n\r\n- 极简时钟，极简主义的翻页时钟、番茄钟和正计时\r\n- 极简日记，用时间轴随手记录生活\r\n- 极简便签，支持 Markdown ，自定义分享图片，多种主题和布局\r\n- Nut Goals ，像小松鼠一样记账、存钱、管理愿望清单\r\n\r\n![]( https://files.mdnice.com/user/73796/f6e50735-b4b4-49cf-8e80-b792fbd05b3e.jpg)",
+  "content_rendered": "<h1>2024,1104-1110</h1>\n<p>M4 的 Mac mini 的评测解禁了，看完几个视频后立刻激情下单了。之前一直犹豫不决的一个因素是我还以为我现在的 M1 Pro 的 MBP 分期还没还完，心想着每个月要供两个 Mac 就有些压力山大，但仔细一查其实已经还完了 5 个月了。这次选的配置是 M4 Pro 满血版+64G+1T ，这好像是我有生以来买过最贵的东西了，从来没打过这么富裕的仗，希望能够挺五年。</p>\n<p><img alt=\"\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://files.mdnice.com/user/73796/c99c5e8f-0d33-4504-967d-67302c02bf84.jpeg\"/></p>\n<h1>工作</h1>\n<p>这周代码没写多少，但是大部分 App 都照顾到了。</p>\n<h2>极简时钟 iOS</h2>\n<p>时隔五个月，终于要开始新表盘的开发了。又找了新的设计师，效率超级高，很快就做出来设计稿了。今年也快结束了，这个表盘估计就是今年最后一个了。极简时钟的设计师寻找工作一直不顺利，去年只上了一个新表盘，今年到目前为止也只有一个新表盘，还只是之前已经上架的时钟墙的优化版，并不能算是一个全新的表盘。不过我调整了针对设计上的执念，以后会加速新表盘的推出速度。</p>\n<p>最近三个月 ZFC iOS 的收入都在缓慢提升，还算欣慰，但其实除了提前显示 Paywall 什么也没做。</p>\n<h2>极简时钟 Android</h2>\n<p>和安卓小哥久违地开了一个半小时会议，商量把时钟墙的表盘加入到安卓版。</p>\n<p>通过这次交流，我其实还是一个任性的开发者，只想做自己想要的 App 和功能，而不是通过用用户和数据的反馈。按理说应该根据用户的反馈和需求去做功能，我反而解散了各个平台上所有的用户群，完全按照自己的意愿去迭代，确实该改一改。</p>\n<p>最近极简时钟在 GP 的下载量又开始下降了，而且日活都跌破一万了。距离上次更新快两个月了，也该更新一下了。</p>\n<p><img alt=\"\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://files.mdnice.com/user/73796/600b42bb-8a46-4962-acd8-558312b94830.png\"/></p>\n<h2>极简日记 iOS</h2>\n<p>提交了 1.8.6 ，修复了两个用户反馈的 bug：</p>\n<ol>\n<li>分享日记时更改图片尺寸无效</li>\n<li>在日记预览页面点击隐藏/显示按钮会导致页面闪烁</li>\n</ol>\n<p>而这两个 bug 并不是什么十分隐蔽或者很难触发的 bug ，就是在常用操作里必现的，由此可见极简日记也确实没多少人在用了😭。</p>\n<p>其中一个 bug 花了半天死活也找不到原因，最后索性把相关文件都喂给 Claude ，然后 Claude 一针见血直接指出了原因所在。</p>\n<h2>极简日记 Android</h2>\n<p>周末提交了 1.3.0 ，加入了可以选择日记范围进行分批导出数据的功能。另外第一次分渠道打包，终于可以看见各个商店的下载量占比了。</p>\n<p><img alt=\"\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://files.mdnice.com/user/73796/fa4ec83c-a30e-4633-9cce-e0397330b29f.png\"/></p>\n<h2>Nut Goals</h2>\n<p>终于提交了 1.0.9 ，修复了两个问题：</p>\n<ol>\n<li>提高列表滚动的体验  </li>\n<li>修复键盘输入的 bug</li>\n</ol>\n<p>除此之外，还给这个 App 接入了 Mixpanel 。之前一直用的是 Firebase ，但是有两个问题一直不好用，一是国内网络无法上报事件，二是自定义的事件和参数不能很直观地看到统计结果。于是就用这个 App 作为试验尝试了一下 Mixpanel ，完美解决了上面两个问题。</p>\n<p>不过这个 Mixpanel 也有个坑，就是在 iOS App 里会让 accentColor 的设置无效，始终返回的是默认的系统蓝色。这个问题在官方 GitHub issue 里也存在，只能通过改变初始化 SDK 的时机来 workaround 。</p>\n<h1>其他</h1>\n<ul>\n<li>申请了苹果开发者账号的转移，由个人账号转到个人独资企业，还在进行中，下周分享整个过程。</li>\n<li>看完了《小而美》。前几章对于产品的各种操作和建议倒是收获很多，但是后面关于企业的就没什么共鸣了，因为我的工作室还没达到对应的阶段和规模。</li>\n<li>一天内一口气看完了《地狱公使》第二季。第一季的内容都忘了，我还事先在 B 站补了第一季的解说，但是第二季的观感还不如第一季，就是各种莫名其妙的情节，人物刻板，台词生硬，交代不全，据说还有第三季……但是打戏还不错，特别是第二集的追车戏，运镜绝了。</li>\n<li>在群友的诱惑下，开始定投纳斯达克基金。</li>\n</ul>\n<p><img alt=\"\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://files.mdnice.com/user/73796/84fa8027-be26-42e2-8887-2c2a650a8a05.jpeg\"/></p>\n<hr/>\n<p>欢迎赏脸阅读我的独立开发周记，如果你觉得这一篇写得还不错的话，以下回应会令我无比开心，开了又开：</p>\n<ul>\n<li>点赞，开心一晚 😉</li>\n<li>在看，开心一天 😁</li>\n<li>分享，开心三天 😆</li>\n<li>赞赏，开心一周 😘</li>\n</ul>\n<p>也欢迎大家能与我交流关于独立开发的一切，更欢迎大家下载使用我的 App😄。</p>\n<ul>\n<li>极简时钟，极简主义的翻页时钟、番茄钟和正计时</li>\n<li>极简日记，用时间轴随手记录生活</li>\n<li>极简便签，支持 Markdown ，自定义分享图片，多种主题和布局</li>\n<li>Nut Goals ，像小松鼠一样记账、存钱、管理愿望清单</li>\n</ul>\n<p><img alt=\"\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://files.mdnice.com/user/73796/f6e50735-b4b4-49cf-8e80-b792fbd05b3e.jpg\"/></p>\n",
+  "supplements": [],
+  "replies": [
+    {
+      "id": 15518769,
+      "author": "zzzzaaa",
+      "created": 1731337431,
+      "content": "有博客嘛",
+      "content_rendered": "有博客嘛"
+    },
+    {
+      "id": 15518787,
+      "author": "vulgur",
+      "created": 1731337938,
+      "content": "@zzzzaaa 没有博客，有公众号",
+      "content_rendered": "@<a href=\"/member/zzzzaaa\">zzzzaaa</a> 没有博客，有公众号"
+    },
+    {
+      "id": 15521823,
+      "author": "nbboy",
+      "created": 1731390373,
+      "content": "感谢分享",
+      "content_rendered": "感谢分享"
+    },
+    {
+      "id": 15521973,
+      "author": "sadudgh",
+      "created": 1731391519,
+      "content": "感谢分享",
+      "content_rendered": "感谢分享"
+    },
+    {
+      "id": 15550962,
+      "author": "eatbye1",
+      "created": 1731921416,
+      "content": "@vulgur 公众号有二维码吗？另外能详细沟通转组织账号的过程和细节吗？",
+      "content_rendered": "@<a href=\"/member/vulgur\">vulgur</a> 公众号有二维码吗？另外能详细沟通转组织账号的过程和细节吗？"
+    },
+    {
+      "id": 15551602,
+      "author": "vulgur",
+      "created": 1731929864,
+      "content": "@eatbye1 https://v2ex.com/t/1090489#reply0",
+      "content_rendered": "@<a href=\"/member/eatbye1\">eatbye1</a> <a target=\"_blank\" href=\"https://v2ex.com/t/1090489#reply0\" rel=\"nofollow noopener\">https://v2ex.com/t/1090489#reply0</a>"
+    }
+  ],
+  "reply_pages": 1,
+  "fetched_at": "2026-10-06T03:32:23.919Z"
+}

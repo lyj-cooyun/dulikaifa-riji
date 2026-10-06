@@ -1,0 +1,90 @@
+=== TOPIC 929393 ===
+TITLE: 独立开发周报#7: 3 月总结
+EP: 7 / ep2=
+CREATED: 2023-04-03 13:33  (Beijing)
+MEMBER: vulgur  REPLIES_COUNT: 2  STARS: 3  THANKS: 0
+URL: https://www.v2ex.com/t/929393
+
+----- CONTENT (markdown) -----
+![]( https://img.way2solo.com/photo/vulgur/2a5d9b87-6595-4511-8108-89807efb93e1.jpeg?imageView2/2/w/1920/q/100)
+
+题图由 Bing Image Creator 生成
+
+## 2023 ，0327-0402
+
+三月结束，四月开始，2023 年的四分之一过去了。
+
+统计了一下 3 月的收入，各个市场全面下降。苹果还没打款，不过根据预估的付款信息来看，3 月的总收入比 2 月少了 6000 左右。
+
+## 节奏的变化
+
+从这周开始，每天中午去学校接孩子回家吃饭。这就给我原来的生活和工作节奏带来的极大的改变，每天中午多出来的两趟接送，就把白天的工作时间都分割开了，上午 8:30-11:30 和下午 1:30-4:30 这 6 个小时才是我的自由支配时间，再加上一些琐事，实际的时间更少。幸好这周还都不用我去给孩子做饭，不然上午就没有什么自由时间了。
+
+## 极简时钟 iOS （[App Store]( https://apps.apple.com/cn/app/id1265404088)）
+
+在统计 3 月份的数据时，发现极简时钟的下载量居然突破了 300 万，又一个百万达成。
+
+~~下载量突破 200 万是在 2021 年的 8 月， 距今差不多一年半了。不过从 2022 年开始，极简时钟的下载量就在逐渐下降，可能突破 400 万要等到两年后了。~~
+
+![]( https://img.way2solo.com/photo/vulgur/8174651a-76fb-4d06-8412-e06b0a1e9a84.jpeg?imageView2/2/w/1920/q/100)
+
+
+这周开始写极简时钟 v4.3.0 ，新特性里用到了 CoreMotion ，上周通过 Cursor 把 demo 给完成了，这周 Cursor 又立了大功。我需要计算手机在手持状态下左右摇摆的角度，在网上搜到的结果都是利用 CoreMotion 的 gravity 来实现的，反复试验后效果都不对，最后问了 Cursor ，给出的答案非常简单而且正确，就是用 attitude 就可以了。
+
+这周写代码的时间不多，再加上情绪上有些颓丧，导致新版本没怎么推进。😔
+
+## Stable Diffusion
+
+周六上午一口气体验了三个基于 apple 自己针对 Core ML 优化的 Stable Diffusion 客户端。
+
+### Diffusers ([‎App Store]( https://apps.apple.com/cn/app/diffusers/id1666309574?mt=12))
+
+HuggingFace 出品的 SD 客户端，功能非常少，感觉就是给初学者体验用的。
+
+![]( https://img.way2solo.com/photo/vulgur/60c0d600-92e7-4943-8b50-7acc41b3a70b.jpeg?imageView2/2/w/1920/q/100)
+
+
+### Mochi Diffusion ([Github]( https://github.com/godly-devotion/MochiDiffusion))
+
+这是个免费开源的 SD 客户端，比上面的 Diffusers 多了 scale 和图生图的功能。
+
+![]( https://img.way2solo.com/photo/vulgur/ba3a5e69-5f80-4f0d-8f36-e3493f4b47e5.jpeg?imageView2/2/w/1920/q/100)
+
+
+### Draw Things ([‎App Store]( https://apps.apple.com/cn/app/draw-things-ai-generation/id6444050820))
+
+这个 app 是这三个里功能最丰富的，令我意外的是它居然是免费的，甚至有些功能我都没在 webui 中发现。
+
+![]( https://img.way2solo.com/photo/vulgur/58e6d4a5-720b-40eb-8fb5-21a82c7064ea.jpeg?imageView2/2/w/1920/q/100)
+
+
+## 新装备
+
+设计师觉得我最近精神和身体状态都不太好，建议我每天抽点时间活动活动，于是送给我一套在家的健身套装：无绳跳绳，跳绳垫，拉力绳。
+
+最近没时间去打羽毛球了，天气又不太适合出去骑行，正好在家里练一练吧。
+
+之前在抖音上看到一个每天用无绳跳绳锻炼的人，从 190 多斤减到了 140 斤，希望我也能做到。
+
+![]( https://img.way2solo.com/photo/vulgur/d6413714-dd14-4437-a568-71878b78a799.jpeg?imageView2/2/w/1920/q/100)
+
+[公众号原文]( https://mp.weixin.qq.com/s/fvBSFgsJ2Fzmny78Vps4zA)
+
+## 往期周报
+* [#6]( https://www.v2ex.com/t/927541#reply4)
+* [#5]( https://www.v2ex.com/t/925552#reply9)
+* [#4]( https://www.v2ex.com/t/923622#reply10)
+* [#3]( https://www.v2ex.com/t/922106#reply2)
+* [#2]( https://www.v2ex.com/t/922062#reply4)
+* [#1]( https://www.v2ex.com/t/921926#reply3)
+
+----- SUPPLEMENTS -----
+(none)
+
+----- REPLIES -----
+>> @mineralsalt (2023-04-03 13:40):
+可以透露一下一个月总收入大概多少吗?
+
+>> @LIBQ (2023-04-03 14:34):
+比较好奇的还是收入跟后续规划
+

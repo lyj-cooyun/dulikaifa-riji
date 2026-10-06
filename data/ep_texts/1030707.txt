@@ -1,0 +1,64 @@
+﻿=== FILE 1030707 ===
+TITLE: 独立开发周记 60：而立有八
+EP: 60 / 
+CREATED: 2024-04-08 19:41
+REPLIES_COUNT: 0
+--- CONTENT ---
+# 2024 ，第 14 周，0401-0407
+为了缓解焦虑并提高专注，删除了即刻和抖音。
+但是小红书的代偿作用开始了……
+
+# 极简日记
+这周做了三件小事。
+* 图片显示模式加入了一个小图模式，之前只有缩略图和全尺寸的图片，要么太大要么太小，现在加入了一个看起来比较舒服的图片尺寸
+* 在生成分享图时可以选择图片大小，这是我自己的一个痛点，之前分享图中的图片大小是跟随全局设定的，不满意分享图效果的话只能改变设置再重新生成分享图
+* 重做了整个标签选择的 UI ，比起之前的版本，新页面不仅可以显示出更多的标签，还优化了选择的交互
+
+![]( https://img.way2solo.com/photo/vulgur/f6ad3e04-6240-496a-ab81-451130acbb5d.png?imageView2/2/w/1920/q/100)
+
+# Xcode
+这周我把 Xcode 升级到了 15.3 ，遇到了一系列的问题。
+
+首先是无法编译 firebase 的 package ，无论我如何清除缓存文件（ Build + DerivedData + SPM ）都无济于事，无奈只好退回了 15.2 。
+
+但是 15.2 又遇到了一个问题，所有的 package 都无法下载，提示是：
+>Package.resolved file is corrupted or malformed; fix or delete the file to continue: unknown ‘PinsStorage’ version ‘3’
+
+原因是 Xcode 15.2 不兼容 Xcode 15.3 生成的 Package.resolved ，解决办法就是删掉这个文件，让 Xcode 重新生成就 ok 了。
+这篇文章（[Package.resolved file is corrupted or malformed; fix or delete the file]( https://toyboy2.medium.com/package-resolved-file-is-corrupted-or-malformed-fix-or-delete-the-file-baeb572863fc)）里也提到了这个问题，不过据作者的实验，将 version 改成 2 也是可以解决问题的。
+
+# Swift&SwiftUI
+这周看了一个视频，[Swift has more formatters than you know! 🤯]( https://www.youtube.com/watch?v=PiXNgjsB6Y0)，才知道原来 Swift 还有这么多 formatter 。
+
+![]( https://img.way2solo.com/photo/vulgur/cc0eef2b-727f-45a3-9d47-87031575adff.jpeg?imageView2/2/w/1920/q/100)
+
+另外读了 5 篇 Swift With Majid 的 blog：
+- [Building async button in SwiftUI]( https://swiftwithmajid.com/2024/03/26/building-async-button-in-swiftui/)
+- [Where Swift Concurrency will run your function?]( https://swiftwithmajid.com/2024/03/20/where-swift-concurrency-will-run-your-function/)
+- [Global actors in Swift]( https://swiftwithmajid.com/2024/03/12/global-actors-in-swift/)
+- [Thread safety in Swift with actors]( https://swiftwithmajid.com/2023/09/19/thread-safety-in-swift-with-actors/)
+- [Thread safety in Swift with locks]( https://swiftwithmajid.com/2023/09/05/thread-safety-in-swift-with-locks/)
+
+# Obsidian
+之前我一直都是用 Notion 写周记的，但是 Notion 这种在线服务一旦出问题，轻则耽误工作，重则丢失资料。我的需求就是最基本的写写东西，用不上其他高级的功能，所以从上周开始，我改用 Obsidian 了。还有一个选择是 Logseq ，但是无论从名字还是图标上来看，还是 Obsidian 更胜一筹。
+
+之前一直听说这种双链的笔记可以构建自己的知识库，但是一直没有尝试过。通过一个 Chrome 插件可以一键将网页保存到 Obsidian 中，我就把上面提到的几篇 blog 都存了进去，加上了关联链接，看起来还不错。
+
+Obsidian 还有上千种第三方插件，对我来说，这种惊喜简直就像小学生发现了新文具一样。
+
+![]( https://img.way2solo.com/photo/vulgur/fee0aaef-4a48-4312-831c-99abc9590dc8.png?imageView2/2/w/1920/q/100)
+
+# 减肥第 5 周
+周五早上体重再创新低，但是晚上吃了碗热干面，第二天就涨称 3 斤。
+
+终于知道了 iOS 健康 App 中的有氧适能为什么时不时才有数据，有时即使有运动也不会数据，原因是只有进行步行、徒步、跑步这三种运动时，Apple Watch 才会进行有氧适能的测量。经过验证，确实这周的三个数据对应着我三次的户外步行。
+![]( https://img.way2solo.com/photo/vulgur/2be55f11-0e58-4fd4-96e8-07cc520eee0b.jpg?imageView2/2/w/1920/q/100)
+
+这周做力量训练时开始使用 App 进行记录。对比了 One More 和训记这两个 App ，各有千秋，也各有不足，但是最终选择了 One More 。作为健身刚入门的我来说，这些 App 都有点复杂。突然冒出了自己写一个健身 App 的念头，不过一想到这么多器械、动作、肌肉，就感觉头大。
+
+![]( https://img.way2solo.com/photo/vulgur/eb247f30-76b2-4c67-a304-d13cbc5af1df.png?imageView2/2/w/1920/q/100)
+--- SUPPLEMENTS ---
+(none)
+--- REPLIES ---
+(none)
+

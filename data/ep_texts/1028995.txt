@@ -1,0 +1,82 @@
+﻿=== FILE 1028995 ===
+TITLE: 独立开发周记 59： 3 月数据总结
+EP: 59 / 
+CREATED: 2024-04-02 09:13
+REPLIES_COUNT: 0
+--- CONTENT ---
+# 2024 ，第 13 周，0325-0331
+这周终于推进了一下 iOS App ，没想到还犯了个非常低级的错误。
+
+# 3 月数据
+下降，下降，还是下降！
+## 下载量（只统计极简时钟）
+- App Store ，下降 9.1%
+- Google Play ，下降 37.12%
+- 国内安卓市场，下降 21.02%
+
+## 收入
+* App Store ，下降 13%
+* Google Play ，下降 6.18%
+* Admob ，增长 0.83%
+* 国内安卓市场，下降 0.11%
+
+# [极简日记 iOS]( https://apps.apple.com/cn/app/id1568936702)
+这周提交了 v1.7.16 ，主要的更新内容是：
+- 修复导出时的闪退  
+- 优化导入  
+- 优化编辑
+
+## Privacy Info
+在上传 build 到 Connect 后，收到了这样的邮件。
+
+>**ITMS-91053: Missing API declaration** - Your app’s code in the “MinimalDiary” file references one or more APIs that require reasons, including the following API categories: NSPrivacyAccessedAPICategoryFileTimestamp. While no action is required at this time, starting May 1, 2024, when you upload a new app or app update, you must include a NSPrivacyAccessedAPITypes array in your app’s privacy manifest to provide approved reasons for these APIs used by your app’s code. For more details about this policy, including a list of required reason APIs and approved reasons for usage, visit: [https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_use_of_required_reason_api]( https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_use_of_required_reason_api).
+
+邮件里一共有六个这样的 Missing API declaration ，于是花了点时间，把这六个关于隐私权限的警告都解决了。在我看来，苹果这一规定完全是小题大做，涉及的隐私主要就是是否使用了 UserDefaults 和文件读写，可能 99% 的 App 都会用到这两个吧，都填写的话那还有什么意义呢。
+
+![]( https://img.way2solo.com/photo/vulgur/7316e563-0e96-4dca-ad37-2d9f9d294798.png?imageView2/2/w/1920/q/100)
+
+## 春季促销
+新版本上架后，我就开始了史上优惠力度最大的一次促销活动，限时一个月，终身会员的买断价格调整为 49 元。然后我就犯下了有史以来最大的一次操作失误，直接造成了促销上的巨大损失。
+
+![]( https://img.way2solo.com/photo/vulgur/457472a7-e159-410a-b31b-3ad724b4a96a.jpg?imageView2/2/w/1920/q/100)
+
+## 免费变收费
+宣传海报是提起一天（ 3 月 28 日）发出去的，到了第二天中午居然还没有一个付费，我就很奇怪。下午收到了两个用户的反馈，说价格还是 98 元，一开始我还以为是 App Store 的缓存问题，后来查了一下才发现 App Store 的价格生效时间是 UTC ，对应到中国大陆是下午三点才会生效。
+于是我打开了 Connect ，想把优惠价格设为立刻生效。结果，慌乱中出了大错，我并没有更改内购的价格，而是更改了 App 本身的价格……这下子一个一直免费的 App 立刻变成了需要付费 49 元才能下载的 App ，同时 App 内还有内购……在变成付费 App 后，极简日记立刻就进入了生活类付费 App 排行榜前 40……
+这一连串的操作，直接导致第一天一个付费都没有，白白浪费了促销的黄金首日。
+
+## 关于定价
+极简日记的下载量很少，收入更是少之甚少。
+最开始终身会员的定价是 60 元，后来我就想着改成 98 元，以此来刺激一下订阅的付费率，现在看来是完全失败了。
+所以这次我采用了「破发价」的 49 元，想看看付费率如何，但是目前来看，实验也失败了。
+所以我计划，这次促销结束后，取消终身会员，只留下月订阅和年订阅两种付费方案。
+
+# [极简时钟 iOS]( https://apps.apple.com/cn/app/id1265404088)
+周六上午提交了新版本的极简时钟 iOS ，两天过去了还没开始审核，距离上次更新版本已经两个月了。
+这次最主要的更新内容就是加入了西班牙语的本地化，希望能靠这个提升一下下载量。
+另外，打算过审上架后也进行一个促销活动。
+
+# SwiftUI
+这周把 WWDC23 里关于 SwiftData 的视频都看了，下周开始看肘子哥的文章。
+
+![]( https://img.way2solo.com/photo/vulgur/dee4a9c5-921c-4b7f-8377-4438b9dd5458.png?imageView2/2/w/1920/q/100)
+
+另外，两倍速看了 Sean Allen 的视频，[SwiftUI Toggle - Button & Switch Tutorial]( https://www.youtube.com/watch?v=-sw7gvNUboc)，才知道原来 Toggle 还有另外一种样式。
+
+![]( https://img.way2solo.com/photo/vulgur/d20216a4-afbd-4f37-80e7-92ba02e30ce4.jpg?imageView2/2/w/1920/q/100)
+
+# 减肥第四周
+这周因为天气，只在周一出去走了一次。然后去了三次健身房，都是力量+游泳。
+值得高兴的是，游泳的速度提升很多。
+体重稍有下降，但是微乎其微，BMI 没有任何变化。
+但是体脂率下降了，肌肉含量和基础代谢都有所提升。
+不知道为什么，有氧适能从周一后就没有新数据了。
+
+# 新测试机
+四年前给老丈人买的 Redmi 8 因为微信一直提示空间不足，撑到今天终于没法用了。于是给老丈人买了个 Redmi Note 13 ，这手机手感真是好啊，才 173g ，对比之下，我的 iPhone 15 Pro Max 简直沉得快拿不起来了。
+这个 Redmi 8 其实流畅性还不错，所以就作为我的新的安卓测试机了。而我上一个测试机是之前丈母娘退下来的 Redmi 6 Pro ，还是 micro USB 接口的。四老的手机都是我负责购买的，都是当时主打的 Redmi 千元机， 四人淘汰下来的手机就是我的测试机，而下一个等待我的测试机应该就是 Redmi Note 9 。
+--- SUPPLEMENTS ---
+(none)
+--- REPLIES ---
+(none)
+

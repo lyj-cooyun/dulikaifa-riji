@@ -1,0 +1,44 @@
+{
+  "id": 972842,
+  "title": "独立开发周记 #30：中间人攻击",
+  "episode": {
+    "ep": 30,
+    "ep2": null
+  },
+  "node": "programmer",
+  "url": "https://www.v2ex.com/t/972842",
+  "created": 1694438022,
+  "last_touched": 1694440118,
+  "member": "vulgur",
+  "replies_count": 3,
+  "stars": 7,
+  "thanks": 0,
+  "content": "# 2023, 0904-0910\r\n\r\n估计是新冠后遗症的原因，身子总是没劲，只想躺着。躺着的时候要么看剧，要么就是刷抖音，导致抖音的使用时长远超其他 app 。本来抖音在我这是放在购物分类里的，之前只有想买的东西时才会打开，现在居然沉迷各种短视频了……删掉！\r\n\r\n![]( https://img.way2solo.com/photo/vulgur/e7448400-780d-4924-b352-0a24d912e1ee.jpeg?imageView2/2/w/1920/q/100)\r\n\r\n\r\n吃东西只能尝出来咸淡和一点点的甜味，咖啡还是喝不出味道，每天喝咖啡只是为了不出现戒断反应。\r\n\r\n# 开学啦！\r\n\r\n上个月国内安卓收入下降太多了，我估计是因为暑假的原因。现在已经开学一个多星期了，从活跃用户和新增用户数量上来看，确实有些回升。\r\n\r\n![]( https://img.way2solo.com/photo/vulgur/c0d9d742-3730-44e7-b592-d13ac3435fed.jpeg?imageView2/2/w/1920/q/100)\r\n\r\n# RevenueCat\r\n\r\n这周极简时钟和极简日记都更新了一个版本，主要目的也都是一样，为了防御中间人攻击。\r\n\r\n## **中间人攻击**\r\n\r\n通过开发者朋友那里才知道，居然有一个微信小程序，专门分享破解内购的脚本，极简时钟和极简日记都名列其中……RevenueCat 推出针对中间人攻击的防范方法已经有两个月了，但是我都没当回事，直到群友提醒，才后知后觉，也不知道累计了多少损失。\r\n\r\n亡羊补牢，为时未晚。\r\n\r\n极简时钟的更新很简单，就是添加了一行代码。极简日记的更新麻烦了一些，支持防御中间人攻击的 RevenueCat SDK 最低版本是 4.25 ，而极简日记里的还是 3.x ，所以还写了很多从 3.x 升级到 4.x 的代码。\r\n\r\n![]( https://img.way2solo.com/photo/vulgur/48ff7e5b-c0e2-4c54-9333-e7a4a657aec3.jpeg?imageView2/2/w/1920/q/100)\r\n\r\n## Paywalls\r\n\r\n在升级 RevenueCat 的 SDK 时，发现 SDK 里多了一个 RevenueCatUI 的库，原来是 RC 提供了一个 Paywall 的功能。\r\n\r\nRC 的 Paywall  有三个模板，整体的风格都很简洁。Paywall 对于内购和订阅产品的配置很丰富，但是对于页面其他信息的配置就很少了。我试用了三天，最后还是放弃了，因为 RC 的 Paywall 还在 beta 阶段，我就碰到了好几次弹出加载图片错误的提示。\r\n\r\n![]( https://img.way2solo.com/photo/vulgur/30577d52-98ad-442f-82c7-e08d75843ddc.jpeg?imageView2/2/w/1920/q/100)\r\n\r\n今年的 WWDC23 也推出了类似的功能，在 StoreKit 里增加了 `StoreView`、`ProductView` 和 `SubscriptionStoreView 。`对应的 Session 是 ****Meet StoreKit for SwiftUI****，我这周又看了一遍，感觉配置起来太麻烦了，需要重写整个产品页面，于是就打消了在 iOS 17 正式版上线前加入这个功能的念头。\r\n\r\n能不改的就先不改，又不是不能用。\r\n\r\n# 一些杂事\r\n\r\n- 王国之泪通关了，解决了心理一大负担。\r\n- 因为经济普查，去社区做了登记。明明是线上就能解决的事，非要线下跑一趟。\r\n- 酱香拿铁至今没有喝，一是因为我不喝任何酒，二是因为这款咖啡不是 9.9 元。\r\n- 发现了一个 UI/UX 和极简日记高度相似的新 App ，第一感觉当然是不爽，第二感觉就是立志要做得比抄袭者更好，让抄袭者遥遥落后。\r\n- 在即刻上发了一条评论时下新闻的动态，没想到被人各种阴阳，还给我扣上了一个带节奏的帽子。现在这个舆论环境啊，还是老老实实发些人畜无害的东西吧。\r\n- 上周投诉名称侵权的三个 app ，刚上架的那个已经回复邮件并且改名了，另外两个久不更新的 app 还没有回复邮件，估计已经弃管了。因为这个事，我被很多人说不厚道、是小人行为、是商标流氓、not cool ，对于这些评论我都接受。也有人列举了一些客观事实，我也都承认。但是我有我自己的理由，在商言商，合规合法，仅此而已。\r\n\r\n## 引用链接\r\n\r\n- [Trusted Entitlements: Making MiTM piracy a thing of the past]( https://www.revenuecat.com/blog/engineering/trusted-entitlements/)\r\n- [Meet StoreKit for SwiftUI]( https://developer.apple.com/videos/play/wwdc2023/10013/)",
+  "content_rendered": "<h1>2023, 0904-0910</h1>\n<p>估计是新冠后遗症的原因，身子总是没劲，只想躺着。躺着的时候要么看剧，要么就是刷抖音，导致抖音的使用时长远超其他 app 。本来抖音在我这是放在购物分类里的，之前只有想买的东西时才会打开，现在居然沉迷各种短视频了……删掉！</p>\n<p><img alt=\"\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://img.way2solo.com/photo/vulgur/e7448400-780d-4924-b352-0a24d912e1ee.jpeg?imageView2/2/w/1920/q/100\"/></p>\n<p>吃东西只能尝出来咸淡和一点点的甜味，咖啡还是喝不出味道，每天喝咖啡只是为了不出现戒断反应。</p>\n<h1>开学啦！</h1>\n<p>上个月国内安卓收入下降太多了，我估计是因为暑假的原因。现在已经开学一个多星期了，从活跃用户和新增用户数量上来看，确实有些回升。</p>\n<p><img alt=\"\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://img.way2solo.com/photo/vulgur/c0d9d742-3730-44e7-b592-d13ac3435fed.jpeg?imageView2/2/w/1920/q/100\"/></p>\n<h1>RevenueCat</h1>\n<p>这周极简时钟和极简日记都更新了一个版本，主要目的也都是一样，为了防御中间人攻击。</p>\n<h2><strong>中间人攻击</strong></h2>\n<p>通过开发者朋友那里才知道，居然有一个微信小程序，专门分享破解内购的脚本，极简时钟和极简日记都名列其中……RevenueCat 推出针对中间人攻击的防范方法已经有两个月了，但是我都没当回事，直到群友提醒，才后知后觉，也不知道累计了多少损失。</p>\n<p>亡羊补牢，为时未晚。</p>\n<p>极简时钟的更新很简单，就是添加了一行代码。极简日记的更新麻烦了一些，支持防御中间人攻击的 RevenueCat SDK 最低版本是 4.25 ，而极简日记里的还是 3.x ，所以还写了很多从 3.x 升级到 4.x 的代码。</p>\n<p><img alt=\"\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://img.way2solo.com/photo/vulgur/48ff7e5b-c0e2-4c54-9333-e7a4a657aec3.jpeg?imageView2/2/w/1920/q/100\"/></p>\n<h2>Paywalls</h2>\n<p>在升级 RevenueCat 的 SDK 时，发现 SDK 里多了一个 RevenueCatUI 的库，原来是 RC 提供了一个 Paywall 的功能。</p>\n<p>RC 的 Paywall  有三个模板，整体的风格都很简洁。Paywall 对于内购和订阅产品的配置很丰富，但是对于页面其他信息的配置就很少了。我试用了三天，最后还是放弃了，因为 RC 的 Paywall 还在 beta 阶段，我就碰到了好几次弹出加载图片错误的提示。</p>\n<p><img alt=\"\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://img.way2solo.com/photo/vulgur/30577d52-98ad-442f-82c7-e08d75843ddc.jpeg?imageView2/2/w/1920/q/100\"/></p>\n<p>今年的 WWDC23 也推出了类似的功能，在 StoreKit 里增加了 <code>StoreView</code>、<code>ProductView</code> 和 <code>SubscriptionStoreView 。</code>对应的 Session 是 <strong><strong>Meet StoreKit for SwiftUI</strong></strong>，我这周又看了一遍，感觉配置起来太麻烦了，需要重写整个产品页面，于是就打消了在 iOS 17 正式版上线前加入这个功能的念头。</p>\n<p>能不改的就先不改，又不是不能用。</p>\n<h1>一些杂事</h1>\n<ul>\n<li>王国之泪通关了，解决了心理一大负担。</li>\n<li>因为经济普查，去社区做了登记。明明是线上就能解决的事，非要线下跑一趟。</li>\n<li>酱香拿铁至今没有喝，一是因为我不喝任何酒，二是因为这款咖啡不是 9.9 元。</li>\n<li>发现了一个 UI/UX 和极简日记高度相似的新 App ，第一感觉当然是不爽，第二感觉就是立志要做得比抄袭者更好，让抄袭者遥遥落后。</li>\n<li>在即刻上发了一条评论时下新闻的动态，没想到被人各种阴阳，还给我扣上了一个带节奏的帽子。现在这个舆论环境啊，还是老老实实发些人畜无害的东西吧。</li>\n<li>上周投诉名称侵权的三个 app ，刚上架的那个已经回复邮件并且改名了，另外两个久不更新的 app 还没有回复邮件，估计已经弃管了。因为这个事，我被很多人说不厚道、是小人行为、是商标流氓、not cool ，对于这些评论我都接受。也有人列举了一些客观事实，我也都承认。但是我有我自己的理由，在商言商，合规合法，仅此而已。</li>\n</ul>\n<h2>引用链接</h2>\n<ul>\n<li><a href=\"https://www.revenuecat.com/blog/engineering/trusted-entitlements/\" rel=\"nofollow\">Trusted Entitlements: Making MiTM piracy a thing of the past</a></li>\n<li><a href=\"https://developer.apple.com/videos/play/wwdc2023/10013/\" rel=\"nofollow\">Meet StoreKit for SwiftUI</a></li>\n</ul>\n",
+  "supplements": [],
+  "replies": [
+    {
+      "id": 13628560,
+      "author": "rekulas",
+      "created": 1694438318,
+      "content": "不太明白攻击这种日记闹钟 app 是想获得什么信息",
+      "content_rendered": "不太明白攻击这种日记闹钟 app 是想获得什么信息"
+    },
+    {
+      "id": 13628565,
+      "author": "vulgur",
+      "created": 1694438484,
+      "content": "@rekulas 解锁内购",
+      "content_rendered": "@<a href=\"/member/rekulas\">rekulas</a> 解锁内购"
+    },
+    {
+      "id": 13628646,
+      "author": "Jirajine",
+      "created": 1694440118,
+      "content": "所谓“中间人攻击”抓包、审查用户传输了哪些数据，信任哪些证书都是用户的正当权利。\n授权验证应该通过签名的方式实现。",
+      "content_rendered": "所谓“中间人攻击”抓包、审查用户传输了哪些数据，信任哪些证书都是用户的正当权利。<br />授权验证应该通过签名的方式实现。"
+    }
+  ],
+  "reply_pages": 1,
+  "fetched_at": "2026-10-06T03:33:32.102Z"
+}

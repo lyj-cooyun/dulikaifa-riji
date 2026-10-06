@@ -1,0 +1,64 @@
+=== TOPIC 1184877 | EP 152 ===
+TITLE: 独立开发周记 152：临摹代码
+CREATED: 2026-01-12 14:18  LAST_TOUCHED: 2026-01-12 14:18
+URL: https://www.v2ex.com/t/1184877  REPLIES_COUNT: 0  STARS: 1  THANKS: 0
+
+--- CONTENT ---
+# 2026,0105-0111
+
+上周发了年终总结，阅读量比预期少很多，但是打赏远远超出预期，其中更有人打了 88 元，说是给我的雅迪充了个充电年费，感谢周老板！
+
+# 本周工作
+
+电影《师父》里有一句台词：“我学功夫，从 15 岁开始，每天挥刀 500 下， 这个数管住了我，不会胡思乱想”。
+
+这周一开始不知道要干些什么，于是就想起了上面那句话，不知道干什么的时候就去磨练基本功吧。自打用 AI 编程后，对于很多 SwiftUI 的新 API 都一知半解了，再加上极简日记的滚动列表遇到一些实现难点，就把 kavsoft 的视频和肘子哥的 blog 翻出来，一行一行照抄代码，就像临摹字帖那样。下面这周的字帖：
+
+- [Apple Books Scroll Animation - Complex UI - SwiftUI - Xcode 16]( https://www.youtube.com/watch?v=Vcci66yoLfk "Apple Books Scroll Animation - Complex UI - SwiftUI - Xcode 16")
+- [SwiftUI Scroll To Hide Header View - iOS 18]( https://www.youtube.com/watch?v=C6fO9jsaOBg&t=309s "SwiftUI Scroll To Hide Header View - iOS 18")
+- [Building Complex Scroll Animations With New iOS 17 API's - Xcode 15]( https://www.youtube.com/watch?v=FvgmcwjDFvQ&t=1207s "Building Complex Scroll Animations With New iOS 17 API's - Xcode 15")
+- [精通 SwiftUI 的 containerRelativeFrame 修饰器]( https://fatbobman.com/zh/posts/mastering-the-containerrelativeframe-modifier-in-swiftui/ "精通 SwiftUI 的 containerRelativeFrame 修饰器")
+
+
+[图片]
+
+
+## 极简日记
+
+上周安卓版里加入了下拉日记列表显示日历的功能，我觉得很不错，就想着也在 iOS 版里加入。本来以为很简单，但是却花了一周才搞定。极简日记 iOS 最低支持到 iOS 17 ，我也觉得 iOS 17 的 API 就能实现这个需求，但是让 AI 写了半天也无法实现，看到 kavsoft 的视频里正好有类似的交互，但他是用 iOS 18 的 API 实现的，我把 Minimum Deployment 提高到 iOS 18 后再让 AI 来写，一次就成功了。后来又花了三天来调试细节，特别是解决列表的抖动问题，在 iOS 18 的手机上就没问题，但是在 iOS 26 的模拟器和真机上一直有轻微的抖动，换了好几个大模型，反反复复写了四遍才最终解决这个问题。
+
+自打元旦以来，极简时钟安卓版的付费明显增多了，不知道是不是受马伯庸《一个中年人决定写日记》的影响。
+
+## 极简便签
+
+收到了一个用户的退款，理由是小组件显示有问题。把问题反馈给安卓小哥后，他很快就修复了。我上午 9 点半提交到 HMOV ，一天里四个市场都陆续上架了。
+
+OPPO 又犯病了，发了个邮件说审核不通过，但是后台显示是上线的状态。Vivo 审核速度最慢，直到晚上 7 点多才审核通过，而其他三家都在中午就上架了。这个反馈的用户用的就是 Vivo 手机，所以我希望最快上架的就是 Vivo ，这样我好回复她更新版本了。好在告诉她后，她觉得没有问题了，成功挽回了一个退款。
+
+自打更新后的两三天里，极简便签的付费数量明显增多，还好还好。
+
+# 代码之外
+
+## 书
+看完了被称为神作的白井智之的《 Elephant Head 》，台湾版本的书名是《象首迷宫》，国内没有出版（估计以后也不会出版），也有国内爱好者自己的翻译版本叫《象之首》。
+
+精彩是真精彩，变态也是真变态。借用网上的一个梗：**由于我的阅读速度过于快，当我意识到我读到了什么内容的时候，一切都已经来不及了**。上一本的《无人逝去》就有一些重口了，但是跟这一本相比，简直是水煮青菜了。
+
+
+[图片]
+
+
+## 剧
+
+《弥留之国的爱丽丝》第三季，差评！差评！一星差评！游戏智障，全员智障，剧情又臭又长，就这居然还留了个美国版的扣子。
+
+《大楼里只有谋杀》第一季，四星好评。最近不知道看什么，正好看到网盘里收集了这部剧的前四季，在豆瓣一查，居然每一季的评分都在 8 分以上，那这就必须看看是个怎么回事了。剧情就是很简单的悬疑叙事加一些喜剧元素，每集只有 20 多分钟，每集都有新的证据和悬疑点，看起来很轻松，第一天一口气看了前五集，第二天又一口气看完了剩下的五集。
+
+主演之一的 Steve Martin 既是制片人又是编剧团队之一，另一个主演 Selena Gomez 还是执行制片人之一，再一次符合了我的「主演兼制片人不出烂片」定律。
+
+
+[图片]
+
+--- SUPPLEMENTS (0) ---
+
+--- REPLIES (0) ---

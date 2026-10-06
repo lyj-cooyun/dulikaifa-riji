@@ -1,0 +1,44 @@
+{
+  "id": 1055759,
+  "title": "独立开发周记 73：简单并且快乐的小确幸",
+  "episode": {
+    "ep": 73,
+    "ep2": null
+  },
+  "node": "starter",
+  "url": "https://www.v2ex.com/t/1055759",
+  "created": 1720438127,
+  "last_touched": 1720438373,
+  "member": "vulgur",
+  "replies_count": 3,
+  "stars": 1,
+  "thanks": 0,
+  "content": "# 2024 ，0701-0707\r\n最近最快乐的事情就是练尤克里里，现在我的小红书和 B 站推荐的全都是关于尤克里里的各种视频。\r\n上午弹一会，下午弹一会，晚上怕扰民就只练左手指法。只要不断练习，就会不断进步，然后唱自己喜欢的歌取悦自己，再没有这么简单而快乐的事情了。\r\n左手早就磨出了厚厚的一层茧子，敲键盘的感觉好奇怪。\r\n\r\n![]( https://img.way2solo.com/photo/vulgur/5894399e-cd12-4630-90f0-dd4819f83681.jpeg?imageView2/2/w/1920/q/100)\r\n\r\n# 本周开发\r\n## 极简日记 iOS\r\n这周提交了两个版本，而且是连着两天提交的。\r\n\r\n周四提交了 1.7.24 ，加入了删除 App 时弹出的提示，这个是跟素记 App 学的。太多人询问删除 App 后数据还能否恢复了，希望这个提示能起到作用。\r\n\r\n![]( https://img.way2solo.com/photo/vulgur/13731f66-af20-485e-ab52-fa1b9c47a9c9.jpeg?imageView2/2/w/1920/q/100)\r\n\r\n周五接着提交了 1.7.25 ，在小组件里加入了刷新按钮和文字刷新的动画效果，这个功能是 iOS 17 就有的，而我才加入。为了这个功能，又把 WWDC23 的相关视频，以及几个其他的教学视频看了一遍。\r\n\r\n## 新建文件夹\r\n就在这周，终于，给一直想做的 App 新建了文件夹。先用 ChatGPT 生成一段代码，但是根本没法 build 😂。\r\n\r\n![]( https://img.way2solo.com/photo/vulgur/43750db9-f284-4c62-922d-33e2b57ac6b7.jpeg?imageView2/2/w/1920/q/100)\r\n\r\n# 本周学习\r\n都说 Cloudflare 是赛博活菩萨，这周终于体验到了。\r\n\r\n## Email Routing\r\n之前想使用 Azure OpenAI 来学习 AI 开发，但是在申请 200 美元免费额度上遇到了点阻碍。申请这个免费额度需要有企业域名的邮箱，而且明确写明了 gmail 是不行的，我试了一下果然没通过。\r\n\r\n于是一边看球，一边学习如何通过 Cloudflare 的 Email Routing 实现一个可以接受邮件的企业域名邮箱，正好有一个域名就托管在 Cloudflare 上，按照教程很快就搞定了。但是这个邮箱只能接收邮件，不能回复和发送邮件，于是又查了一些资料，最终通过 Gmail 的多账号实现了这个需求。\r\n\r\n## Pages\r\n官方邮箱搞定了，接下来就是官网了。\r\n\r\n原来我这个域名在几年前就弄过一次 Pages 了，用的还是 Gatsby 搭建的， 而我一点印象都没有，完全失忆了。这次采用了 Next.js 完全重新弄了一次，搭建了一个最简单的静态网页，顺便学习一下一直想学的 Next.js 。\r\n\r\n## React & Next.js\r\n八年前因为外包自学了 Vue ，后来也试过学习 React ，但是当时总是无法理解 React 的理念和 jsx 的语法，就放弃了。在网上看到有人说学会了 SwiftUI 会更好接受 React ，因为两者都是声明式的 UI 框架，这次跟着 Next.js 官方的教程又重新温习了一遍 React ，果然理解上毫无压力了。\r\n\r\nLearn Next.js 的教程只看了三分之一，感觉也不是太难，后面就需要接入数据库了​，可能会麻烦一些。\r\n\r\n![]( https://img.way2solo.com/photo/vulgur/2af4e8bd-6181-43c2-a65d-21042c94407c.png?imageView2/2/w/1920/q/100)",
+  "content_rendered": "<h1>2024 ，0701-0707</h1>\n<p>最近最快乐的事情就是练尤克里里，现在我的小红书和 B 站推荐的全都是关于尤克里里的各种视频。\n上午弹一会，下午弹一会，晚上怕扰民就只练左手指法。只要不断练习，就会不断进步，然后唱自己喜欢的歌取悦自己，再没有这么简单而快乐的事情了。\n左手早就磨出了厚厚的一层茧子，敲键盘的感觉好奇怪。</p>\n<p><img alt=\"\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://img.way2solo.com/photo/vulgur/5894399e-cd12-4630-90f0-dd4819f83681.jpeg?imageView2/2/w/1920/q/100\"/></p>\n<h1>本周开发</h1>\n<h2>极简日记 iOS</h2>\n<p>这周提交了两个版本，而且是连着两天提交的。</p>\n<p>周四提交了 1.7.24 ，加入了删除 App 时弹出的提示，这个是跟素记 App 学的。太多人询问删除 App 后数据还能否恢复了，希望这个提示能起到作用。</p>\n<p><img alt=\"\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://img.way2solo.com/photo/vulgur/13731f66-af20-485e-ab52-fa1b9c47a9c9.jpeg?imageView2/2/w/1920/q/100\"/></p>\n<p>周五接着提交了 1.7.25 ，在小组件里加入了刷新按钮和文字刷新的动画效果，这个功能是 iOS 17 就有的，而我才加入。为了这个功能，又把 WWDC23 的相关视频，以及几个其他的教学视频看了一遍。</p>\n<h2>新建文件夹</h2>\n<p>就在这周，终于，给一直想做的 App 新建了文件夹。先用 ChatGPT 生成一段代码，但是根本没法 build 😂。</p>\n<p><img alt=\"\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://img.way2solo.com/photo/vulgur/43750db9-f284-4c62-922d-33e2b57ac6b7.jpeg?imageView2/2/w/1920/q/100\"/></p>\n<h1>本周学习</h1>\n<p>都说 Cloudflare 是赛博活菩萨，这周终于体验到了。</p>\n<h2>Email Routing</h2>\n<p>之前想使用 Azure OpenAI 来学习 AI 开发，但是在申请 200 美元免费额度上遇到了点阻碍。申请这个免费额度需要有企业域名的邮箱，而且明确写明了 gmail 是不行的，我试了一下果然没通过。</p>\n<p>于是一边看球，一边学习如何通过 Cloudflare 的 Email Routing 实现一个可以接受邮件的企业域名邮箱，正好有一个域名就托管在 Cloudflare 上，按照教程很快就搞定了。但是这个邮箱只能接收邮件，不能回复和发送邮件，于是又查了一些资料，最终通过 Gmail 的多账号实现了这个需求。</p>\n<h2>Pages</h2>\n<p>官方邮箱搞定了，接下来就是官网了。</p>\n<p>原来我这个域名在几年前就弄过一次 Pages 了，用的还是 Gatsby 搭建的， 而我一点印象都没有，完全失忆了。这次采用了 Next.js 完全重新弄了一次，搭建了一个最简单的静态网页，顺便学习一下一直想学的 Next.js 。</p>\n<h2>React &amp; Next.js</h2>\n<p>八年前因为外包自学了 Vue ，后来也试过学习 React ，但是当时总是无法理解 React 的理念和 jsx 的语法，就放弃了。在网上看到有人说学会了 SwiftUI 会更好接受 React ，因为两者都是声明式的 UI 框架，这次跟着 Next.js 官方的教程又重新温习了一遍 React ，果然理解上毫无压力了。</p>\n<p>Learn Next.js 的教程只看了三分之一，感觉也不是太难，后面就需要接入数据库了​，可能会麻烦一些。</p>\n<p><img alt=\"\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://img.way2solo.com/photo/vulgur/2af4e8bd-6181-43c2-a65d-21042c94407c.png?imageView2/2/w/1920/q/100\"/></p>\n",
+  "supplements": [],
+  "replies": [
+    {
+      "id": 14966920,
+      "author": "JFZ",
+      "created": 1720438373,
+      "content": "理想生活",
+      "content_rendered": "理想生活"
+    },
+    {
+      "id": 14967858,
+      "author": "Dragonphy",
+      "created": 1720485669,
+      "content": "发邮件用的是 Resend 吧",
+      "content_rendered": "发邮件用的是 Resend 吧"
+    },
+    {
+      "id": 14970972,
+      "author": "vulgur",
+      "created": 1720512861,
+      "content": "@Dragonphy 不是，就是 Gmail 里设置添加了一个账户",
+      "content_rendered": "@<a href=\"/member/Dragonphy\">Dragonphy</a> 不是，就是 Gmail 里设置添加了一个账户"
+    }
+  ],
+  "reply_pages": 1,
+  "fetched_at": "2026-10-06T03:32:44.924Z"
+}

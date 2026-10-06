@@ -1,0 +1,128 @@
+{
+  "id": 1094277,
+  "title": "独立开发周记 95： 2024 年 11 月数据总结， 800 万下载达成！",
+  "episode": {
+    "ep": 95,
+    "ep2": null
+  },
+  "node": "programmer",
+  "url": "https://www.v2ex.com/t/1094277",
+  "created": 1733107641,
+  "last_touched": 1733183048,
+  "member": "vulgur",
+  "replies_count": 15,
+  "stars": 9,
+  "thanks": 2,
+  "content": "# 2024, 1125-1201\r\n\r\n新 Mac mini 到了！终于不再有内存焦虑和空间焦虑了。原来 Xcode 一直失败的 Preview 现在终于可以显示出来了，而且运行 iPad 的模拟器也十分流畅。果然提高生产力还是需要购买力啊。\r\n\r\n苹果选择 EMS 作为物流绝对是被逼的，EMS 不仅慢，物流信息不完整，而且居然还不送货上门。快递员问我是不是「苹果相机」，我说是一个电脑，他难以置信。\r\n\r\n\r\n![]( https://files.mdnice.com/user/73796/02d40e2f-b879-4645-82b7-70ca7cd98f2c.png)\r\n\r\n\r\n# 11 月数据总结\r\n## 下载量（只统计极简时钟）\r\n- App Store ，减少 5.9%\r\n- Google Play ，减少 17.5%\r\n- 国内安卓市场，减少 11.79%\r\n\r\n除了极简时钟，极简日记和极简便签在国内安卓市场的下载量也减少了很多，这种减少同样也体现到了收入上。\r\n\r\n这周又统计了一下极简时钟全平台的总下载量。App Store 380 万，Google Play 340 万，国内安卓市场统计到的有 60 万，加上之前好多年国内市场没有统计到的，假如有 20 万（肯定不止这个数），那么我宣布：极简时钟全球下载量突破 800 万（没毛病）！\r\n\r\n\r\n![]( https://files.mdnice.com/user/73796/1140352a-c5b6-426a-afc8-b8e4157deb56.jpg)\r\n\r\n\r\n## 收入\r\n- App Store ，增长 2.8%\r\n- Google Play ，减少 25.8%\r\n- Admob ，减少 8.78%\r\n- 国内安卓市场，减少 12.35%\r\n\r\n这个月安卓真是全面的下降，特别是 Google Play ，日下载量已经跌破了 700 ，日收入也有几天是零收入……\r\n\r\n# 极简时钟 iOS\r\n这周提交了 4.6.2 ，都是 UI 上的调整。修复了一个存在已久的一个 bug ，又修复了因为加入新表盘而引入的两个 bug ，又针对小屏幕做了些适配。\r\n\r\n想给 Paywall 加入了一个轮播图，用 Windsurf 选择 Claude 3.5 Sonnet 死活写不对，最后还是在 Github 上找了一个 repo 解决了，而且还最低支持到 iOS 14 。挑选轮播的图片后，顺便整理了一下极简时钟目前的各种主题。\r\n\r\n\r\n![]( https://files.mdnice.com/user/73796/d93a179a-bde7-40e8-a5dc-d85e2f9a9fe3.jpg)\r\n\r\n\r\n## 黑五促销\r\n\r\n这周先是调研了一下时钟类 App 竞品的定价，然后史上第一次针对黑色星期五给极简时钟的终身会员开始为期一周的五折优惠活动。调价后，促销效果立刻出来了，白天时段来自西半球的订单居然也变多了，而且有那么一个时刻，最近十个订单是来自十个不同的国家。\r\n\r\n\r\n![]( https://files.mdnice.com/user/73796/ae6ac069-9331-425a-8210-c52909381c14.png)\r\n\r\n\r\n# 游戏\r\n\r\n## 小丑牌\r\n\r\n趁着黑五，在 Steam 上买了小丑牌（ Balatro ）。第一次玩的时候，感觉不过尔尔，哪有网上说得那么邪乎。随着解锁的小丑牌越来越多，就愈发不可收拾了。两局游戏，两个小时，直接进入忘我的心流，果然名不虚传！\r\n\r\n## 逆转裁判 1\r\n\r\n通关了这个系列游戏的第一部，包括《复苏的逆转》。这个五个案件的游戏时间就像斐波那契数列一样，越来越多，而且案情越来越复杂。最后一个案件，有两次剧情无法推进，不得不查了攻略。从第三个案件开始就不断使用 S/L 大法，不然总是举证失败，就跟下面这张图一模一样。\r\n\r\n\r\n![]( https://files.mdnice.com/user/73796/8dd35aa5-ed39-4431-ac09-2d78a4c00447.jpeg)\r\n\r\n---\r\n\r\n**独立开发不易，但道哥飞蛾投烛。**\r\n\r\n**感谢各位支持，助道哥飞黄腾达。**\r\n\r\n欢迎赏脸阅读我的独立开发周记，如果你觉得这一篇写得还不错的话，以下回应会令我无比开心，开了又开：\r\n\r\n- 点赞，开心一晚 😉\r\n- 在看，开心一天 😁\r\n- 分享，开心三天 😆\r\n- 赞赏，开心一周 😘\r\n\r\n也欢迎大家能与我交流关于独立开发的一切，更欢迎大家下载使用我的 App😄。\r\n\r\n- **极简时钟**，极简主义的翻页时钟、番茄钟和正计时\r\n- **极简日记**，用时间轴随手记录生活\r\n- **极简便签**，支持 Markdown ，自定义分享图片，多种主题和布局\r\n- **Nut Goals**，像小松鼠一样记账、存钱、管理愿望清单\r\n\r\n![]( https://files.mdnice.com/user/73796/f6e50735-b4b4-49cf-8e80-b792fbd05b3e.jpg)",
+  "content_rendered": "<h1>2024, 1125-1201</h1>\n<p>新 Mac mini 到了！终于不再有内存焦虑和空间焦虑了。原来 Xcode 一直失败的 Preview 现在终于可以显示出来了，而且运行 iPad 的模拟器也十分流畅。果然提高生产力还是需要购买力啊。</p>\n<p>苹果选择 EMS 作为物流绝对是被逼的，EMS 不仅慢，物流信息不完整，而且居然还不送货上门。快递员问我是不是「苹果相机」，我说是一个电脑，他难以置信。</p>\n<p><img alt=\"\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://files.mdnice.com/user/73796/02d40e2f-b879-4645-82b7-70ca7cd98f2c.png\"/></p>\n<h1>11 月数据总结</h1>\n<h2>下载量（只统计极简时钟）</h2>\n<ul>\n<li>App Store ，减少 5.9%</li>\n<li>Google Play ，减少 17.5%</li>\n<li>国内安卓市场，减少 11.79%</li>\n</ul>\n<p>除了极简时钟，极简日记和极简便签在国内安卓市场的下载量也减少了很多，这种减少同样也体现到了收入上。</p>\n<p>这周又统计了一下极简时钟全平台的总下载量。App Store 380 万，Google Play 340 万，国内安卓市场统计到的有 60 万，加上之前好多年国内市场没有统计到的，假如有 20 万（肯定不止这个数），那么我宣布：极简时钟全球下载量突破 800 万（没毛病）！</p>\n<p><img alt=\"\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://files.mdnice.com/user/73796/1140352a-c5b6-426a-afc8-b8e4157deb56.jpg\"/></p>\n<h2>收入</h2>\n<ul>\n<li>App Store ，增长 2.8%</li>\n<li>Google Play ，减少 25.8%</li>\n<li>Admob ，减少 8.78%</li>\n<li>国内安卓市场，减少 12.35%</li>\n</ul>\n<p>这个月安卓真是全面的下降，特别是 Google Play ，日下载量已经跌破了 700 ，日收入也有几天是零收入……</p>\n<h1>极简时钟 iOS</h1>\n<p>这周提交了 4.6.2 ，都是 UI 上的调整。修复了一个存在已久的一个 bug ，又修复了因为加入新表盘而引入的两个 bug ，又针对小屏幕做了些适配。</p>\n<p>想给 Paywall 加入了一个轮播图，用 Windsurf 选择 Claude 3.5 Sonnet 死活写不对，最后还是在 Github 上找了一个 repo 解决了，而且还最低支持到 iOS 14 。挑选轮播的图片后，顺便整理了一下极简时钟目前的各种主题。</p>\n<p><img alt=\"\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://files.mdnice.com/user/73796/d93a179a-bde7-40e8-a5dc-d85e2f9a9fe3.jpg\"/></p>\n<h2>黑五促销</h2>\n<p>这周先是调研了一下时钟类 App 竞品的定价，然后史上第一次针对黑色星期五给极简时钟的终身会员开始为期一周的五折优惠活动。调价后，促销效果立刻出来了，白天时段来自西半球的订单居然也变多了，而且有那么一个时刻，最近十个订单是来自十个不同的国家。</p>\n<p><img alt=\"\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://files.mdnice.com/user/73796/ae6ac069-9331-425a-8210-c52909381c14.png\"/></p>\n<h1>游戏</h1>\n<h2>小丑牌</h2>\n<p>趁着黑五，在 Steam 上买了小丑牌（ Balatro ）。第一次玩的时候，感觉不过尔尔，哪有网上说得那么邪乎。随着解锁的小丑牌越来越多，就愈发不可收拾了。两局游戏，两个小时，直接进入忘我的心流，果然名不虚传！</p>\n<h2>逆转裁判 1</h2>\n<p>通关了这个系列游戏的第一部，包括《复苏的逆转》。这个五个案件的游戏时间就像斐波那契数列一样，越来越多，而且案情越来越复杂。最后一个案件，有两次剧情无法推进，不得不查了攻略。从第三个案件开始就不断使用 S/L 大法，不然总是举证失败，就跟下面这张图一模一样。</p>\n<p><img alt=\"\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://files.mdnice.com/user/73796/8dd35aa5-ed39-4431-ac09-2d78a4c00447.jpeg\"/></p>\n<hr/>\n<p><strong>独立开发不易，但道哥飞蛾投烛。</strong></p>\n<p><strong>感谢各位支持，助道哥飞黄腾达。</strong></p>\n<p>欢迎赏脸阅读我的独立开发周记，如果你觉得这一篇写得还不错的话，以下回应会令我无比开心，开了又开：</p>\n<ul>\n<li>点赞，开心一晚 😉</li>\n<li>在看，开心一天 😁</li>\n<li>分享，开心三天 😆</li>\n<li>赞赏，开心一周 😘</li>\n</ul>\n<p>也欢迎大家能与我交流关于独立开发的一切，更欢迎大家下载使用我的 App😄。</p>\n<ul>\n<li><strong>极简时钟</strong>，极简主义的翻页时钟、番茄钟和正计时</li>\n<li><strong>极简日记</strong>，用时间轴随手记录生活</li>\n<li><strong>极简便签</strong>，支持 Markdown ，自定义分享图片，多种主题和布局</li>\n<li><strong>Nut Goals</strong>，像小松鼠一样记账、存钱、管理愿望清单</li>\n</ul>\n<p><img alt=\"\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://files.mdnice.com/user/73796/f6e50735-b4b4-49cf-8e80-b792fbd05b3e.jpg\"/></p>\n",
+  "supplements": [],
+  "replies": [
+    {
+      "id": 15612975,
+      "author": "liuliuliuliu",
+      "created": 1733107795,
+      "content": "我这里 EMS 还可以，速度很快，和顺丰差不多，送货上门",
+      "content_rendered": "我这里 EMS 还可以，速度很快，和顺丰差不多，送货上门"
+    },
+    {
+      "id": 15613189,
+      "author": "Jason168",
+      "created": 1733108925,
+      "content": "大牛，好厉害",
+      "content_rendered": "大牛，好厉害"
+    },
+    {
+      "id": 15613794,
+      "author": "eatbye1",
+      "created": 1733113258,
+      "content": "哈哈。苹果的收入能有多少呢？大概能说说吗",
+      "content_rendered": "哈哈。苹果的收入能有多少呢？大概能说说吗"
+    },
+    {
+      "id": 15613863,
+      "author": "vulgur",
+      "created": 1733114059,
+      "content": "@nikenidage1 我让他送上门，他直接拒绝了，说：我是邮政",
+      "content_rendered": "@<a href=\"/member/nikenidage1\">nikenidage1</a> 我让他送上门，他直接拒绝了，说：我是邮政"
+    },
+    {
+      "id": 15613943,
+      "author": "prosgtsr",
+      "created": 1733115227,
+      "content": "我玩逆转裁判，没有逻辑推理，全靠穷举，每次有一点新进展，想推进下一步没思路，就得把所有可能探查的东西、能问的人、能用勋章的地方，全部再来一遍，然后有了进展。。再重复一遍。。玩着极其的累，，不知道别人是怎么玩的。",
+      "content_rendered": "我玩逆转裁判，没有逻辑推理，全靠穷举，每次有一点新进展，想推进下一步没思路，就得把所有可能探查的东西、能问的人、能用勋章的地方，全部再来一遍，然后有了进展。。再重复一遍。。玩着极其的累，，不知道别人是怎么玩的。"
+    },
+    {
+      "id": 15614846,
+      "author": "vfs",
+      "created": 1733123299,
+      "content": "600w, cool!!!",
+      "content_rendered": "600w, cool!!!"
+    },
+    {
+      "id": 15615542,
+      "author": "liuliuliuliu",
+      "created": 1733128978,
+      "content": "@vulgur 邮政普通包裹不给送上门，但是 EMS 必须上门啊，可以理解 EMS 是邮政旗下的高端。",
+      "content_rendered": "@<a href=\"/member/vulgur\">vulgur</a> 邮政普通包裹不给送上门，但是 EMS 必须上门啊，可以理解 EMS 是邮政旗下的高端。"
+    },
+    {
+      "id": 15615824,
+      "author": "zjie",
+      "created": 1733131040,
+      "content": "时钟很漂亮，但是我有一个问题，这个的使用场景是啥呢？",
+      "content_rendered": "时钟很漂亮，但是我有一个问题，这个的使用场景是啥呢？"
+    },
+    {
+      "id": 15615859,
+      "author": "momo2278",
+      "created": 1733131359,
+      "content": "@prosgtsr #5 查攻略，逆转有那种无剧透攻略的\r\n\r\n这个点上大逆就做的不错，无头苍蝇的问题基本没有，没玩的话推荐玩玩",
+      "content_rendered": "@<a href=\"/member/prosgtsr\">prosgtsr</a> #5 查攻略，逆转有那种无剧透攻略的<br /><br />这个点上大逆就做的不错，无头苍蝇的问题基本没有，没玩的话推荐玩玩"
+    },
+    {
+      "id": 15616472,
+      "author": "bthulu",
+      "created": 1733139576,
+      "content": "800 万下载, 每人就算 1 刀, 也有 800 万刀",
+      "content_rendered": "800 万下载, 每人就算 1 刀, 也有 800 万刀"
+    },
+    {
+      "id": 15617034,
+      "author": "luckfan",
+      "created": 1733150607,
+      "content": "转化率有多少，有没有 2%的付费率",
+      "content_rendered": "转化率有多少，有没有 2%的付费率"
+    },
+    {
+      "id": 15619686,
+      "author": "carljson",
+      "created": 1733204233,
+      "content": "没有买量吗？全是自然流量吗，我记得谷歌商店根本不会给曝光的",
+      "content_rendered": "没有买量吗？全是自然流量吗，我记得谷歌商店根本不会给曝光的"
+    },
+    {
+      "id": 15620630,
+      "author": "tita007",
+      "created": 1733211700,
+      "content": "哈哈 都在关心你赚了多少钱",
+      "content_rendered": "哈哈 都在关心你赚了多少钱"
+    },
+    {
+      "id": 15622369,
+      "author": "vulgur",
+      "created": 1733234210,
+      "content": "@carljson 全是自然流量，没钱买量",
+      "content_rendered": "@<a href=\"/member/carljson\">carljson</a> 全是自然流量，没钱买量"
+    },
+    {
+      "id": 15622874,
+      "author": "cokyhe",
+      "created": 1733269571,
+      "content": "评价下 android 和 ios 哪个收入高？",
+      "content_rendered": "评价下 android 和 ios 哪个收入高？"
+    }
+  ],
+  "reply_pages": 1,
+  "fetched_at": "2026-10-06T03:36:13.553Z"
+}

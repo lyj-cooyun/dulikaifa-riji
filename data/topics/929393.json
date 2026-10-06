@@ -1,0 +1,37 @@
+{
+  "id": 929393,
+  "title": "独立开发周报#7: 3 月总结",
+  "episode": {
+    "ep": 7,
+    "ep2": null
+  },
+  "node": "programmer",
+  "url": "https://www.v2ex.com/t/929393",
+  "created": 1680500019,
+  "last_touched": 1680503662,
+  "member": "vulgur",
+  "replies_count": 2,
+  "stars": 3,
+  "thanks": 0,
+  "content": "![]( https://img.way2solo.com/photo/vulgur/2a5d9b87-6595-4511-8108-89807efb93e1.jpeg?imageView2/2/w/1920/q/100)\r\n\r\n题图由 Bing Image Creator 生成\r\n\r\n## 2023 ，0327-0402\r\n\r\n三月结束，四月开始，2023 年的四分之一过去了。\r\n\r\n统计了一下 3 月的收入，各个市场全面下降。苹果还没打款，不过根据预估的付款信息来看，3 月的总收入比 2 月少了 6000 左右。\r\n\r\n## 节奏的变化\r\n\r\n从这周开始，每天中午去学校接孩子回家吃饭。这就给我原来的生活和工作节奏带来的极大的改变，每天中午多出来的两趟接送，就把白天的工作时间都分割开了，上午 8:30-11:30 和下午 1:30-4:30 这 6 个小时才是我的自由支配时间，再加上一些琐事，实际的时间更少。幸好这周还都不用我去给孩子做饭，不然上午就没有什么自由时间了。\r\n\r\n## 极简时钟 iOS （[App Store]( https://apps.apple.com/cn/app/id1265404088)）\r\n\r\n在统计 3 月份的数据时，发现极简时钟的下载量居然突破了 300 万，又一个百万达成。\r\n\r\n~~下载量突破 200 万是在 2021 年的 8 月， 距今差不多一年半了。不过从 2022 年开始，极简时钟的下载量就在逐渐下降，可能突破 400 万要等到两年后了。~~\r\n\r\n![]( https://img.way2solo.com/photo/vulgur/8174651a-76fb-4d06-8412-e06b0a1e9a84.jpeg?imageView2/2/w/1920/q/100)\r\n\r\n\r\n这周开始写极简时钟 v4.3.0 ，新特性里用到了 CoreMotion ，上周通过 Cursor 把 demo 给完成了，这周 Cursor 又立了大功。我需要计算手机在手持状态下左右摇摆的角度，在网上搜到的结果都是利用 CoreMotion 的 gravity 来实现的，反复试验后效果都不对，最后问了 Cursor ，给出的答案非常简单而且正确，就是用 attitude 就可以了。\r\n\r\n这周写代码的时间不多，再加上情绪上有些颓丧，导致新版本没怎么推进。😔\r\n\r\n## Stable Diffusion\r\n\r\n周六上午一口气体验了三个基于 apple 自己针对 Core ML 优化的 Stable Diffusion 客户端。\r\n\r\n### Diffusers ([‎App Store]( https://apps.apple.com/cn/app/diffusers/id1666309574?mt=12))\r\n\r\nHuggingFace 出品的 SD 客户端，功能非常少，感觉就是给初学者体验用的。\r\n\r\n![]( https://img.way2solo.com/photo/vulgur/60c0d600-92e7-4943-8b50-7acc41b3a70b.jpeg?imageView2/2/w/1920/q/100)\r\n\r\n\r\n### Mochi Diffusion ([Github]( https://github.com/godly-devotion/MochiDiffusion))\r\n\r\n这是个免费开源的 SD 客户端，比上面的 Diffusers 多了 scale 和图生图的功能。\r\n\r\n![]( https://img.way2solo.com/photo/vulgur/ba3a5e69-5f80-4f0d-8f36-e3493f4b47e5.jpeg?imageView2/2/w/1920/q/100)\r\n\r\n\r\n### Draw Things ([‎App Store]( https://apps.apple.com/cn/app/draw-things-ai-generation/id6444050820))\r\n\r\n这个 app 是这三个里功能最丰富的，令我意外的是它居然是免费的，甚至有些功能我都没在 webui 中发现。\r\n\r\n![]( https://img.way2solo.com/photo/vulgur/58e6d4a5-720b-40eb-8fb5-21a82c7064ea.jpeg?imageView2/2/w/1920/q/100)\r\n\r\n\r\n## 新装备\r\n\r\n设计师觉得我最近精神和身体状态都不太好，建议我每天抽点时间活动活动，于是送给我一套在家的健身套装：无绳跳绳，跳绳垫，拉力绳。\r\n\r\n最近没时间去打羽毛球了，天气又不太适合出去骑行，正好在家里练一练吧。\r\n\r\n之前在抖音上看到一个每天用无绳跳绳锻炼的人，从 190 多斤减到了 140 斤，希望我也能做到。\r\n\r\n![]( https://img.way2solo.com/photo/vulgur/d6413714-dd14-4437-a568-71878b78a799.jpeg?imageView2/2/w/1920/q/100)\r\n\r\n[公众号原文]( https://mp.weixin.qq.com/s/fvBSFgsJ2Fzmny78Vps4zA)\r\n\r\n## 往期周报\r\n* [#6]( https://www.v2ex.com/t/927541#reply4)\r\n* [#5]( https://www.v2ex.com/t/925552#reply9)\r\n* [#4]( https://www.v2ex.com/t/923622#reply10)\r\n* [#3]( https://www.v2ex.com/t/922106#reply2)\r\n* [#2]( https://www.v2ex.com/t/922062#reply4)\r\n* [#1]( https://www.v2ex.com/t/921926#reply3)",
+  "content_rendered": "<p><img alt=\"\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://img.way2solo.com/photo/vulgur/2a5d9b87-6595-4511-8108-89807efb93e1.jpeg?imageView2/2/w/1920/q/100\"/></p>\n<p>题图由 Bing Image Creator 生成</p>\n<h2>2023 ，0327-0402</h2>\n<p>三月结束，四月开始，2023 年的四分之一过去了。</p>\n<p>统计了一下 3 月的收入，各个市场全面下降。苹果还没打款，不过根据预估的付款信息来看，3 月的总收入比 2 月少了 6000 左右。</p>\n<h2>节奏的变化</h2>\n<p>从这周开始，每天中午去学校接孩子回家吃饭。这就给我原来的生活和工作节奏带来的极大的改变，每天中午多出来的两趟接送，就把白天的工作时间都分割开了，上午 8:30-11:30 和下午 1:30-4:30 这 6 个小时才是我的自由支配时间，再加上一些琐事，实际的时间更少。幸好这周还都不用我去给孩子做饭，不然上午就没有什么自由时间了。</p>\n<h2>极简时钟 iOS （<a href=\"https://apps.apple.com/cn/app/id1265404088\" rel=\"nofollow\">App Store</a>）</h2>\n<p>在统计 3 月份的数据时，发现极简时钟的下载量居然突破了 300 万，又一个百万达成。</p>\n<p><del>下载量突破 200 万是在 2021 年的 8 月， 距今差不多一年半了。不过从 2022 年开始，极简时钟的下载量就在逐渐下降，可能突破 400 万要等到两年后了。</del></p>\n<p><img alt=\"\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://img.way2solo.com/photo/vulgur/8174651a-76fb-4d06-8412-e06b0a1e9a84.jpeg?imageView2/2/w/1920/q/100\"/></p>\n<p>这周开始写极简时钟 v4.3.0 ，新特性里用到了 CoreMotion ，上周通过 Cursor 把 demo 给完成了，这周 Cursor 又立了大功。我需要计算手机在手持状态下左右摇摆的角度，在网上搜到的结果都是利用 CoreMotion 的 gravity 来实现的，反复试验后效果都不对，最后问了 Cursor ，给出的答案非常简单而且正确，就是用 attitude 就可以了。</p>\n<p>这周写代码的时间不多，再加上情绪上有些颓丧，导致新版本没怎么推进。😔</p>\n<h2>Stable Diffusion</h2>\n<p>周六上午一口气体验了三个基于 apple 自己针对 Core ML 优化的 Stable Diffusion 客户端。</p>\n<h3>Diffusers (<a href=\"https://apps.apple.com/cn/app/diffusers/id1666309574?mt=12\" rel=\"nofollow\">‎App Store</a>)</h3>\n<p>HuggingFace 出品的 SD 客户端，功能非常少，感觉就是给初学者体验用的。</p>\n<p><img alt=\"\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://img.way2solo.com/photo/vulgur/60c0d600-92e7-4943-8b50-7acc41b3a70b.jpeg?imageView2/2/w/1920/q/100\"/></p>\n<h3>Mochi Diffusion (<a href=\"https://github.com/godly-devotion/MochiDiffusion\" rel=\"nofollow\">Github</a>)</h3>\n<p>这是个免费开源的 SD 客户端，比上面的 Diffusers 多了 scale 和图生图的功能。</p>\n<p><img alt=\"\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://img.way2solo.com/photo/vulgur/ba3a5e69-5f80-4f0d-8f36-e3493f4b47e5.jpeg?imageView2/2/w/1920/q/100\"/></p>\n<h3>Draw Things (<a href=\"https://apps.apple.com/cn/app/draw-things-ai-generation/id6444050820\" rel=\"nofollow\">‎App Store</a>)</h3>\n<p>这个 app 是这三个里功能最丰富的，令我意外的是它居然是免费的，甚至有些功能我都没在 webui 中发现。</p>\n<p><img alt=\"\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://img.way2solo.com/photo/vulgur/58e6d4a5-720b-40eb-8fb5-21a82c7064ea.jpeg?imageView2/2/w/1920/q/100\"/></p>\n<h2>新装备</h2>\n<p>设计师觉得我最近精神和身体状态都不太好，建议我每天抽点时间活动活动，于是送给我一套在家的健身套装：无绳跳绳，跳绳垫，拉力绳。</p>\n<p>最近没时间去打羽毛球了，天气又不太适合出去骑行，正好在家里练一练吧。</p>\n<p>之前在抖音上看到一个每天用无绳跳绳锻炼的人，从 190 多斤减到了 140 斤，希望我也能做到。</p>\n<p><img alt=\"\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://img.way2solo.com/photo/vulgur/d6413714-dd14-4437-a568-71878b78a799.jpeg?imageView2/2/w/1920/q/100\"/></p>\n<p><a href=\"https://mp.weixin.qq.com/s/fvBSFgsJ2Fzmny78Vps4zA\" rel=\"nofollow\">公众号原文</a></p>\n<h2>往期周报</h2>\n<ul>\n<li><a href=\"https://www.v2ex.com/t/927541#reply4\" rel=\"nofollow\">#6</a></li>\n<li><a href=\"https://www.v2ex.com/t/925552#reply9\" rel=\"nofollow\">#5</a></li>\n<li><a href=\"https://www.v2ex.com/t/923622#reply10\" rel=\"nofollow\">#4</a></li>\n<li><a href=\"https://www.v2ex.com/t/922106#reply2\" rel=\"nofollow\">#3</a></li>\n<li><a href=\"https://www.v2ex.com/t/922062#reply4\" rel=\"nofollow\">#2</a></li>\n<li><a href=\"https://www.v2ex.com/t/921926#reply3\" rel=\"nofollow\">#1</a></li>\n</ul>\n",
+  "supplements": [],
+  "replies": [
+    {
+      "id": 12898009,
+      "author": "mineralsalt",
+      "created": 1680500408,
+      "content": "可以透露一下一个月总收入大概多少吗?",
+      "content_rendered": "可以透露一下一个月总收入大概多少吗?"
+    },
+    {
+      "id": 12898382,
+      "author": "LIBQ",
+      "created": 1680503662,
+      "content": "比较好奇的还是收入跟后续规划",
+      "content_rendered": "比较好奇的还是收入跟后续规划"
+    }
+  ],
+  "reply_pages": 1,
+  "fetched_at": "2026-10-06T03:33:56.975Z"
+}

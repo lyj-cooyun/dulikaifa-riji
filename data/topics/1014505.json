@@ -1,0 +1,79 @@
+{
+  "id": 1014505,
+  "title": "独立开发周记 #51： 1 月总结",
+  "episode": {
+    "ep": 51,
+    "ep2": null
+  },
+  "node": "programmer",
+  "url": "https://www.v2ex.com/t/1014505",
+  "created": 1707139133,
+  "last_touched": 1707580865,
+  "member": "vulgur",
+  "replies_count": 8,
+  "stars": 1,
+  "thanks": 1,
+  "content": "![]( https://img.way2solo.com/photo/vulgur/34e43120-040f-4381-bfcd-7c80306e95b6.jpeg?imageView2/2/w/1920/q/100)\r\n\r\n# 2024 ，第五周，0129-0204\r\n\r\n2024 第一个月结束了，我达成了两个成就：\r\n\r\n1. 没点一次外卖\r\n2. 没去喝一次瑞幸和库迪\r\n\r\n经济下行，开源节流，这一个月怎么也能节省一千多块吧。\r\n\r\n# 1 月数据总结\r\n\r\n## 下载量（只统计极简时钟）\r\n\r\n- App Store ，下降 2.26%\r\n- Google Play ，增长 29.77%\r\n- 国内安卓市场，下降 32.08%\r\n\r\n因为国内安卓市场去年 12 月最后两天出现了暴涨的下载量，所以和 12 月相比是下降了许多，但是和正常的 11 月相比较的话，其实还是增长了一丢丢。\r\n\r\n## 收入\r\n\r\n- App Store ，增长 25%\r\n- Google Play ，增长 17.86%\r\n- Admob ，增长 8.96%\r\n- 国内安卓市场，下降 17.85%\r\n\r\nGP 和 Admob 的收入都是历史新高，相信随着新版本的极简时钟全量发布后，一定会更高。\r\n\r\n# [极简日记]( https://apps.apple.com/cn/app/id1568936702)\r\n\r\n## 崩溃收集\r\n\r\n这一周和上周一样，都在攻关一个用户反馈的崩溃 bug 。本来以为都修复了，但是用户反馈还是会闪退，而 Xcode 还没收到用户的崩溃信息，没办法只好接入第三方崩溃统计 SDK 了。\r\n\r\n先是接入了 Firebase 的 Crashlytics ，但是这东西必须科学上网才能上传崩溃信息。\r\n\r\n然后尝试了 Bugly ，不知道是我集成的方式是不是有问题，控制台里始终收不到崩溃信息，于是就放弃了。另外说一句，Bugly 的文档和集成方式太落后了，集成方式只有 pod 和手动，连 SPM 都没有，另外文档里的代码示例只有一个 Swift 的例子，其余都是 Objective-C 。看了几个国内其他的 SDK 的文档，大多数还都是用 Objective-C 。\r\n\r\n## 宣传海报\r\n\r\n打算春节期间进行一波终身会员的促销，得先做个宣传海报。\r\n\r\n正值即将到来的是龙年春节，于是我想做个可爱的中国龙幼崽放鞭炮的画面，但是 DALL·E 3 对于「中国龙」理解得不太好，试了十多个还都是西方龙的样子。\r\n\r\n![]( https://img.way2solo.com/photo/vulgur/96fcdfd5-5cf5-4e47-b036-6ee6b5898f1c.jpeg?imageView2/2/w/1920/q/100)\r\n\r\n后来我转变了思路，画一个戴中国龙头饰的小孩子在放鞭炮，这样子的效果就好很多了，也更有年味了。\r\n\r\n![]( https://img.way2solo.com/photo/vulgur/ccc04911-ec71-46ed-bfa1-dd4b6885deef.jpeg?imageView2/2/w/1920/q/100)\r\n\r\n但是，DALL·E 3 总在图像里加入蜡烛和文字，即使我禁止也不行，最后挑了一个最适合做海报的图片，又通过「搞定」这个工具在线编辑了一下，制作出了下面这个宣传海报。\r\n\r\n![]( https://img.way2solo.com/photo/vulgur/1756fd95-8016-4900-a8c5-2cb0e0963fc8.jpeg?imageView2/2/w/1920/q/100)\r\n\r\n# 红包封面\r\n\r\n公众号后台收到消息通知，赠给了我 6000 定制红包封面的额度，于是花了一句话的工夫（ DALL·E 3 ）制作了一款红包封面。\r\n\r\n但是这个红包封面仅限于公众号文章里发放，不能通过微信消息来分享，于是就随便发了一篇一句话的公众号文章，把这个红包封面分享了出去。\r\n\r\n![]( https://img.way2solo.com/photo/vulgur/03350816-51f4-48d2-922e-8a904de48529.png?imageView2/2/w/1920/q/100)\r\n\r\n接着，这篇文章的阅读数就开始惊人的增长。一个小时就突破了 1000 阅读，一个晚上就把 4000 个红包封面都领完了，阅读数比之前所有的周记都要高很多很多……\r\n\r\n所以我把最后的 2000 个留在这篇周记里，分享给大家，喜欢你能喜欢。\r\n\r\n[独立开发周记 #51：1 月总结]( https://mp.weixin.qq.com/s/y-zq3m5Y0QTwmGjIJGherA)",
+  "content_rendered": "<p><img alt=\"\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://img.way2solo.com/photo/vulgur/34e43120-040f-4381-bfcd-7c80306e95b6.jpeg?imageView2/2/w/1920/q/100\"/></p>\n<h1>2024 ，第五周，0129-0204</h1>\n<p>2024 第一个月结束了，我达成了两个成就：</p>\n<ol>\n<li>没点一次外卖</li>\n<li>没去喝一次瑞幸和库迪</li>\n</ol>\n<p>经济下行，开源节流，这一个月怎么也能节省一千多块吧。</p>\n<h1>1 月数据总结</h1>\n<h2>下载量（只统计极简时钟）</h2>\n<ul>\n<li>App Store ，下降 2.26%</li>\n<li>Google Play ，增长 29.77%</li>\n<li>国内安卓市场，下降 32.08%</li>\n</ul>\n<p>因为国内安卓市场去年 12 月最后两天出现了暴涨的下载量，所以和 12 月相比是下降了许多，但是和正常的 11 月相比较的话，其实还是增长了一丢丢。</p>\n<h2>收入</h2>\n<ul>\n<li>App Store ，增长 25%</li>\n<li>Google Play ，增长 17.86%</li>\n<li>Admob ，增长 8.96%</li>\n<li>国内安卓市场，下降 17.85%</li>\n</ul>\n<p>GP 和 Admob 的收入都是历史新高，相信随着新版本的极简时钟全量发布后，一定会更高。</p>\n<h1><a href=\"https://apps.apple.com/cn/app/id1568936702\" rel=\"nofollow\">极简日记</a></h1>\n<h2>崩溃收集</h2>\n<p>这一周和上周一样，都在攻关一个用户反馈的崩溃 bug 。本来以为都修复了，但是用户反馈还是会闪退，而 Xcode 还没收到用户的崩溃信息，没办法只好接入第三方崩溃统计 SDK 了。</p>\n<p>先是接入了 Firebase 的 Crashlytics ，但是这东西必须科学上网才能上传崩溃信息。</p>\n<p>然后尝试了 Bugly ，不知道是我集成的方式是不是有问题，控制台里始终收不到崩溃信息，于是就放弃了。另外说一句，Bugly 的文档和集成方式太落后了，集成方式只有 pod 和手动，连 SPM 都没有，另外文档里的代码示例只有一个 Swift 的例子，其余都是 Objective-C 。看了几个国内其他的 SDK 的文档，大多数还都是用 Objective-C 。</p>\n<h2>宣传海报</h2>\n<p>打算春节期间进行一波终身会员的促销，得先做个宣传海报。</p>\n<p>正值即将到来的是龙年春节，于是我想做个可爱的中国龙幼崽放鞭炮的画面，但是 DALL·E 3 对于「中国龙」理解得不太好，试了十多个还都是西方龙的样子。</p>\n<p><img alt=\"\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://img.way2solo.com/photo/vulgur/96fcdfd5-5cf5-4e47-b036-6ee6b5898f1c.jpeg?imageView2/2/w/1920/q/100\"/></p>\n<p>后来我转变了思路，画一个戴中国龙头饰的小孩子在放鞭炮，这样子的效果就好很多了，也更有年味了。</p>\n<p><img alt=\"\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://img.way2solo.com/photo/vulgur/ccc04911-ec71-46ed-bfa1-dd4b6885deef.jpeg?imageView2/2/w/1920/q/100\"/></p>\n<p>但是，DALL·E 3 总在图像里加入蜡烛和文字，即使我禁止也不行，最后挑了一个最适合做海报的图片，又通过「搞定」这个工具在线编辑了一下，制作出了下面这个宣传海报。</p>\n<p><img alt=\"\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://img.way2solo.com/photo/vulgur/1756fd95-8016-4900-a8c5-2cb0e0963fc8.jpeg?imageView2/2/w/1920/q/100\"/></p>\n<h1>红包封面</h1>\n<p>公众号后台收到消息通知，赠给了我 6000 定制红包封面的额度，于是花了一句话的工夫（ DALL·E 3 ）制作了一款红包封面。</p>\n<p>但是这个红包封面仅限于公众号文章里发放，不能通过微信消息来分享，于是就随便发了一篇一句话的公众号文章，把这个红包封面分享了出去。</p>\n<p><img alt=\"\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://img.way2solo.com/photo/vulgur/03350816-51f4-48d2-922e-8a904de48529.png?imageView2/2/w/1920/q/100\"/></p>\n<p>接着，这篇文章的阅读数就开始惊人的增长。一个小时就突破了 1000 阅读，一个晚上就把 4000 个红包封面都领完了，阅读数比之前所有的周记都要高很多很多……</p>\n<p>所以我把最后的 2000 个留在这篇周记里，分享给大家，喜欢你能喜欢。</p>\n<p><a href=\"https://mp.weixin.qq.com/s/y-zq3m5Y0QTwmGjIJGherA\" rel=\"nofollow\">独立开发周记 #51：1 月总结</a></p>\n",
+  "supplements": [],
+  "replies": [
+    {
+      "id": 14300997,
+      "author": "rekulas",
+      "created": 1707148995,
+      "content": "恭喜",
+      "content_rendered": "恭喜"
+    },
+    {
+      "id": 14301000,
+      "author": "lovekernel",
+      "created": 1707149217,
+      "content": "好有勇气和毅力。希望越来越好。加油",
+      "content_rendered": "好有勇气和毅力。希望越来越好。加油"
+    },
+    {
+      "id": 14301392,
+      "author": "akagishigeru",
+      "created": 1707181309,
+      "content": "牛！",
+      "content_rendered": "牛！"
+    },
+    {
+      "id": 14302307,
+      "author": "jasongzj",
+      "created": 1707188481,
+      "content": "很棒，祝越來越好！",
+      "content_rendered": "很棒，祝越來越好！"
+    },
+    {
+      "id": 14302784,
+      "author": "matcloud",
+      "created": 1707192843,
+      "content": "学习",
+      "content_rendered": "学习"
+    },
+    {
+      "id": 14303439,
+      "author": "yujieyu7",
+      "created": 1707202008,
+      "content": "加油",
+      "content_rendered": "加油"
+    },
+    {
+      "id": 14304380,
+      "author": "inahoshin",
+      "created": 1707211400,
+      "content": "恭喜🎉",
+      "content_rendered": "恭喜🎉"
+    },
+    {
+      "id": 14453068,
+      "author": "zzii",
+      "created": 1710501601,
+      "content": "想找一款随时简短记录\n今天下载了“极简日记”\n还行\n但发现没 mac 版",
+      "content_rendered": "想找一款随时简短记录<br />今天下载了“极简日记”<br />还行<br />但发现没 mac 版"
+    }
+  ],
+  "reply_pages": 1,
+  "fetched_at": "2026-10-06T03:33:08.062Z"
+}

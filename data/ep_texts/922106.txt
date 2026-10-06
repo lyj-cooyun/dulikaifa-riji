@@ -1,0 +1,93 @@
+=== TOPIC 922106 ===
+TITLE: 独立开发周报 #3 (0227-0305)
+EP: 3 / ep2=
+CREATED: 2023-03-08 09:26  (Beijing)
+MEMBER: vulgur  REPLIES_COUNT: 2  STARS: 1  THANKS: 0
+URL: https://www.v2ex.com/t/922106
+
+----- CONTENT (markdown) -----
+![]( https://img.way2solo.com/photo/vulgur/288d4ed4-8bd2-4405-a0d2-68ed24ddefda.png?imageView2/2/w/1920/q/100)
+
+题图由 Stable Diffusion 生成
+
+## AI 爆发的一周
+ChatGPT API 开放后，各种构建其上的产品瞬间涌现出来。 可以预见的是，很多基于文本的应用都会被洗牌。 目前 ChatGPT 对于我来说最多的应用就是翻译，翻译 app 的本地化字符串和更新文档，翻译周报（此前两期的周报都是通过 ChatGPT 翻译成英文后发布在个人 blog 上）。
+
+电影《 Her 》的内容离现实越来越近了。
+
+![]( https://img.way2solo.com/photo/vulgur/0e4a5c51-6453-418f-8d31-6f5abb37c1b4.jpg?imageView2/2/w/1920/q/100)
+
+
+### Prompter vs Programmer
+媒体都在宣传 AI 的到来会导致很多人的失业，特别是程序员。 下面这个视频是我问的一个问题：数据模型是个 Diary ，写一个日记列表页面，要求可以再列表里对日记进行增删改查。然后 ChatGPT 给出的答案也是很惊人，视频没有经过加速处理。
+
+![video]( https://mpvideo.qpic.cn/0b2eymaa4aaaqaak5aqfd5sfbq6db3bqadqa.f10002.mp4?dis_k=45930b3cf09c98531d0fd5c8ff1c27aa&dis_t=1678237999&play_scene=10100&vid=wxv_2826927950364164098&format_id=10002&support_redirect=0&mmversion=false)
+
+我认为未来能驾驭 Prompt 的人（ Prompter ）就像今天使用各种编程语言进行代码开发工作的程序员（ Programmer ）一样，都是通过计算机（ AI ）理解的语言让计算机执行命令和操作，只不过编程语言需要严格遵守其语法和运行环境，而 Prompt 更接近人类语言，而且即使有些错误 AI 也会理解和纠正。不仅如此，AI 能胜任的领域更广泛，未来的 Prompter 很有可能几句话就能部署一个网站或者开一个在线画展，再进一步的话，几句话造个行星发动机也不是不可以。
+
+现在 AI 还主要是应用在线上，一旦和线下制造业深度联动起来，又是一番天翻地覆了。
+
+## 极简日记 iOS - AKA 妥协日记([App Store]( https://apps.apple.com/cn/app/id1568936702))
+这周所有的开发工作都投入到了极简日记 iOS 上。 上周也提到了，1.7.3 迟迟无法发布正式版，因为最最关键的日记加载还有些问题没有解决。
+
+采用 async/await 的加载方式后，主页的日记列表就出现了很多 bug ，增加 /删除 /修改日记都不会立即更新，为了解决这个问题花了大量时间。
+
+不过也找到了一个频繁闪退的原因，希望是彻底修复了，不然还得妥协。
+
+另外，内测群里一直有用户反馈编辑页顶部的两个按钮经常点击无效，为此我还特意问了 ChatGPT ，也没找到解决办法。明明只是两个普普通通的按钮，很奇怪为什么点击无效，而且我一直无法复现这个问题，最后也只能是加大点击区域作为妥协尝试一下。
+
+这周也有很多其他妥协，想做但是因为各种主观客观原因没做成的：
+
+* 图片选择器加入 Loading 提示
+* 采用 iOS16 的 PhotosPicker
+* 找到选择标签时闪退的原因
+
+## 极简日记 Android([Google Play]( https://play.google.com/store/apps/details?id=com.mad.android.minimaldaily))
+周一的时候提交了新版本 1.1.1 ，Google Play 、Vivo 、Oppo 、华为都顺利上架，唯独小米被拒，跟审核人员沟通了一周还是不行，fock ！
+
+1.2.0 的一大波功能已经开发完成，下周进行测试和本地化，希望下周能够提交上架。
+
+## Stable Diffusion
+这周尝试了一下 Stable Diffusion （以下简称 SD ），并且在上面花费的时间比开发还要多（其实是逃避心理导致的，连续的失败让我想放松一下，不想再面对那些 bug ）。
+
+一开始是跟着教程在 Colab 上玩了一晚上，成品效果还不错。 第二天尝试了用 DiffusionBee 这个 app ，但是添加其他 model 始终是出错，而且功能相对简单，就放弃了。最后还是在自己的 M1 Pro MBP 上部署了 SD 的 webui ，玩了将近两天。我的笔记本也是第一次这么高负荷运行，真·猛火炼丹。
+
+![]( https://img.way2solo.com/photo/vulgur/24ff7696-901f-4612-adc1-e89b02f9b0f0.png?imageView2/2/w/1920/q/100)
+
+
+通过两天多的尝试和学习，刚刚搞明白了 SD 的一些基础操作和各种参数的意义，于是花了些时间生成了一张自己梦想中的工作环境，也就是这片文章的封面图：参数一改，别墅靠海。
+
+决定以后的封面图片都由 SD 搞定了。‍‍‍‍
+
+![]( https://img.way2solo.com/photo/vulgur/4d103617-1f93-4a10-bb00-9f439bb79d8e.jpg?imageView2/2/w/1920/q/100)
+
+
+## 睡眠
+
+这周的睡眠特别差，也导致了工作大受影响。
+
+第一次是因为玩 SD 到很晚，眼睛和脑子都非常累，导致第二天一整天都没精神。甚至上午和下午各补了一觉，整个人还是昏昏沉沉。
+
+第二次是因为孩子发烧，一晚上也没睡觉，后半夜还去了一趟医院，导致第二天特别困，随时随地都能睡着。
+
+![]( https://img.way2solo.com/photo/vulgur/1c1a2f01-c7bf-4dec-8828-ffacee8b8121.jpg?imageView2/2/w/1920/q/100)
+
+
+记得五年前还是每天后半夜两点多才睡，第二天也没啥事。去年看世界杯，后半夜的球只看了三场，还有两场是点球大战……第二天直到晚上才缓过来。
+
+孩子开学了，每天早上 7 点就要起床，而每天后半夜 1 点多才睡的话，睡眠时间就会不足 6 小时。
+
+人到中年，兴趣和现实，总要妥协一个😮‍💨。
+
+[公众号原文]( https://mp.weixin.qq.com/s/3Bwe-PpSz670Ox6ozbcXpg)
+
+----- SUPPLEMENTS -----
+(none)
+
+----- REPLIES -----
+>> @lingxi27 (2023-03-08 09:38):
+你的视频裂了
+
+>> @acoldfox (2023-03-08 09:46):
+为什么小米被拒，他们给的理由是什么
+

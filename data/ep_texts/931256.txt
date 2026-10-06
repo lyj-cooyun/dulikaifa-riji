@@ -1,0 +1,82 @@
+=== TOPIC 931256 ===
+TITLE: 独立开发周报 #8：开始运动
+EP: 8 / ep2=
+CREATED: 2023-04-10 15:04  (Beijing)
+MEMBER: vulgur  REPLIES_COUNT: 1  STARS: 4  THANKS: 0
+URL: https://www.v2ex.com/t/931256
+
+----- CONTENT (markdown) -----
+# 独立开发周报 #8：开始运动
+
+## 2023 年，0403-0409
+
+![desktop.jpeg]( https://img.way2solo.com/photo/vulgur/75e431b4-b378-4739-9319-ae0d8feaceec.jpeg?imageView2/2/w/1920/q/100)
+
+题图是本周的真实桌面
+
+## 极简时钟 iOS （[App Store]( https://apps.apple.com/cn/app/id1265404088)）
+
+在周三下午提交了 v4.2.3 ，修复了两个小 bug ，40 分钟就过审上架了。
+
+![appstore.jpeg]( https://img.way2solo.com/photo/vulgur/de23a7a3-6772-4934-8d51-66bd459b5f2a.jpeg?imageView2/2/w/1920/q/100)
+
+新版本 4.3.0 的开发继续缓慢进行中，甚至梦到了给朋友展示新功能，朋友看了后大受震撼。醒来后就立刻录了个 demo 给朋友发过去，朋友果然一眼就看懂了。
+
+刷 YouTube 的时候偶然发现了几个推荐全新改版的极简时钟的视频，拍得非常好看啊🥰，希望能看到越来越多这样的视频。
+
+![youtube.jpeg]( https://img.way2solo.com/photo/vulgur/036198f2-ebf2-42b3-a361-f68a2929a053.jpeg?imageView2/2/w/1920/q/100)
+
+## 极简日记（[App Store]( https://apps.apple.com/cn/app/id1568936702)）
+
+也是在周三，提交完极简时钟后，也提交了极简日记的 v1.7.4 ，也是修复了两个小 bug：
+
+- 分享过去今日的单条日记，有可能不显示右上角的「去年今日」或者「 x 年前的今天」
+- 如果在系统设置里开启了「按钮形状」会导致很多页面的按钮都变大，甚至超出屏幕范围
+
+## 关键词
+
+这次两个 app 也一并更新了一波关键词，把排名较低或者关联性不大的关键词都去掉了。四天过去了，极简时钟的关键词覆盖数稍微下降，极简日记的关键词覆盖数大幅增加。
+
+## 感悟心得
+
+鉴于最近白天的写代码时间很少，就需要调整好自己的身体状态和心理状态，减少分心，集中精力，随时开工。
+
+## 运动
+
+上周才发现我居然从 2 月开始有氧适能就一直比较低，所以从这周开始有计划地增加运动。
+
+![aerobi.jpeg]( https://img.way2solo.com/photo/vulgur/e32d9d16-551f-47cf-bf74-21ee554fa899.jpeg?imageView2/2/w/1920/q/100)
+
+周一跳绳 1000 个和做拉力带，周二跳绳 600 个，周四骑行 26km ，周六骑行 20km 。
+
+![watch.jpeg]( https://img.way2solo.com/photo/vulgur/5591af92-4799-48a5-b7a7-5018851436ee.jpeg?imageView2/2/w/1920/q/100)
+
+本来是上周就想骑行的，把我的八年老车都清理了一番，但还是拖到了这周才动身。翻看记录，上一次骑行正好是一年前，而整个 2022 年也只骑了那一次。
+
+![riding.jpeg]( https://img.way2solo.com/photo/vulgur/abe30696-f305-499a-97c3-cb5eda9c2f5a.jpeg?imageView2/2/w/1920/q/100)
+
+## 买买买
+
+我都是一边听播客一边骑行，但是最近正值春风强劲，风噪大得有点儿听不清耳机里的声音了，于是周四晚上就开始研究买新耳机。一开始的想法就是买降噪强一些的耳机，但是看到网上都不推荐带降噪耳机骑行，因为太不安全了，而且风噪很难消除，反而都是推荐骨传导耳机。调研了一圈，果断下单了小米的骨传导耳机。
+
+第二天到手后，非常满意。意外的发现这个耳机简直就是听播客的神器，没有入耳式耳机长时间佩戴后的不适感，周五的时候我几乎戴着听了一天，本来还担心和眼镜一起戴会不舒服，结果并没有。而且这个耳机可以同时连接两个设备，像我在手机上听会播客，然后又在电脑上看看视频，可以无缝切换（但是不能同时播放两个设备的声音）。周六第二次骑行的时候就戴着这个耳机骑了 20km ，体验非常不错。
+
+![bch.jpeg]( https://img.way2solo.com/photo/vulgur/01812cfc-358c-4f34-8159-1e56f4eb2650.jpeg?imageView2/2/w/1920/q/100)
+
+## 读书&睡眠
+
+最近一周开始读《****纳瓦尔宝典****》，并且强制自己是每天晚上 11 点左右就上床，通过支架固定平板，躺着看。我还开启了 AI 有声阅读功能，这样就不用自己手动翻页了。看困了就定时 20 分钟，关灯闭眼听，一会就睡着了。
+
+![reading.jpeg]( https://img.way2solo.com/photo/vulgur/8da363b1-c9c9-4f79-a4bd-e912fab31b39.jpeg?imageView2/2/w/1920/q/100)
+
+一周下来，睡眠情况有了些改善，早起不怎么痛苦了。
+
+![sleep.jpeg]( https://img.way2solo.com/photo/vulgur/3a94bf48-641f-486c-a841-72c0d1953fcc.jpeg?imageView2/2/w/1920/q/100)
+
+----- SUPPLEMENTS -----
+(none)
+
+----- REPLIES -----
+>> @pikoqian98 (2023-04-10 22:46):
+hackingWithSwift ，最近也在看
+

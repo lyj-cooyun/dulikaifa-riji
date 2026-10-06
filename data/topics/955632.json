@@ -1,0 +1,198 @@
+{
+  "id": 955632,
+  "title": "独立开发周记 #21： Apple 预判了我的预判",
+  "episode": {
+    "ep": 21,
+    "ep2": null
+  },
+  "node": "programmer",
+  "url": "https://www.v2ex.com/t/955632",
+  "created": 1688997337,
+  "last_touched": 1689119448,
+  "member": "vulgur",
+  "replies_count": 25,
+  "stars": 5,
+  "thanks": 2,
+  "content": "# 2023 ，0703-0709\r\n\r\n今年的夏天真是太热了，都想去南方避暑了。好不容易终于等到了一场暴雨，整个城市降温了不少。\r\n\r\n据说今年是百年最强厄尔尼诺，但厄尔尼诺对全球温度的影响通常在其形成的第二年展现出来，所以 2024 年会更热……🥵\r\n\r\n# 喜迁新址\r\n\r\n周四，极简软件工作室喜迁新址，从卧室到客厅。孩子大了，需要自己单独的卧室，我就被迫从次卧里赶了出来，从此从私密办公变成了开放办公。\r\n\r\n![]( https://img.way2solo.com/photo/vulgur/71ddaa93-63d7-4f21-960c-669838341e57.jpeg?imageView2/2/w/1920/q/100)\r\n\r\n\r\n过去的 7 年，我的工作台一直都是在次卧里。在一个地方坐久了就调整一下次卧的布局，这么多年调整了七八次。目前桌子上唯一没换过的就是戴尔的 U2412M 显示器和第一代的 Magic Mouse （还是上电池的），这个显示器买了有 10 年了，在北京用了三年，回家后也带了回来。桌子和椅子都换了三轮了，电脑也换了三个，键盘换了十多把。\r\n\r\n![]( https://img.way2solo.com/photo/vulgur/ef394b0d-a8a2-4344-8387-26b249b7cd26.jpeg?imageView2/2/w/1920/q/100)\r\n\r\n# 极简日记 [App Store]( https://apps.apple.com/cn/app/id1568936702)\r\n\r\n这周依然在推进 1.7.6 ，导入导出的功能终于优化完成了，也给其他一些细节进行了修修补补。\r\n\r\n这其中最耗时耗力的是针对日历的优化。一开始以为是日历的卡顿是加载图片造成的，但是改为了异步加载图片还是卡，后来干脆把加载图片的功能注释掉才发现没有图片了也卡。所以卡顿瓶颈不是在 IO 这里，而是在 UI 上。期间请教了 Bee ，他在自己的 app：瓦尔登中实现了可以横向无限滚动的、没有任何卡顿的列表，他不仅无私分享了他的代码给我，还详细地教我如何使用他封装好的代码。尽管如此，我的日历在他的列表中依然卡顿，而且我需要改动一些我的代码才能在他的代码中正常加载图片。好在最后我也发现了卡顿的真正原因，就是控制日历滑动的位移以及当前月份的几个 State 变量没有协作好导致的。\r\n\r\n![]( https://img.way2solo.com/photo/vulgur/e037f54e-f6a6-48ae-917e-203ad135bac3.jpeg?imageView2/2/w/1920/q/100)\r\n\r\n除了修 bug ，还想着加入一个关于草稿的新功能。原来的草稿是打开编辑页时自动恢复的，但是这样有一定的强制性，万一用户不希望恢复这个草稿而是想直接新建一个日记呢。于是我想着参考即刻 App 重新设计一下整个草稿功能，也就是将未完成的草稿作为一个提示给到用户，让用户选择继续编辑还是删除这个草稿。\r\n\r\n但是这里又遇到了纠结点：该如何设计草稿的数据模型？这时有三种选择：\r\n\r\n1. 将日记的草稿作为一个临时生成的 struct 保存到 UserDefaults 里面，但是这样需要让这个 struct 实现`Codable`协议，而且如果有多个草稿的话，这样的存取也不方便。\r\n2. 在日记的数据模型上加入一个新的字段，`isDraft`，好处是不用在草稿和日记做转换，但是这样日记的已保存和未保存这两种状态不能同时出现。\r\n3. 在 CoreData 中新建一个专门用于存储 Draft 的数据实体，在属性定义上就是日记数据实体的精简版，可以存储多个草稿，也可以相对方便地转换成日记，缺点就是需要写一堆 CRUD 。\r\n\r\n思考了一下午，最终还是选择了最麻烦但是未来扩展性更高的第三种方案，争取下周就能写完这部分的功能。\r\n\r\n![]( https://img.way2solo.com/photo/vulgur/644df1a6-db56-426e-a55a-620f3d5cb659.jpeg?imageView2/2/w/1920/q/100)\r\n\r\n# 新 App 调研\r\n\r\n半个月前我就产生了一个健康方面的新 App 的 idea ，这段时间一直在调研实现相关的技术。\r\n\r\n因为需要服务器存储数据和发送通知，想 w2solo 的各位群友请教了国内外这方面的服务，也顺便学习了什么是 SaaS 、PaaS 、BaaS 、FaaS 。\r\n\r\n因为需要使用 HealthKit ，向 StressWatch 的开发者之一的 Patrick 请教了许多关于读取健康数据方面的问题。\r\n\r\n然而，就在验证了可行性的第二天，我才发现原来 iOS 的健康 App 就已经有了类似的功能🤦，背刺苹果失败😂。\r\n\r\n不过简单体验了一下健康 App 的相关功能，感觉还是有些复杂，而且体验和我想象的差很多，感觉仍有一线可做的机会。\r\n\r\n# 买买买\r\n\r\n这周又是各种买。\r\n\r\n- 黑爵 AK832 ，矮轴机械键盘，茶轴没货了，就买了个青轴的。我看上这个键盘的是矮轴+Gasket 的组合，另外也是很便宜。\r\n- 在「少数派的编辑们最近买了啥？」的安利下，买了个 PZOZ 的 Apple Watch 的充电宝。\r\n- 在抖音上买了一堆内裤、果汁饮料、浓缩果汁、挂耳咖啡、垃圾袋、金枪鱼肉、短袖 T 恤和洞洞鞋。\r\n\r\n![]( https://img.way2solo.com/photo/vulgur/0bab8c6f-416b-4c8f-86f3-17dbeefab264.jpeg?imageView2/2/w/1920/q/100)\r\n\r\n[公众号原文]( https://mp.weixin.qq.com/s/lNjmSB3lLp-kh-Cf6myrWQ)",
+  "content_rendered": "<h1>2023 ，0703-0709</h1>\n<p>今年的夏天真是太热了，都想去南方避暑了。好不容易终于等到了一场暴雨，整个城市降温了不少。</p>\n<p>据说今年是百年最强厄尔尼诺，但厄尔尼诺对全球温度的影响通常在其形成的第二年展现出来，所以 2024 年会更热……🥵</p>\n<h1>喜迁新址</h1>\n<p>周四，极简软件工作室喜迁新址，从卧室到客厅。孩子大了，需要自己单独的卧室，我就被迫从次卧里赶了出来，从此从私密办公变成了开放办公。</p>\n<p><img alt=\"\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://img.way2solo.com/photo/vulgur/71ddaa93-63d7-4f21-960c-669838341e57.jpeg?imageView2/2/w/1920/q/100\"/></p>\n<p>过去的 7 年，我的工作台一直都是在次卧里。在一个地方坐久了就调整一下次卧的布局，这么多年调整了七八次。目前桌子上唯一没换过的就是戴尔的 U2412M 显示器和第一代的 Magic Mouse （还是上电池的），这个显示器买了有 10 年了，在北京用了三年，回家后也带了回来。桌子和椅子都换了三轮了，电脑也换了三个，键盘换了十多把。</p>\n<p><img alt=\"\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://img.way2solo.com/photo/vulgur/ef394b0d-a8a2-4344-8387-26b249b7cd26.jpeg?imageView2/2/w/1920/q/100\"/></p>\n<h1>极简日记 <a href=\"https://apps.apple.com/cn/app/id1568936702\" rel=\"nofollow\">App Store</a></h1>\n<p>这周依然在推进 1.7.6 ，导入导出的功能终于优化完成了，也给其他一些细节进行了修修补补。</p>\n<p>这其中最耗时耗力的是针对日历的优化。一开始以为是日历的卡顿是加载图片造成的，但是改为了异步加载图片还是卡，后来干脆把加载图片的功能注释掉才发现没有图片了也卡。所以卡顿瓶颈不是在 IO 这里，而是在 UI 上。期间请教了 Bee ，他在自己的 app：瓦尔登中实现了可以横向无限滚动的、没有任何卡顿的列表，他不仅无私分享了他的代码给我，还详细地教我如何使用他封装好的代码。尽管如此，我的日历在他的列表中依然卡顿，而且我需要改动一些我的代码才能在他的代码中正常加载图片。好在最后我也发现了卡顿的真正原因，就是控制日历滑动的位移以及当前月份的几个 State 变量没有协作好导致的。</p>\n<p><img alt=\"\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://img.way2solo.com/photo/vulgur/e037f54e-f6a6-48ae-917e-203ad135bac3.jpeg?imageView2/2/w/1920/q/100\"/></p>\n<p>除了修 bug ，还想着加入一个关于草稿的新功能。原来的草稿是打开编辑页时自动恢复的，但是这样有一定的强制性，万一用户不希望恢复这个草稿而是想直接新建一个日记呢。于是我想着参考即刻 App 重新设计一下整个草稿功能，也就是将未完成的草稿作为一个提示给到用户，让用户选择继续编辑还是删除这个草稿。</p>\n<p>但是这里又遇到了纠结点：该如何设计草稿的数据模型？这时有三种选择：</p>\n<ol>\n<li>将日记的草稿作为一个临时生成的 struct 保存到 UserDefaults 里面，但是这样需要让这个 struct 实现<code>Codable</code>协议，而且如果有多个草稿的话，这样的存取也不方便。</li>\n<li>在日记的数据模型上加入一个新的字段，<code>isDraft</code>，好处是不用在草稿和日记做转换，但是这样日记的已保存和未保存这两种状态不能同时出现。</li>\n<li>在 CoreData 中新建一个专门用于存储 Draft 的数据实体，在属性定义上就是日记数据实体的精简版，可以存储多个草稿，也可以相对方便地转换成日记，缺点就是需要写一堆 CRUD 。</li>\n</ol>\n<p>思考了一下午，最终还是选择了最麻烦但是未来扩展性更高的第三种方案，争取下周就能写完这部分的功能。</p>\n<p><img alt=\"\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://img.way2solo.com/photo/vulgur/644df1a6-db56-426e-a55a-620f3d5cb659.jpeg?imageView2/2/w/1920/q/100\"/></p>\n<h1>新 App 调研</h1>\n<p>半个月前我就产生了一个健康方面的新 App 的 idea ，这段时间一直在调研实现相关的技术。</p>\n<p>因为需要服务器存储数据和发送通知，想 w2solo 的各位群友请教了国内外这方面的服务，也顺便学习了什么是 SaaS 、PaaS 、BaaS 、FaaS 。</p>\n<p>因为需要使用 HealthKit ，向 StressWatch 的开发者之一的 Patrick 请教了许多关于读取健康数据方面的问题。</p>\n<p>然而，就在验证了可行性的第二天，我才发现原来 iOS 的健康 App 就已经有了类似的功能🤦，背刺苹果失败😂。</p>\n<p>不过简单体验了一下健康 App 的相关功能，感觉还是有些复杂，而且体验和我想象的差很多，感觉仍有一线可做的机会。</p>\n<h1>买买买</h1>\n<p>这周又是各种买。</p>\n<ul>\n<li>黑爵 AK832 ，矮轴机械键盘，茶轴没货了，就买了个青轴的。我看上这个键盘的是矮轴+Gasket 的组合，另外也是很便宜。</li>\n<li>在「少数派的编辑们最近买了啥？」的安利下，买了个 PZOZ 的 Apple Watch 的充电宝。</li>\n<li>在抖音上买了一堆内裤、果汁饮料、浓缩果汁、挂耳咖啡、垃圾袋、金枪鱼肉、短袖 T 恤和洞洞鞋。</li>\n</ul>\n<p><img alt=\"\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://img.way2solo.com/photo/vulgur/0bab8c6f-416b-4c8f-86f3-17dbeefab264.jpeg?imageView2/2/w/1920/q/100\"/></p>\n<p><a href=\"https://mp.weixin.qq.com/s/lNjmSB3lLp-kh-Cf6myrWQ\" rel=\"nofollow\">公众号原文</a></p>\n",
+  "supplements": [],
+  "replies": [
+    {
+      "id": 13335577,
+      "author": "Captain0711",
+      "created": 1688997637,
+      "content": "好喜欢你这样的桌面布局，想问下，这桌上物品的价值，下半年自己也打算这样来一套",
+      "content_rendered": "好喜欢你这样的桌面布局，想问下，这桌上物品的价值，下半年自己也打算这样来一套"
+    },
+    {
+      "id": 13335582,
+      "author": "vulgur",
+      "created": 1688997723,
+      "content": "@Captain0711 除了 Macbook 都是便宜的入门款",
+      "content_rendered": "@<a href=\"/member/Captain0711\">Captain0711</a> 除了 Macbook 都是便宜的入门款"
+    },
+    {
+      "id": 13335607,
+      "author": "Captain0711",
+      "created": 1688998071,
+      "content": "好的 感谢回复",
+      "content_rendered": "好的 感谢回复"
+    },
+    {
+      "id": 13335736,
+      "author": "xuanbg",
+      "created": 1689001256,
+      "content": "呃，有和我一样在阳台办公的么？没有桌子只有椅子，mbp 放腿上……其实还蛮舒服的",
+      "content_rendered": "呃，有和我一样在阳台办公的么？没有桌子只有椅子，mbp 放腿上……其实还蛮舒服的"
+    },
+    {
+      "id": 13335794,
+      "author": "darkengine",
+      "created": 1689003126,
+      "content": "@xuanbg 叠加 buff 如下：夏天，intel 的 macbook ...",
+      "content_rendered": "@<a href=\"/member/xuanbg\">xuanbg</a> 叠加 buff 如下：夏天，intel 的 macbook ..."
+    },
+    {
+      "id": 13336101,
+      "author": "xuanbg",
+      "created": 1689033867,
+      "content": "@darkengine 我的 mbp 正是 18 年版的，还是 i9 呢。好吧，偶尔会很烫，不过下面垫一本我儿子的《博物》就解决问题。哈哈哈",
+      "content_rendered": "@<a href=\"/member/darkengine\">darkengine</a> 我的 mbp 正是 18 年版的，还是 i9 呢。好吧，偶尔会很烫，不过下面垫一本我儿子的《博物》就解决问题。哈哈哈"
+    },
+    {
+      "id": 13336158,
+      "author": "darkengine",
+      "created": 1689035615,
+      "content": "@xuanbg 低强度可以，我开个 Android studio 开个 VScode ReactJS 项目可以煎蛋了",
+      "content_rendered": "@<a href=\"/member/xuanbg\">xuanbg</a> 低强度可以，我开个 Android studio 开个 VScode ReactJS 项目可以煎蛋了"
+    },
+    {
+      "id": 13336258,
+      "author": "Promtheus",
+      "created": 1689036934,
+      "content": "@xuanbg #4 放腿上脖子不会难受吗，老是低着头。感觉坚持不了多久",
+      "content_rendered": "@<a href=\"/member/xuanbg\">xuanbg</a> #4 放腿上脖子不会难受吗，老是低着头。感觉坚持不了多久"
+    },
+    {
+      "id": 13336815,
+      "author": "Esen",
+      "created": 1689040615,
+      "content": "键盘下面白色的物件是什么",
+      "content_rendered": "键盘下面白色的物件是什么"
+    },
+    {
+      "id": 13337020,
+      "author": "vulgur",
+      "created": 1689041481,
+      "content": "@Esen Apple Watch 的充电宝",
+      "content_rendered": "@<a href=\"/member/Esen\">Esen</a> Apple Watch 的充电宝"
+    },
+    {
+      "id": 13337100,
+      "author": "konakona",
+      "created": 1689041851,
+      "content": "@xuanbg 颈椎可还行？",
+      "content_rendered": "@<a href=\"/member/xuanbg\">xuanbg</a> 颈椎可还行？"
+    },
+    {
+      "id": 13337477,
+      "author": "jwh199588",
+      "created": 1689043878,
+      "content": "画图的是什么软件",
+      "content_rendered": "画图的是什么软件"
+    },
+    {
+      "id": 13337574,
+      "author": "sch1111878",
+      "created": 1689044416,
+      "content": "请教收益可以覆盖上班的工资吗?",
+      "content_rendered": "请教收益可以覆盖上班的工资吗?"
+    },
+    {
+      "id": 13337631,
+      "author": "jry",
+      "created": 1689044823,
+      "content": "独立开发，靠极简日记收入吗老哥。",
+      "content_rendered": "独立开发，靠极简日记收入吗老哥。"
+    },
+    {
+      "id": 13338125,
+      "author": "vulgur",
+      "created": 1689048287,
+      "content": "@jwh199588 无边记",
+      "content_rendered": "@<a href=\"/member/jwh199588\">jwh199588</a> 无边记"
+    },
+    {
+      "id": 13338128,
+      "author": "vulgur",
+      "created": 1689048298,
+      "content": "@sch1111878 可以",
+      "content_rendered": "@<a href=\"/member/sch1111878\">sch1111878</a> 可以"
+    },
+    {
+      "id": 13338132,
+      "author": "vulgur",
+      "created": 1689048334,
+      "content": "@jry 极简日记只够早餐钱，更多的是其他的 app",
+      "content_rendered": "@<a href=\"/member/jry\">jry</a> 极简日记只够早餐钱，更多的是其他的 app"
+    },
+    {
+      "id": 13338429,
+      "author": "ureyhiker",
+      "created": 1689052709,
+      "content": "请问第一张图里面黑色的小音箱是什么品牌款式呀？",
+      "content_rendered": "请问第一张图里面黑色的小音箱是什么品牌款式呀？"
+    },
+    {
+      "id": 13339020,
+      "author": "Cliff99",
+      "created": 1689057792,
+      "content": "脚下那个设备是什么？",
+      "content_rendered": "脚下那个设备是什么？"
+    },
+    {
+      "id": 13340105,
+      "author": "vulgur",
+      "created": 1689066884,
+      "content": "@Cliff99 脚踏",
+      "content_rendered": "@<a href=\"/member/Cliff99\">Cliff99</a> 脚踏"
+    },
+    {
+      "id": 13340110,
+      "author": "vulgur",
+      "created": 1689066940,
+      "content": "@ureyhiker 漫步者 R1080BT",
+      "content_rendered": "@<a href=\"/member/ureyhiker\">ureyhiker</a> 漫步者 R1080BT"
+    },
+    {
+      "id": 13340409,
+      "author": "julyclyde",
+      "created": 1689069451,
+      "content": "@xuanbg 电脑放腿上，正常情况下颈椎处于不合适的弯曲程度",
+      "content_rendered": "@<a href=\"/member/xuanbg\">xuanbg</a> 电脑放腿上，正常情况下颈椎处于不合适的弯曲程度"
+    },
+    {
+      "id": 13340430,
+      "author": "21231sv",
+      "created": 1689069685,
+      "content": "弱弱的问下，大佬是靠独立开发产品为生，还是有其它收入渠道",
+      "content_rendered": "弱弱的问下，大佬是靠独立开发产品为生，还是有其它收入渠道"
+    },
+    {
+      "id": 13340479,
+      "author": "vulgur",
+      "created": 1689070294,
+      "content": "@21231sv 不是大佬，只靠 App 收入为生",
+      "content_rendered": "@<a href=\"/member/21231sv\">21231sv</a> 不是大佬，只靠 App 收入为生"
+    },
+    {
+      "id": 13357237,
+      "author": "mitong3269",
+      "created": 1689349617,
+      "content": "请问这个充电器好用吗，我看评论好多有问题（刷评论的）",
+      "content_rendered": "请问这个充电器好用吗，我看评论好多有问题（刷评论的）"
+    }
+  ],
+  "reply_pages": 2,
+  "fetched_at": "2026-10-06T03:33:42.648Z"
+}

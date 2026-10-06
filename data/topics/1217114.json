@@ -1,0 +1,51 @@
+{
+  "id": 1217114,
+  "title": "独立开发周记 172：计划有变，鸿蒙再见",
+  "episode": {
+    "ep": 172,
+    "ep2": null
+  },
+  "node": "huawei",
+  "url": "https://www.v2ex.com/t/1217114",
+  "created": 1780313964,
+  "last_touched": 1780330831,
+  "member": "vulgur",
+  "replies_count": 4,
+  "stars": 0,
+  "thanks": 0,
+  "content": "# 2026 ，0525 ～ 0531\r\n\r\nWindsurf 和 Codex 的额度都用光了，就尝试了一下 Antigravity 。第一轮对话是重构整个 App 的 UI 主题色，完成得我很满意，第二轮是加入英文本地化，可惜没执行完就耗光额度了，免费版也太不禁用了，都没怎么体验就结束了。\r\n\r\n# 本周工作\r\n\r\n## 极简时钟 鸿蒙版\r\n\r\n极简时钟上架鸿蒙一个月了，没有宣传，也没有上推荐（对接人说帮我申请，两个星期过去了也没有答复），每天就是几十个下载量。一共 824 个下载，其中 8 个付费，付费率不足 1%……\r\n\r\n\r\n![]( https://files.mdnice.com/user/73796/c6d7aab8-15f3-4c45-868d-e9d5bd649255.png)\r\n\r\n\r\n## 计划有变，鸿蒙再见\r\n\r\n因为华为 IAP 支持自动续期的订阅产品，所以 Sticki 鸿蒙版我本来就打算接入华为 IAP ，没想到这么离谱。\r\n\r\n想要开通华为的数字商品服务，按照文档里的操作步骤是需要自己搭建一个服务器来管理通知和密钥，我问对接群里的人这个 IAP Kit 就不能做到本地验证吗，答复是不能，必须有服务器。但是群友说在其他文档里写明单机 App 可以不用处理 IAP 服务器和应用服务器之间的交互，仅靠客户端就可以搞定。\r\n\r\n\r\n![]( https://files.mdnice.com/user/73796/4e8fa16f-2f28-4f2f-a806-27234d4fd30f.png)\r\n\r\n\r\n技术方面的问题都好说，让 AI 去写代码就行了，但是接下来就遇到了 AI 无法解决的问题。各位，你能相信吗，2026 年了，想要在华为开通内购，居然需要联系工作人员，去签一个合同，打印出来盖章，把纸质文件邮寄给华为，然后等华为签完再邮寄回来……这一套操作真是遥遥领先啊。\r\n\r\n\r\n![]( https://files.mdnice.com/user/73796/3def04ff-e578-46a1-8b2b-064838ef0798.png)\r\n\r\n\r\n一个已经开通的群友说这个合同页数可不少，当时打印这些材料就花了几十块，我一想这个 app 估计都不一定能能把这打印费赚回来，就果断放弃了接入。\r\n\r\n\r\n![]( https://files.mdnice.com/user/73796/e0ab441e-fca8-4122-8885-b03655f1b960.png)\r\n\r\n\r\n六月一日之前在鸿蒙上架 Sticki 肯定是不可能的了，改用微信登录和支付的话，还需要微信开放平台和微信支付那边的审核，还需要改写服务器代码，估计最少还需要一个星期才能搞定了。于是之前做的准备突然就派上用场了，因为 app 是用 Flutter 写的，可以直接转向安卓端，只需要接入 RevenueCat ，然后就可以直接上架 Google Play 了！\r\n\r\n至于鸿蒙版，随缘开发吧。\r\n\r\n嘿，感谢当初选择 Flutter 的我！\r\n\r\n\r\n# 代码之外\r\n\r\n## NotebookLM\r\n\r\n花了一天体验了一下 NotebookLM 。\r\n\r\n上传文件写着是支持 epub ，但是我上传了十多个文件全都失败了，最后是上传了 20 多个 PDF 才成功。背后的模型是 Gemini ，但是不知道具体型号是什么，回答的风格非常简洁，和豆包、GPT 完全不同。\r\n\r\n我没有体验作为大卖点的播客音频生成功能，就用了思维导图和闪卡，感觉一般般。我想通过对话帮我生成初学者的学习路线，回答的内容我也不是很满意，太空泛太简单了，不知道是我的提问方式有问题还是上传的资料有问题。\r\n\r\n\r\n![]( https://files.mdnice.com/user/73796/e8834727-6735-477e-8fdd-210548070812.png)\r\n\r\n\r\n## 晚餐盲盒\r\n\r\n老婆建议把每天投喂过来的饭菜拍成短视频发到抖音上，我这周就拍了六天，为了方便剪辑，还开了剪映的会员。前三天还有几百的观看量，但是后面几天越来越低，最后一天断崖下降，都不如之前的十分之一。\r\n\r\n起号失败……\r\n\r\n\r\n![]( https://files.mdnice.com/user/73796/f3af88a6-e897-46ae-a48c-7465bc541cbd.jpg)\r\n\r\n\r\n## 开工大吉\r\n\r\n装修开工了，但只搞了个开工仪式。装修公司对开工仪式十分看重，背景板、陈设、道具、时辰都安排得很讲究。或许抖音号应该转型拍装修日记了。\r\n\r\n\r\n![]( https://files.mdnice.com/user/73796/2f9e733c-77d2-41d0-928e-d55eeebfbe2a.jpg)\r\n\r\n\r\n\r\n## 其他\r\n\r\n- 代账报税公司搞活动，续了三年\r\n- 终于去游泳了，上一次还是两年前，游完后后背酸疼了两天\r\n- 新买了个激光打印机，终于不用忍受喷墨的龟速打印了\r\n- 补完了 Rick and Morty 第八季，三颗星吧",
+  "content_rendered": "<h1>2026 ，0525 ～ 0531</h1>\n<p>Windsurf 和 Codex 的额度都用光了，就尝试了一下 Antigravity 。第一轮对话是重构整个 App 的 UI 主题色，完成得我很满意，第二轮是加入英文本地化，可惜没执行完就耗光额度了，免费版也太不禁用了，都没怎么体验就结束了。</p>\n<h1>本周工作</h1>\n<h2>极简时钟 鸿蒙版</h2>\n<p>极简时钟上架鸿蒙一个月了，没有宣传，也没有上推荐（对接人说帮我申请，两个星期过去了也没有答复），每天就是几十个下载量。一共 824 个下载，其中 8 个付费，付费率不足 1%……</p>\n<p><img alt=\"\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://files.mdnice.com/user/73796/c6d7aab8-15f3-4c45-868d-e9d5bd649255.png\"/></p>\n<h2>计划有变，鸿蒙再见</h2>\n<p>因为华为 IAP 支持自动续期的订阅产品，所以 Sticki 鸿蒙版我本来就打算接入华为 IAP ，没想到这么离谱。</p>\n<p>想要开通华为的数字商品服务，按照文档里的操作步骤是需要自己搭建一个服务器来管理通知和密钥，我问对接群里的人这个 IAP Kit 就不能做到本地验证吗，答复是不能，必须有服务器。但是群友说在其他文档里写明单机 App 可以不用处理 IAP 服务器和应用服务器之间的交互，仅靠客户端就可以搞定。</p>\n<p><img alt=\"\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://files.mdnice.com/user/73796/4e8fa16f-2f28-4f2f-a806-27234d4fd30f.png\"/></p>\n<p>技术方面的问题都好说，让 AI 去写代码就行了，但是接下来就遇到了 AI 无法解决的问题。各位，你能相信吗，2026 年了，想要在华为开通内购，居然需要联系工作人员，去签一个合同，打印出来盖章，把纸质文件邮寄给华为，然后等华为签完再邮寄回来……这一套操作真是遥遥领先啊。</p>\n<p><img alt=\"\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://files.mdnice.com/user/73796/3def04ff-e578-46a1-8b2b-064838ef0798.png\"/></p>\n<p>一个已经开通的群友说这个合同页数可不少，当时打印这些材料就花了几十块，我一想这个 app 估计都不一定能能把这打印费赚回来，就果断放弃了接入。</p>\n<p><img alt=\"\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://files.mdnice.com/user/73796/e0ab441e-fca8-4122-8885-b03655f1b960.png\"/></p>\n<p>六月一日之前在鸿蒙上架 Sticki 肯定是不可能的了，改用微信登录和支付的话，还需要微信开放平台和微信支付那边的审核，还需要改写服务器代码，估计最少还需要一个星期才能搞定了。于是之前做的准备突然就派上用场了，因为 app 是用 Flutter 写的，可以直接转向安卓端，只需要接入 RevenueCat ，然后就可以直接上架 Google Play 了！</p>\n<p>至于鸿蒙版，随缘开发吧。</p>\n<p>嘿，感谢当初选择 Flutter 的我！</p>\n<h1>代码之外</h1>\n<h2>NotebookLM</h2>\n<p>花了一天体验了一下 NotebookLM 。</p>\n<p>上传文件写着是支持 epub ，但是我上传了十多个文件全都失败了，最后是上传了 20 多个 PDF 才成功。背后的模型是 Gemini ，但是不知道具体型号是什么，回答的风格非常简洁，和豆包、GPT 完全不同。</p>\n<p>我没有体验作为大卖点的播客音频生成功能，就用了思维导图和闪卡，感觉一般般。我想通过对话帮我生成初学者的学习路线，回答的内容我也不是很满意，太空泛太简单了，不知道是我的提问方式有问题还是上传的资料有问题。</p>\n<p><img alt=\"\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://files.mdnice.com/user/73796/e8834727-6735-477e-8fdd-210548070812.png\"/></p>\n<h2>晚餐盲盒</h2>\n<p>老婆建议把每天投喂过来的饭菜拍成短视频发到抖音上，我这周就拍了六天，为了方便剪辑，还开了剪映的会员。前三天还有几百的观看量，但是后面几天越来越低，最后一天断崖下降，都不如之前的十分之一。</p>\n<p>起号失败……</p>\n<p><img alt=\"\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://files.mdnice.com/user/73796/f3af88a6-e897-46ae-a48c-7465bc541cbd.jpg\"/></p>\n<h2>开工大吉</h2>\n<p>装修开工了，但只搞了个开工仪式。装修公司对开工仪式十分看重，背景板、陈设、道具、时辰都安排得很讲究。或许抖音号应该转型拍装修日记了。</p>\n<p><img alt=\"\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://files.mdnice.com/user/73796/2f9e733c-77d2-41d0-928e-d55eeebfbe2a.jpg\"/></p>\n<h2>其他</h2>\n<ul>\n<li>代账报税公司搞活动，续了三年</li>\n<li>终于去游泳了，上一次还是两年前，游完后后背酸疼了两天</li>\n<li>新买了个激光打印机，终于不用忍受喷墨的龟速打印了</li>\n<li>补完了 Rick and Morty 第八季，三颗星吧</li>\n</ul>\n",
+  "supplements": [],
+  "replies": [
+    {
+      "id": 17707832,
+      "author": "i67c6NJ0r33nC667",
+      "created": 1780319428,
+      "content": "还要等信件来回就离谱",
+      "content_rendered": "还要等信件来回就离谱"
+    },
+    {
+      "id": 17708009,
+      "author": "NewYear",
+      "created": 1780323631,
+      "content": "打印店很贵的，其实打印本身成本很低，可以在网上打印。\r\n\r\n你有打印机，却又抱怨高额的打印费。\r\n\r\n不理解",
+      "content_rendered": "打印店很贵的，其实打印本身成本很低，可以在网上打印。<br /><br />你有打印机，却又抱怨高额的打印费。<br /><br />不理解"
+    },
+    {
+      "id": 17708382,
+      "author": "wendy12478",
+      "created": 1780358087,
+      "content": "@NewYear 其实还是对华为这种繁琐的流程感到不满，打印都是小事",
+      "content_rendered": "@<a href=\"/member/NewYear\">NewYear</a> 其实还是对华为这种繁琐的流程感到不满，打印都是小事"
+    },
+    {
+      "id": 17708506,
+      "author": "daxigua1te",
+      "created": 1780361329,
+      "content": "华为这个协议我也签了，我那个时候属于鸿蒙开发的初期，还是对接人员推荐我签的。当时确实很惊讶，打印一大堆文件，还要邮来邮去，完全不像一个科技公司该有的做派。我以为是早期系统还不完善，所以得靠这种原始的方法先签署，现在看来是一点优化也没有啊。不过签完了我也没用他的内购，还是接入了微信支付，厚厚的一叠合同成了一堆废纸放在那。",
+      "content_rendered": "华为这个协议我也签了，我那个时候属于鸿蒙开发的初期，还是对接人员推荐我签的。当时确实很惊讶，打印一大堆文件，还要邮来邮去，完全不像一个科技公司该有的做派。我以为是早期系统还不完善，所以得靠这种原始的方法先签署，现在看来是一点优化也没有啊。不过签完了我也没用他的内购，还是接入了微信支付，厚厚的一叠合同成了一堆废纸放在那。"
+    }
+  ],
+  "reply_pages": 1,
+  "fetched_at": "2026-10-06T03:30:50.772Z"
+}

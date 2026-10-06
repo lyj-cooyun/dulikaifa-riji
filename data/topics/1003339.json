@@ -1,0 +1,44 @@
+{
+  "id": 1003339,
+  "title": "独立开发周记 #45：该快乐就快乐",
+  "episode": {
+    "ep": 45,
+    "ep2": null
+  },
+  "node": "weekly",
+  "url": "https://www.v2ex.com/t/1003339",
+  "created": 1703502956,
+  "last_touched": 1703510156,
+  "member": "vulgur",
+  "replies_count": 3,
+  "stars": 0,
+  "thanks": 0,
+  "content": "![]( https://img.way2solo.com/photo/vulgur/416bb97c-d65e-4691-bd70-a6fd0923982e.jpeg?imageView2/2/w/1920/q/100)\r\n\r\n\r\n# 2023 ，1218-1224\r\n\r\n圣诞快乐！🎄🎉\r\n\r\n这是 2023 年最后一篇周记了，下周就该年终总结了。\r\n\r\n![]( https://img.way2solo.com/photo/vulgur/7698251a-bcb8-4b28-8135-81b897e10f0e.jpeg?imageView2/2/w/1920/q/100)\r\n\r\n\r\n用 iPhone 15 Pro Max 拍的月亮，还不错。\r\n\r\n# 后端开发\r\n\r\n为了升级极简时钟的支付 API ，周二写了一天的 node.js 。\r\n\r\n工作其实非常简单，主要就两点，一是接入微信支付的 API ，二是对云数据库进行 CRUD 。\r\n\r\n另外也实现了一直想加入的兑换优惠代码的功能，以后可以开展促销优惠活动了。\r\n\r\n在 Codeium 的帮助下，写起来既轻松又快乐，比写 iOS 开心多了。\r\n\r\n周日晚上又想复制一份代码作为新 App 的 API ，但是本着 DRY 原则还是重构了一下周二写的代码，一套 API 支持两个 App 。\r\n\r\n但是遇到一个坑，调试了一晚上，新 App 的微信支付 API 始终返回 400 ，经过排查，最后问题定位在 AppID 上，原来是这个 AppID 还没关联微信支付……\r\n\r\n说到这个 AppID 就不得不提一下「设计精妙」的微信开放平台了，我在 20 天之前就在上面新建了新 App ，20 天后我才发现审核未通过，期间一个通知都没有，短信和邮件都没有。\r\n\r\n未通过的原因是填写的官网里没有关于这个 app 的介绍，于是我这周又修改了一下两年未改动的官网。重新提交后又被拒了，原因是 App 类别不合适，需要修改……再次提交后重于通过了，好在没费多长时间，一天内都搞定了。\r\n\r\n# 极简时钟近期数据变化\r\n\r\n## iOS 版\r\n\r\n😮‍💨，先叹一口气再说。\r\n\r\n两周没更新，上周刚有一点的起色这周完全消失了，继续持续下跌📉。\r\n\r\n这周几乎每天都会收到 Google Analytics 的警告邮件，告诉我用户数和事件数都在大幅下降😭。\r\n\r\n![]( https://img.way2solo.com/photo/vulgur/df276afc-16b1-4e2c-9c6c-5db4f001f028.jpeg?imageView2/2/w/1920/q/100)\r\n\r\n\r\n这周又想出了两个新表盘的 idea ，不知道什么时候才能碰到合适的设计师。\r\n\r\n## Android 版\r\n\r\n其实在上个月安卓版的日活（ GP+国内）就已经超过 iOS 版了，而且，现在 GP 版每日的新下载量是 iOS 版的 3 倍，安卓版终于实现了后来居上。\r\n\r\n我一直以为安卓版的收入是低于 iOS 版的，没想到看了数据才发现原来早在今年 4 月份，安卓版的总收入就已经超过 iOS 版了……\r\n\r\n安卓版全新 UI 版本马上就可以上架了，希望能大卖。\r\n\r\n我之前一直说「安卓不值得」，现在来看还是加个定语吧，国内安卓不值得！\r\n\r\n# PlayStation 5\r\n\r\n可能最近压力有点大，总想着去赛博世界里逃避一下。最近在 PS4 上玩了一星期战神 5 ，流畅度和画质倒是没还能接受，但是玩一会就有点晕，玩战神 4 的时候也是这样。\r\n\r\n也玩了个赛博朋克 2077 的开头，和战神 5 的感觉差不多，我觉得是 30 帧的问题。\r\n\r\n于是，买个 PS5 的念头又冒了出来。我从没买过全新的游戏主机，之前的都是二手的。前些日子买了 4K 电视后我就觉得这 PS5 肯定逃不掉，只是时间的问题。\r\n\r\n周五晚上看了眼京东，周六 10:10 前下单的话当天就可以到手。于是，从不失眠的我失眠了，满脑子都是纠结要不要买。\r\n\r\n周六早上起来后这个念头也一直没有消减，上午送孩子上课后回家的路上，等红灯的时候，发现已经 10:04 了，就果断下单了。\r\n\r\n然后回家把港服账号申请了，如何购买游戏和 PS Plus 会员也调研了一圈。下午收到主机后，在淘宝买了港服备份，付款，下载，开玩！\r\n\r\n说实话，主机和游戏的价格都很贵，但是人生得意须尽欢，就当作是给自己买的圣诞礼物了。\r\n\r\n![]( https://img.way2solo.com/photo/vulgur/ffd09432-607f-40cd-af8a-e8f03f1bfad7.jpeg?imageView2/2/w/1920/q/100)",
+  "content_rendered": "<p><img alt=\"\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://img.way2solo.com/photo/vulgur/416bb97c-d65e-4691-bd70-a6fd0923982e.jpeg?imageView2/2/w/1920/q/100\"/></p>\n<h1>2023 ，1218-1224</h1>\n<p>圣诞快乐！🎄🎉</p>\n<p>这是 2023 年最后一篇周记了，下周就该年终总结了。</p>\n<p><img alt=\"\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://img.way2solo.com/photo/vulgur/7698251a-bcb8-4b28-8135-81b897e10f0e.jpeg?imageView2/2/w/1920/q/100\"/></p>\n<p>用 iPhone 15 Pro Max 拍的月亮，还不错。</p>\n<h1>后端开发</h1>\n<p>为了升级极简时钟的支付 API ，周二写了一天的 node.js 。</p>\n<p>工作其实非常简单，主要就两点，一是接入微信支付的 API ，二是对云数据库进行 CRUD 。</p>\n<p>另外也实现了一直想加入的兑换优惠代码的功能，以后可以开展促销优惠活动了。</p>\n<p>在 Codeium 的帮助下，写起来既轻松又快乐，比写 iOS 开心多了。</p>\n<p>周日晚上又想复制一份代码作为新 App 的 API ，但是本着 DRY 原则还是重构了一下周二写的代码，一套 API 支持两个 App 。</p>\n<p>但是遇到一个坑，调试了一晚上，新 App 的微信支付 API 始终返回 400 ，经过排查，最后问题定位在 AppID 上，原来是这个 AppID 还没关联微信支付……</p>\n<p>说到这个 AppID 就不得不提一下「设计精妙」的微信开放平台了，我在 20 天之前就在上面新建了新 App ，20 天后我才发现审核未通过，期间一个通知都没有，短信和邮件都没有。</p>\n<p>未通过的原因是填写的官网里没有关于这个 app 的介绍，于是我这周又修改了一下两年未改动的官网。重新提交后又被拒了，原因是 App 类别不合适，需要修改……再次提交后重于通过了，好在没费多长时间，一天内都搞定了。</p>\n<h1>极简时钟近期数据变化</h1>\n<h2>iOS 版</h2>\n<p>😮‍💨，先叹一口气再说。</p>\n<p>两周没更新，上周刚有一点的起色这周完全消失了，继续持续下跌📉。</p>\n<p>这周几乎每天都会收到 Google Analytics 的警告邮件，告诉我用户数和事件数都在大幅下降😭。</p>\n<p><img alt=\"\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://img.way2solo.com/photo/vulgur/df276afc-16b1-4e2c-9c6c-5db4f001f028.jpeg?imageView2/2/w/1920/q/100\"/></p>\n<p>这周又想出了两个新表盘的 idea ，不知道什么时候才能碰到合适的设计师。</p>\n<h2>Android 版</h2>\n<p>其实在上个月安卓版的日活（ GP+国内）就已经超过 iOS 版了，而且，现在 GP 版每日的新下载量是 iOS 版的 3 倍，安卓版终于实现了后来居上。</p>\n<p>我一直以为安卓版的收入是低于 iOS 版的，没想到看了数据才发现原来早在今年 4 月份，安卓版的总收入就已经超过 iOS 版了……</p>\n<p>安卓版全新 UI 版本马上就可以上架了，希望能大卖。</p>\n<p>我之前一直说「安卓不值得」，现在来看还是加个定语吧，国内安卓不值得！</p>\n<h1>PlayStation 5</h1>\n<p>可能最近压力有点大，总想着去赛博世界里逃避一下。最近在 PS4 上玩了一星期战神 5 ，流畅度和画质倒是没还能接受，但是玩一会就有点晕，玩战神 4 的时候也是这样。</p>\n<p>也玩了个赛博朋克 2077 的开头，和战神 5 的感觉差不多，我觉得是 30 帧的问题。</p>\n<p>于是，买个 PS5 的念头又冒了出来。我从没买过全新的游戏主机，之前的都是二手的。前些日子买了 4K 电视后我就觉得这 PS5 肯定逃不掉，只是时间的问题。</p>\n<p>周五晚上看了眼京东，周六 10:10 前下单的话当天就可以到手。于是，从不失眠的我失眠了，满脑子都是纠结要不要买。</p>\n<p>周六早上起来后这个念头也一直没有消减，上午送孩子上课后回家的路上，等红灯的时候，发现已经 10:04 了，就果断下单了。</p>\n<p>然后回家把港服账号申请了，如何购买游戏和 PS Plus 会员也调研了一圈。下午收到主机后，在淘宝买了港服备份，付款，下载，开玩！</p>\n<p>说实话，主机和游戏的价格都很贵，但是人生得意须尽欢，就当作是给自己买的圣诞礼物了。</p>\n<p><img alt=\"\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://img.way2solo.com/photo/vulgur/ffd09432-607f-40cd-af8a-e8f03f1bfad7.jpeg?imageView2/2/w/1920/q/100\"/></p>\n",
+  "supplements": [],
+  "replies": [
+    {
+      "id": 14121081,
+      "author": "simonCN",
+      "created": 1703555903,
+      "content": "看着还有个 XSS ，不玩 XGP 了么",
+      "content_rendered": "看着还有个 XSS ，不玩 XGP 了么"
+    },
+    {
+      "id": 14121103,
+      "author": "simonCN",
+      "created": 1703556011,
+      "content": "看你的 PS5 还是老版，现在出了 slim 版了吧，光盘可拆卸，说实话老版 PS5 价格现在真不贵，好好享受吧",
+      "content_rendered": "看你的 PS5 还是老版，现在出了 slim 版了吧，光盘可拆卸，说实话老版 PS5 价格现在真不贵，好好享受吧"
+    },
+    {
+      "id": 14121152,
+      "author": "vulgur",
+      "created": 1703556353,
+      "content": "@simonCN 就是新的 slim 版，XGP 也玩",
+      "content_rendered": "@<a href=\"/member/simonCN\">simonCN</a> 就是新的 slim 版，XGP 也玩"
+    }
+  ],
+  "reply_pages": 1,
+  "fetched_at": "2026-10-06T03:33:14.608Z"
+}

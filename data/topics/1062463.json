@@ -1,0 +1,79 @@
+{
+  "id": 1062463,
+  "title": "独立开发周记 77： 7 月数据总结",
+  "episode": {
+    "ep": 77,
+    "ep2": null
+  },
+  "node": "starter",
+  "url": "https://www.v2ex.com/t/1062463",
+  "created": 1722780912,
+  "last_touched": 1722801196,
+  "member": "vulgur",
+  "replies_count": 8,
+  "stars": 2,
+  "thanks": 0,
+  "content": "# 2024 ，0729-0804\r\n上周买的边桌发挥了重大的作用，不仅可以一边在上面吃饭一边看电视，还可以当做曲谱架，还可以拉到屋里凉快的地方写代码。\r\n\r\n![]( https://img.way2solo.com/photo/vulgur/5d556d32-5d40-42f4-b190-02b6695d6845.jpg?imageView2/2/w/1920/q/100)\r\n\r\n# 7 月数据总结\r\n\r\n## 下载量（极简时钟）\r\n- App Store ，减少 31.12%\r\n- Google Play ，增长 11.13%\r\n- 国内安卓市场，因为前半个多月的数据没有统计上，就不做比较了\r\n\r\n## 收入\r\n- App Store ，减少 25%\r\n- Google Play ，减少 3.68%\r\n- Admob ，增长 0.27%\r\n- 国内安卓市场，增长 19.95%\r\n\r\n# 本周开发\r\n\r\n## 极简日记 iOS\r\n这周大部分时间都花在了极简日记上。特别是连着熬了三个晚上在删除交互上，特意写了一篇文章进行了总结。\r\n\r\n[独立开发日记：一个删除交互的思考和设计]( https://v2ex.com/t/1061916)\r\n\r\n周六写了一天的代码，想要优化图片的内存占用，结果都是负优化，占用问题反而更严重了，图片一多就闪退了，最后只好 reset 了全部修改。\r\n\r\n这期间多亏了肘子哥，解决了 overlay 的 bug 。\r\n\r\n## 其他\r\n周二忙了一上午，三个 IDE 轮番操作。\r\n\r\n本来是在写 iOS ，突然收到腾讯云的整改通知，要求网站添加备案的链接。修改了一下网站的网页代码，直接部署到了服务器上，就完事了。\r\n然后收到了 Google Play 发过来的审核拒绝的邮件，说是 Heal Clock 的订阅页面不符合要求，于是修改了一下文案，提交上去了。\r\n\r\n![]( https://img.way2solo.com/photo/vulgur/2dcd52b0-7165-42a3-a8b2-f3143c49d6f1.png?imageView2/2/w/1920/q/100)\r\n\r\n但是 Heal Clock 从上周开始，提交了四个版本，至今还没有通过审核。实在是不知道订阅页面哪里有问题，给 GP 提了工单也过去四天了，还没有回复。\r\n\r\n最近极简便签的数据不错，一直在上升，于是在 7 月 31 日晚实施了小幅涨价。\r\n\r\n还有一个好消息，极简时钟 GP 的日下载量回升到 1K 了。\r\n\r\n连续三天写代码到后半夜一点，后果就是白天的时候眼睛周围的肌肉不时就痉挛。\r\n\r\n# 买买买\r\n- 尤克里里的支架、曲谱架（在路上）\r\n- 17 块的洞洞鞋\r\n- 拉力带健身套装（在路上）\r\n- 不锈钢厨房水槽下水过滤器\r\n- Eagle ，我怎么直到今天才用上！！！\r\n\r\n![]( https://img.way2solo.com/photo/vulgur/d0166434-4735-4670-b3bd-c39096b4ef08.jpg?imageView2/2/w/1920/q/100)",
+  "content_rendered": "<h1>2024 ，0729-0804</h1>\n<p>上周买的边桌发挥了重大的作用，不仅可以一边在上面吃饭一边看电视，还可以当做曲谱架，还可以拉到屋里凉快的地方写代码。</p>\n<p><img alt=\"\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://img.way2solo.com/photo/vulgur/5d556d32-5d40-42f4-b190-02b6695d6845.jpg?imageView2/2/w/1920/q/100\"/></p>\n<h1>7 月数据总结</h1>\n<h2>下载量（极简时钟）</h2>\n<ul>\n<li>App Store ，减少 31.12%</li>\n<li>Google Play ，增长 11.13%</li>\n<li>国内安卓市场，因为前半个多月的数据没有统计上，就不做比较了</li>\n</ul>\n<h2>收入</h2>\n<ul>\n<li>App Store ，减少 25%</li>\n<li>Google Play ，减少 3.68%</li>\n<li>Admob ，增长 0.27%</li>\n<li>国内安卓市场，增长 19.95%</li>\n</ul>\n<h1>本周开发</h1>\n<h2>极简日记 iOS</h2>\n<p>这周大部分时间都花在了极简日记上。特别是连着熬了三个晚上在删除交互上，特意写了一篇文章进行了总结。</p>\n<p><a href=\"https://v2ex.com/t/1061916\" rel=\"nofollow\">独立开发日记：一个删除交互的思考和设计</a></p>\n<p>周六写了一天的代码，想要优化图片的内存占用，结果都是负优化，占用问题反而更严重了，图片一多就闪退了，最后只好 reset 了全部修改。</p>\n<p>这期间多亏了肘子哥，解决了 overlay 的 bug 。</p>\n<h2>其他</h2>\n<p>周二忙了一上午，三个 IDE 轮番操作。</p>\n<p>本来是在写 iOS ，突然收到腾讯云的整改通知，要求网站添加备案的链接。修改了一下网站的网页代码，直接部署到了服务器上，就完事了。\n然后收到了 Google Play 发过来的审核拒绝的邮件，说是 Heal Clock 的订阅页面不符合要求，于是修改了一下文案，提交上去了。</p>\n<p><img alt=\"\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://img.way2solo.com/photo/vulgur/2dcd52b0-7165-42a3-a8b2-f3143c49d6f1.png?imageView2/2/w/1920/q/100\"/></p>\n<p>但是 Heal Clock 从上周开始，提交了四个版本，至今还没有通过审核。实在是不知道订阅页面哪里有问题，给 GP 提了工单也过去四天了，还没有回复。</p>\n<p>最近极简便签的数据不错，一直在上升，于是在 7 月 31 日晚实施了小幅涨价。</p>\n<p>还有一个好消息，极简时钟 GP 的日下载量回升到 1K 了。</p>\n<p>连续三天写代码到后半夜一点，后果就是白天的时候眼睛周围的肌肉不时就痉挛。</p>\n<h1>买买买</h1>\n<ul>\n<li>尤克里里的支架、曲谱架（在路上）</li>\n<li>17 块的洞洞鞋</li>\n<li>拉力带健身套装（在路上）</li>\n<li>不锈钢厨房水槽下水过滤器</li>\n<li>Eagle ，我怎么直到今天才用上！！！</li>\n</ul>\n<p><img alt=\"\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://img.way2solo.com/photo/vulgur/d0166434-4735-4670-b3bd-c39096b4ef08.jpg?imageView2/2/w/1920/q/100\"/></p>\n",
+  "supplements": [],
+  "replies": [
+    {
+      "id": 15079599,
+      "author": "silencelixing",
+      "created": 1722781220,
+      "content": "大家最关心的收入金额💰没看到",
+      "content_rendered": "大家最关心的收入金额💰没看到"
+    },
+    {
+      "id": 15079858,
+      "author": "user1284",
+      "created": 1722790396,
+      "content": "@silencelixing 起码 2 万块一个月",
+      "content_rendered": "@<a href=\"/member/silencelixing\">silencelixing</a> 起码 2 万块一个月"
+    },
+    {
+      "id": 15080301,
+      "author": "needpp",
+      "created": 1722820970,
+      "content": "不错，想入门开发 ios ，有什么现场的脚手架推荐不？ 比如登录，支付，一些常用的组件啥的",
+      "content_rendered": "不错，想入门开发 ios ，有什么现场的脚手架推荐不？ 比如登录，支付，一些常用的组件啥的"
+    },
+    {
+      "id": 15080870,
+      "author": "tianzeteam",
+      "created": 1722824379,
+      "content": "想问一下，你这个几个 APP 都是无后端的吧",
+      "content_rendered": "想问一下，你这个几个 APP 都是无后端的吧"
+    },
+    {
+      "id": 15083420,
+      "author": "109021017",
+      "created": 1722845905,
+      "content": "就在这小茶几上码代码吗? 坐得时间长了没有颈椎腰椎的问题?",
+      "content_rendered": "就在这小茶几上码代码吗? 坐得时间长了没有颈椎腰椎的问题?"
+    },
+    {
+      "id": 15084481,
+      "author": "vulgur",
+      "created": 1722858927,
+      "content": "@tianzeteam 除了国内安卓版需要服务器来处理微信支付，其余平台的都是单机 App",
+      "content_rendered": "@<a href=\"/member/tianzeteam\">tianzeteam</a> 除了国内安卓版需要服务器来处理微信支付，其余平台的都是单机 App"
+    },
+    {
+      "id": 15084482,
+      "author": "vulgur",
+      "created": 1722858948,
+      "content": "@109021017 可升降",
+      "content_rendered": "@<a href=\"/member/109021017\">109021017</a> 可升降"
+    },
+    {
+      "id": 15084484,
+      "author": "vulgur",
+      "created": 1722858991,
+      "content": "@needpp 支付就是用 RevenueCat ，我没有用户系统，就没有登录功能",
+      "content_rendered": "@<a href=\"/member/needpp\">needpp</a> 支付就是用 RevenueCat ，我没有用户系统，就没有登录功能"
+    }
+  ],
+  "reply_pages": 1,
+  "fetched_at": "2026-10-06T03:32:39.345Z"
+}

@@ -1,0 +1,58 @@
+{
+  "id": 978604,
+  "title": "独立开发周记 #33： 9 月总结",
+  "episode": {
+    "ep": 33,
+    "ep2": null
+  },
+  "node": "programmer",
+  "url": "https://www.v2ex.com/t/978604",
+  "created": 1696242318,
+  "last_touched": 1696276085,
+  "member": "vulgur",
+  "replies_count": 5,
+  "stars": 1,
+  "thanks": 1,
+  "content": "# 2023 ，0925-1001\r\n\r\nApp Store 上架 App 也需要 ICP 备案了，唉，一言难尽。\r\n\r\n极简软件工作室成立 3 周年，我也做了三年的企业家了。\r\n\r\n![]( https://img.way2solo.com/photo/vulgur/b93ebcfb-b1ef-4498-8db1-51550653d797.jpeg?imageView2/2/w/1920/q/100)\r\n\r\n# 9 月总结\r\n\r\n- App Store ，下载量下降 20%，收入下降 18%\r\n- Google Play ，下载量增长 20.24%，内购收入增长 9.43%，Admob 收入增长 6.56%\r\n- 国内安卓市场，下载量下降 31.37%，收入下降 12.26%。还以为 9 月开学了，数据能有所回升，没想到还在下降，和半年前比，已经**拦腰斩**了\r\n- 公众号打赏，88.6 元\r\n\r\n![]( https://img.way2solo.com/photo/vulgur/d9f7eb97-d1b5-4ace-b7df-b2e5b697f5eb.jpeg?imageView2/2/w/1920/q/100)\r\n\r\n\r\n# 极简日记 iOS\r\n\r\n这周给极简日记做了一些改进，不过还在测试中，没有提交正式版。\r\n\r\n最近几次的更新通知在测试群里没有什么反馈，这个群也很少有人发言了。可能群内还在使用这个 App 的人越来越少了，我也不善于经营，打算解散这个群了。\r\n\r\n## **图片缓存**\r\n\r\n有用户反馈日记列表在图片比较多的时候，页面划动起来会有明显的卡顿。我猜造成这个问题的最重要的原因是：每次图片的出现都是从 Core Data 里重新加载的。之前日历视图也有类似的问题，我就加入了一个字典作为缓存，这次我也用同样的思路给日记列表加入了一个全局的图片缓存。\r\n\r\n之前日历的图片缓存是在每次日历打开的时候都会清空一下，所以如果短时间内频繁打开和关闭日历的话，日历中的图片还是会每次都从 Core Data 中读取，从而拖慢 UI 响应，这次我把这里的缓存也改成了和日记列表一样的全局缓存，从而进一步解决了卡顿问题。\r\n\r\n## 双指图片缩放\r\n\r\n双指图片缩放（ pinch to zoom ）+双击恢复图片大小(double tap)+划动放大后的图片(pan)，这个经典的图片操作手势组合在 SwiftUI 上实现起来可太难了，至少我至今还没有找到全没实现的解决方案。\r\n\r\n这周我对比了几个开源的 SwiftUI 示例，最后选定了一个效果还凑合而且不用改动太多原有代码的解决方案。不过测试下来，这个方案也有两个缺点，一个是缩放的中心点不是双指捏和的那个点，一个是放大后无法划动（ Pan ）到图片的边缘区域。就是因为这两个问题，我最终决定暂时不发布正式版。\r\n\r\n# Xcode 15\r\n\r\n为了给极简日记的本地化文件都转移成 String Catalog ，看了几个关于 String Catalog 的视频教程，又看了三个关于 SwiftUI 4.0 和 Xcode 15 的新特性的视频：\r\n\r\n- [What's New In SwiftUI for iOS 16? - Xcode 14 - WWDC 2022 - SwiftUI 4.0]( https://www.youtube.com/watch?v=thT00pe9epg&list=PLimqJDzPI-H-ya9xGNc9apYfXS_IRsw3S)\r\n- [Xcode 15 - What's New]( https://www.youtube.com/watch?v=oNAj6aIU7tk&ab_channel=SeanAllen)\r\n- [Top 10 Features of Xcode 15]( https://www.youtube.com/watch?v=Fa4oPVU4pw8&ab_channel=AFSwiftTutorials)\r\n\r\nXcode 15 的众多新功能里，最吸引我的是如下几个：\r\n\r\n- String Catalog ，不会再遗漏没有翻译的本地化字符串了\r\n- Quick Actions ，不用再死记硬背一些快捷键了，也不用在菜单里寻找某个藏得很深的选项\r\n- Asset Catalog ，不用再去复制图片名字到代码里了\r\n- Bookmark ，给代码贴上标签，还可以把搜索结果存储起来\r\n\r\n# 一周的生活\r\n\r\n- 外甥女结婚，连续三天下馆子吃大餐\r\n    ![]( https://img.way2solo.com/photo/vulgur/4df2e340-ed97-48d9-aa25-aa34c2281b81.jpeg?imageView2/2/w/1920/q/100)\r\n- 今年的中秋节可是没少吃月饼，冰皮榴莲，奶黄流心，还第一次吃到了内蒙古的奶皮子月饼\r\n- 无心代码的时候，就一直在玩地平线 5\r\n- 时隔 18 年，市政府又组织了中秋烟火表演，感觉全城的人都来了\r\n    ![]( https://img.way2solo.com/photo/vulgur/1a58c839-8ffc-444d-8f81-c7f6f24d0534.jpeg?imageView2/2/w/1920/q/100)",
+  "content_rendered": "<h1>2023 ，0925-1001</h1>\n<p>App Store 上架 App 也需要 ICP 备案了，唉，一言难尽。</p>\n<p>极简软件工作室成立 3 周年，我也做了三年的企业家了。</p>\n<p><img alt=\"\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://img.way2solo.com/photo/vulgur/b93ebcfb-b1ef-4498-8db1-51550653d797.jpeg?imageView2/2/w/1920/q/100\"/></p>\n<h1>9 月总结</h1>\n<ul>\n<li>App Store ，下载量下降 20%，收入下降 18%</li>\n<li>Google Play ，下载量增长 20.24%，内购收入增长 9.43%，Admob 收入增长 6.56%</li>\n<li>国内安卓市场，下载量下降 31.37%，收入下降 12.26%。还以为 9 月开学了，数据能有所回升，没想到还在下降，和半年前比，已经<strong>拦腰斩</strong>了</li>\n<li>公众号打赏，88.6 元</li>\n</ul>\n<p><img alt=\"\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://img.way2solo.com/photo/vulgur/d9f7eb97-d1b5-4ace-b7df-b2e5b697f5eb.jpeg?imageView2/2/w/1920/q/100\"/></p>\n<h1>极简日记 iOS</h1>\n<p>这周给极简日记做了一些改进，不过还在测试中，没有提交正式版。</p>\n<p>最近几次的更新通知在测试群里没有什么反馈，这个群也很少有人发言了。可能群内还在使用这个 App 的人越来越少了，我也不善于经营，打算解散这个群了。</p>\n<h2><strong>图片缓存</strong></h2>\n<p>有用户反馈日记列表在图片比较多的时候，页面划动起来会有明显的卡顿。我猜造成这个问题的最重要的原因是：每次图片的出现都是从 Core Data 里重新加载的。之前日历视图也有类似的问题，我就加入了一个字典作为缓存，这次我也用同样的思路给日记列表加入了一个全局的图片缓存。</p>\n<p>之前日历的图片缓存是在每次日历打开的时候都会清空一下，所以如果短时间内频繁打开和关闭日历的话，日历中的图片还是会每次都从 Core Data 中读取，从而拖慢 UI 响应，这次我把这里的缓存也改成了和日记列表一样的全局缓存，从而进一步解决了卡顿问题。</p>\n<h2>双指图片缩放</h2>\n<p>双指图片缩放（ pinch to zoom ）+双击恢复图片大小(double tap)+划动放大后的图片(pan)，这个经典的图片操作手势组合在 SwiftUI 上实现起来可太难了，至少我至今还没有找到全没实现的解决方案。</p>\n<p>这周我对比了几个开源的 SwiftUI 示例，最后选定了一个效果还凑合而且不用改动太多原有代码的解决方案。不过测试下来，这个方案也有两个缺点，一个是缩放的中心点不是双指捏和的那个点，一个是放大后无法划动（ Pan ）到图片的边缘区域。就是因为这两个问题，我最终决定暂时不发布正式版。</p>\n<h1>Xcode 15</h1>\n<p>为了给极简日记的本地化文件都转移成 String Catalog ，看了几个关于 String Catalog 的视频教程，又看了三个关于 SwiftUI 4.0 和 Xcode 15 的新特性的视频：</p>\n<ul>\n<li><a href=\"https://www.youtube.com/watch?v=thT00pe9epg&amp;list=PLimqJDzPI-H-ya9xGNc9apYfXS_IRsw3S\" rel=\"nofollow\">What's New In SwiftUI for iOS 16? - Xcode 14 - WWDC 2022 - SwiftUI 4.0</a></li>\n<li><a href=\"https://www.youtube.com/watch?v=oNAj6aIU7tk&amp;ab_channel=SeanAllen\" rel=\"nofollow\">Xcode 15 - What's New</a></li>\n<li><a href=\"https://www.youtube.com/watch?v=Fa4oPVU4pw8&amp;ab_channel=AFSwiftTutorials\" rel=\"nofollow\">Top 10 Features of Xcode 15</a></li>\n</ul>\n<p>Xcode 15 的众多新功能里，最吸引我的是如下几个：</p>\n<ul>\n<li>String Catalog ，不会再遗漏没有翻译的本地化字符串了</li>\n<li>Quick Actions ，不用再死记硬背一些快捷键了，也不用在菜单里寻找某个藏得很深的选项</li>\n<li>Asset Catalog ，不用再去复制图片名字到代码里了</li>\n<li>Bookmark ，给代码贴上标签，还可以把搜索结果存储起来</li>\n</ul>\n<h1>一周的生活</h1>\n<ul>\n<li>外甥女结婚，连续三天下馆子吃大餐\n<img alt=\"\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://img.way2solo.com/photo/vulgur/4df2e340-ed97-48d9-aa25-aa34c2281b81.jpeg?imageView2/2/w/1920/q/100\"/></li>\n<li>今年的中秋节可是没少吃月饼，冰皮榴莲，奶黄流心，还第一次吃到了内蒙古的奶皮子月饼</li>\n<li>无心代码的时候，就一直在玩地平线 5</li>\n<li>时隔 18 年，市政府又组织了中秋烟火表演，感觉全城的人都来了\n<img alt=\"\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://img.way2solo.com/photo/vulgur/1a58c839-8ffc-444d-8f81-c7f6f24d0534.jpeg?imageView2/2/w/1920/q/100\"/></li>\n</ul>\n",
+  "supplements": [],
+  "replies": [
+    {
+      "id": 13724552,
+      "author": "Likenttt",
+      "created": 1696242468,
+      "content": "沙发。恭喜优秀企业家道哥练习时长满三年 :）",
+      "content_rendered": "沙发。恭喜优秀企业家道哥练习时长满三年 :）"
+    },
+    {
+      "id": 13724554,
+      "author": "wsseo",
+      "created": 1696242542,
+      "content": "可以关注下鸿蒙 NXET",
+      "content_rendered": "可以关注下鸿蒙 NXET"
+    },
+    {
+      "id": 13724758,
+      "author": "crstudio",
+      "created": 1696251511,
+      "content": "持续关注",
+      "content_rendered": "持续关注"
+    },
+    {
+      "id": 13726234,
+      "author": "someonedeng",
+      "created": 1696326756,
+      "content": "加油冲冲冲",
+      "content_rendered": "加油冲冲冲"
+    },
+    {
+      "id": 13726845,
+      "author": "FlytoSirius",
+      "created": 1696349810,
+      "content": "讲真的 ，  能做成这样其实就非常优秀了！  加油坚持下去！！",
+      "content_rendered": "讲真的 ，  能做成这样其实就非常优秀了！  加油坚持下去！！"
+    }
+  ],
+  "reply_pages": 1,
+  "fetched_at": "2026-10-06T03:33:28.185Z"
+}

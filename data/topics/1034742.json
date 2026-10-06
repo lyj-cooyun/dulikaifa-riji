@@ -1,0 +1,44 @@
+{
+  "id": 1034742,
+  "title": "独立开发周记 62：按下葫芦起了瓢&一错再错",
+  "episode": {
+    "ep": 62,
+    "ep2": null
+  },
+  "node": "weekly",
+  "url": "https://www.v2ex.com/t/1034742",
+  "created": 1713788193,
+  "last_touched": 1713792140,
+  "member": "vulgur",
+  "replies_count": 3,
+  "stars": 0,
+  "thanks": 0,
+  "content": "# 2024 ，第 16 周，0415-0421\r\n快四个月了，终于叫了一次外卖，只为 EVA 而破例。\r\n\r\n![]( https://img.way2solo.com/photo/vulgur/79d28110-075b-4be1-b750-834e9be6a94d.jpeg?imageView2/2/w/1920/q/100)\r\n\r\n提前预告一下，下周我要出去旅游一周，所以周记 63 延后一周，周记和游记一起放出。\r\n\r\n# Google Play 上的两个好消息\r\n极简时钟在 GP 上最近一个月一直在下降，日下载量几乎要跌破 1K 了。于是发布了一个更新 sdk 的版本，效果立竿见影，下载量立刻拉升回来。\r\n\r\n![]( https://img.way2solo.com/photo/vulgur/7aeafc8d-1695-4646-b6bb-5ee8ac015a64.png?imageView2/2/w/1920/q/100)\r\n\r\n极简日记在 GP 上几乎没人下载，每天下载量就是个位数。不过最近才发现下载量剧增，最高的一天达到了 169 ，增长率 1000%+，哈哈哈！看了一下国家，没想到居然是菲律宾。\r\n\r\n![]( https://img.way2solo.com/photo/vulgur/5b410f78-1ba6-4507-9841-1b25558cee14.jpg?imageView2/2/w/1920/q/100)\r\n\r\n# 极简日记 [App Store]( https://apps.apple.com/cn/app/id1568936702)\r\n这一周的所有开发工作都花在了极简日记上，而且是按下葫芦起了瓢。\r\n\r\n从上周开始就一直在修复极简日记的 bug ，但是刚修好一个，就立刻引出了另一个，每天都在这种反复中，心情很是崩溃。\r\n\r\n归根结底，还是基础知识太差，于是向其他开发者虚心请教，看 blog 和视频。\r\n- [How to use Core Data with MVVM Architecture in SwiftUI]( https://www.youtube.com/watch?v=BPQkpxtgalY)\r\n- [Transformable types]( https://andreea-andro.medium.com/transformable-types-c6f0ca180ae5)\r\n- [How to renew an expired certificate with Fastlane Match]( https://sarunw.com/posts/how-to-renew-expired-certificate-with-fastlane-match/)\r\n\r\n好在是在周日把这个版本需要解决的 bug 都清掉了，虽然解决的方式非常不优雅，但是可以安心出去旅游了。\r\n# 极简时钟 iOS 价格调整\r\n上周看完了 RevenueCat 关于 App 内购定价的总结和分析，我就想着更改一下极简时钟的内购价格。\r\n\r\n- 国内只调整了年订阅的价格，由 30 降为 18 。\r\n- 国外的价格全面与世界接轨，月订阅改为 0.99 美元，年订阅改为 3.99 美元，终身买断改为 8.99 美元。\r\n- \r\n然而，我又犯了之前同样的错误，把终身买断价格改成了 App 价格……价格是晚上改的，而我又是第二天早上才发现，居然还有 5 个购买……唉，这下导致全球的排行榜又被清空了。上次的这个操作，导致极简日记还在持续清榜中，已经 23 天了……\r\n# 减肥\r\n体重终于突破了 190 ，达到了新低 188 ，主要靠的是有两天没吃晚饭。\r\n\r\n周日的时候终于看了《热辣滚烫》。这一次减肥的目标是在元旦定下来的，不过在这部电影上映时确实也受了很大激励，但是一直没有空去电影院看。当时我就预估今年一定会掀起一波健身热潮，不知道这一波热潮过了没有。我的健身房倒是一直冷冷清清的，不过我的观察可能也是幸存者偏差，因为我是专门挑人少的时候去。\r\n\r\n我的左小臂外侧的肌肉一直疼，看肌肉图应该是叫尺侧腕屈肌。疼了大半年，我一直以为是玩游戏手柄造成的。周一在健身房搬杠铃的时候，这块肌肉突然咯嘣一下，我还以为拉伤了，过了两天居然一点也不疼了……神奇！\r\n\r\n游泳有两个突破。一是第一次达到 1000 米，之前每次最多游 30 分钟，为了达成 1000 米的目标，延长到了 44 分钟。另一个是连续游泳距离第一次尝试 100 米，之前都是每游 50 米就歇一会。\r\n\r\n![]( https://img.way2solo.com/photo/vulgur/3eb1d6a6-8d22-4c23-b676-b8d30670113c.jpeg?imageView2/2/w/1920/q/100)\r\n\r\n周二的时候，天气难得的好，于是出去沿着河边溜达了一大圈，一路边走边拍。来回差不多有 10km ，但是 Apple Watch 在 5km 的时候就没电了，后面的数据就都没记录上……\r\n![]( https://img.way2solo.com/photo/vulgur/f12cb6d4-3abf-4c42-af36-e79e7ac9e3ed.jpeg?imageView2/2/w/1920/q/100)",
+  "content_rendered": "<h1>2024 ，第 16 周，0415-0421</h1>\n<p>快四个月了，终于叫了一次外卖，只为 EVA 而破例。</p>\n<p><img alt=\"\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://img.way2solo.com/photo/vulgur/79d28110-075b-4be1-b750-834e9be6a94d.jpeg?imageView2/2/w/1920/q/100\"/></p>\n<p>提前预告一下，下周我要出去旅游一周，所以周记 63 延后一周，周记和游记一起放出。</p>\n<h1>Google Play 上的两个好消息</h1>\n<p>极简时钟在 GP 上最近一个月一直在下降，日下载量几乎要跌破 1K 了。于是发布了一个更新 sdk 的版本，效果立竿见影，下载量立刻拉升回来。</p>\n<p><img alt=\"\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://img.way2solo.com/photo/vulgur/7aeafc8d-1695-4646-b6bb-5ee8ac015a64.png?imageView2/2/w/1920/q/100\"/></p>\n<p>极简日记在 GP 上几乎没人下载，每天下载量就是个位数。不过最近才发现下载量剧增，最高的一天达到了 169 ，增长率 1000%+，哈哈哈！看了一下国家，没想到居然是菲律宾。</p>\n<p><img alt=\"\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://img.way2solo.com/photo/vulgur/5b410f78-1ba6-4507-9841-1b25558cee14.jpg?imageView2/2/w/1920/q/100\"/></p>\n<h1>极简日记 <a href=\"https://apps.apple.com/cn/app/id1568936702\" rel=\"nofollow\">App Store</a></h1>\n<p>这一周的所有开发工作都花在了极简日记上，而且是按下葫芦起了瓢。</p>\n<p>从上周开始就一直在修复极简日记的 bug ，但是刚修好一个，就立刻引出了另一个，每天都在这种反复中，心情很是崩溃。</p>\n<p>归根结底，还是基础知识太差，于是向其他开发者虚心请教，看 blog 和视频。</p>\n<ul>\n<li><a href=\"https://www.youtube.com/watch?v=BPQkpxtgalY\" rel=\"nofollow\">How to use Core Data with MVVM Architecture in SwiftUI</a></li>\n<li><a href=\"https://andreea-andro.medium.com/transformable-types-c6f0ca180ae5\" rel=\"nofollow\">Transformable types</a></li>\n<li><a href=\"https://sarunw.com/posts/how-to-renew-expired-certificate-with-fastlane-match/\" rel=\"nofollow\">How to renew an expired certificate with Fastlane Match</a></li>\n</ul>\n<p>好在是在周日把这个版本需要解决的 bug 都清掉了，虽然解决的方式非常不优雅，但是可以安心出去旅游了。</p>\n<h1>极简时钟 iOS 价格调整</h1>\n<p>上周看完了 RevenueCat 关于 App 内购定价的总结和分析，我就想着更改一下极简时钟的内购价格。</p>\n<ul>\n<li>国内只调整了年订阅的价格，由 30 降为 18 。</li>\n<li>国外的价格全面与世界接轨，月订阅改为 0.99 美元，年订阅改为 3.99 美元，终身买断改为 8.99 美元。</li>\n<li>\n</li>\n</ul>\n<p>然而，我又犯了之前同样的错误，把终身买断价格改成了 App 价格……价格是晚上改的，而我又是第二天早上才发现，居然还有 5 个购买……唉，这下导致全球的排行榜又被清空了。上次的这个操作，导致极简日记还在持续清榜中，已经 23 天了……</p>\n<h1>减肥</h1>\n<p>体重终于突破了 190 ，达到了新低 188 ，主要靠的是有两天没吃晚饭。</p>\n<p>周日的时候终于看了《热辣滚烫》。这一次减肥的目标是在元旦定下来的，不过在这部电影上映时确实也受了很大激励，但是一直没有空去电影院看。当时我就预估今年一定会掀起一波健身热潮，不知道这一波热潮过了没有。我的健身房倒是一直冷冷清清的，不过我的观察可能也是幸存者偏差，因为我是专门挑人少的时候去。</p>\n<p>我的左小臂外侧的肌肉一直疼，看肌肉图应该是叫尺侧腕屈肌。疼了大半年，我一直以为是玩游戏手柄造成的。周一在健身房搬杠铃的时候，这块肌肉突然咯嘣一下，我还以为拉伤了，过了两天居然一点也不疼了……神奇！</p>\n<p>游泳有两个突破。一是第一次达到 1000 米，之前每次最多游 30 分钟，为了达成 1000 米的目标，延长到了 44 分钟。另一个是连续游泳距离第一次尝试 100 米，之前都是每游 50 米就歇一会。</p>\n<p><img alt=\"\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://img.way2solo.com/photo/vulgur/3eb1d6a6-8d22-4c23-b676-b8d30670113c.jpeg?imageView2/2/w/1920/q/100\"/></p>\n<p>周二的时候，天气难得的好，于是出去沿着河边溜达了一大圈，一路边走边拍。来回差不多有 10km ，但是 Apple Watch 在 5km 的时候就没电了，后面的数据就都没记录上……\n<img alt=\"\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://img.way2solo.com/photo/vulgur/f12cb6d4-3abf-4c42-af36-e79e7ac9e3ed.jpeg?imageView2/2/w/1920/q/100\"/></p>\n",
+  "supplements": [],
+  "replies": [
+    {
+      "id": 14620261,
+      "author": "andrew2558",
+      "created": 1713788540,
+      "content": "感谢分享，希望一直更新。祝成功！",
+      "content_rendered": "感谢分享，希望一直更新。祝成功！"
+    },
+    {
+      "id": 14624042,
+      "author": "louise135",
+      "created": 1713855379,
+      "content": "顶博主,我也是一个新晋的游戏独立开发者.目标是手游出海,先把 App Store 和 Google Play 做起来,有时间和精力再考虑国内市场.\r\n今天把博主过往的周记都看了一遍,启发很大,与君共勉.",
+      "content_rendered": "顶博主,我也是一个新晋的游戏独立开发者.目标是手游出海,先把 App Store 和 Google Play 做起来,有时间和精力再考虑国内市场.<br />今天把博主过往的周记都看了一遍,启发很大,与君共勉."
+    },
+    {
+      "id": 14625809,
+      "author": "vulgur",
+      "created": 1713871006,
+      "content": "@louise135 wow ，游戏独立开发，更不容易，瑞思拜",
+      "content_rendered": "@<a href=\"/member/louise135\">louise135</a> wow ，游戏独立开发，更不容易，瑞思拜"
+    }
+  ],
+  "reply_pages": 1,
+  "fetched_at": "2026-10-06T03:32:55.933Z"
+}

@@ -1,0 +1,44 @@
+{
+  "id": 1115448,
+  "title": "独立开发周记 107： 2 月数据总结",
+  "episode": {
+    "ep": 107,
+    "ep2": null
+  },
+  "node": "weekly",
+  "url": "https://www.v2ex.com/t/1115448",
+  "created": 1740978620,
+  "last_touched": 1741117384,
+  "member": "vulgur",
+  "replies_count": 3,
+  "stars": 1,
+  "thanks": 2,
+  "content": "# 2025,0224-0302\r\n\r\n本周的工作进展就是更新了 Nut Goals ，加入了三个提醒通知，分别是每日记账提醒、每月对账提醒和逾期存款提醒。\r\n\r\n孩子开学了，我也可以恢复正常的工作节奏了。周日晚上简单地规划了一下下周要做的功能，希望五天内能做完并提交。\r\n\r\nWindsurf 里的 Claude 3.7 简直是 Credits 刺客啊，一句简单的需求就能消耗 20 个 Credits ，直接把一天的额度消耗光了，只好转用 Trae 来顶一顶。\r\n\r\n# 2 月数据总结\r\n\r\n## 下载量（极简时钟）\r\n\r\n- App Store ，减少 33%\r\n- Google Play ，减少 27.83%\r\n- 国内安卓市场，增长 3.5%\r\n\r\n看了下往年 App Store 的数据，每年 2 月份下载量都会跌一些，但是今年跌得比较多，可能是寒假的缘故吧。\r\n\r\n但是 GP 自从去年就一直在下降，而且是暴跌，最近的日新增下载已经快跌破 500 了，月下载总量不及去年同期的零头。\r\n\r\n\r\n![]( https://files.mdnice.com/user/73796/fc857e55-88e0-4acc-84c2-705b8507fcaf.png)\r\n\r\n\r\n## 收入\r\n\r\n- App Store ，减少 19%\r\n- Google Play ，减少 17.72%\r\n- Admob ，减少 7.84%\r\n- 国内安卓市场，增长 22.91%\r\n\r\n上周加入的 onboarding+paywall 效果显著，这一周里 RevenueCat 的 Revenue 指标提高了将近 500 美元，但是 MRR 几乎没变。\r\n\r\n国内安卓市场的收入不降反升，居然达到了近两年的最高值，而且三个 App 都有大幅增长，是有史以来月收入排行榜里的第三。\r\n\r\n![]( https://files.mdnice.com/user/73796/9b483825-62ad-441e-b65f-e4b22c983cb4.png)\r\n\r\n\r\n\r\n# 玻璃特效\r\n\r\n上周提到的「长虹玻璃特效」这周又有点进展，但是不多，最后还是卡住了。\r\n\r\n发现一个在线制作这种特效的网站，只需要上传图片，然后调整 blur 、distortion 、steps 三个参数即可实时生成。\r\n\r\n\r\n![]( https://files.mdnice.com/user/73796/942915a3-52fb-46ed-9de0-efb91400e366.png)\r\n\r\n\r\n这个网站的开发者说是使用了 WebGL Shader 来实现的，我把整个网页抓下来，把上面三个参数作为关键字搜索了一下，有两个相关的 js 文件。然后我又通过 Claude 分析这两个 js 文件，试图将其中的 Shader 改写成 Swift 的 Metal Shader ，但是生成的代码没有任何效果，改了好几轮还是这样。\r\n\r\n于是我有用这个特效的英文名字搜了一下，Fractal Glass Effect 或者 Fluted Glass Effect ，分别在 Github 和 CodePen 发现了两个用 Three.js 实现的开源代码，接着用 Claude （甚至动用了最新的 3.7 和 3.7 Thinking ）进行改写，但还是失败。\r\n\r\n本以为发现了解决方案，但是最后都是徒劳，不仅消耗了好多 Credit ，还耽误了这周的开发计划，很是沮丧。\r\n\r\n后来自我安慰一下：即使实现了这个 Shader ，但是只能应用在 iOS 17+，而极简时钟是支持到 iOS 14 的，这样很多低版本系统的用户还是无法使用到这个主题，那就先搁置吧。\r\n\r\n另外，还是要从头学习一下这个 Shader ，看看能不能自己写出来这个效果。\r\n\r\n# Kindle\r\n\r\n好久没看书了，正好东野圭吾最近出了新书，评价还挺高，于是就想着顺便买一些悬疑推理的书。打开多抓鱼后，把基本评价不错的书加入购物车，准备下单时一个评论让我悬崖勒马：祝你别买到划线版，不然第一页就告诉你凶手是谁……\r\n\r\n如果不买二手书的话，买新书的花费还不如开通微信读书会员了，一个月读一本书也就超值了啊。但是我又不想在手机上看书，就又花了两天调研目前的电纸书市场，都好贵啊，最后还是掏出了吃灰许久的 Kindle 。\r\n\r\n微信会员先不急着买，即使买了也只能用 iPad mini 来看书。先看看这次能不能在 Kindle 上静下心来读两本书，希望能用读书去代替玩游戏和刷手机，去冲刷短暂的多巴胺。\r\n\r\n\r\n![]( https://files.mdnice.com/user/73796/e44a09ec-58fb-4101-8cea-e95390157b55.jpeg)\r\n\r\n\r\n《 13·67 》这本书是在小红书上看到的推荐，据说已经被王家卫买下了电影版权，其中几个故事确实适合拍成上世纪那种风格的港片，希望能尽快看到吧（但是王家卫也不是玩悬疑推理风格的啊）。\r\n\r\n---\r\n\r\n**独立开发不易，但道哥飞蛾投烛。**\r\n\r\n**感谢各位支持，助道哥飞黄腾达。**\r\n\r\n欢迎赏脸阅读我的独立开发周记，如果你觉得这一篇写得还不错的话，以下回应会令我无比开心，开了又开：\r\n\r\n- 点赞，开心一晚 😉\r\n- 推荐，开心一天 😁\r\n- 分享，开心三天 😆\r\n- 赞赏，开心一周 😘\r\n\r\n也欢迎大家能与我交流关于独立开发的一切，更欢迎大家下载使用我的 App😄。\r\n\r\n- [极简时钟]( https://m.malink.cn/s/bURrEv)，极简主义的翻页时钟、番茄钟和正计时\r\n- [极简日记]( https://m.malink.cn/s/3YbiYb)，用时间轴随手记录生活\r\n- [极简便签]( https://m.malink.cn/s/yMvaMf)，支持 Markdown ，自定义分享图片，多种主题和布局\r\n- [Nut Goals]( https://apps.apple.com/cn/app/nut-goals/id6557039218)，像小松鼠一样记账、存钱、管理愿望清单\r\n\r\n\r\n![]( https://files.mdnice.com/user/73796/f6e50735-b4b4-49cf-8e80-b792fbd05b3e.jpg)",
+  "content_rendered": "<h1>2025,0224-0302</h1>\n<p>本周的工作进展就是更新了 Nut Goals ，加入了三个提醒通知，分别是每日记账提醒、每月对账提醒和逾期存款提醒。</p>\n<p>孩子开学了，我也可以恢复正常的工作节奏了。周日晚上简单地规划了一下下周要做的功能，希望五天内能做完并提交。</p>\n<p>Windsurf 里的 Claude 3.7 简直是 Credits 刺客啊，一句简单的需求就能消耗 20 个 Credits ，直接把一天的额度消耗光了，只好转用 Trae 来顶一顶。</p>\n<h1>2 月数据总结</h1>\n<h2>下载量（极简时钟）</h2>\n<ul>\n<li>App Store ，减少 33%</li>\n<li>Google Play ，减少 27.83%</li>\n<li>国内安卓市场，增长 3.5%</li>\n</ul>\n<p>看了下往年 App Store 的数据，每年 2 月份下载量都会跌一些，但是今年跌得比较多，可能是寒假的缘故吧。</p>\n<p>但是 GP 自从去年就一直在下降，而且是暴跌，最近的日新增下载已经快跌破 500 了，月下载总量不及去年同期的零头。</p>\n<p><img alt=\"\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://files.mdnice.com/user/73796/fc857e55-88e0-4acc-84c2-705b8507fcaf.png\"/></p>\n<h2>收入</h2>\n<ul>\n<li>App Store ，减少 19%</li>\n<li>Google Play ，减少 17.72%</li>\n<li>Admob ，减少 7.84%</li>\n<li>国内安卓市场，增长 22.91%</li>\n</ul>\n<p>上周加入的 onboarding+paywall 效果显著，这一周里 RevenueCat 的 Revenue 指标提高了将近 500 美元，但是 MRR 几乎没变。</p>\n<p>国内安卓市场的收入不降反升，居然达到了近两年的最高值，而且三个 App 都有大幅增长，是有史以来月收入排行榜里的第三。</p>\n<p><img alt=\"\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://files.mdnice.com/user/73796/9b483825-62ad-441e-b65f-e4b22c983cb4.png\"/></p>\n<h1>玻璃特效</h1>\n<p>上周提到的「长虹玻璃特效」这周又有点进展，但是不多，最后还是卡住了。</p>\n<p>发现一个在线制作这种特效的网站，只需要上传图片，然后调整 blur 、distortion 、steps 三个参数即可实时生成。</p>\n<p><img alt=\"\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://files.mdnice.com/user/73796/942915a3-52fb-46ed-9de0-efb91400e366.png\"/></p>\n<p>这个网站的开发者说是使用了 WebGL Shader 来实现的，我把整个网页抓下来，把上面三个参数作为关键字搜索了一下，有两个相关的 js 文件。然后我又通过 Claude 分析这两个 js 文件，试图将其中的 Shader 改写成 Swift 的 Metal Shader ，但是生成的代码没有任何效果，改了好几轮还是这样。</p>\n<p>于是我有用这个特效的英文名字搜了一下，Fractal Glass Effect 或者 Fluted Glass Effect ，分别在 Github 和 CodePen 发现了两个用 Three.js 实现的开源代码，接着用 Claude （甚至动用了最新的 3.7 和 3.7 Thinking ）进行改写，但还是失败。</p>\n<p>本以为发现了解决方案，但是最后都是徒劳，不仅消耗了好多 Credit ，还耽误了这周的开发计划，很是沮丧。</p>\n<p>后来自我安慰一下：即使实现了这个 Shader ，但是只能应用在 iOS 17+，而极简时钟是支持到 iOS 14 的，这样很多低版本系统的用户还是无法使用到这个主题，那就先搁置吧。</p>\n<p>另外，还是要从头学习一下这个 Shader ，看看能不能自己写出来这个效果。</p>\n<h1>Kindle</h1>\n<p>好久没看书了，正好东野圭吾最近出了新书，评价还挺高，于是就想着顺便买一些悬疑推理的书。打开多抓鱼后，把基本评价不错的书加入购物车，准备下单时一个评论让我悬崖勒马：祝你别买到划线版，不然第一页就告诉你凶手是谁……</p>\n<p>如果不买二手书的话，买新书的花费还不如开通微信读书会员了，一个月读一本书也就超值了啊。但是我又不想在手机上看书，就又花了两天调研目前的电纸书市场，都好贵啊，最后还是掏出了吃灰许久的 Kindle 。</p>\n<p>微信会员先不急着买，即使买了也只能用 iPad mini 来看书。先看看这次能不能在 Kindle 上静下心来读两本书，希望能用读书去代替玩游戏和刷手机，去冲刷短暂的多巴胺。</p>\n<p><img alt=\"\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://files.mdnice.com/user/73796/e44a09ec-58fb-4101-8cea-e95390157b55.jpeg\"/></p>\n<p>《 13·67 》这本书是在小红书上看到的推荐，据说已经被王家卫买下了电影版权，其中几个故事确实适合拍成上世纪那种风格的港片，希望能尽快看到吧（但是王家卫也不是玩悬疑推理风格的啊）。</p>\n<hr/>\n<p><strong>独立开发不易，但道哥飞蛾投烛。</strong></p>\n<p><strong>感谢各位支持，助道哥飞黄腾达。</strong></p>\n<p>欢迎赏脸阅读我的独立开发周记，如果你觉得这一篇写得还不错的话，以下回应会令我无比开心，开了又开：</p>\n<ul>\n<li>点赞，开心一晚 😉</li>\n<li>推荐，开心一天 😁</li>\n<li>分享，开心三天 😆</li>\n<li>赞赏，开心一周 😘</li>\n</ul>\n<p>也欢迎大家能与我交流关于独立开发的一切，更欢迎大家下载使用我的 App😄。</p>\n<ul>\n<li><a href=\"https://m.malink.cn/s/bURrEv\" rel=\"nofollow\">极简时钟</a>，极简主义的翻页时钟、番茄钟和正计时</li>\n<li><a href=\"https://m.malink.cn/s/3YbiYb\" rel=\"nofollow\">极简日记</a>，用时间轴随手记录生活</li>\n<li><a href=\"https://m.malink.cn/s/yMvaMf\" rel=\"nofollow\">极简便签</a>，支持 Markdown ，自定义分享图片，多种主题和布局</li>\n<li><a href=\"https://apps.apple.com/cn/app/nut-goals/id6557039218\" rel=\"nofollow\">Nut Goals</a>，像小松鼠一样记账、存钱、管理愿望清单</li>\n</ul>\n<p><img alt=\"\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://files.mdnice.com/user/73796/f6e50735-b4b4-49cf-8e80-b792fbd05b3e.jpg\"/></p>\n",
+  "supplements": [],
+  "replies": [
+    {
+      "id": 15974688,
+      "author": "VamPeng",
+      "created": 1741057159,
+      "content": "楼主我几篇看到你 用到了 windsurf ，我最近也想用上 ai editor ，但是还在纠结用 cursor 还是 wind ，想问下你 wind 入手感觉如何？",
+      "content_rendered": "楼主我几篇看到你 用到了 windsurf ，我最近也想用上 ai editor ，但是还在纠结用 cursor 还是 wind ，想问下你 wind 入手感觉如何？"
+    },
+    {
+      "id": 15976429,
+      "author": "vulgur",
+      "created": 1741072387,
+      "content": "@VamPeng Windsurf 我觉得挺好的，而且还比 Cursor 便宜，但是据说两个都用过的人还是更推荐 Cursor",
+      "content_rendered": "@<a href=\"/member/VamPeng\">VamPeng</a> Windsurf 我觉得挺好的，而且还比 Cursor 便宜，但是据说两个都用过的人还是更推荐 Cursor"
+    },
+    {
+      "id": 15996518,
+      "author": "VamPeng",
+      "created": 1741522878,
+      "content": "@vulgur 已入手，windsurf 这个详细步骤还有能自动调用终端的功能真的是太爽利了，但是我用量有点大 5 天已经 用了 125 个 credits 了。我也开始搞自己的 app 副业了，用 flutter+rust 统一前端。",
+      "content_rendered": "@<a href=\"/member/vulgur\">vulgur</a> 已入手，windsurf 这个详细步骤还有能自动调用终端的功能真的是太爽利了，但是我用量有点大 5 天已经 用了 125 个 credits 了。我也开始搞自己的 app 副业了，用 flutter+rust 统一前端。"
+    }
+  ],
+  "reply_pages": 1,
+  "fetched_at": "2026-10-06T03:32:02.260Z"
+}

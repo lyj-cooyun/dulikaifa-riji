@@ -1,0 +1,142 @@
+{
+  "id": 969131,
+  "title": "独立开发周记 #28：大崩溃",
+  "episode": {
+    "ep": 28,
+    "ep2": null
+  },
+  "node": "programmer",
+  "url": "https://www.v2ex.com/t/969131",
+  "created": 1693280562,
+  "last_touched": 1693323457,
+  "member": "vulgur",
+  "replies_count": 17,
+  "stars": 1,
+  "thanks": 1,
+  "content": "# 2023, 0821-0827\r\n\r\n这周前两天本来工作效率和情绪都不错，继续给极简时钟和极简日记适配 iOS 17 的小组件，还更新了两篇英文 blog ，正准备大干特干一星期，没想到只做了两天就被迫停工停产了。\r\n\r\n![]( https://img.way2solo.com/photo/vulgur/92a31f59-08e9-448f-9952-ec08e3af5ada.jpeg?imageView2/2/w/1920/q/100)\r\n\r\n\r\n# COVID-19\r\n\r\n从周三开始，我第一次感染了 COVID-19 ，从那时开始大部分时间都是在卧床。\r\n\r\n### 周三\r\n\r\n凌晨开始浑身酸痛，白天开始发烧，浑身发冷。一天内服用了三次对乙酰氨基酚，虽然大量出汗，但是不退烧。这是最痛苦的一天，整天都在昏睡，出的汗湿透了衣服、湿透了被子、湿透了枕头，而且头疼欲裂。\r\n\r\n### 周四\r\n\r\n上午还有点烧，但是到了下午就退烧了，而且身子有力气了，还以为痊愈了呢，没想到临睡前又开始发烧，而且浑身无力，还开始鼻塞了。\r\n\r\n### 周五\r\n\r\n上午去社区卫生服务站测了个血，结果显示只有一点点炎症，医生也说肺部没有大问题，但说我 95%是阳了。回家测了一下，果然是。我是第一次使用这个抗原检测，还是我妈家里剩下来的，现在药店都不卖了。\r\n\r\n下午开始咳嗽，嗓子里有痰了。\r\n\r\n![]( https://img.way2solo.com/photo/vulgur/71cf4cf9-9341-4fdd-974c-b150ddb57c39.jpeg?imageView2/2/w/1920/q/100)\r\n\r\n\r\n### 周六\r\n\r\n突然失去了味觉和嗅觉。吃任何东西只有口感，但是没有任何味道，这体验可太神奇了。\r\n\r\n吃韭菜馅饺子，饺子没有味，就连醋都不感觉酸。喝咖啡，只能感觉出焦，什么香醇都没有了。吃所有东西都只能靠脑补味道。\r\n\r\n我还特意搞了两瓶可乐做了对比，一瓶普通的，一瓶无糖的。在没有味觉的情况下，普通可乐只比无糖可乐更黏一丢丢。\r\n\r\n![]( https://img.way2solo.com/photo/vulgur/073e1b54-a4a8-4cf3-871d-418cfae99aae.jpeg?imageView2/2/w/1920/q/100)\r\n\r\n### 周日\r\n\r\n不烧了，但是仍然浑身无力和酸痛，特别是后背，而且眼珠子一转就疼。\r\n\r\n到了晚上又开始拉肚子了，后半夜上了三次厕所。一开始还奇怪这两天怎么拉屎一点都不臭呢，猛然知道真相后又觉得很搞笑。\r\n\r\n现在来看，这次发病的症状，除了没有出现呼吸问题和恶心的情况，其余的症状全都出现了（发烧、咳嗽、疲劳、肌肉疼痛、头痛、味觉或嗅觉丧失、咽喉疼痛、鼻塞或流鼻涕、腹泻），体验值接近满分了……\r\n\r\n# 极简时钟 iOS ([App Store]( https://apps.apple.com/cn/app/id1265404088))\r\n\r\n收到一个国外用户在 App Store 的评论，说是 app 之前用得好好的，但是更新了新版本后就开始闪退了。这让我立刻联想到了上周一个小红书用户给我发的私信，还给我录了屏，app 打开不久后就会闪退。我之前确实没遇到过类似的 bug 反馈，就没太当回事，但是这两个高度相似的反馈一定有某种联系，于是我打开了 App Store Connect ，看了下「分析」里的崩溃次数……\r\n\r\n![]( https://img.way2solo.com/photo/vulgur/578591d6-3871-4a14-b2c0-a65b791e3757.jpeg?imageView2/2/w/1920/q/100)\r\n\r\n果然是新版本新增了这么多闪退，看了下代码改动，就是播放音频文件这里出的问题。在 Claude 、ChatGPT 和群友的帮助下，修复了这个 bug 。我本来是想联系到那个小红书用户，让她帮我测试一下 beta 版我再提交正式版，但是她一直没有回复，我就只好硬着头皮提交了，App 更新后过了大半天她发消息确认了 bug 被修复，这时我才心里踏实下来。\r\n\r\n我是在周四才发现这个问题的，那天晚上我强撑着身体修复好了，但是我那时已经没有力气再去做提交工作了，于是就放了一天，等到周五身体恢复了一些才提交到 App Store 。这期间心里很焦急，身体又很难受，双重痛苦。",
+  "content_rendered": "<h1>2023, 0821-0827</h1>\n<p>这周前两天本来工作效率和情绪都不错，继续给极简时钟和极简日记适配 iOS 17 的小组件，还更新了两篇英文 blog ，正准备大干特干一星期，没想到只做了两天就被迫停工停产了。</p>\n<p><img alt=\"\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://img.way2solo.com/photo/vulgur/92a31f59-08e9-448f-9952-ec08e3af5ada.jpeg?imageView2/2/w/1920/q/100\"/></p>\n<h1>COVID-19</h1>\n<p>从周三开始，我第一次感染了 COVID-19 ，从那时开始大部分时间都是在卧床。</p>\n<h3>周三</h3>\n<p>凌晨开始浑身酸痛，白天开始发烧，浑身发冷。一天内服用了三次对乙酰氨基酚，虽然大量出汗，但是不退烧。这是最痛苦的一天，整天都在昏睡，出的汗湿透了衣服、湿透了被子、湿透了枕头，而且头疼欲裂。</p>\n<h3>周四</h3>\n<p>上午还有点烧，但是到了下午就退烧了，而且身子有力气了，还以为痊愈了呢，没想到临睡前又开始发烧，而且浑身无力，还开始鼻塞了。</p>\n<h3>周五</h3>\n<p>上午去社区卫生服务站测了个血，结果显示只有一点点炎症，医生也说肺部没有大问题，但说我 95%是阳了。回家测了一下，果然是。我是第一次使用这个抗原检测，还是我妈家里剩下来的，现在药店都不卖了。</p>\n<p>下午开始咳嗽，嗓子里有痰了。</p>\n<p><img alt=\"\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://img.way2solo.com/photo/vulgur/71cf4cf9-9341-4fdd-974c-b150ddb57c39.jpeg?imageView2/2/w/1920/q/100\"/></p>\n<h3>周六</h3>\n<p>突然失去了味觉和嗅觉。吃任何东西只有口感，但是没有任何味道，这体验可太神奇了。</p>\n<p>吃韭菜馅饺子，饺子没有味，就连醋都不感觉酸。喝咖啡，只能感觉出焦，什么香醇都没有了。吃所有东西都只能靠脑补味道。</p>\n<p>我还特意搞了两瓶可乐做了对比，一瓶普通的，一瓶无糖的。在没有味觉的情况下，普通可乐只比无糖可乐更黏一丢丢。</p>\n<p><img alt=\"\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://img.way2solo.com/photo/vulgur/073e1b54-a4a8-4cf3-871d-418cfae99aae.jpeg?imageView2/2/w/1920/q/100\"/></p>\n<h3>周日</h3>\n<p>不烧了，但是仍然浑身无力和酸痛，特别是后背，而且眼珠子一转就疼。</p>\n<p>到了晚上又开始拉肚子了，后半夜上了三次厕所。一开始还奇怪这两天怎么拉屎一点都不臭呢，猛然知道真相后又觉得很搞笑。</p>\n<p>现在来看，这次发病的症状，除了没有出现呼吸问题和恶心的情况，其余的症状全都出现了（发烧、咳嗽、疲劳、肌肉疼痛、头痛、味觉或嗅觉丧失、咽喉疼痛、鼻塞或流鼻涕、腹泻），体验值接近满分了……</p>\n<h1>极简时钟 iOS (<a href=\"https://apps.apple.com/cn/app/id1265404088\" rel=\"nofollow\">App Store</a>)</h1>\n<p>收到一个国外用户在 App Store 的评论，说是 app 之前用得好好的，但是更新了新版本后就开始闪退了。这让我立刻联想到了上周一个小红书用户给我发的私信，还给我录了屏，app 打开不久后就会闪退。我之前确实没遇到过类似的 bug 反馈，就没太当回事，但是这两个高度相似的反馈一定有某种联系，于是我打开了 App Store Connect ，看了下「分析」里的崩溃次数……</p>\n<p><img alt=\"\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://img.way2solo.com/photo/vulgur/578591d6-3871-4a14-b2c0-a65b791e3757.jpeg?imageView2/2/w/1920/q/100\"/></p>\n<p>果然是新版本新增了这么多闪退，看了下代码改动，就是播放音频文件这里出的问题。在 Claude 、ChatGPT 和群友的帮助下，修复了这个 bug 。我本来是想联系到那个小红书用户，让她帮我测试一下 beta 版我再提交正式版，但是她一直没有回复，我就只好硬着头皮提交了，App 更新后过了大半天她发消息确认了 bug 被修复，这时我才心里踏实下来。</p>\n<p>我是在周四才发现这个问题的，那天晚上我强撑着身体修复好了，但是我那时已经没有力气再去做提交工作了，于是就放了一天，等到周五身体恢复了一些才提交到 App Store 。这期间心里很焦急，身体又很难受，双重痛苦。</p>\n",
+  "supplements": [],
+  "replies": [
+    {
+      "id": 13566374,
+      "author": "nullpoint007",
+      "created": 1693283102,
+      "content": "楼主加油, 我也羊了, 症状类似, 还在坚持搬砖",
+      "content_rendered": "楼主加油, 我也羊了, 症状类似, 还在坚持搬砖"
+    },
+    {
+      "id": 13566584,
+      "author": "jchnxu",
+      "created": 1693286066,
+      "content": "楼主加油。。。其实可以好好休息，我发现我自己要是状态不好，会做很多无用功",
+      "content_rendered": "楼主加油。。。其实可以好好休息，我发现我自己要是状态不好，会做很多无用功"
+    },
+    {
+      "id": 13566608,
+      "author": "xubeiyou",
+      "created": 1693286438,
+      "content": "这么晚才阳么- - 也难得 还是需要锻炼的  我二阳都过了",
+      "content_rendered": "这么晚才阳么- - 也难得 还是需要锻炼的  我二阳都过了"
+    },
+    {
+      "id": 13566643,
+      "author": "Vinceeeent",
+      "created": 1693286970,
+      "content": "楼主加油",
+      "content_rendered": "楼主加油"
+    },
+    {
+      "id": 13566721,
+      "author": "elechi",
+      "created": 1693287685,
+      "content": "OP 做好准备，阳了以后一段时间都会感觉易疲劳",
+      "content_rendered": "OP 做好准备，阳了以后一段时间都会感觉易疲劳"
+    },
+    {
+      "id": 13567105,
+      "author": "xiaoxiyiha",
+      "created": 1693290550,
+      "content": "可以问一下楼主是哪里的吗？",
+      "content_rendered": "可以问一下楼主是哪里的吗？"
+    },
+    {
+      "id": 13567769,
+      "author": "asasas2114823",
+      "created": 1693295807,
+      "content": "楼主的软件好多评论",
+      "content_rendered": "楼主的软件好多评论"
+    },
+    {
+      "id": 13567956,
+      "author": "vulgur",
+      "created": 1693297227,
+      "content": "@elechi 感谢提醒，其实一直都没有力气",
+      "content_rendered": "@<a href=\"/member/elechi\">elechi</a> 感谢提醒，其实一直都没有力气"
+    },
+    {
+      "id": 13567965,
+      "author": "vulgur",
+      "created": 1693297268,
+      "content": "@nullpoint007 身体最重要，保重",
+      "content_rendered": "@<a href=\"/member/nullpoint007\">nullpoint007</a> 身体最重要，保重"
+    },
+    {
+      "id": 13568713,
+      "author": "92Developer",
+      "created": 1693303274,
+      "content": "@xiaoxiyiha 辽宁朝阳",
+      "content_rendered": "@<a href=\"/member/xiaoxiyiha\">xiaoxiyiha</a> 辽宁朝阳"
+    },
+    {
+      "id": 13568768,
+      "author": "WGNNN",
+      "created": 1693303882,
+      "content": "加油嗷",
+      "content_rendered": "加油嗷"
+    },
+    {
+      "id": 13568810,
+      "author": "joyfred",
+      "created": 1693304347,
+      "content": "现在才首阳，真的是绝地生存者",
+      "content_rendered": "现在才首阳，真的是绝地生存者"
+    },
+    {
+      "id": 13568820,
+      "author": "z8596007",
+      "created": 1693304455,
+      "content": "@dongbeicxy 我的天呀，居然碰见老乡了。可否加个 V",
+      "content_rendered": "@<a href=\"/member/dongbeicxy\">dongbeicxy</a> 我的天呀，居然碰见老乡了。可否加个 V"
+    },
+    {
+      "id": 13568846,
+      "author": "wuchangming89",
+      "created": 1693304794,
+      "content": "@vulgur ，早上刚听了大佬的博客",
+      "content_rendered": "@<a href=\"/member/vulgur\">vulgur</a> ，早上刚听了大佬的博客"
+    },
+    {
+      "id": 13569347,
+      "author": "92Developer",
+      "created": 1693314685,
+      "content": "@z8596007 楼主是朝阳的，我不是，不过我老家离朝阳很近，赤峰宁城的",
+      "content_rendered": "@<a href=\"/member/z8596007\">z8596007</a> 楼主是朝阳的，我不是，不过我老家离朝阳很近，赤峰宁城的"
+    },
+    {
+      "id": 13569623,
+      "author": "FutureIsHere",
+      "created": 1693319857,
+      "content": "我也是前段时间才一阳，症状和你简直一模一样，还是我同事提醒我是不是阳了，我才后知后觉买了试剂测果然如此。之前一直当普通感冒对待...当时的意识里早就没有新冠了，那是个早已远去的名词😷",
+      "content_rendered": "我也是前段时间才一阳，症状和你简直一模一样，还是我同事提醒我是不是阳了，我才后知后觉买了试剂测果然如此。之前一直当普通感冒对待...当时的意识里早就没有新冠了，那是个早已远去的名词😷"
+    },
+    {
+      "id": 13570437,
+      "author": "nnegier",
+      "created": 1693356812,
+      "content": "要好起来",
+      "content_rendered": "要好起来"
+    }
+  ],
+  "reply_pages": 1,
+  "fetched_at": "2026-10-06T03:33:34.398Z"
+}

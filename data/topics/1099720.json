@@ -1,0 +1,37 @@
+{
+  "id": 1099720,
+  "title": "独立开发周记 98：人间有味是清欢",
+  "episode": {
+    "ep": 98,
+    "ep2": null
+  },
+  "node": "programmer",
+  "url": "https://www.v2ex.com/t/1099720",
+  "created": 1734947791,
+  "last_touched": 1734957541,
+  "member": "vulgur",
+  "replies_count": 2,
+  "stars": 4,
+  "thanks": 0,
+  "content": "# 2024,1216-1222\r\n比较摆烂的一周。没有提交任何新版本，也没写任何新功能。\r\n \r\n自从看完周华健的演唱会回来，每天都在听他的专辑，但是一个星期过去了，还没听完，无奈他的歌太多了。\r\n\r\n# 极简时钟 tvOS\r\n\r\n这种的代码工作都在极简时钟的 tvOS 版本，已经把所有的主题都移植到 TV 上了，只剩一些设置选项和细节还没处理。\r\n\r\n关于付费模式，如果想要在 2025 年元旦之前上架的话，就只能沿用之前的设置，还是付费 App 。如果想要改成免费+内购的形式的话，还要写 paywall 和 Storekit 的代码，肯定来不及了。不过即使是付费 App ，限免几天也不是不行。\r\n\r\n![]( https://files.mdnice.com/user/73796/2717a178-e0a9-43f2-a22b-82d293b5be67.jpg)\r\n\r\n写代码的时候，尝试一边写代码一边在小红书直播。因为手机架在我的侧后面，拍的是我的屏幕和桌面，我也看不到手机屏幕，所以也没法和观众互动。观看人数并不多，但是还是被人抓到了中间玩小丑牌的时刻……\r\n\r\n# 价格调整\r\n\r\n上次黑五促销的效果还不错，所以这次圣诞和元旦即将来临，又给 iOS 和 GP 的极简时钟的终身会员价格都开启了五折优惠活动，为期两周。\r\n\r\n相比 App Store Connect ，Google Play Console 居然没找到设置临时价格的功能，只能是全局设置了五折价格，两周后再改回来。\r\n\r\n有降就有升，国内安卓市场 App 的内购价格都进行了不同的上调。根据之前调研的结果，极简时钟的价格改到 15 元，极简便签和极简日记的的月订阅改到 8 元。\r\n\r\n# 代码之外\r\n\r\n## 大快朵颐\r\n这周末和老婆在家做了两顿饭，无比满意的两餐，都是我最爱吃的菜，比下馆子吃得还满足。特别是冬至那天，自己做了青椒土豆丝和蒜蓉油麦菜，老婆提供了烤鸡翅和腊八蒜，再加上老妈的酸菜馅饺子，幸福到顶点了。\r\n\r\n![]( https://files.mdnice.com/user/73796/a31a6f15-d569-48ff-8e53-8ec553edbaf7.jpeg)\r\n\r\n## 游戏\r\n\r\n### 有氧拳击 3\r\n\r\n有氧拳击 3 到手，之前体验版就开始玩了，前后还买了两个拳击握把。之前的一代都是在晚上玩，现在为了提高减肥效率，特意选择在早上空腹时进行锻炼。相比较一代多了很多功能和玩法，即使仅仅完成「每天任务」，也已经很累了。\r\n\r\n\r\n![]( https://files.mdnice.com/user/73796/a700569a-4d21-41fc-a36d-aa89dcd4e185.jpeg)\r\n\r\n\r\n### WRC\r\nWRC Generations 在 PS5 会免了，玩了几个赛道，这 NM 也太难了，没有一个弯是不撞墙或者不跑出赛道的。花了一晚上学习了拉力赛车的驾驶技巧，甚至种草了图马斯特 T598 方向盘……\r\n### 小丑牌\r\n每天花时间最多的还是小丑牌，最近两个星期都在玩挑战局。现在 20 个挑战只剩最后一个「无小丑」了，但是太太太难了。\r\n\r\n## 尤克里里\r\n给尤克里里买了背带，可以站着弹唱了。\r\n\r\n最近一直在听也一直在唱周华健的歌，所以找到了《亲亲我的宝贝》这首歌的谱子来练。第一次遇到 Bm 这个和弦，一周下来基本攻克了。发现之前收集的几首歌也有这个和弦，又解锁了更多弹唱曲目了。\r\n\r\n尤克里里就放在脚边，写代码写倦了就弹几首，然后接着写。\r\n\r\n![]( https://files.mdnice.com/user/73796/8931e5aa-a9f7-4091-b356-9267c2b191f1.jpeg)\r\n\r\n---\r\n\r\n**独立开发不易，但道哥飞蛾投烛。**\r\n\r\n**感谢各位支持，助道哥飞黄腾达。**\r\n\r\n欢迎赏脸阅读我的独立开发周记，如果你觉得这一篇写得还不错的话，以下回应会令我无比开心，开了又开：\r\n\r\n- 点赞，开心一晚 😉\r\n- 在看，开心一天 😁\r\n- 分享，开心三天 😆\r\n- 赞赏，开心一周 😘\r\n\r\n也欢迎大家能与我交流关于独立开发的一切，更欢迎大家下载使用我的 App😄。\r\n\r\n- [极简时钟]( https://m.malink.cn/s/bURrEv)，极简主义的翻页时钟、番茄钟和正计时\r\n- [极简日记]( https://m.malink.cn/s/3YbiYb)，用时间轴随手记录生活\r\n- [极简便签]( https://m.malink.cn/s/yMvaMf)，支持 Markdown ，自定义分享图片，多种主题和布局\r\n- [Nut Goals]( https://apps.apple.com/cn/app/nut-goals/id6557039218)，像小松鼠一样记账、存钱、管理愿望清单\r\n\r\n\r\n![]( https://files.mdnice.com/user/73796/f6e50735-b4b4-49cf-8e80-b792fbd05b3e.jpg)",
+  "content_rendered": "<h1>2024,1216-1222</h1>\n<p>比较摆烂的一周。没有提交任何新版本，也没写任何新功能。</p>\n<p>自从看完周华健的演唱会回来，每天都在听他的专辑，但是一个星期过去了，还没听完，无奈他的歌太多了。</p>\n<h1>极简时钟 tvOS</h1>\n<p>这种的代码工作都在极简时钟的 tvOS 版本，已经把所有的主题都移植到 TV 上了，只剩一些设置选项和细节还没处理。</p>\n<p>关于付费模式，如果想要在 2025 年元旦之前上架的话，就只能沿用之前的设置，还是付费 App 。如果想要改成免费+内购的形式的话，还要写 paywall 和 Storekit 的代码，肯定来不及了。不过即使是付费 App ，限免几天也不是不行。</p>\n<p><img alt=\"\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://files.mdnice.com/user/73796/2717a178-e0a9-43f2-a22b-82d293b5be67.jpg\"/></p>\n<p>写代码的时候，尝试一边写代码一边在小红书直播。因为手机架在我的侧后面，拍的是我的屏幕和桌面，我也看不到手机屏幕，所以也没法和观众互动。观看人数并不多，但是还是被人抓到了中间玩小丑牌的时刻……</p>\n<h1>价格调整</h1>\n<p>上次黑五促销的效果还不错，所以这次圣诞和元旦即将来临，又给 iOS 和 GP 的极简时钟的终身会员价格都开启了五折优惠活动，为期两周。</p>\n<p>相比 App Store Connect ，Google Play Console 居然没找到设置临时价格的功能，只能是全局设置了五折价格，两周后再改回来。</p>\n<p>有降就有升，国内安卓市场 App 的内购价格都进行了不同的上调。根据之前调研的结果，极简时钟的价格改到 15 元，极简便签和极简日记的的月订阅改到 8 元。</p>\n<h1>代码之外</h1>\n<h2>大快朵颐</h2>\n<p>这周末和老婆在家做了两顿饭，无比满意的两餐，都是我最爱吃的菜，比下馆子吃得还满足。特别是冬至那天，自己做了青椒土豆丝和蒜蓉油麦菜，老婆提供了烤鸡翅和腊八蒜，再加上老妈的酸菜馅饺子，幸福到顶点了。</p>\n<p><img alt=\"\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://files.mdnice.com/user/73796/a31a6f15-d569-48ff-8e53-8ec553edbaf7.jpeg\"/></p>\n<h2>游戏</h2>\n<h3>有氧拳击 3</h3>\n<p>有氧拳击 3 到手，之前体验版就开始玩了，前后还买了两个拳击握把。之前的一代都是在晚上玩，现在为了提高减肥效率，特意选择在早上空腹时进行锻炼。相比较一代多了很多功能和玩法，即使仅仅完成「每天任务」，也已经很累了。</p>\n<p><img alt=\"\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://files.mdnice.com/user/73796/a700569a-4d21-41fc-a36d-aa89dcd4e185.jpeg\"/></p>\n<h3>WRC</h3>\n<p>WRC Generations 在 PS5 会免了，玩了几个赛道，这 NM 也太难了，没有一个弯是不撞墙或者不跑出赛道的。花了一晚上学习了拉力赛车的驾驶技巧，甚至种草了图马斯特 T598 方向盘……</p>\n<h3>小丑牌</h3>\n<p>每天花时间最多的还是小丑牌，最近两个星期都在玩挑战局。现在 20 个挑战只剩最后一个「无小丑」了，但是太太太难了。</p>\n<h2>尤克里里</h2>\n<p>给尤克里里买了背带，可以站着弹唱了。</p>\n<p>最近一直在听也一直在唱周华健的歌，所以找到了《亲亲我的宝贝》这首歌的谱子来练。第一次遇到 Bm 这个和弦，一周下来基本攻克了。发现之前收集的几首歌也有这个和弦，又解锁了更多弹唱曲目了。</p>\n<p>尤克里里就放在脚边，写代码写倦了就弹几首，然后接着写。</p>\n<p><img alt=\"\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://files.mdnice.com/user/73796/8931e5aa-a9f7-4091-b356-9267c2b191f1.jpeg\"/></p>\n<hr/>\n<p><strong>独立开发不易，但道哥飞蛾投烛。</strong></p>\n<p><strong>感谢各位支持，助道哥飞黄腾达。</strong></p>\n<p>欢迎赏脸阅读我的独立开发周记，如果你觉得这一篇写得还不错的话，以下回应会令我无比开心，开了又开：</p>\n<ul>\n<li>点赞，开心一晚 😉</li>\n<li>在看，开心一天 😁</li>\n<li>分享，开心三天 😆</li>\n<li>赞赏，开心一周 😘</li>\n</ul>\n<p>也欢迎大家能与我交流关于独立开发的一切，更欢迎大家下载使用我的 App😄。</p>\n<ul>\n<li><a href=\"https://m.malink.cn/s/bURrEv\" rel=\"nofollow\">极简时钟</a>，极简主义的翻页时钟、番茄钟和正计时</li>\n<li><a href=\"https://m.malink.cn/s/3YbiYb\" rel=\"nofollow\">极简日记</a>，用时间轴随手记录生活</li>\n<li><a href=\"https://m.malink.cn/s/yMvaMf\" rel=\"nofollow\">极简便签</a>，支持 Markdown ，自定义分享图片，多种主题和布局</li>\n<li><a href=\"https://apps.apple.com/cn/app/nut-goals/id6557039218\" rel=\"nofollow\">Nut Goals</a>，像小松鼠一样记账、存钱、管理愿望清单</li>\n</ul>\n<p><img alt=\"\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://files.mdnice.com/user/73796/f6e50735-b4b4-49cf-8e80-b792fbd05b3e.jpg\"/></p>\n",
+  "supplements": [],
+  "replies": [
+    {
+      "id": 15703800,
+      "author": "devzhaoyou",
+      "created": 1734953941,
+      "content": "赞一个",
+      "content_rendered": "赞一个"
+    },
+    {
+      "id": 15706285,
+      "author": "iwenbin",
+      "created": 1735012143,
+      "content": "支持，长时间一个人工作确实容易焦虑",
+      "content_rendered": "支持，长时间一个人工作确实容易焦虑"
+    }
+  ],
+  "reply_pages": 1,
+  "fetched_at": "2026-10-06T03:32:18.284Z"
+}

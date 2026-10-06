@@ -1,0 +1,81 @@
+﻿=== FILE 1012589 ===
+TITLE: 独立开发周记 #50：服务器终于崩了
+EP: 50 / 
+CREATED: 2024-01-29 21:41
+REPLIES_COUNT: 0
+--- CONTENT ---
+![]( https://img.way2solo.com/photo/vulgur/dcf02df0-2dbb-4d40-b1e8-20e1f809581d.jpeg?imageView2/2/w/1920/q/100)
+
+# 2024 ，第四周，0122-0128
+
+这周又又又感冒了，咳嗽、流涕、发烧一样没少。
+
+# 服务器崩了
+
+1 月 31 日的 SSL 证书就过期了，总收到提醒的邮件和电话，但我一直拖到 26 日才动手更换。
+
+又到了一年一度的紧张时刻，我对于后端操作一向很恐惧，就怕什么操作导致服务器出问题。
+
+更换完 SSL 后发现浏览器中显示的证书日期还是旧的，就有点慌了，咨询了一下其他开发者，重启了一下 nginx 就好了。
+
+不过，更严重的还在后面，最担心的事情还是发生了。
+
+我一直拖着没更新后端 API 就想等着和 SSL 一起搞，没想到把 API 的新代码部署上去后真的出问题了。在这里简单说一下，服务器上跑了两个 server ，分别对应极简时钟和极简日记的 API 。新的 API 是添加到了极简日记上的，原有的极简时钟 API 没有动。
+
+1. 发现极简时钟的 API 有报错，在线改代码，加了 try catch 后发现是无法访问 mongodb
+2. 这个 mongodb 是跑在 Parse 中的，而这个 Parse 我记得好像是跑在 docker 中的，第一次启动后就没动过，我也忘了如何操作这个 Parse 了
+3. 尝试升级 Parse 和重启 mongodb 都失败了
+4. 升级 Parse 又连带着也升级了 node ，结果导致所有基于 node 的东西都不能用了，两个 API server 都挂了，因为 CentOS 7 的 GLIBC 版本太低，又跟着[这个文章]( https://www.cnblogs.com/dingshaohua/p/17103654.html)各种更新和 make ，到最后编译失败……
+5. 最后没办法了，只好降级 node
+6. 然后，神奇的事情发生了，server 一切正常了，mongodb 也没问题了
+
+所以，整个事件的原因是什么我到最后也不知道，更不知道如何解决的，就是瞎 JB 操作一个多小时后，问题自己就消失了。
+
+现在有两个事要抓紧做了，一个是要加速统一两个 API ，一个是要赶快弃用 Parse ，将数据迁移到云数据库去。
+
+# [极简时钟 iOS]( https://apps.apple.com/cn/app/id1265404088)
+
+这周二收到了苹果发来的邮件，说是我可以使用「极简时钟」这四个字作为 App 的名字了。
+
+必须更新一个版本才能顺便更改名字，所以花了一下午加入了新年和春节的通知。做本地化的时候发现了坑，有些亚洲国家的十二生肖和国内是不一样的，比如泰国就没有龙，就不能简单地翻译“龙年大吉”……怎么处理呢，都翻译成“新年快乐”算逑！
+
+![]( https://img.way2solo.com/photo/vulgur/d74a042d-b8a4-4ceb-af85-467ecfdb5139.gif?imageView2/2/w/1920/q/100)
+
+第二天，审核通过上架。经过几年的努力，现在国区的 App Store 里只有我一个「极简时钟」了 。
+
+![]( https://img.way2solo.com/photo/vulgur/a2a08cee-77c4-4f7d-944f-bed46734fb1c.jpg?imageView2/2/w/1920/q/100)
+
+# [极简日记 iOS]( https://apps.apple.com/cn/app/id1568936702)
+
+这周一个用户反馈了一个 bug：无法添加 RAW 图片。
+
+之前就有过用户反馈无法添加微信保存的图片，上次就是通过 TypeIdentifier 的判断解决的。
+
+![]( https://img.way2solo.com/photo/vulgur/7035e2ff-d498-44ed-b234-cef860f3be9b.png?imageView2/2/w/1920/q/100)
+
+先是通过两个 TF ，让用户帮忙定位了出问题的代码，就是这个 `result.itemProvider.canLoadObject(ofClass: UIImage.self)`虽然返回了 true ，但是里面的加载过程中出错了。一开始想像之前那样通过 TypeIdentifier 来单独处理这个图片文件，但是发现 RAW 的格式居然有很多，不可能一一判断分别处理。
+
+先是尝试通过`CIRAWFilter`来处理 RAW 的图片，我下了两个 Sony 的 ARW 的图片，可以正确处理，但是发给用户 TF 却还是无法加载。
+
+最后根据[这个答案]( https://stackoverflow.com/questions/46409498/ios-phasset-detecting-dng-raw-format)里的提示，找到了一个解决方法，只要是相册里的图片都可以转成 UIImage 。如果没有设置 `PHImageRequestOptions` 的话，RAW 图片会多出一个不太清晰的预览图。有两个方法可以过滤这个预览图：
+
+1. 设置 options 只返回高清的格式
+2. 通过请求图片的回调里的 info 里过滤 isDegrade = false 的图片（这个写起来比较麻烦）
+
+![]( https://img.way2solo.com/photo/vulgur/177028bb-9549-489e-93e9-b43f89d8fa40.png?imageView2/2/w/1920/q/100)
+
+# 夜之城的生活结束了
+
+- 这周通关了 Cyberpunk 2077 ，玩了 4 个结局，太阳、星星、恶魔（不签合同）、高塔（李德线），前三个结局都是先玩完了百灵鸟线，把百灵鸟送上了月球。
+- 边缘行者的动画也看完了，在游戏里十分偶然地发现了动画的彩蛋
+- 本周单曲循环的就是 **I Really Want to Stay at Your House**
+- 最近一直在盯着 PS5 的战神 5 的价格，想着 2077 通关后接着玩战神 5 ，没想到翻了个 DSB 的错误，冲着便宜的价格买了一个，到手了才发现我居然买了个 PS4 的战神 5……只好退了重新买
+- 发现 PS5 上居然有卡普空的街机模拟器，买了三个游戏：街霸 2 、吞食天地、圆桌骑士
+- 在 Xbox 上玩了一会刺客信条：英灵殿和战地 1
+
+![]( https://img.way2solo.com/photo/vulgur/1cb0bf2e-716c-4b89-95fa-9dba2e2fb70d.jpg?imageView2/2/w/1920/q/100)
+--- SUPPLEMENTS ---
+(none)
+--- REPLIES ---
+(none)
+

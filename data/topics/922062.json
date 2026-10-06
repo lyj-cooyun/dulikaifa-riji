@@ -1,0 +1,51 @@
+{
+  "id": 922062,
+  "title": "独立开发周报 #2 (0220-0226)",
+  "episode": {
+    "ep": 2,
+    "ep2": null
+  },
+  "node": "programmer",
+  "url": "https://www.v2ex.com/t/922062",
+  "created": 1678202307,
+  "last_touched": 1678219494,
+  "member": "vulgur",
+  "replies_count": 4,
+  "stars": 3,
+  "thanks": 0,
+  "content": "## 写在前面\r\n2 月只剩两天了，按照目前的数据来看，App Store 和 Google Play 这个月最终的收入比起 1 月份都下降了。\r\n\r\n自己的产品经营不善的同时，又看到了两个开发者群友的傲人数据。一个是打磨了两年终于成功上架 App Store ，第一天就收入 3W 人民币，一个是在华为市场收入超过 50W ，正在为缴税而苦恼。\r\n\r\n**人类的悲欢并不相通。**\r\n\r\n## 极简时钟 ([App Store]( https://apps.apple.com/cn/app/id1265404088))\r\n周二半夜终于提交了 iOS 的新版本 4.2.0 ，不到半小时就通过审核上架了。 但是一觉醒来，就发现了一个小 bug ，于是紧急提交了修复版本 4.2.1 ，本以为上午提交会第二天才通过（之前大多数都是这样），没想到 35 分钟就通过上架了。12 小时内连续提交并上架了两个版本，这次对 App Store 的审核速度非常满意。\r\n\r\n![]( https://img.way2solo.com/photo/vulgur/c61e0c27-0c41-41b2-a885-22f7aa6e3ee7.jpeg?imageView2/2/w/1920/q/100)\r\n\r\n\r\n关于这个版本的更新内容之前发过了一次图片消息，这里就主要谈一下其中的两个新功能：自定义时间和番茄钟结束后播放庆祝动画。\r\n\r\n### - 自定义时间\r\n这个功能就是可以选择任意一个时间点，然后从这个时间点开始运行时钟。这个想法的来源就是比如我想拍一个辞旧迎新的倒计时，但是很有可能因为失误或者准备不足就错过了零点左右的那一瞬间，有了这个功能就不用在 App 前一直等待到这个特殊时刻了。\r\n\r\n![]( https://img.way2solo.com/photo/vulgur/5413eebf-a0cd-4e88-8095-2169ec86d89a.jpeg?imageView2/2/w/1920/q/100)\r\n\r\n\r\n当然，也可以通过更改系统时间来达到同样的效果，但是这样会非常麻烦，需要反复在系统设置和 app 之间反复切换。\r\n\r\n### - 庆祝动画\r\n这是我两三年前就加入的一个功能，这次借助 SwiftUI 和开源库几行代码就搞定了，我个人非常满意和开心。前些日子听了一档博客，里面谈到了“所有的努力行为无论多么小都需要正向激励，而不是因为半途而废就去惩罚或打击”，我很是赞同这个观点，于是就加入了这个小激励。\r\n\r\n![]( https://img.way2solo.com/photo/vulgur/9b54f91d-6dac-4c9b-8289-4839d4bd700b.gif?imageView2/2/w/1920/q/100)\r\n\r\n## 极简日记 ([App Store]( https://apps.apple.com/cn/app/id1568936702))\r\n\r\n上周计划这周一定要提交一个 TF ，但是直到周日下午才最终提交上 1.7.3(2)。\r\n\r\n这个版本我犯了一个大错，我本来是打算把日记的加载优化和其他几个小 bug 一起做完再提交，但是没想到优化的工作竟是如此复杂，导致其他几个几行代码就能搞定的小问题也跟着一起延期。\r\n\r\n周二的整个下午，我都在修复优化带来的 bug ，遇到了三个我不曾遇到过的难题。多亏了肘子哥的倾囊相助，三句话就给解决了，药到病除，感激不尽。\r\n\r\n周日下午和安卓小哥也沟通了安卓版下个版本的开发内容，将会带来一大波新功能。\r\n\r\n就在写这篇周报的时候，我刚刚刚发现一个严重的 bug ，下周能不能提交正式版都是未知数了。\r\n\r\n## 桌面\r\n这周又折腾桌面了，这次把 PS4 和一个插排都给弄到桌子下面去了，简洁了不少。\r\n\r\n![]( https://img.way2solo.com/photo/vulgur/b385565b-af0d-4143-9e8d-805c0e67f722.jpeg?imageView2/2/w/1920/q/100)\r\n\r\n\r\n其实每次折腾的矛盾点无非就是两个：\r\n\r\n* 想把笔记本放在中间，这样摄像头和扬声器都可以正对着我\r\n* 想把 32 寸 4K 显示器放在中间，这样可以享受大屏带来的体验\r\n\r\n\r\n但是鱼与熊掌不可兼得，又要考虑到各种线的长度和桌面空间，每隔一段时间就要重新折腾一次。 这种情况可能只有 iMac 或者 Studio Display 才能解决了。\r\n\r\n## 新装备\r\n盯了差不多三个月，这周趁着优惠终于下单了金豪 E2 。 上一个椅子是 500 元的西昊，因为腰间盘突出买过几个坐垫和腰靠，但都没用，而且越来越不舒服。 本来是想买个 1K 的网易严选，或者 1800 的金豪 B2 ， 但是为了腰就咬咬牙，直接选了金豪 E2 。 这把椅子果然也没让我失望，整体运输，开箱即用。\r\n\r\n\r\n\r\n众多特点里我最满意的两个点就是扶手和腰背支持。\r\n\r\n![]( https://img.way2solo.com/photo/vulgur/85e9e9ae-4ea8-4cdf-9764-e808be627b7d.jpeg?imageView2/2/w/1920/q/100)\r\n* 扶手可以各种调节，其中最吸引我的是水平的角度旋转，这个功能我之前只在 Adobe 实习时标配的 Herman Miller 上才体验过，好像 2K 以下的其他人体工学椅都没有这个功能。\r\n* 后背和腰靠的支持很好，不用再额外垫一个腰靠了。而且这个椅子的理念是依靠个人体重来自动调节后仰角度，而不是固定的某个角度，再配合上可以跟随后仰的扶手，体验非常棒。\r\n\r\n用了多年的垃圾西昊终于可以淘汰了🎉\r\n\r\n[公众号原文]( https://mp.weixin.qq.com/s/PcPo7512dUaq8FydNh09fw)",
+  "content_rendered": "<h2>写在前面</h2>\n<p>2 月只剩两天了，按照目前的数据来看，App Store 和 Google Play 这个月最终的收入比起 1 月份都下降了。</p>\n<p>自己的产品经营不善的同时，又看到了两个开发者群友的傲人数据。一个是打磨了两年终于成功上架 App Store ，第一天就收入 3W 人民币，一个是在华为市场收入超过 50W ，正在为缴税而苦恼。</p>\n<p><strong>人类的悲欢并不相通。</strong></p>\n<h2>极简时钟 (<a href=\"https://apps.apple.com/cn/app/id1265404088\" rel=\"nofollow\">App Store</a>)</h2>\n<p>周二半夜终于提交了 iOS 的新版本 4.2.0 ，不到半小时就通过审核上架了。 但是一觉醒来，就发现了一个小 bug ，于是紧急提交了修复版本 4.2.1 ，本以为上午提交会第二天才通过（之前大多数都是这样），没想到 35 分钟就通过上架了。12 小时内连续提交并上架了两个版本，这次对 App Store 的审核速度非常满意。</p>\n<p><img alt=\"\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://img.way2solo.com/photo/vulgur/c61e0c27-0c41-41b2-a885-22f7aa6e3ee7.jpeg?imageView2/2/w/1920/q/100\"/></p>\n<p>关于这个版本的更新内容之前发过了一次图片消息，这里就主要谈一下其中的两个新功能：自定义时间和番茄钟结束后播放庆祝动画。</p>\n<h3>- 自定义时间</h3>\n<p>这个功能就是可以选择任意一个时间点，然后从这个时间点开始运行时钟。这个想法的来源就是比如我想拍一个辞旧迎新的倒计时，但是很有可能因为失误或者准备不足就错过了零点左右的那一瞬间，有了这个功能就不用在 App 前一直等待到这个特殊时刻了。</p>\n<p><img alt=\"\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://img.way2solo.com/photo/vulgur/5413eebf-a0cd-4e88-8095-2169ec86d89a.jpeg?imageView2/2/w/1920/q/100\"/></p>\n<p>当然，也可以通过更改系统时间来达到同样的效果，但是这样会非常麻烦，需要反复在系统设置和 app 之间反复切换。</p>\n<h3>- 庆祝动画</h3>\n<p>这是我两三年前就加入的一个功能，这次借助 SwiftUI 和开源库几行代码就搞定了，我个人非常满意和开心。前些日子听了一档博客，里面谈到了“所有的努力行为无论多么小都需要正向激励，而不是因为半途而废就去惩罚或打击”，我很是赞同这个观点，于是就加入了这个小激励。</p>\n<p><img alt=\"\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://img.way2solo.com/photo/vulgur/9b54f91d-6dac-4c9b-8289-4839d4bd700b.gif?imageView2/2/w/1920/q/100\"/></p>\n<h2>极简日记 (<a href=\"https://apps.apple.com/cn/app/id1568936702\" rel=\"nofollow\">App Store</a>)</h2>\n<p>上周计划这周一定要提交一个 TF ，但是直到周日下午才最终提交上 1.7.3(2)。</p>\n<p>这个版本我犯了一个大错，我本来是打算把日记的加载优化和其他几个小 bug 一起做完再提交，但是没想到优化的工作竟是如此复杂，导致其他几个几行代码就能搞定的小问题也跟着一起延期。</p>\n<p>周二的整个下午，我都在修复优化带来的 bug ，遇到了三个我不曾遇到过的难题。多亏了肘子哥的倾囊相助，三句话就给解决了，药到病除，感激不尽。</p>\n<p>周日下午和安卓小哥也沟通了安卓版下个版本的开发内容，将会带来一大波新功能。</p>\n<p>就在写这篇周报的时候，我刚刚刚发现一个严重的 bug ，下周能不能提交正式版都是未知数了。</p>\n<h2>桌面</h2>\n<p>这周又折腾桌面了，这次把 PS4 和一个插排都给弄到桌子下面去了，简洁了不少。</p>\n<p><img alt=\"\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://img.way2solo.com/photo/vulgur/b385565b-af0d-4143-9e8d-805c0e67f722.jpeg?imageView2/2/w/1920/q/100\"/></p>\n<p>其实每次折腾的矛盾点无非就是两个：</p>\n<ul>\n<li>想把笔记本放在中间，这样摄像头和扬声器都可以正对着我</li>\n<li>想把 32 寸 4K 显示器放在中间，这样可以享受大屏带来的体验</li>\n</ul>\n<p>但是鱼与熊掌不可兼得，又要考虑到各种线的长度和桌面空间，每隔一段时间就要重新折腾一次。 这种情况可能只有 iMac 或者 Studio Display 才能解决了。</p>\n<h2>新装备</h2>\n<p>盯了差不多三个月，这周趁着优惠终于下单了金豪 E2 。 上一个椅子是 500 元的西昊，因为腰间盘突出买过几个坐垫和腰靠，但都没用，而且越来越不舒服。 本来是想买个 1K 的网易严选，或者 1800 的金豪 B2 ， 但是为了腰就咬咬牙，直接选了金豪 E2 。 这把椅子果然也没让我失望，整体运输，开箱即用。</p>\n<p>众多特点里我最满意的两个点就是扶手和腰背支持。</p>\n<p><img alt=\"\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://img.way2solo.com/photo/vulgur/85e9e9ae-4ea8-4cdf-9764-e808be627b7d.jpeg?imageView2/2/w/1920/q/100\"/></p>\n<ul>\n<li>扶手可以各种调节，其中最吸引我的是水平的角度旋转，这个功能我之前只在 Adobe 实习时标配的 Herman Miller 上才体验过，好像 2K 以下的其他人体工学椅都没有这个功能。</li>\n<li>后背和腰靠的支持很好，不用再额外垫一个腰靠了。而且这个椅子的理念是依靠个人体重来自动调节后仰角度，而不是固定的某个角度，再配合上可以跟随后仰的扶手，体验非常棒。</li>\n</ul>\n<p>用了多年的垃圾西昊终于可以淘汰了🎉</p>\n<p><a href=\"https://mp.weixin.qq.com/s/PcPo7512dUaq8FydNh09fw\" rel=\"nofollow\">公众号原文</a></p>\n",
+  "supplements": [],
+  "replies": [
+    {
+      "id": 12786956,
+      "author": "aulaia",
+      "created": 1678208694,
+      "content": "顶一个！支持呀",
+      "content_rendered": "顶一个！支持呀"
+    },
+    {
+      "id": 12787356,
+      "author": "kiroter",
+      "created": 1678237674,
+      "content": "俺想知道咋加群",
+      "content_rendered": "俺想知道咋加群"
+    },
+    {
+      "id": 12787389,
+      "author": "likeme",
+      "created": 1678237999,
+      "content": "vsc?不是 SwiftUI 写的?",
+      "content_rendered": "vsc?不是 SwiftUI 写的?"
+    },
+    {
+      "id": 12788201,
+      "author": "tanran",
+      "created": 1678244012,
+      "content": "不错",
+      "content_rendered": "不错"
+    }
+  ],
+  "reply_pages": 1,
+  "fetched_at": "2026-10-06T03:34:02.801Z"
+}

@@ -1,0 +1,58 @@
+{
+  "id": 1052341,
+  "title": "独立开发周记 71：做饭比做 App 有意思多了",
+  "episode": {
+    "ep": 71,
+    "ep2": null
+  },
+  "node": "starter",
+  "url": "https://www.v2ex.com/t/1052341",
+  "created": 1719282178,
+  "last_touched": 1719297118,
+  "member": "vulgur",
+  "replies_count": 5,
+  "stars": 0,
+  "thanks": 0,
+  "content": "# 2024 ，0617-0623 ，第 25 周\r\n这周前三天超级热，极端天气越来越多，发现自己耐热能力也提高了。\r\n又到了喝冷萃咖啡的时候了，这周做了两大瓶。\r\n健身房关闭一个多月了，没健身也一个多月了，但是体脂率和体重却再创新低。\r\n\r\n# 本周开发\r\n## 极简时钟 [App Store]( https://apps.apple.com/cn/app/id1265404088)\r\n这周大部分时间还是在开发新表盘，终于是基本完成了，只剩下一些收尾和测试，还有一些上架的准备工作还没弄，这周肯定能提交了。\r\n\r\n这次的表盘是动态变化的，会根据不同的时间来改变光影效果。为了实现这个效果，一开始和设计师商量是想着根据 24 个小时做出 24 种不同的切图，但是算上横竖屏复杂度就更大了。另外，大量的切图也会增加 App 体积。索性最后就全部用代码实现了，对着 Figma 实现设计图花费了大量的时间，虽然没能 100% 复刻设计稿，但是我感觉还算不错了。为了实现不同角度的阴影，连初中的三角函数都搬出来了。\r\n\r\n![]( https://img.way2solo.com/photo/vulgur/e9b58b98-3149-4603-9dae-e6dd56f09419.jpeg?imageView2/2/w/1920/q/100)\r\n\r\n将表盘代码直接移植到小组件后，居然惊喜地发现，小组件上可以显示表盘的动画。我知道去年 iOS 17 对小组件加入了部分动画的支持，但是我一直没去研究和实践，没想到这次无意中触发了这个动画。\r\n\r\n![]( https://img.way2solo.com/photo/vulgur/4d66cf6e-576c-4bda-9c6b-48aea94b3c89.gif?imageView2/2/w/1920/q/100)\r\n\r\n## 极简时钟 [Google Play]([https://play.google.com/store/apps/details?id=com.mad.zenflipclock]( https://play.google.com/store/apps/details?id=com.mad.zenflipclock))\r\n提交了一个小版本，但是日下载量没有任何起色，还是没有回升到 1000 。\r\n经过了半个多月，商品详情的结果出来了，还是目前的版本更好一些，我自己瞎鼓捣的东西终究比不过专业设计师的成品。\r\n\r\n![]( https://img.way2solo.com/photo/vulgur/c2701279-a64c-4229-8a6c-d2653decfd47.png?imageView2/2/w/1920/q/100)\r\n\r\n## 体验新的 SwiftUI API\r\n\r\n从上周开始，本来计划一周做一个 code demo 的视频上传到 YouTube ，但是这周就没能完成这个目标。这周只看了一个 WWDC24 的 Session：**Creating visual effects with SwiftUI**，这个视频里讲了 SwiftUI 里五个方面新加入的 API 。我本来打算是一个方面做一个视频，结果只看了五分之一，就是第一个方面关于「滚动」的介绍。\r\n\r\n![]( https://img.way2solo.com/photo/vulgur/a32402e2-9dc3-4164-9093-6bab3e05bf0d.png?imageView2/2/w/1920/q/100)\r\n\r\n我想实现视频里提到的四种滚动效果设计，没想到第一个就遇到了大难题。不同大小的圆，因为外面的 frame 是统一大小的，导致圆形和圆形的间距就不一样，我花了一晚上和一上午尝试各种方法后还是无法做到统一这个间距，最后只好放弃了。其他三个还比较好实现，准备整理一下代码，下周发个视频。\r\n\r\n![]( https://img.way2solo.com/photo/vulgur/48ed133d-5f77-4011-b9ea-4584838da825.gif?imageView2/2/w/1920/q/100)\r\n\r\n# 本周体验\r\n## 尤克里里\r\n学习尤克里里有 20 天了，除了有两三天忙忘了，基本上每天都会练习半小时以上。\r\n一周的时候就可以用简单的琶音弹唱《七里香》了，这周可以用分解和弦弹唱《旅行的意义》。和弦指法越来越多了，有点记不过来了，G 和弦还是很难按。最近几天在练习民谣扫弦节奏，希望下周可以弹唱《小手拉大手》。\r\n\r\n## 厨艺大师\r\nChef Wang is back ！\r\n买了一大堆日料和西餐的调料，还买了一些厨具和收纳盒，每天从小红书上学习一两道新菜。\r\n备菜+做菜+摆拍，反馈路径短，学习成本低，自由程度高，感觉比写代码还快乐。\r\n牛排里加入迷迭香简直好吃到爆，之前的牛排都白吃了。\r\n\r\n![]( https://img.way2solo.com/photo/vulgur/a5860e83-d8fb-4260-81ce-19f9a8cdf9e1.jpg?imageView2/2/w/1920/q/100)",
+  "content_rendered": "<h1>2024 ，0617-0623 ，第 25 周</h1>\n<p>这周前三天超级热，极端天气越来越多，发现自己耐热能力也提高了。\n又到了喝冷萃咖啡的时候了，这周做了两大瓶。\n健身房关闭一个多月了，没健身也一个多月了，但是体脂率和体重却再创新低。</p>\n<h1>本周开发</h1>\n<h2>极简时钟 <a href=\"https://apps.apple.com/cn/app/id1265404088\" rel=\"nofollow\">App Store</a></h2>\n<p>这周大部分时间还是在开发新表盘，终于是基本完成了，只剩下一些收尾和测试，还有一些上架的准备工作还没弄，这周肯定能提交了。</p>\n<p>这次的表盘是动态变化的，会根据不同的时间来改变光影效果。为了实现这个效果，一开始和设计师商量是想着根据 24 个小时做出 24 种不同的切图，但是算上横竖屏复杂度就更大了。另外，大量的切图也会增加 App 体积。索性最后就全部用代码实现了，对着 Figma 实现设计图花费了大量的时间，虽然没能 100% 复刻设计稿，但是我感觉还算不错了。为了实现不同角度的阴影，连初中的三角函数都搬出来了。</p>\n<p><img alt=\"\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://img.way2solo.com/photo/vulgur/e9b58b98-3149-4603-9dae-e6dd56f09419.jpeg?imageView2/2/w/1920/q/100\"/></p>\n<p>将表盘代码直接移植到小组件后，居然惊喜地发现，小组件上可以显示表盘的动画。我知道去年 iOS 17 对小组件加入了部分动画的支持，但是我一直没去研究和实践，没想到这次无意中触发了这个动画。</p>\n<p><img alt=\"\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://img.way2solo.com/photo/vulgur/4d66cf6e-576c-4bda-9c6b-48aea94b3c89.gif?imageView2/2/w/1920/q/100\"/></p>\n<h2>极简时钟 [Google Play](<a href=\"https://play.google.com/store/apps/details?id=com.mad.zenflipclock\" rel=\"nofollow\">https://play.google.com/store/apps/details?id=com.mad.zenflipclock</a>)</h2>\n<p>提交了一个小版本，但是日下载量没有任何起色，还是没有回升到 1000 。\n经过了半个多月，商品详情的结果出来了，还是目前的版本更好一些，我自己瞎鼓捣的东西终究比不过专业设计师的成品。</p>\n<p><img alt=\"\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://img.way2solo.com/photo/vulgur/c2701279-a64c-4229-8a6c-d2653decfd47.png?imageView2/2/w/1920/q/100\"/></p>\n<h2>体验新的 SwiftUI API</h2>\n<p>从上周开始，本来计划一周做一个 code demo 的视频上传到 YouTube ，但是这周就没能完成这个目标。这周只看了一个 WWDC24 的 Session：<strong>Creating visual effects with SwiftUI</strong>，这个视频里讲了 SwiftUI 里五个方面新加入的 API 。我本来打算是一个方面做一个视频，结果只看了五分之一，就是第一个方面关于「滚动」的介绍。</p>\n<p><img alt=\"\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://img.way2solo.com/photo/vulgur/a32402e2-9dc3-4164-9093-6bab3e05bf0d.png?imageView2/2/w/1920/q/100\"/></p>\n<p>我想实现视频里提到的四种滚动效果设计，没想到第一个就遇到了大难题。不同大小的圆，因为外面的 frame 是统一大小的，导致圆形和圆形的间距就不一样，我花了一晚上和一上午尝试各种方法后还是无法做到统一这个间距，最后只好放弃了。其他三个还比较好实现，准备整理一下代码，下周发个视频。</p>\n<p><img alt=\"\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://img.way2solo.com/photo/vulgur/48ed133d-5f77-4011-b9ea-4584838da825.gif?imageView2/2/w/1920/q/100\"/></p>\n<h1>本周体验</h1>\n<h2>尤克里里</h2>\n<p>学习尤克里里有 20 天了，除了有两三天忙忘了，基本上每天都会练习半小时以上。\n一周的时候就可以用简单的琶音弹唱《七里香》了，这周可以用分解和弦弹唱《旅行的意义》。和弦指法越来越多了，有点记不过来了，G 和弦还是很难按。最近几天在练习民谣扫弦节奏，希望下周可以弹唱《小手拉大手》。</p>\n<h2>厨艺大师</h2>\n<p>Chef Wang is back ！\n买了一大堆日料和西餐的调料，还买了一些厨具和收纳盒，每天从小红书上学习一两道新菜。\n备菜+做菜+摆拍，反馈路径短，学习成本低，自由程度高，感觉比写代码还快乐。\n牛排里加入迷迭香简直好吃到爆，之前的牛排都白吃了。</p>\n<p><img alt=\"\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://img.way2solo.com/photo/vulgur/a5860e83-d8fb-4260-81ce-19f9a8cdf9e1.jpg?imageView2/2/w/1920/q/100\"/></p>\n",
+  "supplements": [],
+  "replies": [
+    {
+      "id": 14908623,
+      "author": "zwxzxcforever",
+      "created": 1719282550,
+      "content": "看着很充实的样子，羡慕 op 的生活。",
+      "content_rendered": "看着很充实的样子，羡慕 op 的生活。"
+    },
+    {
+      "id": 14908748,
+      "author": "DesmondQ",
+      "created": 1719283244,
+      "content": "被安利到了极简时钟，立马去下载",
+      "content_rendered": "被安利到了极简时钟，立马去下载"
+    },
+    {
+      "id": 14909557,
+      "author": "iOCZS",
+      "created": 1719289319,
+      "content": "代码放出来，看看能不能改成你要的效果",
+      "content_rendered": "代码放出来，看看能不能改成你要的效果"
+    },
+    {
+      "id": 14909832,
+      "author": "Cyrix686",
+      "created": 1719293518,
+      "content": "所以之前有一個教人做菜的 app 成功獲得不少的投資",
+      "content_rendered": "所以之前有一個教人做菜的 app 成功獲得不少的投資"
+    },
+    {
+      "id": 14913349,
+      "author": "efcndi",
+      "created": 1719359201,
+      "content": "做菜和写 APP 还是不一样的，做菜了你都会吃；但你写的 APP 或其他程序（尤其是应付公司的工作那种），你自己都不一定愿意用。",
+      "content_rendered": "做菜和写 APP 还是不一样的，做菜了你都会吃；但你写的 APP 或其他程序（尤其是应付公司的工作那种），你自己都不一定愿意用。"
+    }
+  ],
+  "reply_pages": 1,
+  "fetched_at": "2026-10-06T03:32:47.197Z"
+}

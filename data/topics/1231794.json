@@ -1,0 +1,30 @@
+{
+  "id": 1231794,
+  "title": "独立开发周记 181：别人三天一个 App，而我两周还在改 Demo",
+  "episode": {
+    "ep": 181,
+    "ep2": null
+  },
+  "node": "isv",
+  "url": "https://www.v2ex.com/t/1231794",
+  "created": 1785747572,
+  "last_touched": 1785747572,
+  "member": "vulgur",
+  "replies_count": 1,
+  "stars": 0,
+  "thanks": 0,
+  "content": "# 2026 ，0727 ～ 0802\r\n这天气热得过于离谱了啊，白天根本没法待在阳光直射的地方，家里也是空调 24 小时不间断运转。接送孩子的路上，上面是烈日的酷热炙烤，下面是地表反射的热浪袭人，浑身灼痛，感觉就像是置身于空气炸锅里。\r\n\r\n# 本周工作\r\n\r\n## 新 App\r\n这周的 token 都是用在这个 App 上。尽管像之前两个 App 一样制定了两周上线计划，但是没有一天是按照计划推进的，进度严重落后于计划，因为总是陷于无止境的细节调整。\r\n\r\n惊叹于其他开发者 3 天就能搓出一个精美的数独 App 并上架 App Store 和鸿蒙，我这个搞了两个星期了还是个 demo 。不仅如此，大佬是多个 App 并行开发，我这一个还费劲呢。以前是写代码写不过别人，现在动嘴皮子也比不过别人，怎么能不叫人焦虑呢。\r\n\r\n这周主要就是调整 prompt 、建立设计系统、重做加载页面。加载页面的动画完全重做，光是这个动画就花了一下午才搞定，本来还想实现出魔方层转的动画，但是 AI 实在是搞不定，就算了。\r\n\r\n\r\n![]( https://files.mdnice.com/user/73796/b1d5ec92-8722-4b4a-b964-f885135b1ea2.gif)\r\n\r\n\r\n## 极简日记 iOS\r\n带有优惠代码兑换入口的版本上架了，最近 App Store 的审核真的是变慢好多。\r\n\r\n上架后，发了个如何兑换优惠代码的笔记，然后把笔记置顶。一天内的付费比之前一个月的付费还多，还是要多宣传啊！\r\n\r\n\r\n![]( https://files.mdnice.com/user/73796/d08b43dc-e563-4cd5-8740-9e1681bb134d.jpg)\r\n\r\n\r\n# 代码之外\r\n\r\n## 影视剧\r\n\r\n- 看完了《瑞克与莫蒂》第九季，编剧里面一定有外星人，正常脑子的人类想不出这剧情\r\n- 连看三集《死神千年血战》第四季，我管你这那的，直接天冲就完事了！\r\n- 两集《斯图尔特未能拯救宇宙》，不好看，纯情怀……\r\n\r\n## 游戏\r\n\r\n这周我也体验了奥德赛，不过不是电影，是游戏。在拼多多上刷到了好价的《超级马力欧奥德赛》，立刻下单，日本大阪直邮，过了四天就收到了。\r\n\r\n游戏发售九年多了，我才玩上了这个满分之作。因为可以两人一起玩，我就让女儿操控帽子，我来操控马力欧，合作玩了一下午，真好玩啊。\r\n\r\n\r\n![]( https://files.mdnice.com/user/73796/1c16a0d5-01c2-4381-b3fe-a7911609f1a9.jpg)\r\n\r\n## 串是人非\r\n\r\n晚饭后和老婆去吃小时候最喜欢的一个烤串，点了满满一盘，不好吃。又去小时候最喜欢的一个辣串摊，还是不好吃。\r\n\r\n不知道是串的味道变了还是我们的胃口变了，小时候的美好记忆都在逐渐消退。\r\n\r\n\r\n![]( https://files.mdnice.com/user/73796/3251e024-c27b-4f24-893e-05ba694b6302.jpg)",
+  "content_rendered": "<h1>2026 ，0727 ～ 0802</h1>\n<p>这天气热得过于离谱了啊，白天根本没法待在阳光直射的地方，家里也是空调 24 小时不间断运转。接送孩子的路上，上面是烈日的酷热炙烤，下面是地表反射的热浪袭人，浑身灼痛，感觉就像是置身于空气炸锅里。</p>\n<h1>本周工作</h1>\n<h2>新 App</h2>\n<p>这周的 token 都是用在这个 App 上。尽管像之前两个 App 一样制定了两周上线计划，但是没有一天是按照计划推进的，进度严重落后于计划，因为总是陷于无止境的细节调整。</p>\n<p>惊叹于其他开发者 3 天就能搓出一个精美的数独 App 并上架 App Store 和鸿蒙，我这个搞了两个星期了还是个 demo 。不仅如此，大佬是多个 App 并行开发，我这一个还费劲呢。以前是写代码写不过别人，现在动嘴皮子也比不过别人，怎么能不叫人焦虑呢。</p>\n<p>这周主要就是调整 prompt 、建立设计系统、重做加载页面。加载页面的动画完全重做，光是这个动画就花了一下午才搞定，本来还想实现出魔方层转的动画，但是 AI 实在是搞不定，就算了。</p>\n<p><img alt=\"\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://files.mdnice.com/user/73796/b1d5ec92-8722-4b4a-b964-f885135b1ea2.gif\"/></p>\n<h2>极简日记 iOS</h2>\n<p>带有优惠代码兑换入口的版本上架了，最近 App Store 的审核真的是变慢好多。</p>\n<p>上架后，发了个如何兑换优惠代码的笔记，然后把笔记置顶。一天内的付费比之前一个月的付费还多，还是要多宣传啊！</p>\n<p><img alt=\"\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://files.mdnice.com/user/73796/d08b43dc-e563-4cd5-8740-9e1681bb134d.jpg\"/></p>\n<h1>代码之外</h1>\n<h2>影视剧</h2>\n<ul>\n<li>看完了《瑞克与莫蒂》第九季，编剧里面一定有外星人，正常脑子的人类想不出这剧情</li>\n<li>连看三集《死神千年血战》第四季，我管你这那的，直接天冲就完事了！</li>\n<li>两集《斯图尔特未能拯救宇宙》，不好看，纯情怀……</li>\n</ul>\n<h2>游戏</h2>\n<p>这周我也体验了奥德赛，不过不是电影，是游戏。在拼多多上刷到了好价的《超级马力欧奥德赛》，立刻下单，日本大阪直邮，过了四天就收到了。</p>\n<p>游戏发售九年多了，我才玩上了这个满分之作。因为可以两人一起玩，我就让女儿操控帽子，我来操控马力欧，合作玩了一下午，真好玩啊。</p>\n<p><img alt=\"\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://files.mdnice.com/user/73796/1c16a0d5-01c2-4381-b3fe-a7911609f1a9.jpg\"/></p>\n<h2>串是人非</h2>\n<p>晚饭后和老婆去吃小时候最喜欢的一个烤串，点了满满一盘，不好吃。又去小时候最喜欢的一个辣串摊，还是不好吃。</p>\n<p>不知道是串的味道变了还是我们的胃口变了，小时候的美好记忆都在逐渐消退。</p>\n<p><img alt=\"\" class=\"embedded_image\" loading=\"lazy\" referrerpolicy=\"no-referrer\" rel=\"noreferrer\" src=\"https://files.mdnice.com/user/73796/3251e024-c27b-4f24-893e-05ba694b6302.jpg\"/></p>\n",
+  "supplements": [],
+  "replies": [
+    {
+      "id": 17934986,
+      "author": "tianjiyao",
+      "created": 1785811266,
+      "content": "独立开发吉祥三宝：记账 笔记 待办清单 ...https://i.imgur.com/pmNOo2w.png https://i.imgur.com/pmNOo2w.png https://i.imgur.com/pmNOo2w.png",
+      "content_rendered": "独立开发吉祥三宝：记账 笔记 待办清单 ...<a target=\"_blank\" href=\"https://i.imgur.com/pmNOo2w.png\" rel=\"nofollow noopener\" target=\"_blank\"><img src=\"https://i.imgur.com/pmNOo2w.png\" class=\"embedded_image\" rel=\"noreferrer\"></a><a target=\"_blank\" href=\"https://i.imgur.com/pmNOo2w.png\" rel=\"nofollow noopener\" target=\"_blank\"><img src=\"https://i.imgur.com/pmNOo2w.png\" class=\"embedded_image\" rel=\"noreferrer\"></a><a target=\"_blank\" href=\"https://i.imgur.com/pmNOo2w.png\" rel=\"nofollow noopener\" target=\"_blank\"><img src=\"https://i.imgur.com/pmNOo2w.png\" class=\"embedded_image\" rel=\"noreferrer\"></a>"
+    }
+  ],
+  "reply_pages": 1,
+  "fetched_at": "2026-10-06T03:30:41.057Z"
+}
